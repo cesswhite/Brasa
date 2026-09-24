@@ -1,56 +1,56 @@
-# Familias y daño visual — entrega
+# Families and visual damage — delivery
 
-> **Documento histórico.** El daño híbrido descrito aquí fue sustituido por [daño ilustrado completo para los 23 cuerpos](ILLUSTRATED-DAMAGE.md). Se conservan esta evidencia y las reglas de familias; la cobertura exclusiva de Ascua y el shader de desgaste ya no describen el render vigente.
+> **Historical document.** The hybrid damage described here was replaced by [full illustrated damage for 23 bodies](ILLUSTRATED-DAMAGE.md). This evidence and the family rules are preserved; Ascua's exclusive coverage and wear shader no longer describe the current render.
 
-Se completaron las dos primeras implementaciones solicitadas: daño híbrido con Ascua como piloto y tres familias con seis individuos adicionales. Se conservan los sprites canónicos originales, la progresión, el balance y las identidades existentes.
+The first two requested implementations have been completed: hybrid damage with Ascua as a pilot and three families with six additional individuals. The original canonical sprites, progression, balance and existing identities are preserved.
 
-## Familias integradas
+## Integrated families
 
-| Familia | Nuevos individuos | Descubrimiento y desbloqueo |
+| Family | New individuals | Discovery and unlocking |
 | --- | --- | --- |
-| Taro / tejones | Roque, adulto experimentado; Sabino, maestro con barba plateada | Historia 21 y 61 |
-| Duna / armadillos | Cora, coraza reforzada; Pedernal, veterano con broquel | Historia 22 y 62 |
-| Bruma / gatos | Ámbar, atigrado naranja; Nieve, veterana crema y carbón | Historia 23 y 63 |
+| Taro / badgers | Roque, experienced adult; Sabino, master with a silver beard | Story Mode 21 and 61 |
+| Duna / armadillos | Cora, reinforced armor; Pedernal, buckler veteran | Story Mode 22 and 62 |
+| Bruma / cats | Ámbar, orange tabby; Nieve, veteran cream and charcoal | Story Mode 23 and 63 |
 
-Cada individuo tiene 40 poses: ocho base, dieciséis de movimiento y dieciséis de reacción. Son 240 poses en 18 bancos. Pedernal conserva su broquel en guardia, golpe, reacción, victoria y KO. El equipo es apariencia: no cambia alcance, daño, defensa ni estadísticas.
+Each individual has 40 poses: eight base, sixteen movement and sixteen reaction. They are 240 poses in 18 banks. Pedernal retains his buckler in guard, hit, reaction, victory and KO. Equipment is appearance: it does not change range, damage, defense or statistics.
 
-Los encuentros posteriores de cada familia usan la experiencia correspondiente. Los jefes conservan sus diseños exclusivos. Las seis apariencias completas comparten catálogo entre Historia, personalización y Arena; se desbloquean al superar su encuentro. Se eligieron conjuntos completos para preservar la pintura y las animaciones: barba, ropa y armadura no son piezas que puedan mezclarse libremente. Las opciones existentes de paleta, aura, estela y celebraciones siguen disponibles.
+Subsequent meetings of each family use the corresponding experience. Bosses retain their unique designs. The six complete appearances share a catalog between Story Mode, customization and Arena; They are unlocked by beating their encounter. Complete sets were chosen to preserve the paint and animations: beard, clothing and armor are not pieces that can be mixed freely. Existing palette, aura, trail, and celebration options remain available.
 
-La identidad de combate continúa separada del aspecto. El servidor comprueba propiedad y compatibilidad; el historial guarda la apariencia completa de cada batalla. Los jugadores que ya habían superado esos hitos reciben los nuevos cosméticos al resolver su siguiente combate autorizado, mediante el mecanismo de logros existente.
+The combat identity remains separate from the appearance. The server checks ownership and compatibility; Match history saves the complete appearance of each battle. Players who have already passed these milestones receive the new cosmetics upon resolving their next authorized match, using the existing achievement mechanism.
 
-## Daño visual
+## visual damage
 
-Cuatro estados por personaje: preparado, desgastado, dañado y crítico. Los umbrales configurables iniciales son 72%, 45% y 22% de vida. La transición espera la reacción; los golpes continuos no pueden posponerla indefinidamente. Curarse no limpia la ropa durante la pelea. Pausa congela la presentación, los resultados conservan el desgaste y una nueva batalla lo reinicia.
+Four states per character: prepared, worn, damaged and critical. The initial configurable thresholds are 72%, 45%, and 22% life. The transition awaits the reaction; continuous blows cannot postpone it indefinitely. Healing does not clean clothes during the fight. Pause freezes the presentation, the results preserve the wear and a new battle restarts it.
 
-Los 23 cuerpos visuales tienen perfiles de materiales y regiones de desgaste. Suciedad, abrasión y fatiga se conservan durante movimientos y poderes; no afectan estadísticas, inventario, RNG ni guardado. No se añadió sangre.
+23 visual bodies have material profiles and wear regions. Dirt, abrasion and fatigue are retained during movements and powers; They do not affect stats, inventory, RNG, or saves. No blood was added.
 
-Ascua tiene además 56 poses con daño dibujado: reacciones dañadas y cobertura crítica completa de base, movimiento y reacciones. Las roturas no desaparecen durante carga, transformación, victoria ni KO. El resto del elenco usa desgaste de superficie y las poses de fatiga existentes; no se afirma haber generado bibliotecas de ropa rota para todos los personajes.
+Ascua also has 56 poses with drawn damage: damaged reactions and full critical coverage of base, movement and reactions. Breaks do not disappear during charge, transformation, victory or KO. The rest of the cast uses surface wear and the existing fatigue poses; it is not claimed to have generated libraries of torn clothing for all characters.
 
-## Revisión visual
+## Visual check
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Repetición del individuo original por especie | Tres familias con edad, prendas, marcas y equipo reconocibles |
-| Sin desgaste persistente | Cuatro estados conservados hasta terminar el combate |
-| Pies cortados por una cuadrícula generada irregular | Separación en espacios transparentes, conservando las figuras completas |
-| Fondo cuadriculado pintado | Transparencia real mediante la limpieza autorizada |
+| Repetition of the original individual by species | Three families with recognizable age, clothing, brands and equipment |
+| No persistent wear | Four states preserved until the combat ends |
+| Feet cut by an irregular generated grid | Separation into transparent spaces, preserving complete figures |
+| Painted checkered background | True transparency through authorized cleaning |
 
-Se revisaron las 240 celdas de los individuos, las familias juntas y 23 referencias de cuatro estados dentro de Godot. La normalización usa un escalar por banco, lienzo 512×512, pivote 256/448 y densidad 1.5; nunca ajusta el tamaño por cuadro. Las diferencias entre dibujos no se presentan como igualdad píxel por píxel. Las regiones de superficie de bancos sin anatomía anotada usan una aproximación visual; no alteran anclajes de FX ni geometría.
+We reviewed 240 cells for individuals, families together, and 23 references from four states within Godot. Normalization uses one scalar per bank, canvas 512×512, pivot 256/448, and density 1.5; It never adjusts the size per frame. Differences between drawings are not presented as pixel-by-pixel equality. Bench surface regions without annotated anatomy use a visual approach; They do not alter FX anchors or geometry.
 
-Siete pases nativos a velocidad normal cubrieron seis individuos y Ascua: 32 poses utilizadas por personaje, 651 capturas y cero fallos. Las celdas restantes se revisaron en las hojas estáticas. No se aplicaron transformaciones no registradas a otras especies.
+Seven native passes at normal speed covered six individuals and Ascua: 32 poses used per character, 651 captures and zero misses. The remaining cells were reviewed on the static sheets. No unreported transformations were applied to other species.
 
-## Validación y servidor
+## Validation and server
 
-- 10 861 comprobaciones de Godot en daño, identidad, personalización, campaña, interfaz online, replay y continuidad visual; cero fallos.
-- 366 pruebas del servidor; cero fallos. Incluyen desbloqueo, rechazo de cosméticos sin propiedad, estadísticas invariantes, batalla de Arena e historial inmutable.
-- Catálogo exportado desde Godot; corpus de paridad de 300 batallas y nueve secuencias RNG actualizado.
-- Cloudflare staging actualizado: versión `2761b4cc-373f-4dca-bb84-0074498447d3`. Se verificó salud del servicio y seis apariencias en D1. La actualización remota escribió sólo definiciones y versiones del catálogo, sin cuentas, inventarios ni progresión personal.
-- La API de catálogo sigue protegida por autenticación; una petición sin credenciales recibe 401, como corresponde.
+- 10 861 Godot checks on damage, identity, customization, campaign, online interface, replay and visual continuity; zero failures.
+- 366 server tests; zero failures. They include unlocking, rejection of unowned cosmetics, invariant statistics, Arena battle and immutable history.
+- Catalog exported from Godot; Parity corpus of 300 battles and nine RNG sequences updated.
+- Cloudflare staging updated: version `2761b4cc-373f-4dca-bb84-0074498447d3`. Service health and six appearances were verified in D1. Remote update wrote only catalog definitions and versions, without accounts, inventories, or personal progression.
+- The catalog API is still protected by authentication; a request without credentials receives 401, accordingly.
 
-[Revisión visual interactiva](../../../work/damage-families/review.html) · [Aceptación y hashes](../../../work/damage-families/acceptance.json) · [Fuentes y prompts de familias](../../../work/damage-families/final-sources.json).
+Acceptance and hashes (`work/damage-families/acceptance.json`; not included) · Sources and family prompts (`work/damage-families/final-sources.json`; not included).
 
-Los originales generados y las fuentes de cada banco están en `work/damage-families/generated/`. La aceptación anterior de 17 cuerpos se conserva sin sobrescribir; esta entrega añade seis perfiles y su aceptación independiente.
+The generated originals and sources for each bank are in `work/damage-families/generated/`. The previous acceptance of 17 bodies is preserved without overwriting; This delivery adds six profiles and their independent acceptance.
 
-## Acceso pendiente también cerrado
+## Pending access also closed
 
-La experiencia de acceso se terminó y desplegó: entrada simplificada, passkeys, consentimiento de dispositivo, recuperación guiada y restauración segura mediante Keychain en macOS. Se corrigió la cancelación durante el guardado de sesión para que no vuelva a iniciar sesión después de cancelar. Validación adicional final: API 27/0 y sesión/Keychain 16/0. [Informe de acceso](AUTH-EXPERIENCE.md).
+The login experience is complete and deployed: simplified entry, passkeys, device consent, guided recovery, and secure restore using Keychain on macOS. Fixed canceling during session save so you don't log back in after canceling. Final additional validation: API 27/0 and session/Keychain 16/0. [Access Report](AUTH-EXPERIENCE.md).

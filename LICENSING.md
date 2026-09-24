@@ -1,23 +1,23 @@
-# Licencias y alcance
+# Licensing scope
 
-## Código propio: MIT
+## Original code: MIT
 
-[LICENSE](LICENSE) aplica al código fuente original, herramientas de compilación/pruebas, configuración técnica, documentación técnica y skills para agentes. Incluye GDScript, JavaScript, Swift, SQL y scripts de shell. Puedes reutilizar ese código según MIT conservando los avisos.
+[LICENSE](LICENSE) applies to original source code, build and test tools, technical configuration, technical documentation, and agent skills. This includes GDScript, JavaScript, Swift, SQL, and shell scripts. You may reuse that code under MIT while preserving the required notices.
 
-El contenido de terceros conserva su licencia original. En particular, las partes derivadas de PCG/Godot en `backend/battle-engine/rng.js` conservan Apache-2.0/MIT; consulta [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). El aviso MIT de Brasa no reemplaza esos términos.
+Third-party material retains its original license. In particular, the PCG/Godot-derived portions of `backend/battle-engine/rng.js` retain their Apache-2.0/MIT terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Brasa's MIT notice does not replace those terms.
 
-## Arte, audio e identidad: derechos reservados
+## Artwork, audio, and identity: rights reserved
 
-MIT **no** se aplica a ilustraciones, sprites, fondos, texturas, iconos, música, efectos, grabaciones, videos, capturas de arte, diseños de personajes ni a los elementos narrativos y de identidad de Brasa. Esto incluye recursos visuales en `assets/`, `backend/web/public/auth/art/` y `reports/`, aunque convivan con archivos técnicos.
+MIT **does not** cover illustrations, sprites, backgrounds, textures, icons, music, sound effects, recordings, videos, artwork screenshots, character designs, or Brasa's narrative and identity elements. This includes visual resources in `assets/`, `backend/web/public/auth/art/`, and `reports/`, even when stored alongside technical files.
 
-Estos elementos quedan reservados, en la medida en que existan derechos aplicables, a sus titulares. No se concede una licencia para reutilizarlos en otros productos, redistribuirlos como packs, venderlos o atribuirse su autoría. Los nombres y marcas no se licencian mediante MIT. Para reutilizar el código en otro juego, reemplaza los assets y la identidad o solicita permiso al titular.
+All applicable rights in these materials are reserved to their respective holders. No license is granted to reuse them in other products, redistribute them as packs, sell them, or claim authorship. Names and trademarks are not licensed under MIT. To reuse the code in another game, replace the assets and identity or obtain the rights holder's permission.
 
-La publicación permite la visualización y las funcionalidades de copia/fork que correspondan bajo las condiciones de GitHub; no amplía por sí sola la licencia de los assets. La generación con IA no garantiza exclusividad ni protección por copyright de cada salida.
+Public availability allows viewing and copying/forking functionality as provided by GitHub's terms; it does not independently broaden the asset license. AI generation does not guarantee exclusivity or copyright protection for every output.
 
-## Audio omitido en la edición pública
+## Audio excluded from the public edition
 
-El repositorio público excluye archivos de audio y videos. El manifiesto de procedencia permanece como documentación. Los originales se conservan en el proyecto local y en un respaldo privado. No vuelvas a añadirlos ni a Git LFS, releases o acciones de CI sin revisar y obtener los permisos que correspondan.
+The public repository excludes audio and video files. The provenance manifest remains as documentation. Originals are preserved in the local project and a private backup. Do not reintroduce them through Git LFS, releases, or CI artifacts without checking and obtaining the necessary distribution rights.
 
-Esta separación responde a las restricciones del proveedor sobre distribuir efectos como archivos sueltos y a que el manifiesto no acredita por sí solo el plan y derechos comerciales de cada generación. Consulta [créditos y fuentes](THIRD_PARTY_NOTICES.md).
+This separation reflects the provider's restrictions on distributing sound effects as standalone files. The manifest alone does not establish the subscription plan or commercial rights for each generation. See [credits and sources](THIRD_PARTY_NOTICES.md).
 
-No confundas esta política con la de una exportación completa del juego: una distribución ejecutable con assets necesita revisar por separado los derechos del contenido incluido.
+An exported game is a separate distribution: review the rights to all included content before shipping an executable with assets.

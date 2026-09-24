@@ -1,5 +1,5 @@
-# Tablero de revisión visual
+# Visual review evidence
 
-Abra [index.html](index.html) directamente; no requiere servidor ni red. Historia es una referencia congelada. Antes y Después muestran sólo capturas de su propia fase; Pendiente significa que todavía no existe una captura After.
+The development HTML comparison gallery has been removed from the public repository. Use the [screen audit](../VISUAL-SCREEN-AUDIT.md), [visual style bible](../VISUAL-STYLE-BIBLE.md), and [report index](../README.md).
 
-Regenerar desde la raíz del workspace: `python3 work/visual-system/build_review.py`. Tras la captura global validada, añadir `--require-final` para excluir toda fase provisional. Configuración: `work/visual-system/review-screens.json`. El manifiesto [review-data.json](review-data.json) conserva ruta, fixture, dimensiones y SHA-256. Los PNG se copian byte por byte; el HTML sólo cambia su tamaño de presentación.
+Screenshots and structured evidence remain in this directory. `review-data.json` records paths, fixtures, dimensions, and SHA-256 values. Before/after labels refer to the original capture phases; a missing later capture is not evidence of completion.

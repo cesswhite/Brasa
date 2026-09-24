@@ -1,23 +1,23 @@
-# Tu compañero · Controles compactos y vista ampliada
+# Your companion · Compact controls and expanded view
 
-## Jerarquía y proporciones
+## Hierarchy and proportions
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Cancelar y Guardar ocupaban el ancho completo del pie. | Botones de hasta 132 y 200 px, alineados a la derecha, con 12 px entre ellos. Se conserva el área táctil y el foco de teclado. |
-| El aumento de la figura tenía un límite fijo de 1,90 aunque sobrara espacio. | La figura aprovecha el espacio de su cámara común. Cada cuerpo mantiene sus proporciones físicas; no se igualan alturas. |
-| «Combinaciones…» ocupaba toda la fila y no explicaba su función. | «Aplicar estilo…» ocupa una fila acotada junto a «Al azar». Al abrirlo aparece «Color, efectos y gestos»; la ayuda explica que conserva cuerpo y nombre. |
-| Texto cercano a los remates del selector y a su flecha. | Márgenes interiores propios para el texto y espacio reservado para la flecha, usando los mismos materiales compartidos. |
-| «Al azar» tenía una explicación genérica. | Explica que prueba cuerpo, colores y efectos de la colección; sólo se guardan al confirmar. |
+| Cancel and Save took up the full width of the footer. | Buttons up to 132 and 200 px, aligned to the right, with 12 px between them. The touch area and keyboard focus are preserved. |
+| The figure increase had a fixed limit of 1,90 even if there was space left over. | The figure takes advantage of the space of its common chamber. Each body maintains its physical proportions; heights are not equal. |
+| “Combinations…” took up the entire row and did not explain its function. | “Apply style…” occupies a bounded row next to “Random”. When you open it, "Color, effects and gestures" appears; The help explains that it preserves body and name. |
+| Text near the ends of the selector and its arrow. | Own interior margins for the text and space reserved for the arrow, using the same shared materials. |
+| "Randomly" had a generic explanation. | He explains that he tests the body, colors and effects of the collection; They are only saved when confirming. |
 
-Cambio de presentación en `customization_panel.gd`. Se mantienen los estilos pintados, el borrador independiente, los requisitos de desbloqueo y las acciones existentes. En móvil se conserva el encuadre limitado por el espacio disponible; la ampliación aprovecha especialmente las ventanas grandes.
+Presentation change in `customization_panel.gd`. Painted styles, standalone draft, unlock requirements, and existing actions are maintained. On mobile, the frame limited by the available space is preserved; The extension takes special advantage of the large windows.
 
-## Verificación
+## Verification
 
-- Distribución y comportamiento: **2432 comprobaciones, 0 fallos**, siete tamaños, creación/edición, borrador, cancelar, confirmar, cosméticos bloqueados y selección aleatoria.
-- Encuadres: **61289 comprobaciones, 0 fallos**. Las 21 apariencias comparten cámara por acción en tres tamaños; se recorren reposo, golpe, entrada y victoria para comprobar límites y ausencia de cambios de escala durante cada animación.
-- Foco y cierre de ventanas: **74 comprobaciones, 0 fallos**.
-- Capturas integradas desde Main: **13 comprobaciones, 0 fallos**, escritorio y móvil.
-- Capturas nativas adicionales: Ónix, Mugo, Tepa y Nima; selector abierto. Las capturas son fixtures locales o en memoria y no modifican partidas del usuario.
+- Layout and behavior: **2432 checks, 0 failures**, seven sizes, create/edit, draft, cancel, confirm, locked cosmetics, and random selection.
+- Settings: **61289 checks, 0 failures**. The 21 appearances share an action camera in three sizes; rest, hit, entry and victory are cycled through to check limits and absence of scale changes during each animation.
+- Focus and closing of windows: **74 checks, 0 failures**.
+- Integrated captures from Main: **13 checks, 0 failures**, desktop and mobile.
+- Additional native captures: Ónix, Mugo, Tepa and Nima; open selector. Captures are local or memory fixtures and do not modify user games.
 
-[Revisión visual](customization-ui/index.html). Logs, métricas y PNG originales: `work/customization-ui/`.
+[Report index](README.md). Original logs, metrics and PNG: `work/customization-ui/`.

@@ -1,38 +1,38 @@
-# Personajes con sprites propios · v3
+# Characters with their own sprites · v3
 
-Siete diseños originales creados con la herramienta nativa `image_gen` e integrados en Brasa. La herramienta no expone el nombre de su modelo interno. Los PNG finales están en esta misma carpeta, conservan el alfa generado y se cargan desde los catálogos del juego.
+Seven original designs created with the native tool `image_gen` and integrated into Brasa. The tool does not expose the name of its internal model. The final PNGs are in this same folder, retaining the generated alpha, and are loaded from the game catalogs.
 
-Sira, Iria, Duna, Kiro, Neris y Taro conservan sus habilidades, estadísticas, identificadores y progreso; ahora cada uno tiene su propia especie y silueta. Ascua tiene una hoja exclusiva de jefe. Nima, Luma y Mugo conservan sus tres hojas originales: el resultado es un plantel de nueve apariencias distintas y un jefe propio.
+Sira, Iria, Duna, Kiro, Neris, and Taro retain their skills, stats, IDs, and progress; Now each one has its own species and silhouette. Ascua has an exclusive boss blade. Nima, Luma and Mugo retain their three original sheets: the result is a roster of nine different appearances and its own boss.
 
-| Personaje | Diseño | PNG final | Regiones y anclajes |
+| Character | Design | final PNG | Regions and anchors |
 | --- | --- | --- | --- |
-| Sira | Mantis duelista | [sira-v3.png](sira-v3.png) | [sira-v3.json](sira-v3.json) |
-| Iria | Rana botánica | [iria-v3.png](iria-v3.png) | [iria-v3.json](iria-v3.json) |
-| Duna | Armadillo guardián | [duna-v3.png](duna-v3.png) | [duna-v3.json](duna-v3.json) |
-| Kiro | Jabalí de la furia | [kiro-v3.png](kiro-v3.png) | [kiro-v3.json](kiro-v3.json) |
-| Neris | Garza sanadora | [neris-v3.png](neris-v3.png) | [neris-v3.json](neris-v3.json) |
-| Taro | Tejón contraatacante | [taro-v3.png](taro-v3.png) | [taro-v3.json](taro-v3.json) |
-| Ascua | Guardián volcánico · jefe | [ascua-v3.png](ascua-v3.png) | [ascua-v3.json](ascua-v3.json) |
+| Sira | Duelist mantis | [sira-v3.png](sira-v3.png) | [sira-v3.json](sira-v3.json) |
+| Iria | botanical frog | [iria-v3.png](iria-v3.png) | [iria-v3.json](iria-v3.json) |
+| Duna | guardian armadillo | [duna-v3.png](duna-v3.png) | [duna-v3.json](duna-v3.json) |
+| Kiro | Fury Boar | [kiro-v3.png](kiro-v3.png) | [kiro-v3.json](kiro-v3.json) |
+| Neris | Healing Heron | [neris-v3.png](neris-v3.png) | [neris-v3.json](neris-v3.json) |
+| Taro | Counterattacking Badger | [taro-v3.png](taro-v3.png) | [taro-v3.json](taro-v3.json) |
+| Ascua | Volcanic Guardian boss | [ascua-v3.png](ascua-v3.png) | [ascua-v3.json](ascua-v3.json) |
 
-## Animación
+## Animation
 
-Cada atlas contiene ocho poses, ordenadas por filas: reposo, respiración, preparación, golpe, impacto, esquiva, victoria y derrota. Son 56 poses nuevas. El movimiento usa estas imágenes en el mismo controlador de Godot que los personajes originales, con orientación, desplazamiento, sombras y efectos independientes.
+Each atlas contains eight poses, arranged by rows: rest, breathing, preparation, strike, impact, dodge, victory and defeat. They are 56 new poses. Movement uses these images in the same Godot controller as the original characters, with independent orientation, scrolling, shadows, and effects.
 
-Las regiones y anclajes describen las siluetas completas dentro del PNG; no recortan ni retocan el archivo original. Una escala común por personaje evita agrandar las poses agachadas o caídas. El atlas individual se aplica en las fichas, la selección, la arena y la vista previa de Historia.
+The regions and anchors describe the entire silhouettes within the PNG; They do not crop or retouch the original file. A common scale per character avoids enlarging crouching or falling poses. The individual atlas is applied to tiles, selection, arena, and Story Mode preview.
 
-## Verificación
+## Verification
 
-Los siete atlas finales son PNG RGBA de 1774 × 887. Las regiones conservan cada píxel visible (alfa ≥ 31/255) exactamente una vez. Las pruebas verifican que las diez identidades carguen diez archivos distintos, sin sustituciones silenciosas por los tres originales, y que las 80 poses totales permanezcan dentro de la ventana en siete tamaños.
+The final seven atlases are RGBA PNGs of 1774 × 887. Regions retain each visible pixel (alpha ≥ 31/255) exactly once. The tests verify that the ten identities load ten different files, with no silent substitutions for the original three, and that the total 80 poses remain within the window at seven sizes.
 
-[Vista del plantel renderizada en Godot](../../reports/personajes-v3.png) · [Informe de pruebas](../../reports/PERSONAJES.md) · [Dimensiones y SHA-256 de los PNG](PERSONAJES-V3.json).
+[View of the campus rendered in Godot](../../reports/personajes-v3.png) · [Test report](../../reports/PERSONAJES.md) · [Dimensions and SHA-256 of the PNGs](PERSONAJES-V3.json).
 
-## Prompts exactos
+## Exact prompts
 
-Cada diseño usó una generación nativa independiente. Se conservaron los siete PNG de la primera generación. También se probaron ediciones nativas de encuadre para Kiro, Neris y Taro; sus variantes fueron descartadas porque devolvieron un fondo opaco. Sus prompts quedan documentados, pero no forman parte del arte instalado. No se usó una CLI de generación ni retoque de píxeles mediante scripts.
+Each design used a separate native generation. The seven PNGs of the first generation were preserved. Native framing edits were also tested for Kiro, Neris, and Taro; Its variants were discarded because they returned an opaque background. Its prompts are documented, but are not part of the installed art. No scripted pixel generation or retouching CLI was used.
 
-### Sira · Mantis duelista
+### Sira Duelist Mantis
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept
@@ -48,9 +48,9 @@ Do not include any typography. Exactly 8 individually isolated full-body figures
 Subject and identity: SIRA: an elegant upright adult praying-mantis duelist. Pale jade and subtle lilac chitin, narrow amber insect eyes, distinctly triangular mantis head, two delicate short antennae, lean articulated insect torso, short dark obsidian waistcoat. Long segmented forearms ending in folded natural blade-like mantis claws, poised precision duelist stance. Two strong digitigrade insect hind legs; distinctive angular mantis silhouette. The striking arm unfolds into a natural forearm blade for attack. No carried sword or additional weapon. Keep her lean, mature and graceful, a real mantis warrior rather than a humanoid wearing a mask.
 ```
 
-### Iria · Rana botánica
+### Iria Botanical frog
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept
@@ -66,9 +66,9 @@ Do not include any typography. Exactly 8 individually isolated full-body figures
 Subject and identity: IRIA: a stout athletic adult poison-frog herbalist fighter. Mottled moss-green and jade amphibian skin, broad expressive frog head with rounded amber eyes, recognizably frog face and feet, powerful athletic bent frog legs. Small worn botanical satchel worn close to the body, simple leaf collar, teal-and-brown woven wrist and waist wraps. Hands raised in an unarmed compact boxer guard, plant ingredients visible only as small leaves tucked into satchel. Rich organic skin and cloth textures, mature capable frog adventurer, not a plush or baby. No potion splash, no particle effects, no floating leaves, no carried staff or weapon.
 ```
 
-### Duna · Armadillo guardián
+### Duna Guardian armadillo
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept
@@ -84,9 +84,9 @@ Do not include any typography. Exactly 8 individually isolated full-body figures
 Subject and identity: DUNA: a sand-colored adult armadillo guardian fighter. Very broad segmented armored back with visibly overlapping natural shell plates, rounded tough snout with small alert eyes and readable armadillo ears, compact muscular body, heavy ochre forearm guards, dark teal fabric waist sash, short plated tail visible safely inside cells, broad clawed armadillo feet. Low strong defensive silhouette, stoic friendly desert protector, about three heads tall. Warm sand hide contrasted with ochre shell edges and dark teal cloth. Unarmed guard and a heavy forearm punch. Distinct armadillo natural anatomy, not a turtle, no separate shield, no helmet, no carried weapon.
 ```
 
-### Kiro · Jabalí de la furia
+### Kiro · Fury Boar
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept
@@ -102,7 +102,7 @@ Constraints: exactly eight separate poses, one per cell, no duplicate ninth spri
 Subject: KIRO, a distinct anthropomorphic russet WILD BOAR pugilist. A visibly boar-like broad blunt snout, two short ivory tusks visible at the sides of the mouth, rust-colored bristle crest, small alert adult eyes, broad strong shoulders and powerful forearms. Red cloth waist sash, dark leather travel trousers, copper knuckle guards, bare sturdy cloven feet. Rough russet fur and textured copper. Expressive determined brow. This is a boar fighter, not a cat, fox, bear, human or goblin. No flames.
 ```
 
-Prueba de encuadre descartada (se conserva la generación anterior con alfa):
+Framing test discarded (previous generation with alpha preserved):
 
 ```text
 Use case: identity-preserve
@@ -114,9 +114,9 @@ Pose order stays unchanged: top row idle, breathing, windup, punch right; bottom
 The background must remain genuine PNG ALPHA transparency, not painted black, white or checkerboard. No floor, shadows under feet, grid lines, framing, labels, new props or effects. The only permitted changes are uniform downscaling and safe repositioning of the existing eight complete figures.
 ```
 
-### Neris · Garza sanadora
+### Neris Healing Heron
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept
@@ -132,7 +132,7 @@ Constraints: exactly eight separate poses, one per cell, no duplicate ninth spri
 Subject: NERIS, a distinct anthropomorphic WHITE HERON martial healer. Elegant long gently curved white neck, slender straight HERON BEAK, small alert adult bird eyes, white feathered head with blue crest, blue-tipped wing feathers. Cobalt-and-cream short martial tunic, coral cloth waist sash, natural bird legs and long bird feet. Wings fold forward like guarding arms and the wing forearms perform the eight martial poses, with a closed feathered wing tip striking right in the punch frame. Lean athletic mature body, poised and calm, clearly bird anatomy rather than human arms pasted on a bird. White plumage must remain opaque while the surrounding canvas has true alpha transparency. Not a duck, penguin, owl, baby chick or axolotl.
 ```
 
-Prueba de encuadre descartada (se conserva la generación anterior con alfa):
+Framing test discarded (previous generation with alpha preserved):
 
 ```text
 Use case: identity-preserve
@@ -144,9 +144,9 @@ Pose order stays unchanged: top row idle, breathing, windup, punch right; bottom
 The background must remain genuine PNG ALPHA transparency, not painted black, white or checkerboard. No floor, shadows under feet, grid lines, framing, labels, new props or effects. The only permitted changes are uniform downscaling and safe repositioning of the existing eight complete figures.
 ```
 
-### Taro · Tejón contraatacante
+### Taro Counter Badger
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept
@@ -162,7 +162,7 @@ Constraints: exactly eight separate poses, one per cell, no duplicate ninth spri
 Subject: TARO, a distinct anthropomorphic BLACK-AND-WHITE BADGER counterfighter. Strong broad black-and-white striped badger cheek mask, tapered badger muzzle, small rounded ears, narrow attentive adult eyes, a stocky muscular torso and powerful forearms. Charcoal work vest, jade bead wrist wraps, brown cloth waist sash, bare clawed feet. Short coarse black, white and gray fur, textured cloth, small jade beads. Patient grounded defensive expression, a mature tough badger with a clear low powerful silhouette. No hat and no weapons. Not a panda, raccoon, bear, cat, baby or plush toy.
 ```
 
-Prueba de encuadre descartada (se conserva la generación anterior con alfa):
+Framing test discarded (previous generation with alpha preserved):
 
 ```text
 Use case: identity-preserve
@@ -174,9 +174,9 @@ Pose order stays unchanged: top row idle, breathing, windup, punch right; bottom
 The background must remain genuine PNG ALPHA transparency, not painted black, white or checkerboard. No floor, shadows under feet, grid lines, framing, labels, new props or effects. The only permitted changes are uniform downscaling and safe repositioning of the existing eight complete figures.
 ```
 
-### Ascua · Guardián volcánico · jefe
+### Ascua · Volcanic Guardian · boss
 
-Generación:
+Generation:
 
 ```text
 Use case: stylized-concept.

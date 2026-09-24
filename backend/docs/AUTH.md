@@ -1,22 +1,24 @@
-# Acceso con passkey y código de dispositivo
+# Access with passkey and device code
 
-Implementación fijada a `better-auth 1.7.5` y `@better-auth/passkey 1.7.5`, con D1 nativo. El navegador realiza WebAuthn; Godot recibe una sesión opaca por autorización de dispositivo. No se habilitan contraseñas, cuentas anónimas, SMTP, proveedores OAuth ni importación de partidas locales.
+> Deployment results below are historical records from September 2026. They do not establish current service availability or authorize operations on the owner’s account. Use isolated local resources or your own authorized environment.
 
-El usuario activó **Workers Paid**, confirmado como plan actual en Cloudflare. El acceso se volvió a verificar en [staging](https://brasa-api-staging.acessloop.workers.dev/auth): **32/32 comprobaciones remotas de registro, inicio de sesión y autorización de dispositivo**, seguidas de **60/60 de juego y revocación**, con `limits.cpu_ms: 1000`. La versión final es `99077f34-8895-4b12-98ee-a3b692d8596e`, con el mismo bundle y secreto, y muestreo `0.1`. El [informe de Cloudflare](../../reports/CLOUDFLARE-STAGING.md) registra la evidencia y distingue las mediciones históricas Free de la nueva verificación funcional Paid.
+Implementation fixed to `better-auth 1.7.5` and `@better-auth/passkey 1.7.5`, with native D1. The browser performs WebAuthn; Godot receives an opaque session for device authorization. Passwords, anonymous accounts, SMTP, OAuth providers, and local game imports are not enabled.
 
-## Entrar desde Godot
+User activated **Workers Paid**, confirmed as current plan on Cloudflare. Access was rechecked in [staging](https://brasa-api-staging.acessloop.workers.dev/auth): **32/32 remote registration, login and device authorization checks**, followed by **60/60 game and revocation**, with `limits.cpu_ms: 1000`. The final version is `99077f34-8895-4b12-98ee-a3b692d8596e`, with the same bundle and secret, and sampling `0.1`. The [Cloudflare report](../../reports/CLOUDFLARE-STAGING.md) records the evidence and distinguishes the historical Free measurements from the new Paid functional verification.
 
-1. Abre `Jugar online.command` o **Arena online** en el menú y pulsa **Iniciar sesión en el navegador**.
-2. En la primera visita, escribe **Nombre de la cuenta**, pulsa **Crear cuenta con passkey** y confirma con la huella, rostro o PIN que pida tu dispositivo. Si ya existe la cuenta, pulsa **Entrar con mi passkey**.
-3. Compara el código del navegador con Godot y pulsa **Autorizar este dispositivo**. Crear la cuenta o iniciar sesión no autoriza por sí solo el juego.
-4. Vuelve a Godot; la sesión se recoge automáticamente. Elige la base de combate, escribe **Nombre de tu luchador** y pulsa **Crear luchador**.
-5. Puedes entrar en **Historia** aunque no haya rivales públicos. Arena muestra únicamente otros jugadores disponibles; las cuentas QA permanecen separadas.
+## Sign in from Godot
 
-Abrir `/auth` directamente permite gestionar el acceso, pero no conecta Godot sin el código iniciado desde el juego. La passkey personal la crea el usuario en su dispositivo; el panel ofrece **Añadir una segunda passkey**. El progreso online se guarda en el servidor y no importa la partida local.
+1. Open `Jugar online.command` or **Online Arena** from the menu and press **Sign in in browser**.
+2. On the first visit, write **Account name**, press **Create account with passkey** and confirm with the fingerprint, face or PIN requested by your device. If the account already exists, press **Enter with my passkey**.
+3. Compare the browser code with Godot and press **Authorize this device**. Creating the account or logging in does not in itself authorize the game.
+4. Return to Godot; The session is automatically collected. Choose the combat base, type **Name of your fighter** and press **Create fighter**.
+5. You can enter **Story Mode** even if there are no public rivals. Arena shows only other available players; QA accounts remain separate.
 
-## Configuración
+Opening `/auth` directly allows you to manage access, but does not connect Godot without the code launched from the game. The personal passkey is created by the user on their device; the panel offers **Add a second passkey**. Online progress is saved on the server and the local game does not matter.
 
-El entorno en línea requiere:
+## Settings
+
+The online environment requires:
 
 ```json
 {
@@ -29,121 +31,121 @@ El entorno en línea requiere:
 }
 ```
 
-`BETTER_AUTH_SECRET` se proporciona mediante un secret binding, generado con al menos 32 bytes aleatorios; nunca se guarda en el repositorio ni se entrega al juego. El binding D1 se llama `DB`. Aplicar las migraciones versionadas y sembrar el catálogo antes de admitir usuarios. `0002_auth.sql` contiene el esquema de Better Auth, enlaces a cuentas, nonces de registro y límites de solicitudes.
+`BETTER_AUTH_SECRET` is provided via a secret binding, generated with at least 32 random bytes; It is never saved to the repository or delivered to the game. Binding D1 is called `DB`. Apply versioned migrations and seed the catalog before admitting users. `0002_auth.sql` contains the Better Auth schema, account links, registration nonces, and request limits.
 
-`AUTH_MODE=local_dev` conserva el adaptador anterior exclusivamente en loopback. Los tokens `brasa_local_*` no son credenciales en línea. La compatibilidad Node también es necesaria al cargar el nuevo bundle en desarrollo local. Una configuración ausente o débil devuelve 503; un origen distinto del configurado devuelve 403.
+`AUTH_MODE=local_dev` keeps the old adapter exclusively in loopback. `brasa_local_*` tokens are not online credentials. Node support is also required when loading the new bundle in local development. An absent or weak configuration returns 503; a source other than the configured one returns 403.
 
-En `worker.js`, llamar `handleAuthRequest(request, env)` antes de `authenticate`; una respuesta no nula ya corresponde al servicio de acceso. `authenticate` devuelve `{account_id, auth_user_id}` en modo Better Auth y conserva `{account_id}` en modo local.
+In `worker.js`, call `handleAuthRequest(request, env)` before `authenticate`; a non-null response already corresponds to the access service. `authenticate` returns `{account_id, auth_user_id}` in Better Auth mode and retains `{account_id}` in local mode.
 
-## Navegador
+## Browser
 
-`GET /auth` muestra creación e inicio de sesión. `GET /device?user_code=ABCDEFGH` muestra el código recibido del juego y botones separados para autorizar o rechazar. Abrir la página o iniciar sesión no aprueba la solicitud.
+`GET /auth` shows creation and login. `GET /device?user_code=ABCDEFGH` displays the code received from the game and separate buttons to authorize or reject. Opening the page or logging in does not approve the request.
 
-1. `POST /api/auth/registration/nonce` recibe `{name}` y devuelve un contexto firmado con cinco minutos de vigencia.
-2. El cliente obtiene las opciones de registro y ejecuta WebAuthn. El servidor verifica challenge, origen, RP ID y verificación del usuario.
-3. Sólo después de una ceremonia válida se consume el nonce una vez y se crea el usuario. Al almacenar la passkey y crear su sesión, un lote D1 crea una cuenta de juego y el inventario inicial del catálogo canónico —24 cosméticos en esta versión—, de forma idempotente.
+1. `POST /api/auth/registration/nonce` receives `{name}` and returns a five-minute signed context.
+2. The client obtains the registration options and runs WebAuthn. The server verifies challenge, origin, RP ID and user verification.
+3. Only after a valid ceremony is the nonce consumed once and the user created. By storing the passkey and creating your session, a D1 batch creates a game account and the initial inventory of the canonical catalog - 24 cosmetics in this version - idempotently.
 
-La columna email requerida por el esquema de Better Auth usa un identificador interno `UUID@passkey.brasa.invalid`; no identifica una dirección real, no se considera verificada y no habilita recuperación ni vinculación por correo. Los UUID del juego se enlazan al usuario de autenticación; ningún nombre otorgado por el cliente identifica a otra cuenta.
+The email column required by the Better Auth schema uses an internal identifier `UUID@passkey.brasa.invalid`; It does not identify a real address, is not considered verified, and does not enable recovery or linking by mail. Game UUIDs are bound to the authenticating user; no name provided by the client identifies another account.
 
-La página permite añadir una segunda passkey. El servidor exige una sesión creada en los últimos cinco minutos para añadir credenciales. No hay borrado público de passkeys ni recuperación por un secreto administrativo compartido. Sin una passkey disponible no hay recuperación implementada; debe conservarse una passkey sincronizada o una segunda credencial.
+The page allows you to add a second passkey. The server requires a session created in the last five minutes to add credentials. There is no public deletion of passkeys or recovery for a shared administrative secret. Without a passkey available there is no recovery implemented; A synchronized passkey or second credential must be maintained.
 
-## Contrato Godot
+## Godot Contract
 
-| Operación | Petición | Respuesta |
+| Operation | Request | Response |
 |---|---|---|
-| Solicitar código | `POST /api/auth/device/code`, `{client_id:"brasa-godot"}` | `device_code`, `user_code`, `verification_uri`, `verification_uri_complete`, `expires_in:600`, `interval:5` |
-| Consultar autorización | `POST /api/auth/device/token`, `{grant_type:"urn:ietf:params:oauth:grant-type:device_code",device_code,client_id:"brasa-godot"}` | `access_token`, `token_type:"Bearer"`, `expires_in`, `scope:""` |
-| Usar API | `Authorization: Bearer <access_token>` | Contrato `/v1/*` existente |
-| Desconectar | `POST /api/auth/sign-out`, cuerpo `{}`, bearer | Revoca esa sesión |
+| Request code | `POST /api/auth/device/code`, `{client_id:"brasa-godot"}` | `device_code`, `user_code`, `verification_uri`, `verification_uri_complete`, `expires_in:600`, `interval:5` |
+| Check authorization | `POST /api/auth/device/token`, `{grant_type:"urn:ietf:params:oauth:grant-type:device_code",device_code,client_id:"brasa-godot"}` | `access_token`, `token_type:"Bearer"`, `expires_in`, `scope:""` |
+| Use API | `Authorization: Bearer <access_token>` | Existing `/v1/*` contract |
+| Disconnect | `POST /api/auth/sign-out`, body `{}`, bearer | Revoke that session |
 
-Los errores de dispositivo son HTTP 400 con `{error,error_description}`: `authorization_pending`, `slow_down`, `expired_token`, `access_denied`, `invalid_grant` o `invalid_request`. Respetar el intervalo; ante `slow_down`, aumentarlo al menos cinco segundos. Cancelar el flujo descarta respuestas tardías. No registrar códigos ni tokens. `client_id` es público; sólo identifica la aplicación y no sirve como contraseña.
+Device errors are HTTP 400 with `{error,error_description}`: `authorization_pending`, `slow_down`, `expired_token`, `access_denied`, `invalid_grant` or `invalid_request`. Respect the interval; on `slow_down`, increase it by at least five seconds. Canceling the flow discards late responses. Do not log codes or tokens. `client_id` is public; It only identifies the application and does not serve as a password.
 
-Godot debe validar HTTPS, host y ruta de la URL de verificación antes de abrirla; no debe seguir redirecciones de llamadas API. En macOS, el bearer se guarda en Keychain mediante el helper firmado de `native/macos`; se valida contra `/api/auth/get-session` antes de restaurar la cuenta. El archivo local de presentación no contiene credenciales. En plataformas sin adaptador seguro el bearer permanece sólo en memoria. No se requieren cookies en Godot. Este flujo devuelve una sesión de Better Auth, no un JWT OAuth ni un refresh token OAuth.
+Godot must validate HTTPS, host and path of the verification URL before opening it; You should not follow API call redirects. On macOS, the bearer is saved to Keychain using the `native/macos` signed helper; is validated against `/api/auth/get-session` before the account is restored. The local presentation file does not contain credentials. On platforms without a secure adapter the bearer remains only in memory. Cookies are not required in Godot. This flow returns a Better Auth session, not an OAuth JWT or an OAuth refresh token.
 
-## Controles
+## Controls
 
-- RP ID y origen exactos, cookies seguras, comprobaciones de origen/CSRF conservadas y CSP de la página sin scripts externos.
-- La API de juego exige bearer: una cookie de navegador por sí sola no permite ejecutar acciones de juego; una cookie válida tampoco rescata un bearer inválido.
-- El plugin solicita `userVerification:"required"`. Además, ambos callbacks del servidor rechazan `userVerified=false`: la versión 1.7.5 verifica internamente con `requireUserVerification:false`, por lo que pedirlo sólo al navegador sería insuficiente.
-- El nonce firmado se consume mediante comparación y actualización en D1. Los credential IDs tienen un índice único. No se concede una cuenta de juego sin una passkey almacenada.
-- El wrapper HTTP aplica límites atómicos en D1, por IP de Cloudflare y minuto: cinco registros, diez códigos de dispositivo, treinta consultas de token y sesenta solicitudes generales. Devuelve 429 y `Retry-After:60`. El limitador en memoria de Better Auth está deshabilitado porque el wrapper protege las rutas expuestas, incluidos los endpoints personalizados.
-- Se rechaza `user_id` en la solicitud pública de dispositivo. Un código aprobado sólo puede canjearse una vez; la sesión que reclama el código debe ser la que lo apruebe.
-- Los logs del proveedor emiten una marca genérica, sin credenciales, cuerpos ni excepciones que puedan contenerlos. Las respuestas de acceso no se almacenan en caché.
+- Exact RP ID and origin, secure cookies, preserved origin/CSRF checks and page CSP without external scripts.
+- The game API requires bearer: a browser cookie alone does not allow game actions to be executed; a valid cookie also does not rescue an invalid bearer.
+- The plugin requests `userVerification:"required"`. Additionally, both server callbacks reject `userVerified=false`: version 1.7.5 checks internally with `requireUserVerification:false`, so asking the browser alone would be insufficient.
+- The signed nonce is consumed by comparison and update in D1. Credential IDs have a unique index. A game account is not granted without a stored passkey.
+- The HTTP wrapper enforces atomic limits on D1, per Cloudflare IP per minute: five registrations, ten device codes, thirty token polls, and sixty general requests. Returns 429 and `Retry-After:60`. The Better Auth in-memory limiter is disabled because the wrapper protects exposed routes, including custom endpoints.
+- `user_id` is rejected in the public device request. An approved code can only be redeemed once; the session that claims the code must be the one that approves it.
+- The provider's logs emit a generic mark, without credentials, bodies or exceptions that could contain them. Access responses are not cached.
 
-## Pruebas y rendimiento
+## Testing and performance
 
-`node scripts/build.mjs --auth-only` reconstruye únicamente el Worker aislado de pruebas de acceso. `node --test tests/auth.test.mjs` verifica ocho grupos con respuestas WebAuthn firmadas y una base D1 temporal real: alta, biometría/PIN obligatorio, origen, nonces, doble canje, aislamiento de usuarios, rechazo/expiración, revocación, segunda passkey, sesión reciente, persistencia y límites concurrentes. No utiliza un endpoint de bypass ni sesiones sembradas para iniciar la prueba.
+`node scripts/build.mjs --auth-only` rebuilds only the Worker used by isolated authentication tests. `node --test tests/auth.test.mjs` verifies eight groups with signed WebAuthn responses and a real temporary D1 database: registration, biometrics/mandatory PIN, origin, nonces, double redemption, user isolation, rejection/expiration, revocation, second passkey, recent session, persistence, and concurrent limits. It does not use a bypass endpoint or seeded sessions to start the test.
 
-Resultado de la entrega inicial de acceso: **8 tests aprobados, 0 fallos**, log `work/identity/auth-tests.log` desde la raíz del workspace. La suite completa que incluye los tests de acceso pasó **360/360** antes del smoke remoto (`work/cloudflare-deploy/npm-test-final.log`) y **365/365** tras incorporar la quinta migración (`work/cloudflare-deploy/npm-test-release.log`). Los tests usan archivos temporales propios y no acceden a la partida ni a las credenciales personales.
+Result of initial access delivery: **8 tests passed, 0 failures**, log `work/identity/auth-tests.log` from the root of the workspace. The complete suite that includes the access tests passed **360/360** before the remote smoke (`work/cloudflare-deploy/npm-test-final.log`) and **365/365** after incorporating the fifth migration (`work/cloudflare-deploy/npm-test-release.log`). The tests use their own temporary files and do not access the game or personal credentials.
 
-Wrangler `4.110.0` y Miniflare `4.20260708.1` se mantienen fijados. Overrides concretos: `undici 7.29.0` y `sharp 0.35.4`; `npm audit` termina sin alertas en `work/identity/auth-npm-audit.json`.
+Wrangler `4.110.0` and Miniflare `4.20260708.1` remain fixed. Specific overrides: `undici 7.29.0` and `sharp 0.35.4`; `npm audit` terminates without alerts at `work/identity/auth-npm-audit.json`.
 
-La primera medición con el profiler V8 de workerd local se conserva en `work/identity/auth-local-profile.json`. Encontró aproximadamente 1.9–4.5 ms activos en API autenticada caliente, 5 ms en código de dispositivo, 16.7 ms en registro de passkey y 39 ms entre nonce/opciones del primer acceso. Son muestras locales con instrumentación, **no CPU facturada por Cloudflare ni prueba de cumplimiento del límite Free de 10 ms**. La medición remota posterior confirmó solicitudes de acceso por encima de ese límite; véanse los resultados reales a continuación. No se redujo la seguridad criptográfica para alterar esos valores. Posteriormente el usuario activó Workers Paid.
+The first measurement with the local workerd V8 profiler is preserved in `work/identity/auth-local-profile.json`. Found approximately 1.9–4.5 ms active in hot authenticated API, 5 ms in device code, 16.7 ms in passkey registration and 39 ms between nonce/first access options. These are local samples with instrumentation, **no Cloudflare-billed CPU or 10 ms Free limit compliance testing**. Subsequent remote measurement confirmed access requests above that limit; see actual results below. Cryptographic security was not reduced to alter those values. The user later activated Workers Paid.
 
-La segunda medición separa ambas solicitudes y se conserva en `work/identity/auth-local-profile-warm.json`. Primer nonce: 4.94 ms; primeras opciones: 27.77 ms. En 20 muestras calientes por operación:
+The second measurement separates both requests and is persisted in `work/identity/auth-local-profile-warm.json`. First nonce: 4.94 ms; first options: 27.77 ms. In 20 hot samples by operation:
 
-| Operación | Mediana local | p95 de la muestra local |
+| Operation | Local median | p95 of the local sample |
 |---|---:|---:|
 | Nonce | 3.20 ms | 3.87 ms |
-| Opciones WebAuthn | 4.67 ms | 6.16 ms |
-| Verificar registro | 8.47 ms | 10.72 ms |
+| WebAuthn Options | 4.67 ms | 6.16 ms |
+| Check registration | 8.47 ms | 10.72 ms |
 
-El pico inicial proviene principalmente de la inicialización de opciones; la verificación caliente también queda cerca del límite y algunas muestras lo superan. La muestra pequeña de una máquina local no representa el p95 del servicio desplegado. El script de profiling ahora guarda la medición separada en el archivo `*-warm.json` y mantiene la captura inicial como referencia.
+The initial spike mainly comes from option initialization; the hot check is also close to the limit and some samples exceed it. The small sample from a local machine does not represent p95 of the deployed service. The profiling script now saves the separate measurement in the `*-warm.json` file and keeps the initial capture as a reference.
 
-## CPU histórica en Workers Free
+## Historical CPU in Workers Free
 
-Antes de activar Paid, la versión de smoke `ce9db916-5337-4c93-8724-fdaed84cca91` produjo las siguientes muestras de CPU por solicitud en las dos cuentas QA. Son mediciones de Cloudflare, distintas de la duración de pared de los logs de aplicación y de los perfiles locales anteriores.
+Before enabling Paid, smoke build `ce9db916-5337-4c93-8724-fdaed84cca91` produced the following CPU samples per request across the two QA accounts. These are Cloudflare measurements, different from the wall duration in application logs and local profiles above.
 
-| Operación | Cuenta A | Cuenta B |
+| Operation | Account A | Account B |
 | --- | ---: | ---: |
-| Nonce de registro | 7 ms | 5 ms |
-| Opciones de registro WebAuthn | 46 ms | 15 ms |
-| Verificación de registro | 29 ms | 35 ms |
+| Registration Nonce | 7 ms | 5 ms |
+| WebAuthn Registration Options | 46 ms | 15 ms |
+| Registration verification | 29 ms | 35 ms |
 
-El registro consolidado contiene 11 invocaciones críticas de registro y combate, 9 por encima de 10 ms. Todas terminaron con `outcome=ok`, incluido el rechazo deliberado HTTP 422 de una petición que declaraba al ganador. La prueba obtuvo los estados HTTP esperados, pero estas muestras no permiten anunciar estabilidad con el límite de [10 ms del plan Free](https://developers.cloudflare.com/workers/platform/limits/). Arena y Historia también lo superaron: 81 ms y 48 ms, respectivamente. Una revisión acotada no encontró un cambio pequeño demostrado que garantice cumplirlo. El usuario contrató posteriormente [Workers Paid, desde 5 USD al mes más uso adicional aplicable](https://developers.cloudflare.com/workers/platform/pricing/), y se confirmó que es el plan actual. No se ha reducido la seguridad criptográfica. El [informe de Cloudflare](../../reports/CLOUDFLARE-STAGING.md) conserva la evidencia. La versión `0f3491e2-c017-402e-a39d-5ea7dff1aec0` cerró aquella validación con el mismo bundle y secreto, y muestreo restaurado a `0.1`. La prueba funcional posterior sobre Paid pasó 32/32 comprobaciones de acceso y 60/60 de juego. No se obtuvo una nueva lectura de CPU por invocación porque el panel de Observability no cargó; los valores de esta tabla siguen siendo exclusivamente históricos. No se realizó una prueba de carga. El límite Paid configurado de 1000 ms es por solicitud y no constituye un tope mensual de facturación.
+The consolidated log contains 11 critical authentication and combat invocations, 9 above 10 ms. They all ended with `outcome=ok`, including deliberate HTTP rejection 422 of a request declaring the winner. The test obtained the expected HTTP states, but these samples do not allow announcing stability with the limit of [10 ms of the Free plan](https://developers.cloudflare.com/workers/platform/limits/). Arena and Story Mode also surpassed it: 81 ms and 48 ms, respectively. A limited review found no small demonstrated change to warrant compliance. The user subsequently purchased [Workers Paid, from 5 USD per month plus applicable additional usage](https://developers.cloudflare.com/workers/platform/pricing/), and this was confirmed to be the current plan. Cryptographic security has not been reduced. The [Cloudflare report](../../reports/CLOUDFLARE-STAGING.md) preserves the evidence. Version `0f3491e2-c017-402e-a39d-5ea7dff1aec0` closed that validation with the same bundle and secret, and sampling restored to `0.1`. The subsequent functional test on Paid passed 32/32 access checks and 60/60 game checks. A new CPU reading was not obtained per invocation because the Observability panel did not load; The values ​​in this table remain exclusively historical. No load test was performed. The configured Paid limit of 1000 ms is per request and is not a monthly billing cap.
 
-## Prueba remota en dos fases
+## Remote testing in two phases
 
-La ejecución sobre Paid terminó el 21 de septiembre de 2026 a las 03:48 UTC con **32/32 comprobaciones de acceso y 60/60 de juego**, en la versión `3faaf02a-8427-4329-9ab8-7c8e50ef13ec`. Sus dos cuentas QA nuevas terminaron con un luchador, 24 cosméticos y cero sesiones cada una; se guardaron un combate de Arena y uno de Historia. D1 contiene ahora cuatro cuentas QA acumuladas y cero cuentas ordinarias; no quedan sesiones QA. Los reportes están en `work/cloudflare-paid/remote-provision.json`, `remote-verify.json` y `remote-db-reconciliation.json`.
+The run on Paid ended on 21 September 2026 at 03:48 UTC with **32/32 access checks and game 60/60**, in version `3faaf02a-8427-4329-9ab8-7c8e50ef13ec`. Their two new QA accounts ended with one fighter, 24 cosmetics, and zero sessions each; They saved one Arena match and one Story Mode match. D1 now contains four cumulative QA accounts and zero ordinary accounts; There are no QA sessions left. The reports are in `work/cloudflare-paid/remote-provision.json`, `remote-verify.json` and `remote-db-reconciliation.json`.
 
-La prueba anterior en Free también pasó 32/32 y 60/60; sus reportes permanecen en `work/cloudflare-deploy/`. Son ejecuciones separadas, con cuentas QA diferentes.
+The previous test on Free also passed 32/32 and 60/60; its reports remain in `work/cloudflare-deploy/`. They are separate runs, with different QA accounts.
 
-`tests/remote-smoke.mjs` no forma parte de `npm test` y no realiza ninguna solicitud sin `--allow-remote`. Sólo acepta el origen staging fijo. Ejecutarlo únicamente tras la autorización del responsable del despliegue:
+`tests/remote-smoke.mjs` is not part of `npm test` and does not make any requests without `--allow-remote`. Only accepts the fixed staging origin. Run it only after authorization from the person responsible for the deployment:
 
 ```sh
 node tests/remote-smoke.mjs --allow-remote --phase provision --credentials .local/staging-smoke.json
 ```
 
-La primera fase crea dos cuentas identificadas `QA Brasa A/B`, registra passkeys, verifica una firma EC de inicio de sesión, completa device authorization y guarda exclusivamente sus bearers e IDs en un archivo 0600. Las claves privadas permanecen en memoria y se descartan. Se cierra la sesión de navegador. **Todavía no crea luchadores ni combates.**
+The first phase creates two accounts identified `QA Brasa A/B`, registers passkeys, verifies a login EC signature, completes device authorization, and saves exclusively their bearers and IDs in a file 0600. Private keys remain in memory and are discarded. The browser session is closed. **Does not yet create fighters or combats.**
 
-El administrador debe marcar esas dos cuentas `is_test=1` mediante D1 y después ejecutar:
+The administrator must mark those two accounts `is_test=1` using D1 and then run:
 
 ```sh
 node tests/remote-smoke.mjs --allow-remote --phase verify --credentials .local/staging-smoke.json
 ```
 
-La segunda fase exige que `/v1/me` confirme `is_test` en ambas cuentas y que no tengan luchadores previos. Comprueba perfiles, cambios cosméticos, asignación, Arena y Story reales, reintentos idempotentes, defensa offline, historial inmutable y revocación. No fuerza ganadores ni concede XP mediante fixtures remotos. Al finalizar revoca ambos bearers y los elimina del archivo; si no logra confirmar una revocación, conserva la credencial privada para intervención administrativa. Los reportes y logs contienen estados/IDs, nunca tokens o claves.
+The second phase requires that `/v1/me` confirms `is_test` on both accounts and that they have no previous fighters. Check profiles, cosmetic changes, assignment, real Arena and Story, idempotent retries, offline defense, immutable history, and revocation. It does not force winners or award XP through remote fixtures. Upon completion, revoke both bearers and delete them from the file; If you are unable to confirm a revocation, you retain the private credential for administrative intervention. Reports and logs contain states/IDs, never tokens or keys.
 
-`tests/auth-remote-smoke.test.mjs` comprueba las dos fases contra una base D1 temporal interceptando todos los `fetch` antes de importar el script: **ninguna solicitud de ese test llega a staging**. También comprueba que una cuenta sin la marca de prueba no puede continuar. El workflow local pasó: log `work/identity/auth-remote-harness.log`.
+`tests/auth-remote-smoke.test.mjs` tests the two phases against a temporary D1 database by intercepting all `fetch` before importing the script: **no request for that test reaches staging**. It also verifies that an account without the test flag cannot continue. The local workflow passed: log `work/identity/auth-remote-harness.log`.
 
-## Fuentes oficiales consultadas
+## Official sources consulted
 
-- [Better Auth: soporte D1 nativo](https://better-auth.com/blog/1-5).
-- [Better Auth: passkeys, registro sin sesión y callbacks](https://better-auth.com/docs/plugins/passkey).
-- [Better Auth: autorización de dispositivo](https://better-auth.com/docs/plugins/device-authorization).
+- [Better Auth: native D1 support](https://better-auth.com/blog/1-5).
+- [Better Auth: passkeys, sessionless registration and callbacks](https://better-auth.com/docs/plugins/passkey).
+- [Better Auth: device authorization](https://better-auth.com/docs/plugins/device-authorization).
 - [Better Auth: bearer](https://better-auth.com/docs/plugins/bearer).
-- [Better Auth: seguridad y comprobación de origen](https://better-auth.com/docs/reference/security).
-- [Cloudflare: transacciones con D1.batch](https://developers.cloudflare.com/d1/worker-api/d1-database/#batch).
-- [Cloudflare: compatibilidad Node](https://developers.cloudflare.com/workers/runtime-apis/nodejs/).
-- [Cloudflare: límites y CPU](https://developers.cloudflare.com/workers/platform/limits/).
+- [Better Auth: security and origin verification](https://better-auth.com/docs/reference/security).
+- [Cloudflare: Transactions with D1.batch](https://developers.cloudflare.com/d1/worker-api/d1-database/#batch).
+- [Cloudflare: Node compatibility](https://developers.cloudflare.com/workers/runtime-apis/nodejs/).
+- [Cloudflare: limits and CPU](https://developers.cloudflare.com/workers/platform/limits/).
 
-Las APIs y la comprobación de verificación del usuario también se contrastaron con el código instalado de las versiones fijadas. `scripts/auth-schema.mjs` imprime el SQL generado para revisión; no sobrescribe las tablas adicionales de la migración ni toca D1 remoto.
+The APIs and user verification checking were also checked against the installed code of the pinned versions. `scripts/auth-schema.mjs` prints the generated SQL for review; it does not overwrite additional tables in the migration or touch remote D1.
 
 
-### Experiencia de entrada actual (21 septiembre 2026)
+### Current entry experience (21 September 2026)
 
-Una acción primaria por pantalla, sin nombre de cuenta ni correo obligatorios. El nombre del luchador se elige después en el juego. La confirmación explícita del código de dispositivo permanece obligatoria. Cancelar el prompt vuelve a Continuar sin alerta. Recuperación y segunda passkey están en rutas secundarias; añadir otra credencial conserva la exigencia de sesión reciente y mismo propietario.
+One primary action per screen, with no required account name or email. The fighter's name is chosen later in the game. Explicit confirmation of the device code remains mandatory. Canceling the prompt returns to Continue without alert. Recovery and second passkey are on secondary routes; Adding another credential preserves the requirement for a recent session and the same owner.
 
-`/auth/art/` sirve las copias verificadas del fondo, Nima, materiales compartidos y tokens. La CSP permite estos estilos únicamente desde el mismo origen. El helper de Keychain debe incluirse y firmarse dentro de la distribución macOS; el binario actual sirve al entorno de desarrollo. El cierre de sesión deja primero una marca local de no-restauración para que un fallo de borrado no reactive una sesión. Métricas locales: categorías y tiempos, sin tokens ni identificadores.
+`/auth/art/` serves the verified copies of the background, Nima, shared materials and tokens. The CSP allows these styles only from the same origin. The Keychain helper must be included and signed within the macOS distribution; the current binary serves the development environment. Signing out first writes a local non-restore flag so that a wipe failure does not reactivate a session. Local metrics: categories and times, without tokens or identifiers.
 
-Ver `reports/AUTH-EXPERIENCE.md` y `work/auth-experience` para pruebas y capturas con fixtures.
+See `reports/AUTH-EXPERIENCE.md` and `work/auth-experience` for tests and screenshots with fixtures.

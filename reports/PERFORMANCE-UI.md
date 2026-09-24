@@ -1,43 +1,43 @@
-# Foco y rendimiento de Brasa
+# Focus and performance of Brasa
 
-21 de septiembre de 2026 · Godot 4.7.2 · Apple M1 Max
+21 September 2026 Godot 4.7.2 Apple M1 Max
 
-Se elimina el contorno exterior de foco que se recortaba y se reduce trabajo repetido en animación, interfaz y presentación. El arte de los marcos conserva su material pintado. La navegación por teclado conserva una señal visible dentro del control.
+The outer focus contour that was cropped is eliminated and repeated work in animation, interface and presentation is reduced. The art of the frames preserves its painted material. Keyboard navigation retains a visible sign within the control.
 
-| Área | Antes | Después |
+| Area | Before | After |
 | --- | --- | --- |
-| Foco de controles | Trazo claro expandido fuera del control, susceptible a recorte | Relleno ámbar interior al 22%, retraído 4 px; sin borde. Compartido por botones, campos, selectores y pestañas. Token de grosor actualizado a cero. |
-| Tema y materiales | Copias profundas del registro completo para consultas internas pequeñas | Lectura interna del registro en caché; las API públicas siguen devolviendo copias defensivas. |
-| Sprites heridos | Consultas de archivos y copias de bancos durante cada actualización | Validación al preparar el combate, caché acotada de bancos, copia del fotograma necesario y reutilización del resultado mientras no cambia la pose o el nivel de daño. |
-| Texturas y salud | Textura sana intermedia y recálculos ante la misma salud | Asignación final única; actualizaciones de salud idénticas terminan inmediatamente. Las llamadas explícitas de resolución siguen refrescando los metadatos. |
-| HUD del combate | Reconstrucción de salud, estados y turnos cada frame | Actualización cuando el combate produce eventos; reloj independiente. |
-| Listas de personajes | Retratos recortados seguían animándose | Se suspenden al salir del área visible y se reanudan al volver. |
-| Arena oculta | Animación y dibujo bajo pantallas opacas completas | Arena suspendida y oculta mientras está cubierta; se restaura al cerrar. Se conserva durante transiciones y diálogos translúcidos. |
-| Audio | Asignaciones repetidas de pausa y mezcla | Cambios de pausa y atenuación aplicados solo cuando cambian; ajustes de volumen siguen siendo inmediatos. |
-| Efectos | Redibujado incluso sin partículas ni cámara activa | Reposo cuando no hay efectos, marcadores pendientes ni sacudida. Se conserva el último redibujado de limpieza. |
+| Control focus | Light stroke expanded out of control, susceptible to clipping | Interior amber fill at 22%, retracted 4 px; no border. Shared by buttons, fields, selectors and tabs. Thickness token updated to zero. |
+| Theme and materials | Deep copies of the entire log for small internal queries | Internal reading of cached record; public APIs still return defensive copies. |
+| injured sprites | File queries and bank copies during each update | Validation when preparing for combat, bounded bank cache, copy of the necessary frame and reuse of the result while not changing the pose or damage level. |
+| Textures and health | Intermediate healthy texture and recalculations for the same health | Single final assignment; Identical health updates end immediately. Explicit resolution calls continue to refresh the metadata. |
+| combat HUD | Reconstruction of health, states and turns each frame | Update when combat produces events; independent clock. |
+| Character lists | Cropped portraits continued to come alive | They are suspended when leaving the visible area and resumed when returning. |
+| Hidden Arena | Animation and drawing under full opaque screens | Arena suspended and hidden while covered; It is restored upon closing. It is preserved during transitions and translucent dialogues. |
+| Audio | Repeated pause and mix assignments | Pause and fade changes applied only when they change; Volume adjustments remain immediate. |
+| Effects | Redrawn even without particles or active camera | Rest when there are no effects, pending markers or shake. The last cleaning redraw is preserved. |
 
-## Medición de CPU
+## CPU measurement
 
-Mismo programa, cachés calientes, perfiles desechables, ejecución headless. Medianas; estas cifras no miden FPS, GPU ni el tiempo total de un frame. No implican que todo el juego sea quince veces más rápido.
+Same program, hot caches, disposable profiles, headless execution. Medium; These figures do not measure FPS, GPU or the total time of a frame. They do not imply that the entire game is fifteen times faster.
 
-| Operación | Antes | Después | Reducción |
+| Operation | Before | After | Reduction |
 | --- | ---: | ---: | ---: |
-| Actualizar dos luchadores heridos | 392 µs | 26 µs | 93,4% |
-| Construir y estilizar 100 botones | 75,48 ms | 4,87 ms | 93,6% |
-| Refrescar el HUD del combate | 56 µs | 28 µs | 50% |
+| Upgrade two wounded fighters | 392 µs | 26 µs | 93,4% |
+| Build and style 100 buttons | 75,48 ms | 4,87 ms | 93,6% |
+| Refresh the combat HUD | 56 µs | 28 µs | 50% |
 
-Repetir la misma salud pasó de 382 µs a menos de 1 µs de media; la mediana queda por debajo de la resolución del temporizador. Se midieron 1.200 muestras de animación y salud, 20 lotes de botones y 1.000 refrescos del HUD.
+Repeating the same health went from 382 µs to less than 1 µs on average; the median falls below the timer resolution. 1.200 animation and health samples, 20 button batches, and 1.000 HUD refreshments were measured.
 
-[Datos previos](../../../work/performance-ui/baseline.json) · [Datos posteriores](../../../work/performance-ui/after.json) · [Programa de medición](../../../work/performance-ui/benchmark.gd)
+Previous data (`work/performance-ui/baseline.json`; not included) · Post data (`work/performance-ui/after.json`; not included) · Measurement program (`work/performance-ui/benchmark.gd`; not included)
 
-## Validación
+## Validation
 
-24 suites pasaron, cubriendo combate, contacto, reloj de movimientos, secuencias, daño ilustrado, efectos, audio/pausa, identidad, Historia, personalización, compañeros, tema y refugios. La nueva prueba de eficiencia verifica foco sin borde, protección de datos compartidos, suspensión/reanudación de retratos y cobertura de arena.
+24 suites passed, covering combat, contact, move clock, sequences, illustrated damage, effects, audio/pause, identity, story, customization, companions, theme and shelters. The new efficiency test verifies borderless focus, shared data protection, portrait pause/resume, and sand coverage.
 
-La primera ejecución encontró una invalidación demasiado agresiva al editar sockets con la misma textura; se corrigió conservando el refresco explícito. La suite de consistencia volvió a pasar: 2.213 comprobaciones sin fallos. Los resultados originales y la consolidación final se conservan por separado.
+The first run found overly aggressive overriding when editing sockets with the same texture; fixed by retaining the explicit refresh. The consistency suite passed again: 2.213 checks without failures. The original results and the final consolidation are kept separately.
 
-Auditoría nativa: 143 comprobaciones sin fallos, 74 capturas (37 superficies en escritorio y móvil). Se revisaron las dos paredes visuales y capturas individuales de Ajustes y Redistribuir mejoras. No se midió FPS en una sesión interactiva prolongada.
+Native auditing: 143 checks without failures, 74 captures (37 surfaces on desktop and mobile). Reviewed both visual walls and individual screenshots of Adjustments and Redistribute improvements. FPS was not measured in a long interactive session.
 
-[Resultados finales](../../../work/performance-ui/checks/final-results.json) · [Escritorio](../../../work/performance-ui/screens/wall-1360x880.png) · [Móvil](../../../work/performance-ui/screens/wall-390x844.png)
+Final Results (`work/performance-ui/checks/final-results.json`; not included) · Desktop (`work/performance-ui/screens/wall-1360x880.png`; not included) · Mobile (`work/performance-ui/screens/wall-390x844.png`; not included)
 
-La comparación de scripts con el respaldo previo limita los cambios a diez archivos de presentación y sus cachés. No se editaron reglas de combate, progresión, guardados del usuario, backend ni sprites. La preparación explícita de los bancos de daño sigue siendo el punto de validación de cambios de archivos durante una sesión de desarrollo.
+Comparing scripts with the previous backup limits changes to ten presentation files and their caches. No combat rules, progression, user saves, backend or sprites were edited. Explicit preparation of damage banks remains the point of validation of file changes during a development session.

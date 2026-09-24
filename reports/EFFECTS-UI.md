@@ -1,42 +1,42 @@
-# Efectos · Partículas visibles y colección con pruebas
+# Effects · Visible particles and collection previews
 
-## Presentación e interacción
+## Presentation and interaction
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Partículas dibujadas por el padre, detrás del sprite opaco. | Capa de partículas encima de la ilustración, repartidas por los flancos y alrededor del torso/pies, sin círculos de energía. |
-| Farol tenía pocas chispas; los efectos compartían una apariencia muy parecida. | Mayor densidad y contraste, núcleos luminosos, halos suaves y formas diferenciadas: chispas, luciérnagas, pétalos, lluvia, ceniza, hojas y cristales. Nacen y desaparecen gradualmente. |
-| La estela dependía del breve fotograma de sombra del golpe. | Mantiene una cola de partículas que se desvanece durante aproximadamente medio segundo después del movimiento. |
-| Auras y estelas mezcladas en una lista de texto. | Secciones Auras / Estelas y tarjetas con muestras del renderer real, nombre, selección y requisito. Dos o tres columnas según el espacio. |
-| Un efecto bloqueado sólo mostraba un aviso. | Puede probarse sobre el compañero. Guardar queda desactivado y Volver recupera el borrador sin conceder propiedad. También se conservan las pruebas de colores y skins. |
-| La estela podía desaparecer antes de apreciarse. | Elegirla demuestra un golpe inmediatamente y la sección repite el gesto cada 2,2 segundos cuando el personaje está en reposo. |
-| Movimiento reducido suprimía la muestra de estela. | En el editor ofrece una muestra estática de cinco partículas como máximo, sin golpes automáticos. En combate no añade estelas en movimiento reducido. |
+| Particles drawn by the parent node, behind the opaque sprite. | Layer of particles on top of the illustration, spread along the sides and around the torso/feet, without energy circles. |
+| Lantern had few sparks; the effects shared a very similar appearance. | Greater density and contrast, luminous nuclei, soft halos and differentiated shapes: sparks, fireflies, petals, rain, ash, leaves and crystals. They are born and gradually disappear. |
+| The trail depended on the short shadow frame of the hit. | Maintains a tail of particles that fades for about half a second after movement. |
+| Auras and trails mixed in a text list. | Auras / Trails sections and cards with samples of the real renderer, name, selection and requirement. Two or three columns depending on the space. |
+| A locked effect only displayed a warning. | It can be tested on the companion. Save is disabled and Return recovers the draft without granting ownership. Color and skin tests are also preserved. |
+| The trail could disappear before being appreciated. | Choosing it demonstrates a hit immediately and the section repeats the gesture every 2.2 seconds when the character is at rest. |
+| Reduced motion suppressed trail display. | In the editor it offers a static sample of up to five particles, without automatic attacks. In combat it does not add trails in reduced movement. |
 
-Hay **7 auras y 5 estelas activas**, además de las opciones Sin aura / Sin estela. Se conservan las formas y tiempos del combatiente, sin cambios en reglas, daño, iniciativa o estadísticas.
+There are **7 auras and 5 trails active**, in addition to the No Aura / No Trail options. The combatant's forms and timing are preserved, with no changes to rules, damage, initiative, or statistics.
 
-## Nuevos efectos
+## New effects
 
-| Tipo | Efecto | Requisito |
+| Type | Effect | Requirement |
 | --- | --- | --- |
-| Aura | Pétalos de cempasúchil | Nivel 3 |
-| Aura | Llovizna lunar | Nivel 6 |
-| Aura | Ceniza viva | Encuentro 12 de Historia |
-| Aura | Cristales de amatista | 6 victorias de Liga |
-| Estela | Cometa azul | Encuentro 30 de Historia |
-| Estela | Hojas al viento | Nivel 8 |
-| Estela | Polvo de cobre | 5 victorias de Liga |
+| Aura | Cempasuchil petals | Level 3 |
+| Aura | Moon Drizzle | Level 6 |
+| Aura | live ash | Story Mode encounter 12 |
+| Aura | amethyst crystals | 6 League wins |
+| Trail | blue kite | Story Mode encounter 30 |
+| Trail | Leaves in the wind | Level 8 |
+| Trail | copper powder | 5 League wins |
 
-Los niveles y victorias se alcanzan con un luchador; las recompensas siguen perteneciendo al inventario compartido. Las condiciones antiguas no se cambiaron. La vista previa utiliza una apariencia temporal independiente: ni el botón ni el controlador permiten confirmar una prueba bloqueada.
+Levels and victories are achieved with one fighter; rewards still belong to shared inventory. The old conditions were not changed. The preview uses a separate temporary appearance: neither the button nor the controller allows you to confirm a locked test.
 
-## Validación
+## Validation
 
-- **3167 comprobaciones de personalización, 0 fallos:** siete tamaños, propiedad, borrador, confirmación, pruebas bloqueadas y encuadres.
-- **303 comprobaciones de partículas, 0 fallos:** muestras deterministas, máximo de 28 partículas por emisor, delante de la ilustración, persistencia/desvanecimiento de estelas, pausa, movimiento reducido y demostración automática sin equipar.
-- **1046 comprobaciones de identidad, 0 fallos:** desbloqueos, integridad y persistencia mediante archivos desechables.
-- **172 comprobaciones de FX y repetición, 0 fallos.** La muestra técnica antigua colocaba la transformación de Ascua 3 px fuera del margen móvil. Se comprobó que la geometría anterior y la actual eran idénticas y se ajustó 8 px exclusivamente la posición de esa muestra, sin cambiar la cámara ni los personajes del juego.
-- **74 comprobaciones de foco, 0 fallos.**
-- **11 pruebas del servidor local, 0 fallos:** efectos nuevos, paletas y operaciones de identidad. Se comprueban umbrales, rechazo de equipamiento no poseído y estadísticas intactas.
+- **3167 customization checks, 0 failures:** seven sizes, ownership, draft, confirmation, locked previews, and framing.
+- **303 particle checks, 0 failures:** deterministic samples, maximum 28 particles per emitter, in front of artwork, trail persistence/fading, pause, reduced movement, and unequipped automatic demo.
+- **1046 identity checks, 0 failures:** unlocks, integrity and persistence using disposable files.
+- **172 FX checks and replay, 0 failures.** The old technical sample placed the Ascua 3 px transform outside the moving range. It was verified that the previous and current geometry were identical and 8 px was adjusted exclusively to the position of that sample, without changing the camera or the game characters.
+- **74 focus checks, 0 faults.**
+- **11 local server tests, 0 bugs:** new effects, palettes and identity operations. Thresholds, rejection of unowned equipment, and intact statistics are checked.
 
-[Revisión visual y video](effects-ui/index.html). Dieciséis capturas nativas finales y video de cuatro segundos, generado a partir de 64 fotogramas del juego con reloj de presentación manual. Fixtures en memoria; no se modificaron partidas personales ni datos remotos. `work/effects-ui/demo/` es la evidencia visual final; `native/` conserva la matriz de interfaz previa al ajuste final del contorno de pétalos y fundido.
+[Report index](README.md). Sixteen final native captures and four-second video, generated from 64 game frames with manual display clock. Fixtures in memory; No personal saves or remote data were modified. `work/effects-ui/demo/` is the final visual evidence; `native/` preserves the interface matrix prior to the final adjustment of the petal outline and fade.
 
-Catálogo versión 4 exportado y sincronizado con el backend local. **Los siete efectos nuevos, al igual que los nuevos colores, todavía requieren publicar el catálogo en Cloudflare para desbloquearlos online.** La mejora de representación de los efectos existentes pertenece al cliente del juego.
+Catalog version 4 exported and synchronized with the local backend. **The seven new effects, as well as the new colors, still require publishing the catalog on Cloudflare to unlock them online.** The rendering improvement for existing effects belongs to the game client.

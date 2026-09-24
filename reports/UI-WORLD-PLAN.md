@@ -1,39 +1,39 @@
-# Historia como lugar · auditoría y plan previo
+# Story Mode as a place · audit and previous plan
 
-## Arquitectura comprobada
+## Proven architecture
 
-`scenes/main.tscn` instancia `main.gd`; Historia se abre como `StoryPanel`, un Control generado en código que emite señales al controlador. `StoryProgression` conserva toda la lógica y persistencia. No se modifica ese límite.
+`scenes/main.tscn` instance `main.gd`; Story Mode opens as `StoryPanel`, a Control generated in code that outputs signals to the controller. `StoryProgression` preserves all logic and persistence. That limit is not modified.
 
-StoryPanel usa MarginContainer → VBoxContainer → cabecera, HBox de navegación, ScrollContainer con cuerpo dinámico y pie fijo. Los cinco destinos son Ruta, Mejoras, Movimientos, Compañeros y Legado. Los breakpoints actuales son 600 px para teléfono, 540 px de alto para formato corto, y 1100 px para columnas. Hay fixtures de siete tamaños entre 390×844 y 1920×1080, incluyendo 844×390.
+StoryPanel uses MarginContainer → VBoxContainer → header, navigation HBox, ScrollContainer with dynamic body and fixed footer. The five destinations are Route, Upgrades, Moves, Companions, and Legacy. The current breakpoints are 600 px for phone, 540 px height for short format, and 1100 px for columns. There are fixtures of seven sizes between 390×844 and 1920×1080, including 844×390.
 
-Su aspecto actual proviene casi por completo de StyleBoxFlat: fondo azul verdoso plano, tarjetas uniformes con esquinas redondeadas, navegación rectangular y fichas de encuentros en grid. La ficha del rival aparece debajo del grid y su preview estándar mide 166×172, por lo que queda fuera del primer viewport en escritorio. SystemFont usa Avenir Next/DejaVu Sans/Arial. No hay un sistema de superficies ilustradas ni NinePatch en esta pantalla.
+Its current look comes almost entirely from StyleBoxFlat: flat blue-green background, uniform cards with rounded corners, rectangular navigation, and grid encounter tabs. The opponent's chip appears below the grid and its standard preview measures 166×172, so it is outside the first viewport on the desktop. SystemFont uses Avenir Next/DejaVu Sans/Arial. There is no illustrated surface system or NinePatch on this screen.
 
-El juego ya tiene FighterView con sprites y apariencia dinámica, fondos pintados de los Faroles y Tormenta, catálogo de cosméticos y metadatos de capítulos. Se reutilizan los personajes, animaciones, identidad y todos los datos. No se sustituye el combate ni se cambian valores de progresión.
+The game already has FighterView with dynamic appearance and sprites, painted Lantern and Storm backgrounds, cosmetic catalog and chapter metadata. Characters, animations, identity and all data are reused. Combat is not replaced nor progression values ​​are changed.
 
-## Dirección visual
+## Visual direction
 
-Ilustración 2D pintada, con bordes suaves y pincel visible. Piedra gastada, madera oscura, cobre, cuerda y paños cosidos. Luz de faroles ámbar contra niebla azul petróleo. Colores minerales y de tierra; acentos acotados según capítulo. Ornamentos de sol, brasero y sendero, coherentes con Brasa. Sin fotorrealismo, pixel art ni iconos planos ajenos al mundo.
+2D painted illustration, with soft edges and visible brush. Worn stone, dark wood, copper, rope and sewn cloths. Amber lantern light against petrol blue fog. Mineral and earth colors; limited accents according to chapter. Sun, brazier and path ornaments, consistent with Brasa. Without photorealism, pixel art or flat icons foreign to the world.
 
-El rival domina el encuentro a la derecha en escritorio; información y acciones mantienen contraste a la izquierda. La ruta se representa mediante hitos conectados, con números y estados nativos. En móvil la composición se apila y conserva scroll y pie de acciones. Los jefes usan más escala, luz y un marco/insignia propios.
+The rival dominates the match on the right on the desk; information and actions maintain contrast to the left. The route is represented by connected milestones, with numbers and native states. On mobile the composition is stacked and preserves scroll and footer actions. Bosses use more scale, light, and a frame/badge of their own.
 
-## Plan de assets
+## Asset plan
 
-| Asset | Uso |
+| Asset | Use |
 | --- | --- |
-| `assets/ui/story/journey-v1.png` | Camino de faroles y patio de entrenamiento: capítulo inicial y variantes templadas. |
-| `assets/ui/story/storm-v1.png` | Patio de raíces, hierro y lluvia: identidad del capítulo 2 y variantes de tormenta. |
-| `assets/ui/workshop/workshop-v1.png` | Taller y equipo de entrenamiento: Mejoras/Movimientos. |
-| `assets/ui/companions/camp-v1.png` | Refugio alrededor de un fuego: Compañeros. |
-| `assets/ui/legacy/archive-v1.png` | Archivo y pedestales de recuerdos: Legado. |
-| `assets/ui/shared/surfaces-v1.png` | Atlas reutilizable de superficies y marcas: botón primario/secundario, marco estándar/jefe, hito y separador. |
-| `assets/ui/shared/props-v1.png` | Atlas transparente: pertenencias de luchadores, recuerdos de jefes, mochila y medalla de Arena. |
+| `assets/ui/story/journey-v1.png` | Lantern Path and Training Yard: Opening Chapter and Tempered Variants. |
+| `assets/ui/story/storm-v1.png` | Courtyard of Roots, Iron and Rain: Chapter Identity 2 and Storm Variants. |
+| `assets/ui/workshop/workshop-v1.png` | Workshop and training equipment: Improvements/Movements. |
+| `assets/ui/companions/camp-v1.png` | Shelter around a fire: Companions. |
+| `assets/ui/legacy/archive-v1.png` | Archive and pedestals of memories: Legacy. |
+| `assets/ui/shared/surfaces-v1.png` | Reusable atlas of surfaces and marks: primary/secondary button, standard/boss frame, milestone and separator. |
+| `assets/ui/shared/props-v1.png` | Transparent Atlas: Fighters' belongings, boss souvenirs, backpack and Arena medal. |
 
-Todos los recursos se generan sin texto, cifras ni etiquetas. Sus regiones se registran una vez y se consumen con AtlasTexture y StyleBoxTexture/nine-slice. El arte no contiene estado del juego.
+All resources are generated without text, figures or labels. Your regions are registered once and consumed with AtlasTexture and StyleBoxTexture/nine-slice. Art does not contain game state.
 
-## Sistema y secuencia
+## System and sequence
 
-Un registro de temas enlaza IDs estables con fondos, superficies, acentos y props. Condiciones de datos eligen como máximo unos pocos objetos según personaje, apariencia, objetos poseídos y encuentros superados. Los props ignoran el ratón, se mantienen detrás del contenido y nunca conceden logros.
+A theme registry links stable IDs to backgrounds, surfaces, accents, and props. Data conditions choose at most a few items based on character, appearance, possessed items, and passed encounters. Props ignore the mouse, stay behind the content, and never grant achievements.
 
-Primero se integra la Ruta y se comprueban escala del rival, lectura y navegación; después se aplica la misma familia al taller, refugio y legado dentro de Historia. No se rediseña el resto del juego en esta entrega. Los fondos se cargan al abrir la sección y se libera la referencia anterior; no se precargan todos los capítulos. Movimiento ambiental, si se añade, debe respetar la preferencia de movimiento reducido.
+First the Route is integrated and the rival's scale, reading and navigation are checked; The same family is then applied to the workshop, refuge and legacy within Story Mode. The rest of the game is not redesigned in this installment. Funds are debited upon opening the section and the previous reference is released; Not all chapters are preloaded. Ambient motion, if added, must respect the reduced motion preference.
 
-La entrega requiere capturas nativas, comparación con la pantalla anterior, estados normal/hover/pressed/focus/disabled, siete tamaños, navegación/acciones originales y guardados intactos. Los snapshots de código y hashes iniciales están en `work/world-ui/before.json`.
+Delivery requires native captures, comparison with previous screen, normal/hover/pressed/focus/disabled states, seven sizes, original navigation/actions and intact saves. Code snapshots and initial hashes are in `work/world-ui/before.json`.

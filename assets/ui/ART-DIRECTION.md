@@ -1,13 +1,13 @@
-# Brasa · superficies y lugares de Historia
+# Brasa · surfaces and places of Story Mode
 
-Pintura digital 2D con textura de pincel, materiales gastados y siluetas legibles. Luz cálida de faroles, sombras azul petróleo, piedra/ocre/cobre, madera y tejidos. La Ruta inicial mira hacia el camino de faroles; Tormenta usa raíces, hierro, musgo y roca mojada. Taller, refugio y archivo son lugares distintos dentro del mismo mundo.
+2D digital painting with brush texture, worn materials and legible silhouettes. Warm light from lanterns, petrol blue shadows, stone/ocher/copper, wood and fabrics. The initial Route looks towards the lantern path; Storm uses roots, iron, moss and wet rock. Workshop, shelter and archive are different places within the same world.
 
-Los cinco fondos contienen espacio vacío útil para controles y personajes nativos. No son pantallas completas. Los sprites actuales se dibujan por separado y conservan nombre, aspecto y animación. Números, XP, capítulos, recomendaciones y etiquetas siguen siendo texto de Godot.
+All five backgrounds contain empty space useful for native controls and characters. They are not full screens. Current sprites are drawn separately and retain their name, appearance, and animation. Numbers, XP, chapters, recommendations and tags are still Godot text.
 
-`shared/surfaces-v1.png` contiene ocho superficies aisladas: dos botones, dos marcos, tres medallones y un separador. `shared/props-v1.png` contiene seis objetos: uniforme azul y cinturón amarillo de Tepa, vendas jade de Balam, brasero de Ascua, reliquia de tormenta, mochila usada y medalla de Arena. Las regiones reales, no una cuadrícula asumida, se usan para evitar recortar objetos.
+`shared/surfaces-v1.png` contains eight isolated surfaces: two buttons, two frames, three medallions, and a separator. `shared/props-v1.png` contains six items: Tepa's blue uniform and yellow belt, Balam's jade bandages, Ascua's brazier, storm relic, used backpack, and Arena medal. Actual regions, not an assumed grid, are used to avoid clipping objects.
 
-El registro `data/ui_visual_manifest.json` define contextos, estilos, regiones y condiciones de decoración. Sus objetos son decorativos, no controles, no comprobaciones de logros y no lógica de progresión. Los fondos se cargan bajo demanda. El atlas de superficies se adapta una vez a escala de interfaz por Godot y se reutiliza.
+The `data/ui_visual_manifest.json` record defines contexts, styles, regions and decoration conditions. Its objects are decorative, not controls, not achievement checks, and not progression logic. Funds are loaded on demand. The surface atlas is scaled once by Godot and reused.
 
-Se generaron siete imágenes con la herramienta integrada `image_gen`, conservando los PNG originales y el canal alfa. La herramienta no ofrecía selector explícito «2.5»; no se cambió a una API o CLI. Los prompts completos, destinos y hashes están en [GENERATION-PROMPTS.json](GENERATION-PROMPTS.json).
+Seven images were generated with the built-in tool `image_gen`, preserving the original PNGs and alpha channel. The tool did not offer explicit “2.5” selector; it was not changed to an API or CLI. The complete prompts, destinations and hashes are in [GENERATION-PROMPTS.json](GENERATION-PROMPTS.json).
 
-Fuentes de implementación: [StyleBoxTexture / nine-patch](https://docs.godotengine.org/en/4.6/classes/class_styleboxtexture.html). El comportamiento se valida además con el Godot 4.7.2 instalado y capturas nativas.
+Implementation sources: [StyleBoxTexture / nine-patch](https://docs.godotengine.org/en/4.6/classes/class_styleboxtexture.html). The behavior is also validated with Godot 4.7.2 installed and native captures.

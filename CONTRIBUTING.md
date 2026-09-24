@@ -1,9 +1,9 @@
-# Contribuir a Brasa
+# Contributing to Brasa
 
-Lee [desarrollo](docs/DEVELOPMENT.md), [AGENTS.md](AGENTS.md) y [licencias](LICENSING.md). Propón cambios acotados con el problema, comportamiento resultante y pruebas pertinentes. No mezcles cambios de UI con rebalanceo o migraciones de cuentas sin necesidad explícita.
+Read [development](docs/DEVELOPMENT.md), [AGENTS.md](AGENTS.md), and [licensing](LICENSING.md). Keep changes focused and describe the problem, resulting behavior, and relevant validation. Do not mix a UI change with rebalancing or account migrations unless the task requires it.
 
-Puedes reutilizar y proponer código bajo MIT manteniendo avisos de terceros. Solo aporta contenido para el que tengas derechos suficientes; documenta la procedencia de assets nuevos. El arte existente no está bajo MIT. No se requiere ni se presume cesión exclusiva de derechos por abrir un PR.
+You may reuse and contribute code under MIT while preserving third-party notices. Contribute only material for which you have sufficient rights, and document the provenance of new assets. Existing artwork is not MIT-licensed. Opening a pull request does not require or imply an exclusive copyright assignment.
 
-No adjuntes tokens, partidas personales, bases ni audio reservado. Los reportes visuales deben usar fixtures y distinguirlos de datos reales. Las pruebas remotas necesitan un entorno autorizado; usa pruebas locales por defecto.
+Do not attach tokens, personal saves, databases, or reserved audio. Visual reports should use fixtures and identify them as such. Remote tests require a specifically authorized environment; use local tests by default.
 
-Incluye capturas si cambia UI y describe límites o pruebas no ejecutadas. Consulta [seguridad](SECURITY.md) para incidencias sensibles.
+Include screenshots when changing UI and disclose limitations or tests not run. See [security](SECURITY.md) for sensitive findings. Write repository documentation, skills, and contributor instructions in English; preserve the game's Spanish localization unless a task explicitly changes it.

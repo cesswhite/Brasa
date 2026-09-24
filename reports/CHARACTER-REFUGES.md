@@ -1,44 +1,44 @@
-# Cada quien, su refugio
+# Each one, their refuge
 
-El menú utiliza 21 ilustraciones originales: los 15 cuerpos jugables y los seis individuos desbloqueables. El cuerpo elegido en Personalizar tiene prioridad sobre el arquetipo de combate. Cada personaje aparece integrado en su ambiente, ocupado en una rutina cotidiana; no hay un luchador animado superpuesto.
+The menu uses 21 original artwork: the 15 playable bodies and the six unlockable individuals. The body chosen in Customize has priority over the combat archetype. Each character appears integrated into their environment, busy in a daily routine; there is no superimposed animated fighter.
 
-[Galería de escenas y capturas nativas](character-refuges/index.html) · [Prompts completos](../../../work/menu-refuge/prompts-v2.json) · [Procedencia, dimensiones y hashes](../../../work/menu-refuge/art-acceptance.json).
+[Report index](README.md) · Full Prompts (`work/menu-refuge/prompts-v2.json`; not included) · Provenance, dimensions and hashes (`work/menu-refuge/art-acceptance.json`; not included).
 
-## Cambios visuales
+## Visual changes
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Botones casi iguales en una única cuadrícula. | Historia es la acción principal; Arena y Arena online son secundarias; crecimiento y colección forman un segundo grupo; ajustes, ayuda y registro son discretos. Se conservan las doce rutas. |
-| Fondo genérico y figura animada encima. | Ilustración completa elegida por `appearance.body_style_id`, incluidos los seis individuos. Sin props decorativos pegados encima. |
-| Primera propuesta con montañas, vegetación y encuadres demasiado parecidos. | Hábitats propios: chinampas, cantera, matorral, mercado desértico, cocina, costa, bosque, selva nocturna, patio, zacatonal, copa de árbol, tejados, talleres y cabaña nevada. Solo Nima conserva el cañón original. |
-| Gestos y poses repetidos. | Comer, lavar una taza, plantar una flor, podar, recolectar hongos, ordenar mercancía, cocinar, reparar una red, partir bellotas, rastrear, encender un farol, desenterrar raíces, recoger fruta, dormir, tender ropa, reparar una bolsa, leer, modelar barro, pulir un escudo, amasar y coser. |
-| Navegación siempre en el mismo lado. | Columna a izquierda o derecha según la composición; distinto punto de recorte por escena. En móvil la ilustración ocupa la zona superior y las opciones siguen debajo con scroll de foco. |
-| Foco inicial en cerrar. | Foco inicial en la primera acción disponible. Se mantienen Esc, Tab, controles de 48 px, estados deshabilitados durante combate, pausa y movimiento reducido. |
-| Pie genérico. | Título y frase propios del lugar, con velo inferior para conservar contraste en escritorio. |
+| Almost identical buttons in a single grid. | Story is the main action; Arena and Arena online are secondary; growth and collection form a second group; settings, help and registration are discreet. The twelve routes are preserved. |
+| Generic background and animated figure on top. | Complete illustration chosen by `appearance.body_style_id`, including all six individuals. No decorative props glued on top. |
+| First proposal with mountains, vegetation and frames that are too similar. | Own habitats: chinampas, quarry, bush, desert market, kitchen, coast, forest, night jungle, patio, zacatonal, treetop, roofs, workshops and snowy cabin. Only Nima retains the original barrel. |
+| Repeated gestures and poses. | Eat, wash a cup, plant a flower, prune, collect mushrooms, sort merchandise, cook, repair a net, split acorns, track, light a lantern, dig up roots, pick fruit, sleep, hang clothes, repair a bag, read, model clay, polish a shield, knead and sew. |
+| Navigation always on the same side. | Column left or right depending on the composition; different trim point per scene. On mobile, the illustration occupies the upper area and the options continue below with a focus scroll. |
+| Initial focus on closing. | Initial focus on the first available action. Esc, Tab, 48 px controls, disabled states during combat, pause, and reduced movement remain. |
+| Generic foot. | Title and phrase specific to the place, with a lower veil to preserve contrast on the desktop. |
 
-## Arte y selección
+## Art and selection
 
-Los PNG finales están en `assets/ui/refuges/` y se registran en `data/ui_visual_manifest.json`. `data/character_refuges.json` define título, frase, foco y lado de menú. `WorldBackdrop` conserva su registro compartido y carga solo el fondo activo; `GameHomePanel` sigue usando tipografía, cuero/bronce, tarjetas, cabecera y foco de Historia. El cambio de composición del menú responde a la solicitud explícita del usuario.
+The final PNGs are in `assets/ui/refuges/` and are registered in `data/ui_visual_manifest.json`. `data/character_refuges.json` defines title, phrase, focus and menu side. `WorldBackdrop` keeps your shared registry and loads only the active background; `GameHomePanel` continues to use typography, leather/brass, cards, header and Story Mode focus. The change of menu composition responds to the user's explicit request.
 
-Las imágenes se generaron con la herramienta integrada **image_gen**, usando el sprite canónico como referencia de identidad. No se seleccionó un modelo por nombre. Los PNG finales son copias exactas de los originales generados, sin retoques de píxeles. La primera tanda repetitiva queda archivada fuera del juego en `work/menu-refuge/rejected-v1/`; no se usa como arte final. Son escenas estáticas por cuerpo, no variaciones aleatorias ni una simulación dinámica de tareas.
+Images were generated with the built-in tool **image_gen**, using the canonical sprite as an identity reference. A model was not selected by name. The final PNGs are exact copies of the generated originals, without pixel retouching. The first repetitive batch is archived outside the game in `work/menu-refuge/rejected-v1/`; It is not used as final art. They are static scenes per body, not random variations or a dynamic simulation of tasks.
 
-## Verificación
+## Verification
 
-- 21 fondos: dimensiones verificadas, fuentes originales y hashes registrados.
-- `test_character_refuges.gd`: **4581 comprobaciones, 0 fallos**. Selección por apariencia, 21 cuerpos × cuatro tamaños, doce destinos, navegación de teclado, scroll completo, carga del fondo correcto y perfil inmutable. Doce capturas nativas de seis personajes, incluidas composiciones a ambos lados y una variante familiar.
-- `test_visual_menu_navigation.gd`: **294 comprobaciones, 0 fallos**. Rutas reales de Main, pausa, disponibilidad, Esc, ciclo de foco y conservación de guardados desechables.
-- `test_world_visuals.gd`: **1453 comprobaciones, 0 fallos**. Registro compartido, materiales, decoraciones y contextos existentes.
-- Componentes compartidos: **68/0**. Auditoría final de Main con dos capturas nativas adicionales: **15/0**. Total de las cinco suites finales: **6411 comprobaciones, 0 fallos**.
+- 21 funds: verified dimensions, original sources and registered hashes.
+- `test_character_refuges.gd`: **4581 checks, 0 failures**. Selection by appearance, 21 bodies × four sizes, twelve destinations, keyboard navigation, full scroll, correct background loading and immutable profile. Twelve native captures of six characters, including compositions on both sides and a family variant.
+- `test_visual_menu_navigation.gd`: **294 checks, 0 failures**. Real routes for Main, pause, availability, Esc, focus cycle and saving disposable saves.
+- `test_world_visuals.gd`: **1453 checks, 0 failures**. Shared registration, materials, decorations and existing contexts.
+- Shared components: **68/0**. Final Main audit with two additional native captures: **15/0**. Total of the final five suites: **6411 checks, 0 failures**.
 
-[Capturas nativas](../../../work/menu-refuge/native-final/) · [Log de refugios](../../../work/menu-refuge/refuges-final.log) · [Log de navegación](../../../work/menu-refuge/navigation-final.log) · [Log de entornos](../../../work/menu-refuge/world-final.log).
+Native Captures (`work/menu-refuge/native-final/`; not included) · Shelter Log (`work/menu-refuge/refuges-final.log`; not included) · Navigation Log (`work/menu-refuge/navigation-final.log`; not included) · Environment Log (`work/menu-refuge/world-final.log`; not included).
 
-La evidencia procede de fixtures aisladas. No se modificaron partidas personales, reglas de combate, progreso ni estado del servidor.
+The evidence comes from isolated fixtures. No changes were made to personal games, combat rules, progress, or server status.
 
 
-## Ajuste posterior: menú directo
+## Post adjustment: direct menu
 
-A petición del usuario se retiraron la cabecera, nombre/nivel, «El camino continúa» y «El refugio». El botón muestra **Empezar historia** cuando ese personaje no ha avanzado y **Continuar historia** si ya tiene intentos o avance, incluso al inicio de otro capítulo. No consulta el nivel de Arena ni la campaña de otro personaje. Al pulsarlo se abre la historia del personaje seleccionado, conservando las demás campañas; un fallo de guardado restaura la selección anterior.
+At the user's request, the header, name/level, "The path continues" and "The refuge" were removed. The button shows **Start story** when that character has not advanced and **Continue story** if they already have attempts or progress, even at the beginning of another chapter. Does not check another character's Arena level or campaign. Pressing it opens the history of the selected character, preserving the other campaigns; a failed save restores the previous selection.
 
-El contorno blanco del botón principal se sustituyó por una variación del cuero dorado al recibir foco. Las doce rutas, Tab, Esc y los objetivos táctiles se conservan. Las capturas de la galería corresponden a este ajuste; las anteriores siguen en `work/menu-refuge/native-final/` como evidencia histórica.
+The white outline of the main button was replaced with a variation of gold leather when brought into focus. The twelve paths, Tab, Esc and touch targets are preserved. The historical gallery screenshots correspond to this setting; the previous ones remain in `work/menu-refuge/native-final/` as historical evidence.
 
-[Captura actual de Main](../../../work/menu-cleanup/native/menu-1360x880.png) · [Móvil](../../../work/menu-cleanup/native/menu-390x844.png) · [Pruebas de navegación](../../../work/menu-cleanup/navigation.log) · [Pruebas de fondos](../../../work/menu-cleanup/refuges.log).
+Main Current Screenshot (`work/menu-cleanup/native/menu-1360x880.png`; not included) · Mobile (`work/menu-cleanup/native/menu-390x844.png`; not included) · Navigation Tests (`work/menu-cleanup/navigation.log`; not included) · Background Tests (`work/menu-cleanup/refuges.log`; not included).

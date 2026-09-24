@@ -1,16 +1,16 @@
 ---
 name: brasa-backend
-description: "Crear o corregir API, autenticación, persistencia o motor autoritativo online de Brasa en Cloudflare Workers y D1."
+description: "Implement or fix Brasa APIs, authentication, persistence, or its authoritative online engine on Cloudflare Workers and D1."
 ---
 
-# Mantener backend de Brasa
+# Maintain the Brasa backend
 
-La raíz del repositorio está en `../../..` desde esta carpeta. Lee `AGENTS.md` y `docs/LLM-GUIDE.md`; resuelve las rutas siguientes contra esa raíz.
+The repository root is `../../..` from this folder. Read `AGENTS.md` and `docs/LLM-GUIDE.md`; resolve the paths below against that root.
 
-Lee backend/README.md y el contrato pertinente en backend/docs/AUTH.md u ONLINE.md. Conserva sesión validada y propietario en cada operación; usa consultas parametrizadas, revisiones, transacciones y resultados idempotentes. Una migración nueva no debe reescribir la aplicada a otras bases.
+Read backend/README.md and the relevant contract in backend/docs/AUTH.md or backend/docs/ONLINE.md. Derive identity from a validated session and scope operations to the owner. Use parameterized queries, revisions, transactions, and idempotent results. Do not rewrite migrations already applied to other databases.
 
-Para lógica de combate lee backend/battle-engine/README.md y verifica paridad. Los tokens no van en logs, JSON de presentación ni ejecutable. Passkeys y device authorization dependen de Better Auth y de origen/RP coherentes; no inventes una ceremonia biométrica completada.
+For combat changes, read backend/battle-engine/README.md and verify parity. Keep tokens out of logs, presentation JSON, and executables. Passkeys and device authorization depend on Better Auth and consistent origins/RP IDs; do not claim a biometric ceremony completed without evidence.
 
-Prueba con Miniflare/bases aisladas y scripts locales documentados. backend/wrangler.staging.jsonc y los informes históricos se refieren al entorno del titular; no autorizan operaciones remotas. Si la tarea pide un despliegue propio, configura recursos/secretos propios y verifica los flujos realmente habilitados.
+Test with Miniflare, isolated databases, and documented local scripts. backend/wrangler.staging.jsonc and historical reports refer to the owner's environment and do not authorize remote operations. For an explicitly requested independent deployment, configure the target resources/secrets and verify the enabled flows.
 
-Revisa catálogos generados tras build. Reporta código, pruebas, migraciones y estado local/remoto por separado.
+Review generated catalog changes after building. Report code, tests, migrations, and local/remote state separately. Keep developer documentation in English and player-facing authentication copy in Spanish.

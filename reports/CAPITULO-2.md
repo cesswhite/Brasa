@@ -1,58 +1,58 @@
-# Nivel 2 corregido y segundo capítulo
+# Level 2 restored and Chapter 2 added
 
-Nima, el segundo rival de la primera ruta, ahora es de nivel **2**. El encuentro conserva su identidad, estadísticas declaradas, recompensa y posición; el ajuste de nivel usa las mismas reglas de combate. La interfaz distingue **Capítulo**, número de **Encuentro** y **nivel del rival/personaje** para evitar confundir las tres progresiones.
+Nima, the second rival of the first route, is now level **2**. The encounter retains its identity, declared statistics, reward, and position; level adjustment uses the same combat rules. The interface distinguishes **Chapter**, **Encounter** number and **rival/character level** to avoid confusing the three progressions.
 
-El segundo capítulo, **El paso de la tormenta**, añade ocho encuentros y se desbloquea después de Ascua. Incluye rivales de niveles 13–23, dos élites y la jefa **Véspera**, una polilla lunar de velocidad y evasión altas con armadura ligera. Historia tiene dieciséis encuentros entre las dos rutas. El nuevo escenario y las ocho poses de Véspera se generaron con `image_gen` nativo.
+The second chapter, **The Passage of the Storm**, adds eight encounters and is unlocked after Ascua. Includes rivals of levels 13–23, two elites and the boss **Véspera**, a moon moth with high speed and evasion with light armor. Story Mode has sixteen encounters between the two routes. The new stage and all eight poses of Véspera were generated with native `image_gen`.
 
-![Combate del segundo capítulo](capitulo2-batalla.png)
+![Combat of the second chapter](capitulo2-batalla.png)
 
-## Continuar y conservar el legado
+## Continue and preserve the legacy
 
-En el cierre del primer capítulo, **Legado → Comenzar capítulo 2** inicia la nueva ruta. Se conservan nivel, XP, puntos disponibles, mejoras, historial de asignaciones y XP acumulada. Se archiva una copia del perfil y del resumen del primer capítulo; los combates y reintentos nuevos se cuentan aparte. El selector de Legado permite consultar ambos cierres.
+At the close of the first chapter, **Legacy → Start Chapter 2** starts the new route. Level, XP, available points, upgrades, assignment history, and accumulated XP are retained. A copy of the profile and summary of the first chapter is on file; new fights and retries are counted separately. The Legacy selector allows you to consult both closures.
 
-El guardado de Historia pasa a versión 2. Cargar una partida v1 la interpreta como Capítulo 1 y no escribe el archivo ni comienza la continuación. La primera escritura conserva una copia permanente `.v1.bak`, además del respaldo rotatorio y la escritura atómica. Si falla el guardado de la transición, se vuelve al estado anterior. Las recompensas verifican personaje, capítulo y encuentro y conservan la deduplicación entre capítulos.
+The Story Mode save changes to version 2. Loading a v1 game interprets it as Chapter 1 and does not write the file or start the continuation. The first write preserves a permanent copy `.v1.bak`, in addition to the rotating backup and atomic write. If saving the transition fails, it returns to the previous state. Rewards verify character, chapter, and encounter and preserve deduplication between chapters.
 
-La liga conserva su adaptador, archivo y escenario. El fondo de la tormenta se usa en el segundo capítulo; volver a la liga recupera el mercado nocturno.
+The league retains its adapter, file and stage. The storm background is used in the second chapter; returning to the league recovers the night market.
 
-## Verificación
+## Verification
 
-Godot 4.7.2: **9981 comprobaciones, cero fallos**.
+Godot 4.7.2: **9981 checks, zero failures**.
 
-| Suite | Comprobaciones |
+| Suite | Checks |
 | --- | ---: |
-| Núcleo | 185 |
-| Combate de la liga | 396 |
-| Sprites originales | 258 |
-| Plantel | 283 |
-| Distribución de batalla | 2139 |
-| Sprites distintos | 3165 |
-| Combate y catálogo de Historia | 518 |
-| Campañas del primer capítulo | 1563 |
-| Integración original de Historia | 85 |
-| Panel de Historia con capítulos | 429 |
-| Integración de los dos capítulos y capturas nativas | 444 |
-| Capítulos, migración, legados y Véspera | 299 |
-| Progresión de Historia | 217 |
+| Core | 185 |
+| league combat | 396 |
+| Original sprites | 258 |
+| Squad | 283 |
+| Battle distribution | 2139 |
+| Different sprites | 3165 |
+| Combat and Story Mode Catalog | 518 |
+| First chapter campaigns | 1563 |
+| Original Story Mode Integration | 85 |
+| Story Mode panel with chapters | 429 |
+| Integration of the two chapters and native captures | 444 |
+| Chapters, migration, legacies and Véspera | 299 |
+| Story Progression | 217 |
 
-La integración usa la interfaz y el motor reales con archivos de prueba separados. Cubre las dieciséis victorias, pérdida y reintento en el segundo capítulo, recompensas únicas, recarga, ambas pantallas de legado, transición por el botón y recuperación de la liga. Las victorias forzadas de estas pruebas revisan el flujo, no el balance.
+The integration uses the actual interface and engine with separate test files. Covers all sixteen wins, losses, and retries in the second chapter, one-time rewards, reloading, both legacy screens, button transition, and league recovery. The forced victories of these tests check the flow, not the balance.
 
-La revisión visual cubre siete tamaños: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 y 844×390. Las 28 capturas de integración se conservan en `work/level2/chapter-integration-captures`, respecto a la raíz del espacio de trabajo; las capturas del panel están en `work/level2/panel-qa`. Se verificaron encabezados, numeración, vista previa, botón para continuar, Véspera, barras de vida, escenario y controles.
+The visual review covers seven sizes: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932, and 844×390. The 28 integration snapshots are persisted in `work/level2/chapter-integration-captures`, relative to the workspace root; the panel captures are in `work/level2/panel-qa`. Checked headers, numbering, preview, continue button, Véspera, life bars, stage and controls.
 
-También se probó una **copia aislada de la partida v1 real de Sira**: el inicio del segundo capítulo y su recarga conservaron nivel 12, XP, puntos, estadísticas, mejoras y el legado completo. La copia `.v1.bak` coincidió byte por byte. El juego real se reabrió y se verificaron la tarjeta de Nima de nivel 2 y el acceso a la continuación en Legado. Los dos archivos reales conservaron sus SHA-256 durante el reinicio y esa navegación; no se empezó el capítulo 2 por el jugador.
+An **isolated copy of the actual v1 game of Sira** was also tested: the start of the second chapter and its reload preserved 12 level, XP, points, stats, upgrades and the full legacy. The `.v1.bak` copy matched byte for byte. The actual game was reopened and the Nima level 2 card and continuation access in Legacy were verified. The two actual files retained their SHA-256 during the reboot and that navigation; Chapter 2 was not started by the player.
 
-## Balance natural
+## natural balance
 
-La muestra final usa el motor y la progresión reales, sin modificar vida ni forzar victorias: **3182 combates y 108 campañas**, con los nueve personajes, cuatro prioridades de mejoras y tres semillas por combinación. **108 de 108** completaron ambos capítulos. El segundo necesitó una media de **12.89 combates**, con rango de **8–19**, y terminó con nivel medio **21.71**, dentro de **20–23**. Véspera cayó al primer intento en el **63.89%** de las campañas.
+The final sample uses the real engine and progression, without modifying life or forcing victories: **3182 battles and 108 campaigns**, with all nine characters, four upgrade priorities and three seeds per combination. **108 by 108** completed both chapters. The second needed an average of **12.89 fights**, with a range of **8–19**, and ended with a medium level **21.71**, within **20–23**. Véspera fell on the first try in **63.89%** of the campaigns.
 
-El perfil final de Véspera tiene 780 PV, 52 de ataque, 30 de defensa y velocidad 20. Sus fases declaradas añaden 10% de velocidad al 60% de vida y 8% de ataque al 30%; no cura ni ignora las reglas. Su firma mantiene la tirada única del 1% por combate y reduce temporalmente la precisión. Los niveles, estados, probabilidades y límites siguen siendo los del sistema común.
+The final profile of Véspera has 780 HP, 52 Attack, 30 Defense, and 20 Speed. Its declared phases add 10% speed to 60% health and 8% attack to 30%; He doesn't cure or ignore the rules. His signature maintains the single 1% roll per combat and temporarily reduces accuracy. The levels, states, probabilities and limits remain those of the common system.
 
-Son resultados de una muestra finita; no garantizan la misma dificultad para todos los repartos. [Datos de la simulación](story_chapters_balance.json) · [Informe de balance](STORY_CHAPTERS_BALANCE.md).
+They are results from a finite sample; They do not guarantee the same difficulty for all distributions. [Simulation data](story_chapters_balance.json) · [Balance report](STORY_CHAPTERS_BALANCE.md).
 
-## Archivos y reproducción
+## Files and playback
 
-[Escenario, atlas y prompts exactos](../assets/CAPITULO-2.md) · [Vista móvil](capitulo2-movil.png) · [Desbloqueo de la continuación](capitulo2-desbloqueo.png).
+[Scenario, atlas and exact prompts](../assets/CAPITULO-2.md) · [Mobile view](capitulo2-movil.png) · [Unlocking the continuation](capitulo2-desbloqueo.png).
 
-Desde la carpeta del proyecto:
+From the project folder:
 
 ```sh
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script res://tests/test_story_chapters.gd

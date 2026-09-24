@@ -1,58 +1,58 @@
-# Modo Historia · Validación
+# Story Mode Validation
 
-Este informe corresponde a la primera entrega del capítulo 1. La corrección del segundo rival a nivel 2 y la ampliación a dos capítulos se documentan en [CAPITULO-2.md](CAPITULO-2.md).
-Implementado y verificado con Godot 4.7.2 en macOS, el 20 de septiembre de 2026.
+This report corresponds to the first installment of chapter 1. The correction of the second rival at level 2 and the expansion to two chapters are documented in [CAPITULO-2.md](CAPITULO-2.md).
+Implemented and verified with Godot 4.7.2 on macOS on September 20, 2026.
 
-## Experiencia
+## Experience
 
-El botón **Historia**, junto a Menú, abre la elección de campaña. Los nueve compañeros empiezan con su perfil normal en nivel 1, sin importar su progreso en la liga. Cada personaje conserva su propia ruta, nivel, XP, puntos, mejoras, derrotas, reintentos e insignia.
+The **Story Mode** button, next to Menu, opens the campaign choice. The nine companions start with their normal profile at level 1, regardless of their progress in the league. Each character retains their own route, level, XP, points, upgrades, defeats, retries, and badge.
 
-La ruta tiene ocho encuentros y dos élites. Cada oponente usa estadísticas explícitas del catálogo de Historia: velocidad y combos, armadura y escudos, críticos, veneno y resistencia, evasión y recuperación, contraataques y un jefe final. La vista previa muestra personaje, nivel, perfil, fortaleza, debilidad y habilidad. El perfil rival permanece idéntico entre reintentos.
+The route has eight meetings and two elites. Each opponent uses explicit stats from the Story Mode catalog: speed and combos, armor and shields, criticals, poison and resistance, evasion and recovery, counterattacks, and a final boss. The preview shows character, level, profile, strength, weakness and skill. The rival profile remains identical between retries.
 
-Hay ocho opciones de mejora, con vista del valor actual y del siguiente: Vida, Ataque, Defensa, Velocidad, Precisión, Evasión, Crítico y Resistencia. Las decisiones conservan las diferencias entre arquetipos. La campaña entrega tres puntos iniciales, tres por nivel y dos por élite derrotada. El crecimiento natural sigue siendo propio de cada personaje.
+There are eight upgrade options, looking at current and next value: Life, Attack, Defense, Speed, Accuracy, Evasion, Critical, and Resistance. Decisions preserve the differences between archetypes. The campaign delivers three initial points, three per level and two per defeated elite. Natural growth remains unique to each character.
 
-Las derrotas conceden XP y no retroceden la ruta. Las pistas se basan en la proporción de ataques fallados, acciones realizadas, daño recibido, daño de estados y resistencia observada. La resistencia se identifica con la misma tirada del combate: una aplicación que falló su probabilidad base no se presenta falsamente como resistida.
+Defeats grant XP and do not reverse the route. Clues are based on the ratio of missed attacks, actions taken, damage taken, status damage, and resistance observed. Resistance is identified by the combat roll itself: an application that failed its base probability is not falsely presented as resisted.
 
-**Ascua**, custodio del último farol, utiliza el motor común. Su habilidad anuncia las fases: al 60% de vida gana 8% de ataque; al 30% conserva ese ataque y gana 15% de velocidad. No recupera vida ni obtiene invulnerabilidad. Su firma mantiene la tirada del 1% por combate y el máximo de una activación; hace ×1.7 de daño y reduce el ataque un 18% durante tres acciones propias del objetivo.
+**Ascua**, Keeper of the Last Lantern, uses the common engine. His ability announces the phases: 60% of life gains 8% of attack; 30% retains that attack and gains 15% speed. He does not regain life or gain invulnerability. Your signature maintains the roll of 1% per combat and the maximum of one activation; deals ×1.7 damage and reduces attack by 18% for three of the target's own actions.
 
-Al terminar, el resultado conserva la arena. **Legado** muestra nivel final, estadísticas, diferencias desde nivel uno, batallas, derrotas, reintentos y asignaciones, y entrega la insignia **Guardián de los Faroles**. Una nueva campaña con otro personaje mantiene el recorrido completado.
+When finished, the result preserves the sand. **Legacy** shows final level, statistics, differences from level one, battles, losses, retries and assignments, and awards the **Keeper of the Lanterns** badge. A new campaign with another character keeps the journey completed.
 
-## Persistencia y reglas
+## Persistence and rules
 
-Historia usa `brasa_save.json.story.json`; la liga conserva `brasa_save.json`. El nuevo adaptador valida versión, modo, presupuesto de puntos, ruta secuencial e identidad de cada resultado antes de escribir. Usa archivo temporal, reemplazo atómico y respaldo. Las recompensas son idempotentes incluso después de recargar. Un archivo inválido se protege o recupera desde una copia conservando el original.
+Story Mode uses `brasa_save.json.story.json`; the league retains `brasa_save.json`. The new adapter validates version, mode, point budget, sequential path, and identity of each result before writing. Uses temporary file, atomic replacement and backup. Rewards are idempotent even after reloading. An invalid file is protected or recovered from a copy while preserving the original.
 
-Los rivales se definen en `story_catalog.gd`; no hay un multiplicador oculto de dificultad por estar en Historia. La única habilidad nueva del motor es una habilidad declarada por fases, utilizada por Ascua. El combate normal conserva sus reglas y su secuencia de tiradas.
+Rivals are defined in `story_catalog.gd`; There is no hidden difficulty multiplier for being in Story Mode. The engine's only new ability is a phased declared ability, used by Ascua. Normal combat retains its rules and sequence of rolls.
 
-## Verificación
+## Verification
 
-| Suite | Comprobaciones | Fallos |
+| Suite | Checks | Failures |
 | --- | ---: | ---: |
-| Núcleo y compatibilidad | 185 | 0 |
-| Combate de la liga | 396 | 0 |
-| Progresión y guardado de la liga | 563 | 0 |
+| Core and compatibility | 185 | 0 |
+| league combat | 396 | 0 |
+| League progression and saving | 563 | 0 |
 | Sprites | 258 | 0 |
-| Plantel de la liga | 283 | 0 |
-| Distribución de batalla | 2139 | 0 |
-| Catálogo, combate, fases y pistas de Historia | 518 | 0 |
-| Campañas completas con el adaptador real | 1575 | 0 |
-| Progresión y persistencia de Historia | 217 | 0 |
-| Panel de Historia | 362 | 0 |
-| Integración de Historia con la interfaz real | 85 | 0 |
+| League squad | 283 | 0 |
+| Battle distribution | 2139 | 0 |
+| Catalog, combat, phases and story tracks | 518 | 0 |
+| Complete campaigns with the real adapter | 1575 | 0 |
+| Progression and persistence of Story Mode | 217 | 0 |
+| Story Mode Panel | 362 | 0 |
+| Story Mode integration with the real interface | 85 | 0 |
 | **Total** | **6581** | **0** |
 
-También pasó el recorrido integrado de la liga (`--smoke-test`). Se verificaron la ficha de solo lectura con combate pausado, la cuenta atrás de reintento tras rendición, el aviso ante un fallo real de guardado y la conservación del panel cuando una acción todavía no está disponible.
+He also passed the league's integrated tour (`--smoke-test`). Checked the read-only tab with combat paused, the retry countdown after surrender, the warning on an actual save failure, and the preservation of the panel when an action is not yet available.
 
-Las pruebas de Historia cubren selección, puntos, ocho atributos, límites, XP por victoria/derrota/rendición, avance secuencial, premios élite, jefe, final, campañas independientes, recarga, corrupción, protección de guardados, recompensa única, pistas y fases. El recorrido de integración usa la interfaz y el motor reales con archivos de prueba; verifica que la partida de la liga permanece idéntica byte por byte.
+Story tests cover selection, points, eight attributes, limits, win/loss/surrender XP, sequential advancement, elite rewards, boss, ending, standalone campaigns, reloading, corruption, save protection, unique reward, hints and phases. The integration walkthrough uses the actual interface and engine with test files; verifies that the league game remains identical byte for byte.
 
-Se revisaron siete tamaños de viewport: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 y 844×390. Los controles del panel miden al menos 48 px; el cuerpo tiene desplazamiento. En móvil, la vista previa precede al mapa. Las pruebas comprueban texto visible, no solo rectángulos, y usan también el tema real de la aplicación. La revisión móvil se realizó en viewports nativos de Godot, no en dispositivos físicos.
+Seven viewport sizes have been reviewed: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932, and 844×390. Panel controls measure at least 48 px; the body has displacement. On mobile, the preview precedes the map. The tests test visible text, not just rectangles, and also use the actual theme of the application. The mobile review was done on native Godot viewports, not on physical devices.
 
-La [auditoría de balance](STORY_BALANCE.md) y los [datos de simulación](story_balance.json) contienen 20 197 combates: 432 de 432 campañas llegaron al final, con una media de 13.42 peleas y 5.42 derrotas. El jefe cayó al primer intento en el 46.8%. Aguante resultó la prioridad más eficiente de las cuatro probadas; las demás también completaron todas las campañas. La muestra no agota todas las distribuciones posibles.
+The [balance audit](STORY_BALANCE.md) and [simulation data](story_balance.json) contain 20 197 fights: 432 of 432 campaigns reached the end, with an average of 13.42 fights and 5.42 defeats. The boss fell on the first try at 46.8%. Stamina was the most efficient priority of the four tested; the others also completed all the campaigns. The sample does not exhaust all possible distributions.
 
-Se reabrió el juego real y se dejó a pantalla completa en la elección de personaje de Historia. El guardado de la liga quedó idéntico byte por byte: Mugo, nivel 3, 65 XP, 2 puntos, 5 victorias y 0 derrotas. No se inició una campaña ni se eligió un personaje por el jugador.
+Reopened the actual game and left it full screen in the Story character choice. The league save was identical byte for byte: Mugo, level 3, 65 XP, 2 points, 5 wins and 0 losses. A campaign was not started nor was a character chosen by the player.
 
-Capturas de perfiles de prueba (los escenarios forzados para revisar resultados no se utilizan como evidencia de balance):
+Screenshots of test profiles (scenarios forced to review results are not used as balancing evidence):
 
-- [Ruta y vista previa](historia-ruta.png)
-- [Vista móvil](historia-movil.png)
-- [Mejoras](historia-mejoras.png)
-- [Legado](historia-legado.png)
+- [Path and preview](historia-ruta.png)
+- [Mobile View](historia-movil.png)
+- [Improvements](historia-mejoras.png)
+- [Legacy](historia-legado.png)

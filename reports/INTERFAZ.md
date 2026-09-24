@@ -1,34 +1,34 @@
-# Interfaz de combate inmersiva
+# Immersive combat interface
 
-Validada con Godot 4.7.2 en macOS el 20 de septiembre de 2026.
+Validated with Godot 4.7.2 on macOS on September 20 2026.
 
-La arena cubre toda la ventana con el fondo ilustrado original y sprites de mayor tamaño. Un degradado inferior integra la acción principal, los controles secundarios y la rendición. Los HUD enfrentados muestran nombre, nivel y vida; la actividad de cada luchador se señala mediante texto y énfasis en el suelo. Los estados se sitúan junto a los personajes, el registro se puede abrir bajo demanda y el resultado conserva la escena de combate.
+The sand covers the entire window with the original illustrated background and larger sprites. A lower gradient integrates the main action, secondary controls and surrender. Facing HUDs show name, level, and life; Each wrestler's activity is noted by text and emphasis on the ground. The states are placed next to the characters, the record can be opened on demand and the result preserves the combat scene.
 
-Entrenamiento, equipo, ficha, historial, registro, ayuda, audio y ritmo siguen disponibles. Los paneles pausan la simulación; rendirse requiere confirmar. El motor, las recompensas y los datos de balance no se modificaron.
+Training, equipment, tab, history, registration, help, audio and rhythm are still available. The panels pause the simulation; surrender requires confirming. The engine, rewards, and balance data have not been changed.
 
-| Prueba final | Comprobaciones | Fallos |
+| final test | Checks | Failures |
 | --- | ---: | ---: |
-| Regresión de controles, entrenamiento y compatibilidad | 185 | 0 |
-| Motor, probabilidades, firmas y estados | 396 | 0 |
-| Progresión, migración, XP y guardado | 563 | 0 |
-| Sprites, transparencia, anclajes y transiciones | 258 | 0 |
-| Plantel adaptable, selección y fichas | 283 | 0 |
-| Distribución de batalla, controles, resultados y ciclo de firma | 2139 | 0 |
-| **Total de suites del proyecto** | **3824** | **0** |
+| Regression controls, training and compatibility | 185 | 0 |
+| Engine, probabilities, signatures and states | 396 | 0 |
+| Progression, migration, XP and saving | 563 | 0 |
+| Sprites, transparency, anchors and transitions | 258 | 0 |
+| Adaptable squad, selection and files | 283 | 0 |
+| Battle distribution, controls, results and signature cycle | 2139 | 0 |
+| **Total project suites** | **3824** | **0** |
 
-La prueba integrada también pasó: plantel, panel de entrenamiento, mejora, firma, combate, recompensa única, resumen, historial, ficha, revancha, cancelación y confirmación de rendición, y recarga. Todas las pruebas usan guardados separados de la partida real.
+The integrated test also passed: roster, training panel, improvement, signature, combat, unique reward, summary, history, record, rematch, cancellation and surrender confirmation, and reload. All tests use saves separate from the actual game.
 
-Se verificaron siete tamaños de viewport: **1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 y 844×390**. Las comprobaciones incluyen límites reales de controles, ausencia de solapamientos, accesibilidad de Equipo y Resumen tras una pelea, pausa en documentos y conservación de la semilla, el estado de combate y el progreso al redimensionar. Cambiar el tamaño durante la entrada de los personajes cancela el desplazamiento anterior y aplica las posiciones nuevas.
+Seven viewport sizes were verified: **1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932, and 844×390**. Checks include actual limits of controls, absence of overlaps, accessibility of Equipment and Summary after a fight, pause in documents and preservation of the seed, combat status and progress when resizing. Resizing during character entry cancels the previous scrolling and applies the new positions.
 
-Una prueba adicional del renderizado de la arena pasó **144 comprobaciones** con GPU: cobertura sin deformación, coordenadas de impactos y partículas, indicador de turno y fondo de respaldo. Se revisaron capturas nativas de reposo, combate, resultado, menú, entrenamiento y rendición, además de una firma forzada exclusivamente para revisión visual. Los tamaños móviles se simularon en viewports de Godot; no se probaron dispositivos móviles físicos.
+An additional test of the arena rendering passed **144 checks** with GPU: no-warp coverage, impact and particle coordinates, shift indicator and backing background. Native captures of rest, combat, result, menu, training and surrender were reviewed, in addition to a forced signature exclusively for visual review. Movable sizes were simulated in Godot viewports; no physical mobile devices were tested.
 
-Se añadieron regresiones para una firma que termina la pelea y para dos firmas consecutivas: el resultado cierra el banner y el reemplazo cancela la animación anterior, evitando que reaparezca el registro bajo una firma aún visible.
+Added regressions for a signature that ends the fight and for two consecutive signatures: the result closes the banner and the replacement cancels the previous animation, preventing the record from reappearing under a signature still visible.
 
-La aplicación real se reabrió y se verificaron el panel de entrenamiento y F11. Quedó abierta a pantalla completa con **Mugo, nivel 3, 65 XP y 2 puntos**, listo para jugar. El guardado real es idéntico byte por byte al archivo anterior a esta reapertura; no se gastaron puntos ni se jugaron batallas de prueba en esa partida.
+The real app was reopened and the training panel and F11 were checked. It was left open full screen with **Mugo, level 3, 65 XP and 2 points**, ready to play. The actual save is byte-for-byte identical to the file before this reopening; no points were spent or test battles played in that match.
 
-Capturas de la interfaz con partidas de prueba:
+Screenshots of the interface with test games:
 
-- [Combate en escritorio](interfaz-escritorio.png)
-- [Combate en formato móvil](interfaz-movil.png)
-- [Resultado en formato horizontal](interfaz-horizontal.png)
-- [Golpe Firma](interfaz-firma.png)
+- [Desktop Combat](interfaz-escritorio.png)
+- [Combat in mobile format](interfaz-movil.png)
+- [Result in landscape format](interfaz-horizontal.png)
+- [Signature Strike](interfaz-firma.png)

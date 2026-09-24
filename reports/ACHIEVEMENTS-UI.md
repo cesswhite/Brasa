@@ -1,29 +1,29 @@
-# Logros · Qué conseguiste y qué sigue
+# Achievements · What you achieved and what's next
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| “Legado” no explicaba su propósito. | “Logros” en menú e Historia, con metas, insignias y colección. |
-| Selector de capítulos y accesos duplicados. | Un selector de personaje que sólo cambia la consulta. La campaña cambia cuando se pulsa “Jugar con…”. |
-| Emblema vacío, objetos decorativos y mucho espacio sin información. | Resumen de logros, encuentros y capítulos. Figura pequeña en escritorio; vista compacta en móvil. |
-| Cierre de capítulo mezclado con instrucciones para continuar. | “Por conseguir” muestra el siguiente paso; una acción fija permite continuar o comenzar el siguiente capítulo. |
-| Estadísticas extensas expuestas por defecto. | “Conseguidos” abre recuerdos de cada capítulo; atributos y decisiones son opcionales. |
-| Recompensas poco claras. | “Colección” separa técnicas del personaje de cosméticos compartidos realmente poseídos y enlaza a Personalizar. |
+| “Legacy” did not explain its purpose. | “Achievements” in menu and Story Mode, with goals, badges and collection. |
+| Chapter selector and duplicate access. | A character selector that only changes the query. The campaign changes when you press “Play with…”. |
+| Empty emblem, decorative objects and a lot of space without information. | Summary of achievements, meetings and chapters. Small figure on desk; compact view on mobile. |
+| Chapter closure mixed with instructions to continue. | “To be achieved” shows the next step; a fixed action allows you to continue or start the next chapter. |
+| Extensive statistics exposed by default. | “Achieved” opens memories of each chapter; attributes and decisions are optional. |
+| Unclear rewards. | “Collection” separates character techniques from actually owned shared cosmetics and links to Customize. |
 
-## Sistema de logros
+## achievement system
 
-17 reconocimientos por personaje: los once capítulos, primera victoria, diez y cincuenta victorias de ruta, y niveles 5, 20 y 50. Cada pendiente indica condición, avance y resultado. Los capítulos conservan sus insignias existentes; los otros hitos son reconocimientos sin premio adicional. No hay un botón para reclamar: se reconocen automáticamente al consultar el avance guardado, incluyendo partidas anteriores.
+17 recognitions per character: the eleven chapters, first victory, ten and fifty route victories, and levels 5, 20 and 50. Each slope indicates condition, progress and result. Chapters retain their existing insignia; The other milestones are recognitions without additional prize. There is no button to claim: they are automatically recognized when consulting the saved progress, including previous games.
 
-Las victorias suman una vez los registros de capítulos anteriores y el capítulo actual. Las prácticas no cuentan. Los niveles, técnicas y encuentros pertenecen a cada campaña; el inventario cosmético es compartido y se muestra como tal. La pantalla nunca infiere propiedad por cumplir una meta: lee el inventario real. Un personaje sin campaña tiene cero logros y una invitación a empezar.
+Victories add up to the records of previous chapters and the current chapter once. Internships don't count. The levels, techniques and encounters belong to each campaign; cosmetic inventory is shared and displayed as such. The screen never infers ownership for meeting a goal: it reads the actual inventory. A character without a campaign has zero achievements and an invitation to start.
 
-Los recuerdos leen las instantáneas de cierre existentes. Consultar personajes, filtros, atributos o cosméticos no inicia capítulos, concede recompensas ni escribe guardados. El acceso desde el menú consulta el personaje seleccionado. Las rutas existentes para iniciar capítulo, elegir personaje y personalizar se conservan.
+Memories read existing closing snapshots. Checking characters, filters, attributes, or cosmetics does not start chapters, grant rewards, or write saves. Access from the menu queries the selected character. The existing routes to start chapter, choose character and customize are preserved.
 
-## Verificación
+## Verification
 
-- **1562 comprobaciones nativas, 0 fallos**, siete tamaños y 42 capturas: vacío, objetivos, conseguidos, recuerdos, colección y otro personaje. Atributos de lectura, foco, scroll, acciones, inventario real, ausencia de concesiones, archivos de capítulos y 17/17 al completar la campaña.
-- **429 comprobaciones de StoryPanel, 0 fallos**. El primer pase tenía ocho expectativas antiguas sobre título y figura móvil; se actualizaron para la nueva presentación manteniendo navegación y conservación de registros.
-- **327 comprobaciones de navegación del menú, 0 fallos**. Acceso Logros renombrado, destinos y cierre.
-- **94 comprobaciones de integración de Historia, 0 fallos**. Pausa, persistencia y recompensas existentes.
+- **1562 native checks, 0 failures**, seven sizes and 42 captures: empty, objectives, achieved, memories, collection and another character. Read, Focus, Scroll, Actions, Actual Inventory, No Concessions, Chapter Files, and 17/17 attributes upon campaign completion.
+- **429 StoryPanel checks, 0 failures**. The first pass had eight old expectations about title and moving figure; were updated for the new presentation while maintaining navigation and record keeping.
+- **327 menu navigation checks, 0 failures**. Access Achievements renamed, destinations and closure.
+- **94 Story Mode integration checks, 0 failures**. Pause, persistence and existing rewards.
 
-Tamaños: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 y 844×390. Galería con perfiles e inventario de prueba en memoria; otras suites usan archivos desechables. No se tocaron partidas personales, balance, backend ni publicación. Se reutiliza el arte existente.
+Sizes: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 and 844×390. Gallery with profiles and test inventory in memory; other suites use disposable files. No personal items, balance, backend or publishing were touched. Existing art is reused.
 
-[Capturas nativas](achievements-ui/index.html).
+[Report index](README.md).

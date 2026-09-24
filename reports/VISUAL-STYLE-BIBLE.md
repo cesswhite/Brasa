@@ -1,59 +1,59 @@
-# Brasa · Biblia visual de la interfaz
+# Brasa · Visual interface bible
 
-**Autoridad: Historia actual.** Este documento describe el lenguaje de sus cinco pestañas y el sistema compartido que lo extiende al resto de Brasa. No cambia reglas de juego. El diagnóstico inicial se basó en código, manifiesto y capturas; la migración se verificó después con fixtures locales y capturas nativas, sin modificar producción.
+**Authority: the approved Story Mode.** This document describes the language of its five tabs and the shared system that extends it to the rest of Brasa. It doesn't change the rules of the game. The initial diagnosis was based on code, manifest and captures; The migration was later verified with local fixtures and native captures, without modifying production.
 
-Las secciones 1–11 conservan el análisis de la referencia original; la sección 12 define las APIs implementadas. Las cifras de progreso visibles en las capturas son datos de sus fixtures, no especificaciones de balance.
+Sections 1–11 preserve the analysis of the original reference; section 12 defines the implemented APIs. The progress figures visible in the screenshots are fixture data, not balance specifications.
 
-## 1. ADN que debe conservarse
+## 1. DNA that must be preserved
 
-Brasa presenta **lugares habitados por luchadores**, con información y acciones legibles dentro de esos lugares. Historia funciona porque el entorno ocupa toda la pantalla, la figura tiene presencia y los controles comparten sus materiales.
+Brasa features **places inhabited by fighters**, with information and actions readable within those places. Story Mode works because the environment occupies the entire screen, the figure has presence and the controls share their materials.
 
-- Pintura digital 2D con pincel visible, superficies gastadas y siluetas nítidas. La textura procede del arte; no requiere una capa adicional de ruido sobre la interfaz.
-- Piedra, madera, tejido y cuero oscuro con herrajes de cobre/bronce. Costuras, pequeñas gemas y remaches expresan fabricación artesanal.
-- Faroles cálidos, sombras azul petróleo y fondos más oscuros que los personajes. La luz ambiental une figura, suelo y arquitectura.
-- Títulos serif de tono narrativo; cuerpo sans legible para decisiones, estadísticas y acciones.
-- Un foco claro por vista: rival en Ruta, decisiones en Taller, técnicas en Movimientos, compañero en Refugio, logro conservado en Legado.
-- Materiales visibles donde ayudan: navegación, acciones y anuncios destacados. Las listas de atributos, técnicas y compañeros dejan respirar el escenario.
+- 2D digital painting with visible brush, worn surfaces and sharp silhouettes. Texture comes from art; does not require an additional layer of noise over the interface.
+- Stone, wood, fabric and dark leather with copper/bronze hardware. Stitching, small gems and rivets express artisanal manufacturing.
+- Warm lanterns, petrol blue shadows and darker backgrounds than the characters. Ambient light unites figure, ground and architecture.
+- Narrative tone serif titles; Readable sans body for decisions, statistics and actions.
+- A clear focus per view: rival in Route, decisions in Workshop, techniques in Movements, companion in Shelter, achievement preserved in Legacy.
+- Visible materials where they help: navigation, actions and key callouts. The lists of attributes, techniques and companions let the scene breathe.
 
-La jerarquía de Ruta es la referencia principal: cabecera y navegación estables; rival e información en el primer bloque; recorrido compacto después; acción principal fija al pie. El rival no necesita un gran contenedor rectangular detrás.
+The Route hierarchy is the main reference: stable header and navigation; rival and information in the first block; compact tour after; main action fixed to the foot. The rival does not need a large rectangular container behind it.
 
-## 2. Fuentes y precedencia
+## 2. Sources and precedence
 
-| Fuente | Qué fija |
+| Source | What it defines |
 | --- | --- |
-| `scripts/ui/story_panel.gd` | Tipografía, color semántico, composición, comportamiento responsive, contenido y estados legibles. |
-| `scripts/ui/world_visuals.gd` | Roles de material, nine-slice, foco, estados, carga compartida y decoración condicionada. |
-| `scripts/ui/world_backdrop.gd` | Fondo a sangre, conservación de aspecto, velo, orden de decoración y carga del contexto activo. |
-| `data/ui_visual_manifest.json` | Fondos, tintes por lugar, regiones reales, márgenes, alias y condiciones de objetos. |
-| `assets/ui/ART-DIRECTION.md` y `GENERATION-PROMPTS.json` | Dirección artística y procedencia de los siete PNG originales. |
-| Capturas Historia | Evidencia de composición y legibilidad; no sustituyen al código cuando muestran una versión anterior de los datos. |
-| `reports/organic-fx/COMBAT-FX.md` y render actual | Límite reciente de FX: motas y chispas orgánicas, sin anillos ornamentales de fuego. |
+| `scripts/ui/story_panel.gd` | Typography, semantic color, composition, responsive behavior, content and readable states. |
+| `scripts/ui/world_visuals.gd` | Roles of material, nine-slice, focus, states, load sharing and conditional decoration. |
+| `scripts/ui/world_backdrop.gd` | Full-bleed background, aspect conservation, veil, decoration order and loading of the active context. |
+| `data/ui_visual_manifest.json` | Backgrounds, tints by location, real regions, margins, aliases and object conditions. |
+| `assets/ui/ART-DIRECTION.md` and `GENERATION-PROMPTS.json` | Artistic direction and provenance of the seven original PNGs. |
+| Story Mode captures | Evidence of composition and legibility; They do not replace code when displaying an older version of the data. |
+| `reports/organic-fx/COMBAT-FX.md` and current render | Recent FX Limit: Organic flecks and sparks, no ornamental rings of fire. |
 
-Si un nuevo componente entra en conflicto con una captura antigua, prevalece el código actual y la instrucción reciente del usuario. Si una excepción local difiere del sistema compartido, documentarla antes de convertirla en otro token global.
+If a new component conflicts with an old capture, the current code and the user's recent instruction prevail. If a local exception differs from the shared system, document it before converting it to another global token.
 
-## 3. Color y luz
+## 3. Color and light
 
-### Paleta de lectura
+### Reading palette
 
-| Constante actual | Valor | Papel observado |
+| Current constant | Value | Observed role |
 | --- | --- | --- |
-| `CREAM` | `#F5E7CF` | Texto principal, nombre del rival, etiquetas de controles secundarios. |
-| `GOLD` | `#EFB66F` | Capítulos, encuentros, XP, recomendaciones y títulos de sección. |
-| `TEAL` | `#7DD7BD` | Fortalezas, crecimiento, disponibilidad y progreso superado. |
-| `MUTED` | `#9AB3AC` | Metadatos, explicación secundaria, nivel y contexto. |
-| `CORAL` | `#ED997F` | Debilidad, riesgo y aviso de guardado. |
-| `DARK` | `#0C2228` | Base oscura de la familia; no cubre por sí sola todos los fondos. |
-| `SURFACE` | `#153137` | Superficie plana de apoyo presente en el diálogo local. |
-| Texto de acción primaria | `#152329` | Texto oscuro sobre correa ámbar. |
-| Foco compartido | Ámbar `#EFB66F`, alfa `.22` | Relleno interior retraído 4 px, sin contorno exterior. |
+| `CREAM` | `#F5E7CF` | Main text, rival name, secondary control labels. |
+| `GOLD` | `#EFB66F` | Chapters, encounters, XP, recommendations and section titles. |
+| `TEAL` | `#7DD7BD` | Strengths, growth, availability and completed progress. |
+| `MUTED` | `#9AB3AC` | Metadata, secondary explanation, level and context. |
+| `CORAL` | `#ED997F` | Weakness, risk and save notice. |
+| `DARK` | `#0C2228` | Base color for dark surfaces; it does not define every background. |
+| `SURFACE` | `#153137` | Flat support surface present in local dialogue. |
+| Primary action text | `#152329` | Dark text on amber strap. |
+| Shared focus | Amber `#EFB66F`, Alpha `.22` | Inset highlight with 4 px, no outer outline. |
 
-Estos colores tienen significado. No usar coral para un dato neutro ni jade para una acción peligrosa. Fortalezas y riesgos siempre llevan palabras: el color no es el único indicador. No sustituir esta paleta por grises neutros, blanco puro o acentos nuevos en cada página.
+These colors have meaning. Do not use coral for a neutral data or jade for a dangerous action. Strengths and risks always have words: color is not the only indicator. Do not replace this palette with neutral grays, pure white or new accents on each page.
 
-### Variación del lugar, desde el manifiesto
+### Variation of the place, from the manifest
 
-Los acentos de contexto son datos disponibles del registro. Historia usa además sus constantes semánticas para el texto; no debe afirmarse que todo el texto cambia automáticamente al acento del lugar.
+Context accents are data available from the record. Story Mode also uses its semantic constants for the text; It should not be claimed that all text automatically changes to the local accent.
 
-| Contexto | Fondo | Acento | Sombra base | Tinte del fondo |
+| Context | Background | accent | base shadow | background tint |
 | --- | --- | --- | --- | --- |
 | `route_journey` | `journey` | `#EFB66F` | `#0B2026` | `#FFFFFF` |
 | `route_storm` | `storm` | `#A4D5E6` | `#101E2C` | `#FFFFFF` |
@@ -66,331 +66,331 @@ Los acentos de contexto son datos disponibles del registro. Historia usa además
 | `camp` | `camp` | `#F0BC84` | `#211C1A` | `#FFFFFF` |
 | `legacy` | `archive` | `#DECDB0` | `#171D28` | `#FFFFFF` |
 
-`route_boss` permanece como contexto compatible; la selección normal usa la variante de jefe correspondiente al capítulo. Un jefe conserva el lugar de su ruta, añade insignia y aumenta presencia del personaje; no obliga a una escena visual ajena.
+`route_boss` remains a supported context; Normal selection uses the boss variant corresponding to the chapter. A boss keeps the location of his route, adds insignia and increases character presence; It does not force an alien visual scene.
 
-### Velos, profundidad y contraste
+### Veils, depth and contrast
 
-`WorldBackdrop` dibuja un fondo opaco con `STRETCH_KEEP_ASPECT_COVERED`: ocupa el área, conserva proporción y recorta lo necesario. No estira personajes o controles junto con la imagen.
+`WorldBackdrop` draws an opaque background with `STRETCH_KEEP_ASPECT_COVERED`: occupies the area, maintains proportion and crops as necessary. It doesn't stretch characters or controls along with the image.
 
-El velo vertical tiene RGB `(0.015, 0.03, 0.04)` y paradas `(posición, alfa)` de `(0, .68)`, `(.42, .14)`, `(.76, .20)`, `(1, .88)`. Mantiene despejado el centro y protege cabecera y pie. Historia añade un velo horizontal RGB `(0.015, .025, .025)`: alfa `.66` a la izquierda, `.42` en `.46` y `.14` a la derecha de Ruta; en las otras pestañas el último alfa es `.58`.
+The vertical veil has RGB `(0.015, 0.03, 0.04)` and `(position, alpha)` stops of `(0, .68)`, `(.42, .14)`, `(.76, .20)`, `(1, .88)`. It keeps the center clear and protects the header and footer. Story Mode adds a horizontal RGB veil `(0.015, .025, .025)`: alpha `.66` on the left, `.42` on `.46` and `.14` on the right of Path; in the other tabs the latest alpha is `.58`.
 
-Conservar la luz del suelo y del personaje. Resolver el contraste con la posición del texto y el velo necesario; reservar marcos opacos para una agrupación importante o un diálogo. Los números anteriores son la referencia actual, no una garantía de contraste para cualquier recorte futuro.
+Preserve the light of the ground and the character. Resolve the contrast with the position of the text and the necessary veil; Reserve opaque frames for an important grouping or dialogue. The numbers above are the current reference, not a guarantee of contrast for any future cuts.
 
-## 4. Tipografía
+## 4. Typography
 
-| Rol observado | Familia y tamaño lógico |
+| Observed role | Family and logical size |
 | --- | --- |
-| Cuerpo por defecto | `Avenir Next`, fallback `DejaVu Sans`, luego `Arial`; 15 px. |
-| Texto explicativo y metadatos | Misma sans, normalmente 14 px; datos compactos 12–13 px. |
-| Rótulo superior / encuentro | Sans, 12 px, mayúsculas breves, ámbar. |
-| Título del capítulo | `Georgia`, fallback `DejaVu Serif`; 29 px, 20 en teléfono o altura corta. |
-| Nombre protagonista en Ruta | Serif 42 px; 32 en teléfono o altura corta. |
-| Título del encuentro | Serif 20 px, ámbar. |
-| Taller / Refugio | Titulares serif 30–32 px; secundarios y cifras destacadas 20–22 px. |
-| Navegación | Sans 15 px; 13 en teléfono. |
-| Nombre en lista de compañeros | Serif 20 px; rol sans 13, nivel 12, ruta 11. |
-| Marcadores de ruta | Número 15, nombre 13, detalle 10 px. |
+| Default body | `Avenir Next`, fallback `DejaVu Sans`, then `Arial`; 15 px. |
+| Explanatory text and metadata | Same sans, normally 14 px; compact data 12–13 px. |
+| Section label / encounter | Sans, 12 px, short caps, amber. |
+| Chapter Title | `Georgia`, fallback `DejaVu Serif`; 29 px, 20 on phone or short height. |
+| Main name in Route | Serif 42 px; 32 on phone or short height. |
+| Encounter title | Serif 20 px, amber. |
+| Workshop / Shelter | Serif headlines 30–32 px; secondary and notable figures 20–22 px. |
+| Navigation | Sans 15 px; 13 on phone. |
+| Name in companion list | Serif 20 px; sans role 13, level 12, path 11. |
+| Route markers | Number 15, name 13, detail 10 px. |
 
-El helper actual aplica serif a cualquier etiqueta de 20 px o más. Para centralizar, convertir los usos en roles explícitos —por ejemplo título de página, nombre protagonista, título de bloque, cuerpo, metadato y rótulo— manteniendo primero su apariencia. Estos nombres son una propuesta de organización, no APIs existentes.
+The current helper applies serif to any tag 20 px or larger. To centralize, convert uses into explicit roles—for example page title, protagonist name, block title, body, metadata, and label—while maintaining their appearance first. These names are an organizational proposal, not existing APIs.
 
-Las familias son `SystemFont`: hoy no hay una fuente empaquetada que garantice idénticas métricas en todos los sistemas. Conservar los fallbacks y verificar anchuras antes de distribuir en otra plataforma. No copiar cifras de peso tipográfico que el código no fija. Una futura fuente incorporada requiere resolver su licencia y comprobarla contra Historia.
+The families are `SystemFont`: today there is no bundled font that guarantees identical metrics on all systems. Keep fallbacks and verify widths before distributing to another platform. Do not copy figures of typographical weight that the code does not establish. A future built-in font requires resolving its license and checking it against Story Mode.
 
-Los 10–11 px de ruta son una excepción compacta observada; no convertirlos en el tamaño general de mensajes de error, requisitos o controles. El texto importante admite salto de línea. La elipsis se reserva para etiquetas compactas, con detalle completo accesible.
+The 10–11 px route labels are an observed compact exception; do not convert them into the general size of error messages, requirements or controls. Important text supports line breaks. The ellipsis is reserved for compact labels, with full detail accessible.
 
-## 5. Materiales y controles
+## 5. Materials and controls
 
-### Atlas existente
+### Existing Atlas
 
-`assets/ui/shared/surfaces-v1.png` contiene ocho piezas: correa primaria ámbar, correa secundaria petróleo, panel habitual, panel de jefe, insignia normal, insignia de jefe, separador e insignia de élite. Las regiones son las cajas reales registradas, no ocho celdas ideales de una cuadrícula.
+`assets/ui/shared/surfaces-v1.png` contains eight pieces: amber primary strap, petroleum secondary strap, regular panel, boss panel, normal badge, boss badge, separator and elite badge. The regions are the actual registered boxes, not eight ideal grid cells.
 
-Los botones conservan cuero, costura y remates metálicos; los paneles conservan esquinas reforzadas. Las insignias mantienen su proporción al dibujarse. No incrustar nombres ni números en estos PNG.
+The buttons retain leather, stitching and metal finishes; The panels retain reinforced corners. The insignia maintain their proportion when drawn. Do not embed names or numbers in these PNGs.
 
-| Rol/API actual | Nine-slice L/T/R/B | Padding L/T/R/B | Uso |
+| Current Role/API | Nine-slice L/T/R/B | Padding L/T/R/B | Use |
 | --- | --- | --- | --- |
-| `primary`, `secondary` | `24 / 8 / 24 / 8` | `14 / 10 / 14 / 10` | Acciones completas con remates. |
-| `navigation`, `navigation_active` | `8 / 8 / 8 / 8` | `3 / 8 / 3 / 8` | Recorte central de las mismas correas; conserva costuras y deja espacio al texto. |
-| `panel`, `boss_panel` | `26 / 22 / 26 / 22` | `18 / 16 / 18 / 16` | Agrupación destacada y marco especial. |
+| `primary`, `secondary` | `24 / 8 / 24 / 8` | `14 / 10 / 14 / 10` | Complete actions with finishes. |
+| `navigation`, `navigation_active` | `8 / 8 / 8 / 8` | `3 / 8 / 3 / 8` | Central cutout of the same straps; It preserves seams and leaves space for text. |
+| `panel`, `boss_panel` | `26 / 22 / 26 / 22` | `18 / 16 / 18 / 16` | Featured grouping and special framework. |
 
-El atlas de superficies se adapta una vez a escala `.35` en memoria; los PNG originales se conservan. Los márgenes son los que usa el render actual sobre esa textura. Las regiones y la escala deben tener una única fuente en el manifiesto.
+The surface atlas is scaled once to `.35` in memory; the original PNGs are preserved. The margins are those used by the current render on that texture. Regions and scale must have a single source in the manifest.
 
-Alias actuales: `danger → secondary`, `reward → panel`, `dialog → boss_panel`, `tooltip → panel`. `danger` añade tinte `#DC9A86`; `navigation_active` añade `#FFE6B9`. Un alias de material no implementa por sí mismo un diálogo, tooltip o estado de error.
+Current aliases: `danger → secondary`, `reward → panel`, `dialog → boss_panel`, `tooltip → panel`. `danger` adds tint `#DC9A86`; `navigation_active` adds `#FFE6B9`. A material alias does not itself implement a dialog, tooltip, or error state.
 
-### Estados compartidos
+### Shared states
 
-| Estado | Presentación actual |
+| Status | Current presentation |
 | --- | --- |
-| Normal | Tinte `#FFFFFF`. |
-| Hover | Tinte cálido `#FFF3DB`. |
-| Pulsado / hover pulsado | Tinte `#B9A789`; no cambia tamaño ni silueta. |
-| Deshabilitado | Material `#717878`, texto `#9CA9A6`; la causa se expresa en texto cuando afecta a la decisión. |
-| Seleccionado | Correa primaria ámbar para navegación; texto oscuro. |
-| Foco de teclado | Fondo transparente, borde `#F8E8B9` de 2 px, radio 5, expansión de 2 px. |
+| Normal | `#FFFFFF` dye. |
+| Hover | `#FFF3DB` warm tint. |
+| Pressed / hover pressed | `#B9A789` dye; It does not change size or silhouette. |
+| Disabled | Material `#717878`, text `#9CA9A6`; The cause is expressed in text when it affects the decision. |
+| Selected | Amber Primary Navigation Strap; dark text. |
+| keyboard focus | Transparent background, 2 px border `#F8E8B9`, 5 radius, 2 px expansion. |
 
-La sombra del texto de botón es negra a alfa `.2` en primarios y `.8` en secundarios, desplazamiento vertical 1 px. No existe una escala general de sombras flotantes; la profundidad principal viene de los materiales pintados y la iluminación.
+Button text shadow is black to alpha `.2` on primaries and `.8` on secondaries, vertical offset 1 px. There is no general scale of floating shadows; the main depth comes from the painted materials and lighting.
 
-`apply_button` fija mínimo 44 px; Historia pide 48 px. Extender con 48 px como altura de referencia de acciones, selectores y cierre. Los controles mantienen su silueta en todos los estados: una ficha de compañero no debe transformarse en una correa gigante al recibir hover.
+`apply_button` sets minimum 44 px; Story Mode requests 48 px. Extend with 48 px as reference height of actions, selectors and close buttons. The controls maintain their silhouette in all states: a companion token should not transform into a giant strap when receiving hover.
 
-### Superficies abiertas
+### Open surfaces
 
-Taller y Movimientos agrupan con columnas, títulos y separadores sutiles, sin panel individual alrededor de cada estadística o técnica. En Refugio las fichas usan fondo translúcido petróleo y borde inferior: normal alfa `.16`, seleccionado `.42`, hover `.55`. La selección se reconoce por el borde ámbar de 2 px; conserva foco nativo. Este tratamiento es una variante deliberada para figuras, no un reemplazo de los botones de acción.
+Workshop and Moves are grouped together with subtle columns, titles, and dividers, with no individual panel around each stat or technique. In Refuge the tiles use translucent petrol-blue background and bottom border: normal alpha `.16`, selected `.42`, hover `.55`. The selection is recognized by the amber border of 2 px; preserves native focus. This treatment is a deliberate variant for figures, not a replacement for the action buttons.
 
-## 6. Espaciado y composición responsive
+## 6. Responsive spacing and composition
 
-La escala observada agrupa distancias de `4, 8, 10, 12, 16, 18, 20, 24, 32, 36` px. Usarlas según función; no reducirla artificialmente a una cuadrícula que cambie Historia.
+The observed scale groups distances of `4, 8, 10, 12, 16, 18, 20, 24, 32, 36` px. Use them according to function; not artificially reduce it to a grid that changes Story Mode.
 
-| Relación | Medida actual |
+| Relationship | Current measurement |
 | --- | --- |
-| Margen exterior | 32; 16 en teléfono o altura corta. |
-| Título y metadatos | Separación 4. |
-| Pila interna habitual / navegación | 8. |
-| Secciones, pie y rejilla habitual | 12; shell 10 con poca altura. |
-| Cabecera | 16 entre grupos. |
-| Rival e información / cabecera del Refugio | 32 horizontal, 12 vertical. |
-| Taller | Banco 24; atributos 36 horizontal y 18 vertical. |
-| Pie | Dos acciones, separación 12; primaria con proporción de expansión 1.4. |
-| Ruta | Fila de 96 px, objetivo de marcador de 92 px; insignia máxima 48 px. |
+| Outer margin | 32; 16 on phone or short height. |
+| Title and metadata | 4 separation. |
+| Usual internal stack/navigation | 8. |
+| Sections, footer, and standard grid | 12; 10 shell with low height. |
+| Header | 16 between groups. |
+| Rival and information / Refuge header | 32 horizontal, 12 vertical. |
+| Workshop | Bank 24; attributes 36 horizontal and 18 vertical. |
+| Footer | Two actions, separation 12; primary with expansion ratio 1.4. |
+| Route | 96 px row, 92 px marker target; max badge 48 px. |
 
-Breakpoints existentes: teléfono si ancho `<600`; altura corta si alto `<540`; hero de Ruta apilado si ancho `<900` y no es altura corta. El ancho `<1100` reduce columnas de ciertas rejillas. Son reglas de contenido diferentes, no un único escalado global.
+Existing breakpoints: phone if width `<600`; short layout if height `<540`; Path stacked hero if width `<900` and height not short. The width `<1100` reduces columns of certain grids. They are different content rules, not a single global scaling.
 
-- **Escritorio:** lectura a la izquierda, rival grande a la derecha; altura reservada 420 px, 470 para jefe. Ruta horizontal con el número real de encuentros del capítulo.
-- **Teléfono y tablet apilada:** personaje antes de la información, altura 270 px o 290 para jefe; cuerpo desplazable y pie siempre visible. Navegación conserva cinco opciones con nombres breves: Ruta, Mejora, Golpes, Equipo, Legado.
-- **Horizontal con poca altura:** dos columnas de Ruta, figura de 160 px y metadatos superiores reducidos. Prioridad a decisión y acciones alcanzables.
-- **Recorrido móvil:** cuatro marcadores por fila y altura `ceil(cantidad / 4) × 96`; diez encuentros requieren tres filas. Se conservan IDs, orden, nombre, nivel, estado y tipo de enemigo. El código conecta marcadores de la misma fila; no representa un camino continuo entre filas.
-- **Refugio:** dos compañeros por fila en teléfono, tres bajo 1100, cuatro en escritorio; altura mínima 242/280. El retrato seleccionado grande y su descripción preceden a la colección.
-- **Taller y Movimientos:** una columna en teléfono, dos fuera de él. Legado usa métricas de dos o cuatro columnas.
+- **Desktop:** reading on the left, large rival on the right; reserved height 420 px, 470 for boss. Horizontal route with the actual number of chapter encounters.
+- **Phone and tablet stacked:** character before information, height 270 px or 290 for boss; Scrollable content and footer always visible. Navigation retains five options with short names: Route, Upgrades, Moves, Companions, Legacy.
+- **Horizontal with low height:** two Path columns, 160 px figure and reduced top metadata. Priority to decision and achievable actions.
+- **Mobile route:** four markers per row and height `ceil(cantidad / 4) × 96`; ten matches require three lines. IDs, order, name, level, status and enemy type are preserved. The code connects markers of the same row; it does not represent a continuous path between rows.
+- **Shelter:** two companions per row on the phone, three under 1100, four on desktop; minimum height 242/280. The large selected portrait and its description precede the collection.
+- **Workshop and Movements:** one column on the phone, two outside of it. Legacy uses two or four column metrics.
 
-La pantalla no tiene scroll horizontal; `ScrollContainer.follow_focus` acompaña el foco. El scroll vertical llega hasta el último requisito y la última fila sin ocultarlos detrás del pie. Mantener acciones en el pie no permite borrar descripción, recompensas o recomendación para que todo parezca caber.
+The screen does not have horizontal scrolling; `ScrollContainer.follow_focus` accompanies the focus. The vertical scroll reaches the last requirement and the last row without hiding them behind the footer. Keeping actions in the footer does not allow you to delete description, rewards or recommendation so that everything seems to fit.
 
-## 7. Imágenes, figuras, iconos y objetos
+## 7. Images, figures, icons and objects
 
-### Gramática de los lugares
+### Grammar of places
 
-| Sección | Composición que se conserva |
+| Section | Composition that is preserved |
 | --- | --- |
-| Ruta inicial | Camino, faroles, arquitectura hacia bordes; espacio para la figura y zona de lectura oscura. |
-| Tormenta / rutas posteriores | Raíces, hierro, musgo, piedra húmeda, montañas y luz fría; calor localizado de faroles. |
-| Mejoras | Taller de piedra y madera, banco de trabajo; estadísticas como decisiones sobre ese espacio. |
-| Movimientos | Mismo taller con tinte más frío; repetición útil del lugar, no otro fondo arbitrario. |
-| Compañeros | Refugio abierto, tienda, suelo compartido, figuras completas. |
-| Legado | Archivo de piedra, profundidad de escalones, reliquia y recuerdo del compañero. |
+| Initial route | Road, lanterns, architecture towards edges; space for the figure and dark reading area. |
+| Storm/later routes | Roots, iron, moss, wet stone, mountains and cold light; localized heat from lanterns. |
+| Improvements | Stone and wood workshop, workbench; statistics as decisions about that space. |
+| Movements | Same workshop with cooler tint; useful repetition of place, not another arbitrary background. |
+| Companions | Open shelter, tent, shared floor, complete figures. |
+| Legacy | Stone archive, depth of steps, relic and memory of the companion. |
 
-Las figuras son instancias del renderer de luchadores. Conservan identidad, apariencia y animación; la UI no sustituye su cuerpo por una ilustración incrustada en el fondo. La cámara común se obtiene de `CharacterVisualProfiles.portrait_scale` y `portrait_envelope`: reposo para fichas, ataque para la prueba de movimientos y victoria para Legado. El tamaño físico de cada especie procede de `world_height`; no se agranda cada silueta para llenar su caja. Los pivotes comparten suelo, con espacio para pies y extremos. La pose de victoria reserva el brazo alzado y su movimiento. No recortar antenas, colas o puños para uniformar cajas.
+The figures are instances of the fighter renderer. They preserve identity, appearance and animation; the UI does not replace its body with an illustration embedded in the background. The shared framing is obtained from `CharacterVisualProfiles.portrait_scale` and `portrait_envelope`: rest for tokens, attack for the move test, and victory for Legacy. The physical size of each species comes from `world_height`; Each silhouette is not enlarged to fill its box. The pivots share the floor, with space for feet and extremities. The victory pose reserves the raised arm and its movement. Do not trim antennas, tails or fists to make boxes uniform.
 
-Las insignias son objetos pintados: medallón normal, pieza romboidal de élite y marco de jefe con remate flameado. Se acompañan de texto «AHORA», «SUPERADO», «POR LLEGAR», «ÉLITE» o «JEFE». El círculo funcional que destaca un marcador de ruta no es un efecto de fuego de combate; no extenderlo a auras ornamentales.
+The insignia are painted objects: normal medallion, elite diamond piece and boss frame with flamed finial. They are accompanied by text "NOW", "COMPLETED", "UPCOMING", "ELITE" or "BOSS". The functional circle highlighting a route marker is not a combat fire effect; do not extend it to ornamental auras.
 
-Los símbolos nativos `×`, `+ 1`, flecha de crecimiento y estrella de insignia cubren acciones simples. No añadir paquetes de iconos de estilo ajeno por defecto. Los iconos decorativos ignoran puntero y foco; el área interactiva pertenece al control nativo.
+Native symbols `×`, `+ 1`, growth arrow and badge star cover simple actions. Do not add foreign style icon packs by default. Decorative icons ignore pointer and focus; the interactive area belongs to the native control.
 
-### Decoración con significado real
+### Decoration with real meaning
 
-Hay seis objetos fuente en `props-v1.png` y siete definiciones de uso en el manifiesto. Se muestran como máximo tres, uno por ancla, ordenados por prioridad. Anclas existentes: inferior izquierda, inferior derecha y superior derecha; márgenes mínimos 8 px y escala adaptativa `.55–1.25`.
+There are six source objects in `props-v1.png` and seven usage definitions in the manifest. A maximum of three are displayed, one per anchor, ordered by priority. Existing anchors: bottom left, bottom right and top right; 8 px minimum margins and `.55–1.25` adaptive scaling.
 
-| Objeto/uso | Condición actual |
+| Object/use | Current condition |
 | --- | --- |
-| Tela de Tepa / vendas de Balam | `appearance.body_style_id`, con `character_id` como fallback. |
-| Brasero de Ascua | Ocho encuentros superados. |
-| Reliquia de tormenta | Dieciséis encuentros y propiedad de `palette:luna`. |
-| Mochila | Un encuentro superado o paleta jade equipada. |
-| Medalla de Arena | Diez victorias reales recibidas por el caller. |
-| Farol equipado | `aura:farol` poseída y `aura_id:farol` equipada. |
+| Tepa fabric / Balam bandages | `appearance.body_style_id`, with `character_id` as fallback. |
+| Brazier by Ascua | Eight encounters completed. |
+| storm relic | Sixteen encounters and ownership of `palette:luna`. |
+| Backpack | One encounter completed or the Jade palette equipped. |
+| Arena medal | Ten real victories supplied by the caller. |
+| Equipped Lantern | `aura:farol` possessed and `aura_id:farol` equipped. |
 
-Las condiciones sólo seleccionan decoración. La capa visual no lee guardados, no concede recompensas y no inventa victorias para llenar un rincón. Si no recibe un dato opcional, el objeto permanece apagado. Ningún prop tapa texto o una acción en un formato estrecho.
+Conditions only select decoration. The visual layer doesn't read saves, doesn't grant rewards, and doesn't invent victories to fill a corner. If it does not receive an optional data, the object remains off. No prop covers text or an action in a narrow format.
 
-## 8. Movimiento y FX
+## 8. Motion and FX
 
-La navegación de Historia cambia de estado directamente. No hay un sistema global de entradas elásticas, zoom al hover o duración de transición entre pestañas que deba inventarse al centralizar. La vida de la pantalla viene del personaje, el lugar y la respuesta inmediata del control.
+Story Mode navigation changes state directly. There is no global system of springy inputs, hover zoom, or tab transition duration that needs to be invented when centralizing. The life of the screen comes from the character, the place and the immediate response of the control.
 
-Para conservar el lenguaje de combate actualizado:
+To keep combat language up to date:
 
-- Chispas estrechas y direccionales en el contacto; polvo tenue junto a los pies; pequeñas brasas que ascienden cerca del cuerpo.
-- Sin anillos expansivos, ondas cerradas, bolas luminosas grandes ni marcos de fuego que compitan con la silueta.
-- La indicación de turno usa resplandor de suelo difuso y pequeño rombo legible; no requiere un círculo ornamental.
-- Carga, impacto, recuperación y KO siguen los eventos y relojes existentes. El estilo nunca adelanta daño ni modifica resultados.
-- Pausa congela relojes de presentación. Movimiento reducido elimina emisiones y cámara innecesarias; conserva estado, foco y mensajes útiles.
+- Narrow, directional sparks on contact; light dust near the feet; small embers rising near the body.
+- No expanding rings, closed waves, large glow balls or fiery frames to compete with the silhouette.
+- The turn indicator uses diffuse ground glow and small readable rhombus; does not require an ornamental circle.
+- Charge, Impact, Recovery and KO follow existing events and clocks. The style never advances damage or modifies results.
+- Pause freezes presentation clocks. Reduced motion eliminates unnecessary particle emissions and camera motion; preserves state, focus and useful messages.
 
-Las cifras vigentes de CombatFX son límites del subsistema, no tamaños para iconos UI: 20 emisores, 320 partículas reservadas, máximo 24 por emisor y duración configurada aproximada `.17–.74 s`. La iluminación reflejada es breve y tenue. Para FX nuevos, reutilizar las reglas orgánicas y validar claridad móvil antes de aumentar cantidad o resplandor.
+Current CombatFX figures are subsystem limits, not sizes for UI icons: 20 emitters, 320 reserved particles, maximum 24 per emitter, and approximate configured duration `.17–.74 s`. The reflected illumination is brief and dim. For new FX, reuse organic rules and validate mobile clarity before increasing quantity or brightness.
 
-## 9. Estados de producto y accesibilidad
+## 9. Product states and accessibility
 
-La adaptación visual conserva las causas y acciones de cada estado. Historia ya distingue bloqueo, máximo alcanzado, selección, talento elegido, práctica sin recompensa, reintento y error de guardado mediante texto.
+Visual adaptation preserves the causes and actions of each state. Story Mode now distinguishes blocking, maximum reached, selection, chosen talent, practice without reward, retry and text save error.
 
-Para login, red, inventario, historial y otras pantallas futuras, reutilizar la misma jerarquía: título breve, explicación concreta y acción contextual. Es una regla de extensión, no una afirmación de que StoryPanel implemente autenticación o reconexión.
+For login, network, inventory, history and other future screens, reuse the same hierarchy: short title, concrete explanation and contextual action. It is an extension rule, not an assertion that StoryPanel implements authentication or reconnection.
 
-- Una acción no disponible mantiene etiqueta legible y motivo. No comunicar error únicamente atenuando la textura.
-- Conservar estados de teclado y foco visible en selectores, listas, diálogo y cierre. Un atlas no reemplaza semántica del control.
-- Los bloques decorativos usan `MOUSE_FILTER_IGNORE` y `FOCUS_NONE`; no interceptan scroll o clics.
-- Contrastar texto contra el fondo ya compuesto, no sólo contra el hex del fallback. La presente auditoría no certifica ratios de contraste.
-- Mantener datos largos en texto nativo; probar nombres de usuario, traducciones, números grandes y requisitos completos.
-- Los avisos críticos no deben depender de una elipsis o un tooltip exclusivo de ratón.
+- An unavailable action maintains readable label and reason. Do not communicate error only by fading the texture.
+- Preserve keyboard states and visible focus in selectors, lists, dialogs and close buttons. An atlas does not replace control semantics.
+- Decorative blocks use `MOUSE_FILTER_IGNORE` and `FOCUS_NONE`; They do not intercept scrolling or clicks.
+- Contrast text against the already composed background, not just against the fallback hex. This audit does not certify contrast ratios.
+- Keep long data in native text; test usernames, translations, large numbers, and complete requirements.
+- Critical notices should not depend on an ellipsis or a mouse-only tooltip.
 
-## 10. Plan de extracción identificado en la base
+## 10. Extraction plan identified in the base
 
-Ya existe el registro de materiales y lugares. La primera fase debe compartir la presentación antes de migrar páginas:
+The registration of materials and places already exists. The first phase is to share the presentation before migrating pages:
 
-1. Elevar los colores semánticos, familias/tamaños por rol y medidas observadas a una fuente común, preservando valores de Historia.
-2. Mantener `WorldVisuals` como acceso a superficies, estados e ilustraciones, y el manifiesto como fuente de regiones y contextos.
-3. Formalizar variantes abiertas para lista de compañeros, fila estadística y técnica; compartir todos sus estados, no sólo el fondo normal.
-4. Extender esa familia a entrada de texto, desplegable abierto, lista/tabla, aviso, estado vacío y diálogo. Reutilizar material petróleo, costura/borde y foco existentes; no producir un nuevo atlas antes de comprobar que falta.
-5. Migrar después cada pantalla con una comparación nativa contra Historia, manteniendo callbacks, datos, foco, scroll y límites de interacción.
+1. Elevate semantic colors, families/sizes by role and observed measurements to a common source, preserving Story Mode values.
+2. Keep `WorldVisuals` as access to surfaces, states, and illustrations, and the manifest as a source of regions and contexts.
+3. Formalize open variants for companion list, statistical and technical queue; Share all your statuses, not just the normal background.
+4. Extend that family to text input, open dropdown, list/table, prompt, empty state and dialog. Reuse existing oil material, seam/edge and bulb; Do not produce a new atlas before checking that it is missing.
+5. Then migrate each screen with a native comparison against Story Mode, maintaining callbacks, data, focus, scroll and interaction limits.
 
-### Excepciones de la base que no conviene multiplicar
+### Exceptions to the base that should not be multiplied
 
-- La confirmación de redistribución usa un `StyleBoxFlat` local en vez del alias compartido `dialog`.
-- El cierre `×` borra sólo el fondo normal; otros estados proceden de la correa heredada. Un futuro control de icono debe definirlos coherentemente.
-- El `OptionButton` de capítulos comparte la superficie cerrada, pero no establece por sí mismo toda la estética del popup abierto.
-- Los separadores de filas son nativos tenues; el separador ilustrado del atlas existe, pero no es obligatorio entre cada estadística.
-- El foco del marcador de Ruta se dibuja localmente; los botones ordinarios usan un relleno ámbar interior compartido, sin contorno exterior.
-- Fuentes, espaciado y colores están repartidos entre StoryPanel y el registro. No crear una segunda paleta mientras se extraen.
+- The redistribution commit uses a local `StyleBoxFlat` instead of the shared alias `dialog`.
+- Closing `×` deletes only the normal background; other states come from the inherited belt. A future icon control must define them consistently.
+- The chapter `OptionButton` shares the closed surface, but does not establish by itself the entire aesthetic of the open popup.
+- The row dividers are native dim; The illustrated atlas separator exists, but is not required between each statistic.
+- The focus of the Route marker is drawn locally; Ordinary buttons use a shared inner amber fill, with no outer outline.
+- Fonts, spacing and colors are split between StoryPanel and the registry. Do not create a second palette while extracting.
 
-### Necesidades reales de assets
+### Real asset needs
 
-**Ningún PNG nuevo es necesario para comenzar.** Hay cinco entornos, dos atlas y suficientes variantes de superficie para construir el sistema común. Movimientos y rutas posteriores ya demuestran reutilización mediante contexto/tinte.
+**No new PNGs are needed to get started.** There are five environments, two atlases, and enough surface variants to build the common system. Later moves and routes already demonstrate reuse via context/tint.
 
-Sólo encargar arte adicional cuando exista una composición nueva que los fondos actuales no soporten, o un objeto reconocible que no pueda expresarse con los símbolos/materiales existentes. Un nuevo modo no exige automáticamente otro fondo. La necesidad actual de fuentes consistentes es de empaquetado/licencia, no de generación de imagen.
+Only commission additional art when there is a new composition that the current funds do not support, or a recognizable object that cannot be expressed with existing symbols/materials. A new mode does not automatically require another fund. The current need for consistent fonts is for packaging/licensing, not imaging.
 
-Un asset futuro debe conservar pintura, materiales, luz y espacio útil; carecer de texto incrustado; aportar regiones, margen, transparencia cuando corresponda y procedencia. Fondos opacos; objetos y superficies con alfa real. Cargar únicamente el lugar activo y retener como compartidos los atlas, sin precargar todos los ambientes.
+A future asset must preserve paint, materials, light and useful space; lack embedded text; provide regions, margin, transparency where appropriate and provenance. Opaque backgrounds; objects and surfaces with real alpha. Load only the active place and keep the atlases as shared, without preloading all environments.
 
-## 11. Criterios para aceptar cada extensión
+## 11. Criteria to accept each extension
 
-Comparar al menos los siete formatos ya usados por Historia: `1360×880`, `1224×792`, `1920×1080`, `768×1024`, `390×844`, `430×932`, `844×390`.
+Compare at least the seven formats already used by Story Mode: `1360×880`, `1224×792`, `1920×1080`, `768×1024`, `390×844`, `430×932`, `844×390`.
 
-- El primer vistazo identifica lugar, figura o decisión principal y acción disponible.
-- La tipografía, los colores, el material y sus estados proceden del sistema compartido; las excepciones quedan justificadas.
-- La escena conserva aspecto, los personajes conservan escala coherente y ninguna pose queda cortada.
-- Cabecera, cinco pestañas y pie no se solapan; la última fila y el último requisito son alcanzables.
-- Probar normal, hover, pulsado, foco, deshabilitado, seleccionado, vacío, error y texto largo, según corresponda a la pantalla.
-- Inspeccionar Ruta normal y jefe, diez nodos en teléfono, Taller, técnicas bloqueadas, compañero seleccionado y Legado completo/vacío.
-- Verificar pausa y movimiento reducido donde haya animación; conservar relojes y eventos originales.
-- Confirmar que los objetos responden a datos reales y que una decoración no captura interacción.
+- The first glance identifies place, main figure or decision and available action.
+- The typography, colors, material and their states come from the shared system; exceptions are justified.
+- The scene retains its appearance, the characters retain a coherent scale and no pose is cut.
+- Header, five tabs and footer do not overlap; the last row and the last requirement are reachable.
+- Try normal, hover, down, focus, disabled, selected, empty, error, and long text, as appropriate for the screen.
+- Inspect Normal Route and Boss, Ten Nodes on Phone, Workshop, Blocked Techniques, Selected Companion, and Full/Empty Legacy.
+- Check pause and reduced movement where there is animation; preserve original watches and events.
+- Confirm that objects respond to real data and that a decoration does not capture interaction.
 
-La revisión visual complementa las pruebas funcionales. Una aserción aprobada no demuestra por sí sola contraste, ausencia de cortes o coherencia del material.
+The visual review complements the functional tests. An approved assertion does not by itself demonstrate contrast, absence of breaks, or coherence of the material.
 
-## Referencias verificadas
+## Verified references
 
-- [StoryPanel: color y navegación](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/story_panel.gd:25), [tipografía y capas](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/story_panel.gd:220), [responsive](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/story_panel.gd:318), [composición de Ruta](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/story_panel.gd:460).
-- [WorldVisuals: materiales y estados](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/world_visuals.gd:93), [WorldBackdrop](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/world_backdrop.gd:25), [manifiesto](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/data/ui_visual_manifest.json), [dirección del arte](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/ui/ART-DIRECTION.md).
-- Capturas revisadas: [Ruta escritorio](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/story-world-desktop.png), [Ruta móvil](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/story-world-mobile.png), [diez encuentros](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/story-world-mobile-route.png), [jefe](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/story-world-boss.png), [Taller](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/story-world-workshop.png), [Legado](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/story-world-legacy.png), [Refugio con Bruma](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/organic-fx/live/story-bruma-1360x880.png).
-- [FX orgánicos actuales](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/reports/organic-fx/COMBAT-FX.md), [turno difuso en ArenaView](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/arena_view.gd:214).
+- [StoryPanel: color and navigation](../scripts/ui/story_panel.gd#L25), [typography and layers](../scripts/ui/story_panel.gd#L220), [responsive](../scripts/ui/story_panel.gd#L318), [Path composition](../scripts/ui/story_panel.gd#L460).
+- [WorldVisuals: materials and states](../scripts/ui/world_visuals.gd#L93), [WorldBackdrop](../scripts/ui/world_backdrop.gd#L25), [manifest](../data/ui_visual_manifest.json), [art direction](../assets/ui/ART-DIRECTION.md).
+- Screenshots reviewed: [Desktop Route](story-world-desktop.png), [Mobile Route](story-world-mobile.png), [ten encounters](story-world-mobile-route.png), [boss](story-world-boss.png), [Workshop](story-world-workshop.png), [Legacy](story-world-legacy.png), [Shelter with Bruma](organic-fx/live/story-bruma-1360x880.png).
+- [Current Organic FX](organic-fx/COMBAT-FX.md), [ArenaView Diffuse Shift](../scripts/arena_view.gd#L214).
 
-Las líneas anteriores identifican la versión inspeccionada; pueden moverse durante la extracción posterior del sistema. Notas de alcance y procedencia: `work/visual-system/style-notes.md`.
+The previous lines identify the inspected version; They may move during subsequent removal of the system. Scope and provenance notes: `work/visual-system/style-notes.md`.
 
 
-## 12. Contrato central implementado
+## 12. Central contract implemented
 
-La sección 10 conserva el diagnóstico anterior a la migración. La implementación vigente se apoya en estas fuentes; no se deben crear temas por pantalla:
+The 10 section preserves the pre-migration diagnostics. The current implementation is based on these sources; themes should not be created per screen:
 
-| Fuente | Responsabilidad |
+| Source | Responsibility |
 | --- | --- |
-| `data/game_visual_tokens.json` | Paleta semántica, espacios 4/8/12/16/24/32/48/64, jerarquía de fuentes, altura táctil, foco y duración de transición. |
-| `scripts/ui/game_visual_system.gd` | Theme compartido, fuentes por rol, superficies, tarjetas abiertas, barras, selectores, iconos grabados, velos y entrada de sección. |
-| `data/ui_visual_manifest.json` + `world_visuals.gd` | Regiones originales, nueve parches, estados, fondos de cada lugar y elegibilidad de objetos. |
-| `world_backdrop.gd` | Fondo lejano, ambiente ilustrado, objetos elegibles y velo oscuro. Sólo carga el ambiente activo. |
-| `components/game_fighter_preview.gd` | Figura real con identidad/cosméticos; cámara común de reposo y escala entre especies, derivada de los perfiles de presentación del renderer. |
-| `components/game_section_header.gd` / `game_badge.gd` | Jerarquía de cabecera e insignias con texto semántico y material de Historia. |
-| `components/game_modal.gd` | Diálogo único: marco, overlay, título, cierre, scroll, foco y retorno. `use_location_layout()` reutiliza el contrato en una sección ilustrada abierta. |
-| `components/game_overlay_focus.gd` | Tab/Shift-Tab dentro de la pantalla activa; respeta desplegables abiertos y Escape sin dobles acciones. |
-| `components/game_battle_result_panel.gd` | Marco de recompensa, titular, explicación y XP; recibe valores reales, sin calcular recompensas ni dirigir animaciones. |
+| `data/game_visual_tokens.json` | Semantic palette, 4/8/12/16/24/32/48/64 spaces, font hierarchy, touch height, focus and transition duration. |
+| `scripts/ui/game_visual_system.gd` | Shared theme, fonts by role, surfaces, open cards, bars, selectors, engraved icons, veils and section entry. |
+| `data/ui_visual_manifest.json` + `world_visuals.gd` | Original regions, nine patches, states, location backgrounds, and item eligibility. |
+| `world_backdrop.gd` | Distant background, illustrated environment, eligible objects and dark veil. Only loads the active environment. |
+| `components/game_fighter_preview.gd` | Real figure with identity/cosmetics; Common resting chamber and scale between species, derived from the renderer presentation profiles. |
+| `components/game_section_header.gd` / `game_badge.gd` | Header hierarchy and badges with semantic text and Story Mode material. |
+| `components/game_modal.gd` | Single dialog: frame, overlay, title, closure, scroll, focus and return. `use_location_layout()` reuses the contract in an open illustrated section. |
+| `components/game_overlay_focus.gd` | Tab/Shift-Tab within the active screen; respects open dropdowns and Escape without double actions. |
+| `components/game_battle_result_panel.gd` | Reward frame, headline, explanation and XP; receives real values, without calculating rewards or directing animations. |
 
-`Visuals.apply_button(control, role)` define todos los estados para `primary`, `secondary`, `danger`, `navigation`, `navigation_active` e `icon`. Un cierre usa `icon`; una tarjeta de lista usa `apply_card_button`, no otra correa. El estado seleccionado combina fondo abierto y línea ámbar. Deshabilitado conserva texto legible. `apply_option` tematiza también el desplegable abierto; `apply_progress` distingue XP, vida propia y vida rival dentro del mismo carril.
+`Visuals.apply_button(control, role)` defines all states for `primary`, `secondary`, `danger`, `navigation`, `navigation_active` and `icon`. A closure uses `icon`; one list card use `apply_card_button`, not other strap. The selected state combines open background and amber line. Disabled preserves readable text. `apply_option` also themes the open dropdown; `apply_progress` distinguishes XP, own life and rival life within the same lane.
 
-El Theme cubre paneles, tooltips, RichTextLabel, campos, listas, pestañas, sliders, checks, scrollbars y menús. Los pequeños iconos de controles son marcas nativas de crema/bronce con sombra oscura y peso común; las insignias narrativas continúan usando el atlas pintado. No se introdujo otro paquete de iconos.
+The Theme covers panels, tooltips, RichTextLabel, fields, lists, tabs, sliders, checks, scrollbars and menus. The small control icons are native cream/bronze markings with dark shadow and common weight; narrative insignia continue using the painted atlas. No other icon pack was introduced.
 
-Las secciones aportan lugar y acento: refugio para Menú/Ficha/Compañeros, taller para creación/inventario/mejoras, patio para Arena/Online, archivo para recuerdos y Legado. Matchmaking reutiliza los retadores de Online; las clasificaciones futuras tienen contexto registrado, pero esta migración no inventa una clasificación que el servidor no ofrece.
+The sections provide place and accent: shelter for Menu/Token/Companions, workshop for creation/inventory/improvements, patio for Arena/Online, archive for memories and Legacy. Matchmaking reuses Online challengers; future classifications have recorded context, but this migration does not invent a classification that the server does not offer.
 
-La apertura común usa un fundido de 0.18 s cuando el movimiento está permitido. Hover, presión y selección responden inmediatamente mediante el material; no hay rebote ni escalado decorativo que mueva objetivos táctiles. El renderer conserva sus propios relojes de acciones y energía ligada al cuerpo. Las diferencias de tamaño entre especies no se borran para llenar una tarjeta.
+The common opening uses a fade of 0.18 s when movement is allowed. Hover, pressure and selection respond immediately through the material; there's no bouncing or decorative scaling to move touch targets. The renderer maintains its own clocks of actions and energy linked to the body. Size differences between species are not erased to fill out a card.
 
-Arena y repeticiones comparten `Visuals.battle_veil` superior e inferior. El combate conserva su encuadre y espacio de acciones, con la ilustración a sangre detrás del HUD. Las repeticiones muestran el escenario, nombres, ropa y eventos guardados en el combate original; reproducir no actualiza identidades ni entrega recompensas.
+Arena and replays share top and bottom `Visuals.battle_veil`. The combat retains its frame and space of actions, with the illustration in blood behind the HUD. Replays show the setting, names, clothing, and events saved from the original match; Playing does not update identities or deliver rewards.
 
-Para añadir una pantalla: empezar por `Visuals.theme()`, elegir contexto con `mount_background`, usar roles compartidos y componentes; suministrar datos reales de identidad/propiedad; validar teclado, scroll y tamaños estrechos. Registrar la pantalla en `tests/test_visual_screen_audit.gd` y `work/visual-system/review-screens.json`, y regenerar el [tablero de comparación](visual-system/index.html). Los controles de seguridad del navegador/sistema quedan fuera de este Theme nativo.
+To add a screen: start with `Visuals.theme()`, choose context with `mount_background`, use shared roles and components; provide actual identity/ownership data; validate keyboard, scroll and narrow sizes. Register the screen to `tests/test_visual_screen_audit.gd` and `work/visual-system/review-screens.json`, and regenerate the [Report](VISUAL-SCREEN-AUDIT.md). Browser/system security controls are left out of this native Theme.
 
-## 13. Refugios personales del menú
+## 13. Menu Personal Shelters
 
-Por solicitud del usuario, el menú principal deja de superponer un retrato animado y usa una ilustración cotidiana por cuerpo. Conserva los materiales, la tipografía y los estados de interacción de Historia. La consistencia entre personajes se limita al lenguaje pictórico; hábitat, luz, actividad, distancia de cámara y lado del personaje deben distinguirlos claramente. La composición de botones puede pasar a derecha o izquierda según el arte. El móvil conserva el foco del personaje y pone la navegación debajo. Véase [el catálogo y sus capturas](CHARACTER-REFUGES.md).
+At the user's request, the main menu stops overlaying an animated portrait and uses one everyday illustration per body. Preserves the materials, typography, and interaction states of Story Mode. The consistency between characters is limited to pictorial language; habitat, light, activity, camera distance and character side should clearly distinguish them. The composition of buttons can go to the right or left depending on the art. The mobile retains the focus of the character and puts the navigation below. See [the catalog and its screenshots](CHARACTER-REFUGES.md).
 
-## 14. Contacto y profundidad durante el combate
+## 14. Contact and depth during combat
 
-Arena, Historia y repeticiones enlazan la pareja mediante `FighterView.set_combat_lane(limit, opponent)`. La separación de guardia sigue siendo estable; durante un ataque, el sprite puede atravesar el límite central para alcanzar visualmente el tercio frontal del torso rival. El acercamiento usa el mismo reloj de anticipación, viaje, impacto y recuperación. Nunca desplaza la raíz de combate, cambia la escala de especie o recalcula daño, alcance lógico o iniciativa.
+Arena, Story Mode and replays link the pair via `FighterView.set_combat_lane(limit, opponent)`. Guard separation remains stable; During an attack, the sprite can pass through the central boundary to visually reach the front third of the opponent's torso. The approach uses the same clock of anticipation, travel, impact and recovery. It never shifts combat root, changes species scale, or recalculates damage, logical range, or initiative.
 
-El objetivo se calcula desde el torso neutral anotado y las raíces sin avance. No persigue el desplazamiento del otro atacante. El alcance visual usa el socket de mano anotado o, en paquetes sin esa anotación, el borde delantero de la pose de golpe. Esta aproximación visual no se convierte en anatomía ni hitbox. La altura del golpe sigue perteneciendo a la ilustración; no se hunden los pies ni se deforma al personaje para igualar estaturas.
+The target is calculated from the noted neutral torso and the roots without advancement. It does not pursue the movement of the other attacker. The visual scope uses the annotated hand socket or, in packages without that annotation, the leading edge of the striking pose. This visual approach does not become anatomy or a hitbox. The height of the blow still belongs to the illustration; The feet are not sunk nor the character is deformed to match heights.
 
-Durante viaje/contacto/recuperación, el atacante se dibuja delante del rival. Los contactos simultáneos se ordenan por los eventos de presentación y mantienen separados los centros de los cuerpos. Se intercambian exclusivamente los dos puestos de dibujo; FX y HUD permanecen encima. Los empates conservan una orientación estable. Si un resultado interrumpe un ataque, la figura conserva su posición horizontal hasta el siguiente combate, sin teletransportarse hacia su carril. Movimiento reducido mantiene sus poses y prioridad visual, sin añadir el acercamiento.
+During travel/contact/recovery, the attacker is drawn in front of the opponent. Simultaneous contacts are ordered by presentation events and keep the centers of the bodies separate. Only the two drawing positions are exchanged; FX and HUD remain on top. Ties maintain a stable orientation. If a result interrupts an attack, the figure retains its horizontal position until the next combat, without teleporting back to its lane. Reduced motion maintains your poses and visual priority, without adding zoom.
 
-Comparación reproducible: [contacto antes/después](combat-contact/index.html). Alcance, validación y límites en [COMBAT-CONTACT.md](COMBAT-CONTACT.md).
-
-
-## 15. Daño ilustrado persistente
-
-La autoridad actual del daño es la ilustración completa del personaje, no manchas o rayas generadas encima de su superficie. Los 23 cuerpos tienen una familia herida de 40 poses: 22 cuerpos con arte nuevo y Ascua con sus tres bancos critical-v1 reutilizados. Dañado y crítico (grados 2 y 3) comparten esa misma familia; el grado 1 conserva el arte limpio y las poses de fatiga. No anunciar tres niveles distintos de arte cuando existen limpio y herido.
-
-Las heridas respetan la pintura, el material y la identidad: ropa rasgada, rostro cansado o magullado y posturas de fatiga; piedra astillada para los cuerpos de piedra. No introducir sangre, equipamiento nuevo ni marcas vectoriales flotantes. Los tintes cosméticos y flashes de impacto mantienen sus funciones independientes. El estado persiste durante movimientos, reacciones, victoria y KO; curarse no restaura prendas a mitad de una batalla.
-
-Cada banco conserva un escalar común, celda 512, pivote 256/448 y densidad 1,5. El encorvamiento no autoriza aumentar la escala. Los metadatos corresponden al cuadro herido efectivo. Apoyos proyectados y anclajes heredados se identifican como aproximados; en ausencia de una mano anotada se permite el borde pintado de la pose de golpe como aproximación visual, nunca como anatomía certificada ni alcance lógico.
-
-La aceptación exige alfa real, huecos transparentes y ausencia de halos sobre fondos claro y oscuro, además de revisión nativa de contacto y continuidad. El [tablero de daño ilustrado](illustrated-damage/index.html) conserva comparaciones técnicas y procedencia; el [informe](ILLUSTRATED-DAMAGE.md) distingue la revisión de arte, el pase nativo (3832/0, 39 PNG) y las seis suites headless (56 484/0). La muestra nativa no se anuncia como un recorrido animado de las 40 poses. Esta sección sustituye la descripción histórica del desgaste procedural, sin borrar sus evidencias anteriores. No modifica reglas ni progresión.
-
-## 16. HUD pintado y cierre del combate
-
-Arena, Historia y la presentación de Online comparten `game_combatant_hud.gd`: nombre, nivel y vida sobre el material pintado de recompensa, con cifras nativas y barras simétricas. Menú ocupa el centro superior; se eliminan la marca de Arena, el acceso directo Historia y la explicación redundante de ataques automáticos.
-
-Al terminar, resultado y continuación forman un grupo centrado sobre un velo de la escena final. Esta superposición es intencional y reemplaza la antigua franja de recompensa bajo los pies. No reubica ni reescala a los luchadores, ni interviene en las recompensas. Los paneles posteriores se dibujan por encima del cierre; los números de daño permanecen detrás. Online interpreta el ganador desde el lado del usuario y conserva XP/rating recibidos. Las repeticiones históricas mantienen su encuadre anterior. [Revisión y pruebas](BATTLE-UI.md).
+Reproducible comparison: [Report](COMBAT-CONTACT.md). Scope, validation and limits in [COMBAT-CONTACT.md](COMBAT-CONTACT.md).
 
 
-## Logros: información antes que decoración
+## 15. Persistent Illustrated Damage
 
-La pestaña antes llamada Legado se presenta como Logros. Archivo conserva fondo y materiales de Historia, pero omite objetos decorativos y el emblema vacío. Objetivos, conseguidos y colección comparten tarjetas, foco y tipografía existentes. Los recuerdos de capítulos son secundarios y sus decisiones se despliegan a demanda. [Referencia actual](achievements-ui/index.html).
+The current damage authority is the character's entire artwork, not spots or streaks generated on top of its surface. The 23 bodies have a wounded family of 40 poses: 22 bodies with new art and Ascua with its three critical-v1 banks reused. Damaged and critical (grades 2 and 3) share that same family; 1 grade preserves clean art and fatigue poses. Don't advertise three different levels of art when they exist clean and wounded.
 
+The wounds respect the paint, the material and the identity: torn clothes, tired or bruised faces and fatigued postures; chipped stone for stone bodies. Do not introduce blood, new equipment or floating vector marks. Cosmetic dyes and impact flashes maintain their independent functions. The status persists during moves, reactions, victories, and KOs; Healing does not restore items mid-battle.
 
-## Ruta: jerarquía de decisión
+Each bank retains a common scalar, cell 512, pivot 256/448, and density 1,5. Slouching does not authorize increasing the scale. The metadata corresponds to the actual wounded frame. Projected supports and inherited anchors are identified as approximate; in the absence of a notated hand the painted edge of the striking pose is permitted as a visual approximation, never as certified anatomy or logical scope.
 
-La nueva Ruta prioriza estado del encuentro, nombre y acción. El rival dispone de una reserva más compacta; el emblema vacío y los objetos decorativos se omiten. Fortaleza, habilidad y técnicas se consultan a demanda. Pie con acciones de 48 px de alto y hasta 240 px de ancho; repetir es secundario cuando existe continuación. [Referencia vigente](route-ui/index.html).
+Acceptance requires true alpha, transparent gaps and no halos on light and dark backgrounds, as well as native contact and continuity review. The [Report](ILLUSTRATED-DAMAGE.md) preserves technical comparisons and provenance; [report](ILLUSTRATED-DAMAGE.md) distinguishes the art review, the native pass (3832/0, 39 PNG) and the six headless suites (56 484/0). The native sample is not advertised as an animated tour of the 40 poses. This section replaces the historical description of procedural wear, without erasing its previous evidence. It does not modify rules or progression.
 
+## 16. Painted HUD and combat closure
 
-## Mejoras: lectura y confirmación
+Arena, Story Mode and the presentation of Online share `game_combatant_hud.gd`: name, level and life on the painted reward material, with native figures and symmetrical bars. Menu occupies the top center; Arena flag, Story Mode shortcut, and redundant auto-attack explanation removed.
 
-Puntos antes que introducción; valor actual prominente y próximo valor secundario. Ayuda a demanda y confirmación breve al aplicar. Material training_card compartido, cuatro/dos/una columnas, acciones de 48 px de alto y ancho acotado. [Referencia](upgrades-ui/index.html).
-
-
-## Movimientos: decisiones separadas
-
-Técnicas consume fichas; Talentos consume elecciones. Mostrar recurso y efecto antes que detalles numéricos. Material training_card compartido, tres/dos/una columnas, acciones de 48 px y foco persistente. [Referencia](moves-ui/index.html).
+At the end, result and continuation form a group centered on a veil of the final scene. This overlap is intentional and replaces the old reward stripe underfoot. It does not relocate or rescale fighters, nor does it intervene in rewards. The back panels are drawn above the closure; damage numbers remain behind. Online interprets the winner from the user's side and preserves received XP/rating. Historical repetitions maintain their previous framing. [Review and tests](BATTLE-UI.md).
 
 
-## Compañeros de Historia: selección informada
+## Achievements: information before decoration
 
-Separar consulta y activación con En uso / Vista previa. Destacar identidad, nivel y avance individual; mantener biografía y habilidades opcionales. Retratos con cámara común, material training_card compartido y acciones compactas. [Referencia](story-companions-ui/index.html).
-
-
-## Sliders: grosor y contraste
-
-El estilo compartido reserva 10 px de grosor para las barras horizontales y verticales. Carril oscuro, relleno dorado y agarrador de 32 px; foco visible dentro del control. Ajustes mantiene 48 px de área interactiva. [Referencia](sliders-ui/index.html).
+The tab formerly called Legacy is presented as Achievements. Archive preserves background and historical materials, but omits decorative objects and the empty emblem. Objectives, achievements and collection share existing cards, focus and typography. Chapter memories are secondary and their decisions are deployed on demand. [Report](ACHIEVEMENTS-UI.md).
 
 
-## Precisión de sprites · 21 de septiembre de 2026
+## Path: decision hierarchy
 
-Los 23 cuerpos usan daño localizado sobre la geometría exacta de su pose sana. El daño no modifica la tonalidad, iluminación ni opacidad de las zonas intactas. Se conservan la escala propia de cada cuerpo y el origen común. Ver [informe y validación](SPRITE-PRECISION.md) y [comparativa](sprite-precision/index.html).
-
-
-## Foco y rendimiento · 21 de septiembre de 2026
-
-El foco compartido usa un relleno interior ámbar, sin trazo ni expansión fuera del control. Conservar navegación por teclado. Las listas suspenden los retratos fuera del área recortada; una pantalla opaca completa suspende la arena que cubre. Diálogos translúcidos y transiciones conservan el fondo. [Cambios y mediciones](PERFORMANCE-UI.md).
+The new Route prioritizes encounter status, name and action. The rival has a more compact reserve; the empty emblem and decorative objects are omitted. Strength, skill and techniques are consulted on demand. Footer with actions from 48 px high and up to 240 px wide; repeating is secondary when there is continuation. [Report](ROUTE-UI.md).
 
 
-## Revisión de claridad · 22 de septiembre de 2026
+## Improvements: reading and confirmation
 
-Esta revisión extiende el sistema existente para que las decisiones sean más fáciles de encontrar. [Análisis por pantalla](UX-REVIEW.md) y [comparador nativo](ux-review/index.html).
-
-- `GameReadingSections` reutiliza tipografía y navegación del sistema visual para ayuda y resúmenes desplegables. Los componentes solo presentan texto y estados; no calculan recompensas ni cambian progreso.
-- Las acciones nombran su resultado y su coste cuando existe: `Mejorar · 1 punto`, `Entrar con el navegador`, `Mi ruta`. El compañero ya activo ofrece `Volver con…`.
-- `OnlinePanel` divide Mi ficha en Atributos, Técnicas, Talentos y Estilo. Cambiar de sección conserva el estado del luchador, mueve el foco a la pestaña y vuelve al inicio de la lista; no escribe en el servidor.
-- El selector de apariencias se llama `Conjunto visual…`. En móvil, la previsualización deja más espacio útil a las opciones; el pie admite varias líneas. Se conserva el tamaño relativo de las especies y la vista previa de contenido bloqueado sin equiparlo.
-- La ayuda de teclado de los modales se muestra en ventanas de al menos 600 px. La X y la navegación por teclado siguen disponibles en las pequeñas.
-- Durante el combate no se muestra la acción principal desactivada. En el resultado móvil, anuncio y acción quedan encima de las siluetas; el escritorio mantiene su centro.
-- Los colores, materiales, contornos internos de foco y controles de volumen siguen siendo los compartidos. No se incorporan nuevas imágenes ni contornos exteriores.
-
-Evidencia: 42 estados × 2 resoluciones = 84 capturas nativas, 153 comprobaciones de captura sin fallos. 26 suites de aceptación de UI e integración local pasan; las limitaciones de dos suites antiguas están detalladas en el informe. Datos desechables y API simulada, sin cambios en cuentas reales.
+Points before introduction; prominent current value and secondary next value. Help on demand and brief confirmation when applying. Material training_card shared, four/two/one columns, shares 48 px height and width bounded. [Report](UPGRADES-UI.md).
 
 
-## Presencia de personajes · 22 de septiembre de 2026
+## Moves: separate decisions
 
-La revisión posterior amplía moderadamente los retratos de Entrenamiento, Ficha, Personalizar móvil, selección e Historia/Online. Combate de escritorio admite hasta escala 2.05 con suelo 24 px más abajo. Móvil conserva el límite horizontal de dos animaciones completas. Las especies comparten cámara y mantienen su tamaño relativo; nunca se ajusta la escala a los píxeles de cada pose. No cambian arte, tonos ni lógica de juego.
+Techniques consume tokens; Talents consume elections. Show resource and effect before numerical details. Shared training_card material, three/two/one columns, 48 px actions and persistent focus. [Report](MOVES-UI.md).
 
-[Medidas, decisiones y validación](CHARACTER-PRESENCE.md) · [Muro móvil más reciente](../../../work/character-presence/after/wall-390x844.png) · [Muro escritorio más reciente](../../../work/character-presence/after/wall-1360x880.png).
+
+## Story Mode Companions: informed selection
+
+Separate query and activation with In use / Preview. Highlight identity, level and individual advancement; keep biography and optional skills. Portraits with a common camera, shared training_card material and compact actions. [Report](STORY-COMPANIONS-UI.md).
+
+
+## Sliders: thickness and contrast
+
+The shared style reserves 10 px thickness for the horizontal and vertical bars. Dark lane, gold fill and 32 px grabber; visible focus within the control. Settings maintains 48 px of interactive area. [Report](SLIDERS-UI.md).
+
+
+## Sprite Accuracy · 21 September 2026
+
+23 bodies use localized damage on the exact geometry of their healthy pose. The damage does not modify the tone, lighting or opacity of the intact areas. The scale of each body and the common origin are preserved. See [report and validation](SPRITE-PRECISION.md).
+
+
+## Focus and performance · 21 September 2026
+
+The shared focus uses an amber interior fill, with no stroke or out-of-control expansion. Preserve keyboard navigation. Lists suspend portraits outside the cropped area; A full opaque screen suspends the covering sand. Translucent dialogues and transitions preserve the background. [Changes and measurements](PERFORMANCE-UI.md).
+
+
+## Clarity Review · 22 September 2026
+
+This revision extends the existing system to make decisions easier to find. [Screen analysis](UX-REVIEW.md).
+
+- `GameReadingSections` reuses typography and visual system navigation for help and drop-down summaries. Components only present text and states; They do not calculate rewards or change progress.
+- The actions name their result and their cost when it exists: `Mejorar · 1 punto`, `Entrar con el navegador`, `Mi ruta`. The already active companion offers `Volver con…`.
+- `OnlinePanel` divides My file into Attributes, Techniques, Talents and Style. Changing sections preserves the fighter's state, moves focus to the tab and returns to the top of the list; does not write to the server.
+- The appearance selector is called `Conjunto visual…`. On mobile, the preview leaves more useful space for options; The foot supports several lines. Relative size of species and preview of locked content without equipping it is preserved.
+- The modal keyboard help is displayed in windows of at least 600 px. The X and keyboard navigation are still available on the small ones.
+- The disabled main action is not displayed during combat. In the mobile result, the ad and action remain on top of the silhouettes; the desk maintains its center.
+- The colors, materials, internal focus contours and volume controls remain the same. No new images or exterior contours are incorporated.
+
+Evidence: 42 states × 2 resolutions = 84 native captures, 153 capture checks without failures. 26 UI acceptance and local integration suites pass; The limitations of two older suites are detailed in the report. Disposable data and mock API, no changes to real accounts.
+
+
+## Character Presence · 22 September 2026
+
+The subsequent revision moderately expands the portraits of Training, Tab, Personalize mobile, selection and Story Mode/Online. Desktop combat supports up to 2.05 scale with 24 px floor below. Mobile preserves the horizontal boundary of two full animations. The species share a chamber and maintain their relative size; It is never scaled to the pixels of each pose. They don't change art, tones or game logic.
+
+[Measurements, decisions and validation](CHARACTER-PRESENCE.md) · Latest mobile wall (`work/character-presence/after/wall-390x844.png`; not included) · Latest desktop wall (`work/character-presence/after/wall-1360x880.png`; not included).

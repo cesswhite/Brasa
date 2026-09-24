@@ -1,84 +1,84 @@
-# Brasa · Revisión de claridad y uso
+# Brasa Clarity and Usability Review
 
-22 de septiembre de 2026. Cambios aplicados al juego.
+22 September 2026. Changes applied to the game.
 
-La revisión parte de las **37 vistas más recientes** de escritorio y móvil. Añadí cinco estados de detalle para cubrir Color, Efectos, Estilo y las nuevas subsecciones online: **42 estados y 84 capturas nativas finales**. Los cambios se concentran en entender qué hacer, encontrar cada opción y leer solo el detalle necesario.
+The review is based on the **37 most recent views** on desktop and mobile. I added five detail states to cover Color, Effects, Style and the new online subsections: **42 states and 84 final native captures**. The changes focus on understanding what to do, finding each option, and reading only the necessary detail.
 
-El menú, la identidad ilustrada, los materiales de bronce/cuero y los controles de volumen ya tenían una base útil. Se conservaron. Las mejoras principales están en la ayuda por temas, la ficha online por secciones, la distribución móvil, las acciones con coste explícito y los resultados de combate.
+The menu, illustrated identity, brass/leather materials and volume controls already had a useful foundation. They were preserved. The main improvements are in the help by topic, the online sheet by sections, mobile distribution, actions with explicit cost and combat results.
 
-[Comparador visual por pantalla](ux-review/index.html) · [Muro escritorio](../../../work/ux-review/after/wall-1360x880.png) · [Muro móvil](../../../work/ux-review/after/wall-390x844.png)
+[Report index](README.md) · Desk wall (`work/ux-review/after/wall-1360x880.png`; not included) · Mobile wall (`work/ux-review/after/wall-390x844.png`; not included)
 
-## Análisis por pantalla
+## Screen analysis
 
-**Antes** describe el problema o la razón para conservar la vista. **Después** distingue cambios nuevos de funciones que ya existían y fueron verificadas. No se presentan las cinco capturas adicionales como cinco funciones recién creadas.
+**Before** describe the problem or reason for maintaining vision. **Then** distinguishes new changes from functions that already existed and were verified. The five additional snapshots are not presented as five newly created functions.
 
-| Pantalla | Antes / diagnóstico | Después / decisión aplicada |
+| Screen | Before / diagnosis | After/decision applied |
 |---|---|---|
-| Menú principal | La acción de Historia ya domina y las opciones secundarias están agrupadas. Añadir más texto volvería a competir con el paisaje. | **Conservado.** Conservo la jerarquía, el fondo del personaje y Empezar / Continuar historia según su progreso. |
-| Ajustes | Ritmo ×1 / ×2 no explicaba con claridad qué aceleraba. Los sliders ya tienen pista, relleno y valor legibles. | **Ajustado.** La opción se llama Combate rápido y muestra su multiplicador. Conservo los sliders visibles y simplifico el subtítulo. |
-| Cómo jugar | El manual exigía recorrer una pared de texto para encontrar una respuesta. | **Rediseñado.** Cuatro pasos para comenzar, seguidos de temas desplegables. Toda la explicación detallada sigue disponible al abrir cada tema. |
-| Crear tu primer compañero | En móvil, la previsualización dejaba poco espacio para elegir y leer las opciones. | **Ajustado.** El editor compartido equilibra la altura de la previsualización y la lista. El botón Crear compañero y el nombre se conservan. |
-| Entrenamiento de Liga | Mejorar no indicaba el coste en la propia acción. Las tarjetas y la ayuda contextual ya organizaban bien la información. | **Ajustado.** Cada acción dice Mejorar · 1 punto. Conservo puntos disponibles, valores y ayuda junto a cada atributo. |
-| Ficha del compañero | Los atributos eran interactivos, pero no se indicaba que se podían consultar. | **Ajustado.** Una indicación breve invita a tocar un atributo. Se conserva la cuadrícula numérica y Ver crecimiento para consultar el siguiente nivel. |
-| Elegir compañero | Usar a… era ambiguo cuando ese compañero ya estaba activo. | **Ajustado.** Para el compañero activo aparece Volver con…; para otro sigue Usar a…. La selección mantiene su progreso y previsualización. |
-| Personalizar · Cuerpo | En móvil, la zona superior dejaba pocas opciones visibles y el selector de combinaciones no nombraba claramente su alcance visual. | **Ajustado.** Más altura útil para elegir, previsualización proporcionada y selector Conjunto visual…. Los avisos inferiores pueden ocupar varias líneas. |
-| Personalizar · Color y skins | La misma distribución reducía el espacio de las muestras y las condiciones de desbloqueo. | **Ajustado.** El nuevo reparto de espacio también se aplica a Color. Se mantienen las muestras grandes, la sección Skins y la prueba de opciones bloqueadas sin poder equiparlas. |
-| Personalizar · Efectos | La explicación bajo las opciones se recortaba en ventanas estrechas. | **Ajustado.** La ayuda se ajusta a varias líneas y hay más espacio para Auras / Estelas. Se conservan sus vistas previas y los requisitos de desbloqueo. |
-| Personalizar · Entrada y victoria | En móvil la demostración y las opciones competían por la altura. | **Ajustado.** Redistribuyo ese espacio y conservo Entrada / Victoria, Repetir, reproducción automática y la explicación del momento en que se usa cada animación. |
-| Arena · Preparación | Entrar a la arena ya señala la acción principal; Menú y el HUD están separados. | **Conservado.** Conservo esa estructura, la identidad de los luchadores y sus barras de vida. |
-| Arena · Combate | El gran botón desactivado Combate automático parecía una acción disponible y distraía de la pelea. | **Ajustado.** Se oculta durante la pelea. Permanecen las acciones utilizables; el botón principal vuelve cuando hay una decisión que tomar. |
-| Rendirse | La confirmación podía explicar antes el estado de la pelea y concentrar las consecuencias. | **Ajustado.** Indico que el combate está en pausa y resumo qué sucede al rendirse, manteniendo las dos decisiones y la información de XP. |
-| Resultado · Victoria | En móvil el bloque central tapaba parte de los luchadores. | **Ajustado.** Coloco resultado y acción por encima de sus siluetas en móvil; el conjunto conserva el centrado horizontal. En escritorio se mantiene la composición central. |
-| Resultado · Derrota | El mismo solapamiento afectaba a la lectura de la derrota y del siguiente paso. | **Ajustado.** La misma regla despeja a los personajes y mantiene el resultado unido a la acción correspondiente. |
-| Resumen del combate | Un bloque de texto largo mezclaba resultado, experiencia y estadísticas; mostraba cambios de nivel aunque fueran iguales. | **Rediseñado.** Resultado primero, información de cada luchador en secciones plegables y acceso directo a Ver acciones del combate. Los niveles solo muestran una subida cuando ocurrió. |
-| Historial vacío | Un diálogo grande, casi vacío, sugería desplazarse y no ofrecía un siguiente paso directo. | **Ajustado.** Diálogo más compacto con Volver a la arena. Cierra el historial sin iniciar una pelea por sorpresa. |
-| Registro vacío | La ausencia de acciones de combate se presentaba en un contenedor innecesariamente alto. | **Ajustado.** Estado vacío compacto, explicación y Volver a la arena. Se elimina la instrucción de desplazarse sin contenido. |
-| Historial de Liga | Los diálogos de lectura tenían demasiado ancho en escritorio y una instrucción de desplazamiento incluso cuando no hacía falta. | **Ajustado.** Ancho de lectura limitado a 800 px y sin la indicación universal. Se conservan las entradas y el acceso a repeticiones. |
-| Acciones del combate | El espaciado entre líneas hacía el registro más largo de lo necesario. | **Ajustado.** Una línea por acción, separación menor y subtítulo que explica el orden de los turnos. No se eliminan eventos. |
-| Repetición local | Recuerdos de la arena era menos identificable que el nombre de la función; el texto inicial hablaba de la implementación. | **Ajustado.** Título Repeticiones y aviso Sin nuevas recompensas. Conservo reproducción, pausa, reinicio y la apariencia guardada del combate. |
-| Historia · Ruta | Actual era una etiqueta ambigua para volver al progreso del personaje; el pie móvil usaba La liga como verbo implícito. | **Ajustado.** El acceso se llama Mi ruta y la salida móvil Volver. Conservo el rival, el mapa y la acción Entrar / Repetir según el encuentro. |
-| Historia · Mejoras | La comparación del atributo ocupaba demasiado alto y +1 exigía deducir qué se gastaba. | **Ajustado.** Valor actual → siguiente en una línea, explicación Al invertir 1 punto y botón Mejorar · 1 punto. No se dibuja una falsa comparación al llegar al límite. |
-| Historia · Redistribuir | La confirmación ya muestra los recursos recuperados y ofrece Cancelar / Redistribuir. | **Conservado.** Conservo la confirmación y sus consecuencias. Se beneficia de la navegación simplificada y de la ayuda de teclado oculta en móvil. |
-| Historia · Técnicas | En móvil, Golpes no describía bien una vista que también contiene Talentos. | **Ajustado.** La pestaña se llama Técnicas y conserva sus dos subsecciones, costes y detalles bajo demanda. |
-| Historia · Talentos | La captura anterior etiquetada Talentos mostraba el final de Técnicas; no permitía revisar la pantalla real. | **Verificado.** Corrijo la navegación de la captura y verifico Talentos: elecciones disponibles, talentos activos, acción y ayuda. No atribuyo el cambio de contenido a una mejora visual inexistente. |
-| Historia · Compañeros | La composición ya prioriza el compañero activo y su ruta; la salida móvil podía nombrarse mejor. | **Ajustado.** Conservo el resumen, el progreso individual y la selección. Unifico la salida como Volver y mantengo la acción de continuar la campaña. |
-| Logros · Por conseguir | Una partida de prueba importada podía mostrar 8/8 encuentros sin un cierre de capítulo registrado, lo que parecía contradictorio. | **Ajustado.** Cuando falta ese registro, la tarjeta lo explica. Conservo Por conseguir / Conseguidos / Colección, avance y siguiente objetivo; no invento un logro. |
-| Logros · Capítulo completado | La vista ya distingue lo conseguido del siguiente capítulo; la salida usaba la etiqueta ambigua de Historia. | **Ajustado.** Conservo logros, progreso y Comenzar capítulo. Simplifico la navegación de salida y verifico que se diferencia del estado pendiente. |
-| Online · Arena | La cabecera ocupaba demasiado espacio y Desafiar no identificaba al rival. La explicación podía confundirse con una invitación en vivo. | **Ajustado.** Cabecera compacta y contextual, Desafiar a… y explicación de combate automático contra el luchador del otro jugador, incluso si no está conectado. |
-| Online · Historia | La identidad y la navegación desplazaban demasiado el siguiente encuentro en móvil. | **Ajustado.** La cabecera compartida libera espacio; el título indica Historia online y conserva encuentro, dificultad y acción de entrar. |
-| Online · Atributos | La ficha acumulaba atributos, técnicas, talentos y estilo en una sola lista extensa. | **Rediseñado.** Divido la ficha en cuatro secciones. Atributos muestra los puntos disponibles y el coste; las tarjetas agrupan valor, efecto y acción. |
-| Online · Técnicas | Las técnicas quedaban enterradas después de los atributos de la ficha. | **Rediseñado.** Se accede directamente desde Técnicas. Conserva fichas, nivel requerido, grado y acción de mejorar en cada tarjeta. |
-| Online · Talentos | Había que recorrer toda la ficha para encontrar las decisiones de talento. | **Rediseñado.** Sección Talentos independiente, cantidad de elecciones y estado Elegido visibles. El foco y el desplazamiento vuelven al inicio al cambiar de sección. |
-| Online · Estilo de combate | El estilo estaba al final de la ficha y se describía con lenguaje técnico. | **Rediseñado.** Sección propia que explica cómo pelea el luchador cuando recibe desafíos. La elección activa se distingue visualmente. |
-| Online · Actividad | La acción de reconocimiento de notificaciones era poco explícita y la cabecera competía con la actividad. | **Ajustado.** Título Actividad online, cabecera compacta y botón Marcar como vistos. Conservo recompensas y eventos existentes. |
-| Online · Sin rivales | El estado vacío ya explicaba la ausencia de rivales, pero ocupaba la misma cabecera sobredimensionada. | **Ajustado.** Conservo la explicación y Actualizar rivales dentro de la nueva cabecera compacta. No se fabrican rivales para llenar la pantalla. |
-| Online · Crear luchador | La navegación de modos competía con la tarea de creación. | **Ajustado.** Título Crear luchador online y pestañas de modos ocultas mientras se completa el formulario; se conserva el regreso al luchador existente. |
-| Online · Repetición y resultado | El texto inicial de repetición describía detalles técnicos y podía no corresponder a la reproducción automática. | **Ajustado.** Mensaje neutral Repetición · Sin nuevas recompensas, válido tanto al pausar como al empezar automáticamente. Conservo los controles y el resultado recibido. |
-| Online · Iniciar sesión | Continuar no anticipaba que se abriría el navegador. | **Ajustado.** La acción dice Entrar con el navegador y explica que sirve para entrar y guardar el progreso online. |
-| Online · Autorizar dispositivo | Faltaba separar claramente lo que se hace en el navegador de lo que ocurre al regresar al juego. | **Ajustado.** Dos pasos: confirmar el código en el navegador y volver al juego. La sesión se abre al autorizar; sigue disponible reabrir el navegador o cancelar. |
+| Main menu | The Story action already dominates and the secondary options are grouped together. Adding more text would once again compete with the landscape. | **Preserved.** I retain the hierarchy, character background and Start/Continue story based on their progress. |
+| Settings | Rhythm ×1 / ×2 did not clearly explain what was accelerating. The sliders already have readable track, padding and value. | **Adjusted.** The option is called Quick Combat and displays its multiplier. I keep the sliders visible and simplify the subtitle. |
+| How to play | The manual required you to scroll through a wall of text to find an answer. | **Redesigned.** Four steps to get started, followed by drop-down topics. All the detailed explanation is still available when opening each topic. |
+| Create your first companion | On mobile, the preview left little room to choose and read the options. | **Tweaked.** Shared editor balances preview and list height. The Create Partner button and name are preserved. |
+| League Training | Improving did not indicate the cost in the action itself. The cards and contextual help already organized the information well. | **Tweaked.** Every action says Improve · 1 period. I keep available points, values, and help next to each attribute. |
+| Partner's file | The attributes were interactive, but there was no indication that they could be queried. | **Adjusted.** A brief prompt invites you to tap an attribute. The number grid is preserved and View growth to consult the next level. |
+| Choose partner | Using a… was ambiguous when that companion was already active. | **Adjusted.** Return with… appears for the active partner; for another follow Use a…. The selection maintains its progress and preview. |
+| Customize Body | On mobile, the top area left few visible options and the combination selector did not clearly name its visual range. | **Tweaked.** More useful height to choose from, preview provided and visual set selector…. The lower notices can occupy several lines. |
+| Customize · Color and skins | The same distribution reduced the sample space and unlocking conditions. | **Adjusted.** The new space distribution also applies to Color. The large samples, the Skins section and the test of options blocked without being able to equip them remain. |
+| Customize · Effects | The explanation under the options was cut into narrow windows. | **Tweaked.** Help adjusts to multiple lines and there is more room for Auras/Trails. Your previews and unlock requirements are preserved. |
+| Customize Entry and victory | On mobile the demo and the options competed for height. | **Adjusted.** I redistribute that space and keep Entry/Victory, Repeat, autoplay, and the explanation of when each animation is used. |
+| Arena · Preparation | Entering the arena already signals the main action; Menu and HUD are separate. | **Preserved.** I preserve that structure, the identity of the fighters and their life bars. |
+| Arena Combat | The big Auto Combat disabled button felt like an available action and distracted from the fight. | **Adjusted.** Hides during fight. Usable actions remain; the main button returns when there is a decision to make. |
+| Give up | The confirmation could explain the state of the fight sooner and concentrate the consequences. | **Adjusted.** I indicate that combat is paused and summarize what happens when you surrender, keeping both decisions and XP information. |
+| Result · Victory | In mobile the central block covered part of the fighters. | **Adjusted.** I place result and action above their silhouettes on mobile; The whole maintains horizontal centering. The central composition is maintained on the desktop. |
+| Result · Defeat | The same overlap affected the reading of the defeat and the next step. | **Adjusted.** The same rule clears the characters and keeps the result linked to the corresponding action. |
+| Combat summary | A long block of text mixed result, experience and statistics; showed changes in level even if they were the same. | **Redesigned.** Result first, information about each fighter in foldable sections and direct access to View combat actions. The levels only show a rise when it occurred. |
+| Empty history | A large, almost empty dialog suggested scrolling and offered no direct next step. | **Tweaked.** More compact dialogue with Return to Arena. Close the history without starting a surprise fight. |
+| Empty record | The absence of combat actions was presented in an unnecessarily high container. | **Adjusted.** Compact empty state, explanation and Return to sand. The instruction to scroll without content is removed. |
+| League Story Mode | Reading dialogs had too much desktop width and a scroll instruction even when it wasn't needed. | **Adjusted.** Reading width limited to 800 px and without the universal indication. Tickets and access to replays are preserved. |
+| Combat actions | The spacing between lines made the record longer than necessary. | **Adjusted.** One line per action, minor separation and subtitle explaining turn order. Events are not deleted. |
+| Local repeat | Memories of the Arena was less identifiable than the name of the show; The initial text talked about implementation. | **Adjusted.** Title Replays and notice No new rewards. I keep play, pause, restart and the saved appearance of the fight. |
+| Story Mode · Route | Current was an ambiguous label for returning to character progress; the moving foot used The league as an implicit verb. | **Adjusted.** The access is called My Route and the mobile exit is called Back. I keep the opponent, the map and the Enter / Repeat action depending on the encounter. |
+| Story Mode · Improvements | The attribute comparison took up too much space and +1 required deducing what was spent. | **Adjusted.** Current value → next in a line, explanation By reversing 1 dot and Improve button · 1 dot. A false comparison is not drawn when reaching the limit. |
+| Story Mode · Redistribute | The confirmation already shows the recovered resources and offers Cancel/Redistribute. | **Preserved.** I retain the confirmation and its consequences. It benefits from simplified navigation and hidden keyboard help on mobile. |
+| Story Mode · Techniques | On mobile, Strikes did not describe well a view that also contains Talents. | **Adjusted.** The tab is called Techniques and retains its two subsections, costs and on-demand details. |
+| Story Mode · Talents | The previous screenshot labeled Talents showed the end of Techniques; It did not allow you to review the real screen. | **Verified.** I correct the screenshot navigation and check Talents: available choices, active talents, action and help. I do not attribute the change in content to a non-existent visual improvement. |
+| Story Mode · Companions | The composition already prioritizes the active companion and his route; the mobile exit could be named better. | **Adjusted.** I keep the summary, individual progress and selection. I unify the exit as Return and maintain the action of continuing the campaign. |
+| Achievements · To be achieved | An imported test match could show 8/8 encounters without a recorded chapter closure, which seemed counterintuitive. | **Adjusted.** When that record is missing, the card explains it. I keep To be achieved / Achieved / Collection, advance and next objective; I do not invent an achievement. |
+| Achievements · Completed chapter | The view already distinguishes what has been achieved in the next chapter; the output used the ambiguous Story Mode label. | **Adjusted.** I keep achievements, progress and Start chapter. I simplify the output navigation and verify that it is differentiated from the pending state. |
+| Online Arena | The header took up too much space and Desafiar did not identify the rival. The explanation could be confused with a live invitation. | **Adjusted.** Compact and contextual header, Challenge... and explanation of automatic combat against the other player's fighter, even if you are offline. |
+| Online · Story Mode | Identity and navigation displaced the next mobile meeting too much. | **Tweaked.** Shared header frees up space; The title indicates Online Story Mode and preserves encounter, difficulty and action of entering. |
+| Online · Attributes | The card accumulated attributes, techniques, talents and style in a single extensive list. | **Redesigned.** I divide the sheet into four sections. Attributes shows the available points and the cost; The cards group value, effect and action. |
+| Online · Techniques | The techniques were buried after the attributes of the token. | **Redesigned.** Accessed directly from Techniques. Keep tokens, required level, grade and upgrade action on each card. |
+| Online · Talents | You had to go through the entire file to find the talent decisions. | **Redesigned.** Independent Talents section, number of elections and Chosen status visible. Focus and scrolling return to the beginning when changing sections. |
+| Online · Combat style | The style was at the end of the sheet and was described in technical language. | **Redesigned.** Own section that explains how the fighter fights when challenged. The active choice is visually distinguished. |
+| Online · Activity | The notification recognition action was not very explicit and the header competed with the activity. | **Adjusted.** Online Activity title, compact header and Mark as Viewed button. I keep existing rewards and events. |
+| Online · No rivals | The empty state already explained the absence of rivals, but it occupied the same oversized header. | **Adjusted.** I keep the explanation and Update Rivals within the new compact header. Rivals are not made to fill the screen. |
+| Online · Create fighter | The navigation of modes competed with the task of creation. | **Adjusted.** Title Create online fighter and mode tabs hidden while filling out form; return to existing fighter is preserved. |
+| Online · Repetition and result | The initial replay text described technical details and may not correspond to automatic playback. | **Adjusted.** Neutral message Replay · No new rewards, valid on both pausing and auto-starting. I keep the controls and the result received. |
+| Online · Log in | Continue I didn't anticipate the browser would open. | **Adjusted.** The action says Enter with the browser and explains that it is used to enter and save online progress. |
+| Online · Authorize device | It was necessary to clearly separate what is done in the browser from what happens when returning to the game. | **Adjusted.** Two steps: confirm the code in the browser and return to the game. The session is opened upon authorization; Reopening the browser or canceling is still available. |
 
-## Criterios aplicados
+## Applied criteria
 
-- Las acciones dicen su resultado: Entrar con el navegador, Mejorar · 1 punto, Mi ruta y Volver con el compañero activo.
-- Ayuda y resúmenes usan secciones desplegables. La información detallada se conserva, pero ya no domina la primera lectura.
-- La ficha online separa cuatro decisiones; navegar entre ellas no realiza escrituras ni consume recursos.
-- En móvil se reserva más altura para opciones. Las explicaciones inferiores envuelven el texto y no usan puntos suspensivos.
-- Se conservan el foco visible mediante el material interior y los controles nativos de teclado. No se añaden contornos exteriores.
-- Durante el combate desaparece el gran botón sin acción. Al terminar, la decisión vuelve junto al resultado; en móvil queda sobre las siluetas.
-- Se usan las imágenes y materiales existentes. No se cambian sprites, tonos, heridas, escalas relativas, balance, guardado ni backend.
+- The actions tell their result: Enter with the navigator, Improve · 1 point, My route and Return with the active companion.
+- Help and summaries use drop-down sections. Detailed information is preserved, but no longer dominates the first reading.
+- The online file separates four decisions; Navigating between them does not perform writes or consume resources.
+- On mobile, more height is reserved for options. The explanations below wrap the text and do not use ellipses.
+- Visible focus is preserved through the inner material and native keyboard controls. No outer contours are added.
+- During combat the large no-action button disappears. When finished, the decision returns along with the result; On mobile it remains on the silhouettes.
+- Existing images and materials are used. No sprites, tones, wounds, relative scales, balance, save or backend are changed.
 
-## Validación y límites
+## Validation and limits
 
-- **26 suites de aceptación: 28,718 comprobaciones, 0 fallos.** Incluyen navegación, pausa/audio, personalización bloqueada, costes de mejoras, documentos, Historia y UI online. [Resultados](../../../work/ux-review/checks/results.json).
-- **153 comprobaciones de captura, 0 fallos; 84 capturas nativas** a 1360×880 y 390×844. Las pruebas de claridad también cubren 844×390. [Manifiesto](../../../work/ux-review/after/screens.json) · [Log nativo](../../../work/ux-review/native-audit.log).
-- Las capturas se renderizan en Godot con perfiles desechables y datos de prueba. Online utiliza respuestas en memoria, sin HTTP: esta revisión no prueba el servicio desplegado ni una sesión real.
-- Los resultados de combate usan HP inicial sintético para obtener victoria y derrota. La presentación se deja asentar; no se presenta como una partida natural.
-- Antes corresponde a `work/performance-ui/screens`; no se reemplazan esas capturas. La vista anterior etiquetada Talentos era incorrecta, y se avisa en el comparador. Los cinco estados añadidos no tienen un Antes equivalente.
-- En pruebas exploratorias, el antiguo `test_story_campaign_ui.gd` dio 28 fallos de 566 comprobaciones; la copia de scripts previa a estos cambios produjo exactamente los mismos 28 fallos. `test_story_chapter_integration.gd` agotó el tiempo de ejecución y no se cuenta como aprobado. Son limitaciones pendientes de esas suites antiguas; las suites actuales de Ruta, Mejoras, Técnicas, Logros y panel de Historia sí pasan. [Comparación previa](../../../work/ux-review/baseline-campaign.log) · [Ejecución exploratoria](../../../work/ux-review/checks.log).
-- No se ha realizado una prueba con jugadores ni una certificación de accesibilidad. Las capturas permiten comprobar presentación; las pruebas de interacción comprueban el comportamiento descrito.
+- **26 acceptance suites: 28,718 checks, 0 failures.** Includes navigation, pause/audio, locked customization, upgrade costs, documents, Story Mode and online UI. Results (`work/ux-review/checks/results.json`; not included).
+- **153 catch checks, 0 failures; 84 native captures** to 1360×880 and 390×844. Clarity testing also covers 844×390. Manifest (`work/ux-review/after/screens.json`; not included) · Native Log (`work/ux-review/native-audit.log`; not included).
+- Screenshots are rendered in Godot with disposable profiles and test data. Online uses in-memory responses, without HTTP: This review does not test the deployed service or an actual session.
+- Combat results use synthetic starting HP for victory and defeat. The presentation lets itself settle; It does not present itself as a natural departure.
+- Before corresponds to `work/performance-ui/screens`; Those catches are not replaced. The previous view labeled Talents was incorrect, and is reported in the comparator. The five added states do not have an equivalent Before.
+- In exploratory testing, the old `test_story_campaign_ui.gd` gave 28 failures from 566 checks; copying scripts prior to these changes produced exactly the same errors 28. `test_story_chapter_integration.gd` timed out and is not counted as passed. These are pending limitations of those old suites; the current Route, Upgrades, Techniques, Achievements, and Story Mode panel suites do pass. Previous Comparison (`work/ux-review/baseline-campaign.log`; not included) · Exploratory Run (`work/ux-review/checks.log`; not included).
+- There has been no player testing or accessibility certification. Captures allow you to check presentation; Interaction tests verify the described behavior.
 
-## Implementación
+## Implementation
 
-La refactorización queda en la capa de presentación. `GameReadingSections` es el componente compartido para documentos plegables. `OnlinePanel` divide su renderizado por subsección, reutilizando las acciones existentes. `BattleLayout` reserva el espacio del resultado móvil. Los demás cambios se limitan a contenido, disposición y navegación.
+The refactoring remains in the presentation layer. `GameReadingSections` is the shared component for folding documents. `OnlinePanel` splits its rendering by subsection, reusing existing actions. `BattleLayout` reserves the moving result space. Other changes are limited to content, layout and navigation.
 
-[Abrir Brasa](/Users/cess/Jugar%20Brasa.command) utiliza el proyecto actualizado.
+Open Brasa (`/Users/cess/Jugar%20Brasa.command`; not included) uses the updated project.

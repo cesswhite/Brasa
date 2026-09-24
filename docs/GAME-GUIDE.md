@@ -1,205 +1,205 @@
-# Guía histórica de Brasa
+# Brasa Historical Guide
 
-Documento conservado de la entrega local. Las cifras, pruebas, rutas externas y estado de servicios describen su fecha; consulta README.md y el código para el estado del checkout actual. Algunos archivos `work/` pertenecen al entorno original y no se distribuyen.
+Preserved document of local delivery. Figures, tests, external routes and service status describe their date; queries README.md and the code for the current checkout status. Some `work/` files belong to the original environment and are not distributed.
 
-# Brasa · Liga de los Faroles
+# Brasa Liga de los Faroles
 
-Auto battler 2D para Mac: eliges y entrenas a tu compañero; él pelea automáticamente en un mercado nocturno ilustrado. La arena ocupa toda la ventana, con personajes animados mediante imágenes, HUD enfrentados y controles sobre un degradado transparente. Incluye quince personajes personalizables, cinco movimientos por personaje, campaña de 100 encuentros, mejoras de técnicas, talentos, progresión individual y la liga original.
+2D auto-battler for Mac: choose and train your companion, who fights automatically in an illustrated night market. The arena fills the window, with image-animated characters, opposing HUDs and controls over a transparent gradient. Includes fifteen customizable characters, five moves per character, a 100-encounter campaign, technique upgrades, talents, individual progression and the original league.
 
-## Obtener el proyecto desde GitHub
+## Get the project from GitHub
 
 ```sh
 git clone https://github.com/cesswhite/Brasa.git
 cd Brasa
 ```
 
-Importa `project.godot` en Godot o utiliza `Jugar.command` en macOS. El repositorio incluye código, assets, backend, pruebas y documentación. Godot reconstruye su caché `.godot/` al abrirlo.
+Import `project.godot` in Godot or use `Jugar.command` in macOS. The repository includes code, assets, backend, tests and documentation. Godot rebuilds your `.godot/` cache when you open it.
 
-Para trabajar en el backend, consulta [backend/README.md](../backend/README.md). Sus dependencias se instalan con `npm ci` dentro de `backend/`; credenciales, secretos, bases locales y partidas personales no forman parte del repositorio. Clonar el proyecto no publica ni modifica el servidor de Cloudflare existente.
+To work on the backend, see [backend/README.md](../backend/README.md). Its dependencies are installed with `npm ci` inside `backend/`; Credentials, secrets, local bases and personal items are not part of the repository. Clone the project does not publish or modify the existing Cloudflare server.
 
-## Abrir y jugar
+## Open and play
 
-Requiere **Godot 4.7.2 estándar para Mac**, instalado en `/Applications/Godot.app`.
+Requires **Godot 4.7.2 standard for Mac**, installed on `/Applications/Godot.app`.
 
-1. Abre **Jugar.command** con doble clic.
-2. En una partida nueva, elige base de combate, nombre y apariencia; pulsa **Crear compañero** para entrar en Historia y repartir sus **3 puntos iniciales**.
-3. Elige el encuentro y pulsa **Entrar al combate**. En Liga, usa **Entrar a la arena** o **Espacio**. Los ataques son automáticos.
-4. Al terminar, abre **Resumen** para ver la experiencia de ambos y las mejoras de nivel.
-5. Entrena o cambia de compañero. Cada uno conserva su nivel, XP, puntos y resultados.
+1. Open **Play.command** with double click.
+2. In a new game, choose combat base, name and appearance; press **Create Companion** to enter Story Mode and distribute your **3 starting points**.
+3. Choose the encounter and press **Enter Battle**. In League, use **Enter Arena** or **Space**. The attacks are automatic.
+4. When finished, open **Summary** to see both your experience and level improvements.
+5. Train or change your partner. Each one retains their level, XP, points and results.
 
-**En Liga, Entrenar:** abre las cuatro mejoras. **En Historia, Mejoras:** permite repartir puntos entre ocho atributos. **Compañeros** (o **Equipo** en ventanas pequeñas): plantel y selección. **Menú:** refugio con tu luchador y acceso a Historia, Arena, Personalizar, Ficha, Historial, Registro y Cómo jugar. **Menú → Ajustes:** Sonido, Ritmo, Movimiento reducido y Pantalla completa. **Esc:** cerrar paneles. **F11:** alternar pantalla completa. **Ritmo ×2:** acelerar la reproducción, sin cambiar las reglas. Los paneles de lectura pausan el combate.
+**In League, Train:** opens all four upgrades. **In Story Mode, Improvements:** allows points to be distributed among eight attributes. **Companions** (or **Team** in small windows): squad and selection. **Menu:** shelter with your fighter and access to Story Mode, Arena, Customize, Profile, Match History, Registration and How to play. **Menu → Settings:** Sound, Rhythm, Reduced motion and Full screen. **Esc:** close panels. **F11:** toggle full screen. **Rhythm ×2:** speed up playback, without changing the rules. Reading panels pause combat.
 
-Durante la pelea, el botón principal indica **Combate automático** y el indicador de turno identifica al personaje que actúa. Los efectos temporales aparecen junto a cada luchador; el registro completo se abre desde Menú o Registro cuando está visible. **Rendirse** permanece separado y requiere confirmar. El resultado, la XP de ambos y los cambios de nivel aparecen sobre la misma arena; **Resumen** conserva el detalle completo.
+During the fight, the main button indicates **Automatic Combat** and the turn indicator identifies the acting character. Temporary effects appear next to each fighter; the entire log opens from Menu or Log when visible. **Surrender** remains separate and requires confirmation. The result, the XP of both and the level changes appear on the same arena; **Summary** retains full detail.
 
-La distribución se adapta a ventanas de escritorio, proporciones de tableta, móvil vertical y horizontal. El fondo conserva su proporción y se recorta para cubrir la ventana; los controles mantienen tamaños acotados. Esta entrega sigue siendo el proyecto local para Mac, sin un paquete móvil exportado.
+The layout adapts to desktop windows, tablet proportions, vertical and horizontal mobile. The background retains its proportion and is trimmed to cover the window; The controls maintain limited sizes. This release is still the local project for Mac, without an exported mobile package.
 
-Puedes importar `project.godot` en Godot y pulsar **F5**. Para **F6**, abre `scenes/main.tscn`.
+You can import `project.godot` into Godot and press **F5**. For **F6**, open `scenes/main.tscn`.
 
-## Personaliza a tu compañero
+## Customize your companion
 
-Abre **Menú → Personalizar** o la ficha de **Compañeros** para editar nombre, cuerpo, paleta, aura, estela, victoria y entrada. La vista previa permite probar combinaciones antes de **Guardar cambios**; cancelar conserva lo anterior. La base de combate mantiene sus técnicas y estadísticas aunque elijas otro cuerpo.
+Open **Menu → Customize** or the **Companions** tab to edit name, body, palette, aura, trail, victory, and entry. Preview allows you to test combinations before **Save changes**; cancel preserves the previous. The combat base maintains its techniques and statistics even if you choose another body.
 
-Hay **31 opciones**: 15 cuerpos, 5 paletas, 4 auras, 3 estelas, 2 victorias y 2 entradas, contando las variantes originales y sin efecto. Parte se obtiene al llegar a nivel 10, ganar 10/25 combates de Liga o superar los encuentros 8/20/50/100 de Historia. El inventario es compartido, sin compras. Los atlas actuales admiten tinte suave de toda la ilustración; no tienen capas separadas de ropa o pelo.
+There are **31 options**: 15 bodies, 5 palettes, 4 auras, 3 trails, 2 wins and 2 entries, counting the variants original and without effect. Part is obtained by reaching level 10, winning 10/25 League battles or passing 8/20/50/100 Story Mode encounters. Inventory is shared, no purchases. Current atlases allow light tinting of the entire illustration; They do not have separate layers of clothing or hair.
 
-Cada arquetipo comparte su nombre y apariencia entre Liga e Historia, con ID estable, mientras ambos modos conservan su progresión independiente. Los nombres anteriores se preservan. La identidad se guarda aparte en `<save>.identity.json`, con respaldo y escritura atómica. Las peleas nuevas conservan nombre, apariencia y eventos: **Historial → Ver repeticiones** muestra aquella versión del compañero sin conceder XP ni cambiar el progreso.
+Each archetype shares its name and appearance between League and Story, with stable ID, while both modes retain their independent progression. The previous names are preserved. The identity is stored separately in `<save>.identity.json`, with backup and atomic writing. New fights retain name, appearance, and events: **Match History → Watch Replays** shows that version of the companion without granting XP or changing progress.
 
-La identidad anterior se adapta a v2 para incluir los dos cuerpos de gato. Conserva nombres, IDs, equipo y recompensas; cargar no reescribe archivos y el siguiente guardado conserva una copia v1. [Compatibilidad y pruebas](../reports/CAT_IDENTITY_MIGRATION.md).
+The above identity is adapted to v2 to include the two cat bodies. Keep names, IDs, equipment and rewards; loading does not rewrite files and the next save preserves a v1 copy. [Compatibility and testing](../reports/CAT_IDENTITY_MIGRATION.md).
 
-**Arena online** está publicado en un [servidor de pruebas de Cloudflare](https://brasa-api-staging.acessloop.workers.dev/auth), con passkeys, luchadores persistentes, rivales de otras cuentas, historial y resultados defensivos. Arena e Historia online comparten progresión; los guardados locales permanecen independientes. El acceso, Arena e Historia pasaron las pruebas remotas. El usuario activó Workers Paid, confirmado en Cloudflare, y la verificación remota se repitió correctamente bajo ese plan: 32 comprobaciones de acceso y 60 de juego y revocación.
+**Online Arena** is published on a [Cloudflare test server](https://brasa-api-staging.acessloop.workers.dev/auth), with passkeys, persistent fighters, rivals from other accounts, history and defensive results. Arena and Online Story share progression; local saves remain independent. Access, Arena and Story passed remote testing. The user activated Workers Paid, confirmed in Cloudflare, and the remote check was successfully repeated under that plan: 32 access checks and 60 game and revocation checks.
 
-Para entrar, abre `Jugar online.command` o **Arena online** en el menú y pulsa **Iniciar sesión en el navegador**. Usa **Crear cuenta con passkey** o **Entrar con mi passkey**, confirma en tu dispositivo, compara el código y pulsa **Autorizar este dispositivo**. Al volver al juego podrás crear tu luchador. **Historia** permite jugar aunque todavía no haya rivales públicos. Consulta los [pasos de acceso](../backend/docs/AUTH.md#entrar-desde-godot) y el [estado de Cloudflare](../reports/CLOUDFLARE-STAGING.md). La personalización local se documenta en [PERSONALIZACIÓN](../reports/PERSONALIZACION.md).
+To enter, open `Jugar online.command` or **Online Arena** in the menu and press **Login in browser**. Use **Create account with passkey** or **Enter with my passkey**, confirm on your device, compare the code and press **Authorize this device**. When you return to the game you will be able to create your fighter. **Story Mode** allows you to play even if there are no public rivals yet. See [access steps](../backend/docs/AUTH.md#sign-in-from-godot) and [Cloudflare status](../reports/CLOUDFLARE-STAGING.md). Local customization is documented in [CUSTOMIZATION](../reports/PERSONALIZACION.md).
 
-## Modo Historia · 100 encuentros
+## Story Mode 100 encounters
 
-Historia usa escenarios ilustrados: camino de faroles, patio de la tormenta, taller de entrenamiento, refugio y archivo de legados. El rival domina la vista previa, los encuentros forman una ruta conectada y los controles conservan texto nativo. Pequeñas pertenencias y recuerdos aparecen según apariencia y progreso. El [informe visual](../reports/UI-WORLD.md) reúne la comparación, capturas y validación; [dirección de arte y prompts](../assets/ui/ART-DIRECTION.md) documenta las siete imágenes nuevas.
+Story Mode uses illustrated settings: lantern path, storm yard, training workshop, shelter, and legacy archive. The opponent dominates the preview, encounters form a connected path, and controls retain native text. Small belongings and keepsakes appear based on appearance and progress. The [visual report](../reports/UI-WORLD.md) brings together the comparison, captures and validation; [art direction and prompts](../assets/ui/ART-DIRECTION.md) documents the seven new images.
 
-Historia también es la autoridad visual del juego completo. Menú, Arena, Online, creación, fichas, mejoras, compañeros, resultados, repeticiones y ajustes reutilizan `GameVisualSystem`, sus tokens y componentes. Consulta la [biblia visual](../reports/VISUAL-STYLE-BIBLE.md), la [auditoría por pantalla](../reports/VISUAL-SCREEN-AUDIT.md) y el [muro interactivo Antes/Después](../reports/visual-system/index.html). Los datos del muro son fixtures locales; las pantallas conservan los flujos reales de identidad, progreso y servidor.
+Story is also the visual authority of the entire game. Menu, Arena, Online, crafting, tokens, upgrades, companions, results, replays and settings all reuse `GameVisualSystem`, its tokens and components. Check out the [visual bible](../reports/VISUAL-STYLE-BIBLE.md), [screen audit](../reports/VISUAL-SCREEN-AUDIT.md), and [Report](../reports/VISUAL-SCREEN-AUDIT.md). The wall data are local fixtures; screens preserve the actual identity, progress, and server flows.
 
-Abre **Historia**, junto a Menú. Cada compañero comienza una campaña independiente en nivel 1, con sus estadísticas normales, tres puntos y dos técnicas. La liga conserva su propia progresión.
+Open **Story Mode**, next to Menu. Each companion begins an independent campaign at level 1, with their normal statistics, three points and two techniques. The league retains its own progression.
 
-La ruta contiene **100 encuentros en 11 capítulos**. Los primeros dos mantienen sus ocho encuentros, Ascua y Véspera; Nima sigue en nivel 2. El tercer capítulo cubre los encuentros 17–20 y los demás diez cada uno. Hay jefes en 8, 16, 20, 30, 40, **50**, 60, 70, 80, 90 y **100**, además de élites entre ellos. Ascua regresa como Corazón del Solsticio en el 50; Véspera cierra la campaña como El último eclipse.
+The path contains **100 encounters in 11 chapters**. The first two maintain their eight matches, Ascua and Véspera; Nima remains at level 2. The third chapter covers encounters 17–20 and the other ten each. There are bosses in 8, 16, 20, 30, 40, **50**, 60, 70, 80, 90 and **100**, plus elites among them. Ascua returns as Heart of the Solstice in 50; Véspera closes the campaign as The Last Eclipse.
 
-El mapa distingue **encuentro de Historia** y **nivel del personaje**, permite consultar capítulos y muestra el próximo jefe y recompensa. Las vistas previas explican estilo, fortalezas, debilidades, técnicas y habilidad. Algunos encuentros normales eligen entre rivales compatibles; la elección se conserva durante esa campaña, también al reabrir el juego o reintentar. Los jefes tienen identidad fija.
+The map distinguishes **Story encounter** and **character level**, allows you to consult chapters and shows the next boss and reward. Previews explain style, strengths, weaknesses, techniques and skill. Some normal matches choose between compatible rivals; The choice is preserved during that campaign, also when reopening the game or retrying. Bosses have a fixed identity.
 
-**Mejoras** ofrece ocho atributos: Vida, Ataque, Defensa, Velocidad, Precisión, Evasión, Crítico y Resistencia. Subir hasta el nivel 20 concede tres puntos por nivel; después, dos. Las élites de los dos primeros capítulos conservan sus dos puntos adicionales. Las partidas anteriores mantienen todos los puntos que ya habían ganado.
+**Upgrades** offers eight attributes: Life, Attack, Defense, Speed, Accuracy, Evasion, Critical and Resistance. Going up to level 20 grants three points per level; then two. The elites from the first two chapters retain their two additional points. Previous games maintain all the points they had already earned.
 
-**Movimientos** explica las cinco técnicas del personaje y sus riesgos. Comienza con dos y desbloquea las otras en niveles de personaje **5, 12 y 20**. Las fichas de los encuentros **5, 10, 20, 30, 40, 50, 60, 70, 80 y 90** permiten mejorar las técnicas hasta dos grados. Los encuentros **10, 30 y 50** conceden una elección de talento: puedes elegir tres entre seis opciones vinculadas al personaje.
+**Moves** explains the character's five techniques and their risks. Start with two and unlock the others at character levels **5, 12 and 20**. The encounter sheets **5, 10, 20, 30, 40, 50, 60, 70, 80 and 90** allow you to improve techniques by up to two degrees. The encounters **10, 30 and 50** grant a choice of talent: you can choose three of six options linked to the character.
 
-En **Mejoras → Redistribuir mejoras** puedes recuperar los puntos, fichas y elecciones que ya gastaste para desarrollar otra estrategia. Requiere confirmar dentro del juego; conserva nivel, XP, ruta e historial de capítulos. No crea recursos nuevos.
+In **Upgrades → Redistribute Upgrades** you can recover the points, tokens and choices you already spent to develop another strategy. Requires confirmation within the game; preserves level, XP, route and chapter history. It does not create new resources.
 
-Las victorias dan más XP que las derrotas. Las derrotas completas permiten seguir mejorando y generan una pista basada en fallos, ritmo, críticos o estados de esa pelea. Rendirse y repetir derrotas reducen la recompensa. Puedes volver a jugar encuentros superados como **práctica sin XP ni premios adicionales**.
+Victories give more XP than defeats. Complete defeats allow you to continue improving and generate a track based on failures, pace, criticals or states of that fight. Giving up and repeating defeats reduce the reward. You can replay beaten encounters as **practice without additional XP or rewards**.
 
-Cada cierre de capítulo queda en **Legado**, con estadísticas, decisiones e insignia. La transición al capítulo siguiente es explícita. Los jefes obedecen las mismas reglas y límites; las fases de los jefes especiales están descritas y anunciadas durante el combate.
+Each chapter closure remains in **Legacy**, with statistics, decisions and insignia. The transition to the next chapter is explicit. Bosses obey the same rules and limits; Special boss phases are described and announced during combat.
 
-Historia se guarda en `~/Library/Application Support/BrasaLiga/brasa_save.json.story.json`. El formato v3 lee los formatos v1/v2 sin escribir al abrirlos ni avanzar capítulos. Antes de la primera escritura conserva una copia permanente `.v1.bak` o `.v2.bak`, además del respaldo habitual y escritura atómica. Las pruebas usan copias y archivos independientes.
+Story Mode is saved in `~/Library/Application Support/BrasaLiga/brasa_save.json.story.json`. The v3 format reads the v1/v2 formats without writing when opening them or advancing chapters. Before the first write it retains a permanent copy of `.v1.bak` or `.v2.bak`, in addition to the usual backup and atomic write. The tests use separate copies and files.
 
-## Audio · primer escenario
+## Audio · first stage
 
-El primer banco dirigido cubre **Ascua y Patio de Faroles** con 51 archivos seleccionados de ElevenLabs: movimiento, contacto, guardia, críticos, carbón, transformación, Firma, KO, resultados, confirmación, ambiente y música original. Los sonidos físicos compartidos también acompañan a los otros luchadores; sus poderes propios y los demás ambientes siguen en el plan de producción. Los sonidos se activan por los eventos y marcadores reales del combate, también en las repeticiones y Arena Online. La revisión de realismo sustituye contacto, movimiento y ambiente, conserva la velocidad natural de las grabaciones y reduce los roces y las capas de fuego.
+The first directed bank covers **Ascua and Patio de Faroles** with 51 selected files from ElevenLabs: movement, contact, guard, critical, charcoal, transformation, Signature, KO, results, confirmation, atmosphere and original music. Shared physical sounds also accompany the other fighters; his own powers and the other environments remain in the production plan. Sounds are triggered by actual combat events and markers, also in replays and Online Arena. The realism overhaul replaces contact, motion and environment, preserves the natural speed of the recordings and reduces friction and layers of fire.
 
-**Menú → Ajustes** permite guardar los volúmenes General, Música y Efectos. Silenciar conserva esos valores. La pausa detiene las nuevas acciones sonoras, y Movimiento reducido conserva el audio. La mezcla separa música, ambiente, movimiento, contacto, UI y reacciones, con variaciones y prioridades.
+**Menu → Settings** allows you to save the General, Music and Effects volumes. Mute preserves those values. Pause stops new sound actions, and Reduced Motion preserves the audio. The mix separates music, environment, movement, touch, UI and reactions, with variations and priorities.
 
-Consulta la [biblia y plan de audio](../reports/AUDIO-BIBLE.md), la [entrega y validación](../reports/AUDIO-DELIVERY.md) y el [comparador con grabación real del combate](../reports/audio-asset-review.html). Las mediciones técnicas no sustituyen la revisión auditiva; la producción del resto del plantel está documentada para la siguiente etapa.
+Check out the [bible and audio plan](../reports/AUDIO-BIBLE.md), [delivery and validation](../reports/AUDIO-DELIVERY.md), and [Report](../reports/AUDIO-ASSET-REVIEW.md). Technical measurements do not replace a hearing check; The production of the rest of the squad is documented for the next stage.
 
-## Técnicas y animación
+## Techniques and animation
 
-Cada técnica tiene datos de daño, precisión, prioridad, crítico, estados, enfriamiento, preparación, desplazamiento, recuperación, riesgo y desbloqueo. La selección automática considera vida, velocidad relativa, estados, enfriamientos y movimientos anteriores, con variación aleatoria.
+Each technique has damage, accuracy, priority, critical, statuses, cooldown, readiness, shift, cooldown, risk, and unlock data. Automatic selection considers health, relative speed, statuses, cooldowns and previous moves, with random variation.
 
-Los golpes rápidos sirven para mantener presión; los fuertes tienen anticipación y recuperación largas. Las cargas retroceden antes de avanzar. Los saltos usan distintas trayectorias y ventajas. Las posturas defensivas pueden reducir el daño y provocar respuestas probabilísticas. Las habilidades originales siguen activas; el Golpe Firma es independiente de las técnicas normales.
+Quick blows serve to maintain pressure; the strong have long anticipation and recovery. Loads move backwards before they move forward. Jumps use different trajectories and advantages. Defensive postures can reduce damage and provoke probabilistic responses. The original abilities are still active; The Signature Strike is independent of normal techniques.
 
-El motor envía preparación e impacto por separado: el daño se aplica al contacto. Las réplicas pueden animarse junto a otro ataque sin borrar su preparación. **Ritmo ×2** acelera simulación y animación juntas. **Menú → Ajustes → Movimiento reducido** conserva las poses y tiempos sin desplazamientos, destellos ni partículas. Abrir el menú pausa ambos luchadores y el combate.
+The engine sends preparation and impact separately: damage is applied on contact. Aftershocks can be animated alongside another attack without clearing their buildup. **Rhythm ×2** accelerates simulation and animation together. **Menu → Settings → Reduced motion** preserves poses and times without movement, flashes or particles. Open the menu pause both fighters and the fight.
 
-Los quince compañeros y ambos jefes tienen ahora secuencias de anticipación, ataque, seguimiento y recuperación, con reacciones distintas para golpes rápidos, pesados, críticos, cargas y firmas. El KO comienza en el evento letal, también por veneno o quemadura. Polvo, estelas e impactos se componen como efectos independientes. Ascua dispone de una transformación visual temporal. El [informe de animación](../reports/ANIMATION-SEQUENCES.md) incluye el video, los primeros 480 fotogramas adicionales, sus prompts y las comprobaciones. Con los dos gatos, el plantel suma **544 poses adicionales en 34 bancos**; la ampliación se documenta en [GATOS.md](../reports/GATOS.md).
+All fifteen companions and both bosses now have anticipation, attack, follow-up, and recovery sequences, with different reactions for quick hits, heavy hits, critical hits, charges, and signatures. The KO begins in the lethal event, also by poison or burn. Dust, trails and impacts are composed as independent effects. Ascua has a temporary visual transformation. The [animation report](../reports/ANIMATION-SEQUENCES.md) includes the video, the first 480 additional frames, their prompts, and the checks. With the two cats, the team adds **544 additional poses on 34 benches**; the extension is documented in [GATOS.md](../reports/GATOS.md).
 
-Las cargas, impactos, auras y entradas usan ahora **partículas orgánicas**: brasas, motas y polvo que siguen la pose y se desprenden con el movimiento. La luz se integra en la silueta y los círculos de energía dejan de mostrarse. [Comparación y validación](../reports/EFECTOS-ORGANICOS.md).
+Charges, impacts, auras, and inputs now use **organic particles**: embers, motes, and dust that follow the pose and break off with movement. The light is integrated into the silhouette and the energy circles stop showing. [Comparison and validation](../reports/EFECTOS-ORGANICOS.md).
 
-## Quince maneras de pelear
+## Fifteen ways to fight
 
-| Compañero | Identidad | Ventaja y contrapartida |
+| Companion | Identity | Advantage and trade-off |
 | --- | --- | --- |
-| Nima | Velocidad y combos | Presiona con su secuencia; tiene poca defensa. |
-| Luma | Equilibrio y adaptación | Mejora la precisión tras fallar; no tiene una especialidad explosiva. |
-| Mugo | Tanque resistente | Aguanta y amortigua críticos; ataca despacio. |
-| Sira | Críticos | Sus críticos atraviesan parte de la defensa; soporta pocos golpes. |
-| Iria | Veneno | Acumula desgaste; necesita tiempo y tiene daño directo bajo. |
-| Duna | Escudos | Bloquea daño periódicamente; ejerce poca presión inicial. |
-| Kiro | Riesgo y furia | Gana daño al perder vida; puede fallar en el momento decisivo. |
-| Neris | Recuperación | Se cura una vez cuando baja de vida; la curación puede debilitarse. |
-| Taro | Contraataques | Castiga ataques recibidos; sus réplicas son probabilísticas. |
-| Balam · Jaguar | Acecho y cargas | Castiga con golpes fuertes y críticos; necesita preparar sus ataques. |
-| Tepa · Teporingo | Saltos y velocidad | Cambia de trayectoria y presiona rápido; tiene poca vida y defensa. |
-| Xuna · Xoloitzcuintle | Guardia y desgaste | Resiste críticos y mantiene quemaduras; tarda en imponer su ritmo. |
-| Copal · Cacomixtle | Fintas y réplicas | Combina desplazamientos, engaños y contraataques; sus respuestas no están garantizadas. |
-| Ónix · Gato negro | Velocidad y evasión | Presiona con combos y esquivas; tiene poca vida y defensa. |
-| Bruma · Gato gris | Precisión y contraataques | Mantiene el ritmo y responde a los golpes; tiene menos evasión. |
+| Nima | Speed and combos | Press with your sequence; It has little defense. |
+| Luma | Balance and adaptation | Improves accuracy after failure; It does not have an explosive specialty. |
+| Mugo | Tough tank | Holds and cushions criticals; attack slowly. |
+| Sira | Critics | His critics cut through part of the defense; withstands few blows. |
+| Iria | Poison | Accumulates wear; It takes time and has low direct damage. |
+| Duna | Shields | Blocks damage periodically; It exerts little initial pressure. |
+| Kiro | Risk and fury | Gain damage upon losing life; can fail at the decisive moment. |
+| Neris | Recovery | Heals once when HP drops; healing may be weakened. |
+| Taro | Counterattacks | Punishes attacks received; its replicas are probabilistic. |
+| Balam Jaguar | stalking and charges | Punishes with strong and critical hits; You need to prepare your attacks. |
+| Tepa · Teporingo | Jumps and speed | Change trajectory and press quickly; It has little life and defense. |
+| Xuna · Xoloitzcuintle | Guard and wear | Resists critical and maintains burns; takes time to impose its rhythm. |
+| Copal · Cacomixtle | Feints and retorts | Combine displacement, deception and counterattacks; Your answers are not guaranteed. |
+| Ónix · Black cat | Speed and evasion | Press with combos and dodges; It has little life and defense. |
+| Bruma · Gray cat | Precision and counterattacks | Maintains rhythm and responds to blows; has less evasion. |
 
-Los nueve compañeros originales conservan sus apariencias propias: Nima es un lince; Luma, un ajolote; Mugo, un gólem; Sira, una mantis; Iria, una rana botánica; Duna, un armadillo; Kiro, un jabalí; Neris, una garza; y Taro, un tejón. Ascua tiene un diseño exclusivo de guardián volcánico con cuernos, cola y núcleo ámbar. Véspera, la jefa del segundo capítulo, es una polilla lunar con alas índigo y plata.
+The nine original companions retain their own appearances: Nima is a lynx; Luma, an axolotl; Mugo, a golem; Sira, a mantis; Iria, a botanical frog; Duna, an armadillo; Kiro, a wild boar; Neris, a heron; and Taro, a badger. Ascua has a unique volcanic guardian design with horns, tail and amber core. Véspera, the boss of the second chapter, is a lunar moth with indigo and silver wings.
 
-Balam, Tepa, Xuna y Copal añaden cuatro animales vinculados con México, con ilustraciones propias, cinco técnicas, seis opciones de talento y un Golpe Firma individual. Están disponibles desde **Compañeros** en la liga y **Historia → Compañeros** para iniciar campañas independientes. Las partidas anteriores conservan sus personajes activos y su progreso. El arte, los prompts y las referencias están en [assets/sprites/FAUNA-MEXICANA.md](../assets/sprites/FAUNA-MEXICANA.md).
+Balam, Tepa, Xuna and Copal add four animals linked to Mexico, with their own illustrations, five techniques, six talent options and an individual Signature Strike. They are available from **Companions** in the league and **Story Mode → Companions** to start independent campaigns. Previous games retain their active characters and their progress. Art, prompts and references are in [assets/sprites/FAUNA-MEXICANA.md](../assets/sprites/FAUNA-MEXICANA.md).
 
-**Ónix**, gato negro de ojos amarillos, y **Bruma**, gato gris de ojos verdosos, tienen cada uno cinco técnicas, seis talentos y 40 poses ilustradas. Se eligen en Liga e Historia y conservan progresión individual. Sus diseños, pruebas y prompts están en [reports/GATOS.md](../reports/GATOS.md).
+**Ónix**, black cat with yellow eyes, and **Bruma**, gray cat with greenish eyes, each have five techniques, six talents, and 40 illustrated poses. They are chosen in League and Story Mode and retain individual progression. Its designs, tests and prompts are in [reports/GATOS.md](../reports/GATOS.md).
 
-Cada personaje conserva sus ocho poses PNG originales con transparencia: reposo, respiración, preparación, golpe, impacto, esquiva, victoria y derrota. Se añaden **32 poses por cuerpo**, distribuidas en dos atlas transparentes, para los **17 cuerpos** del juego. Las habilidades y el progreso conservan su identidad original. Las secuencias y su procedencia están en [assets/sprites/sequences/manifest.json](../assets/sprites/sequences/manifest.json). Los siete diseños originales y sus prompts están en [assets/sprites/PERSONAJES-V3.md](../assets/sprites/PERSONAJES-V3.md); los tres primeros atlas, en [assets/sprites/PROMPTS.md](../assets/sprites/PROMPTS.md); el fondo y su procedencia, en [assets/ARTE.md](../assets/ARTE.md).
+Each character retains their eight original PNG poses with transparency: Rest, Breath, Prepare, Punch, Impact, Dodge, Victory, and Defeat. **32 poses per body** are added, distributed in two transparent atlases, for the **17 bodies** in the game. Skills and progress retain their original identity. The sequences and their origin are in [assets/sprites/sequences/manifest.json](../assets/sprites/sequences/manifest.json). The seven original designs and their prompts are in [assets/sprites/PERSONAJES-V3.md](../assets/sprites/PERSONAJES-V3.md); the first three atlases, in [assets/sprites/PROMPTS.md](../assets/sprites/PROMPTS.md); the background and its origin, in [assets/ARTE.md](../assets/ARTE.md).
 
-## Estadísticas, probabilidades y efectos
+## Statistics, probabilities and effects
 
-Las estadísticas provienen de una única definición por personaje: base de nivel uno, crecimiento propio y entrenamiento adquirido. Los efectos de pelea modifican una copia temporal. El entrenamiento conserva cuatro controles, con límite de 30 por valor: Vida añade 20 PV; Fuerza añade 1.5 de ataque; Agilidad mejora evasión y crítico; Velocidad acorta el intervalo entre acciones.
+Stats come from a single definition per character: base level one, self-growth, and acquired training. Fight effects modify a temporary copy. Training retains four controls, capped at 30 per value: Life adds 20 HP; Strength adds attack 1.5; Agility improves evasion and critical; Speed ​​shortens the interval between actions.
 
-| Estadística | Efecto y límites |
+| Statistics | Effect and limits |
 | --- | --- |
-| Vida | 100–2000 PV. Se recupera al comenzar una pelea. |
-| Ataque | 5–150 antes de defensa y modificadores. Variación normal de ±8%. |
-| Defensa | 0–160. Daño recibido × `100 / (100 + defensa)`. |
-| Velocidad | 1–36. Intervalo `2.4 / (1 + velocidad × 0.035)` segundos. |
-| Precisión | Se enfrenta a evasión. Probabilidad final de acertar entre 62% y 96%. |
-| Evasión | 0–30%; reduce la posibilidad de recibir el golpe. |
-| Crítico | 3–32% al conectar. Se calcula separado del acierto. |
-| Daño crítico | Multiplicador ×1.2–×2.1; no se combina con la firma. |
-| Resistencia | 0–50%; reduce aplicación o duración de estados negativos. |
+| Life | 100–2000 PV. Recovers when starting a fight. |
+| Attack | 5–150 before defense and modifiers. Normal variation of ±8%. |
+| Defense | 0–160. Damage received × `100 / (100 + defensa)`. |
+| Speed | 1–36. Interval `2.4 / (1 + velocidad × 0.035)` seconds. |
+| Accuracy | He faces evasion. Final probability of hitting between 62% and 96%. |
+| Evasion | 0–30%; reduces the chance of being hit. |
+| Critical | 3–32% when connecting. It is calculated separately from the success. |
+| critical damage | Multiplier ×1.2–×2.1; It is not combined with the signature. |
+| Resistance | 0–50%; reduces application or duration of negative states. |
 
-No se incluye Suerte: duplicaría otras probabilidades sin ofrecer una decisión distinta. Un valor interno de poder ayuda a emparejar rivales y nunca multiplica el daño. Los niveles añaden crecimiento gradual; después del nivel 20 se aplica el 45% del crecimiento normal. Los rivales se buscan cerca del nivel y poder del compañero activo.
+Luck is not included: it would double other probabilities without offering a different decision. An internal power value helps match rivals and never multiplies damage. Levels add gradual growth; after level 20 the 45% of normal growth is applied. Rivals look for each other close to the level and power of the active partner.
 
-Cada luchador tiene una habilidad propia y un **Golpe Firma** separado: se realiza una sola tirada de **1% al comenzar cada combate**, nunca una tirada por ataque. Si sale, se programa para una de sus primeras acciones. Solo puede ocurrir una vez, siempre conecta, hace aproximadamente **×1.6** del daño normal y aplica un efecto negativo con duración explícita. La resistencia puede acortar la firma, pero no anularla. Una pelea que termine antes de la acción prevista puede impedir verla.
+Each fighter has their own skill and a separate **Signature Blow**: a single **1% roll is made at the beginning of each fight**, never a roll per attack. If it comes out, it is scheduled for one of its first actions. It can only occur once, always connects, deals approximately **×1.6** normal damage, and applies a debuff with explicit duration. Resistance can shorten the signature, but not cancel it. A fight that ends before the planned action may prevent it from being seen.
 
-Los estados incluyen tipo, magnitud, fuente, duración, turnos restantes y regla de acumulación. El tiempo de un estado se mide en **acciones propias del personaje afectado**. Las aplicaciones repetidas refrescan, reemplazan o acumulan intensidad según su definición; los límites y la caducidad se aplican en el módulo común. La vida, los escudos y los turnos restantes aparecen en la arena; Registro explica los eventos.
+States include type, magnitude, source, duration, remaining turns, and accumulation rule. The time of a state is measured in **actions of the affected character**. Repeated applications refresh, replace or build intensity depending on your definition; limits and expiration are applied in the common module. Life, shields, and remaining turns appear in the arena; Record explains the events.
 
-El combate termina al agotar la vida o por rendición. A los **60 segundos** gana quien conserve mayor proporción de vida. Los empates exactos se resuelven de forma reproducible con el RNG del combate. Los mejores números mantienen ventaja estadística, con resultados ocasionalmente inesperados.
+The combat ends when life is exhausted or by surrender. At **60 seconds** whoever retains the greatest proportion of life wins. Exact ties are resolved reproducibly with combat RNG. The best numbers maintain a statistical advantage, with occasionally unexpected results.
 
-## Experiencia y rendición en la liga
+## Experience and surrender in the league
 
-Se necesitan `55 + (nivel − 1) × 25` XP para subir. La XP sobrante se conserva y cada nivel entrega **2 puntos** además del crecimiento particular del personaje. El nivel máximo es **50**; la experiencia posterior sigue contando para su trayectoria.
+`55 + (nivel − 1) × 25` XP is required to upload. Excess XP is conserved and each level awards **2 points** in addition to the character's particular growth. The maximum level is **50**; Subsequent experience continues to count for your career.
 
-En nivel uno, las recompensas base son **40 XP por victoria**, **25 por derrota** y **8 por rendición**. Aumentan un 16% del valor base por nivel. Partidas muy cortas y repeticiones reducen la recompensa correspondiente. El ganador por rendición recibe una victoria normal; quien abandona recibe **al menos 1 XP**. Una breve pausa de cuatro segundos tras rendirse limita la obtención de XP mediante abandonos instantáneos. Los rivales también conservan XP y suben de nivel en perfiles separados del plantel del jugador.
+At level one, the base rewards are **40 XP for victory**, **25 for defeat** and **8 for surrender**. They increase one 16% from the base value per level. Very short games and repetitions reduce the corresponding reward. The winner by surrender receives a normal victory; whoever abandons receives **at least 1 XP**. A short four-second pause after surrendering limits XP gain through instant surrenders. Rivals also retain XP and level up in profiles separate from the player's roster.
 
-**Rendirse** requiere confirmar. Mientras decides, la simulación está pausada. Al confirmar, el motor termina inmediatamente: no hay ataques posteriores ni recompensas duplicadas. El historial distingue la rendición de una derrota normal y actualiza victorias, derrotas y rachas.
+**Surrender** requires confirmation. While you decide, the simulation is paused. Upon confirmation, the engine terminates immediately: there are no subsequent attacks or duplicate rewards. The history distinguishes surrender from a normal defeat and updates wins, losses and streaks.
 
-## Guardado de la liga y compatibilidad
+## League saving and compatibility
 
-El guardado local automático se encuentra en:
+The automatic local save is located at:
 
 ```text
 ~/Library/Application Support/BrasaLiga/brasa_save.json
 ```
 
-La versión 2 guarda el plantel, compañero activo, rivales, historial y controles de recompensas. Migra la versión anterior conservando nombre, nivel, XP, entrenamiento, puntos y resultados, y crea un respaldo antes de escribir. Usa escritura temporal y reemplazo atómico. Un archivo corrupto o de una versión desconocida se protege para evitar sobrescribir progreso que no se pueda interpretar.
+The 2 version saves the squad, active teammate, rivals, history and reward controls. Migrate the previous version keeping name, level, XP, training, points and results, and create a backup before writing. Use temporary writing and atomic replacement. A file that is corrupt or of an unknown version is protected to prevent overwriting progress that cannot be interpreted.
 
-Los modos locales no requieren cuenta, Internet ni compras. Arena online requiere conexión y una cuenta con passkey; los duelos son asíncronos y automáticos, sin conexión simultánea de los participantes. Los cosméticos no alteran estadísticas.
+Local modes require no account, internet or purchases. Arena online requires connection and an account with a passkey; The duels are asynchronous and automatic, without simultaneous connection of the participants. Cosmetics do not alter statistics.
 
-## Arquitectura y pruebas
+## Architecture and testing
 
-| Archivo | Responsabilidad |
+| File | Responsibility |
 | --- | --- |
-| `scripts/balance.gd` | Curvas, probabilidades, caps, XP y constantes globales. |
-| `scripts/move_catalog.gd` | Técnicas, desbloqueos, grados, talentos y pesos de selección. |
-| `scripts/campaign_config.gd` | Capítulos, presupuestos, variantes, jefes, recompensas e hitos. |
-| `scripts/character_catalog.gd` | Quince definiciones, ayudas y cálculo de estadísticas/poder. |
-| `scripts/combat_rules.gd` | Cálculos comunes de acierto, crítico y daño. |
-| `scripts/status_effects.gd` | Efectos temporales, acumulación, resistencia y expiración. |
-| `scripts/combat_engine.gd` | Estado autoritativo, iniciativa, RNG con semilla, eventos y resumen. |
-| `scripts/progression.gd` | Plantel, rivales, entrenamiento, XP, historial, migración y guardado. |
-| `scripts/main.gd` | Arena, flujo, paneles, feedback y audio. |
-| `scripts/ui/battle_layout.gd` | Distribución adaptable del HUD, personajes, controles y resultados. |
-| `scripts/story_catalog.gd` | Capítulos, rutas, perfiles de rivales, atributos, jefes y pistas basadas en combate. |
-| `scripts/story_progression.gd` | Campañas, transición de capítulos, legados, puntos, XP, reintentos y migración de Historia. |
-| `scripts/ui/story_panel.gd` | Ruta, vista previa, mejoras, elección de campaña y legado. |
-| `scripts/ui/world_visuals.gd` | Registro de entornos, superficies reutilizables y condiciones decorativas. |
-| `scripts/ui/world_backdrop.gd` | Fondo bajo demanda, objetos ambientales y contraste; sin lógica de juego. |
-| `data/ui_visual_manifest.json` | IDs de assets, regiones de atlas, nueve segmentos, temas y props. |
-| `scripts/ui/roster_panel.gd` | Selección y fichas generadas desde el catálogo. |
-| `scripts/fighter_view.gd` | Atlas, poses, anclajes, orientación y variantes visuales. |
-| `scripts/fighter_animation_set.gd` | Secuencias por fases, reacciones, transformaciones visuales y caché de atlas. |
-| `scripts/combat_fx.gd` | Impactos, polvo, estelas, energía y desplazamiento breve de cámara. |
-| `data/combat_fx.json` | Regiones y duración de los ocho efectos transparentes. |
-| `scripts/fighter_identity.gd` | Identidad compartida, inventario cosmético, migración y guardado independiente. |
-| `scripts/cosmetic_catalog.gd` | Categorías, opciones, compatibilidad y requisitos; export canónico JSON. |
-| `scripts/ui/customization_panel.gd` | Creador y editor visual con borrador, vista previa y confirmación. |
-| `scripts/battle_identity.gd` | Nombre y apariencia históricos junto con los eventos de combate. |
-| `scripts/identity_api.gd` | Adaptador opcional de la API local, sin sincronización automática. |
-| `scripts/arena_view.gd` | Fondo, luces y partículas. |
+| `scripts/balance.gd` | Curves, probabilities, caps, XP and global constants. |
+| `scripts/move_catalog.gd` | Techniques, unlocks, grades, talents and selection weights. |
+| `scripts/campaign_config.gd` | Chapters, budgets, variants, bosses, rewards and milestones. |
+| `scripts/character_catalog.gd` | Fifteen definitions, aids and calculation of statistics/power. |
+| `scripts/combat_rules.gd` | Common hit, critical and damage calculations. |
+| `scripts/status_effects.gd` | Temporary effects, accumulation, resistance and expiration. |
+| `scripts/combat_engine.gd` | Authoritative state, initiative, RNG with seed, events and summary. |
+| `scripts/progression.gd` | Squad, rivals, training, XP, history, migration and saving. |
+| `scripts/main.gd` | Arena, flow, panels, feedback and audio. |
+| `scripts/ui/battle_layout.gd` | Adaptive layout of the HUD, characters, controls and results. |
+| `scripts/story_catalog.gd` | Chapters, routes, rival profiles, attributes, bosses and combat-based tracks. |
+| `scripts/story_progression.gd` | Campaigns, chapter transitions, legacies, points, XP, retries and Story migration. |
+| `scripts/ui/story_panel.gd` | Route, preview, improvements, campaign choice and legacy. |
+| `scripts/ui/world_visuals.gd` | Registration of environments, reusable surfaces and decorative conditions. |
+| `scripts/ui/world_backdrop.gd` | On-demand background, ambient objects and contrast; no game logic. |
+| `data/ui_visual_manifest.json` | Asset IDs, atlas regions, nine segments, themes and props. |
+| `scripts/ui/roster_panel.gd` | Selection and files generated from the catalog. |
+| `scripts/fighter_view.gd` | Atlas, poses, anchors, orientation and visual variants. |
+| `scripts/fighter_animation_set.gd` | Phased sequences, reactions, visual transformations and atlas cache. |
+| `scripts/combat_fx.gd` | Impacts, dust, contrails, energy and brief camera movement. |
+| `data/combat_fx.json` | Regions and duration of the eight transparent effects. |
+| `scripts/fighter_identity.gd` | Shared identity, cosmetic inventory, migration and independent save. |
+| `scripts/cosmetic_catalog.gd` | Categories, options, compatibility and requirements; canonical export JSON. |
+| `scripts/ui/customization_panel.gd` | Visual creator and editor with draft, preview and confirmation. |
+| `scripts/battle_identity.gd` | Historical name and appearance along with combat events. |
+| `scripts/identity_api.gd` | Optional local API adapter, no auto-sync. |
+| `scripts/arena_view.gd` | Background, lights and particles. |
 
-La regresión final de personalización supera **22.816 comprobaciones en 24 suites, sin fallos**, más el recorrido **UI_SMOKE_PASS**. Las pruebas nativas, de identidad y del servicio local se detallan en [PERSONALIZACIÓN](../reports/PERSONALIZACION.md).
+The final customization regression passes **22.816 checks on 24 suites, without failures**, plus the **UI_SMOKE_PASS** walkthrough. Native, identity, and local service testing are detailed in [CUSTOMIZATION](../reports/PERSONALIZACION.md).
 
-Las pruebas usan archivos separados; nunca la partida real. Desde esta carpeta, con Godot instalado:
+The tests use separate files; never the actual game. From this folder, with Godot installed:
 
 ```sh
 BRASA_GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
@@ -242,10 +242,10 @@ BRASA_GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
 "$BRASA_GODOT" --headless --path . --script res://tests/simulate_story.gd
 ```
 
-`--smoke-test` recorre plantel, entrenamiento, firma forzada de prueba, combate, recompensa única, resumen, historial, ficha, revancha, rendición cancelada/confirmada y recarga. Su guardado está en `work/ui_smoke_save_<sesión>.json`, fuera de la partida del jugador. También admite `--save-path=/ruta/absoluta/archivo.json`. Quita `--headless` para observarlo en ventana.
+`--smoke-test` tours roster, training, forced trial signing, combat, unique reward, summary, history, record, rematch, canceled/confirmed surrender and reload. Its save is in `work/ui_smoke_save_<sesión>.json`, outside the player's game. Also supports `--save-path=/ruta/absoluta/archivo.json`. Remove `--headless` to view it in the window.
 
-El motor acepta una semilla opcional para reproducir errores sin depender de la tasa de fotogramas. Las opciones de forzar firma están destinadas únicamente a pruebas; las partidas normales usan la probabilidad del catálogo. Las simulaciones y su informe se incluyen junto a las pruebas para volver a medir el balance al modificar datos.
+The engine accepts an optional seed to reproduce errors without depending on the frame rate. The force signature options are intended for testing only; Normal games use catalog probability. Simulations and their report are included along with tests to remeasure the balance when modifying data.
 
-La ampliación a trece personajes y su validación están en [reports/FAUNA-MEXICANA.md](../reports/FAUNA-MEXICANA.md), y su balance está en [reports/MEXICAN_ROSTER_BALANCE.md](../reports/MEXICAN_ROSTER_BALANCE.md). La validación de los 100 encuentros con los nueve personajes originales está en [reports/CAMPANA-100.md](../reports/CAMPANA-100.md), con pruebas de integración, migración, movimiento y capturas.
+The expansion to thirteen characters and its validation are in [reports/FAUNA-MEXICANA.md](../reports/FAUNA-MEXICANA.md), and its balance is in [reports/MEXICAN_ROSTER_BALANCE.md](../reports/MEXICAN_ROSTER_BALANCE.md). The validation of the 100 encounters with the nine original characters is in [reports/CAMPANA-100.md](../reports/CAMPANA-100.md), with integration, migration, movement and capture tests.
 
-Los informes [VALIDACION](../reports/VALIDACION.md), [INTERFAZ](../reports/INTERFAZ.md), [HISTORIA](../reports/HISTORIA.md), [STORY_BALANCE](../reports/STORY_BALANCE.md) y [CAPITULO-2](../reports/CAPITULO-2.md) documentan entregas anteriores; sus resultados de combate preceden al sistema de cinco técnicas. El arte y sus prompts siguen documentados en [PERSONAJES](../reports/PERSONAJES.md) y [assets/CAPITULO-2.md](../assets/CAPITULO-2.md).
+The reports [VALIDATION](../reports/VALIDACION.md), [INTERFACE](../reports/INTERFAZ.md), [STORY](../reports/HISTORIA.md), [STORY_BALANCE](../reports/STORY_BALANCE.md) and [CHAPTER-2](../reports/CAPITULO-2.md) document previous deliveries; Its combat results precede the five-technique system. The art and its prompts are still documented in [CHARACTERS](../reports/PERSONAJES.md) and [assets/CAPITULO-2.md](../assets/CAPITULO-2.md).

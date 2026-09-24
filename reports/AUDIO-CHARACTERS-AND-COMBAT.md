@@ -1,425 +1,425 @@
-# Audio: personajes y combate — auditoría del código actual
+# Audio: Characters and Combat — Current Code Audit
 
-Fecha: 21 de septiembre de 2026. Alcance: lectura del motor, catálogos, presentación y reproducción; sin generación, cambios de runtime, ejecución de perfiles ni pruebas amplias. **Los perfiles son dirección sonora propuesta; las reglas y los puntos de disparo son hechos del código.** Este documento complementa la arquitectura y el inventario general de audio de la tarea principal.
+Date: 21 September 2026. Scope: engine reading, catalogues, presentation and reproduction; no generation, runtime changes, profile execution or extensive testing. **Profiles are proposed sound direction; rules and trigger points are made from the code.** This document complements the architecture and overall audio inventory of the main task.
 
-Se contrastó el catálogo exportado con los SHA-256 actuales de sus ocho fuentes: todos coinciden. Contiene **15 compañeros, 75 técnicas jugables, dos cuerpos de jefe con diez técnicas propias y once encuentros de jefe**. Hay cinco técnicas por identidad; desbloqueos jugables en niveles 1, 1, 5, 12 y 20 y seis opciones de talento por compañero. El JSON adjunto conserva las 85 definiciones completas, talentos, parámetros, perfiles y referencias. [scripts/character_catalog.gd:5](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:5) · [scripts/move_catalog.gd:5](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:5)
+The exported catalog was checked against the current SHA-256 from its eight sources: they all match. Contains **15 companions, 75 playable techniques, two boss bodies with ten own techniques and eleven boss encounters**. There are five techniques per identity; playable unlocks in levels 1, 1, 5, 12 and 20 and six talent options per companion. The attached JSON preserves the complete 85 definitions, talents, parameters, profiles, and references. [scripts/character_catalog.gd:5](../scripts/character_catalog.gd#L5) · [scripts/move_catalog.gd:5](../scripts/move_catalog.gd#L5)
 
-Datos auditables: [characters-combat.json](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/audio/audit/characters-combat.json). Hash del catálogo: `6f8007bd7059b142b166e630455449d180a7ceffb2c0ff2e0307799f1eea86e1`. No se ejecutaron combates nuevos ni se modificaron guardados para este informe.
+Auditable data: characters-combat.json (`work/audio/audit/characters-combat.json`; not included). Catalog hash: `6f8007bd7059b142b166e630455449d180a7ceffb2c0ff2e0307799f1eea86e1`. There were no new matches executed or modified saves for this report.
 
-## Identidad física y poderes
+## Physical identity and powers
 
-La apariencia puede escoger un cuerpo distinto del arquetipo jugable. La futura selección sonora debe componer **movimiento/material/voz del cuerpo visible** y **técnica/Firma/poder del descriptor de combate**; nunca identificarlo por el nombre personal. Ascua puede llegar como character_id=mugo con story_boss_id/visual propios, y Véspera como sira. Un replay conserva sus identidades y apariencias históricas, no las actuales del inventario. [scripts/fighter_view.gd:144](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:144) · [scripts/battle_identity.gd:6](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/battle_identity.gd:6) · [scripts/story_catalog.gd:220](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/story_catalog.gd:220)
+The appearance can choose a body other than the playable archetype. The future sound selection should compose **visible body movement/material/voice** and **combat descriptor technique/signature/power**; never identify him by personal name. Ascua can arrive as character_id=mugo with its own story_boss_id/visual, and Véspera as sira. A replay preserves its historical identities and appearances, not the current ones in the inventory. [scripts/fighter_view.gd:144](../scripts/fighter_view.gd#L144) · [scripts/battle_identity.gd:6](../scripts/battle_identity.gd#L6) · [scripts/story_catalog.gd:220](../scripts/story_catalog.gd#L220)
 
-Los primeros nueve registros no incluyen `species`/`biography`; sus especies aquí proceden de la documentación de los sprites. **Duna es un armadillo, no una tortuga**. Los títulos “jade”, “luna” o “bruma” inspiran timbre; no prueban una mecánica de agua, magia o un arma adicional.
+The first nine records do not include `species`/`biography`; their species here come from the sprite documentation. **Duna is an armadillo, not a turtle**. The titles “jade”, “moon” or “mist” inspire timbre; they don't test a water mechanic, magic, or an additional weapon.
 
-## CharacterAudioProfiles propuestos
+## Proposed CharacterAudioProfiles
 
-Cada perfil conserva una base seca y cercana. El peso sonoro se comunica por transitorio, material y movimiento, no por aumentar volumen según nivel/estadísticas. Motivos y vocalizaciones son propuestas por producir, no archivos existentes. No se requiere una canción completa por personaje.
+Each profile retains a dry and close base. Sound weight is communicated by transient, material and movement, not by increasing volume according to level/statistics. Motifs and vocalizations are proposed to be produced, not existing files. A full song per character is not required.
 
 ### Nima (`nima`)
 
-**Identidad:** Lince del desierto. **Movimiento:** Apoyos ligeros y secos; carreras cortas, salto y carga felinos. **Ataque/peso:** Roce de pelo y aire corto; tercer intento acentuado solo cuando conecta; Ligero/medio, sin graves de tanque. **Material:** Pelaje y contacto corporal; grano de suelo en capa independiente.
+**Identity:** Desert lynx. **Movement:** Light and dry supports; feline short races, jumping and charging. **Attack/weight:** Hair brush and short air; third attempt accented only when it connects; Light/medium, no tanky bass. **Material:** Fur and body contact; soil grain in independent layer.
 
-**Energía:** Arena como textura temática; slow real en Firma. **Voz:** Exhalaciones felinas breves, registro medio, sin palabras. **Motivo:** Tres acentos de percusión seca.
+**Energy:** Sand as thematic texture; real slow in Signature. **Voice:** Short feline exhalations, middle register, without words. **Motif:** Three dry percussion accents.
 
-**Habilidad real:** Paso de tres (`combo`): Cada tercer ataque hace ×1.3 de daño si conecta. **Firma:** Cometa de arena: Golpe certero ×1.6 y velocidad rival −22% durante 3 turnos.
+**Actual Skill:** Three Step (`combo`): Every third attack does ×1.3 damage if it connects. **Signature:** Sand Kite: Accurate hit ×1.6 and rival speed −22% for 3 turns.
 
-**Cinco técnicas:** Zarpazo fugaz (`nima_zarpazo`, quick); Paso de arena (`nima_arena`, dash); Salto de duna (`nima_salto`, jump); Acecho felino (`nima_acecho`, counter); Cometa del desierto (`nima_cometa`, charge).
+**Five techniques:** Quick strike (`nima_zarpazo`, quick); sand step (`nima_arena`, dash); dune jump (`nima_salto`, jump); Feline Stalking (`nima_acecho`, counter); Desert Comet (`nima_cometa`, charge).
 
-**Firma sonora:** Cometa de arena: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; slow separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Sand comet: own motif in anticipation of Signature; physical impact + strange accent on contact; separate slow if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:19](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:19) · [scripts/move_catalog.gd:43](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:43) · [assets/sprites/PROMPTS.md:9](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PROMPTS.md:9).
+Sources: [scripts/character_catalog.gd:19](../scripts/character_catalog.gd#L19) · [scripts/move_catalog.gd:43](../scripts/move_catalog.gd#L43) · [assets/sprites/PROMPTS.md:9](../assets/sprites/PROMPTS.md).
 
 ### Luma (`luma`)
 
-**Identidad:** Ajolote. **Movimiento:** Apoyos suaves, desplazamiento fluido y salto contenido. **Ataque/peso:** Palma blanda con cuerpo firme; gesto de enfoque claramente separado del daño; Medio redondo. **Material:** Piel anfibia; evitar chapoteo permanente en suelo seco.
+**Identity:** Axolotl. **Movement:** Smooth supports, fluid movement and contained jumping. **Attack/weight:** Soft palm with firm body; focus gesture clearly separated from damage; Half round. **Material:** Amphibious skin; avoid permanent splashing on dry ground.
 
-**Energía:** Agua/remanso como color tímbrico; precisión, debilitamiento y curación reales. **Voz:** Respiración suave y esfuerzo corto de registro medio. **Motivo:** Dos notas fluidas y resonancia de madera suave.
+**Energy:** Water/backwater as timbral color; real precision, weakening and healing. **Voice:** Soft breathing and short effort in the middle register. **Motif:** Two fluid notes and soft wood resonance.
 
-**Habilidad real:** Aprender del río (`adapt`): Tras fallar, gana 10 puntos de precisión durante 2 turnos. **Firma:** Marea de luna: Golpe certero ×1.6 y precisión rival −15 puntos durante 3 turnos.
+**Actual Skill:** Learn from the River (`adapt`): Upon failure, gain 10 accuracy points for 2 turns. **Signature:** Moon Tide: True Strike ×1.6 and rival precision −15 points during 3 turns.
 
-**Cinco técnicas:** Palma del río (`luma_palma`, quick); Ojo del remanso (`luma_enfoque`, technique); Ola contenida (`luma_ola`, heavy); Arco del agua (`luma_arco`, jump); Remanso protector (`luma_remanso`, guard).
+**Five techniques:** River palm (`luma_palma`, quick); Eye of the Backwater (`luma_enfoque`, technique); Contained Wave (`luma_ola`, heavy); Water Arc (`luma_arco`, jump); Protective haven (`luma_remanso`, guard).
 
-**Firma sonora:** Marea de luna: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; accuracy_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound Signature:** Moontide: own motif in anticipation of Signature; physical impact + strange accent on contact; separate accuracy_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:30](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:30) · [scripts/move_catalog.gd:112](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:112) · [assets/sprites/PROMPTS.md:10](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PROMPTS.md:10).
+Sources: [scripts/character_catalog.gd:30](../scripts/character_catalog.gd#L30) · [scripts/move_catalog.gd:112](../scripts/move_catalog.gd#L112) · [assets/sprites/PROMPTS.md:10](../assets/sprites/PROMPTS.md).
 
 ### Mugo (`mugo`)
 
-**Identidad:** Gólem de piedra. **Movimiento:** Apoyo pesado, repliegue lento y arranque de carga con fricción. **Ataque/peso:** Golpe denso de piedra, junta mineral corta, caída de gravilla localizada; Pesado, transitorio ancho y cola controlada. **Material:** Piedra/jade; nada de espada metálica.
+**Identity:** Stone golem. **Movement:** Heavy support, slow withdrawal and friction loading start. **Attack/weight:** Dense stone strike, short mineral joint, localized gravel fall; Heavy, wide transient and controlled tail. **Material:** Stone/jade; no metal sword.
 
-**Energía:** Resonancia mineral; no habilidad de fuego ni transformación jugable. **Voz:** Resonancia corporal grave sin diálogo ni rugido continuo. **Motivo:** Pulso lento de piedra y tambor grave.
+**Energy:** Mineral resonance; no fire ability or playable transformation. **Voice:** Low body resonance without dialogue or continuous roar. **Reason:** Slow stone pulse and low drum.
 
-**Habilidad real:** Corazón de cantera (`fortify`): Reduce un 45% el daño adicional de los críticos recibidos. **Firma:** Abrazo de montaña: Golpe certero ×1.6 y ataque rival −20% durante 3 turnos.
+**Actual Skill:** Quarry Heart (`fortify`): Reduces the additional damage from critical hits received by 45%. **Signature:** Mountain Embrace: True Strike ×1.6 and opponent attack −20% for 3 turns.
 
-**Cinco técnicas:** Nudillo de jade (`mugo_nudillo`, quick); Muro paciente (`mugo_muro`, guard); Abrir la grieta (`mugo_grieta`, heavy); Paso de montaña (`mugo_montana`, charge); Eco de piedra (`mugo_eco`, counter).
+**Five techniques:** Jade Knuckle (`mugo_nudillo`, quick); patient wall (`mugo_muro`, guard); Open the crack (`mugo_grieta`, heavy); Mountain Pass (`mugo_montana`, charge); Stone Echo (`mugo_eco`, counter).
 
-**Firma sonora:** Abrazo de montaña: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; attack_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Mountain hug: own motif in anticipation of Signature; physical impact + strange accent on contact; separate attack_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:41](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:41) · [scripts/move_catalog.gd:189](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:189) · [assets/sprites/PROMPTS.md:11](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PROMPTS.md:11).
+Sources: [scripts/character_catalog.gd:41](../scripts/character_catalog.gd#L41) · [scripts/move_catalog.gd:189](../scripts/move_catalog.gd#L189) · [assets/sprites/PROMPTS.md:11](../assets/sprites/PROMPTS.md).
 
 ### Sira (`sira`)
 
-**Identidad:** Mantis duelista. **Movimiento:** Apoyos secos precisos; dash y salto articulados. **Ataque/peso:** Corte corto de antebrazo natural con chasquido de quitina; Ligero y incisivo; crítico añade filo, no explosión. **Material:** Quitina y hoja natural del brazo, no espada transportada.
+**Identity:** Duelist mantis. **Movement:** Precise dry supports; articulated dash and jump. **Attack/Weight:** Natural forearm short cut with chitin snap; Light and incisive; critical adds edge, not explosion. **Material:** Chitin and natural arm blade, not carried sword.
 
-**Energía:** Cristal/obsidiana como timbre; penetración crítica real. **Voz:** Esfuerzo mínimo aireado, sin voz robótica. **Motivo:** Notas altas cortas sobre pulso preciso.
+**Energy:** Crystal/obsidian as chime; real critical penetration. **Voice:** Minimal effort airy, no robotic voice. **Reason:** Short high notes on precise pulse.
 
-**Habilidad real:** Grieta perfecta (`precision`): Sus críticos ignoran el 45% de la defensa rival. **Firma:** Destello de obsidiana: Golpe certero ×1.6 y defensa rival −25% durante 3 turnos.
+**Actual Ability:** Perfect Rift (`precision`): Your criticals ignore the opponent's defense's 45%. **Signature:** Obsidian Flash: True Strike ×1.6 and rival defense −25% for 3 turns.
 
-**Cinco técnicas:** Aguja de jade (`sira_aguja`, quick); Corte rasante (`sira_corte`, dash); Romper el vidrio (`sira_vidrio`, heavy); Media luna (`sira_media_luna`, jump); Réplica del filo (`sira_replica`, counter).
+**Five techniques:** Jade needle (`sira_aguja`, quick); flush cut (`sira_corte`, dash); Break the glass (`sira_vidrio`, heavy); Crescent (`sira_media_luna`, jump); Replica of the blade (`sira_replica`, counter).
 
-**Firma sonora:** Destello de obsidiana: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; defense_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Obsidian flash: own motif in anticipation of Signature; physical impact + strange accent on contact; separate defense_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:52](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:52) · [scripts/move_catalog.gd:260](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:260) · [assets/sprites/PERSONAJES-V3.md:9](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PERSONAJES-V3.md:9).
+Sources: [scripts/character_catalog.gd:52](../scripts/character_catalog.gd#L52) · [scripts/move_catalog.gd:260](../scripts/move_catalog.gd#L260) · [assets/sprites/PERSONAJES-V3.md:9](../assets/sprites/PERSONAJES-V3.md).
 
 ### Iria (`iria`)
 
-**Identidad:** Rana botánica. **Movimiento:** Apoyos húmedos discretos; salto y postura arraigada. **Ataque/peso:** Puño orgánico y fricción de hoja; aplicación de veneno separada del golpe; Ligero/medio amortiguado. **Material:** Piel/hoja; sin atribuir lluvia a cada ataque.
+**Identity:** Botanical frog. **Movement:** Discreet wet supports; jump and rooted posture. **Attack/Weight:** Organic punch and blade friction; application of poison separate from the blow; Light/medium cushioned. **Material:** Skin/leaf; without attributing rain to each attack.
 
-**Energía:** Veneno y reducción de curación; textura vegetal corta sin burbujeo continuo. **Voz:** Exhalación breve de anfibio, registro medio-bajo. **Motivo:** Semillas/percusiones de madera y dos notas suspendidas.
+**Energy:** Poison and healing reduction; short vegetable texture without continuous bubbling. **Voice:** Short amphibian exhalation, medium-low register. **Motif:** Wooden seeds/percussions and two suspended notes.
 
-**Habilidad real:** Jardín secreto (`poison`): 35% al conectar de envenenar: 3 × Ataque / 19 PV durante 3 turnos, hasta 2 cargas. **Firma:** Flor de medianoche: Golpe certero ×1.6 y curación rival −40% durante 4 turnos.
+**Actual Ability:** Secret Garden (`poison`): 35% on poison connection: 3 × Attack / 19 HP for 3 turns, up to 2 charges. **Signature:** Midnight Blossom: True Strike ×1.6 and opponent healing −40% for 4 turns.
 
-**Cinco técnicas:** Puño de hoja (`iria_hoja`, quick); Espora amarga (`iria_espora`, technique); Salto de bruma (`iria_bruma`, jump); Raíces firmes (`iria_raices`, guard); Savia cortante (`iria_savia`, heavy).
+**Five Techniques:** Blade Fist (`iria_hoja`, quick); bitter spore (`iria_espora`, technique); Mist Jump (`iria_bruma`, jump); Firm Roots (`iria_raices`, guard); Cutting sap (`iria_savia`, heavy).
 
-**Firma sonora:** Flor de medianoche: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; healing_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Midnight flower: own motif in anticipation of Signature; physical impact + strange accent on contact; separate healing_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:63](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:63) · [scripts/move_catalog.gd:327](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:327) · [assets/sprites/PERSONAJES-V3.md:10](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PERSONAJES-V3.md:10).
+Sources: [scripts/character_catalog.gd:63](../scripts/character_catalog.gd#L63) · [scripts/move_catalog.gd:327](../scripts/move_catalog.gd#L327) · [assets/sprites/PERSONAJES-V3.md:10](../assets/sprites/PERSONAJES-V3.md).
 
 ### Duna (`duna`)
 
-**Identidad:** Armadillo guardián. **Movimiento:** Apoyo firme, recogimiento defensivo, rodar/carga y frenada. **Ataque/peso:** Placas con golpe mate y roce corto, escudo con resonancia diferenciada; Pesado/compacto. **Material:** Placas de armadillo; no caparazón de tortuga ni yunque metálico.
+**Identity:** Guardian armadillo. **Movement:** Firm support, defensive collection, rolling/charging and braking. **Attack/weight:** Plates with matte blow and short touch, shield with differentiated resonance; Heavy/compact. **Material:** Armadillo plates; not turtle shell or metal anvil.
 
-**Energía:** Escudo periódico y slow; sin invulnerabilidad. **Voz:** Esfuerzo grave corto y respiración contenida. **Motivo:** Dos pulsos estables de madera/piedra.
+**Energy:** Periodic and slow shield; without invulnerability. **Voice:** Short low effort and restrained breathing. **Reason:** Two stable wood/stone pulses.
 
-**Habilidad real:** Muralla del patio (`shield`): Cada 4 turnos obtiene un escudo de 12 PV que dura hasta 3 turnos. **Firma:** Sello del guardián: Golpe certero ×1.6 y velocidad rival −25% durante 3 turnos.
+**Actual Skill:** Courtyard Wall (`shield`): Every 4 turn gains a shield of 12 HP that lasts up to 3 turns. **Signature:** Guardian's Seal: True Strike ×1.6 and rival speed −25% for 3 turns.
 
-**Cinco técnicas:** Golpe de placa (`duna_placa`, quick); Cerrar caparazón (`duna_caparazon`, guard); Rodar la duna (`duna_rodar`, charge); Martillo de cantera (`duna_cantera`, heavy); Retorno de arena (`duna_retorno`, counter).
+**Five techniques:** Plate hit (`duna_placa`, quick); closeshell(`duna_caparazon`, guard); Dune roll (`duna_rodar`, charge); Quarry hammer (`duna_cantera`, heavy); Sand return (`duna_retorno`, counter).
 
-**Firma sonora:** Sello del guardián: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; slow separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Guardian's seal: own reason in anticipation of Signature; physical impact + strange accent on contact; separate slow if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:74](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:74) · [scripts/move_catalog.gd:417](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:417) · [assets/sprites/PERSONAJES-V3.md:11](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PERSONAJES-V3.md:11).
+Sources: [scripts/character_catalog.gd:74](../scripts/character_catalog.gd#L74) · [scripts/move_catalog.gd:417](../scripts/move_catalog.gd#L417) · [assets/sprites/PERSONAJES-V3.md:11](../assets/sprites/PERSONAJES-V3.md).
 
 ### Kiro (`kiro`)
 
-**Identidad:** Jabalí. **Movimiento:** Apoyos potentes; martillo, ariete y caída con peso. **Ataque/peso:** Cuerpo denso y aire áspero de embestida; Pesado y áspero, sin disparos ni explosiones. **Material:** Pelaje/cuerpo y colmillos como identidad, no arma nueva.
+**Identity:** Wild boar. **Movement:** Powerful supports; hammer, ram and drop with weight. **Attack/weight:** Dense body and harsh lunging air; Heavy and rough, no gunshots or explosions. **Material:** Fur/body and fangs as identity, not new weapon.
 
-**Energía:** Furia según vida perdida; quemadura real solo cuando se aplica. **Voz:** Resoplidos de jabalí, rugido breve reservado para Firma. **Motivo:** Percusión grave que estrecha el pulso al crecer la presión.
+**Energy:** Fury according to life lost; real burn only when applied. **Voice:** Boar snorts, short roar reserved for Firma. **Reason:** Severe percussion that narrows the pulse as the pressure increases.
 
-**Habilidad real:** Última brasa (`berserk`): Su daño aumenta según la vida perdida, hasta un 40% adicional. **Firma:** Rugido del horno: Golpe certero ×1.6 y quemadura de 4 PV durante 3 turnos.
+**Actual Ability:** Last Ember (`berserk`): Its damage increases based on the life lost, up to an additional 40%. **Signature:** Furnace Roar: True Strike ×1.6 and burn 4 HP for 3 turns.
 
-**Cinco técnicas:** Puño del colmillo (`kiro_colmillo`, quick); Martillo cobrizo (`kiro_martillo`, heavy); Ariete rojo (`kiro_ariete`, charge); Avivar la brasa (`kiro_brasa`, technique); Caída del jabalí (`kiro_caida`, jump).
+**Five techniques:** Fang Fist (`kiro_colmillo`, quick); Copper hammer (`kiro_martillo`, heavy); Red Ram (`kiro_ariete`, charge); Fan the ember (`kiro_brasa`, technique); Wild Boar Fall (`kiro_caida`, jump).
 
-**Firma sonora:** Rugido del horno: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; burn separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Roar of the oven: own motive in anticipation of Signature; physical impact + strange accent on contact; separate burn if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:85](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:85) · [scripts/move_catalog.gd:492](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:492) · [assets/sprites/PERSONAJES-V3.md:12](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PERSONAJES-V3.md:12).
+Sources: [scripts/character_catalog.gd:85](../scripts/character_catalog.gd#L85) · [scripts/move_catalog.gd:492](../scripts/move_catalog.gd#L492) · [assets/sprites/PERSONAJES-V3.md:12](../assets/sprites/PERSONAJES-V3.md).
 
 ### Neris (`neris`)
 
-**Identidad:** Garza blanca. **Movimiento:** Apoyos finos; carrera y vuelo/salto con roce de pluma. **Ataque/peso:** Golpe fino, aire de ala y entrada suave; Ligero/medio; aterrizaje legible sin peso de gólem. **Material:** Pluma y apoyo fino; agua solo en textura mágica o suelo apropiado.
+**Identity:** White Heron. **Movement:** Fine supports; running and flying/jumping with feather touch. **Attack/weight:** Fine stroke, wing air and smooth entry; Light/medium; legible landing without golem weight. **Material:** Feather and fine support; water only in magic texture or appropriate soil.
 
-**Energía:** Remontada/curación y reducción de precisión; agua como motivo, no proyectil. **Voz:** Exhalación aérea muy breve, evitar graznidos frecuentes. **Motivo:** Dos notas de aliento con respuesta ascendente al sanar.
+**Energy:** Comeback/healing and precision reduction; water as a motive, not a projectile. **Voice:** Very short air exhalation, avoid frequent squawking. **Reason:** Two notes of encouragement with ascending response when healing.
 
-**Habilidad real:** Otra primavera (`comeback`): Una vez por combate, al bajar de 35% de vida cura un 16% de su vida máxima. **Firma:** Eclipse del río: Golpe certero ×1.6 y ataque rival −22% durante 3 turnos.
+**Actual Ability:** Another Spring (`comeback`): Once per combat, dropping below 35% health heals one 16% of your maximum health. **Signature:** River Eclipse: True Strike ×1.6 and rival attack −22% during 3 turns.
 
-**Cinco técnicas:** Punta del ala (`neris_ala`, quick); Seguir la corriente (`neris_corriente`, dash); Vuelo sereno (`neris_vuelo`, jump); Velo del lago (`neris_velo`, technique); Refugio de plumas (`neris_refugio`, guard).
+**Five techniques:** Wing tip (`neris_ala`, quick); follow the flow (`neris_corriente`, dash); Serene Flight (`neris_vuelo`, jump); Lake Veil (`neris_velo`, technique); Feather Shelter (`neris_refugio`, guard).
 
-**Firma sonora:** Eclipse del río: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; attack_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Eclipse of the river: own motif in anticipation of Signature; physical impact + strange accent on contact; separate attack_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:96](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:96) · [scripts/move_catalog.gd:563](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:563) · [assets/sprites/PERSONAJES-V3.md:13](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PERSONAJES-V3.md:13).
+Sources: [scripts/character_catalog.gd:96](../scripts/character_catalog.gd#L96) · [scripts/move_catalog.gd:563](../scripts/move_catalog.gd#L563) · [assets/sprites/PERSONAJES-V3.md:13](../assets/sprites/PERSONAJES-V3.md).
 
 ### Taro (`taro`)
 
-**Identidad:** Tejón. **Movimiento:** Base baja estable, guardia y réplica con pequeño avance. **Ataque/peso:** Puño compacto de cuerpo, roce de pelo y respuesta seca; Medio/pesado compacto. **Material:** Pelaje y suelo; campana breve solo como motivo, no armadura metálica.
+**Identity:** Badger. **Movement:** Stable low base, guard and retort with small advance. **Attack/weight:** Compact body punch, hair brush and dry response; Compact medium/heavy. **Material:** Fur and soil; brief bell only as motif, not metal armor.
 
-**Energía:** Jade/campana como Firma; sangrado real sin gore sonoro. **Voz:** Esfuerzo de registro bajo, muy breve. **Motivo:** Llamada y respuesta en percusión de madera.
+**Energy:** Jade/bell as Signature; real bleeding without sound gore. **Voice:** Low register effort, very brief. **Reason:** Call and response on wood percussion.
 
-**Habilidad real:** Eco de jade (`counter`): 24% de responder a un golpe recibido con un contraataque de ×0.45 de daño. **Firma:** Campana del cañón: Golpe certero ×1.6 y sangrado de 4 PV durante 3 turnos.
+**Actual Ability:** Jade Echo (`counter`): 24% respond to a hit received with a counterattack of ×0.45 damage. **Signature:** Cannon Bell: Accurate hit ×1.6 and bleed 4 HP for 3 turns.
 
-**Cinco técnicas:** Puño de tierra (`taro_puno`, quick); Espera del tejón (`taro_espera`, counter); Guardia de jade (`taro_jade`, guard); Golpe de cansancio (`taro_cansancio`, heavy); Cruzar el umbral (`taro_umbral`, charge).
+**Five techniques:** Earth fist (`taro_puno`, quick); Badger Wait (`taro_espera`, counter); jade guard (`taro_jade`, guard); Fatigue Hit (`taro_cansancio`, heavy); Cross the threshold (`taro_umbral`, charge).
 
-**Firma sonora:** Campana del cañón: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; bleed separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Cannon bell: own motif in anticipation of Signature; physical impact + strange accent on contact; separate bleed if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:107](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:107) · [scripts/move_catalog.gd:635](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:635) · [assets/sprites/PERSONAJES-V3.md:14](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/PERSONAJES-V3.md:14).
+Sources: [scripts/character_catalog.gd:107](../scripts/character_catalog.gd#L107) · [scripts/move_catalog.gd:635](../scripts/move_catalog.gd#L635) · [assets/sprites/PERSONAJES-V3.md:14](../assets/sprites/PERSONAJES-V3.md).
 
 ### Balam (`balam`)
 
-**Identidad:** Jaguar. **Movimiento:** Acecho silencioso, carga con liberación potente y salto. **Ataque/peso:** Garra/pata y aire contenido, impacto felino denso; Medio/pesado atlético. **Material:** Pelaje/pata, sin espada ni electricidad.
+**Identity:** Jaguar. **Movement:** Silent stalk, charge with powerful release and jump. **Attack/weight:** Claw/paw and contained air, dense feline impact; Medium/heavy athletic. **Material:** Fur/paw, without sword or electricity.
 
-**Energía:** Noche como color tímbrico; precisión y defensa reducida reales. **Voz:** Exhalación/gruñido de jaguar corto, no rugir en cada golpe. **Motivo:** Pulso espaciado con caída grave al liberar carga.
+**Energy:** Night as a timbre color; Real accuracy and reduced defense. **Voice:** Short jaguar exhale/grunt, do not roar with each blow. **Reason:** Spaced pulse with severe drop when releasing load.
 
-**Habilidad real:** Mirada entre las hojas (`precision`): Sus críticos ignoran el 30% de la defensa rival. **Firma:** Noche moteada: 1% por combate, una sola vez: golpe certero ×1.65 y defensa rival −20% durante 3 acciones del objetivo.
+**Actual Ability:** Look Between the Blades (`precision`): Your criticals ignore the 30% of the opponent's defense. **Signature:** Spotted Night: 1% per combat, one time: accurate hit ×1.65 and rival defense −20% during 3 target actions.
 
-**Cinco técnicas:** Garra contenida (`balam_garra`, quick); Peso del jaguar (`balam_roca`, heavy); Embestida del monte (`balam_emboscada`, charge); Acecho paciente (`balam_acecho`, technique); Caída moteada (`balam_salto`, jump).
+**Five techniques:** Contained Claw (`balam_garra`, quick); Jaguar Weight (`balam_roca`, heavy); Mount Rush (`balam_emboscada`, charge); Patient stalking (`balam_acecho`, technique); Speckled drop (`balam_salto`, jump).
 
-**Firma sonora:** Noche moteada: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; defense_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Speckled night: own motive in anticipation of Signature; physical impact + strange accent on contact; separate defense_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:118](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:118) · [scripts/move_catalog.gd:858](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:858).
+Sources: [scripts/character_catalog.gd:118](../scripts/character_catalog.gd#L118) · [scripts/move_catalog.gd:858](../scripts/move_catalog.gd#L858).
 
 ### Tepa (`tepa`)
 
-**Identidad:** Teporingo. **Movimiento:** Apoyos muy ligeros, despegue y aterrizaje repetidos, carreras cruzadas. **Ataque/peso:** Roce de pata y aire veloz, sin silbido caricaturesco; Ligero, ataques fuertes conservan tamaño corporal. **Material:** Pelaje corto y suelo granular separado.
+**Identity:** Teporingo. **Movement:** Very light supports, repeated takeoff and landing, cross runs. **Attack/weight:** Paw brush and fast air, no cartoonish hiss; Light, strong attacks conserve body size. **Material:** Short fur and separate granular soil.
 
-**Energía:** Sol/polvo como motivo; slow real sin magia de fuego automática. **Voz:** Esfuerzo pequeño aireado, no voz infantil ni chillido agudo. **Motivo:** Cuatro acentos de madera suave.
+**Energy:** Sun/dust as a reason; Real slow without automatic fire magic. **Voice:** Small airy effort, not childish voice or high-pitched squeak. **Motif:** Four soft wood accents.
 
-**Habilidad real:** Cuatro brincos (`combo`): Cada cuarto intento de ataque hace ×1.3 de daño si conecta. **Firma:** Salto del sol: 1% por combate, una sola vez: golpe certero ×1.55 y velocidad rival −22% durante 3 acciones del objetivo.
+**Actual Skill:** Four Jumps (`combo`): Every fourth attempted attack does ×1.3 damage if it connects. **Signature:** Sun Leap: 1% per combat, one time: accurate hit ×1.55 and rival speed −22% during 3 target actions.
 
-**Cinco técnicas:** Patita fugaz (`tepa_patita`, quick); Salto del zacatón (`tepa_zacaton`, jump); Carrera cruzada (`tepa_carrera`, dash); Brinco del volcán (`tepa_volcan`, jump); Polvo del sendero (`tepa_polvo`, technique).
+**Five techniques:** Quick paw (`tepa_patita`, quick); Zacatón jump (`tepa_zacaton`, jump); cross dash (`tepa_carrera`, dash); Volcano Jump (`tepa_volcan`, jump); Trail dust (`tepa_polvo`, technique).
 
-**Firma sonora:** Salto del sol: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; slow separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Salto del sol: own motif in anticipation of Signature; physical impact + strange accent on contact; separate slow if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:178](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:178) · [scripts/move_catalog.gd:934](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:934).
+Sources: [scripts/character_catalog.gd:178](../scripts/character_catalog.gd#L178) · [scripts/move_catalog.gd:934](../scripts/move_catalog.gd#L934).
 
 ### Xuna (`xuna`)
 
-**Identidad:** Xoloitzcuintle. **Movimiento:** Guardia firme, paso pesado moderado y carga contenida. **Ataque/peso:** Contacto corporal seco y cercano, respiración estable; Medio/compacto resistente. **Material:** Piel y contacto corporal; la raza no implica armadura de piedra.
+**Identity:** Xoloitzcuintle. **Movement:** Firm guard, moderate heavy step and contained charge. **Attack/weight:** Dry, close body contact, stable breathing; Medium/compact resistant. **Material:** Skin and body contact; race does not imply stone armor.
 
-**Energía:** Brasa persistente aplica burn; Faro reduce curación, no cura propia. **Voz:** Respiración canina serena y esfuerzo corto, sin ladrido repetitivo. **Motivo:** Pulso grave estable con pequeño acento cálido.
+**Energy:** Brasa persistent apply burn; Faro reduces healing, not self-healing. **Voice:** Serene canine breathing and short effort, without repetitive barking. **Reason:** Stable low pulse with small warm accent.
 
-**Habilidad real:** Serenidad del camino (`fortify`): Reduce un 30% el daño adicional de los críticos recibidos. **Firma:** Faro del camino: 1% por combate, una sola vez: golpe certero ×1.6 y curación rival −35% durante 4 acciones del objetivo.
+**Actual skill:** Serenity of the Path (`fortify`): Reduces the additional damage from criticals received by one 30%. **Signature:** Beacon of the way: 1% per combat, one time: accurate hit ×1.6 and opponent healing −35% during 4 target actions.
 
-**Cinco técnicas:** Colmillo sereno (`xuna_colmillo`, quick); Guardia del umbral (`xuna_umbral`, guard); Brasa persistente (`xuna_brasa`, technique); Paso de piedra (`xuna_piedra`, heavy); Carga de vigilia (`xuna_vigilia`, charge).
+**Five techniques:** Serene Fang (`xuna_colmillo`, quick); Threshold Guard (`xuna_umbral`, guard); persistent Brasa (`xuna_brasa`, technique); stone step (`xuna_piedra`, heavy); Wake charge (`xuna_vigilia`, charge).
 
-**Firma sonora:** Faro del camino: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; healing_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Lighthouse on the road: own reason in anticipation of Signature; physical impact + strange accent on contact; separate healing_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:239](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:239) · [scripts/move_catalog.gd:1498](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:1498).
+Sources: [scripts/character_catalog.gd:239](../scripts/character_catalog.gd#L239) · [scripts/move_catalog.gd:1498](../scripts/move_catalog.gd#L1498).
 
 ### Copal (`copal`)
 
-**Identidad:** Cacomixtle. **Movimiento:** Fintas rápidas, dash, salto y espera antes de responder. **Ataque/peso:** Roce de pelo ligero y whoosh lateral corto; Ligero/medio elástico. **Material:** Pelaje y cola; no sonorizar cada oscilación de cola.
+**Identity:** Cacomixtle. **Movement:** Quick feints, dash, jump and wait before responding. **Attack/weight:** Light hair rub and short side whoosh; Light/medium stretch. **Material:** Fur and tail; do not sound each tail oscillation.
 
-**Energía:** Sombra/luna como motivo; reducción de precisión y réplica reales. **Voz:** Exhalación pequeña y seca, no chirrido penetrante. **Motivo:** Dos acentos asimétricos y respuesta corta.
+**Energy:** Shadow/moon as motif; reduction in actual precision and replica. **Voice:** Small, dry exhalation, not piercing squeak. **Reason:** Two asymmetrical accents and short answer.
 
-**Habilidad real:** Respuesta entre ramas (`counter`): 20% de responder a un golpe recibido con un contraataque de ×0.4 de daño. **Firma:** Ronda de la luna: 1% por combate, una sola vez: golpe certero ×1.6 y precisión rival −14 puntos durante 3 acciones del objetivo.
+**Actual ability:** Cross-branch response (`counter`): 20% to respond to a hit received with a counterattack of ×0.4 damage. **Signature:** Moon Round: 1% per combat, one time: accurate hit ×1.6 and rival precision −14 points during 3 target actions.
 
-**Cinco técnicas:** Finta anillada (`copal_finta`, quick); Paso entre ramas (`copal_rama`, dash); Espera del cacomixtle (`copal_espera`, counter); Sombra inquieta (`copal_distraccion`, technique); Rodeo de la rama (`copal_rodeo`, jump).
+**Five techniques:** Ring feint (`copal_finta`, quick); Branch Step (`copal_rama`, dash); cacomixtle wait (`copal_espera`, counter); Restless Shadow (`copal_distraccion`, technique); Branch bypass (`copal_rodeo`, jump).
 
-**Firma sonora:** Ronda de la luna: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; accuracy_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Round of the moon: own motif in anticipation of Signature; physical impact + strange accent on contact; separate accuracy_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:299](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:299) · [scripts/move_catalog.gd:1093](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:1093).
+Sources: [scripts/character_catalog.gd:299](../scripts/character_catalog.gd#L299) · [scripts/move_catalog.gd:1093](../scripts/move_catalog.gd#L1093).
 
 ### Ónix (`onix`)
 
-**Identidad:** Gato doméstico negro, ojos amarillos. **Movimiento:** Pasos muy ligeros, dash de tejado y salto ágil. **Ataque/peso:** Pata corta, whoosh fino y tercer intento con acento contenido; Ligero/frágil; pesado no debe sonar como Mugo. **Material:** Pelaje/pata; sin cascabel no documentado.
+**Identity:** Black domestic cat, yellow eyes. **Movement:** Very light steps, roof dash and agile jump. **Attack/weight:** Short leg, fine whoosh and third attempt with restrained accent; Light/fragile; heavy should not sound like Mugo. **Material:** Fur/paw; no undocumented rattle.
 
-**Energía:** Sombra/medianoche como timbre; precisión rival reducida real. **Voz:** Exhalación felina corta, maullido reservado opcional de resultado. **Motivo:** Tres notas muy cortas con final seco.
+**Energy:** Shadow/midnight as doorbell; Real reduced rival accuracy. **Voice:** Short feline exhalation, optional reserved meow of result. **Reason:** Three very short notes with a dry finish.
 
-**Habilidad real:** Tres pasos de sombra (`combo`): Cada tercer intento de ataque hace ×1.22 de daño si conecta. **Firma:** Medianoche amarilla: 1% por combate, una sola vez: golpe certero ×1.6 y precisión rival −16 puntos durante 3 acciones del objetivo.
+**Actual Ability:** Three Steps of Shadow (`combo`): Every third attempted attack does ×1.22 damage if it connects. **Signature:** Yellow Midnight: 1% per combat, one time: accurate hit ×1.6 and rival precision −16 points during 3 target actions.
 
-**Cinco técnicas:** Roce de sombra (`onix_roce`, quick); Carrera del alero (`onix_alero`, dash); Salto del tejadillo (`onix_tejadillo`, jump); Parpadeo amarillo (`onix_parpadeo`, technique); Caída de azotea (`onix_azotea`, heavy).
+**Five techniques:** Shadow rubbing (`onix_roce`, quick); Eaves Dash (`onix_alero`, dash); Roof jump (`onix_tejadillo`, jump); Yellow flashing (`onix_parpadeo`, technique); Rooftop fall (`onix_azotea`, heavy).
 
-**Firma sonora:** Medianoche amarilla: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; accuracy_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound Signature:** Yellow Midnight: own motif in anticipation of Signature; physical impact + strange accent on contact; separate accuracy_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:360](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:360) · [scripts/move_catalog.gd:1167](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:1167).
+Sources: [scripts/character_catalog.gd:360](../scripts/character_catalog.gd#L360) · [scripts/move_catalog.gd:1167](../scripts/move_catalog.gd#L1167).
 
 ### Bruma (`bruma`)
 
-**Identidad:** Gato doméstico gris, ojos verdosos. **Movimiento:** Apoyo sereno, escucha/guardia y réplica puntual. **Ataque/peso:** Pata firme y breve aire de respuesta; Medio compacto equilibrado. **Material:** Pelaje/pata; sin campanilla ni capa no documentadas.
+**Identity:** Gray domestic cat, greenish eyes. **Movement:** Serene support, listening/guarding and punctual response. **Attack/weight:** Firm leg and brief air of response; Balanced compact medium. **Material:** Fur/paw; no undocumented bell or cape.
 
-**Energía:** Niebla como motivo; ataque reducido y pequeña cura de guardia reales. **Voz:** Respiración felina suave; esfuerzo medio corto. **Motivo:** Pregunta-respuesta de dos notas amortiguadas.
+**Energy:** Fog as a motif; Reduced attack and small actual guard healing. **Voice:** Soft feline breathing; short medium effort. **Reason:** Question-answer of two muffled notes.
 
-**Habilidad real:** Respuesta del silencio (`counter`): 20% de responder a un golpe recibido con un contraataque de ×0.42 de daño. **Firma:** Quietud de niebla: 1% por combate, una sola vez: golpe certero ×1.6 y ataque rival −20% durante 3 acciones del objetivo.
+**Actual Ability:** Silence Response (`counter`): 20% to respond to a hit received with a counterattack of ×0.42 damage. **Signature:** Fog Stillness: 1% per combat, one time: accurate hit ×1.6 and rival attack −20% during 3 target actions.
 
-**Cinco técnicas:** Tacto certero (`bruma_tacto`, quick); Escucha paciente (`bruma_escucha`, counter); Peso de la calma (`bruma_peso`, heavy); Guardia de ovillo (`bruma_ovillo`, guard); Paso de niebla (`bruma_niebla`, technique).
+**Five techniques:** True touch (`bruma_tacto`, quick); Listen patient (`bruma_escucha`, counter); Weight of Calm (`bruma_peso`, heavy); Clew Guard (`bruma_ovillo`, guard); Fog pass (`bruma_niebla`, technique).
 
-**Firma sonora:** Quietud de niebla: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; attack_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound Signature:** Stillness of fog: own motive in anticipation of Signature; physical impact + strange accent on contact; separate attack_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/character_catalog.gd:423](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/character_catalog.gd:423) · [scripts/move_catalog.gd:1245](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:1245).
+Sources: [scripts/character_catalog.gd:423](../scripts/character_catalog.gd#L423) · [scripts/move_catalog.gd:1245](../scripts/move_catalog.gd#L1245).
 
-### Ascua (`ascua` · jefe)
+### Ascua (`ascua` boss)
 
-**Identidad:** Guardián de armadura volcánica y núcleo encendido. **Movimiento:** Paso pesado mineral, carga con frenada y salto de cráter. **Ataque/peso:** Piedra caliente/cobre mate más chispa localizada, no explosión; Muy pesado pero mezcla controlada. **Material:** Armadura volcánica, juntas minerales y núcleo; capa de brasa solo donde aparece.
+**Identity:** Guardian with volcanic armor and ignited core. **Movement:** Heavy mineral step, braking charge and crater jump. **Attack/weight:** Hot stone/matte copper plus localized spark, not explosion; Very heavy but controlled mix. **Material:** Volcanic armor, mineral joints and core; ember layer only where it appears.
 
-**Energía:** Burn en Carga del brasero; dos fases reales; ember_core visual. **Voz:** Resonancia grave de cuerpo y esfuerzo no verbal breve. **Motivo:** Pulso mineral grave con motivo de farol de tres notas.
+**Energy:** Burn on Brazier Charge; two real phases; ember_core visual. **Voice:** Severe body resonance and brief non-verbal effort. **Motif:** Serious mineral pulse with three-note lantern motif.
 
-**Habilidad real:** Núcleo del farol (`phase_shift`): Por encima del 60% de vida: combate normal. Al 60%: ataque +8%. Al 30%: conserva ese ataque y velocidad +15%. Sin curación ni invulnerabilidad. **Firma:** La noche encendida: 1% por combate, una sola vez: golpe certero ×1.7 y ataque rival −18% durante 3 acciones propias del objetivo.
+**Actual Skill:** Lantern Core (`phase_shift`): Above health 60%: Normal combat. To 60%: attack +8%. To 30%: keep that attack and speed +15%. No healing or invulnerability. **Signature:** The night on: 1% per combat, only once: accurate hit ×1.7 and rival attack −18% during 3 actions of the target.
 
-**Cinco técnicas:** Garra de cobre (`ascua_cobre`, quick); Puño de la forja (`ascua_forja`, heavy); Carga del brasero (`ascua_brasero`, charge); Obsidiana cerrada (`ascua_obsidiana`, guard); Golpe del cráter (`ascua_crater`, jump).
+**Five techniques:** Copper Claw (`ascua_cobre`, quick); Fist of the Forge (`ascua_forja`, heavy); Brazier charge (`ascua_brasero`, charge); Closed Obsidian (`ascua_obsidiana`, guard); Crater Strike (`ascua_crater`, jump).
 
-**Firma sonora:** La noche encendida: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; attack_down separado si status_applied. **Transformación:** Secuencia mineral/energía .72 s; cama de núcleo hasta fin visual (máximo 8 s), fases y forma separadas.
+**Sound signature:** The night on: own motif in anticipation of Signature; physical impact + strange accent on contact; separate attack_down if status_applied . **Transformation:** Mineral/energy sequence .72 s; core bed to visual end (maximum 8 s), separate phases and shape.
 
-Fuentes: [scripts/story_catalog.gd:220](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/story_catalog.gd:220) · [scripts/move_catalog.gd:709](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:709).
+Sources: [scripts/story_catalog.gd:220](../scripts/story_catalog.gd#L220) · [scripts/move_catalog.gd:709](../scripts/move_catalog.gd#L709).
 
-### Véspera (`vespera` · jefe)
+### Véspera (`vespera` boss)
 
-**Identidad:** Polilla lunar. **Movimiento:** Pasos finos, desplazamiento veloz, salto orbital y espera evasiva. **Ataque/peso:** Aire de ala/polvo fino, contacto rápido definido; Ligero/medio; no hacer débil su impacto por tener alas. **Material:** Ala/quitina ligera; no metal pesado ni levitación permanente.
+**Identity:** Moon moth. **Movement:** Fine steps, fast movement, orbital jump and evasive waiting. **Attack/weight:** Wing air/fine powder, defined fast contact; Light/medium; not make its impact weak by having wings. **Material:** Wing/light chitin; no heavy metal or permanent levitation.
 
-**Energía:** Eclipse reduce precisión; dos fases reales, sin forma transformada registrada. **Voz:** Aliento leve de registro medio, no zumbido permanente de mosquito. **Motivo:** Figura circular musical corta con pulso de viento.
+**Power:** Eclipse reduces precision; two real phases, with no recorded transformed form. **Voice:** Mild mid-register breath, not permanent mosquito humming. **Motif:** Short musical circular figure with wind pulse.
 
-**Habilidad real:** Danza del vendaval (`phase_shift`): Por encima del 60% de vida: combate normal. Al 60%: velocidad +10%. Al 30%: conserva esa velocidad y ataque +8%. Sin curación ni invulnerabilidad. **Firma:** Polvo de eclipse: 1% por combate, una sola vez: golpe certero ×1.65 y precisión rival −12 puntos durante 4 acciones propias; la resistencia puede acortar su duración.
+**Actual Skill:** Gale Dance (`phase_shift`): Above health 60%: Normal combat. To 60%: speed +10%. To 30%: keep that speed and attack +8%. No healing or invulnerability. **Signature:** Eclipse Dust: 1% per combat, one time: accurate hit ×1.65 and rival precision −12 points during 4 own actions; resistance can shorten its duration.
 
-**Cinco técnicas:** Toque de polvo lunar (`vespera_polvo`, quick); Paso del vendaval (`vespera_vendaval`, dash); Órbita lunar (`vespera_orbita`, jump); Velo del eclipse (`vespera_eclipse`, technique); Espera de la luna (`vespera_luna`, counter).
+**Five techniques:** Moondust Touch (`vespera_polvo`, quick); Gale Pass (`vespera_vendaval`, dash); lunar orbit (`vespera_orbita`, jump); Eclipse Veil (`vespera_eclipse`, technique); Moon Wait (`vespera_luna`, counter).
 
-**Firma sonora:** Polvo de eclipse: motivo propio en anticipación de Firma; impacto físico + acento raro al contacto; accuracy_down separado si status_applied. **Transformación:** N/A: no transformación activa registrada. transform_* de Firma no añade nueva forma ni poder.
+**Sound signature:** Eclipse dust: own motive in anticipation of Signature; physical impact + strange accent on contact; separate accuracy_down if status_applied . **Transformation:** N/A: No active transformation registered. Signature's transform_* adds no new form or power.
 
-Fuentes: [scripts/story_catalog.gd:220](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/story_catalog.gd:220) · [scripts/move_catalog.gd:787](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:787).
+Sources: [scripts/story_catalog.gd:220](../scripts/story_catalog.gd#L220) · [scripts/move_catalog.gd:787](../scripts/move_catalog.gd#L787).
 
-## Mapa de eventos y sincronización
+## Event map and synchronization
 
-Los ataques automáticos tienen preparación, desplazamiento y recuperación; el motor decide resultado y el cliente presenta. `move_started.move` contiene la técnica resuelta (incluye mejoras), `impact_delay=windup+travel` y `duration` su duración total. Usar esos valores por evento, no recalcarlos desde el catálogo actual. `attack` moderno lleva move_id; el retraso legado de .21 s de Main solo corresponde a eventos sin ese ID. [scripts/combat_engine.gd:241](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:241) · [scripts/main.gd:1010](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1010)
+Automatic attacks have setup, movement, and recovery; The engine decides the result and the client presents. `move_started.move` contains the solved technique (includes improvements), `impact_delay=windup+travel` and `duration` its total duration. Use those values ​​per event, not highlight them from the current catalog. modern `attack` carries move_id; the legacy delay of .21 s from Main only applies to events without that ID. [scripts/combat_engine.gd:241](../scripts/combat_engine.gd#L241) · [scripts/main.gd:1010](../scripts/main.gd#L1010)
 
-| Familia | Windup / travel / recovery base, segundos | Contacto y tratamiento |
+| Family | Windup / travel / recovery base, seconds | Contact and treatment |
 |---|---|---|
 
-| `charge` | 0.40 / 0.15 / 0.34 | Impacto condicionado al resultado; valores base, la técnica/mejoras pueden cambiarlos |
+| `charge` | 0.40 / 0.15 / 0.34 | Impact conditional on the result; base values, technique/improvements can change them |
 
-| `counter` | 0.10 / 0.00 / 0.18 | Postura, no golpe; valores base, la técnica/mejoras pueden cambiarlos |
+| `counter` | 0.10 / 0.00 / 0.18 | Stance, not blow; base values, technique/improvements can change them |
 
-| `dash` | 0.05 / 0.13 / 0.17 | Impacto condicionado al resultado; valores base, la técnica/mejoras pueden cambiarlos |
+| `dash` | 0.05 / 0.13 / 0.17 | Impact conditional on the result; base values, technique/improvements can change them |
 
-| `guard` | 0.12 / 0.00 / 0.22 | Postura, no golpe; valores base, la técnica/mejoras pueden cambiarlos |
+| `guard` | 0.12 / 0.00 / 0.22 | Stance, not blow; base values, technique/improvements can change them |
 
-| `heavy` | 0.36 / 0.11 / 0.30 | Impacto condicionado al resultado; valores base, la técnica/mejoras pueden cambiarlos |
+| `heavy` | 0.36 / 0.11 / 0.30 | Impact conditional on the result; base values, technique/improvements can change them |
 
-| `jump` | 0.15 / 0.30 / 0.23 | Impacto condicionado al resultado; valores base, la técnica/mejoras pueden cambiarlos |
+| `jump` | 0.15 / 0.30 / 0.23 | Impact conditional on the result; base values, technique/improvements can change them |
 
-| `quick` | 0.07 / 0.08 / 0.13 | Impacto condicionado al resultado; valores base, la técnica/mejoras pueden cambiarlos |
+| `quick` | 0.07 / 0.08 / 0.13 | Impact conditional on the result; base values, technique/improvements can change them |
 
-| `technique` | 0.18 / 0.12 / 0.21 | Impacto condicionado al resultado; valores base, la técnica/mejoras pueden cambiarlos |
+| `technique` | 0.18 / 0.12 / 0.21 | Impact conditional on the result; base values, technique/improvements can change them |
 
-| Firma | .34 / .16 / .35 | Contacto +.50; una vez si fue armada |
+| Signature | .34 / .16 / .35 | Contact +.50; once it was armed |
 
-| Réplica automática | .05 / .08 / .15 | Contacto +.13, garantizado y sin crítico |
+| Automatic replica | .05 / .08 / .15 | Contact +.13, guaranteed and non-critical |
 
-Fuente: [scripts/move_catalog.gd:20](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_catalog.gd:20) y [scripts/combat_engine.gd:425](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:425). La prioridad y velocidad modifican la cadencia; no convierten una técnica en otra ni justifican alterar tono de voz.
+Source: [scripts/move_catalog.gd:20](../scripts/move_catalog.gd#L20) and [scripts/combat_engine.gd:425](../scripts/combat_engine.gd#L425). Priority and speed modify the cadence; They do not convert one technique into another nor justify altering tone of voice.
 
-- **`battle.enter`** — `presentation lifecycle / validated snapshot`. Al cargar actores/arena; no esperar primer golpe. Introducción/ambiente y cama musical; UI confirmar separada. **Límite:** No existe evento engine battle_started; arranque local y Replay.restart son puntos de integración. [scripts/main.gd:886](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:886)
+- **`battle.enter`** — `presentation lifecycle / validated snapshot`. When loading actors/sand; Don't wait for the first hit. Intro/ambiance and musical bed; Separate confirm UI. **Limit:** There is no engine battle_started event; local boot and Replay.restart are integration points. [scripts/main.gd:886](../scripts/main.gd#L886)
 
-- **`move.anticipation`** — `move_started`. event.time; move.windup/travel/recovery resueltos. Cuerpo, preparación y poder si corresponde; Firma identificable antes del contacto. **Límite:** Guardar move por acción/ID. Mismo move_id se repite: no deduplicar por ID solamente. [scripts/combat_engine.gd:272](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:272)
+- **`move.anticipation`** — `move_started`. event.time; move.windup/travel/recovery resolved. Body, preparation and power if applicable; Identifiable signature before contact. **Limit:** Save move per action/ID. Same move_id is repeated: do not deduplicate by ID only. [scripts/combat_engine.gd:272](../scripts/combat_engine.gd#L272)
 
-- **`move.foot`** — `presentation marker left_foot_impact/right_foot_impact`. phase.start + phase.duration*at. Apoyo corporal + suelo; elegir variante sin RNG de combate. **Límite:** La misma landing puede tener marcador de pie/debris: una entrada física, capas limitadas. [scripts/move_visual_profile.gd:14](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:14)
+- **`move.foot`** — `presentation marker left_foot_impact/right_foot_impact`. phase.start + phase.duration*at. Body support + floor; choose variant without combat RNG. **Limit:** The same landing page can have a footer/debris marker: one physical entry, limited layers. [scripts/move_visual_profile.gd:14](../scripts/move_visual_profile.gd#L14)
 
-- **`move.charge`** — `marker charge_start / attached_fx_start`. Inicio windup; attached_fx al 25% del windup. Preparación corta, posible cama de energía; salir en travel/terminal/cancelación. **Límite:** Heavy también usa charge_start por presentación; no implica nueva mecánica de carga ni control manual. [scripts/move_visual_profile.gd:25](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:25)
+- **`move.charge`** — `marker charge_start / attached_fx_start`. Home windup; attached_fx to 25% of the windup. Short preparation, possible energy bed; leave in travel/terminal/cancellation. **Limit:** Heavy also uses charge_start per presentation; It does not imply new loading mechanics or manual control. [scripts/move_visual_profile.gd:25](../scripts/move_visual_profile.gd#L25)
 
-- **`move.dash_slide`** — `marker slide_start/dash_start/slide_end`. travel 0; frenada recovery .18. Aire/cuerpo y fricción de suelo, cola corta. **Límite:** Charge/Signature incluyen dash visual; no contarlos como segunda técnica. [scripts/move_visual_profile.gd:31](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:31)
+- **`move.dash_slide`** — `marker slide_start/dash_start/slide_end`. travel 0; braking recovery .18. Air/body and ground friction, short tail. **Limit:** Charge/Signature include dash visual; Do not count them as a second technique. [scripts/move_visual_profile.gd:31](../scripts/move_visual_profile.gd#L31)
 
-- **`move.jump`** — `marker jump_takeoff/landing`. Takeoff windup .60; landing recovery .40. Despegue, aire corto y aterrizaje por peso/suelo. **Límite:** Impacto de ataque viene antes desde attack; landing no hace daño. No aterrizaje fallido mecánico. [scripts/move_visual_profile.gd:41](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:41)
+- **`move.jump`** — `marker jump_takeoff/landing`. Takeoff windup .60; landing recovery .40. Takeoff, short air and landing by weight/ground. **Limit:** Attack hit comes before attack; landing doesn't hurt. No mechanical failed landing. [scripts/move_visual_profile.gd:41](../scripts/move_visual_profile.gd#L41)
 
-- **`combat.contact`** — `attack result=hit`. event.time = inicio + impact_delay. Whoosh de salida + golpe físico/material del objetivo; voz selectiva. **Límite:** No usar un retraso fijo .21 s en ataques modernos ni volver a reproducir anticipación. [scripts/combat_engine.gd:401](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:401)
+- **`combat.contact`** — `attack result=hit`. event.time = start + impact_delay. Exit whoosh + target physical/material hit; selective voice. **Limit:** Do not use fixed delay .21 s in modern attacks or replay anticipation. [scripts/combat_engine.gd:401](../scripts/combat_engine.gd#L401)
 
-- **`combat.miss`** — `attack result=miss`. event.time. Whoosh sin golpe ni voz de daño. **Límite:** No confundir fallo de precisión con esquiva; hoy Main usa el mismo tono. [scripts/combat_rules.gd:33](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_rules.gd:33)
+- **`combat.miss`** — `attack result=miss`. event.time. Whoosh without hit or voice of harm. **Limit:** Do not confuse precision failure with dodging; today Main uses the same tone. [scripts/combat_rules.gd:33](../scripts/combat_rules.gd#L33)
 
-- **`combat.dodge`** — `attack result=dodge`. event.time. Evasión corporal y whoosh que pasa; sin golpe. **Límite:** Probabilidad real ya resuelta; no otro roll de evasión en audio. [scripts/combat_rules.gd:33](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_rules.gd:33)
+- **`combat.dodge`** — `attack result=dodge`. event.time. Body avoidance and passing whoosh; without hit. **Limit:** Real probability already resolved; not another audio evasion roll. [scripts/combat_rules.gd:33](../scripts/combat_rules.gd#L33)
 
-- **`combat.critical`** — `attack result=critical`. Contacto, junto al hit-stop visual. Impacto base + acento crítico corto con prioridad. **Límite:** No duplica el impacto base ni inventa crítico en Firma/counter. La cola de audio sigue durante hit-stop. [scripts/fighter_animation_set.gd:105](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_animation_set.gd:105)
+- **`combat.critical`** — `attack result=critical`. Contact, along with the visual hit-stop. Base hit + short critical accent with priority. **Limit:** Does not double base hit or invent critical in Signature/counter. The audio queue continues during hit-stop. [scripts/fighter_animation_set.gd:105](../scripts/fighter_animation_set.gd#L105)
 
-- **`combat.guard_enter`** — `defensive_stance`. Resolución del move guard/counter (windup, travel=0). Postura/apoyo protector discreto. **Límite:** No golpe ofensivo. Guard/counter aún puede fallar como respuesta posterior; no parry garantizado. [scripts/combat_engine.gd:328](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:328)
+- **`combat.guard_enter`** — `defensive_stance`. Move guard/counter resolution (windup, travel=0). Discreet protective posture/support. **Limit:** No offensive hit. Guard/counter may still fail as a subsequent response; no parry guaranteed. [scripts/combat_engine.gd:328](../scripts/combat_engine.gd#L328)
 
-- **`combat.guard_contact`** — `attack con postura defensiva vigente del objetivo`. Mismo contacto; relacionar defensive_stance/stance_expired por lado. Capa mate amortiguada sobre impacto; mantener daño audible. **Límite:** No result=block ni evento de bloqueo perfecto. attack.absorbed solo mide escudo, NO reducción de guardia. [scripts/combat_engine.gd:516](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:516)
+- **`combat.guard_contact`** — `attack con postura defensiva vigente del objetivo`. Same contact; relate defensive_stance/stance_expired by side. Impact cushioning matte layer; maintain audible damage. **Limit:** No result=block or perfect block event. attack.absorbed only measures shield, NOT guard reduction. [scripts/combat_engine.gd:516](../scripts/combat_engine.gd#L516)
 
-- **`combat.shield`** — `shield / status_applied(effect=shield) / attack.absorbed>0`. Entrada al otorgar; absorción al contacto. Una entrada de escudo y respuesta corta proporcional, sin falso dolor al daño cero. **Límite:** Grant emite ability+status_applied+shield: agrupar. No shield_break explícito; no inferir rotura sin evidencia. [scripts/combat_engine.gd:479](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:479)
+- **`combat.shield`** — `shield / status_applied(effect=shield) / attack.absorbed>0`. Entry upon granting; absorption on contact. A proportional shield input and short response, no false pain at zero damage. **Limit:** Grant casts ability+status_applied+shield: group. No explicit shield_break; do not infer breakage without evidence. [scripts/combat_engine.gd:479](../scripts/combat_engine.gd#L479)
 
-- **`combat.counter`** — `move_started counter=true → attack counter=true,result=hit`. Reacción programada .05 windup + .08 travel = .13 s. Preparación de réplica y contacto preciso; acento de respuesta. **Límite:** No result=counter. Counter de postura sin daño es preparación; réplica posterior garantizada sin crítico ni cadena de réplicas. [scripts/combat_engine.gd:425](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:425)
+- **`combat.counter`** — `move_started counter=true → attack counter=true,result=hit`. Scheduled reaction .05 windup + .08 travel = .13 s. Replica preparation and precise contact; response accent. **Limit:** No result=counter. Counter stance without damage is preparation; Guaranteed subsequent replication without critical or replica chain. [scripts/combat_engine.gd:425](../scripts/combat_engine.gd#L425)
 
-- **`combat.ability`** — `ability (combo/adapt/fortify/precision/poison/shield/comeback/counter/stance/phase_shift/stun)`. Según evento, a veces antes de attack o de heal/status. Acento de identidad agrupado con acción material. **Límite:** Berserk usa modificador continuo/texto de ataque, no nuevo evento por tick. No emitir audio por cada lectura del estado. [scripts/combat_engine.gd:485](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:485)
+- **`combat.ability`** — `ability (combo/adapt/fortify/precision/poison/shield/comeback/counter/stance/phase_shift/stun)`. Depending on the event, sometimes before attack or heal/status. Accent of identity grouped with material action. **Limit:** Berserk uses continuous modifier/attack text, not new event per tick. Do not emit audio for each reading of the status. [scripts/combat_engine.gd:485](../scripts/combat_engine.gd#L485)
 
-- **`combat.status_apply`** — `status_applied`. Solo aplicación confirmada. Entrada corta de veneno, brasa, debilitamiento o buff. **Límite:** No sonar porque una técnica pueda aplicarlo. source puede diferir de side/target. [scripts/combat_engine.gd:446](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:446)
+- **`combat.status_apply`** — `status_applied`. Confirmed application only. Short entry of poison, ember, debuff or buff. **Limit:** Do not ring because a technique can apply it. source may differ from side/target. [scripts/combat_engine.gd:446](../scripts/combat_engine.gd#L446)
 
-- **`combat.status_resist`** — `status_resisted / status_applied.turns_resisted`. Una tirada base impedida por resistencia / duración reducida. Respuesta tenue y distinguible, sin gran bloqueo. **Límite:** Ausencia de estado no prueba resistencia: puede fallar la tirada base. [scripts/combat_engine.gd:455](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:455)
+- **`combat.status_resist`** — `status_resisted / status_applied.turns_resisted`. A base roll prevented by reduced resistance/duration. Faint and distinguishable response, without great blocking. **Limit:** Absence of state does not test resistance: the base roll may fail. [scripts/combat_engine.gd:455](../scripts/combat_engine.gd#L455)
 
-- **`combat.status_tick`** — `status_tick poison/burn/bleed`. Inicio de acción propia afectada; no bucle de pared. Pulso breve de estado, daño/vocal selectivos; KO si target_hp<=0. **Límite:** DoT atraviesa escudo/guardia; no ataque ni puñetazo fantasma. ticks simultáneos posibles. [scripts/combat_engine.gd:500](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:500)
+- **`combat.status_tick`** — `status_tick poison/burn/bleed`. Initiation of affected own action; no wall loop. Brief status pulse, selective damage/vowel; KO if target_hp<=0. **Limit:** DoT pierces shield/guard; do not attack or phantom punch. simultaneous ticks possible. [scripts/combat_engine.gd:500](../scripts/combat_engine.gd#L500)
 
-- **`combat.heal`** — `heal amount>0`. Evento confirmado. Ascenso breve orgánico/limpio, sin golpe. **Límite:** No anunciar curación positiva si amount=0; evitar duplicar ability comeback y heal. [scripts/combat_engine.gd:490](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:490)
+- **`combat.heal`** — `heal amount>0`. Confirmed event. Short organic/clean promotion, no hit. **Limit:** Do not announce positive healing if amount=0; avoid duplicating ability comeback and heal. [scripts/combat_engine.gd:490](../scripts/combat_engine.gd#L490)
 
-- **`combat.status_end`** — `status_expired / stance_expired`. Evento confirmado. Normalmente silencio; salida suave solo si había cama persistente. **Límite:** No golpe ni reward; limpiar loops del estado correspondiente. [scripts/combat_engine.gd:122](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:122)
+- **`combat.status_end`** — `status_expired / stance_expired`. Confirmed event. Normally silence; soft exit only if there was persistent bed. **Limit:** No hit or reward; clean loops from the corresponding state. [scripts/combat_engine.gd:122](../scripts/combat_engine.gd#L122)
 
-- **`reaction.body`** — `FighterAnimationSet.reaction_for + FighterView.play_reaction`. Contacto inmediato; animación puede diferirse al terminar ataque saliente. Voz corta al daño; caída/fricción al marcador de reacción real. **Límite:** KO/miss/dodge tienen prioridad. Falta un canal de marcadores de reacción para caída/getup: no seguir sólo time de attack. [scripts/fighter_view.gd:629](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:629)
+- **`reaction.body`** — `FighterAnimationSet.reaction_for + FighterView.play_reaction`. Immediate contact; Animation may be deferred upon completion of outgoing attack. Voice cuts to harm; drop/friction to actual reaction marker. **Limit:** KO/miss/dodge take priority. Missing reaction marker channel for fall/getup: do not follow only attack time. [scripts/fighter_view.gd:629](../scripts/fighter_view.gd#L629)
 
-- **`reaction.knockdown_ko`** — `Reacción visual knockdown/ko; target_hp<=0 / finished`. Knockdown .92 s; KO .66 s; grounded es último tramo. Golpe final/caída/apoyo; cierre de KO distinto a hit ordinario. **Límite:** No nuevo estado de stun: derribo de Firma es presentación. No body-ground marker público todavía. [scripts/fighter_animation_set.gd:41](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_animation_set.gd:41)
+- **`reaction.knockdown_ko`** — `Reacción visual knockdown/ko; target_hp<=0 / finished`. Knockdown .92 s; KO .66 s; grounded is last stretch. Final blow/fall/support; KO closing different from an ordinary hit. **Limit:** No new stun status: Signature knockdown is presentation. No public body-ground marker yet. [scripts/fighter_animation_set.gd:41](../scripts/fighter_animation_set.gd#L41)
 
-- **`fighter.low_hp`** — `Snapshot/event HP ratio + FighterView health state`. Cruce del umbral, no cada frame. Respiración opcional muy espaciada; sin depender de audio para informar. **Límite:** Pose low_health <.28; no evento semántico low_health. Habilidades Neris .35, fases .60/.30 son otros umbrales. [scripts/fighter_view.gd:609](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:609)
+- **`fighter.low_hp`** — `Snapshot/event HP ratio + FighterView health state`. Crossing the threshold, not every frame. Optional closely spaced breathing; without depending on audio to inform. **Limit:** Pose low_health <.28; no semantic event low_health. Skills Neris .35, phases .60/.30 are other thresholds. [scripts/fighter_view.gd:609](../scripts/fighter_view.gd#L609)
 
-- **`boss.phase`** — `ability ability_id=phase_shift,phase_index`. 0 al inicio; 1/2 tras cruzar .60/.30 vivo. Cambio musical y resonancia de poder al índice nuevo. **Límite:** Si un golpe salta ambos umbrales solo llega fase final alcanzada; no reproducir fase omitida. [scripts/combat_engine.gd:575](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:575)
+- **`boss.phase`** — `ability ability_id=phase_shift,phase_index`. 0 at startup; 1/2 after crossing .60/.30 alive. Musical change and power resonance to the new index. **Limit:** If a blow jumps both thresholds, only the final phase is reached; do not reproduce skipped phase. [scripts/combat_engine.gd:575](../scripts/combat_engine.gd#L575)
 
-- **`fighter.form`** — `play_transformation ember_core aceptada, Ascua visible`. Entrada visual diferida si atacaba; clip .72, lifetime8. Preparación→núcleo→pico→estable; salida al terminar forma/cambiar escena. **Límite:** Solo Ascua. No cambiar stats. Firma y phase events pueden solicitarla mientras ya activa: no reiniciar bucle/intro. [scripts/fighter_view.gd:678](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:678)
+- **`fighter.form`** — `play_transformation ember_core aceptada, Ascua visible`. Delayed visual input if attacking; clip .72, lifetime8. Preparation→core→peak→stable; output when finishing shape/change scene. **Limit:** Ascua only. Do not change stats. Signature and phase events can request it while already active: do not restart loop/intro. [scripts/fighter_view.gd:678](../scripts/fighter_view.gd#L678)
 
-- **`combat.signature`** — `move_started.signature / signature / attack.signature`. Anticipación al move_started, acento al contacto +.50. Motivo raro del personaje; quién dispara debe tener prioridad. **Límite:** signature y attack son dos registros del mismo golpe: un paquete sonoro, no dos Firman completas. 1%/combatiente; puede morir antes. [scripts/combat_engine.gd:257](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:257)
+- **`combat.signature`** — `move_started.signature / signature / attack.signature`. Anticipation on move_started, accent on contact +.50. Rare character motif; who shoots must have priority. **Limit:** signature and attack are two records of the same hit: one sound package, not two complete Signatures. 1%/fighter; may die sooner. [scripts/combat_engine.gd:257](../scripts/combat_engine.gd#L257)
 
-- **`combat.finished`** — `finished reason normal/timeout/surrender`. Terminal autoritativo; resultado local llega tras .30 s de presentación salvo rendición. Cierre win/lose desde perspectiva del espectador; detener cargas/voz/loops de combate. **Límite:** Surrender y timeout pueden tener HP>0: no inventar impacto mortal. Premio guardado no se repite al oír replay. [scripts/main.gd:1161](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1161)
+- **`combat.finished`** — `finished reason normal/timeout/surrender`. Authoritative terminal; local result arrives after .30 s of presentation unless surrender. Win/lose closure from the viewer's perspective; stop charges/voice/combat loops. **Limit:** Surrender and timeout can have HP>0: do not invent fatal impact. Saved prize is not repeated when listening to replay. [scripts/main.gd:1161](../scripts/main.gd#L1161)
 
-## Qué existe y qué falta para sincronizarlo bien
+## What exists and what is missing to synchronize it well
 
-**Marcadores de movimiento disponibles:** apoyos izquierdo/derecho, despegue, aterrizaje, comienzo/final de deslizamiento, paso atrás, carga, FX adherido, dash, continuación del golpe y fin de recuperación. Son metadatos puros calculados sobre las fases. `sound_event` existe en MoveVisualProfile, pero no hay consumidor de audio. CombatFX conserva cursor, edad y deduplicación propios; **no conectar audio a `_draw`, al número de partículas ni a su historial de depuración**: reduced_motion omite esos FX y sus marcadores. El audio debe compartir las definiciones y mantener su propio ciclo de vida. [scripts/move_visual_profile.gd:7](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:7) · [scripts/move_visual_profile.gd:78](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:78) · [scripts/combat_fx.gd:227](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_fx.gd:227)
+**Available movement markers:** left/right support, takeoff, landing, glide start/end, step back, charge, sticky FX, dash, hit continuation, and end recovery. They are pure metadata calculated on the phases. `sound_event` exists in MoveVisualProfile, but there is no audio consumer. CombatFX retains its own cursor, age and deduplication; **do not connect audio to `_draw`, particle number, or its debug history**: reduced_motion skips those FXs and their markers. Audio must share definitions and maintain its own life cycle. [scripts/move_visual_profile.gd:7](../scripts/move_visual_profile.gd#L7) · [scripts/move_visual_profile.gd:78](../scripts/move_visual_profile.gd#L78) · [scripts/combat_fx.gd:227](../scripts/combat_fx.gd#L227)
 
-**Reacciones:** light .28 s, body .36, heavy .48, critical .55, knockback .60, knockdown .92, getup .48, KO .66 y victory .62. Head/low/airborne/guard/status/stagger también son variantes de presentación configurables, no zonas de daño ni nuevas reglas. Un golpe durante un ataque saliente conserva su cronología y difiere la pose de reacción; KO la interrumpe. Falta exponer marcadores de caída→suelo→levantarse desde la reacción realmente mostrada: calcularlos solamente desde `attack.time` sonaría antes de la caída diferida. [scripts/fighter_animation_set.gd:29](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_animation_set.gd:29) · [scripts/fighter_view.gd:629](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:629)
+**Reactions:** light .28 s, body .36, heavy .48, critical .55, knockback .60, knockdown .92, getup .48, KO .66 and victory .62. Head/low/airborne/guard/status/stagger are also configurable display variants, not damage zones or new rules. A hit during a salient attack retains its timing and differs the reaction pose; KO interrupts her. Fall→ground→rise markers are missing from the reaction actually shown: calculating them only from `attack.time` would sound before the delayed fall. [scripts/fighter_animation_set.gd:29](../scripts/fighter_animation_set.gd#L29) · [scripts/fighter_view.gd:629](../scripts/fighter_view.gd#L629)
 
-**Guardia, escudo y contraataque:** la guardia reduce daño directo; un escudo absorbe PV y lo declara en `absorbed`. Ni uno garantiza inmunidad, ni existe `result=block`, parry, bloqueo perfecto o ventana de input de defensa. El counter de la lista de técnicas prepara una postura sin daño; la réplica automática posterior emite su propia preparación y contacto. Los derribos de Firma son animación, no aturdimiento mecánico; `stun` sí es soportado por el motor pero ninguna técnica/Firma base del catálogo auditado lo aplica. [scripts/combat_engine.gd:511](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:511) · [scripts/combat_engine.gd:434](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:434) · [scripts/combat_engine.gd:244](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:244)
+**Guard, shield and counterattack:** guard reduces direct damage; a shield absorbs HP and declares it in `absorbed`. Neither one guarantees immunity, nor is there `result=block`, parry, perfect block or defense input window. The counter of the technique list prepares a posture without damage; the subsequent automatic replica issues its own preparation and contact. Signature's takedowns are animation, not mechanical stuns; `stun` is supported by the engine but no base technique/signature from the audited catalog applies it. [scripts/combat_engine.gd:511](../scripts/combat_engine.gd#L511) · [scripts/combat_engine.gd:434](../scripts/combat_engine.gd#L434) · [scripts/combat_engine.gd:244](../scripts/combat_engine.gd#L244)
 
-**Estados/partículas:** distinguir heal, poison, burn, bleed, shield y debuffs, sin sonorizar cada mota. DoT ocurre al inicio de acciones y atraviesa guardia/escudo; puede terminar una batalla. El polvo de impacto/stone_debris se emite hoy al golpe, no a un marcador de cuerpo tocando suelo; no usarlo como prueba de aterrizaje de una caída. No hay colisión física ni tabla de superficies del motor: el material de suelo es contexto de presentación por arena. [scripts/combat_engine.gd:500](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:500) · [scripts/combat_fx.gd:203](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_fx.gd:203) · [scripts/combat_fx.gd:274](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_fx.gd:274)
+**States/particles:** distinguish heal, poison, burn, bleed, shield and debuffs, without voicing each speck. DoT occurs at the start of actions and passes through guard/shield; can end a battle. Impact powder/stone_debris is emitted today upon impact, not a body marker touching the ground; Do not use it as a drop landing test. There is no physical collision or engine surface table: the ground material is presentation context by sand. [scripts/combat_engine.gd:500](../scripts/combat_engine.gd#L500) · [scripts/combat_fx.gd:203](../scripts/combat_fx.gd#L203) · [scripts/combat_fx.gd:274](../scripts/combat_fx.gd#L274)
 
-## Firma, transformación y jefes
+## Signature, transformation and bosses
 
-**Firma:** Bernoulli de 1% por combatiente al iniciar; turno elegido entre 2–5, consumo máximo una vez. Puede no ejecutarse si cae antes. Acierto garantizado, sin crítico adicional, multiplicador permitido 1.4–1.8 y estado real; resistencia puede acortar duración. Anticipación desde `move_started.signature`; contacto desde `signature` + `attack.signature` agrupados. La opción interna force_signature sirve solo para fixtures, nunca cambia la probabilidad publicada. [scripts/balance.gd:19](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/balance.gd:19) · [scripts/combat_engine.gd:61](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:61) · [scripts/combat_rules.gd:25](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_rules.gd:25)
+**Signature:** Bernoulli of 1% by combatant upon initiation; shift chosen between 2–5, maximum consumption once. It may not be executed if it falls earlier. Guaranteed hit, no additional crit, multiplier allowed 1.4–1.8 and true status; resistance can shorten duration. Anticipation from `move_started.signature`; contact from `signature` + `attack.signature` grouped together. The internal option force_signature is only for fixtures, it never changes the published probability. [scripts/balance.gd:19](../scripts/balance.gd#L19) · [scripts/combat_engine.gd:61](../scripts/combat_engine.gd#L61) · [scripts/combat_rules.gd:25](../scripts/combat_rules.gd#L25)
 
-**Única forma activa:** Ascua `ember_core`, entrada .72 s y vida visual máxima 8 s; `visual_only=true`, sin modificadores ni técnicas nuevas. Main/Replay la solicitan en fase>0 o Firma; si el actor está atacando, la entrada se difiere al idle. Su temporizador de vida corre desde la solicitud. Una petición repetida mientras está activa devuelve true, pero no reinicia forma: el audio no debe repetir la subida completa. Hacen falta notificaciones/estado de entrada efectiva, estable y salida para evitar fuga de loop o desajuste con una entrada diferida. No reescribir el reloj ni el motor. [scripts/fighter_animation_set.gd:47](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_animation_set.gd:47) · [scripts/fighter_view.gd:678](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:678) · [scripts/fighter_view.gd:413](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/fighter_view.gd:413)
+**Only active form:** Ascua `ember_core`, input .72 s and maximum visual life 8 s; `visual_only=true`, without modifiers or new techniques. Main/Replay is requested in phase>0 or Signature; if the actor is attacking, the entry is deferred to idle. Your life timer runs from the request. A repeat request while active returns true, but does not reset form: the audio should not repeat the entire upload. Notifications/status of effective, stable input and output are required to avoid loop leakage or mismatch with a delayed input. Do not rewrite the clock or the motor. [scripts/fighter_animation_set.gd:47](../scripts/fighter_animation_set.gd#L47) · [scripts/fighter_view.gd:678](../scripts/fighter_view.gd#L678) · [scripts/fighter_view.gd:413](../scripts/fighter_view.gd#L413)
 
-**Secuencia propuesta de Ascua:** junta mineral/cuerpo → pulso cálido → resonancia creciente contenida → pico seco de núcleo → cama de brasas corta y estable → apagado suave. Un ataque durante esa forma conserva su base y puede añadir una capa leve del núcleo. Ninguna capa debe anunciar daño extra por la forma visual. Para los otros 16 cuerpos, las poses transform_start/peak/transformed_idle dentro de Firma son su gesto premium; no justifican un loop de transformación ni un nuevo estado de poder.
+**Proposed sequence of Ascua:** mineral/body joint → warm pulse → contained rising resonance → core dry peak → short and stable ember bed → soft shutdown. An attack during that form retains its base and may add a light layer of core. No layer should announce extra damage by visual form. For the other 16 bodies, the transform_start/peak/transformed_idle poses within Signature are their premium emote; They do not justify a transformation loop or a new state of power.
 
-**Fases verdaderas:** Ascua: Brasa serena (>60%); Horno vivo (≤60%, ataque +8%); Última ascua (≤30%, conserva +8% y velocidad +15%). Véspera: Brisa lunar; Alas del vendaval (≤60%, velocidad +10%); Ojo de la tormenta (≤30%, conserva velocidad y ataque +8%). Ninguno se cura o se vuelve invulnerable. Fase 0 se anuncia al inicio; solo el índice nuevo alcanzado se emite y no se anuncia una fase tras HP≤0. Véspera tiene fases de juego, **ninguna forma visual registrada**. El audio de transición sí corresponde; una transformación corporal completa no. [scripts/story_catalog.gd:237](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/story_catalog.gd:237) · [scripts/combat_engine.gd:575](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/combat_engine.gd:575)
+**True phases:** Ascua: Brasa serene (>60%); Furnace Live (≤60%, attack +8%); Last ember (≤30%, preserves +8% and speed +15%). Véspera: Moon breeze; Gale Wings (≤60%, speed +10%); Eye of the Storm (≤30%, conserves speed and attack +8%). None are cured or become invulnerable. Phase 0 is announced at startup; only the new index reached is output and no phase is announced after HP≤0. Véspera has game phases, **no visual form recorded**. Transition audio does apply; not a complete body transformation. [scripts/story_catalog.gd:237](../scripts/story_catalog.gd#L237) · [scripts/combat_engine.gd:575](../scripts/combat_engine.gd#L575)
 
-| Encuentro global | Identidad / título | Poder auditado | Fondo |
+| global meeting | Identity/title | audited power | Background |
 |---|---|---|---|
 
-| 8 | Ascua | Núcleo del farol (`phase_shift`) | arena-faroles-v2.png |
+| 8 | Ascua | Lantern core (`phase_shift`) | arena-faroles-v2.png |
 
-| 16 | Véspera | Danza del vendaval (`phase_shift`) | arena-tormenta-v3.png |
+| 16 | Véspera | Gale Dance (`phase_shift`) | arena-tormenta-v3.png |
 
-| 20 | Taro · Juramento de jade | Eco de jade (`counter`) | arena-faroles-v2.png |
+| 20 | Taro Jade Oath | Jade Echo (`counter`) | arena-faroles-v2.png |
 
-| 30 | Iria · Jardín de ecos | Jardín secreto (`poison`) | arena-faroles-v2.png |
+| 30 | Iria · Garden of echoes | Secret Garden (`poison`) | arena-faroles-v2.png |
 
-| 40 | Luma · Las nueve sendas | Aprender del río (`adapt`) | arena-tormenta-v3.png |
+| 40 | Luma · The nine paths | Learn from the river (`adapt`) | arena-tormenta-v3.png |
 
-| 50 | Ascua · Corazón del solsticio | Núcleo del farol (`phase_shift`) | arena-faroles-v2.png |
+| 50 | Ascua · Heart of the Solstice | Lantern core (`phase_shift`) | arena-faroles-v2.png |
 
-| 60 | Duna · Fortaleza del regreso | Muralla del patio (`shield`) | arena-tormenta-v3.png |
+| 60 | Duna · Strength of Return | Courtyard wall (`shield`) | arena-tormenta-v3.png |
 
-| 70 | Kiro · Rugido del relámpago | Última brasa (`berserk`) | arena-tormenta-v3.png |
+| 70 | Kiro Lightning Roar | Last Ember (`berserk`) | arena-tormenta-v3.png |
 
-| 80 | Neris · Círculo de los maestros | Otra primavera (`comeback`) | arena-faroles-v2.png |
+| 80 | Neris · Circle of the teachers | Another spring (`comeback`) | arena-faroles-v2.png |
 
-| 90 | Sira · Filo de las estrellas | Grieta perfecta (`precision`) | arena-tormenta-v3.png |
+| 90 | Sira · Edge of the stars | Perfect Crack (`precision`) | arena-tormenta-v3.png |
 
-| 100 | Véspera · El último eclipse | Danza del vendaval (`phase_shift`) | arena-tormenta-v3.png |
+| 100 | Véspera · The last eclipse | Gale Dance (`phase_shift`) | arena-tormenta-v3.png |
 
-Los jefes 20/30/40/60/70/80/90 reutilizan su identidad jugable con perfil declarado y técnicas completas; no inventarles fases. Los hitos 50/100 reutilizan Ascua/Véspera con estadísticas mayores y técnicas mejoradas; ameritan intro/cierre musical de hito y una variación del motivo, no once bibliotecas ajenas. [scripts/story_catalog.gd:220](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/story_catalog.gd:220) · [scripts/campaign_config.gd:48](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/campaign_config.gd:48)
+20/30/40/60/70/80/90 bosses reuse their playable identity with declared profile and complete techniques; do not invent phases for them. 50/100 milestones reuse Ascua/Véspera with higher stats and improved techniques; they merit a milestone musical intro/closing and a variation of the motif, not eleven foreign libraries. [scripts/story_catalog.gd:220](../scripts/story_catalog.gd#L220) · [scripts/campaign_config.gd:48](../scripts/campaign_config.gd#L48)
 
-## Live, local, online y replay
+## Live, local, online and replay
 
-**Local Liga/Historia:** Main avanza motor con delta y despacha eventos; un modal de combate pausa motor, actores y FX. Ritmo ×2 usa Engine.time_scale=2. Los golpes usan edad `combat.elapsed-event.time`. El audio necesita reloj de sesión y debe descartar transitorios ya vencidos en catch-up. Hit-stop congela solo presentación; deja sonar el tail. Normalizar pitch de música/voz por separado del intervalo entre acciones. [scripts/main.gd:936](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:936) · [scripts/main.gd:1218](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1218)
+**Local League/Story Mode:** Main advances engine with delta and dispatches events; a combat modal pause engine, actors and FX. Pace ×2 uses Engine.time_scale=2. Hits use age `combat.elapsed-event.time`. The audio needs a session clock and must discard already expired transients in catch-up. Hit-stop freezes presentation only; let the tail sound. Normalize music/voice pitch separately from the interval between actions. [scripts/main.gd:936](../scripts/main.gd#L936) · [scripts/main.gd:1218](../scripts/main.gd#L1218)
 
-**Online asíncrono:** el servidor simula todo ante intención de desafiar; guarda eventos ordenados con `event_seq`, snapshot, engine/catalog version y resultado. OnlinePanel abre **el mismo BattleReplayPanel**, no una pelea nueva en Main. Un registro puede verse como defensor: victoria/derrota deben usar viewing_side, no asumir player. Ni oír ni repetir entrega XP. [backend/src/game/battles.js:62](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/backend/src/game/battles.js:62) · [backend/src/game/battles.js:68](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/backend/src/game/battles.js:68) · [scripts/ui/online_panel.gd:840](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/online_panel.gd:840)
+**Asynchronous online:** the server simulates everything before challenging; saves events ordered with `event_seq`, snapshot, engine/catalog version and result. OnlinePanel opens **the same BattleReplayPanel**, not a new fight in Main. A record can be viewed as defender: win/loss should use viewing_side, not assume player. Neither hearing nor repeating gives XP. [backend/src/game/battles.js:62](../backend/src/game/battles.js#L62) · [backend/src/game/battles.js:68](../backend/src/game/battles.js#L68) · [scripts/ui/online_panel.gd:840](../scripts/ui/online_panel.gd#L840)
 
-**Replay:** tiempo y cursor ordenado; pausa, reinicio, cambio de registro y cierre deben parar/limpiar su audio. La clave propuesta es battle_id + generación de reproducción + event_seq (online) o índice del array (local) + side + marker. `time` solo no es único: DoT/counter/Signature pueden compartir tiempo. Nunca escribir audio IDs en el registro ni regenerar el combate. Los snapshots inválidos/legacy sin eventos no obtienen audio inventado. [scripts/ui/battle_replay_panel.gd:208](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/battle_replay_panel.gd:208) · [scripts/ui/battle_replay_panel.gd:178](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/battle_replay_panel.gd:178) · [scripts/battle_identity.gd:23](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/battle_identity.gd:23)
+**Replay:** time and cursor ordered; pause, restart, log change and shutdown should stop/clear your audio. The proposed key is battle_id + replay generation + event_seq (online) or array index (local) + side + marker. `time` only is not unique: DoT/counter/Signature can share time. Never write audio IDs to the log or regenerate combat. Invalid/legacy snapshots without events do not get fabricated audio. [scripts/ui/battle_replay_panel.gd:208](../scripts/ui/battle_replay_panel.gd#L208) · [scripts/ui/battle_replay_panel.gd:178](../scripts/ui/battle_replay_panel.gd#L178) · [scripts/battle_identity.gd:23](../scripts/battle_identity.gd#L23)
 
-## Hallazgos de audio existente relevantes al combate
+## Existing audio findings relevant to combat
 
-- **REPLACE** — Main synthesizes 9 mono tones: hit,critical,dodge,upgrade,start,win,lose,ability,signature; 5 AudioStreamPlayers at -10dB. [scripts/main.gd:1763](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1763)
+- **REPLACE** — Main synthesizes 9 mono tones: hit,critical,dodge,upgrade,start,win,lose,ability,signature; 5 AudioStreamPlayers at -10dB. [scripts/main.gd:1763](../scripts/main.gd#L1763)
 
-- **REWORK** — Signature contact currently calls the same .75s tone in both signature and attack handlers, normally overlapping; ability+heal/shield can similarly stack. [scripts/main.gd:1077](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1077) · [scripts/main.gd:1010](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1010) · [scripts/main.gd:1045](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/main.gd:1045)
+- **REWORK** — Signature contact currently calls the same .75s tone in both signature and attack handlers, normally overlapping; ability+heal/shield can similarly stack. [scripts/main.gd:1077](../scripts/main.gd#L1077) · [scripts/main.gd:1010](../scripts/main.gd#L1010) · [scripts/main.gd:1045](../scripts/main.gd#L1045)
 
-- **MISSING** — ReplayPanel does not play audio. Online battle display is this same ReplayPanel after server simulation; no direct online Main combat audio path. [scripts/ui/battle_replay_panel.gd:224](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/battle_replay_panel.gd:224) · [scripts/ui/online_panel.gd:840](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/ui/online_panel.gd:840)
+- **MISSING** — ReplayPanel does not play audio. Online battle display is this same ReplayPanel after server simulation; no direct online Main combat audio path. [scripts/ui/battle_replay_panel.gd:224](../scripts/ui/battle_replay_panel.gd#L224) · [scripts/ui/online_panel.gd:840](../scripts/ui/online_panel.gd#L840)
 
-- **KEEP** — Immutable recorded descriptors/events and shared pure move markers are suitable semantic inputs; sound_event metadata exists but is not consumed. [scripts/battle_identity.gd:23](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/battle_identity.gd:23) · [scripts/move_visual_profile.gd:52](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/scripts/move_visual_profile.gd:52)
+- **KEEP** — Immutable recorded descriptors/events and shared pure move markers are suitable semantic inputs; sound_event metadata exists but is not consumed. [scripts/battle_identity.gd:23](../scripts/battle_identity.gd#L23) · [scripts/move_visual_profile.gd:52](../scripts/move_visual_profile.gd#L52)
 
-Al reemplazar los tonos, agrupar Firma + impacto, habilidad + escudo y habilidad + cura en paquetes controlados; no encadenar un archivo largo por cada evento. Mantener separación whoosh/resultado: Main hoy reproduce dodge también en miss. Los efectos no deben depender exclusivamente de reduced_motion ni del volumen de música. El inventario de buses/UI/configuración completo pertenece al documento de arquitectura de la tarea principal.
+When replacing tones, group Signature + Impact, Skill + Shield, and Skill + Heal into controlled packages; do not chain a long file for each event. Maintain separation whoosh/result: Main today plays dodge also in miss. The effects should not depend exclusively on reduced_motion or music volume. The complete bus/UI/configuration inventory belongs to the main task architecture document.
 
-## Prueba vertical recomendada: Ascua + Patio de Faroles
+## Recommended vertical test: Ascua + Lantern Court
 
-**Una identidad específica: Ascua, jefe no seleccionable. Una arena: Patio de Faroles**, `last_lantern`, encuentro 8, fondo `res://assets/arena-faroles-v2.png`. Único cuerpo con transformación activa registrada; cinco técnicas completas incluyen quick/heavy/charge/jump/guard, burn, fases, Firma y carga con dash/slide. Identidad mineral y núcleo comparten vocabulario con el entorno de faroles. No introducir a Mugo como “transformable” para cumplir artificialmente el ejemplo. Si el objetivo se restringe a un seleccionable, la transformación real queda fuera: ninguno de los 15 la tiene.
+**A specific identity: Ascua, boss not selectable. An arena: Patio de Lanterns**, `last_lantern`, encounter 8, background `res://assets/arena-faroles-v2.png`. Only body with registered active transformation; Five complete techniques include quick/heavy/charge/jump/guard, burn, phases, signature and charge with dash/slide. Mineral identity and core share vocabulary with the lantern environment. Do not introduce Mugo as “transformable” to artificially comply with the example. If the target is restricted to a selectable, the actual transformation is left out: none of the 15 have it.
 
-Cinco técnicas de la prueba: Garra de cobre (quick), Puño de la forja (heavy), Carga del brasero (charge + posible burn), Obsidiana cerrada (guardia) y Golpe del cráter (jump). El rival recibe el paquete compartido de contacto/reacción; no exige producir una segunda identidad sonora.
+Five techniques of the test: Copper Claw (quick), Forge Fist (heavy), Brazier Charge (charge + possible burn), Closed Obsidian (guard) and Crater Strike (jump). The rival receives the shared contact/reaction packet; it does not require producing a second sound identity.
 
-**Cobertura:** confirmación/entrada; ambiente y música de patio; cuerpo/pies; quick/heavy/charge; desplazamiento dash y slide dentro de carga; salto y aterrizaje; contacto/fallo/esquiva/crítico; guardia; daño/derribo/KO; dos fases; forma visual; Firma; victoria/derrota. **N/A de Ascua:** técnica dash independiente, contraataque, parry/bloqueo perfecto, curación, escudo de PV y ataques transformados nuevos. Tampoco hay un derribo que impida acciones mecánicamente. No generar assets para fingirlos.
+**Coverage:** confirmation/entry; patio atmosphere and music; body/feet; quick/heavy/charge; dash and slide scrolling within loading; jump and landing; contact/miss/dodge/critical; guard; damage/knockdown/KO; two phases; visual form; Signature; victory/defeat. **A/N for Ascua:** standalone dash technique, counterattack, parry/perfect block, healing, HP shield, and new transformed attacks. There is also no knockdown that mechanically prevents actions. Do not generate assets to fake them.
 
-**Arena propuesta, pendiente del mapa global:** piedra exterior con polvo fino y brasa lejana de faroles; aire nocturno contenido; reflexión corta abierta. Inferencia artística del escenario, no atributo físico existente. Música con pulso mineral y motivo cálido común; aumentar una capa por fase, duck breve de Firma/KO y cierre de jefe. No incorporar público, maquinaria ni agua por inercia.
+**Proposed sand, pending global map:** Exterior stone with fine dust and distant lantern embers; contained night air; short open reflection. Artistic inference of the setting, not existing physical attribute. Music with a mineral pulse and a common warm motif; increase one layer per phase, short Signature/KO duck and boss closure. Do not incorporate public, machinery or water by inertia.
 
-**Validación posterior:** una sesión natural con semilla fija y eventos reales para ritmo general; ramas raras mediante fixtures/replays explícitos del mismo kit. Firma, crítico, esquiva y ambos desenlaces no están garantizados juntos en un combate; usar controles de prueba internos sin tocar 1% normal. Revisar a ×1/×2, pausa, cierre a mitad de carga, catch-up/reinicio, reduced_motion, local y replay online. Escuchar contacto y aterrizaje separados; nunca un golpe en miss, ni golpe mortal inventado al rendirse/timeout. Esta auditoría no ejecutó esas pruebas ni generó audio.
+**Post validation:** a natural session with fixed seed and real events for general pacing; rare branches through explicit fixtures/replays of the same kit. Signature, critical, dodge and both outcomes are not guaranteed together in a fight; use internal test controls without touching normal 1%. Check ×1/×2, pause, shutdown mid-load, catch-up/restart, reduced_motion, local and online replay. Listen for separate contact and landing; never a blow at miss, nor a fatal blow invented when surrendering/timeout. This audit did not run those tests or generate audio.
 
-**Criterio de salida antes del resto del plantel:** identificar quick/heavy/Firma y hit/miss sin mirar; guardia distinta de escudo; pies y fricción en su fase; transformación alineada a su entrada real; KO final; pausas sin loops huérfanos; ninguna recompensa nueva por replay. Después extender perfiles sin cambiar reglas ni registros históricos.
+**Exit criterion before the rest of the squad:** identify quick/heavy/Signature and hit/miss without looking; guard other than shield; feet and friction in its phase; transformation aligned to its actual input; final KO; pauses without orphan loops; no new reward for replay. Then extend profiles without changing rules or historical records.
 
-## Backlog P0/P1 completo (sin generar)
+## Complete P0/P1 backlog (not generated)
 
-El JSON incluye **118 briefs y 416 variantes solicitadas**: foley/contactos compartidos, identidad de los 17 cuerpos, Firma de cada uno, preparación fuerte cuando su kit la tiene, estados reales y forma/fases de Ascua/Véspera. Cada entrada fija uso, duración, one-shot/loop, material, entorno, sequedad, intensidad, elemento tonal, variaciones, timing, exclusiones y prompt en inglés. Son pendientes, no entregables ya producidos. [Backlog extraído](/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/audio/audit/characters-combat-backlog.json).
+The JSON includes **118 briefs and 416 requested variants**: shared foley/contacts, identity of the 17 bodies, Signature of each one, strong preparation when your kit has it, actual states and form/phases of Ascua/Véspera. Each entry sets usage, duration, one-shot/loop, material, environment, dryness, intensity, tonal element, variations, timing, exclusions and prompt in English. They are pending, not deliverables already produced. Backlog extracted (`work/audio/audit/characters-combat-backlog.json`; not included).
 
-La Audio Bible de la tarea principal concreta el suelo de Faroles como tierra compacta/terracota y la producción inicial de transformación como gesto y cola breves, sin cama permanente. Esas decisiones prevalecen sobre las opciones preliminares de superficie/loop descritas en la auditoría. El diagnóstico de los nueve tonos corresponde al snapshot anterior a la integración de AudioDirector; el código se integra después, en una tarea separada.
+The Audio Bible of the main task concretizes the Faroles soil as compact earth/terracotta and the initial production of transformation as a brief gesture and queue, without a permanent bed. Those decisions take precedence over the preliminary surface/loop options described in the audit. The diagnosis of the nine tones corresponds to the snapshot prior to the integration of AudioDirector; the code is integrated later, into a separate task.

@@ -1,126 +1,126 @@
-# Personalización · tu compañero, su propia identidad
+# Personalization · a distinct identity for your companion
 
-Este documento conserva el catálogo, alcance visual y pruebas de la entrega original de personalización. El estado actual de Arena y Cloudflare está en [Arena online](ARENA-ONLINE.md) y [Despliegue de Cloudflare](../backend/docs/DEPLOYMENT.md); las animaciones posteriores se documentan en [Secuencias de animación](ANIMATION-SEQUENCES.md). Los resultados siguientes no se repitieron durante la publicación de Cloudflare.
+This document preserves the catalog, visual scope and evidence of the original customization delivery. The current status of Arena and Cloudflare is at [Arena online](ARENA-ONLINE.md) and [Cloudflare deployment](../backend/docs/DEPLOYMENT.md); subsequent animations are documented in [Animation Sequences](ANIMATION-SEQUENCES.md). The following results were not repeated during Cloudflare's publication.
 
-Brasa permite elegir el nombre y la apariencia de cada compañero, conservarlos al cerrar el juego y verlos en Liga, Historia, combates y repeticiones. El arquetipo sigue definiendo cómo pelea: vestir a Tepa con el cuerpo de Luma conserva las técnicas, el crecimiento y las estadísticas de Tepa.
+Brasa allows you to choose the name and appearance of each companion, keep them when closing the game and see them in League, Story, battles and replays. The archetype still defines how you fight: dressing Tepa in Luma's body retains Tepa's techniques, growth, and stats.
 
-## Cómo usarla
+## How to use it
 
-En una partida nueva, el creador permite elegir **base de combate**, nombre, cuerpo, paleta, efectos y presentación. **Crear compañero** lleva a Historia, con la campaña y sus tres puntos iniciales. La base identifica el estilo de juego; el cuerpo es una elección visual independiente.
+In a new game, the creator allows you to choose **combat base**, name, body, palette, effects and presentation. **Create Companion** leads to Story, with the campaign and its three starting points. The base identifies the style of play; the body is an independent visual choice.
 
-En una partida existente, abre **Menú → Personalizar**, o usa **Personalizar** desde la ficha de **Compañeros**. El editor tiene vista previa animada, categorías, combinaciones y variación aleatoria entre opciones poseídas. Los cambios son un borrador hasta pulsar **Guardar cambios**; **Cancelar** conserva el nombre y la apariencia guardados. Durante un combate no se permite abrir la edición.
+In an existing game, open **Menu → Customize**, or use **Customize** from the **Companions** tab. The editor has animated preview, categories, combinations and random variation between owned options. The changes are a draft until you press **Save changes**; **Cancel** keeps the saved name and appearance. During a fight it is not allowed to open the edition.
 
-Los nombres nuevos admiten entre **2 y 24** letras o números Unicode, espacios, apóstrofo recto y guiones. Los espacios consecutivos se reducen a uno; se rechazan controles y nombres reservados. Dos compañeros o cuentas pueden tener el mismo nombre: el identificador interno es independiente y estable.
+New names support between **2 and 24** Unicode letters or numbers, spaces, straight apostrophes, and hyphens. Consecutive spaces are reduced to one; controls and reserved names are rejected. Two peers or accounts can have the same name: the internal identifier is independent and stable.
 
-### Escritorio
+### Desk
 
-![Editor de personalización en escritorio](customization-desktop.png)
+![Desktop Personalization Editor](customization-desktop.png)
 
-### Móvil vertical
+### Vertical mobile
 
-![Editor de personalización en móvil](customization-mobile.png)
+![Mobile Personalization Editor](customization-mobile.png)
 
-Las capturas usan una fixture de demostración: base Mugo, cuerpo Balam, paleta Jade y aura Farol. Los desbloqueos se habilitaron sólo en esa fixture; en la partida normal se aplican los requisitos descritos a continuación.
+The screenshots use a demo fixture: base Mugo, body Balam, Jade palette and Lantern aura. The unlocks were enabled only on that fixture; In the normal game the requirements described below apply.
 
-## Antes y después
+## before and after
 
-| Aspecto | Antes | Ahora |
+| Appearance | Before | now |
 | --- | --- | --- |
-| Inicio de partida | Selección de compañero y nombre. | Creador con base de combate, nombre, cuerpo, paleta, efectos y presentación; continuación en Historia. |
-| Apariencia | Ilustración asociada al personaje. | Trece cuerpos combinables con cosméticos definidos en el catálogo. |
-| Nombre entre modos | Nombres dentro de los perfiles de Liga e Historia. | Una identidad por arquetipo compartida por ambos modos; cada modo conserva su progresión. |
-| Confirmación | Sin un editor visual completo. | Vista previa y borrador; guardar o cancelar de forma explícita. |
-| Historial | Resultado y datos de la pelea. | Las peleas nuevas conservan también nombre, ID, apariencia y eventos para su repetición visual. |
-| Preparación en línea | Sin servicio de identidad. | Worker+D1 local con cuentas de desarrollo, inventario validado y fichas persistentes; sin publicación ni PvP completo. |
+| Start of game | Partner and name selection. | Creator with combat base, name, body, palette, effects and presentation; continued in Story Mode. |
+| Appearance | Illustration associated with the character. | Thirteen bodies combinable with cosmetics defined in the catalog. |
+| Name between modes | Names within the League and Story Mode profiles. | An identity per archetype shared by both modes; each mode retains its progression. |
+| Confirmation | Without a complete visual editor. | Preview and draft; save or cancel explicitly. |
+| Story Mode | Result and data of the fight. | New fights also retain name, ID, appearance and events for visual repetition. |
+| Online preparation | No identity service. | Local Worker+D1 with development accounts, validated inventory, and persistent tokens; no publishing or full PvP. |
 
-## Catálogo y desbloqueos
+## Catalog and unlocks
 
-El catálogo tiene **29 opciones** contando las variantes originales y «sin efecto». Las poses y animaciones adicionales presentan las imágenes existentes; no añaden técnicas ni modifican sus tiempos de combate.
+The catalog has **29 options** counting the original and "no effect" variants. Additional poses and animations present existing images; They do not add techniques or modify their combat times.
 
-| Categoría | Opciones |
+| Category | Options |
 | --- | --- |
-| Cuerpo · 13 | Nima, Luma, Mugo, Sira, Iria, Duna, Kiro, Neris, Taro, Balam, Tepa, Xuna y Copal. |
-| Paleta · 5 | Original, Jade, Ocaso, Luna y Tinta. |
-| Aura · 4 | Ninguna, Farol, Luciérnagas y Corona. |
-| Estela · 3 | Ninguna, Brasa y Estela de jade. |
-| Victoria · 2 | Clásica y Saludo. |
-| Entrada · 2 | Clásica y Pulso. |
+| Body 13 | Nima, Luma, Mugo, Sira, Iria, Duna, Kiro, Neris, Taro, Balam, Tepa, Xuna and Copal. |
+| Palette 5 | Original, Jade, Sunset, Moon and Ink. |
+| Aura 4 | None, Lantern, Fireflies and Crown. |
+| Wake · 3 | None, Brasa and Jade Stele. |
+| Victory 2 | Classic and Greeting. |
+| Entry 2 | Classic and Pulse. |
 
-Los trece cuerpos, Original/Jade/Ocaso, ausencia de aura/estela y ambas presentaciones de victoria/entrada están disponibles desde el principio. Las otras siete opciones se obtienen jugando:
+All thirteen bodies, Original/Jade/Nightfall, no aura/wake, and both victory/entry presentations are available from the start. The other seven options are obtained by playing:
 
-| Recompensa | Requisito |
+| Reward | Requirement |
 | --- | --- |
-| Paleta Luna | Llegar a nivel de personaje 10 en Liga o Historia. |
-| Paleta Tinta | Ganar 10 combates de Liga con un compañero. |
-| Aura Farol | Superar el encuentro 8 de Historia. |
-| Estela Brasa | Superar el encuentro 20 de Historia. |
-| Aura Luciérnagas | Superar el encuentro 50 de Historia. |
-| Aura Corona | Superar el encuentro 100 de Historia. |
-| Estela de jade | Ganar 25 combates de Liga con un compañero. |
+| Moon Palette | Reach character level 10 in League or Story. |
+| Ink Palette | Win 10 League matches with a partner. |
+| Aura Lantern | Complete the 8 Story Mode encounter. |
+| Wake Brasa | Complete the 20 Story Mode encounter. |
+| Fireflies Aura | Complete the 50 Story Mode encounter. |
+| Crown Aura | Complete the 100 Story Mode encounter. |
+| jade stele | Win 25 League matches with a partner. |
 
-Las condiciones se comprueban sobre el progreso válido de un compañero; no se suman victorias de distintos perfiles para alcanzar un umbral. Una vez obtenido, el cosmético pertenece al inventario local compartido y puede usarse en los demás compañeros. No se consume al equiparlo. Las combinaciones bloqueadas muestran su requisito. No hay compras ni monetización.
+Conditions are checked on a partner's valid progress; Victories from different profiles are not added to reach a threshold. Once obtained, the cosmetic belongs to the shared local inventory and can be used on other companions. It is not consumed when equipped. Locked combinations show your requirement. There are no purchases or monetization.
 
-**Alcance visual de aquella entrega:** se reutilizan los atlas ilustrados originales con sus ocho poses. La paleta aplica un tinte suave a la ilustración completa. No existen capas independientes para recolorear ropa, pelo o accesorios por separado. Aura, estela y presentación se añaden alrededor de esas poses. Esta ampliación no necesitó generar imágenes nuevas.
+**Visual scope of that delivery:** The original illustrated atlases with their eight poses are reused. The palette applies a soft tint to the entire illustration. There are no separate layers to recolor clothing, hair or accessories separately. Aura, trail and presentation are added around those poses. This expansion did not require generating new images.
 
-## Progreso, guardado y partidas anteriores
+## Progress, saves and previous games
 
-La identidad se guarda en un archivo adicional junto al guardado principal:
+The identity is saved in an additional file next to the main save:
 
 ```text
 ~/Library/Application Support/BrasaLiga/brasa_save.json.identity.json
 ```
 
-Con una ruta de guardado personalizada se usa `<save>.identity.json`. Contiene la cuenta local, IDs de luchador, nombres, apariencias e inventario; **no contiene ni sustituye los niveles, XP, atributos, técnicas o talentos** de los trece perfiles. Liga e Historia mantienen sus archivos y progresiones independientes. Cambiar cuerpo, nombre o efectos no añade poder ni altera estadísticas, alcance o reglas de combate.
+With a custom save path `<save>.identity.json` is used. Contains the local account, fighter IDs, names, appearances and inventory; **does not contain or replace the levels, XP, attributes, techniques or talents** of the thirteen profiles. League and Story Mode maintain their independent files and progressions. Changing body, name or effects does not add power or alter statistics, range or combat rules.
 
-La migración conserva los nombres existentes. Si Liga e Historia tienen nombres personalizados distintos para el mismo arquetipo, se conserva el de Liga; si Liga mantiene el nombre original y sólo Historia lo personalizó, se conserva el de Historia. Los nombres antiguos se respetan aunque no cumplan la regla nueva, mientras no se modifiquen. Renombrar no cambia el ID ni la fecha de creación del luchador.
+The migration preserves existing names. If League and Story Mode have different custom names for the same archetype, League is retained; If Liga maintains the original name and only Story Mode personalized it, Story Mode is preserved. Old names are respected even if they do not comply with the new rule, as long as they are not modified. Renaming does not change the fighter's ID or creation date.
 
-El archivo de identidad se valida antes y después de escribir, usa un temporal y reemplazo atómico, y conserva la versión anterior en `.bak`. Un bloqueo y la comprobación del hash evitan que dos ventanas sobrescriban cambios ajenos. Ante corrupción, versión desconocida o conflicto, se conserva el archivo y la personalización queda protegida; no se intenta reconstruirla borrando el progreso. Las pruebas usan archivos independientes de la partida real.
+The identity file is validated before and after writing, uses a temporary and atomic replacement, and preserves the previous version at `.bak`. A lock and hash check prevent two windows from overwriting other people's changes. In case of corruption, unknown version or conflict, the file is preserved and the customization is protected; there is no attempt to rebuild it by erasing progress. The tests use files independent of the actual game.
 
-## Combates y repeticiones
+## Fights and replays
 
-Al iniciar la pelea se copia la identidad de cada participante junto con su apariencia y datos de combate. El HUD, el resultado y el registro usan esa copia. Un cambio posterior de nombre o equipo no reescribe lo que ocurrió.
+When the fight starts, the identity of each participant is copied along with their appearance and combat data. HUD, score, and registration use that copy. A subsequent name or team change does not rewrite what happened.
 
-En **Menú → Historial → Ver repeticiones**, las peleas nuevas pueden reproducirse con las poses y eventos registrados. La repetición muestra los nombres y cuerpos de aquel momento, permite revisar la acción y **no concede XP, victorias ni recompensas**. Los registros antiguos siguen siendo legibles; no se inventan eventos o imágenes históricas que nunca se guardaron.
+In **Menu → Story Mode → View Replays**, new fights can be replayed with the recorded poses and events. Replay shows names and bodies from that moment, allows you to review the action, and **does not grant XP, wins, or rewards**. The old records are still readable; historical events or images that were never saved are not invented.
 
-![Repetición con identidades históricas](customization-replay.png)
+![Replay with historical identities](customization-replay.png)
 
-## Servicio local de Workers y D1
+## Workers and D1 local service
 
-La preparación autorizada funciona en **`http://127.0.0.1:8787`**, mediante Wrangler y D1 local. Incluye UUID estables, catálogo canónico, inventario por cuenta, creación/lectura de luchadores, cambio atómico de nombre/apariencia y vista persistente de un oponente aunque su dueño esté desconectado. El adaptador opcional Godot es [IdentityApi](../scripts/identity_api.gd).
+Authorized preparation works on **`http://127.0.0.1:8787`**, using Wrangler and local D1. Includes stable UUIDs, canonical catalog, inventory per account, creating/reading fighters, atomic name/appearance change, and persistent view of an opponent even if its owner is offline. The optional Godot adapter is [IdentityApi](../scripts/identity_api.gd).
 
-La cuenta se provisiona con una herramienta local: token aleatorio privado, hash en D1, caducidad y revocación. El servidor valida dueño, revisión, categoría, ID, compatibilidad y posesión; el cliente no puede concederse cosméticos ni enviar rutas de recursos o shaders. Dos ediciones simultáneas con la misma revisión producen un único cambio aceptado. El módulo servidor de snapshots sólo copia luchadores existentes y conserva el hash de su catálogo para lecturas históricas.
+The account is provisioned with a local tool: private random token, hash on D1, expiration and revocation. The server validates owner, revision, category, ID, compatibility and possession; the client cannot grant itself cosmetics or send resource paths or shaders. Two simultaneous editions with the same revision produce a single accepted change. The snapshot server module only copies existing fighters and retains their catalog hash for historical readings.
 
-**En esta entrega histórica no se había publicado el servicio.** Todavía no había login de producción, matchmaking ni un ejecutor PvP. El juego no sube automáticamente sus partidas o recompensas al servicio, y las cuentas locales de D1 no se vinculan automáticamente con el archivo de identidad de Godot. La vista de oponente y los snapshots preparan esa futura integración; no representan partidas en línea ya implementadas.
+**In this historical installment the service had not been published.** There was still no production login, matchmaking or a PvP executor. The game does not automatically upload your gameplay or rewards to the service, and local D1 accounts are not automatically linked to the Godot identity file. The opponent view and snapshots prepare for that future integration; They do not represent already implemented online games.
 
-El arranque, credenciales, endpoints, errores y pruebas están en [backend/README.md](../backend/README.md). El backend está excluido de la importación/exportación de Godot y sus credenciales y datos temporales no forman parte de los archivos de distribución.
+Boot, credentials, endpoints, errors and tests are in [backend/README.md](../backend/README.md). The backend is excluded from Godot import/export and its credentials and temporary data are not part of the distribution files.
 
-## Fuentes y validación
+## Sources and validation
 
-El [catálogo canónico](../data/cosmetic_catalog.json) es el export de [CosmeticCatalog](../scripts/cosmetic_catalog.gd), compartido con el backend. El código de [FighterIdentity](../scripts/fighter_identity.gd) separa identidad y progreso; [BattleIdentity](../scripts/battle_identity.gd) conserva las copias históricas.
+The [canonical catalog](../data/cosmetic_catalog.json) is the export of [CosmeticCatalog](../scripts/cosmetic_catalog.gd), shared with the backend. The [FighterIdentity](../scripts/fighter_identity.gd) code separates identity and progress; [BattleIdentity](../scripts/battle_identity.gd) retains historical copies.
 
-| Prueba | Qué comprueba |
+| Test | What does it check? |
 | --- | --- |
-| [test_fighter_identity.gd](../tests/test_fighter_identity.gd) | Nombres, IDs, migración, desbloqueos, guardado, fallos de escritura y conservación del progreso. |
-| [test_identity_integration.gd](../tests/test_identity_integration.gd) | Creador, editor, Liga/Historia, HUD, combate, historial y repetición sin recompensas. |
-| [test_identity_edges.gd](../tests/test_identity_edges.gd) | Identidad protegida, fallos de guardado, snapshots incompletos y respuestas de API no válidas. |
-| [test_customization_visuals.gd](../tests/test_customization_visuals.gd) | Variantes visuales y adaptación del editor/combate a siete tamaños. |
-| [test_identity_api.gd](../tests/test_identity_api.gd) | Peticiones reales de Godot al Worker+D1 local y rechazos 401/403/409/422. |
-| [backend/tests](../backend/tests) | Autenticación, límites HTTP, permisos, atomicidad, carreras, persistencia, hashes y snapshots. |
+| [test_fighter_identity.gd](../tests/test_fighter_identity.gd) | Names, IDs, migration, unlocks, saving, write failures and progress retention. |
+| [test_identity_integration.gd](../tests/test_identity_integration.gd) | Creator, Editor, League/Story, HUD, Combat, Story Mode and Replay without rewards. |
+| [test_identity_edges.gd](../tests/test_identity_edges.gd) | Protected identity, save failures, incomplete snapshots, and invalid API responses. |
+| [test_customization_visuals.gd](../tests/test_customization_visuals.gd) | Visual variants and adaptation of the editor/combat to seven sizes. |
+| [test_identity_api.gd](../tests/test_identity_api.gd) | Actual Godot requests to local Worker+D1 and rejections 401/403/409/422. |
+| [backend/tests](../backend/tests) | Authentication, HTTP limits, permissions, atomicity, races, persistence, hashes and snapshots. |
 
-Resultados finales confirmados de aquella entrega:
+Confirmed final results of that delivery:
 
-| Conjunto | Resultado |
+| Set | Result |
 | --- | --- |
-| Regresión final de Godot, 24 suites sin ventana | **22.816 comprobaciones, 0 fallos**. |
-| Identidad, migración e inventario | **894 comprobaciones, 0 fallos**. |
-| Editor y variantes visuales con render nativo | **1.866 comprobaciones, 0 fallos**. |
-| Integración final con render nativo | **85 comprobaciones, 0 fallos**. |
-| Worker + D1 local | **15 pruebas, 0 fallos**. |
-| Godot → HTTP real de Wrangler | **15 comprobaciones, 0 fallos**. |
-| Recorrido completo de la interfaz | **UI_SMOKE_PASS**. |
+| Godot final regression, 24 windowless suites | **22.816 checks, 0 failures**. |
+| Identity, migration and inventory | **894 checks, 0 failures**. |
+| Editor and visual variants with native render | **1.866 checks, 0 failures**. |
+| Final integration with native render | **85 checks, 0 failures**. |
+| Worker + local D1 | **15 tests, 0 failures**. |
+| Godot → Real Wrangler HTTP | **15 checks, 0 failures**. |
+| Complete interface tour | **UI_SMOKE_PASS**. |
 
-El agregado de 22.816 ya incluye la integración de identidad (80), sus casos límite (28), la integración de Historia (85), la presentación de movimientos (751) y el reloj (148); no se suman otra vez. Se usaron los resultados finales de los archivos `.log`, incluido el render nativo final, y no resultados intermedios anteriores.
+The addition of 22.816 already includes identity integration (80), its edge cases (28), Story Mode integration (85), motion presentation (751), and clock (148); They don't add up again. The final results from the `.log` files were used, including the final native render, and not previous intermediate results.
 
-Se comprobaron siete tamaños: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 y 844×390. Las capturas proceden de renders nativos con fixtures, sin modificar la partida del usuario.
+Seven sizes were tested: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 and 844×390. The screenshots come from native renders with fixtures, without modifying the user's game.
 
-La [verificación final](customization-validation.json) registra hashes de código y capturas, resultados de pruebas y la comparación de los guardados reales al reabrir esta versión. Los archivos de Liga e Historia permanecieron idénticos byte a byte.
+The [final check](customization-validation.json) records code hashes and screenshots, test results, and comparison of actual saves when reopening this version. The League and Story Mode files remained identical byte for byte.

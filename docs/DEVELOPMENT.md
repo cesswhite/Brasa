@@ -1,24 +1,24 @@
-# Desarrollo reproducible
+# Reproducible development
 
-## Requisitos y rutas
+## Requirements and paths
 
-Godot 4.7.2 estándar es la versión de referencia del proyecto. Usa `godot` en PATH o sustituye el comando por tu binario. Godot importa assets y reconstruye `.godot/`; ese directorio no se versiona.
+Godot 4.7.2 standard is the reference version of the project. Use `godot` in PATH or replace the command with your binary. Godot imports assets and rebuilds `.godot/`; that directory is not versioned.
 
 ```sh
 godot --headless --editor --path . --import
-# Prueba breve de lógica, con guardado de prueba:
+# Short logic test, with a disposable save:
 godot --headless --path . --script res://tests/test_core.gd
-# Comprobación específica de la edición pública sin audio:
+# Specific check for public edition without audio:
 godot --headless --path . --script res://tests/test_public_source.gd
-# Regresiones del sistema visual (estructura; no valida píxeles en headless):
+# Visual system regressions (structural checks; not visual rendering validation):
 godot --headless --path . --script res://tests/test_game_visual_system.gd
 ```
 
-Inspecciona cada test antes de lanzarlo y utiliza sus perfiles de prueba. No borres ni migres el perfil real del usuario. Para revisar capturas necesitas renderer visible; compara escritorio (1360×880), móvil vertical (390×844) y una ventana corta/horizontal. No atribuyas resultados visuales a una ejecución headless.
+Inspect each test before launching it and use its test profiles. Do not delete or migrate the user's real profile. To review screenshots you need a visible renderer; compare desktop (1360×880), vertical mobile (390×844) and a short/horizontal window. Do not attribute visual results to a headless execution.
 
-## Backend local
+## Local backend
 
-Node 22+ y npm. Desde `backend/`:
+Node 22+ and npm. From `backend/`:
 
 ```sh
 npm ci
@@ -29,33 +29,33 @@ npm run account:create
 npm run dev
 ```
 
-Los comandos locales usan D1 en `.local/state`. El generador escribe la credencial de prueba en un archivo privado sin imprimirla. Consulta [backend/README.md](../backend/README.md) para usarla. `npm run build` sincroniza catálogos: revisa el diff resultante.
+Local commands use D1 at `.local/state`. The generator writes the test credential to a private file without printing it. See [backend/README.md](../backend/README.md) to use it. `npm run build` synchronizes catalogs: check the resulting diff.
 
 ```sh
-# Desde backend/: prueba local; no despliega.
+# From backend/: local tests; no deployment
 npm test
 npm run catalog:check
 ```
 
-Los tests remotos y las herramientas administrativas requieren un entorno autorizado específico. No los ejecutes por una petición de refactor o al instalar dependencias. `wrangler.staging.jsonc` describe el staging del titular; para un fork crea configuración independiente.
+Remote testing and administrative tools require a specific authorized environment. A refactoring request or dependency installation does not authorize remote operations. `wrangler.staging.jsonc` describes the owner's staging environment; create an independent configuration for a fork.
 
-## Audio y variantes del checkout
+## Audio and checkout variants
 
-La versión pública conserva `data/audio_events.json`, el director de audio y el manifiesto, pero no los archivos sonoros ni videos. La búsqueda de streams existentes evita cargar rutas ausentes; la ejecución pública debe seguir funcionando en silencio. Las suites que verifican muestras físicas, metadatos o reproducción completa necesitan el pack autorizado y deben identificarse como no aplicables al checkout público; no inventes WAV vacíos para hacerlas pasar.
+The public version retains `data/audio_events.json`, the audio director and the manifest, but not the sound or video files. The audio system checks for available streams before loading paths; the public edition must continue to run silently when recordings are absent. Suites that verify physical samples, metadata or full playback require the authorized pack and must be identified as not applicable to the public checkout; do not create empty WAV files to make those tests pass.
 
-## Keychain de macOS
+## macOS Keychain
 
-El helper nativo tiene código fuente en `native/macos/session_store.swift`. Para recompilarlo en macOS usa `native/macos/build.sh` con las herramientas de desarrollo instaladas. La persistencia mediante Keychain es específica de macOS; no afirmes soporte equivalente en otros sistemas sin implementarlo y probarlo.
+The native helper has source code at `native/macos/session_store.swift`. To recompile it on macOS use `native/macos/build.sh` with the development tools installed. Keychain persistence is specific to macOS; don't claim equivalent support on other systems without implementing and testing it.
 
-## Qué comprobar según el cambio
+## What to check according to the change
 
-| Cambio | Evidencia relevante |
+| Change | Relevant evidence |
 | --- | --- |
-| Reglas/progresión | Tests de lógica y migración; paridad del backend si afecta al online |
-| UI/layout | Tests de componentes + capturas reales en varios tamaños |
-| Sprites/heridas | Anclajes, volumen, tono, transparencia y daño visible entre poses |
-| Auth/API | Tests de identidad, propietario, revocación y validación |
-| Escritura de resultados | Idempotencia, revisión, concurrencia y rollback |
-| Documentación/licencia | Enlaces, alcance de permisos, referencias de skills y procedencia |
+| Rules/progression | Logic and migration tests; backend parity if it affects online |
+| UI/layout | Component tests + real screenshots in various sizes |
+| Sprites/wounds | Anchors, volume, tone, transparency and visible damage between poses |
+| Auth/API | Identity, owner, revocation and validation tests |
+| Persisting results | Idempotence, revision, concurrency and rollback |
+| Documentation/license | Links, scope of permissions, skills references and provenance |
 
-No ejecutes toda la batería antigua a ciegas: selecciona pruebas acordes al cambio y reporta fallos previos sin ocultarlos ni modificar el balance para acomodar un test.
+Select tests that cover the change. Report pre-existing failures; do not hide them or alter game balance merely to satisfy an old test.

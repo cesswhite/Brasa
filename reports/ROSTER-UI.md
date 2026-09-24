@@ -1,27 +1,27 @@
-# Compañeros · Figura, atributos y progreso
+# Companions · Figure, attributes and progress
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Retratos pequeños y escala fija diferente entre tarjetas. | Tarjetas más altas, retratos ajustados al espacio mediante el componente compartido y una cámara común a toda la colección. Se conserva el volumen relativo de cada cuerpo. |
-| Vista principal de 300 px, 260 en teléfono y 144 en pantalla corta. | Reserva de 400 / 320 / 200 px, respectivamente. El encuadre no recorta ni estira al personaje. |
-| Marca, subtítulo, consejos de teclado y explicación de persistencia repetidos. | Cabecera “Tus compañeros”, acciones estables y menos texto periférico. |
-| Nivel en tarjetas, experiencia sólo en ficha. | Cada tarjeta conserva su nivel y muestra su propia barra de XP; la ficha muestra XP exacta y puntos para entrenar cuando existen. |
-| Biografía, especie y fortalezas por delante de las estadísticas. | Nombre, nivel, especialidad y progreso primero; nueve atributos ordenados en una cuadrícula de valores actuales. |
-| Ganancias futuras mezcladas con todos los valores. | “Ver crecimiento” expone las ganancias del próximo nivel; se puede volver a ocultar. Al nivel máximo se informa ese estado. |
-| Habilidades y descripción siempre desplegadas. | “Habilidades y perfil” permite consultar fortalezas, debilidades, habilidad, Golpe Firma y biografía sin saturar la vista inicial. |
-| Personalizar ocupaba una franja amplia. | Acción secundaria compacta al pie, separada de “Usar a…”. Ambas permanecen accesibles durante el desplazamiento. |
+| Small portraits and different fixed scale between cards. | Taller cards, portraits adjusted to the space through the shared component and a camera common to the entire collection. The relative volume of each body is conserved. |
+| Main view of 300 px, 260 on phone and 144 on short screen. | Reservation of 400 / 320 / 200 px, respectively. The frame does not cut or stretch the character. |
+| Repeated branding, subtitle, keyboard tips and persistence explanation. | “Your colleagues” header, stable actions and less peripheral text. |
+| Level in cards, experience only in token. | Each card retains its level and displays its own XP bar; The tab shows exact XP and training points when they exist. |
+| Biography, species and strengths ahead of statistics. | Name, level, specialty and progress first; nine attributes arranged in a grid of current values. |
+| Future earnings mixed with all securities. | “See growth” exposes next-level gains; can be hidden again. At the maximum level that status is reported. |
+| Skills and description always displayed. | “Skills and profile” allows you to consult strengths, weaknesses, ability, Signature and biography without cluttering the initial view. |
+| Customizing occupied a wide range. | Compact secondary action at the foot, separate from “Use to…”. Both remain accessible during movement. |
 
-## Alcance y datos
+## Scope and data
 
-La pantalla conserva sus callbacks de selección, creación, nombre, personalización y cierre. Los datos de la Liga se leen del perfil de cada compañero; no se agregan victorias, XP ni campañas. La apariencia y el nombre personalizados permanecen independientes del estilo de combate. Los apartados de crecimiento y perfil conservan el foco de teclado al actualizarse.
+The screen retains its selection, creation, name, customization, and close callbacks. League data is read from each teammate's profile; no victories, XP or campaigns are added. Custom appearance and name remain independent of combat style. The growth and profile sections retain keyboard focus when updated.
 
-La cámara de las tarjetas usa el menor espacio disponible de la cuadrícula. Esto evita que el redondeo de anchos a píxeles dé una escala diferente a los personajes de otra columna. El componente de vista previa mantiene su comportamiento predeterminado en las otras pantallas; sólo la colección fija ese límite común.
+The card chamber uses the least available space on the grid. This prevents rounding widths to pixels from giving a different scale to characters in another column. The preview component maintains its default behavior on the other screens; only the collection sets that common limit.
 
-## Verificación
+## Verification
 
-- Pase nativo: **406 comprobaciones, 0 fallos**; siete tamaños, 35 capturas, encuadres de los 15 cuerpos base, escala común, XP por tarjeta, nueve atributos, foco de desplegables y perfiles inmutables.
-- Selección y responsive: **375 comprobaciones, 0 fallos**. Nombre, primera selección, scroll, acciones y acceso real a Golpe Firma.
-- Sistema visual: **365 comprobaciones, 0 fallos**. Apariencia alternativa y paleta conservadas, cierre, navegación y foco contenido.
-- Integración de identidad: **86 comprobaciones, 0 fallos**. Perfiles desechables, selección y personalización sin alterar estadísticas.
+- Native pass: **406 checks, 0 failures**; seven sizes, 35 screenshots, frames of the 15 base bodies, common scale, XP per card, nine attributes, drop-down focus and immutable profiles.
+- Selection and responsive: **375 checks, 0 failures**. Name, first selection, scroll, actions and real access to Signature Strike.
+- Visual system: **365 checks, 0 faults**. Preserved alternate appearance and palette, closure, navigation and contained focus.
+- Identity integration: **86 checks, 0 failures**. Disposable profiles, selection and customization without altering statistics.
 
-[Capturas nativas](roster-ui/index.html). Los perfiles de la galería son fixtures en memoria con niveles y XP preparados para comparar el progreso; no representan partidas personales. No hay cambios de reglas, guardados de usuario, backend ni publicación.
+[Report index](README.md). Gallery profiles are in-memory fixtures with levels and XP ready to compare progress; They do not represent personal items. There are no rule changes, user saves, backend or publishing.

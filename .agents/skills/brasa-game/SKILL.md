@@ -1,14 +1,14 @@
 ---
 name: brasa-game
-description: "Modificar combate, Historia, progresión o identidad del juego Brasa. Usar cuando una tarea afecte reglas o guardados, conservando paridad online cuando corresponda."
+description: "Modify Brasa combat, Story Mode, progression, or identity while preserving save contracts and online parity when relevant."
 ---
 
-# Cambiar lógica de Brasa
+# Change Brasa game logic
 
-La raíz del repositorio está en `../../..` desde esta carpeta. Lee `AGENTS.md` y `docs/LLM-GUIDE.md`; resuelve las rutas siguientes contra esa raíz.
+The repository root is `../../..` from this folder. Read `AGENTS.md` and `docs/LLM-GUIDE.md`; resolve the paths below against that root.
 
-Localiza el contrato en scripts/combat_engine.gd, combat_rules.gd, progression.gd o story_progression.gd antes de editar main.gd. Conserva IDs de personajes y esquemas de guardado; prueba migraciones con fixtures, sin reescribir partidas reales.
+Locate the contract in scripts/combat_engine.gd, combat_rules.gd, progression.gd, or story_progression.gd before editing main.gd. Preserve character IDs and save schemas; test migrations with fixtures without rewriting real saves.
 
-Si una regla afecta al online, lee backend/battle-engine/README.md, revisa el port y el catálogo exportado. Mantén orden de consumo RNG y precisión numérica; un cambio visual no justifica cambiar balance. No aceptes resultados del cliente como autoridad.
+If a rule affects online play, read backend/battle-engine/README.md and inspect the port and exported catalog. Preserve RNG consumption order and numerical precision. A visual change does not justify rebalancing, and client-submitted results are not authoritative.
 
-Ejecuta las pruebas del área según docs/DEVELOPMENT.md y reporta resultados concretos. Las suites históricas no son evidencia de esta revisión. No despliegues ni uses staging por una tarea local.
+Run relevant checks from docs/DEVELOPMENT.md and report actual results. Historical suites do not validate the current revision. Do not deploy or use staging for a local task.

@@ -1,25 +1,25 @@
-# Historia · Movimientos
+# Story Mode · Movements
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Técnicas y talentos mezclados en una lista extensa. | Dos secciones, Técnicas y Talentos, con recursos y acciones diferenciados. |
-| Capítulo, marca, XP e introducciones compitiendo con las decisiones. | Movimientos, personaje y nivel; instrucciones breves para la sección activa. |
-| Párrafos técnicos siempre visibles. | Ventaja resumida y riesgo de cada técnica; cifras exactas y ayuda en “?”. |
-| Elecciones de talento poco claras. | Recursos disponibles, talentos activos de un máximo de tres y coste de elegir. |
-| Botones de ancho completo. | Acciones compactas con objetivos táctiles de 48 px y pie persistente. |
-| Detalles y acciones sin superficies que los agrupen. | Tarjetas del material compartido, tres columnas en escritorio, dos intermedias y una en teléfono. |
-| Poco contexto después de una elección. | Confirmación de técnica mejorada o talento activo, foco y desplazamiento hacia el control utilizado. |
-| Estados de disponibilidad difíciles de distinguir. | Bloqueada, Al máximo, Sin fichas, Elegido, Sin elecciones y Cupo completo. |
-| Redistribución y adquisición de recursos poco explicadas. | Ayuda para cambiar talentos desde Mejoras y requisitos reales de fichas/elecciones. |
+| Techniques and talents mixed in an extensive list. | Two sections, Techniques and Talents, with differentiated resources and actions. |
+| Chapter, branding, XP and introductions competing decisions. | Movements, character and level; brief instructions for the active section. |
+| Technical paragraphs always visible. | Summary advantage and risk of each technique; exact figures and help in “?”. |
+| Unclear talent choices. | Available resources, active talents of a maximum of three and cost to choose. |
+| Full width buttons. | Compact actions with 48 px touch lenses and persistent foot. |
+| Details and actions without surfaces that group them. | Shared material cards, three columns on the desk, two in between and one on the phone. |
+| Little context after an election. | Confirmation of improved technique or active talent, focus and movement towards the control used. |
+| Availability states difficult to distinguish. | Blocked, Maxed out, No tokens, Chosen, No elections and Full quota. |
+| Redistribution and acquisition of resources poorly explained. | Help changing talents from Upgrades and actual token/pick requirements. |
 
-Las técnicas siguen siendo seleccionadas automáticamente por el combate. Las fichas mejoran sus grados; las elecciones activan talentos. Las cifras exactas se conservan en la ayuda. Leer detalles o cambiar entre secciones no gasta recursos.
+Techniques are still automatically selected by combat. Tokens improve your grades; Elections activate talents. The exact figures are preserved in the help. Reading details or switching between sections does not waste resources.
 
-Se eliminan los objetos decorativos en esta vista y se reutilizan fondo, tarjetas, tipografía, materiales y foco compartidos. En ventanas bajas el contenido se desplaza; el pie sigue accesible.
+Decorative objects in this view are removed and shared background, cards, typography, materials, and focus are reused. In low windows the content moves; the foot remains accessible.
 
-## Verificación
+## Verification
 
-- **1652 comprobaciones nativas, 0 fallos**, siete tamaños y 42 capturas: técnicas, ayuda, talentos, elegido, sin fichas e inicio con técnicas bloqueadas. Uso real de la progresión en memoria, gasto de recursos, límite de grado, elecciones únicas, protección de guardado, foco y geometría.
-- **436 comprobaciones de StoryPanel, 0 fallos**: navegación y estados de Historia.
-- **337 comprobaciones de integración, 0 fallos**: señales conectadas a la progresión, persistencia y redistribución.
+- **1652 native checks, 0 failures**, seven sizes and 42 captures: techniques, help, talents, chosen, no tokens and start with locked techniques. Actual use of memory progression, resource expenditure, grade cap, unique choices, save protection, focus and geometry.
+- **436 StoryPanel checks, 0 failures**: Story navigation and states.
+- **337 integration checks, 0 failures**: signals connected to progression, persistence and redistribution.
 
-Datos de prueba en memoria y archivos de integración desechables. Sin cambios de balance, partidas personales o backend. [Galería nativa](moves-ui/index.html).
+In-memory test data and disposable integration files. No balance changes, personal items or backend. [Report index](README.md).

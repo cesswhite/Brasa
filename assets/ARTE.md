@@ -1,18 +1,18 @@
-# Arte de Brasa
+# Art by Brasa
 
-Los personajes también utilizan ilustraciones generadas: tres hojas transparentes de ocho poses cada una. Consulta [sprites/PROMPTS.md](sprites/PROMPTS.md) para ver los archivos y prompts completos.
+The characters also use generated illustrations: three transparent sheets of eight poses each. See [sprites/PROMPTS.md](sprites/PROMPTS.md) for complete files and prompts.
 
-## Patio de los Faroles — versión ilustrada
+## Courtyard of Lanterns — illustrated version
 
-- Archivo: `arena-faroles-v2.png`.
-- Imagen original creada para este proyecto el 20 de septiembre de 2026.
-- Generación: herramienta de imágenes integrada de ChatGPT (`image_gen`), sin API externa ni CLI.
-- La herramienta no expone un selector o identificador verificable de modelo. Por tanto, no se atribuye esta imagen al nombre «ChatGPT Image 2.5».
-- Resolución original: 2172 × 724 píxeles. Godot la adapta a la arena de 1264 × 414; no se ha recortado ni sobrescrito la ilustración original.
-- Los combatientes, efectos de impacto, motas y halos de luz se dibujan por separado en tiempo real. Una capa oscura suave mantiene la legibilidad del HUD.
-- La versión procedural original sigue incluida como respaldo cuando falta la textura.
+- File: `arena-faroles-v2.png`.
+- Original image created for this project on September 20 2026.
+- Build: ChatGPT built-in imaging tool (`image_gen`), no external API or CLI.
+- The tool does not expose a verifiable model selector or identifier. Therefore, this image is not attributed to the name “ChatGPT Image 2.5”.
+- Original resolution: 2172 × 724 pixels. Godot adapts it to the arena of 1264 × 414; the original illustration has not been cropped or overwritten.
+- Fighters, impact effects, specks and light halos are drawn separately in real time. A soft dark layer maintains the readability of the HUD.
+- The original procedural version is still included as a backup when the texture is missing.
 
-## Prompt utilizado
+## Prompt used
 
 ```text
 Use case: stylized-concept.

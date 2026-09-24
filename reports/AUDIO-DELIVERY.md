@@ -1,54 +1,54 @@
-# Brasa · revisión de realismo del audio
+# Brasa audio realism review
 
-21 de septiembre de 2026. Esta revisión sustituye la V1 después del feedback del usuario: los sonidos se percibían como frecuencias y metal arrastrado. El alcance producido sigue siendo **Ascua + Patio de Faroles y los sonidos físicos compartidos**.
+21 September 2026. This revision replaces V1 after user feedback: sounds were perceived as frequencies and dragged metal. The range produced remains **Ascua + Patio de Faroles and the physical sounds shared**.
 
-## Cambio integrado
+## Integrated shifting
 
-- Golpes ligeros/pesados y guardia con dirección de cuerpo, cuero y tela. El crítico deja el bronce y usa un contacto físico breve.
-- Movimiento de mangas, pisada y frenado sobre tierra; una sola fricción por desplazamiento. La Firma usa una toma de fuego distinta de las liberaciones ordinarias y acompaña el impacto corporal.
-- Ambiente de patio nocturno: viento, hojas, grillos y fuego. Se conserva la pieza musical anterior a menor volumen.
-- Todos los efectos seleccionados conservan velocidad y tono originales. Se retira `atempo`; los golpes/movimientos tampoco varían el pitch en reproducción. El importador antiguo ahora dirige al procesador natural de candidatos.
-- Se descartan tomas débiles y contactos tardíos. La ganancia de preparación tiene techo de +12 dB y ninguna toma integrada depende de alcanzar ese techo para rescatarla.
-- Whooshes −4 dB, pisadas −3 dB, carga/liberación −4 dB, música −5 dB y ambiente +3 dB respecto a V1. Se elimina la repetición de liberación en los ticks de quemadura; aplicación inicial, contacto y KO conservan su feedback.
+- Light/heavy blows and guard with body, leather and cloth direction. The critic puts down the brass and uses brief physical contact.
+- Movement of sleeves, treading and braking on land; a single friction per displacement. The Firm uses a shot different from ordinary releases and accompanies the body impact.
+- Night courtyard atmosphere: wind, leaves, crickets and fire. The previous piece of music is preserved at a lower volume.
+- All selected effects retain their original speed and pitch. `atempo` is retired; The hits/movements also do not change the pitch in playback. The old importer now directs the natural candidate processor.
+- Weak shots and late contacts are ruled out. The setup gain has a ceiling of +12 dB and no integrated jack depends on reaching that ceiling to rescue it.
+- Whooshes −4 dB, footsteps −3 dB, charge/release −4 dB, music −5 dB and ambient +3 dB with respect to V1. Removed re-release on burn ticks; initial application, contact and KO retain their feedback.
 
-**51 archivos activos en 22 familias:** 20 de nuevas generaciones, 30 originales anteriores reprocesados a velocidad natural y una pieza musical preservada byte por byte. Se descargaron **40 tomas nuevas en 10 generaciones** usando ElevenLabs en Google Chrome. Saldo observado: 44.692 → 44.175 créditos (517); sin comprar créditos ni compartir en Explore. Las variantes descartadas y todos los originales permanecen fuera de los bancos jugables, con hashes y procedencia.
+**51 active files in 22 families:** 20 of new generations, 30 previous originals reprocessed at natural speed and a piece of music preserved byte by byte. Downloaded **40 new shots in 10 generations** using ElevenLabs in Google Chrome. Observed balance: 44.692 → 44.175 credits (517); without purchasing credits or sharing in Explore. Discarded variants and all originals remain outside of playable banks, with hashes and provenance.
 
-## Escuchar la revisión
+## Listen to the review
 
-[Combate completo nuevo](audio-combat-demo.mp3) · [Golpes antes](audio-contact-before.mp3) · [Golpes ahora](audio-contact-after.mp3) · [Visor de los 51 archivos y bucles](audio-asset-review.html).
+Complete New Combat (`audio-combat-demo.mp3`; not included) · Beats Before (`audio-contact-before.mp3`; not included) · Beats Now (`audio-contact-after.mp3`; not included) · [Report](AUDIO-ASSET-REVIEW.md).
 
-Los reels antes/ahora contienen cuatro golpes ligeros y cuatro pesados, separados por silencio, al nivel de archivo y sin normalización adicional. La nueva demo se codificó directamente desde el Master de Godot durante una pelea completa; no es una secuencia ensamblada de efectos aislados.
+The then/now reels contain four light and four heavy hits, separated by silence, at the file level and without additional normalization. The new demo was coded directly from Godot's Master during an entire fight; it is not an assembled sequence of isolated effects.
 
-**No se declara aprobación por oído.** Esta sesión permite medir y grabar el juego, pero no escuchar su resultado. El feedback del usuario invalida la V1 como referencia sonora; las mediciones de V2 verifican integridad, envolvente, temporización y niveles, no prueban por sí solas naturalidad, ausencia de contenido accidental ni gusto artístico.
+**Approval by ear is not declared.** This session allows you to measure and record the game, but not listen to its result. User feedback invalidates V1 as a sound reference; V2 measurements verify integrity, envelope, timing and levels, they do not alone prove naturalness, absence of accidental content or artistic taste.
 
-## Validación de esta revisión
+## Validation of this review
 
-| Comprobación | Resultado |
+| Check | Result |
 | --- | ---: |
-| AudioDirector | 352 comprobaciones, 0 fallos |
-| Repeticiones / presentación Online | 44 comprobaciones, 0 fallos |
-| Dos combates nativos, pausa y movimiento reducido | 23 comprobaciones, 0 fallos |
-| Archivos activos medidos | 51/51, 0 errores, 0 avisos del validador |
+| AudioDirector | 352 checks, 0 faults |
+| Replays / Online presentation | 44 checks, 0 faults |
+| Two native fights, pause and reduced movement | 23 checks, 0 faults |
+| Measured active files | 51/51, 0 errors, 0 validator warnings |
 
-Importación de Godot limpia. Ambos combates reproducen los **38 contactos corporales**: ninguno se descarta. Entrega del marcador al reproductor: media 3,2/4,0 ms y máximo 8,3 ms; esto no mide latencia acústica del dispositivo. No faltan recursos, no hay duplicados ni eventos rechazados por llegar tarde. Cada corrida registra 179 reproducciones de 190 solicitudes; las supresiones son nueve pisadas por límite de simultaneidad, una pisada por cooldown y una liberación de quemadura por cooldown. El presupuesto evita acumular movimientos; el contacto se conserva.
+Clean Godot import. Both fights reproduce **38 body contacts**: neither is ruled out. Bookmark delivery to player: average 3,2/4,0 ms and maximum 8,3 ms; this does not measure device acoustic latency. There are no missing resources, no duplicates, and no events rejected for being late. Each run records 179 replays of 190 requests; the deletions are nine stomps per simultaneity limit, one stomp per cooldown, and one burn release per cooldown. The budget avoids accumulating movements; contact is maintained.
 
-Los dos resultados y el hash de eventos coinciden entre sí y con V1 (`01537ffe7d3b05658793cff31320342690874ecb7aa20f3a019529be2599ba4d`). No se cambian reglas, probabilidades, progresión, guardados del usuario ni backend. La fixture usa Mugo20/Ascua12 y fuerza una Firma sólo dentro del arnés, sin alterar el juego normal. Incluye cinco técnicas, Firma, fases 0/1/2, quemadura, crítico, fallo, esquiva, KO y derrota real del jugador.
+The two results and the event hash match each other and V1 (`01537ffe7d3b05658793cff31320342690874ecb7aa20f3a019529be2599ba4d`). No rules, probabilities, progression, user saves or backend are changed. The fixture uses Mugo20/Ascua12 and forces a Signature only within the harness, without disturbing normal play. Includes five techniques, Signature, 0/1/2 phases, burn, critical, miss, dodge, KO and actual defeat of the player.
 
-| Captura | Duración WAV | LUFS-I | True peak (dBTP) |
+| Capture | WAV Duration | LUFS-I | True peak (dBTP) |
 | --- | ---: | ---: | ---: |
 | normal_pause | 47.371 s | -26.5 | -6.4 |
 | reduced_motion | 46.475 s | -26.5 | -6.9 |
 
-Las mediciones corresponden al Master de Godot, con General 85%, Música 70% y Efectos 85% en la fixture. No se detecta clipping en la mezcla. Algunas fuentes generadas tienen muestras a escala completa, documentadas en su selección; este hecho aislado no aprueba ni invalida el timbre. Los sonidos de fase y los stings retenidos siguen sujetos a revisión auditiva.
+The measurements correspond to the Godot Master, with General 85%, Music 70% and Effects 85% in the fixture. No clipping detected in the mix. Some generated fonts have full-scale samples, documented in their selection; This isolated fact does not approve or invalidate the bell. Retained phase sounds and stings are still subject to auditory review.
 
-## Fuentes, respaldo y reproducción
+## Sources, backup and playback
 
-- [Procedencia activa](../assets/audio/SOURCE-MANIFEST.json), [sesión V2](../../../work/audio/revision-realism/generation-session.json), [selección V2](../../../work/audio/revision-realism/selections-v2.json).
-- [Diagnóstico del procesamiento V1](../../../work/audio/audit/forensic-findings.md) y [comparación independiente de golpes](../../../work/audio/audit/impact-v2-independent.md).
-- [Validación nativa](../../../work/audio/revision-realism/playtest/final/validation.json), [mezcla y hashes](../../../work/audio/revision-realism/playtest/final/mix-provenance.json), [entrega de eventos](../../../work/audio/revision-realism/playtest/final/delivery-validation.json).
-- [Plan de promoción y archivos](../../../work/audio/revision-realism/promotion-plan.json). Respaldo completo: `work/audio/revision-realism/promotion-backups/20260921T171226464319Z-72651ee780f0/`. La entrega V1 se conserva en `revision-realism/before/reports/`.
-- [Biblia vigente](AUDIO-BIBLE.md) y [catálogo de reproducción](../data/audio_events.json).
+- [Active origin](../assets/audio/SOURCE-MANIFEST.json), V2 session (`work/audio/revision-realism/generation-session.json`; not included), V2 selection (`work/audio/revision-realism/selections-v2.json`; not included).
+- V1 Processing Diagnosis (`work/audio/audit/forensic-findings.md`; not included) and Independent Shock Comparison (`work/audio/audit/impact-v2-independent.md`; not included).
+- Native validation (`work/audio/revision-realism/playtest/final/validation.json`; not included), mix and hashes (`work/audio/revision-realism/playtest/final/mix-provenance.json`; not included), event delivery (`work/audio/revision-realism/playtest/final/delivery-validation.json`; not included).
+- Promotion plan and files (`work/audio/revision-realism/promotion-plan.json`; not included). Full backup: `work/audio/revision-realism/promotion-backups/20260921T171226464319Z-72651ee780f0/`. The V1 release is preserved in `revision-realism/before/reports/`.
+- [Current Bible](AUDIO-BIBLE.md) and [reproduction catalog](../data/audio_events.json).
 
-Para actualizar la evidencia: `python3 work/audio/measure_mix.py --playtest-dir work/audio/revision-realism/playtest/final` y `python3 work/audio/validate_assets.py --playtest-dir work/audio/revision-realism/playtest/final`. Para otra captura nativa, usar siempre un directorio de salida nuevo.
+To update evidence: `python3 work/audio/measure_mix.py --playtest-dir work/audio/revision-realism/playtest/final` and `python3 work/audio/validate_assets.py --playtest-dir work/audio/revision-realism/playtest/final`. For other native capture, always use a new output directory.
 
-El banco propio de poderes/reacciones de los demás personajes, Tormenta y los motivos de otras secciones siguen en el backlog. Esta revisión corrige el paquete existente; no presenta ese backlog como producido.
+The other characters' own bank of powers/reactions, Storm and the motives of other sections are still in the backlog. This hotfix fixes the existing package; does not present that backlog as produced.

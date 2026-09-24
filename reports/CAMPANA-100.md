@@ -1,67 +1,67 @@
-# Brasa · Campaña de 100 encuentros y técnicas
+# Brasa · 100 campaign encounters and techniques
 
-Validación local del 20 de septiembre de 2026, Godot 4.7.2 para macOS.
+Local validation of September 20 2026, Godot 4.7.2 for macOS.
 
-## Entrega
+## Delivery
 
-La Historia crece hasta **100 encuentros en 11 capítulos**. Los primeros 16 conservan sus identidades y orden, incluido Nima en el encuentro 2. La liga mantiene su guardado y progresión propios. Hay nueve compañeros y versiones especiales de Ascua y Véspera; cada uno cuenta con cinco técnicas definidas en datos, además de su habilidad y Golpe Firma originales.
+The Story grows to **100 encounters in 11 chapters**. The first 16 retain their identities and order, including Nima in the 2 encounter. The league maintains its own save and progression. There are nine companions and special versions of Ascua and Véspera; each has five techniques defined in data, in addition to their original skill and Signature Strike.
 
-El personaje empieza con dos técnicas y desbloquea las demás en niveles de personaje 5, 12 y 20. Las técnicas tienen preparación, desplazamiento, impacto y recuperación separados: las cargas retroceden antes de avanzar, los saltos describen distintas trayectorias y las posturas defensivas permiten respuestas probabilísticas. El motor aplica el daño al contacto y usa los límites y fórmulas comunes de combate. La IA considera vida, estados, enfriamientos, velocidad y acciones anteriores.
+The character starts with two techniques and unlocks the others at character levels 5, 12, and 20. The techniques have separate preparation, movement, impact and recovery: loads retreat before advancing, jumps describe different trajectories and defensive postures allow probabilistic responses. The engine applies damage on contact and uses common combat limits and formulas. The AI ​​considers health, statuses, cooldowns, speed, and previous actions.
 
-Diez hitos de Historia conceden fichas para mejorar las cinco técnicas hasta dos grados. Los encuentros 10, 30 y 50 ofrecen una elección de talento entre seis opciones vinculadas al personaje. Los puntos de atributos son tres por nivel hasta el 20 y dos después; la migración conserva los puntos ganados en partidas anteriores.
+Ten Story Mode milestones grant tokens to improve the five techniques up to two grades. Encounters 10, 30, and 50 offer a talent choice from six character-bound options. Attribute points are three per level up to 20 and two afterward; The migration preserves the points earned in previous games.
 
-El mapa muestra avance global, próximo jefe, recompensas y rivales conocidos. Los encuentros normales pueden elegir rivales de un conjunto estable durante cada campaña; los jefes conservan su identidad. Los encuentros 50 y 100 tienen versiones especiales de Ascua y Véspera con fases anunciadas. La pantalla previa presenta estilos, fortalezas, debilidades, movimientos y habilidades; las pistas tras perder usan los datos de esa pelea.
+The map shows global advancement, next boss, rewards and known rivals. Normal matches can choose opponents from a stable pool during each campaign; The bosses retain their identity. Encounters 50 and 100 have special versions of Ascua and Véspera with announced phases. The preview screen presents styles, strengths, weaknesses, moves and skills; The clues after losing use the data from that fight.
 
-Los encuentros superados se pueden repetir como práctica sin XP ni premios adicionales. Las derrotas de la ruta dan menos XP que las victorias y reducen su recompensa al repetirse. **Redistribuir mejoras** devuelve únicamente recursos ya gastados, permite cambiar de estrategia y exige confirmar dentro del juego. Conserva nivel, XP y avance; los legados guardan la configuración con la que se venció cada capítulo.
+Successful encounters can be replayed as practice without additional XP or rewards. Route defeats give less XP than victories and reduce your reward when repeated. **Redistribute upgrades** returns only resources already spent, allows you to change strategies, and requires confirmation within the game. Maintains level, XP and advancement; The legacies save the configuration with which each chapter was defeated.
 
-La opción de movimiento reducido elimina desplazamientos, destellos y partículas manteniendo poses y tiempos. Ritmo ×2 sincroniza simulación y animación; los paneles pausan ambos.
+The reduced motion option eliminates shifting, flares, and particles while maintaining poses and timing. Rhythm ×2 synchronize simulation and animation; the panels pause both.
 
-## Compatibilidad comprobada
+## Checked Compatibility
 
-- Historia v3 lee v1/v2 sin escribir al abrir ni avanzar capítulos. Antes de la primera escritura guarda una copia permanente del formato anterior, además de respaldo habitual y reemplazo atómico.
-- Una copia reciente de la partida real v2 pasó **11 comprobaciones** de migración, recursos, archivos originales, respaldo y recarga. La partida real se mantuvo fuera de las pruebas.
-- Se reabrió la aplicación final y se comprobó visualmente Sira en nivel 15, con 205 XP, tres puntos y diez encuentros superados. La pantalla reconoció cuatro técnicas, dos fichas y una elección de talento disponibles por los hitos anteriores.
-- Los hashes SHA-256 de los archivos reales de Liga e Historia fueron idénticos antes y después de reabrir y navegar por la actualización.
-- El Golpe Firma conserva una tirada del 1% por luchador al comienzo de cada combate y un máximo de una ejecución. Las nuevas técnicas no repiten esa tirada.
+- Story v3 reads v1/v2 without writing when opening or advancing chapters. Before the first write it saves a permanent copy of the previous format, plus regular backup and atomic replacement.
+- A recent copy of the v2 live game passed **11 checks** for migration, resources, original files, backup and reload. The actual game was kept out of testing.
+- The final application was reopened and Sira was visually verified at level 15, with 205 XP, three points and ten matches passed. The screen recognized four techniques, two tokens, and one talent choice available from the previous milestones.
+- The SHA-256 hashes of the actual League and Story Mode files were identical before and after reopening and browsing the update.
+- The Signature Strike retains one 1% roll per fighter at the beginning of each match and a maximum of one execution. The new techniques do not repeat that roll.
 
-## Pruebas automáticas
+## Automatic tests
 
-**21 suites, 18,498 comprobaciones y cero fallos**, más las 11 comprobaciones de la copia real. El detalle y los hashes de los scripts están en [campaign100_validation.json](campaign100_validation.json).
+**21 suites, 18,498 checks and zero failures**, plus 11 checks from the actual copy. The details and hashes of the scripts are in [campaign100_validation.json](campaign100_validation.json).
 
-Se verificaron reglas, técnicas y talentos, probabilidades y estados, sincronización al contacto, contraataques que coinciden con otra preparación, pausa y velocidad ×2, animación reducida, migraciones y datos malformados, persistencia, liga, plantel, sprites, recompensas únicas, rendición, progresión y legado de los capítulos, campaña completa, repetición y redistribución.
+Verified rules, techniques and talents, probabilities and statuses, synchronization on contact, counterattacks that match other preparation, pause and speed ×2, reduced animation, migrations and malformed data, persistence, league, roster, sprites, unique rewards, surrender, chapter progression and legacy, complete campaign, replay and redistribution.
 
-Las pruebas de interfaz cubren siete tamaños y estados de reposo, combate y resultado. Se generaron **39 capturas nativas**: 35 del panel de Historia, tres de la escena principal y una hoja de movimientos. Las capturas y la prueba del flujo 1–100 usan partidas independientes y victorias controladas para comprobar transiciones; el balance se mide por separado con combates naturales.
+The interface tests cover seven sizes and states of rest, combat and result. **39 native screenshots** were generated: 35 of the Story panel, three of the main scene and a movement sheet. Captures and testing of the 1–100 flow use independent matches and controlled wins to test transitions; balance is measured separately with natural combats.
 
 ## Balance
 
-Se ejecutaron **17,610 combates** en la validación final:
+**17,610 fights** were executed in the final validation:
 
-| Ejercicio | Combates | Resultado |
+| Exercise | Fighting | Result |
 | --- | ---: | --- |
-| Nueve personajes × cuatro builds fijas × tres repeticiones | 13,135 | 107 de 108 campañas completadas dentro del límite de 24 intentos por encuentro. |
-| Nueve personajes × cuatro builds con redistribución tras atascarse | 4,314 | 36 de 36 campañas completadas. |
-| Reproducción exacta del único bloqueo y recuperación con redistribución | 161 | Duna ofensiva llegó al mismo bloqueo del encuentro 100; la build equilibrada terminó ocho combates después, conservando XP y ruta. |
+| Nine characters × four fixed builds × three repetitions | 13,135 | 107 of 108 campaigns completed within the limit of 24 attempts per encounter. |
+| Nine characters × four builds with redeployment after getting stuck | 4,314 | 36 of 36 campaigns completed. |
+| Exact reproduction of the only lock and recovery with redistribution | 161 | Duna offensive reached the same block as the 100 encounter; the balanced build finished eight fights later, conserving XP and path. |
 
-Los nueve personajes y las cuatro estrategias tuvieron campañas completadas. El jefe 50 se venció al primer intento en aproximadamente el 54% de la muestra fija y el jefe final en el 39%. Los combates duraron alrededor de 31 segundos de simulación en promedio. Estos resultados acotan el comportamiento de las semillas y estrategias medidas; no garantizan que toda distribución de puntos venza en un número fijo de intentos.
+All nine characters and four strategies had completed campaigns. The boss 50 was beaten on the first try at around 54% of the fixed sample and the final boss at 39%. The fights lasted around 31 simulation seconds on average. These results limit the behavior of the seeds and strategies measured; They do not guarantee that every point distribution will expire in a fixed number of attempts.
 
-El [informe de balance](CAMPAIGN100_BALANCE.md) documenta configuración, curvas, personajes, movimientos y límites de la medición. Los datos reproducibles están en [campañas fijas](campaign100_balance.json), [campañas con adaptación](campaign100_adaptation.json) y [recuperación del bloqueo](campaign100_recovery.json). El simulador usa el motor y las recompensas reales, con semillas reproducibles y guardado desactivado.
+The [balance report](CAMPAIGN100_BALANCE.md) documents settings, curves, characters, movements, and measurement limits. Playable data is in [fixed campaigns](campaign100_balance.json), [adaptive campaigns](campaign100_adaptation.json), and [lockdown recovery](campaign100_recovery.json). The simulator uses the real engine and rewards, with reproducible seeds and saving disabled.
 
-## Capturas
+## Captures
 
-### Ruta final
+### final route
 
-![Encuentros 91–100 de Historia](campana100-ruta.png)
+![91–100 Story Mode Encounters](campana100-ruta.png)
 
-### Combate contra el jefe final
+### Fight against the final boss
 
-![Sira contra la versión final de Véspera](campana100-batalla.png)
+![Sira vs. final version of Véspera](campana100-batalla.png)
 
-### Preparación, desplazamiento, contacto y recuperación
+### Preparation, movement, contact and recovery
 
-![Poses de cargas, desplazamientos, saltos, golpes fuertes, guardia y ataques rápidos](campana100-movimientos.png)
+![Poses of charges, movements, jumps, strong blows, guard and fast attacks](campana100-movimientos.png)
 
-También se incluyen [Legado del capítulo final](campana100-legado.png) y [talentos en pantalla vertical](campana100-movil.png).
+Also included are [Final Chapter Legacy](campana100-legado.png) and [portrait talents](campana100-movil.png).
 
-## Reproducir
+## Play
 
-El [README](../README.md) contiene las instrucciones para abrir el proyecto y ejecutar las pruebas. Los catálogos `move_catalog.gd`, `campaign_config.gd` y `story_catalog.gd` centralizan técnicas, curvas, hitos, variantes y capítulos. Las simulaciones y pruebas viven en `tests/`; modificar esos datos permite ampliar la campaña conservando el motor común.
+The [README](../README.md) contains instructions for opening the project and running the tests. The catalogs `move_catalog.gd`, `campaign_config.gd` and `story_catalog.gd` centralize techniques, curves, milestones, variants and chapters. Simulations and tests live in `tests/`; Modifying this data allows you to expand the campaign while preserving the common engine.

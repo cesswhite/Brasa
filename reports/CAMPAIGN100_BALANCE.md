@@ -1,19 +1,19 @@
-# Balance de la campaña de 100 encuentros
+# Balance of the campaign of 100 encounters
 
-Configuración final: 100 encuentros, once capítulos, once jefes y nueve personajes jugables. Los primeros dieciséis IDs y sus estadísticas se conservan, incluido Nima de nivel 2. El nivel del personaje sigue limitado a 50; el número de encuentro de Historia llega a 100.
+Final setup: 100 encounters, eleven chapters, eleven bosses, and nine playable characters. The first sixteen IDs and their statistics are preserved, including level Nima 2. Character level is still limited to 50; the Story Mode encounter number reaches 100.
 
-La validación final comprende **17,610 combates**: 13,135 en 108 campañas con prioridades fijas, 4,314 en 36 campañas adaptativas y 161 para reproducir y recuperar exactamente el único bloqueo de la muestra fija. Todos usan CombatEngine y StoryProgression reales, con guardado desactivado y semillas registradas. No se abrieron ni modificaron partidas reales.
+The final validation comprises **17,610 combats**: 13,135 in 108 campaigns with fixed priorities, 4,314 in 36 adaptive campaigns and 161 to reproduce and recover exactly the single lock of the fixed sample. They all use real CombatEngine and StoryProgression, with saving disabled and seeds registered. No real games were opened or modified.
 
-| Política | Campañas terminadas | Combates medios | Observación |
+| Politics | Ended campaigns | Medium combats | Observation |
 |---|---:|---:|---|
-| Cuatro prioridades fijas | 107/108 (99.1%) | 121.62 | Sin redistribuir durante la campaña. |
-| Adaptación explícita | 36/36 | 119.83 | Prioridades iniciales menos completas; redistribución tras 3 o 6 derrotas en un encuentro. |
+| Four fixed priorities | 107/108 (99.1%) | 121.62 | Not redistributed during the campaign. |
+| Explicit adaptation | 36/36 | 119.83 | Less complete initial priorities; redistribution after 3 or 6 defeats in a match. |
 
-Las muestras adaptativas **no** se presentan como victorias de una distribución fija. El JSON registra cada cambio de prioridad, su encuentro y la revisión de la configuración. Es una prueba de la posibilidad de aprender y cambiar de estrategia; no un experimento causal entre dos políticas idénticas.
+Adaptive samples are **not** presented as wins from a fixed distribution. The JSON records each priority change, its encounter, and the configuration revision. It is proof of the possibility of learning and changing strategies; not a causal experiment between two identical policies.
 
-## Resultados por personaje y distribución
+## Results by character and distribution
 
-| Personaje | Completadas | Media de combates | Rango de combates | Jefe 100 al primer intento |
+| Character | Completed | Combat average | Fighting range | Boss 100 on first try |
 |---|---:|---:|---:|---:|
 | Nima | 12/12 | 123.92 | 111–146 | 25.0% |
 | Luma | 12/12 | 119.83 | 111–133 | 25.0% |
@@ -25,59 +25,59 @@ Las muestras adaptativas **no** se presentan como victorias de una distribución
 | Neris | 12/12 | 113.00 | 105–119 | 33.3% |
 | Taro | 12/12 | 141.67 | 123–194 | 41.7% |
 
-| Prioridad | Completadas | Media de combates | Derrotas medias | Puntos sin gastar al final |
+| Priority | Completed | Combat average | Average defeats | Unspent points at the end |
 |---|---:|---:|---:|---:|
-| Equilibrada | 27/27 | 130.93 | 30.93 | 0.00 |
-| Ofensiva | 26/27 | 123.15 | 23.19 | 6.44 |
-| Aguante | 27/27 | 115.48 | 15.48 | 1.67 |
-| Ritmo | 27/27 | 116.93 | 16.93 | 0.00 |
+| Balanced | 27/27 | 130.93 | 30.93 | 0.00 |
+| Offensive | 26/27 | 123.15 | 23.19 | 6.44 |
+| Stamina | 27/27 | 115.48 | 15.48 | 1.67 |
+| Rhythm | 27/27 | 116.93 | 16.93 | 0.00 |
 
-Aguante funciona bien en esta muestra, pero no es la mejor prioridad para todos los personajes. Taro necesita más intentos que el promedio y se conserva esa diferencia visible en los resultados. Las cuatro prioridades asignan puntos legalmente y mantienen decisiones distintas; ofensiva y ritmo incluyen una inversión limitada en Defensa. Seis talentos propios y tres elecciones permiten diferencias incluso al nivel máximo.
+Stamina works well in this sample, but it's not the best priority for all characters. Taro takes more attempts than average and that visible difference is preserved in the results. The four priorities legally assign points and maintain distinct decisions; Offense and pace include limited investment in Defense. Six own talents and three choices allow for differences even at the maximum level.
 
-## Jefes y puntos de dificultad
+## Bosses and difficulty points
 
-| Encuentro | Jefe | Primer intento ganado | Intentos medios al llegar | Nivel medio del personaje |
+| meeting | Boss | First try won | Medium attempts upon arrival | Average character level |
 |---|---|---:|---:|---:|
 | 8 | Ascua | 54.6% | 2.05 | 10.58 |
 | 16 | Véspera | 66.7% | 1.53 | 20.13 |
-| 20 | Taro · Juramento de jade | 63.0% | 1.57 | 23.62 |
-| 30 | Iria · Jardín de ecos | 39.8% | 3.04 | 30.42 |
-| 40 | Luma · Las nueve sendas | 77.8% | 1.31 | 36.18 |
-| 50 | Ascua · Corazón del solsticio | 53.7% | 2.21 | 41.69 |
-| 60 | Duna · Fortaleza del regreso | 100.0% | 1.00 | 46.69 |
-| 70 | Kiro · Rugido del relámpago | 75.9% | 1.36 | 50.00 |
-| 80 | Neris · Círculo de los maestros | 54.6% | 2.43 | 50.00 |
-| 90 | Sira · Filo de las estrellas | 57.4% | 1.78 | 50.00 |
-| 100 | Véspera · El último eclipse | 38.9% | 2.91 | 50.00 |
+| 20 | Taro Jade Oath | 63.0% | 1.57 | 23.62 |
+| 30 | Iria · Garden of echoes | 39.8% | 3.04 | 30.42 |
+| 40 | Luma · The nine paths | 77.8% | 1.31 | 36.18 |
+| 50 | Ascua · Heart of the Solstice | 53.7% | 2.21 | 41.69 |
+| 60 | Duna · Strength of Return | 100.0% | 1.00 | 46.69 |
+| 70 | Kiro Lightning Roar | 75.9% | 1.36 | 50.00 |
+| 80 | Neris · Circle of the teachers | 54.6% | 2.43 | 50.00 |
+| 90 | Sira · Edge of the stars | 57.4% | 1.78 | 50.00 |
+| 100 | Véspera · The last eclipse | 38.9% | 2.91 | 50.00 |
 
-Los jefes 50 y 100 usan fases anunciadas y las mismas reglas de acierto, daño, resistencia, estados y Firma que el resto. Ascua del solsticio tiene 1.070 PV, 76 de Ataque, 120 de Defensa y 23 de Velocidad; su 5% de Evasión y las preparaciones de sus golpes dejan oportunidades. Véspera final tiene 1.020 PV, 85 de Ataque, 100 de Defensa y 31 de Velocidad; su Resistencia es 28%, no se cura y sus golpes fuertes se preparan de forma visible.
+Bosses 50 and 100 use announced phases and the same hit, damage, resistance, status, and Signature rules as the rest. Solstice's Ascua has 1.070 HP, 76 Attack, 120 Defense, and 23 Speed; his 5% Evasion and preparations for his blows leave opportunities. Final Véspera has 1.020 HP, 85 Attack, 100 Defense and 31 Speed; his Resistance is 28%, he does not heal, and his hard hits are visibly prepared.
 
-La dificultad no sube en cada encuentro individual. El jefe 60 se mantiene como un respiro —100% al primer intento en esta muestra—, mientras que los jefes 30, 50 y 100 son obstáculos claros. No se ajustaron todos los duelos a 50/50.
+The difficulty does not increase with each individual encounter. Boss 60 remains a respite—100% on the first attempt in this sample—while bosses 30, 50, and 100 are clear obstacles. Not all duels were adjusted to 50/50.
 
-| Encuentros con mayor dificultad observada | Primer intento ganado | Intentos medios |
+| Encounters with greater difficulty observed | First try won | Medium Attempts |
 |---|---:|---:|
-| 100 · Jefe · Véspera · El último eclipse | 38.9% | 2.91 |
-| 30 · Jefe · Iria · Jardín de ecos | 39.8% | 3.04 |
+| 100 · Boss · Véspera · The last eclipse | 38.9% | 2.91 |
+| 30 · Boss · Iria · Garden of Echoes | 39.8% | 3.04 |
 | 3 · La muralla de ocre | 44.4% | 2.31 |
-| 4 · Élite · El filo de cristal | 45.4% | 2.04 |
-| 50 · Jefe · Ascua · Corazón del solsticio | 53.7% | 2.21 |
-| 8 · Jefe · El último farol | 54.6% | 2.05 |
-| 80 · Jefe · Neris · Círculo de los maestros | 54.6% | 2.43 |
-| 9 · El desfiladero rojo | 54.6% | 1.67 |
-| 11 · Las raíces de hierro | 56.5% | 1.81 |
-| 90 · Jefe · Sira · Filo de las estrellas | 57.4% | 1.78 |
+| 4 · Elite · El filo de cristal | 45.4% | 2.04 |
+| 50 · Boss · Ascua · Solstice Heart | 53.7% | 2.21 |
+| 8 · Boss · The last bluff | 54.6% | 2.05 |
+| 80 · Boss · Neris · Teachers' Circle | 54.6% | 2.43 |
+| 9 · The red gorge | 54.6% | 1.67 |
+| 11 · The roots of iron | 56.5% | 1.81 |
+| 90 · Boss · Sira · Star Edge | 57.4% | 1.78 |
 
-## Recuperación del caso detenido
+## Recovery of the stopped case
 
-La distribución ofensiva de Duna, semilla de campaña `15311002`, se detuvo en el encuentro 100 tras alcanzar el límite de auditoría de 24 intentos. Se reprodujeron sus 153 combates y la distribución final exactamente. La API `respec_build()` devolvió exclusivamente recursos ya obtenidos y conservó nivel, XP, ruta y legados. La prioridad equilibrada completó el combate pendiente en 8 intentos adicionales.
+Duna’s offensive build, campaign seed `15311002`, stopped at encounter 100 after reaching the audit limit of 24 attempts. Its 153 battles and final allocation were reproduced exactly. The `respec_build()` API refunded only previously earned resources and preserved level, XP, route and legacies. The balanced priority completed the remaining battle in 8 additional attempts.
 
-Este caso se conserva como límite de la política fija; no se oculta ni se cuenta como una victoria sin redistribución. Todas las identidades y las 36 combinaciones de personaje/prioridad lograron completar al menos una de sus tres réplicas fijas.
+This case is preserved as a fixed policy limit; it is not hidden or counted as a victory without redistribution. All identities and 36 character/priority combinations managed to complete at least one of their three fixed replicas.
 
-## Técnicas, ritmo y eventos raros
+## Techniques, rhythm and rare events
 
-Duración media de combate: **31.12 segundos**. 174 combates llegaron al límite de 60 segundos (1.3%); el desempate sigue usando la proporción de vida restante. Incidencia de Firma por combatiente y partida: **0.967%**, compatible con la tirada única de 1%. La corrección final del combo de Nima cuenta intentos ofensivos y no posturas de guardia.
+Average combat duration: **31.12 seconds**. 174 matches reached the limit of 60 seconds (1.3%); the tiebreaker still uses the remaining life ratio. Signature incidence per combatant and game: **0.967%**, compatible with the single run of 1%. Nima's final combo fix counts offensive attempts and not guard stances.
 
-| Identidad | Técnicas disponibles y usadas | Acciones con técnicas |
+| Identity | Techniques available and used | Actions with techniques |
 |---|---:|---:|
 | Ascua | 5/5 | 10,469 |
 | Duna | 5/5 | 77,701 |
@@ -89,9 +89,9 @@ Duración media de combate: **31.12 segundos**. 174 combates llegaron al límite
 | Nima | 5/5 | 64,856 |
 | Sira | 5/5 | 50,067 |
 | Taro | 5/5 | 73,569 |
-| Vespera | 5/5 | 13,197 |
+| Wait | 5/5 | 13,197 |
 
-| Tipo | Usos observados |
+| Type | Observed uses |
 |---|---:|
 | charge | 41,147 |
 | counter | 23,592 |
@@ -102,27 +102,27 @@ Duración media de combate: **31.12 segundos**. 174 combates llegaron al límite
 | quick | 318,014 |
 | technique | 35,473 |
 
-Ninguna de las 55 técnicas normales de las once identidades quedó sin uso. La estadística incluye jugadores y rivales; el número de usos o las victorias asociadas a una técnica no prueban por sí solos su superioridad. La IA considera vida, estados, enfriamientos, repetición y preferencias declaradas. Las Firmas permanecen fuera de su selección normal.
+None of the normal technical 55 of the eleven identities went unused. The statistics include players and rivals; The number of uses or victories associated with a technique do not alone prove its superiority. The AI ​​considers health, statuses, cooldowns, repetition, and stated preferences. The Firms remain outside their normal selection.
 
-## Progresión y configuración
+## Progression and configuration
 
-- Puntos de atributos: 3 al alcanzar los niveles de personaje 2–20; 2 al alcanzar 21–50. Las cuatro élites de los primeros dieciséis encuentros conservan sus 2 puntos. Las nuevas élites conceden XP, sin inflar el presupuesto de atributos.
-- Fichas de técnica en los encuentros 5, 10, 20, 30, 40, 50, 60, 70, 80 y 90. Cinco técnicas, dos mejoras máximas por técnica y coste de una ficha.
-- Talentos en 10, 30 y 50: elegir tres de seis opciones propias del personaje. La redistribución permite cambiar decisiones posteriormente.
-- Desbloqueos de técnicas en niveles de personaje 1, 1, 5, 12 y 20. Los jefes muestran sus cinco técnicas conocidas.
-- Las derrotas conservan XP positiva y decreciente por repetición; rendirse conserva su reducción y espera breve. La práctica de encuentros vencidos concede cero XP y ningún hito adicional.
-- Los rivales nuevos usan presupuestos de inversión, límites por estilo y distribuciones diferentes. Algunas casillas tienen un conjunto pequeño de identidades estables por personaje y semilla de campaña; los jefes nunca se sortean.
-- Los guardados v1/v2 se normalizan en memoria, sin avanzar capítulos ni escribir durante una carga normal. La primera escritura conserva la copia permanente de su versión. Se respetan los puntos ganados con la curva anterior mediante un crédito limitado a su progreso histórico posible.
-- Los legados guardan el perfil al vencer al jefe, incluido el encuentro 100. Entrenar o redistribuir después no modifica ese resultado. Las revisiones de configuración y su historial permiten volver a invertir sin borrar los legados.
+- Attribute Points: 3 upon reaching character levels 2–20; 2 upon reaching 21–50. The four elites from the first sixteen matches retain their 2 points. The new elites grant XP, without inflating the attribute budget.
+- Technique sheets in the matches 5, 10, 20, 30, 40, 50, 60, 70, 80 and 90. Five techniques, two maximum improvements per technique and cost of one token.
+- Talents in 10, 30 and 50: choose three of six character-specific options. Redistribution allows decisions to be changed later.
+- Technique unlocks at character levels 1, 1, 5, 12, and 20. The bosses show their five known techniques.
+- Defeats retain positive and decreasing XP per repetition; surrendering preserves your reduction and short wait. Practicing overdue encounters grants zero XP and no additional milestones.
+- New rivals use different investment budgets, style limits and distributions. Some boxes have a small set of stable identities per character and campaign seed; bosses are never drawn.
+- v1/v2 saves are normalized in memory, without advancing chapters or writing during a normal load. The first writing preserves the permanent copy of its version. Points earned with the previous curve are respected through credit limited to their possible historical progress.
+- Legacies save profile upon beating the boss, including the 100 encounter. Training or redeploying afterwards does not change that result. Configuration reviews and your history allow you to reinvest without deleting legacies.
 
-Las campañas fijas terminadas alcanzaron nivel de personaje 50. Esto deja las mejoras de técnicas de los encuentros 80 y 90 y la adaptación del personaje como decisiones posteriores al crecimiento básico, sin aumentar el límite de nivel ni introducir bonificaciones ocultas.
+Completed fixed campaigns reached character level 50. This leaves technique upgrades from encounters 80 and 90 and character adaptation as post-base growth decisions, without increasing the level cap or introducing hidden bonuses.
 
-## Archivos y reproducción
+## Files and playback
 
-- [Muestra fija: 108 campañas](campaign100_balance.json)
-- [Muestra adaptativa: 36 campañas](campaign100_adaptation.json)
-- [Reproducción y recuperación del bloqueo](campaign100_recovery.json)
-- [Catálogo exportado: encuentros, técnicas y talentos](campaign100_catalog.json)
+- [Fixed sample: 108 campaigns](campaign100_balance.json)
+- [Adaptive sample: 36 campaigns](campaign100_adaptation.json)
+- [Lock Playback and Recovery](campaign100_recovery.json)
+- [Exported catalog: encounters, techniques and talents](campaign100_catalog.json)
 
 ```sh
 BRASA_GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
@@ -131,6 +131,6 @@ BRASA_GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
 "$BRASA_GODOT" --headless --path outputs/Brasa --script res://tests/simulate_campaign_recovery.gd
 ```
 
-Los JSON contienen semillas, distribuciones finales, elecciones, intentos por encuentro, métricas de técnicas y hashes de las fuentes de combate. El límite de 24 intentos por encuentro es una protección de la auditoría, no una garantía probabilística. Tres réplicas por personaje/prioridad y una adaptativa son muestras finitas; no prueban todas las inversiones o secuencias posibles.
+The JSONs contain seeds, final distributions, picks, attempts per encounter, technique metrics, and combat source hashes. The 24 attempts per encounter limit is an audit protection, not a probabilistic guarantee. Three replicas per character/priority and one adaptive are finite samples; they do not test all possible inversions or sequences.
 
-Validación de dominio final: `test_campaign100.gd` 2.117 comprobaciones; `test_story_progression.gd` 217; `test_story_chapters.gd` 299; `test_story_campaign.gd` 1.796. Todas sin fallos. Las suites de motor, interfaz y regresión general se registran por separado en el informe principal.
+Final domain validation: `test_campaign100.gd` 2.117 checks; `test_story_progression.gd` 217; `test_story_chapters.gd` 299; `test_story_campaign.gd` 1.796. All without errors. The engine, interface, and general regression suites are recorded separately in the main report.

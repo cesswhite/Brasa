@@ -1,20 +1,20 @@
-# Personajes con sprites propios · Validación
+# Characters with their own sprites · Validation
 
-La actualización aporta siete diseños originales y 56 poses: Sira (mantis), Iria (rana botánica), Duna (armadillo), Kiro (jabalí), Neris (garza), Taro (tejón) y Ascua (guardián volcánico). El plantel tiene nueve apariencias distintas y el jefe tiene una exclusiva.
+The update brings seven original designs and 56 poses: Sira (mantis), Iria (botanical frog), Duna (armadillo), Kiro (boar), Neris (heron), Taro (badger) and Ascua (volcanic guardian). The squad has nine different appearances and the boss has an exclusive one.
 
-![Diez identidades renderizadas por Godot](personajes-v3.png)
+![Ten identities rendered by Godot](personajes-v3.png)
 
-## Integración
+## Integration
 
-`character_catalog.gd` y `story_catalog.gd` declaran el atlas propio mediante `visual.atlas`. `fighter_view.gd` utiliza ese archivo en todas las vistas; conserva orientación, escala común entre poses, animación, destellos y compatibilidad con la API anterior. Las regiones de los siete JSON describen cada silueta completa sin retocar los PNG generados.
+`character_catalog.gd` and `story_catalog.gd` declare their own atlas using `visual.atlas`. `fighter_view.gd` uses that file in all views; retains orientation, common scaling between poses, animation, flares, and compatibility with the previous API. The seven JSON regions describe each complete silhouette without retouching the generated PNGs.
 
-La comparación con las copias anteriores confirma que los catálogos no cambiaron fuera de sus campos visuales. No se modificaron estadísticas, habilidades, identificadores, motor, recompensas ni el formato de las partidas.
+Comparison with previous copies confirms that the catalogs did not change outside their visual fields. No changes were made to statistics, skills, ids, engine, rewards, or match format.
 
-## Pruebas de esta actualización
+## Testing this update
 
-Godot 4.7.2: **4555 comprobaciones, cero fallos**.
+Godot 4.7.2: **4555 checks, zero failures**.
 
-| Prueba | Comprobaciones |
+| Test | Checks |
 | --- | ---: |
 | `test_distinct_sprites.gd` | 3165 |
 | `test_sprites.gd` | 258 |
@@ -24,20 +24,20 @@ Godot 4.7.2: **4555 comprobaciones, cero fallos**.
 | `test_story_integration.gd` | 85 |
 | `test_story_progression.gd` | 217 |
 
-El test de sprites distintos comprueba los diez archivos y su contenido único, la carga real del atlas esperado, las 80 poses totales, transparencia, anclaje al suelo, escala, orientación, animación y compatibilidad con atlas ausentes. Las regiones nuevas conservan cada píxel visible (alfa ≥ 31/255) exactamente una vez. Se verifican siete tamaños: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 y 844×390.
+The different sprite test checks the ten files and their unique content, the actual load of the expected atlas, the total 80 poses, transparency, anchoring to the ground, scale, orientation, animation and compatibility with missing atlases. New regions retain each visible pixel (alpha ≥ 31/255) exactly once. Seven sizes are verified: 1360×880, 1224×792, 1920×1080, 768×1024, 390×844, 430×932 and 844×390.
 
-Se revisaron capturas nativas de las diez identidades, ocho poses por personaje y el ajuste en los siete tamaños. Son 18 capturas en `work/characters/native-qa`, respecto a la raíz del espacio de trabajo. Las colas, alas, puños y poses altas se muestran completos y sin fragmentos de otras celdas.
+Native captures of all ten identities, eight poses per character, and fit across all seven sizes were reviewed. They are 18 snapshots in `work/characters/native-qa`, with respect to the root of the workspace. Tails, wings, fists and tall poses are shown complete and without fragments of other cells.
 
-La aplicación se reinició desde `Jugar.command`. Se verificaron la arena con un rival nuevo, Sira en Legado y los seis diseños nuevos en Compañeros de Historia. Los dos archivos reales de guardado conservaron exactamente sus SHA-256 durante el reinicio y la navegación final. Las pruebas automatizadas utilizaron fixtures independientes.
+The application was restarted from `Jugar.command`. Arena checked with a new rival, Sira in Legacy and the six new skins in Story Companions. The two actual save files exactly retained their SHA-256 during reboot and final navigation. The automated tests used independent fixtures.
 
-## Arte y reproducción
+## Art and reproduction
 
-[PNG, metadatos, prompts exactos y método de generación](../assets/sprites/PERSONAJES-V3.md).
+[PNG, metadata, exact prompts and generation method](../assets/sprites/PERSONAJES-V3.md).
 
-Desde la carpeta del proyecto:
+From the project folder:
 
 ```sh
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script res://tests/test_distinct_sprites.gd
 ```
 
-Para las capturas se usa el mismo test con un renderizador gráfico y `-- --capture-dir=/ruta/de/salida`. No requiere cargar una partida.
+For the captures, the same test is used with a graphic renderer and `-- --capture-dir=/ruta/de/salida`. Does not require loading a game.

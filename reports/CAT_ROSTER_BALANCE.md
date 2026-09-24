@@ -1,90 +1,90 @@
-# Ónix y Bruma · datos y balance
+# Ónix and Bruma · data and balance
 
-Se añaden `onix` (Ónix, índice 13) y `bruma` (Bruma, índice 14) al final del plantel: **15 compañeros jugables**. Ambos son gatos domésticos con atlas propio. Las definiciones, técnicas y talentos de los 13 anteriores conservan exactamente su texto; tampoco cambian los primeros 16 encuentros, los 100 pools de Historia, las fórmulas ni los esquemas de progresión de Liga e Historia. El sidecar de identidad sí migra de v1 a v2 para incorporar los nuevos cuerpos, con [validación separada](CAT_IDENTITY_MIGRATION.md).
+`onix` (Ónix, index 13) and `bruma` (Bruma, index 14) are added to the end of the roster: **15 playable companions**. Both are domestic cats with their own atlas. The definitions, techniques and talents of the previous 13 retain their exact text; Neither do the first 16 encounters, the 100 Story Mode pools, the formulas or the League and Story Mode progression schemes change. The identity sidecar does migrate from v1 to v2 to incorporate the new bodies, with [separate validation](CAT_IDENTITY_MIGRATION.md).
 
-## Identidad y valores
+## Identity and values
 
-Ónix es negro, de ojos amarillos: rápido y evasivo, con poca vida y armadura. Bruma es gris, de ojos verdosos: preciso, sereno y capaz de protegerse y responder. No son recolores de otro compañero.
+Ónix is black, with yellow eyes: fast and evasive, with little health and armor. Bruma is gray, with greenish eyes: precise, calm and capable of protecting and responding. They are not recolors of another partner.
 
-| Estadística | Ónix inicial | Crecimiento | Bruma inicial | Crecimiento |
+| Statistics | initial Ónix | Growth | initial Bruma | Growth |
 |---|---:|---:|---:|---:|
-| Vida | 212 | 6.8 | 255 | 8 |
-| Ataque | 19 | 0.64 | 20 | 0.62 |
-| Defensa | 11 | 0.42 | 23 | 0.75 |
-| Velocidad | 12 | 0.14 | 5.8 | 0.09 |
-| Precisión | 94% | 0.08 pp | 101% | 0.1 pp |
-| Evasión | 20% | 0.07 pp | 10% | 0.05 pp |
-| Crítico | 13% | 0.07 pp | 11% | 0.07 pp |
-| Daño crítico | 1.5× | 0.0025 | 1.55× | 0.0025 |
-| Resistencia | 6% | 0.1 pp | 18% | 0.15 pp |
+| Life | 212 | 6.8 | 255 | 8 |
+| Attack | 19 | 0.64 | 20 | 0.62 |
+| Defense | 11 | 0.42 | 23 | 0.75 |
+| Speed | 12 | 0.14 | 5.8 | 0.09 |
+| Accuracy | 94% | 0.08 pp | 101% | 0.1 pp |
+| Evasion | 20% | 0.07 pp | 10% | 0.05 pp |
+| Critical | 13% | 0.07 pp | 11% | 0.07 pp |
+| critical damage | 1.5× | 0.0025 | 1.55× | 0.0025 |
+| Resistance | 6% | 0.1 pp | 18% | 0.15 pp |
 
-Crecimiento por nivel hasta el 20; después se aplica el 45% de ese incremento hasta el límite 50. Entrenamiento inicial de Liga (Vida/Fuerza/Agilidad/Velocidad): Ónix 5/6/8/9; Bruma 7/6/5/6. Historia mantiene sus ocho inversiones independientes y los presupuestos existentes.
+Growth by level up to 20; then the 45% of that increment is applied up to the limit 50. Initial League Training (Life/Strength/Agility/Speed): Ónix 5/6/8/9; Bruma 7/6/5/6. Story Mode maintains its eight independent investments and existing budgets.
 
-- **Ónix — Tres pasos de sombra:** Cada tercer intento de ataque hace ×1.22 de daño si conecta.
-- **Bruma — Respuesta del silencio:** 20% de responder a un golpe recibido con un contraataque de ×0.42 de daño.
+- **Ónix — Three Steps of Shadow:** Every third attempted attack does ×1.22 damage if it connects.
+- **Bruma — Silence Response:** 20% respond to a hit received with a counterattack of ×0.42 damage.
 
-Firmas: **Medianoche amarilla** aplica precisión −16 puntos por 3 acciones; **Quietud de niebla** aplica ataque −20% por 3 acciones. Ambas usan ×1.6, acierto garantizado y las reglas existentes de resistencia. El armado sigue siendo una tirada del **1% por combatiente y combate**, como máximo una ejecución.
+Signatures: **Midnight Yellow** applies precision −16 points for 3 actions; **Still Fog** applies attack −20% by 3 actions. Both use ×1.6, guaranteed hit, and existing resistance rules. Arming is still one **1% roll per combatant per combat**, at most one execution.
 
-## Técnicas y talentos
+## Techniques and talents
 
-Cada gato tiene cinco técnicas, desbloqueadas a niveles **1/1/5/12/20**, y seis talentos entre los que se eligen como máximo tres. Mejoras, fichas y redistribución siguen las reglas actuales.
+Each cat has five techniques, unlocked at levels **1/1/5/12/20**, and six talents from which a maximum of three can be chosen. Upgrades, tokens and redistribution follow the current rules.
 
-| Compañero | Técnica | Tipo | Nivel | Multiplicador base |
+| Companion | Technique | Type | Level | Base multiplier |
 |---|---|---|---:|---:|
-| Ónix | Roce de sombra | `quick` | 1 | 0.81× |
-| Ónix | Carrera del alero | `dash` | 1 | 0.9× |
-| Ónix | Salto del tejadillo | `jump` | 5 | 1.08× |
-| Ónix | Parpadeo amarillo | `technique` | 12 | 0.81× |
-| Ónix | Caída de azotea | `heavy` | 20 | 1.24× |
-| Bruma | Tacto certero | `quick` | 1 | 0.88× |
-| Bruma | Escucha paciente | `counter` | 1 | 0× |
-| Bruma | Peso de la calma | `heavy` | 5 | 1.25× |
-| Bruma | Guardia de ovillo | `guard` | 12 | 0× |
-| Bruma | Paso de niebla | `technique` | 20 | 0.87× |
+| Ónix | shadow touch | `quick` | 1 | 0.81× |
+| Ónix | Forward career | `dash` | 1 | 0.9× |
+| Ónix | Roof jump | `jump` | 5 | 1.08× |
+| Ónix | Yellow flashing | `technique` | 12 | 0.81× |
+| Ónix | roof fall | `heavy` | 20 | 1.24× |
+| Bruma | Accurate touch | `quick` | 1 | 0.88× |
+| Bruma | Listen patiently | `counter` | 1 | 0× |
+| Bruma | Calm Weight | `heavy` | 5 | 1.25× |
+| Bruma | clew guard | `guard` | 12 | 0× |
+| Bruma | fog pass | `technique` | 20 | 0.87× |
 
-El cero de guardias y respuestas significa que la postura no golpea inmediatamente. Escucha paciente reduce 22% el daño y ofrece 42% de réplica ×0.55 durante una acción; Guardia de ovillo reduce 32% y cura 2.5% de vida. Parpadeo amarillo tiene 55% de aplicar −8 puntos de precisión por dos acciones; Paso de niebla, 50% de aplicar −12% de ataque por dos acciones. Estos estados son resistibles.
+Zero guards and responses means the stance doesn't hit immediately. Patient Listen reduces 22% damage and provides 42% reply ×0.55 during an action; Tangle Guard reduces 32% and heals 2.5% health. Flashing yellow has 55% to apply −8 precision points for two actions; Fog step, 50% to apply −12% attack by two actions. These states are resistible.
 
-| Compañero | Talento | Efecto |
+| Companion | Talent | Effect |
 |---|---|---|
-| Ónix | Pulso del tejado | Sus ataques rápidos ganan +6% al multiplicador y 2 puntos de prioridad. |
-| Ónix | Paso ligero | Sus carreras y saltos ganan 3 puntos de prioridad y recuperan 0.025 s antes. |
-| Ónix | Ojos en la noche | Sus ataques ganan 2.5 puntos de precisión. |
-| Ónix | Salto silencioso | Sus saltos ganan 3.5 puntos de crítico y 1.5 puntos de evasión aérea. |
-| Ónix | Temple de ónix | Reduce un 10% del daño adicional de los críticos recibidos. |
-| Ónix | Última sombra | Bajo el 35% de vida gana 2.5 puntos de evasión, dentro del límite. |
-| Bruma | Réplica serena | Sus posturas de respuesta ganan 5 puntos de probabilidad de réplica. |
-| Bruma | Pata firme | Sus golpes pesados ganan +6% al multiplicador y 2 puntos de precisión. |
-| Bruma | Observación verde | Sus ataques ganan 2.5 puntos de precisión. |
-| Bruma | Reposo atento | Su guardia cura 1 punto porcentual adicional de vida y recupera 0.025 s antes. |
-| Bruma | Temple de niebla | Reduce un 10% del daño adicional de los críticos recibidos. |
-| Bruma | Eco apacible | El debilitamiento de su técnica dura una acción adicional, dentro del límite. |
+| Ónix | Roof pulse | His fast attacks gain +6% multiplier and 2 priority points. |
+| Ónix | light step | Your runs and jumps earn 3 priority points and recover 0.025 s sooner. |
+| Ónix | eyes in the night | Your attacks gain 2.5 precision points. |
+| Ónix | silent jump | His jumps gain 3.5 critical points and 1.5 aerial evasion points. |
+| Ónix | onyx temple | Reduces one 10% bonus damage from critical hits taken. |
+| Ónix | last shadow | Under 35% health you gain 2.5 evasion points, within the limit. |
+| Bruma | Serene retort | Their response stances earn 5 replica chance points. |
+| Bruma | Firm leg | Your heavy hits earn +6% multiplier and 2 accuracy points. |
+| Bruma | Green observation | Your attacks gain 2.5 precision points. |
+| Bruma | Mindful rest | His guard heals 1 additional percentage point of health and recovers 0.025 s sooner. |
+| Bruma | Fog Temple | Reduces one 10% bonus damage from critical hits taken. |
+| Bruma | Gentle echo | The weakening of his technique lasts for one additional action, within the limit. |
 
-## Verificación
+## Verification
 
-**721 comprobaciones de dominio, 0 fallos.** Se cargaron copias portables de guardados anteriores con los 13 perfiles, se seleccionaron y entrenaron ambos gatos y se recargaron los 15 perfiles. Los anteriores permanecieron iguales; cargar los archivos no reescribió sus bytes. También se verificaron límites, IDs, propiedad de técnicas, copias profundas, uso de los cinco movimientos, determinismo frente a particiones de delta y Firma única.
+**721 domain checks, 0 failures.** Portable copies of previous saves were loaded with the 13 profiles, both cats were selected and trained, and the 15 profiles were reloaded. The previous ones remained the same; loading the files did not rewrite their bytes. Limits, IDs, ownership of techniques, deep copies, use of the five moves, determinism versus delta partitions and Single Signature were also verified.
 
-La simulación final contiene **6,768 combates**, con semillas registradas: 4800 duelos de Liga (20 semillas por enfrentamiento y por lado, contra los 15 compañeros en cuatro niveles) y 1968 combates de campaña.
+The final simulation contains **6,768 combats**, with registered seeds: 4800 League duels (20 seeds per confrontation and per side, against 15 teammates in four levels) and 1968 campaign combats.
 
-| Compañero | Liga nivel 1 | Nivel 10 | Nivel 25 | Nivel 50 |
+| Companion | League level 1 | Level 10 | Level 25 | Level 50 |
 |---|---:|---:|---:|---:|
 | Ónix | 50.3% | 51.7% | 48.7% | 44.8% |
 | Bruma | 50.7% | 58.5% | 58.7% | 58.7% |
 
-Liga compara perfiles del mismo nivel sin entrenamiento ni talentos. La menor tasa de Ónix en niveles altos mantiene su fragilidad; Bruma favorece los intercambios largos. No se pretende que todos los cruces tengan 50% de victorias.
+League compares profiles of the same level without training or talents. The lower rate of Ónix at high levels maintains its fragility; Bruma favors long trades. It is not intended that all crosses will have 50% wins.
 
-**16/16 campañas completaron los 100 encuentros**, dos semillas por gato y por prioridad de inversión. Se gastó el presupuesto legal completo, sin redistribución ni resultados forzados. Todas terminaron en nivel de héroe 50, entre 113 y 152 combates.
+**16/16 campaigns completed the 100 encounters**, two seeds per cat and per investment priority. The entire legal budget was spent, without redistribution or forced results. They all ended at hero level 50, between 113 and 152 combats.
 
-| Prioridad fija | Ónix: peleas medias | Bruma: peleas medias |
+| Fixed priority | Ónix: medium fights | Bruma: medium fights |
 |---|---:|---:|
 | balanced | 130.0 | 139.5 |
 | aggressive | 123.0 | 121.0 |
 | durable | 116.5 | 121.0 |
-| tempo | 115.0 | 118.0 |
+| time | 115.0 | 118.0 |
 
-El mayor atasco fue de 12 intentos en el jefe 80 con Bruma equilibrado; el jefe 100 requirió entre 1 y 9. Es una muestra acotada y no garantiza la misma dificultad para cualquier distribución. Se registró uso natural de **las diez técnicas nuevas**, sin técnicas sin utilizar.
+The biggest jam was 12 attempts on header 80 with Bruma balanced; header 100 required between 1 and 9. It is a limited sample and does not guarantee the same difficulty for any distribution. Natural use of **the ten new techniques** was recorded, with no unused techniques.
 
-Duración media: 29.75 s; 17 desempates por tiempo. Hubo 118 ejecuciones de Firma (0.87% por plaza de combatiente); esta frecuencia observada no cambia la tirada configurada del 1% y una pelea puede terminar antes de ejecutarla.
+Average duration: 29.75 s; 17 time tiebreakers. There were 118 Signature executions (0.87% per combatant position); This observed frequency does not change the configured 1% roll and a fight may end before it is executed.
 
-Fuentes completas: [datos y semillas](cat_roster_balance.json), [validación y hashes](cat_roster_validation.json), [prueba de dominio](../tests/test_cat_roster.gd), [simulador](../tests/simulate_cat_roster.gd). Los hashes del catálogo, motor y progresión siguen iguales al finalizar la simulación.
+Full sources: [data and seeds](cat_roster_balance.json), [validation and hashes](cat_roster_validation.json), [domain proof](../tests/test_cat_roster.gd), [simulator](../tests/simulate_cat_roster.gd). The catalog, engine and progression hashes remain the same at the end of the simulation.
 
-Se usaron únicamente fixtures o perfiles en memoria. No se accedió a partidas reales. Arte, integración visual y exportación del catálogo online pertenecen a verificaciones separadas; este informe no afirma que Cloudflare esté publicado.
+Only fixtures or profiles in memory were used. No real games were accessed. Art, visual integration and export of the online catalog belong to separate verifications; This report does not claim that Cloudflare is published.

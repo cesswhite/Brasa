@@ -1,17 +1,19 @@
-# Edición pública y respaldo privado
+# Public edition and private backup
 
-Decisión del titular el 24 de septiembre de 2026: publicar código bajo MIT, reservar arte/audio y conservar un respaldo privado con el contenido completo.
+Owner's decision on 24 September 2026: publish original code under MIT, reserve artwork/audio rights, and retain a private backup of the complete project.
 
-- Público: `cesswhite/Brasa`, con historial nuevo que no incluye archivos sonoros ni videos.
-- Respaldo privado: `cesswhite/Brasa-private-backup`, con el historial original y el pack de audio.
-- El proyecto local original conserva sus archivos. La edición pública se prepara en un checkout independiente.
+- Public: `cesswhite/Brasa`, with fresh history excluding audio and video files.
+- Private backup: `cesswhite/Brasa-private-backup`, with the original history and audio pack.
+- The original local project retains its files. The public edition is maintained in a separate checkout.
 
-No publiques el respaldo ni mezcles todas sus referencias con `push --mirror` o `push --all`. Para trasladar una mejora, revisa el diff y aplica solo archivos distribuibles en la edición pública.
+Do not publish the backup or transfer all its references with `push --mirror` or `push --all`. To bring an improvement into the public edition, review the diff and transfer only files whose distribution is permitted.
 
-Los archivos de procedencia permanecen como documentación. Algunas referencias en informes históricos apuntan a archivos locales no publicados. Una prueba del pack de audio completo no es reproducible con el checkout público; esto debe indicarse, no ocultarse creando muestras falsas.
+Provenance records remain as documentation. Some historical reports refer to unpublished local artifacts. Tests that depend on the full audio pack cannot be reproduced from the public checkout alone. Report that limitation instead of creating fake samples.
 
-## Revisión de esta publicación
+## Publication checks
 
-Se revisan archivos/historial por patrones de credenciales, exclusión de audio/video, avisos de terceros, enlaces de entrada, skills y arranque sin pack sonoro. Estas comprobaciones no equivalen a una auditoría integral de seguridad ni a validar todos los proveedores/planes de generación.
+Review files and history for credential patterns, audio/video exclusions, third-party notices, entry-point links, skill references, and startup without the audio pack. These checks do not constitute a comprehensive security audit or verify every provider's generation plan.
 
-Conserva [LICENSING.md](../LICENSING.md) como definición de alcance. El aviso MIT de Brasa no reemplaza Apache-2.0/MIT de las partes derivadas ni concede derechos sobre los assets.
+Keep [LICENSING.md](../LICENSING.md) as the licensing scope. Brasa's MIT notice does not replace Apache-2.0/MIT notices for derived components or grant rights to reserved assets.
+
+Documentation, reports, and skill instructions are in English. The game itself is in Spanish. Keep review evidence in Markdown and screenshots; do not restore development-only HTML galleries. The backend's authentication page is application code and remains included.

@@ -1,3 +1,3 @@
-# Assets de Brasa
+# Brasa Assets
 
-Las imágenes, diseños y demás contenido artístico de esta carpeta no están bajo MIT. Se reservan los derechos aplicables. La documentación técnica mantiene el alcance indicado en [LICENSING.md](../LICENSING.md). El audio original no se distribuye en la edición pública.
+The images, designs and other artistic content in this folder are not under MIT. Applicable rights are reserved. The technical documentation maintains the scope indicated in [LICENSING.md](../LICENSING.md). The original audio is not distributed in the public edition.

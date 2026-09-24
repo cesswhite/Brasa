@@ -1,25 +1,25 @@
-# Historia · Compañeros
+# Story Mode · Companions
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Encabezado de capítulo ajeno a la selección y marca redundante. | Compañeros e instrucción breve: cada historia conserva su progreso. |
-| Nombre, biografía y habilidades mezclados. | Ficha con nombre, rol, nivel, avance de campaña y XP. Detalles en “Conocer al compañero”. |
-| Personajes pequeños y selección poco clara. | Vista principal ampliada, colección con cámara común y marca de selección. |
-| Estado de campaña expuesto como datos dispersos. | Sin empezar, capítulo y encuentro actual, capítulo completado o historia completada; una barra de 100 encuentros. |
-| Lista mezclaba rol, nivel y progreso con mucha información. | Tarjetas centradas en nombre, nivel y estado de Historia. El rol está en la ficha y en la ayuda contextual. |
-| Grandes botones inferiores y Personalizar a todo el ancho. | Acciones compactas con 48 px de altura; Empezar historia o Continuar historia según progreso real. |
-| Seleccionar una tarjeta no diferenciaba claramente consulta y uso. | Etiquetas En uso / Vista previa. Confirmar con la acción inferior conserva el flujo existente. |
-| Objetos superpuestos y descripciones permanentes. | Fondo y materiales compartidos; decoraciones omitidas y lectura opcional de fortaleza, debilidad, habilidad y biografía. |
-| Reordenación visual sin atención al teclado o nombres largos. | Foco vuelve a la ficha, tarjetas adaptan su altura y sus retratos comparten escala. |
+| Chapter heading unrelated to the selection and redundant mark. | Companions and brief instruction: each story retains its progress. |
+| Name, biography and skills mixed up. | Card with name, role, level, campaign progress and XP. Details in “Meet the partner”. |
+| Small characters and unclear selection. | Expanded main view, collection with common camera and selection mark. |
+| Campaign state exposed as scattered data. | Unstarted, current chapter and encounter, completed chapter or completed story; a bar of 100 encounters. |
+| List mixed role, level and progress with a lot of information. | Cards focused on name, level and Story Mode status. The role is in the tab and in the contextual help. |
+| Large bottom buttons and Full Width Customize. | Compact actions with 48 px height; Start story or Continue story according to actual progress. |
+| Selecting a card did not clearly differentiate consultation and use. | Tags In use / Preview. Confirming with the bottom action preserves the existing flow. |
+| Overlapping objects and permanent descriptions. | Shared background and materials; decorations omitted and optional reading of strength, weakness, ability and biography. |
+| Visual reordering without attention to the keyboard or long names. | Focus returns to the card, cards adapt their height and their portraits share a scale. |
 
-La vista principal reserva 360 px en escritorio, 280 en teléfono y 180 en ventanas bajas. La colección usa tres columnas en escritorio y dos en ventanas más estrechas. Las diferencias físicas entre cuerpos se conservan mediante el componente de retrato compartido y una cámara común para las tarjetas.
+The main view reserves 360 px on desktop, 280 on phone, and 180 on low windows. The collection uses three columns on the desktop and two on narrower windows. Physical differences between bodies are preserved through the shared portrait component and a common camera for the cards.
 
-Cada perfil muestra su propio progreso de Historia. La vista no cambia el compañero activo hasta que se confirma. Un perfil recién creado sin combates ni avance presenta Empezar historia. Personalizar dirige al compañero que se está consultando.
+Each profile shows its own Story progress. The view does not change the active peer until it is committed. A newly created profile without combat or advancement presents Start Story. Personalize directs the colleague being consulted.
 
-## Verificación
+## Verification
 
-- **5917 comprobaciones nativas, 0 fallos**, en siete tamaños: 43 capturas, seis estados por tamaño y un caso adicional con nombre largo. Perfiles en memoria; selección, identidad, XP, foco, texto, escala común, límite del retrato y pie fijo verificados.
-- **436 comprobaciones de StoryPanel, 0 fallos**: navegación, campañas vacías y acceso al último compañero.
-- **337 comprobaciones de integración de campaña, 0 fallos**: persistencia y progresión existentes.
+- **5917 native checks, 0 failures**, in seven sizes: 43 traps, six states per size and one additional case with long name. In-memory profiles; selection, identity, XP, focus, text, common scale, portrait boundary and fixed footer verified.
+- **436 StoryPanel checks, 0 failures**: navigation, empty campaigns and access to the last companion.
+- **337 campaign integration checks, 0 failures**: existing persistence and progression.
 
-No se modificaron partidas personales, balance ni backend. Se reutiliza el arte existente. [Capturas nativas](story-companions-ui/index.html).
+No personal items, balance or backend were modified. Existing art is reused. [Report index](README.md).

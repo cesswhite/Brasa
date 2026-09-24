@@ -1,27 +1,27 @@
-# Entrenamiento: claridad y ayuda contextual
+# Training: clarity and contextual help
 
-La composición ahora agrupa personaje y entrenamiento en un bloque de anchura limitada, con tarjetas legibles y más separación. Los puntos disponibles destacan junto al nombre; experiencia y coste quedan en segundo plano. Se conservan los valores y las reglas de progreso existentes.
+The layout now groups character and training in a limited width block, with readable cards and more separation. The available points stand out next to the name; experience and cost take a backseat. Existing values ​​and progress rules are preserved.
 
-[Comparación y estados nativos](training-ui/index.html).
+[Report index](README.md).
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Estadísticas extendidas por media pantalla sin agrupación clara. | Composición centrada, columna de hasta 620 px, cuatro tarjetas con fondo translúcido y espacios de 20 px. |
-| Efectos mezclados con frases explicativas permanentes. | Efecto actual y vista previa calculada del siguiente punto; explicación breve solo al pulsar `?`. Una explicación abierta a la vez. |
-| Número de puntos pequeño y alejado. | Puntos destacados, estado sin puntos y texto que explica cómo obtenerlos. Coste indicado una sola vez. |
-| Botones deshabilitados sin ayuda utilizable. | La ayuda permanece activa al agotar puntos; mejorar sigue bloqueado cuando corresponde. |
-| Foco y hover poco conectados con el atributo. | Tarjeta y material del botón responden a hover/foco. El foco de mejora utiliza el color, sin contorno blanco exterior. |
-| Pocas señales tras mejorar. | Valor y vista previa se actualizan; confirmación de mejora y puntos restantes. Aviso explícito si el cambio no pudo guardarse. |
-| Dos columnas estrechas en móvil. | Una columna cuando faltan 560 px; botones y ayuda de 48 px, scroll de teclado y desplazamiento a la explicación al abrirla. |
-| Subtítulo y pie instructivos permanentes. | Título breve, sin instrucciones redundantes. El personaje mantiene las proporciones del sistema compartido. |
+| Statistics spread across half a screen without clear grouping. | Centered composition, column up to 620 px, four cards with translucent background and spaces of 20 px. |
+| Effects mixed with permanent explanatory phrases. | Current effect and calculated preview of next point; short explanation only when pressing `?`. One open explanation at a time. |
+| Small and distant number of points. | Highlights, no-points status, and text explaining how to get them. Cost indicated only once. |
+| Buttons disabled with no help usable. | Help remains active when points are exhausted; improve is still blocked when applicable. |
+| Focus and hover little connected with the attribute. | Card and button material respond to hover/focus. The improvement focus uses color, without an outer white outline. |
+| Few signs after improvement. | Value and preview are updated; confirmation of improvement and remaining points. Explicit warning if the change could not be saved. |
+| Two narrow columns in mobile. | A column when 560 px are missing; 48 px buttons and help, keyboard scroll and scroll to the explanation when opening it. |
+| Permanent instructional subtitle and footer. | Short title, without redundant instructions. The character maintains the proportions of the shared system. |
 
-## Verificación
+## Verification
 
-- Documentos/entrenamiento: **756 comprobaciones, 0 fallos en siete tamaños**. Ayuda desplegable, foco, texto, límites, coste exacto de un punto, persistencia en archivos desechables y conservación de la campaña separada.
-- Navegación real desde el menú: **327 comprobaciones, 0 fallos**.
-- Ocho capturas nativas: con puntos, ayuda, mejora aplicada y sin puntos, a 1360×880 y 390×844. Usan Ónix de prueba; sus números no corresponden a una cuenta real.
-- Los cálculos de vista previa proceden de la misma función de estadísticas del juego. No hay nuevas reglas, recompensas ni cambios de balance.
+- Documents/training: **756 checks, 0 failures in seven sizes**. Dropdown help, focus, text, limits, exact cost of a point, persistence in disposable files and keeping the campaign separate.
+- Actual navigation from menu: **327 checks, 0 faults**.
+- Eight native captures: with points, help, applied enhancement and without points, to 1360×880 and 390×844. They use Ónix for testing; Their numbers do not correspond to a real account.
+- The preview calculations come from the same game statistics function. There are no new rules, rewards or balance changes.
 
-[Log funcional y nativo](../../../work/training-ui/final.log) · [Log de navegación](../../../work/training-ui/navigation.log).
+Functional and native log (`work/training-ui/final.log`; not included) · Navigation log (`work/training-ui/navigation.log`; not included).
 
-La comparación utiliza la captura proporcionada por el usuario. El primer intento automatizado de capturar el estado anterior encontró scripts de daño en transición y no se usa como evidencia. Las capturas finales se obtuvieron sin errores de compilación ni ejecución. No se generó ni modificó arte para esta tarea.
+The comparison uses the capture provided by the user. The first automated attempt to capture the previous state found damage scripts in transition and is not used as evidence. The final screenshots were obtained without compilation or execution errors. No art was generated or modified for this task.

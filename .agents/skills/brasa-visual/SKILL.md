@@ -1,16 +1,16 @@
 ---
 name: brasa-visual
-description: "Modificar o revisar pantallas, componentes, sprites, heridas y escala responsive de Brasa conforme a su sistema visual existente."
+description: "Modify or review Brasa screens, components, sprites, wounds, and responsive character sizing using its established visual system."
 ---
 
-# Mejorar UI y sprites de Brasa
+# Improve Brasa UI and sprites
 
-La raíz del repositorio está en `../../..` desde esta carpeta. Lee `AGENTS.md` y `docs/LLM-GUIDE.md`; resuelve las rutas siguientes contra esa raíz.
+The repository root is `../../..` from this folder. Read `AGENTS.md` and `docs/LLM-GUIDE.md`; resolve the paths below against that root.
 
-Lee reports/VISUAL-STYLE-BIBLE.md y reports/VISUAL-SCREEN-AUDIT.md. Reutiliza GameVisualSystem, sus tokens y componentes; no crees un tema paralelo. Conserva navegación, foco de teclado, pausa y movimiento reducido.
+Read reports/VISUAL-STYLE-BIBLE.md and reports/VISUAL-SCREEN-AUDIT.md. Reuse GameVisualSystem, its tokens, and shared components rather than introducing a parallel theme. Preserve navigation, keyboard focus, pause, and reduced motion.
 
-Mantén personajes grandes pero moderados en escritorio y móvil, preservando volumen relativo, anclaje y proporción. Las heridas deben ser localizadas y perceptibles, sin cambiar la tonalidad, brillo u opacidad global del cuerpo. Mantén transparencia real; no confundas cuadrícula pintada con alfa.
+Keep characters prominent but moderately sized on desktop and mobile while preserving relative volume, anchors, and proportions. Wounds must be localized and perceptible without shifting whole-body hue, brightness, or opacity. Preserve actual transparency; a painted checkerboard is not an alpha channel.
 
-Para assets nuevos conserva identidad y procedencia. No alteres reglas de combate ni propiedad/desbloqueos por una preview. Comprueba estados bloqueado, seleccionado, hover y focus sin bordes recortados.
+For new assets, preserve identity and provenance. Previews must not change combat rules, ownership, or unlocks. Check locked, selected, hover, and focus states without clipped outlines.
 
-Usa pruebas del área y capturas reales en 1360x880 y 390x844, además de ventana corta cuando afecte layout. Headless valida estructura, no apariencia. Consulta LICENSING.md antes de añadir o redistribuir medios.
+Use targeted tests and native captures at 1360x880 and 390x844, plus a short window where layout is affected. Headless tests validate structure, not appearance. Read LICENSING.md before adding or redistributing media. Keep player-facing text in Spanish and reports in English; use Markdown reports rather than HTML galleries.

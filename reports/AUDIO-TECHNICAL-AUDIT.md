@@ -1,94 +1,94 @@
-# Auditoría técnica de audio · Brasa
+# Audio technical audit Brasa
 
-Fecha: 21 de septiembre de 2026. Estado: **fotografía previa a la implementación del audio nuevo**. El servicio posterior se documenta en [AudioDirector · Implementación](../../../work/audio/audit/audio-director-implementation.md); los hechos y hashes de esta auditoría corresponden al código anterior.
+Date: 21 September 2026. Condition: **photograph prior to the implementation of the new audio**. The subsequent service is documented in AudioDirector · Implementation (`work/audio/audit/audio-director-implementation.md`; not included); The facts and hashes from this audit correspond to the previous code.
 
-Brasa tiene nueve tonos procedurales de confirmación y combate, reproducidos por cinco jugadores de audio reutilizables. No contiene archivos de audio, música, ambientes, voces, un catálogo sonoro ni buses propios. La separación entre motor y presentación permite sustituir este sistema sin cambiar daño, aleatoriedad, recompensas ni guardados.
+Brasa has nine procedural confirmation and combat tones, played by five reusable audio players. It does not contain audio files, music, environments, voices, a sound catalog or its own buses. The separation between engine and presentation allows this system to be replaced without changing damage, randomness, rewards or saves.
 
-La primera vertical acordada es **Ascua + arena de los faroles**. Este informe define su integración técnica; la Biblia maestra define dirección artística, selección de sonidos y backlog de producción. No se generó ni reprodujo audio, no se abrió el juego normal, no se consultó red y no se modificó runtime o partidas. Las valoraciones de reemplazo son decisiones frente al nuevo objetivo, no el resultado de una escucha que no se realizó.
+The first agreed vertical is **Ascua + lantern sand**. This report defines its technical integration; the Master Bible defines artistic direction, sound selection and production backlog. No audio was generated or played, the normal game was not opened, the network was not consulted, and no runtime or games were modified. Replacement assessments are decisions against the new objective, not the result of listening that was not performed.
 
-## Alcance y evidencia
+## Scope and evidence
 
-Se leyeron scripts, escenas, configuración, metadatos de presentación y pruebas existentes. El inventario de extensiones de audio y recursos `AudioBusLayout` abarca el proyecto, excluyendo `.godot`, backend, `node_modules` y `.git`. Resultado: **0 archivos de audio y 0 recursos de buses**. Los tonos existen sólo como PCM generado en memoria. El proyecto declara Godot 4.7 y el ejecutable local informa **4.7.2.stable.official.ed1daf0bf**. No se probaron dispositivos móviles ni latencia, sonoridad, consumo de voces o salida física.
+Existing scripts, scenes, settings, presentation metadata and tests were read. The inventory of audio extensions and resources `AudioBusLayout` covers the project, excluding `.godot`, backend, `node_modules`, and `.git`. Result: **0 audio files and 0 bus resources**. Tones exist only as PCM generated in memory. The project declares Godot 4.7 and the local executable reports **4.7.2.stable.official.ed1daf0bf**. No mobile devices, latency, loudness, voice consumption, or physical output were tested.
 
-Los hashes, rutas, líneas, parámetros e inventario estructurado están en [technical.json](../../../work/audio/audit/technical.json). Las referencias `[S01]`–`[S12]` remiten al índice al final. Son una fotografía de las fuentes al auditar, no un compromiso de que nunca cambiarán.
+The hashes, routes, lines, parameters and structured inventory are in technical.json (`work/audio/audit/technical.json`; not included). References `[S01]`–`[S12]` refer to the index at the end. They are a snapshot of the sources when auditing, not a commitment that they will never change.
 
-## Inventario y decisión
+## Inventory and decision
 
-`KEEP` conserva una decisión válida; `REWORK` cambia un mecanismo aprovechable; `REPLACE` sustituye el contenido actual; `MISSING` identifica algo requerido que no existe. No todos los huecos deben producirse antes de escuchar la vertical.
+`KEEP` retains a valid decision; `REWORK` changes an exploitable mechanism; `REPLACE` replaces the current content; `MISSING` identifies something required that does not exist. Not all gaps must occur before hearing the vertical.
 
-| Elemento existente | Hecho comprobado | Decisión |
+| Existing item | Proven fact | Decision |
 |---|---|---|
-| Separación motor/presentación | El motor emite datos; Main reproduce sonidos después. No hay audio en las fórmulas. | **KEEP**. Mantener esta frontera. |
-| Tonos generados | Nueve `AudioStreamWAV`, una variante por ID; oscilador fundamental + segundo armónico, envolvente y barrido. | **REPLACE** como contenido final; pueden quedar como fallback de desarrollo explícito. |
-| Recursos reutilizados | PCM creado en `_ready()`, no en cada golpe; cinco `AudioStreamPlayer` reutilizados. | **KEEP** la reutilización; **REWORK** presupuestos, prioridades y configuración. |
-| Mezcla | Todos los jugadores a −10 dB, sin bus asignado; ruta predeterminada Master. | **REWORK**. No equivale a normalización ni prueba de headroom. |
-| Sonido sí/no | Booleano de Main, no persistido; sólo bloquea sonidos nuevos. | **REWORK**. Ajustes centralizados y mute efectivo. |
-| Eventos de impacto | Hit/critical/signature separados; miss y dodge comparten tono. | **REWORK**. Material, intensidad y absorción deben tener significado. |
-| Marcadores visuales | Pasos, salto, deslizamiento, carga y recuperación tienen tiempos resueltos. | **KEEP** como fuente temporal; añadir consumidor de audio independiente. |
-| `sound_event` | Metadato presente con `hit`, `heavy` o `dash`; no se consume. | **REWORK**. Catálogo permitido y compatibilidad explícita. |
-| Historia practicada | Repetir encuentro usa Main y los tonos actuales, sin conceder recompensas de progreso. | **KEEP** el flujo; distinguirlo de reproducción de un registro. |
-| Repetición histórica y Online | Ambos presentan eventos con `BattleReplayPanel`, sin audio. | **MISSING** la paridad de presentación sonora. |
-| Protección headless | `_play_sound` sale sin reproducir. `_make_sounds` sí construye PCM antes. | **KEEP** el sink silencioso; evitar preparación innecesaria en pruebas futuras. |
-| Pruebas | Hay pruebas visuales de ajustes/reloj/pausa y fixtures que desactivan sonido; no una suite de audio. | **MISSING** pruebas de contrato, mezcla y escucha. |
+| Engine/presentation separation | The engine outputs data; Main plays sounds afterwards. There is no audio in the formulas. | **KEEP**. Maintain this border. |
+| Generated tones | Nine `AudioStreamWAV`, one variant per ID; fundamental oscillator + second harmonic, envelope and sweep. | **REPLACE** as final content; They can remain as explicit development fallbacks. |
+| Reused resources | PCM created on `_ready()`, not on every hit; five reused `AudioStreamPlayer`. | **KEEP** reuse; **REWORK** budgets, priorities and configuration. |
+| Mix | All players at −10 dB, no bus assigned; Master default route. | **REWORK**. It is not equivalent to normalization or headroom testing. |
+| Yes/no sound | Main boolean, not persisted; it only blocks new sounds. | **REWORK**. Centralized settings and effective mute. |
+| Impact events | separate hit/critical/signature; miss and dodge share tone. | **REWORK**. Material, intensity and absorption must have meaning. |
+| Visual markers | Steps, jumps, slides, loads, and recovery all have resolved times. | **KEEP** as temporary source; add independent audio consumer. |
+| `sound_event` | Metadata present with `hit`, `heavy` or `dash`; is not consumed. | **REWORK**. Catalog allowed and explicit compatibility. |
+| Practiced history | Re-encounter uses Main and current tones, without granting progress rewards. | **KEEP** the flow; distinguish it from reproduction of a record. |
+| Historical and Online Replay | Both present events with `BattleReplayPanel`, without audio. | **MISSING** the parity of sound presentation. |
+| Headless protection | `_play_sound` exits unplayed. `_make_sounds` does build PCM before. | **KEEP** the silent sink; Avoid unnecessary preparation in future tests. |
+| Tests | There are visual tests of settings/clock/pause and fixtures that mute sound; not an audio suite. | **MISSING** contract testing, mixing and listening. |
 
-### Los nueve tonos actuales
+### The nine current shades
 
-Todos se construyen a 22.050 Hz, muestras signed 16-bit, una muestra por instante y sin configuración estéreo. La base de frecuencia es un parámetro de síntesis, no una medición perceptual. [S01:1763–1795]
+All are built at 22.050 Hz, signed 16-bit samples, one sample per instant and no stereo configuration. The frequency base is a synthesis parameter, not a perceptual measurement. [S01:1763–1795]
 
-| ID | Base Hz | Duración s | Uso actual | Decisión |
+| ID | Base Hz | Duration s | Current use | Decision |
 |---|---:|---:|---|---|
-| `hit` | 130 | 0,11 | Impacto normal y contraataque; también absorción de escudo | REPLACE |
-| `critical` | 210 | 0,17 | Impacto crítico | REPLACE |
-| `dodge` | 680 | 0,12 | Esquiva y fallo | REPLACE |
-| `upgrade` | 760 | 0,15 | Mejorar, personalizar, crear, redistribuir y activar sonido | REPLACE |
-| `start` | 420 | 0,30 | Inicio de combate y algunas selecciones/cambio de capítulo | REPLACE |
-| `win` | 660 | 0,50 | Resultado ganado | REPLACE |
-| `lose` | 240 | 0,40 | Resultado perdido | REPLACE |
-| `ability` | 530 | 0,20 | Curación, escudo y cualquier evento de habilidad | REPLACE |
-| `signature` | 980 | 0,75 | Anuncio de firma **y** su impacto | REPLACE y corregir duplicación |
+| `hit` | 130 | 0,11 | Normal impact and counterattack; also shield absorption | REPLACE |
+| `critical` | 210 | 0,17 | Critical impact | REPLACE |
+| `dodge` | 680 | 0,12 | Dodge and miss | REPLACE |
+| `upgrade` | 760 | 0,15 | Enhance, customize, create, redistribute and activate sound | REPLACE |
+| `start` | 420 | 0,30 | Start of combat and some chapter selections/changes | REPLACE |
+| `win` | 660 | 0,50 | Won result | REPLACE |
+| `lose` | 240 | 0,40 | Lost result | REPLACE |
+| `ability` | 530 | 0,20 | Heal, shield, and any skill events | REPLACE |
+| `signature` | 980 | 0,75 | Signature announcement **and** its impact | REPLACE and fix duplication |
 
-La generación usa una sola forma de onda por ID; no hay variación, paneo, selección por compañero, ropa/cuerpo, material o arena. Ningún audio artístico previo necesita borrarse o convertirse.
+Generation uses a single waveform per ID; there is no variation, panning, selection by partner, clothing/body, material or sand. No previous artistic audio needs to be deleted or converted.
 
-## Conexiones actuales y huecos concretos
+## Current connections and specific gaps
 
-| Entrada real | Presentación sonora actual | Integración recomendada |
+| royal entry | Current sound presentation | Recommended integration |
 |---|---|---|
-| `move_started` | Silencio | Programar preparación, apoyo y desplazamiento por fases. Nunca anticipar el impacto confirmado. |
-| `attack: hit / critical / signature` | Uno de tres tonos | Resolver impacto a partir del resultado, material y absorción; crítico/firma con acento controlado. |
-| `attack: miss / dodge` | Mismo tono `dodge` | Conservar movimiento en aire; sonido de esquiva sólo para dodge. **Sin impacto corporal** en ambos. |
-| `attack` con `counter=true` | `hit` | Movimiento/respuesta de contraataque y contacto confirmado, sin inventar parry perfecto. |
-| `defensive_stance` | Silencio | Entrada de guardia discreta; no fabricar un bloqueo al activarse. |
-| `shield` y absorción en `attack` | `ability` al conceder; `hit` al absorber | Concesión y contacto con escudo diferentes. Absorción total no debe prometer daño corporal. |
-| `heal` | `ability` | Cue propio y limitado por cadencia. |
-| `status_applied / tick / expired / resisted` | Silencio | Aplicación y ticks seleccionados según efecto; no sonar cada partícula ni cada texto. |
-| `ability: phase_shift` | `ability` | Transición de fase de Ascua, respaldada por su definición real y presentación. |
-| `signature` | `signature` | Acento de activación diferenciado del impacto; respetar cuándo llega el evento. |
-| Daño letal normal o por estado | Sin cue específico de KO | Impacto/tick letal, cancelación de futuras acciones y caída según presentación. |
-| `finished` | `win/lose`, tras espera visual de 0,30 s salvo rendición | Un cierre de combate; no confundir timeout/rendición con un golpe mortal. |
-| Recompensa/XP/desbloqueo | Sólo algunos `upgrade`, sin jerarquía de recompensas | UI/progreso desde confirmación de la operación real, jamás desde un replay. |
-| Tabs, foco, volver, error, cerrado, inventario | Sin enrutamiento compartido | Pequeño vocabulario UI común; mensajes de error y acciones bloqueadas discretos. |
-| Música, ambientes, voces, pasos, salto, aterrizaje, telas, energía, intro y cosméticos | Sin recursos ni rutas | MISSING; producir por prioridad de la Biblia y evitar loops cosméticos permanentes. |
+| `move_started` | Silence | Schedule preparation, support and movement in phases. Never anticipate the confirmed impact. |
+| `attack: hit / critical / signature` | One of three tones | Resolve impact from the result, material and absorption; critic/signature with controlled accent. |
+| `attack: miss / dodge` | Same tone `dodge` | Maintain movement in air; dodge sound only for dodge. **No body impact** on both. |
+| `attack` with `counter=true` | `hit` | Counterattack movement/response and contact confirmed, without inventing perfect parry. |
+| `defensive_stance` | Silence | Discreet guard entry; not create a lock when activated. |
+| `shield` and absorption in `attack` | `ability` when granting; `hit` when absorbing | Granting and contact with different shields. Total absorption should not promise body harm. |
+| `heal` | `ability` | Own cue and limited by cadence. |
+| `status_applied / tick / expired / resisted` | Silence | Application and ticks selected according to effect; not sound every particle or every text. |
+| `ability: phase_shift` | `ability` | Ascua phase transition, supported by its actual definition and presentation. |
+| `signature` | `signature` | Activation accent differentiated from impact; respect when the event arrives. |
+| Normal or status lethal damage | No KO specific cue | Lethal impact/tick, cancellation of future actions and fall according to presentation. |
+| `finished` | `win/lose`, after visual wait of 0,30 s unless surrender | A combat closure; Do not confuse timeout/surrender with a fatal blow. |
+| Reward/XP/Unlock | Only some `upgrade`, no reward hierarchy | UI/progress from confirmation of the real operation, never from a replay. |
+| Tabs, focus, return, error, closed, inventory | No shared routing | Small common UI vocabulary; Discreet error messages and blocked actions. |
+| Music, environments, voices, steps, jump, landing, fabrics, energy, intro and cosmetics | No resources or routes | MISSING; produce by Bible priority and avoid permanent cosmetic loops. |
 
-Fuentes: Main [S01:956–1087,1161–1216], motor [S03:290–612], reglas [S04:25–51], repetición [S07:170–276], Online [S08:840–881]. El motor tiene guardia, absorción y contraataque; **no ofrece un resultado `parry` o `perfect_block`**. Sus resultados de ataque son hit, critical, signature, miss y dodge.
+Sources: Main [S01:956–1087,1161–1216], engine [S03:290–612], rules [S04:25–51], Replay [S07:170–276], Online [S08:840–881]. The engine has guard, absorption and counterattack; **does not return a `parry` or `perfect_block` result**. Its attack results are hit, critical, signature, miss and dodge.
 
-### Fallos y riesgos verificados
+### Verified failures and risks
 
-1. **La firma puede duplicar el mismo sonido.** El motor emite `signature` y luego `attack` con resultado `signature` en la misma resolución. Main reproduce el tono en ambos handlers. Si hay dos jugadores libres, se solapan dos copias de 0,75 s. No es una preparación y un impacto diferenciados. [S03:364,401; S04:48; S01:1043,1087]
-2. **Silenciar no silencia lo que ya está sonando.** Cambia un booleano consultado al solicitar el siguiente sonido; no cambia Master ni detiene jugadores. Reabrir la aplicación restaura el valor inicial `true`. [S01:85,1223–1227,1788–1795]
-3. **El pool pierde eventos sin jerarquía.** Cuando sus cinco jugadores están ocupados, `_play_sound` termina sin reproducir y sin registrar descarte. UI/habilidad tienen la misma oportunidad de ocupar un slot que firma/resultado. La saturación efectiva no se midió. [S01:1782–1795]
-4. **Online y registros históricos son silenciosos.** No llegan al helper de Main. No confundir este hueco con repetir un encuentro de Historia, que sí ejecuta Main. [S07; S08:840–866; S01:402–407]
-5. **Un metadato no constituye una integración.** `sound_event` sólo se valida como cadena de hasta 80 caracteres; `heavy` y `dash` ni siquiera existen en los nueve tonos. El futuro consumidor debe aceptar IDs registrados, no interpretar rutas/URLs desde eventos o apariencias. [S05:15–59; S01:1764]
-6. **No existe política de audio tardío.** Visuales reciben `elapsed-event.time`; el sonido de impacto se reproduce completo al manejar el evento. Aceleración, lotes de eventos o pausas largas necesitan un criterio explícito de descarte/coalescencia. No se verificó un desfase audible concreto. [S01:1007–1043]
-7. **Los ajustes futuros pueden perderse si se amplía ingenuamente el archivo actual.** `_toggle_reduced_motion()` crea un `ConfigFile` vacío y guarda sólo su clave. Añadir volumen al mismo archivo sin cargar/mezclar primero haría que este camino lo sobreescribiera. Hoy no hay volúmenes persistidos que se estén perdiendo. [S01:1229–1234]
+1. **The signature can duplicate the same sound.** The engine outputs `signature` and then `attack` resulting in `signature` at the same resolution. Main plays the tone on both handlers. If there are two free players, two copies of 0,75 s overlap. It is not a differentiated preparation and impact. [S03:364,401; S04:48; S01:1043,1087]
+2. **Mute does not mute what is already playing.** Changes a boolean queried when requesting the next sound; It does not change Master or stop players. Reopening the application restores the initial value `true`. [S01:85,1223–1227,1788–1795]
+3. **The pool loses non-hierarchical events.** When all five of its players are busy, `_play_sound` ends up unplayed and without registering a discard. UI/skill has the same opportunity to occupy a slot as signature/result. Effective saturation was not measured. [S01:1782–1795]
+4. **Online and historical logs are silent.** They do not reach the Main helper. Do not confuse this gap with repeating a Story Mode encounter, which Main does execute. [S07; S08:840–866; S01:402–407]
+5. **A metadata does not constitute an integration.** `sound_event` is only validated as a string of up to 80 characters; `heavy` and `dash` don't even exist in all nine shades. The future consumer must accept registered IDs, not interpret routes/URLs from events or appearances. [S05:15–59; S01:1764]
+6. **There is no late audio policy.** Visuals receive `elapsed-event.time`; the impact sound is played in full when handling the event. Acceleration, batching of events, or long pauses require explicit discard/coalescence criteria. No specific audible gap was verified. [S01:1007–1043]
+7. **Future settings may be lost if the current file is inadvertently expanded.** `_toggle_reduced_motion()` creates an empty `ConfigFile` and saves only its key. Adding volume to the same file without loading/shuffling first would cause this path to overwrite it. Today there are no persistent volumes that are being lost. [S01:1229–1234]
 
-## Arquitectura recomendada — aún no implementada
+## Recommended architecture — not yet implemented
 
-Un único **AudioDirector** para la sesión de aplicación, con contexto de pantalla/arena y de combate. Main y `BattleReplayPanel` serán adaptadores del mismo servicio; Online reutilizará el adaptador de repetición. El director no llama al motor, no recompensa, no escribe identidades o snapshots y no incorpora archivos en eventos del servidor.
+A single **AudioDirector** for the application session, with screen/arena and combat context. Main and `BattleReplayPanel` will be adapters of the same service; Online will reuse the repeat adapter. The director does not call the engine, does not reward, does not write identities or snapshots, and does not embed files in server events.
 
-### API propuesta para acordar antes de programar
+### Proposed API to agree before programming
 
 ```gdscript
-# Nombres propuestos; no existen en el juego auditado.
+# Proposed names; they do not exist in the audited game.
 configure_context(arena_id: String, fighter_profiles: Dictionary,
                   session_context: Dictionary = {}) -> void
 on_combat_event(event: Dictionary, presentation_time: float,
@@ -100,21 +100,21 @@ set_paused(paused: bool) -> void
 stop_session() -> void
 ```
 
-`session_context` contiene identificador local de sesión, battle_id si existe, modo `live/replay/online/preview` y política de resultados. Los perfiles resuelven **IDs locales permitidos**, no nodos propietarios de daño ni rutas proporcionadas por servidor. El reloj lo entrega el presentador: `combat.elapsed` en vivo, `elapsed` en repetición; `advance` despacha marcadores vencidos una vez. Música/UI usan tiempo real y no necesitan que un combate avance.
+`session_context` contains local session identifier, battle_id if exists, mode `live/replay/online/preview` and results policy. Profiles resolve **allowed local IDs**, not corrupt owner nodes or server-provided routes. The watch is delivered by the presenter: `combat.elapsed` live, `elapsed` on replay; `advance` dispatches expired markers once. Music/UI use real time and do not require a combat to progress.
 
-El motor no emite un ID único por evento: añade turno, tiempo y PV, y preserva orden en `event_log`. Usar el índice estable del registro junto con sesión/battle_id/lado/acción/marker; no sólo move_id o turno. Mantener la historia intacta. Una nueva sesión de replay permite oírlo de nuevo; un evento duplicado dentro de una sesión no lo reproduce otra vez. [S03:625–633]
+The engine does not emit a unique ID per event: it adds turn, time and VP, and preserves order in `event_log`. Use stable registry index along with session/battle_id/side/action/marker; not just move_id or shift. Keep history intact. A new replay session allows you to hear it again; a duplicate event within a session does not play it again. [S03:625–633]
 
-**Catálogo sonoro:** IDs semánticos locales, familias de variantes, bus, ganancia, prioridad, máximo simultáneo, cooldown, duración máxima, política de cola, loop/one-shot, material y fase. Ejemplos de futuros IDs: `movement.jump.takeoff`, `movement.jump.land`, `attack.swing.heavy`, `impact.body.light`, `impact.shield`, `signature.activate`, `signature.impact`, `status.burn`, `ascua.phase_change`, `ui.confirm`, `result.victory`. Ninguno está implementado todavía.
+**Sound catalog:** Local semantic IDs, variant families, bus, gain, priority, maximum simultaneous, cooldown, maximum duration, queue policy, loop/one-shot, material and phase. Examples of future IDs: `movement.jump.takeoff`, `movement.jump.land`, `attack.swing.heavy`, `impact.body.light`, `impact.shield`, `signature.activate`, `signature.impact`, `status.burn`, `ascua.phase_change`, `ui.confirm`, `result.victory`. None are implemented yet.
 
-**Selección de variaciones:** RNG exclusivo de presentación o hash de sesión/evento/actor; nunca consumir el RNG del combate o el global usado por gameplay. Evitar repetición inmediata dentro de una familia; variación de pitch/ganancia pequeña y acotada por asset, desactivable cuando altere identidad. La elección debe ser reproducible para QA. No alterar stats cuando cambie la apariencia; el perfil debe distinguir identidad del compañero y material visible del cuerpo equipado mediante catálogos conocidos.
+**Variation selection:** Presentation-only RNG or session/event/actor hash; never consume the RNG of the combat or the global one used by gameplay. Avoid immediate repetition within a family; small pitch/gain variation limited by asset, deactivatable when identity changes. The choice must be reproducible for QA. Do not alter stats when changing appearance; The profile must distinguish the identity of the companion and visible material of the body equipped through known catalogs.
 
-**Marcadores:** reutilizar tiempos de `MoveVisualProfile.resolve`, no copiar duraciones en cada sonido. Su tabla ya resuelve windup/travel/recovery y permite apoyo, despegue, aterrizaje, deslizamiento y carga. El scheduler de FX aporta patrones útiles de cursor, WeakRef, límite y descarte por sesión. **No colgar audio de `CombatFX._dispatch_markers`: FX se borra en movimiento reducido.** El audio consume los metadatos independientemente. Fusionar `landing` y `landing_debris` si representan un solo contacto físico, para no duplicar el aterrizaje. [S05:7–90; S06:227–310]
+**Bookmarks:** Reuse timings from `MoveVisualProfile.resolve`, do not copy durations into each sound. Your board already solves windup/travel/recovery and allows support, takeoff, landing, sliding and loading. The FX scheduler provides useful cursor, WeakRef, limit and discard patterns per session. **Do not hang audio from `CombatFX._dispatch_markers`: FX is cleared in reduced motion.** Audio consumes metadata independently. Merge `landing` and `landing_debris` if they represent a single physical contact, so as not to duplicate the landing. [S05:7–90; S06:227–310]
 
-**Impactos y KO:** el resultado `attack` decide si hubo contacto, crítico o absorción. Ni el marker ni el fotograma cambian esa verdad. Cancelar cues pendientes del actor con PV ≤0 incluso si la causa es `status_tick`; permitir el tail del último impacto y el apoyo final de caída. `finished` por rendición/tiempo no prueba un impacto mortal. No emitir dos KO por tick letal + finished. Firmas se separan por función sonora, sin duplicar la misma muestra. La carga puede comenzar con `move_started.signature`; no mover hacia atrás el evento `signature` que el motor emite al resolver el impacto.
+**Hits and KO:** The `attack` result decides if there was contact, critical or absorption. Neither the marker nor the frame changes that truth. Cancel pending cues from the actor with PV ≤0 even if the cause is `status_tick`; allow the tail of the last impact and the final landing support. `finished` for surrender/time does not prove a fatal impact. Do not issue two KOs per lethal + finished tick. Signatures are separated by sound function, without duplicating the same sample. Loading can start with `move_started.signature`; do not move back the `signature` event that the engine issues when resolving the impact.
 
-### Buses, pool y recursos
+### Buses, pool and resources
 
-Propuesta de jerarquía para el director:
+Hierarchy proposal for the director:
 
 ```text
 Master
@@ -127,67 +127,67 @@ Master
 └── Voice  (activar cuando haya contenido vocal aprobado)
 ```
 
-La UI de ajustes puede mostrar General, Música, Efectos, Ambiente y Voces cuando exista contenido; los hijos de SFX permiten mezclar sin multiplicar sliders. Persistir preferencias de dispositivo fuera de los perfiles de fuerza/XP y conservar las claves de pantalla existentes. `mute` debe actuar sobre buses; probar también las colas activas, reapertura y cambio de modo.
+The Settings UI can display General, Music, Effects, Ambience, and Voices when content exists; SFX children allow mixing without multiplying sliders. Persist device preferences outside of Strength/XP profiles and preserve existing screen keys. `mute` must act on buses; Also try active queues, reopening and mode change.
 
-Punto de partida para validar, **no capacidad ya medida**: 12 slots Combat (dos reservables para eventos importantes), cuatro Movement, dos UI y dos Voice; máximo 20 one-shots, más dos Music y dos Ambience para crossfades. Eliminar primero un paso redundante o un evento menor vencido; proteger impacto crítico, KO y confirmación importante. Evitar cortes duros con fades breves, respetar prioridades y exponer contadores de solicitudes/reproducciones/descartes. La vertical decidirá si estos límites se reducen; no reservar memoria de voces inexistentes.
+Starting point to validate, **not already measured capacity**: 12 Combat slots (two reservable for important events), four Movement, two UI and two Voice; maximum 20 one-shots, plus two Music and two Ambience for crossfades. First delete a redundant step or an overdue minor event; protect critical hit, KO and important confirmation. Avoid hard cuts with short fades, respect priorities and expose request/play/discard counters. The vertical will decide whether these limits are reduced; Do not reserve memory of non-existent voices.
 
-Preparar y cachear sólo las familias necesarias para los dos actores y la arena actual, con caché limitada entre contextos. Sin `load()` por frame, generación de PCM por golpe ni crecimiento ilimitado del historial de deduplicación. `AudioStreamPlayer` es suficiente para UI/música y la primera vertical; posicionamiento opcional mediante `AudioStreamPlayer2D` debe tener paneo suave y límites estables entre escritorio/móvil. No usar tamaño del viewport para cambiar el volumen percibido. El anclaje visual del actor puede informar posición; no crea un emisor por partícula.
+Prepare and cache only the families necessary for the two actors and the current arena, with limited cache between contexts. No `load()` per frame, per-hit PCM generation, or unlimited deduplication history growth. `AudioStreamPlayer` is enough for UI/music and the first vertical; Optional positioning using `AudioStreamPlayer2D` should have smooth panning and stable desktop/mobile boundaries. Do not use viewport size to change perceived volume. The actor's visual anchor can inform position; it does not create one emitter per particle.
 
-### Relojes y estados
+### Clocks and states
 
-| Situación | Hecho actual | Política propuesta |
+| Situation | Current fact | Proposed policy |
 |---|---|---|
-| ×1 / ×2 | Main cambia `Engine.time_scale`; no configura pitch ni velocidad de audio. | Conservar identidad/pitch; programar por reloj de presentación. Coalescer apoyos menores si la densidad a ×2 lo exige. Medir la salida nativa. |
-| Hitstop | Congela pose; el reloj de acción sigue avanzando. No toca audio. | Dejar terminar impacto/reverberación. No pausar todos los buses por la congelación visual. |
-| Modal durante combate | Deja de avanzar motor y pausa actores/FX; jugadores de audio siguen sin cambios. | Detener nuevos cues de combate; pausar/fadear sólo loops de acción. UI disponible; tails breves terminan; ambiente/música siguen o se atenúan según Biblia. |
-| Reanudar | No hay scheduler sonoro actual. | Continuar desde tiempo conservado; no descargar una ráfaga de cues vencidos. |
-| Replay pausa / reinicio / cierre | Pausa/limpia visuales; no audio. | Conservar reloj al pausar; al reiniciar/cerrar cancelar sesión, loops, colas y asociaciones. No cortar UI ajena al replay. |
-| Movimiento reducido | Sólo cambia actores, arena y FX. | Mantener significado y volumen de audio. Sus marcadores no dependen de la existencia de partículas. |
-| Evento tardío | Se dispara tono completo al manejarlo. | Ventana de tolerancia por clase: descartar pasos tardíos; no acumular one-shots antiguos; mantener resultado actual una vez. Medir antes de fijar umbrales definitivos. |
-| Resultado / historial | Recompensas se confirman antes del retraso visual; replay no recompensa. | Stinger asociado a presentación, reward cue sólo a operación nueva confirmada. Nunca reactivar desbloqueos desde historia. |
+| ×1 / ×2 | Main changes `Engine.time_scale`; It does not configure pitch or audio speed. | Preserve identity/pitch; schedule against the presentation clock. Coalesce minor supporting sounds if density at ×2 requires it. Measure native output. |
+| hitstop | Freeze pose; The action clock keeps ticking. Does not play audio. | Let impact/reverb finish. Do not pause all buses due to visual freezing. |
+| Manners during combat | Stop advancing motor and pause actors/FX; audio players remain unchanged. | Stop new combat cues; pause/fade only action loops. UI available; short tails end; atmosphere/music continue or fade according to the Bible. |
+| Resume | There is no current sound scheduler. | Continue from conserved time; Don't download a burst of expired cues. |
+| Replay pause/restart/close | Visual pause/clear; not audio. | Keep watch when pausing; on restart/shutdown cancel session, loops, queues and associations. Do not cut UI outside of replay. |
+| Reduced movement | Just change actors, arena and FX. | Maintain audio meaning and volume. Its markers do not depend on the existence of particles. |
+| late event | Full tone is triggered when handled. | Tolerance window per class: discard late steps; don't hoard old one-shots; keep current result once. Measure before setting definitive thresholds. |
+| Result/history | Rewards are confirmed before visual delay; replay does not reward. | Stinger associated with presentation, reward cue only to new confirmed operation. Never reactivate unlocks from history. |
 
-Fuentes del comportamiento actual: [S01:936–969,1161–1239; S07:178–222; S09:376–386,428,673–675]. `set_paused` no debe cambiar `SceneTree.paused`, velocidad del motor ni `reduced_motion`.
+Sources of current behavior: [S01:936–969,1161–1239; S07:178–222; S09:376–386,428,673–675]. `set_paused` should not change `SceneTree.paused`, motor speed or `reduced_motion`.
 
-## Importación, sonoridad y mezcla propuestas
+## Proposed import, sound and mix
 
-Conservar originales lossless, sus licencias/procedencia y un manifiesto con hash, ID semántico, variación, canales, frecuencia, duración, loop y medición. La generación y el tratamiento posterior serán pasos explícitos posteriores a la Biblia; esta auditoría no produce audio.
+Preserve lossless originals, their licenses/origin and a manifest with hash, semantic ID, variation, channels, frequency, duration, loop and measurement. Generation and subsequent treatment will be explicit steps after the Bible; This audit does not produce audio.
 
-Para la vertical: originales WAV de buena calidad; preferencia de trabajo 48 kHz/24-bit cuando la fuente lo permita, sin fingir resolución que no tenga. Exportar one-shots cortos a WAV PCM adecuado al presupuesto e importar con ajustes reproducibles; música/ambiente largo puede usar Ogg Vorbis tras validar loop y coste en Godot 4.7.2. Inspeccionar las opciones reales de importación al disponer de archivos. No convertir por extensión ni asumir que un MP3 tiene un loop sin costura. Mono para contacto/pasos; estéreo sólo si aporta espacio. Registrar puntos de loop y tiempos de ataque/tail.
+For vertical: good quality WAV originals; 48 kHz/24-bit work preference when the source allows it, without pretending resolution it does not have. Export short one-shots to budget-friendly WAV PCM and import with playable settings; music/long atmosphere can use Ogg Vorbis after validating loop and cost in Godot 4.7.2. Inspect the actual import options when having files. Do not convert by extension or assume that an MP3 has a seamless loop. Jumpsuit for contact/steps; stereo only if it provides space. Record loop points and attack/tail times.
 
-Objetivos **provisionales para medir**, no valores del audio actual: fuentes con true peak ≤−3 dBTP; captura final de mezcla ≤−1 dBTP; música de combate de referencia alrededor de −20 LUFS-I (±2), ajustada contra SFX mediante escucha. Los sonidos de 0,1–0,3 s requieren comparar transiente, energía y nivel percibido, no normalizarlos ciegamente con LUFS integrado. No se ha medido LUFS, true peak ni clipping del sintetizador actual.
+**Provisional measurement targets**, not current audio values: sources with true peak ≤−3 dBTP; final mix capture ≤−1 dBTP; Reference combat music around −20 LUFS-I (±2), adjusted against SFX by listening. 0,1–0,3 s sounds require comparing transient, energy and perceived level, not blindly normalizing them with built-in LUFS. No LUFS, true peak or clipping of the current synthesizer has been measured.
 
-Tomar el impacto normal como referencia relativa 0 dB; comenzar pasos/telas 6–10 dB debajo y UI 8–12 dB debajo; crítico alrededor de +1 dB y firma +2 dB como límites iniciales, diferenciados sobre todo por material/transiente. Son relaciones de diseño para calibrar, no ganancias absolutas a aplicar sin medir. Evitar duplicar cuerpo/grave en dos capas coincidentes. Dejar margen en Master y verificar suma estéreo/mono y móvil.
+Take the normal impact as relative reference 0 dB; start steps/fabrics 6–10 dB below and UI 8–12 dB below; critical around +1 dB and signature +2 dB as initial limits, differentiated mainly by material/transient. They are design relationships to calibrate, not absolute gains to apply without measuring. Avoid duplicating body/bass on two coincident layers. Leave room in Master and check stereo/mono and mobile sum.
 
-Ducking de música suave, central y reversible sólo en firma, cambio de fase, KO, presentación de jefe o recompensa mayor: punto de partida 2–4 dB, ataque 30–60 ms y recuperación 250–600 ms. No duck en cada golpe. Un solo gestor compone motivos superpuestos y restaura el nivel; nunca varios tweens competitivos sobre el mismo bus. Ambiente discreto y estable; cosméticos sólo tienen cue si existe un momento perceptible relevante, no por cada aura dibujada.
+Soft music ducking, central and reversible only in signature, phase change, KO, boss presentation or major reward: starting point 2–4 dB, attack 30–60 ms and recovery 250–600 ms. Don't duck on every shot. A single handler composes overlapping motifs and restores the level; never several competitive tweens on the same bus. Discreet and stable environment; Cosmetics only have a cue if there is a relevant perceptible moment, not for each aura drawn.
 
-## Plan de implementación y aceptación
+## Implementation and acceptance plan
 
-1. **Cerrar Biblia e interfaces.** Usar Ascua + arena_faroles, su `phase_shift` real y `ember_core`, única transformación registrada actualmente. No extrapolar transformaciones a todo el plantel ni parry. [S10:246–257; S11:47]
-2. **Director, buses, catálogo y ajustes sin cambiar el motor.** Implementar sink silencioso para pruebas, metadatos permitidos, límites y API anterior. Migrar el toggle conservando preferencias de pantalla; no migrar/reescribir progreso.
-3. **Conectar presentación en Main y repetición.** Enrutar una vez cada evento y marker con índice/reloj. Online usa ese mismo consumidor. Retirar la llamada procedimental equivalente al activar un cue nuevo, evitando dos sistemas simultáneos.
-4. **Integrar los recursos de la vertical aprobados por la Biblia.** Preparación, contacto, paso, carga, fase, KO y entorno con pocas variantes útiles; UI mínima. Escuchar antes de multiplicar por personajes o arenas.
-5. **Aprobar contratos, rendimiento y mezcla.** Sólo después ampliar familias del plantel y música/contextos, reutilizando materiales coherentes.
+1. **Close Bible and interfaces.** Use Ascua + arena_lanterns, your real `phase_shift` and `ember_core`, the only transformation currently registered. Do not extrapolate transformations to the entire squad or Parry. [S10:246–257; S11:47]
+2. **Director, buses, catalog and settings without changing the engine.** Implement silent sink for tests, allowed metadata, limits and previous API. Migrate the toggle while preserving screen preferences; do not migrate/rewrite progress.
+3. **Connect presentation in Main and repetition.** Route each event and marker with index/clock once. Online uses that same consumer. Remove the equivalent procedural call when activating a new cue, avoiding two simultaneous systems.
+4. **Integrate Bible-approved vertical resources.** Preparation, contact, step, charge, phase, KO and environment with few useful variants; Minimal UI. Listen before multiplying by characters or arenas.
+5. **Approve contracts, performance and mixing.** Only then expand roster families and music/contexts, reusing coherent materials.
 
-Pruebas propuestas — **ninguna se ejecutó como parte de esta auditoría**:
+Proposed tests — **none were executed as part of this audit**:
 
-| Grupo | Comprobación que debe demostrar |
+| Group | Verification that must be demonstrated |
 |---|---|
-| Eventos y semántica | Firma activa/impacta una vez; miss no produce contacto; shield total/parcial coherente; counter sólo cuando existe; sin parry inventado. |
-| Reloj | 20/60/120 FPS simulados, ×1/×2 y llegada en lotes: markers una vez, orden estable, descartes tardíos explícitos. |
-| Pausa/KO | Hitstop deja tails; modal pausa cues futuros; resume sin ráfaga; tick letal cancela carga/pasos pendientes; cierre/reinicio invalida sesión previa. |
-| Replay/Online | Misma lista semántica para el mismo registro en vivo/replay; variantes reproducibles; snapshots y eventos inmutables; ningún XP/desbloqueo repetido. |
-| Variaciones | RNG independiente; no repetición inmediata cuando hay alternativas; pitch/ganancia dentro de límites; inválidos rechazados. |
-| Pool/caché | Cota de jugadores, loops y cola; prioridad comprobada; no lectura de archivo por frame; memoria estable tras 100 cambios de combate/contexto. |
-| Ajustes | Volúmenes persisten, mute afecta sonidos existentes, `reduced_motion` conserva audio y otras preferencias; valores no finitos/fuera de rango saneados. |
-| Integridad | Misma semilla produce los mismos eventos, HP, ganador y recompensas con audio activo/inactivo; hashes de snapshots/partidas de fixture sin alteración por presentación. |
-| Recursos | Archivos decodifican, frecuencia/canales/duración/loops coinciden con manifiesto; sin clipping; variante inexistente usa fallback explícito y diagnóstico. |
-| Nativo/escucha | Vertical en escritorio y móvil real, auriculares y altavoz, mono/estéreo, volumen bajo; medir latencia/true peak y juzgar material, fatiga, claridad de crítico/firma y loop sin costura. |
+| Events and semantics | Signature activates/impacts once; miss does not produce contact; coherent full/partial shield; counter only when it exists; no invented parry. |
+| Clock | 20/60/120 Simulated FPS, ×1/×2 and batch arrival: markers once, stable order, explicit late discards. |
+| Pause/KO | Hitstop leaves tails; modal pause future cues; summarizes without burst; lethal tick cancels pending load/steps; shutdown/restart invalidates previous session. |
+| Replay/Online | Same semantic list for the same live/replay record; reproducible variants; snapshots and immutable events; no repeated XP/unlocks. |
+| Variations | standalone RNG; no immediate repetition when there are alternatives; pitch/gain within limits; rejected invalids. |
+| Pool/cache | Level of players, loops and queue; proven priority; no file reading per frame; stable memory after 100 combat/context changes. |
+| Settings | Volumes persist, mute affects existing sounds, `reduced_motion` preserves audio and other preferences; non-finite/out-of-range values ​​sanitized. |
+| Integrity | Same seed produces the same events, HP, winner and rewards with audio on/off; hashes of snapshots/fixture games without alteration by presentation. |
+| Resources | Files decode, frequency/channels/duration/loops match manifest; no clipping; non-existent variant uses explicit fallback and diagnostics. |
+| native/listener | Vertical on desktop and real mobile, headphones and speaker, mono/stereo, low volume; measure latency/true peak and judge material, fatigue, critical/signature clarity and seamless loop. |
 
-Los fixtures visuales existentes que desactivan sonido y el guard headless no certifican estos criterios. Sus pruebas de reloj y pausa sí son regresiones reutilizables: `test_animation_sequences.gd`, `test_visual_fx_markers.gd`, `test_status_ko_presentation.gd`, `test_visual_history_settings.gd`. No se atribuye a sus resultados una validación auditiva.
+Existing visual fixtures that deactivate sound and headless guard do not certify these criteria. Your clock and pause tests are reusable regressions: `test_animation_sequences.gd`, `test_visual_fx_markers.gd`, `test_status_ko_presentation.gd`, `test_visual_history_settings.gd`. No auditory validation is attributed to its results.
 
-## Índice de fuentes locales
+## Local Source Index
 
-| Ref | Archivo y puntos leídos |
+| Ref | File and read points |
 |---|---|
 | S01 | [main.gd](../scripts/main.gd): 85–91,150–169,287,380–424,883,934–1087,1161–1239,1289,1468–1488,1763–1795 |
 | S02 | [project.godot](../project.godot): 4–7,26–27; [main.tscn](../scenes/main.tscn) |

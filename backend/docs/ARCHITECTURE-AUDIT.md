@@ -1,46 +1,46 @@
-# Brasa: auditoría previa a la Arena asíncrona
+# Brasa: Asynchronous Arena Pre-Audit
 
-Este documento conserva el estado anterior a la implementación de Arena. La implementación y disponibilidad actuales se registran en [Arena online](../../reports/ARENA-ONLINE.md) y [Despliegue de Cloudflare](DEPLOYMENT.md). Los hallazgos siguientes son históricos.
+This document preserves the state before Arena was deployed. The current deployment and availability is recorded in [Online Arena](../../reports/ARENA-ONLINE.md) and [Cloudflare Deployment](DEPLOYMENT.md). The following findings are historical.
 
-Fecha: 20 de septiembre de 2026. Se inspeccionó el código antes de modificar el servicio. La línea base y los hashes de guardados están en `work/online-audit/before.json`, fuera del proyecto distribuible.
+Date: 20 September 2026. The code was inspected before modifying the service. The baseline and save hashes are in `work/online-audit/before.json`, outside the distributable project.
 
-## Mapa comprobado
+## Checked map
 
-| Área | Estado real y decisión |
+| Area | Actual status and decision |
 | --- | --- |
-| Godot y organización | Godot 4.7.2, GL Compatibility; `project.godot` inicia `scenes/main.tscn`. No autoloads. Scripts separados de recursos gráficos y backend excluido con `.gdignore`. |
-| Personajes | `scripts/character_catalog.gd`: 13 definiciones canónicas con estadísticas base, crecimiento, habilidad, firma y referencias visuales. |
-| Luchadores | `progression.gd` y `story_progression.gd` guardan perfiles por arquetipo. `fighter_identity.gd` agrega ID, nombre y apariencia independientes. Un ID local no acredita propiedad remota. |
-| Estadísticas | `character_catalog.gd:stats_for`, `story_catalog.gd:stats_for` y `balance.gd` distinguen base, crecimiento, inversión y límites. No confiar en `combat_stats` enviado por clientes. |
-| Movimientos | `move_catalog.gd` centraliza técnicas, desbloqueos, mejoras y talentos. `combat_rules.gd` contiene fórmulas compartidas; `status_effects.gd` administra efectos. |
-| Motor | `combat_engine.gd` es un RefCounted sin UI ni recompensas, con reloj de preparación/impacto/recuperación, eventos y resultado terminal inmutable. Es candidato a portado y pruebas cruzadas. |
-| Azar | El motor concentra RandomNumberGenerator; catálogo/creación de oponentes tienen otros RNG locales. El servidor elegirá la semilla y no admitirá opciones de prueba del cliente. La secuencia PCG/randf debe verificarse con el binario, no suponerse. |
-| Animación | `main.gd:_handle_event`, `fighter_view.gd` y `arena_view.gd` transforman eventos en poses, movimiento, sonido y HUD. Se mantienen en Godot. |
-| Estado | Main llama `combat.advance` y consulta `snapshot`; éste es un modelo visual, no una serialización completa reanudable. Arena conservará el modelo autobattler: desafiar es la intención; el servidor resuelve la pelea. |
-| XP y niveles | Se conceden actualmente en `progression.reward_match`/`story_progression.reward_match`. Online requiere cálculo y confirmación atómica en D1. Nunca llamar a esas recompensas locales para un resultado remoto. |
-| Historia | 100 encuentros y 11 capítulos, definidos en `story_catalog.gd`/`campaign_config.gd`; rivales, talentos, técnicas y fases comparten el motor. Se conserva la campaña local y se exportan sus definiciones para el servidor. |
-| Persistencia | Liga, Historia e identidad usan archivos separados y migraciones locales. Backend: accounts, local_sessions, fighters, identidad, progreso, apariencia, catálogo, inventario y snapshots. No existen aún batallas online ni ratings. |
-| Red | `identity_api.gd` sólo permite loopback, token manual en memoria y una petición a la vez. Main no lo instancia. Se necesita una capa HTTPS, ciclo de sesión, cancelación y recuperación idempotente. |
-| Backend | `backend/src/worker.js`, ESM y D1; Wrangler 4.110.0, Miniflare 4.20260708.1, esbuild 0.28.2. Node instalado 22.23.1. Configuración `wrangler.jsonc` exclusivamente local. |
-| Auth | El adaptador actual rechaza cualquier host no local. Better Auth no está instalado en la línea base. Evaluar documentación y compatibilidad antes de escoger el flujo de navegador/dispositivo. |
-| Autoridad en UI | Main decide cuándo ejecutar motor y cuándo otorgar recompensas; las fórmulas están fuera de la UI. La nueva pantalla remota consumirá snapshots/eventos y perfiles del servidor. |
-| Datos incompatibles | La API devuelve `archetype_id` y progreso anidado; el renderer necesita un descriptor con `character_id`, nombre, nivel y apariencia. El servidor debe producirlo. Main reconstruye rivales omitiendo apariencia: no usar esa ruta para rivales reales. |
-| Pruebas | 24 suites de regresión, suites de identidad/renderer/HTTP, 15 pruebas D1 y simuladores de combate/campaña. Añadir paridad entre runtimes, autoridad, carreras, reintentos y desconexión. |
-| Riesgos | RNG/float/redondeos, divergencia entre dos motores, guardar resultados parciales, fabricar rivales cuando no haya usuarios, cargar progreso local no verificable, perder cosméticos del rival y entregar respuestas tras cerrar sesión. |
-| Cloudflare | La sesión Chrome muestra la cuenta elegida, sin Workers existentes y subdominio `acessloop.workers.dev`. Wrangler no está autenticado. El primer despliegue será un servicio de pruebas separado; no se contrata un plan ni se reutilizan datos de producción. |
+| Godot and organization | Godot 4.7.2, GL Compatibility; `project.godot` starts `scenes/main.tscn`. No autoloads. Separate scripts from graphical resources and backend excluded with `.gdignore`. |
+| Characters | `scripts/character_catalog.gd`: 13 canonical definitions with base stats, growth, skill, signature, and visual references. |
+| Fighters | `progression.gd` and `story_progression.gd` save profiles per archetype. `fighter_identity.gd` adds separate ID, name, and appearance. A local ID does not certify remote ownership. |
+| Statistics | `character_catalog.gd:stats_for`, `story_catalog.gd:stats_for` and `balance.gd` distinguish base, growth, investment and limits. Do not trust `combat_stats` sent by customers. |
+| Movements | `move_catalog.gd` centralizes techniques, unlocks, upgrades and talents. `combat_rules.gd` contains shared formulas; `status_effects.gd` manages effects. |
+| Engine | `combat_engine.gd` is a RefCounted with no UI or rewards, with setup/hit/recovery clock, events, and immutable terminal result. It is a candidate for porting and cross testing. |
+| Random | The engine concentrates RandomNumberGenerator; catalog/creation of opponents have other local RNGs. The server will choose the seed and will not support client testing options. The PCG/randf sequence should be verified against the binary, not assumed. |
+| Animation | `main.gd:_handle_event`, `fighter_view.gd` and `arena_view.gd` transform events into poses, motion, sound and HUD. They remain in Godot. |
+| Status | Main calls `combat.advance` and queries `snapshot`; This is a visual model, not a full resumable serialization. Arena will retain the autobattler model: challenging is the intention; the server resolves the fight. |
+| XP and levels | They are currently granted in `progression.reward_match`/`story_progression.reward_match`. Online requires calculation and atomic confirmation in D1. Never call those local rewards for a remote result. |
+| Story Mode | 100 encounters and 11 chapters, defined in `story_catalog.gd`/`campaign_config.gd`; rivals, talents, techniques and phases share the engine. The local campaign is preserved and its definitions are exported to the server. |
+| Persistence | League, Story Mode and Identity use separate files and local migrations. Backend: accounts, local_sessions, fighters, identity, progress, appearance, catalog, inventory and snapshots. There are no online battles or ratings yet. |
+| Network | `identity_api.gd` only allows loopback, manual token in memory and one request at a time. Main does not instantiate it. An HTTPS layer, session loop, idempotent cancellation and recovery is needed. |
+| Backend | `backend/src/worker.js`, ESM and D1; Wrangler 4.110.0, Miniflare 4.20260708.1, esbuild 0.28.2. Installed node 22.23.1. `wrangler.jsonc` configuration exclusively local. |
+| Auth | The current adapter rejects any non-local hosts. Better Auth is not installed in the baseline. Evaluate documentation and compatibility before choosing browser/device flow. |
+| Authority in UI | Main decides when to run engine and when to give rewards; the formulas are outside the UI. The new remote display will consume server snapshots/events and profiles. |
+| Incompatible data | The API returns `archetype_id` and nested progress; the renderer needs a descriptor with `character_id`, name, level and appearance. The server must produce it. Main rebuilds rivals by skipping appearance: do not use that route for real rivals. |
+| Tests | 24 regression suites, identity/renderer/HTTP suites, 15 D1 tests and combat/campaign simulators. Add parity between runtimes, authority, races, retries and disconnection. |
+| Risks | RNG/float/rounding, divergence between two engines, saving partial results, crafting rivals when there are no users, loading unverifiable local progress, losing rival cosmetics, and providing answers after logging out. |
+| cloudflare | The Chrome session shows the chosen account, without existing Workers and subdomain `acessloop.workers.dev`. Wrangler is not authenticated. The first deployment will be a separate testing service; A plan is not contracted nor production data is reused. |
 
-## Secuencia de implementación
+## Deployment sequence
 
-1. Congelar línea base, exportar definiciones canónicas y construir corpus de combate real. Portar reglas/motor con pruebas de paridad y versión explícita; mantener todas las animaciones locales.
-2. Integrar autenticación de primera parte apropiada para navegador y cliente público, con sesiones revocables, validación servidor y límites. Mantener el entorno local independiente.
-3. Añadir perfil autoritativo y migraciones relacionales: rating, historial, IA, progresión y operaciones idempotentes. Las cuentas remotas empiezan con progreso acreditado por el servidor; los guardados existentes siguen disponibles localmente.
-4. Crear un circuito vertical Arena: cuenta → luchador persistente → rivales de otros usuarios → desafío → snapshots inmutables → simulación servidor → actualización atómica de ambos perfiles → historial y resultados defensivos. No inventar un sistema de turnos manuales que el juego no tiene.
-5. Reutilizar las definiciones de Historia con el mismo motor y perfil autoritativo cuando el circuito anterior pase las pruebas. Desbloqueos, inversión de puntos y cambios de build expresan intenciones, nunca valores finales.
-6. Conectar Godot por HTTPS: entrada independiente, autorización, listado real, presentación de eventos, perfil, historial y resumen offline. Ante un timeout conservar la misma clave de operación y consultar el resultado.
-7. Probar D1 con carreras, repetición de solicitudes, fallos y límites; ejecutar simulador y regresiones afectadas. Preparar configuración y migraciones revisables antes de autorizar Wrangler y publicar el entorno de pruebas.
+1. Freeze baseline, export canonical definitions and build real combat corpus. Porting rules/engine with parity testing and explicit versioning; keep all animations local.
+2. Integrate appropriate first-party authentication for browser and public client, with revocable sessions, server validation, and limits. Keep the local environment independent.
+3. Add authoritative profile and relational migrations: rating, history, AI, progression and idempotent operations. Remote accounts start with progress credited by the server; existing saves remain available locally.
+4. Create a vertical Arena circuit: account → persistent fighter → rivals from other users → challenge → immutable snapshots → server simulation → atomic update of both profiles → history and defensive results. Don't invent a manual turn system that the game doesn't have.
+5. Reuse Story Mode definitions with the same engine and authoritative profile when the previous circuit passes testing. Unlocks, investment of points and build changes express intentions, never final values.
+6. Connect Godot over HTTPS: independent login, authorization, real listing, event presentation, profile, history and offline summary. In the event of a timeout, keep the same operation key and consult the result.
+7. Test D1 with races, replays, failures and limits; run simulator and affected regressions. Prepare configuration and reviewable migrations before authorizing Wrangler and publishing the test environment.
 
-## Invariantes
+## Invariants
 
-Los cosméticos no cambian poder. Ningún cliente concede XP, puntos, niveles, movimientos, cosméticos, rating o victorias. Las batallas copian datos autoritativos y versiones; las modificaciones posteriores no cambian el resultado. Las escrituras dependientes se condicionan a una misma operación dentro de un batch transaccional D1. Los rivales de Arena son fichas reales y el estado vacío no contiene bots disfrazados. No se ejecutan peleas espontáneas en segundo plano.
+Cosmetics do not change power. No client grants XP, points, levels, moves, cosmetics, rating or victories. Battles copy authoritative data and versions; subsequent modifications do not change the result. Dependent writes are conditional on the same operation within a transactional batch D1. Arena rivals are real tiles and the empty state does not contain disguised bots. There are no spontaneous fights running in the background.
 
-Referencia: [D1 batch y transacciones](https://developers.cloudflare.com/d1/worker-api/d1-database/), [Wrangler y entornos](https://developers.cloudflare.com/workers/wrangler/configuration/), [autorización de Wrangler](https://developers.cloudflare.com/workers/wrangler/commands/general/). Las instrucciones se contrastan también con `--help` de la versión instalada.
+Reference: [D1 batch and transactions](https://developers.cloudflare.com/d1/worker-api/d1-database/), [Wrangler and environments](https://developers.cloudflare.com/workers/wrangler/configuration/), [Wrangler authorization](https://developers.cloudflare.com/workers/wrangler/commands/general/). The instructions are also checked against `--help` of the installed version.

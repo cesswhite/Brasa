@@ -1,59 +1,59 @@
-# Secuencias de combate para todo el plantel
+# Combat sequences for the entire squad
 
-Los 13 compañeros y los dos jefes cuentan con 32 poses nuevas por cuerpo: **480 fotogramas en 30 atlas transparentes**, integrados en combate y repetición. La especificación procede del [enlace compartido](https://chatgpt.com/s/t_6ab06420418c8191a4a456f505cb9a2e); se conserva una [copia del texto de referencia](ANIMATION-REFERENCE.txt). El enlace contiene instrucciones de animación, no un paquete de imágenes descargable.
+The 13 companions and the two bosses have 32 new poses per body: **480 frames in 30 transparent atlases**, integrated into combat and replay. The specification comes from [shared link](https://chatgpt.com/s/t_6ab06420418c8191a4a456f505cb9a2e); a [copy of reference text](ANIMATION-REFERENCE.txt) is retained. The link contains animation instructions, not a downloadable image pack.
 
-![Fotogramas reales de los 15 cuerpos renderizados por Godot](animation-roster.png)
+![Real frames of the 15 bodies rendered by Godot](animation-roster.png)
 
-[Video de combate en Godot](animation-combat.mp4). Partida de prueba determinista Mugo–Ascua, con datos de fixture explícitos y sin recompensas al perfil del jugador.
+Godot combat video (`animation-combat.mp4`; not included). Deterministic test match Mugo–Ascua, with explicit fixture data and no rewards to the player profile.
 
-![Contacto de una carga y efectos independientes](animation-desktop.png)
+![Contact of a charge and independent effects](animation-desktop.png)
 
-![Encuadre final de combate en móvil](animation-mobile.png)
+![Final combat frame on mobile](animation-mobile.png)
 
-## Qué cambia al jugar
+## What changes when playing
 
-Las acciones recorren preparación, desplazamiento, contacto, seguimiento y recuperación. Golpes rápidos y pesados, cargas, saltos, réplicas, guardias, técnicas y firmas tienen secuencias distintas. Las fases usan los tiempos que ya entrega el motor; la cantidad de poses no modifica el momento del daño.
+The actions cover preparation, movement, contact, monitoring and recovery. Fast and heavy blows, charges, jumps, replies, guards, techniques and signatures have different sequences. The phases use the times that the motor already delivers; The number of poses does not change the timing of the damage.
 
-Las reacciones distinguen golpes leves, de cuerpo, pesados, críticos, retroceso y derribo. El derribo incluye caída y levantada; la derrota termina en la pose canónica de KO. El evento letal interrumpe cualquier acción pendiente de inmediato, incluidos ticks de estados, y la pantalla de resultado no reinicia esa caída. Un golpe no letal recibido durante una acción propia conserva el ataque autoritativo y aplica retroceso visual antes de completar la reacción pendiente.
+The reactions distinguish light blows, body blows, heavy blows, critical blows, recoil and knockdown. The takedown includes falling and lifting; the defeat ends in the canonical KO pose. The fatal event immediately breaks any pending action, including status ticks, and the result screen does not reset that crash. A non-lethal hit received during a self-action retains the authoritative attack and applies visual knockback before completing the pending reaction.
 
-Ocho efectos pintados se componen por separado: impacto leve, pesado, crítico, polvo, estela de desplazamiento, polvo de aterrizaje, energía y corona de transformación. Los impactos fuertes añaden una pausa visual corta y una sacudida acotada. El reloj de combate continúa siendo autoritativo. El modo de movimiento reducido elimina desplazamientos, sacudidas, pausas visuales y efectos de combate, manteniendo las poses y los tiempos; las auras cosméticas permanecen estáticas. Los paneles pausan actores y efectos junto con el combate; la repetición aplica el mismo flujo de eventos.
+Eight painted effects are composed separately: light impact, heavy impact, critical, dust, slipstream, landing dust, energy and transformation corona. Strong impacts add a short visual pause and a limited jolt. The fight clock remains authoritative. Reduced motion mode eliminates scrolling, shaking, visual pauses and combat effects while maintaining poses and timing; cosmetic auras remain static. Panels pause actors and effects along with combat; repetition applies the same flow of events.
 
-Ascua incorpora la transformación visual `ember_core`, con transición de 0,72 s y duración visual de 8 s. No altera estadísticas ni añade reglas de combate. Los demás cuerpos tienen poses de concentración y energía usadas por su Firma, y el registro queda preparado para futuras transformaciones explícitas. Esta entrega no concede nuevas transformaciones de juego al resto del plantel.
+Ascua incorporates the visual transformation `ember_core`, with transition of 0,72 s and visual duration of 8 s. It does not alter statistics or add combat rules. The other bodies have poses of concentration and energy used by their Signature, and the record is prepared for future explicit transformations. This release does not grant new game transformations to the rest of the squad.
 
-## Arte entregado
+## Art delivered
 
-| Cuerpos | Banco de movimiento | Banco de reacciones | Total nuevo |
+| Bodies | motion bench | Reaction bank | Total new |
 | --- | ---: | ---: | ---: |
-| Nima, Luma, Mugo, Sira, Iria, Duna, Kiro, Neris, Taro, Balam, Tepa, Xuna, Copal, Ascua, Véspera | 16 por cuerpo | 16 por cuerpo | 480 poses |
+| Nima, Luma, Mugo, Sira, Iria, Duna, Kiro, Neris, Taro, Balam, Tepa, Xuna, Copal, Ascua, Véspera | 16 per body | 16 per body | 480 poses |
 
-Cada generación utilizó el atlas aprobado del cuerpo como referencia. Los 32 archivos canónicos registrados al inicio conservan su hash. Los PNG nuevos se copiaron directamente de la salida del generador; no se retocaron sus píxeles con scripts. Las regiones de `AtlasTexture`, pivotes y alturas compartidas están en JSON. Las poses agachadas, caídas o en el aire mantienen la escala del cuerpo y su suelo virtual; no se normaliza cada pose por su propia altura.
+Each generation used the approved atlas of the body as a reference. 32 canonical files registered at startup retain their hash. The new PNGs were copied directly from the generator output; its pixels were not retouched with scripts. `AtlasTexture` regions, pivots, and shared heights are in JSON. Crouching, fallen, or mid-air poses maintain the scale of the body and its virtual ground; Each pose is not normalized by its own height.
 
-Se utilizó la herramienta integrada `image_gen`. No expone un selector de versión «2.5», por lo que no se atribuye esa versión a los resultados. El [manifiesto de assets](../assets/sprites/sequences/manifest.json) enumera destinos, fuentes, hashes, transparencia, memoria base y nombres de los 480 fotogramas. El historial completo de prompts y correcciones está en [animation-provenance](animation-provenance/); los prompts referenciados como archivos se incluyen también completos en [referenced-prompts.json](animation-provenance/referenced-prompts.json). La procedencia de los efectos está en [fx-provenance.json](animation-provenance/fx-provenance.json).
+The integrated tool `image_gen` was used. It does not expose a version selector "2.5", so that version is not attributed to the results. The [asset manifest](../assets/sprites/sequences/manifest.json) lists destinations, sources, hashes, transparency, base memory, and frame names 480. The complete history of prompts and corrections is in [animation-provenance](animation-provenance); Prompts referenced as files are also included in full in [referenced-prompts.json](animation-provenance/referenced-prompts.json). The origin of the effects is in [fx-provenance.json](animation-provenance/fx-provenance.json).
 
-| Banco | Nombres semánticos |
+| Bank | semantic names |
 | --- | --- |
-| Movimiento | `guard_shift`, `step_back`, `charge_crouch`, `heavy_windup`, `quick_windup`, `quick_extend`, `follow_through`, `recovery`, `dash_lean`, `dash_stride`, `jump_start`, `jump_apex`, `jump_strike`, `jump_fall`, `landing`, `guard_settle` |
-| Reacciones | `light_hit`, `body_hit`, `heavy_hit`, `critical_stagger`, `fall_start`, `fall_mid`, `grounded`, `getup_support`, `getup_kneel`, `getup_rise`, `low_health`, `victory_start`, `victory_peak`, `transform_start`, `transform_peak`, `transformed_idle` |
+| Movement | `guard_shift`, `step_back`, `charge_crouch`, `heavy_windup`, `quick_windup`, `quick_extend`, `follow_through`, `recovery`, `dash_lean`, `dash_stride`, `jump_start`, `jump_apex`, `jump_strike`, `jump_fall`, `landing`, `guard_settle` |
+| Reactions | `light_hit`, `body_hit`, `heavy_hit`, `critical_stagger`, `fall_start`, `fall_mid`, `grounded`, `getup_support`, `getup_kneel`, `getup_rise`, `low_health`, `victory_start`, `victory_peak`, `transform_start`, `transform_peak`, `transformed_idle` |
 
-## Integración y coste
+## Integration and cost
 
-`FighterAnimationSet` resuelve el cuerpo equipado, carga sólo los bancos utilizados y conserva una caché LRU de seis bancos. Antes de comenzar el combate o una repetición se preparan los dos bancos de cada actor. Los retratos estáticos siguen utilizando el atlas original. Las 30 imágenes ocupan 43.811.042 bytes; cargarlas todas simultáneamente supondría unos 180 MiB base RGBA, por eso no se precargan globalmente. El límite de caché no representa un límite total de memoria: también existen texturas originales, efectos, fondos y referencias activas.
+`FighterAnimationSet` resolves the equipped body, loading only the used banks and preserving a six-bank LRU cache. Before starting the fight or a repetition, the two benches of each actor are prepared. The static portraits still use the original atlas. 30 images occupy 43.811.042 bytes; loading them all simultaneously would mean some 180 MiB RGBA base, which is why they are not preloaded globally. The cache limit does not represent a total memory limit: original textures, effects, backgrounds, and active references also exist.
 
-La lectura de límites visibles usa operaciones nativas de imagen en vez de recorrer un millón de píxeles desde GDScript. En la medición local de carga fría, los dos bancos del piloto pasaron aproximadamente de 93/109 ms a 22/25 ms; la preparación anterior al combate evita trasladar ese trabajo al primer impacto. Es una medición local, no una garantía para otros dispositivos.
+Reading visible boundaries uses native image operations instead of traversing a million pixels from GDScript. In the local cold load measurement, the two pilot banks went from approximately 93/109 ms to 22/25 ms; Pre-combat preparation avoids transferring that work to the first impact. It is a local measurement, not a guarantee for other devices.
 
-Las regiones de movimiento se encuadran con una envolvente fija que incluye colas, alas, rotación y retroceso. Móvil, tableta y repetición comparten el cálculo. A 390 px de ancho, el cuerpo de referencia conserva unos 136 px de altura y no cambia de escala al pasar de reposo a combate o resultado. No se corrige el encuadre desplazando o redimensionando cada pose.
+Motion regions are framed with a fixed envelope that includes tails, wings, rotation, and recoil. Mobile, tablet and repetition share the calculation. At 390 px wide, the reference body remains about 136 px high and does not change scale when changing from rest to combat or result. The frame is not corrected by moving or resizing each pose.
 
-Para ampliar el sistema, se añaden bancos y sus sidecars al directorio `assets/sprites/sequences`, se registran clips en `FighterAnimationSet` y efectos en `data/combat_fx.json`. Los campos opcionales `move.presentation` y `event.presentation` permiten elegir reacción, efecto, pausa visual y cámara. El atacante recupera la definición recibida en `move_started` mediante el `move_id` del impacto, tanto en Main como en repetición, sin modificar el evento autoritativo. Se validan los valores; la configuración explícita del evento tiene prioridad sobre la del movimiento, y un KO o un fallo conservan su prioridad semántica.
+To expand the system, banks and their sidecars are added to the `assets/sprites/sequences` directory, clips are registered to `FighterAnimationSet`, and effects are registered to `data/combat_fx.json`. The optional fields `move.presentation` and `event.presentation` allow you to choose reaction, effect, visual pause and camera. The attacker recovers the definition received in `move_started` using the `move_id` of the hit, both in Main and in replay, without modifying the authoritative event. Values ​​are validated; The explicit configuration of the event takes priority over that of the movement, and a KO or a failure retains its semantic priority.
 
-## Verificación reproducible
+## Reproducible verification
 
-Resultado consolidado: **15.538 comprobaciones en nueve ejecuciones de validación, cero fallos**. Las seis suites de dominio se repitieron con los 30 bancos instalados; se suman efectos, KO por estados y el recorrido nativo continuo.
+Consolidated result: **15.538 checks in nine validation runs, zero failures**. The six domain suites were repeated with the 30 banks installed; effects are added, KO by states and the continuous native tour.
 
-El piloto de Ascua pasó la revisión nativa antes de ampliar los otros 14 cuerpos. La entrega completa incluye un control estricto que exige 30 bancos, 480 fotogramas reales, transparencia, regiones válidas y ausencia de fallback. El barrido continuo comprueba todos los cuerpos en ambas orientaciones y distintos tamaños de pantalla.
+The Ascua pilot passed native review before expanding the other 14 bodies. The complete delivery includes strict control that requires 30 banks, 480 real frames, transparency, valid regions and no fallback. Continuous scanning checks all bodies in both orientations and different screen sizes.
 
-Las pruebas de combate usan fixtures y rutas de salida aisladas; no conceden progreso al perfil del jugador. Los hashes de `combat_engine`, `combat_rules`, `story_progression`, `progression`, `fighter_identity`, `move_catalog` y `campaign_config` coinciden con la base anterior a este cambio. No se cambian daño, RNG, recompensas ni formatos de guardado.
+Combat tests use fixtures and isolated egress routes; They do not grant progress to the player's profile. The hashes of `combat_engine`, `combat_rules`, `story_progression`, `progression`, `fighter_identity`, `move_catalog`, and `campaign_config` match the base before this change. No damage, RNG, rewards or save formats are changed.
 
-Desde la carpeta del proyecto:
+From the project folder:
 
 ```sh
 BRASA_GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
@@ -63,8 +63,8 @@ BRASA_GODOT="/Applications/Godot.app/Contents/MacOS/Godot"
 "$BRASA_GODOT" --headless --path . --script res://tests/test_battle_layout.gd
 ```
 
-La ejecución nativa final pasó **1.116 comprobaciones. sin fallos**, y guardó 96 observaciones temporales de ambos actores: combate y repetición en 1360×880 y 390×844. Verifica avance continuo de poses, contacto, caída, pausa, geometría y consistencia del reloj. Las capturas provienen del árbol de escena en ejecución; no se forzó una pose para simular un contacto. Los tiempos reales de captura están registrados y pueden diferir del instante solicitado por el coste de leer y guardar la imagen.
+The final native execution passed **1.116 checks. without failures**, and saved 96 temporary observations of both actors: combat and repetition in 1360×880 and 390×844. Verify continuous advance of poses, contact, landing, pause, geometry and clock consistency. The screenshots come from the running scene tree; a pose was not forced to simulate contact. Actual capture times are recorded and may differ from the requested instant due to the cost of reading and saving the image.
 
-La prueba integrada de presentación pasó **91 comprobaciones**, usando eventos reales de veneno, quemadura y sangrado, con resultado y persistencia sustituidos por memoria. También verifica que la configuración visual de un movimiento llegue al impacto, sus prioridades y la inmutabilidad de los eventos y registros históricos. Los efectos pasaron **43 comprobaciones**. El control completo de atlas y secuencias pasó **6.218 comprobaciones**, y el encuadre **2.139**, sin bajar el mínimo previo de legibilidad en móvil.
+The integrated presentation test passed **91 checks**, using real poison, burn and bleed events, with result and persistence replaced by memory. It also verifies that the visual configuration of a movement reaches the impact, its priorities, and the immutability of historical events and records. The effects passed **43 checks**. The complete atlas and sequence control passed **6.218 checks**, and the framing **2.139**, without lowering the previous minimum of mobile readability.
 
-Los [resultados nativos](animation-native-results.json) y su [manifiesto de fuentes](animation-native-manifest.json) documentan el entorno y los hashes. En el Mac de prueba, la mediana fue 16,67 ms por fotograma y el percentil 95 osciló entre 16,67 y 20,83 ms durante las capturas; este recorrido incluye lectura y escritura de PNG y no constituye un benchmark aislado. El resumen de todas las suites de esta entrega está en [animation-validation.json](animation-validation.json).
+The [native results](animation-native-results.json) and its [sources manifest](animation-native-manifest.json) document the environment and hashes. On the test Mac, the median was 16,67 ms per frame and the 95 percentile ranged between 16,67 and 20,83 ms during captures; This tour includes reading and writing PNG and is not an isolated benchmark. The summary of all the suites in this delivery is in [animation-validation.json](animation-validation.json).

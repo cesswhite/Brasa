@@ -1,42 +1,42 @@
-# Contacto y profundidad de los peleadores
+# Contact and depth of the fighters
 
-El límite anterior retraía cualquier píxel que cruzara el centro, incluido el brazo que debía golpear. El resultado era un golpe al aire aunque la animación intentara avanzar. Arena, Historia y Replay comparten ahora una aproximación visual adaptada a la pareja y un orden de dibujo que coloca al atacante delante.
+The previous limit retracted any pixel that crossed the center, including the arm that was supposed to hit. The result was a punch in the air even though the animation tried to move forward. Arena, Story Mode and Replay now share a visual approach adapted to the pair and a drawing order that places the attacker in front.
 
-| Aspecto | Antes | Después |
+| Appearance | Before | After |
 | --- | --- | --- |
-| Contacto | Cada silueta completa debía permanecer en su mitad. | El brazo cruza el centro y apunta al tercio frontal del torso neutral rival. |
-| Profundidad | El rival derecho siempre se dibujaba delante. | El atacante ocupa el primer plano de la pareja durante su acción; FX y HUD conservan sus puestos. |
-| Recuperación | El avance quedaba anulado por el límite central. | Acercamiento y regreso usan el reloj de la animación existente. |
-| Acciones simultáneas | Dos golpes separados. | Se limita el cruce de centros y el último evento decide la prioridad visual. |
-| KO/victoria durante contacto | El cambio de pose podía devolver la figura a su posición neutral. | Se conserva la posición horizontal de la figura hasta reiniciar el combate. |
-| Movimiento reducido | Poses sin avance animado. | Conserva esa opción y añade la prioridad visual del atacante. |
+| Contact | Each complete silhouette had to remain in its half. | The arm crosses the center and points to the front third of the opponent's neutral torso. |
+| Depth | The right rival was always drawn in front. | The attacker occupies the foreground of the couple during their action; FX and HUD retain their positions. |
+| Recovery | The advance was canceled by the central limit. | Zooming in and out uses the existing animation clock. |
+| Simultaneous actions | Two separate hits. | The crossing of centers is limited and the last event decides the visual priority. |
+| KO/victory during contact | The change of pose could return the figure to its neutral position. | The horizontal position of the figure is preserved until the combat restarts. |
+| Reduced movement | Poses without animated progress. | Keep that option and add the attacker's visual priority. |
 
-No se modificaron estadísticas, RNG, daño, tiempos del motor, progresión, guardados, backend, audios ni arte. Las raíces de los actores y su escala física por especie permanecen fijas. Los retratos sin rival enlazado conservan el comportamiento anterior.
+No changes to stats, RNG, damage, engine times, progression, saves, backend, audio, or art. The roots of the actors and their physical scale by species remain fixed. Portraits without a linked rival retain the previous behavior.
 
-## Evidencia
+## Evidence
 
-[Tablero antes/después](combat-contact/index.html), con capturas nativas de Main y BattleReplayPanel en escritorio y móvil. Son fixtures explícitos en memoria; no abren perfiles del usuario ni generan recompensas.
+[Report index](README.md), with native screenshots of Main and BattleReplayPanel on desktop and mobile. They are explicit fixtures in memory; They do not open user profiles or generate rewards.
 
-`tools/contact_showcase.gd` reproduce las fases de guardia, viaje, contacto y recuperación de parejas de distintos tamaños; también comprueba movimiento reducido y finales de combate. `tests/test_fighter_contact.gd` añade comprobaciones de cercanía, límites, orientación, raíces, pausa, cambio de tamaño, concurrencia, contraataques, orden visual y reinicio.
+`tools/contact_showcase.gd` reproduces the guard, travel, contact and recovery phases of pairs of different sizes; also checks reduced movement and combat endings. `tests/test_fighter_contact.gd` adds closeness, boundary, orientation, roots, pause, resize, concurrency, counterattacks, visual order, and reset checks.
 
-| Validación ejecutada | Resultado |
+| Validation executed | Result |
 | --- | --- |
-| Contacto: 23 cuerpos, 7 tamaños, ambos sentidos, 1.933 casos | 40.882 comprobaciones, 0 fallos. |
-| Capturas nativas finales de Main y Replay | 128 PNG, 528 comprobaciones, 0 fallos; 108 instantes comparables con la base. |
-| Límites previos de figuras sin pareja | 185.472 comprobaciones, 0 fallos. |
-| Relojes de movimientos | 154 comprobaciones, 0 fallos. |
-| Estado, KO y presentación | 91 comprobaciones, 0 fallos. |
-| Marcadores de FX | 434 comprobaciones, 0 fallos. |
-| Reproducción visual | 821 comprobaciones, 0 fallos en 7 tamaños. |
-| Layout de batalla | 2.139 comprobaciones, 0 fallos. |
-| Presentación de movimientos existente | 857 comprobaciones, 1 fallo anterior confirmado con código previo (Balam/HUD). |
+| Contact: 23 bodies, 7 sizes, both ways, 1.933 cases | 40.882 checks, 0 failures. |
+| Final native captures from Main and Replay | 128 PNG, 528 checks, 0 failures; 108 instants comparable to the base. |
+| Previous limits of figures without a partner | 185.472 checks, 0 failures. |
+| Movement watches | 154 checks, 0 failures. |
+| Status, KO and presentation | 91 checks, 0 failures. |
+| FX Markers | 434 checks, 0 failures. |
+| visual reproduction | 821 checks, 0 failures in 7 sizes. |
+| Battle layout | 2.139 checks, 0 failures. |
+| Existing movement presentation | 857 checks, 1 previous fault confirmed with previous code (Balam/HUD). |
 
-La matriz de contacto conserva hashes idénticos de entrada/salida. Resultados detallados: `work/fighter-contact/validation.json` y `work/contact/after/observations.json`, desde la raíz del workspace.
+The contact matrix preserves identical input/output hashes. Detailed results: `work/fighter-contact/validation.json` and `work/contact/after/observations.json`, from the workspace root.
 
-## Límites de la corrección
+## Limits of correction
 
-El ajuste resuelve distancia horizontal y superposición. No redibuja las extremidades: un gigante contra un personaje muy pequeño conserva la altura de golpe que tiene su sprite. Siete cuerpos tienen mano anotada en la pose de extensión; el resto usa el borde pintado de esa pose como aproximación de alcance visual. No se presenta esa aproximación como un socket anatómico exacto.
+The adjustment resolves horizontal distance and overlap. Does not redraw limbs: a giant against a very small character retains the hit height that his sprite has. Seven bodies have hand noted in the extension pose; the rest use the painted edge of that pose as a visual range approximation. This approximation is not presented as an exact anatomical socket.
 
-La prueba existente `test_move_presentation.gd` encuentra un solapamiento de HUD con `balam_salto` a 1224×792. Se reprodujo también con `work/contact/before/source/fighter_view.gd`: es anterior a este ajuste, no una regresión de contacto.
+The existing test `test_move_presentation.gd` finds a HUD overlap with `balam_salto` to 1224×792. Reproduced also with `work/contact/before/source/fighter_view.gd`: it is before this adjustment, not a contact regression.
 
-La matriz nueva registra además 14 intersecciones de guardia con las cajas del HUD a 844×390 (Duna, Cora, Pedernal y Ascua). Sus límites pintados son idénticos con y sin pareja; quedan registrados como observaciones previas en el JSON. No se cambió el encuadre para corregirlos dentro de este ajuste de contacto.
+The new matrix also records 14 guard intersections with the HUD boxes at 844×390 (Duna, Cora, Pedernal and Ascua). Their painted boundaries are identical with and without a partner; They are recorded as previous observations in the JSON. The framing was not changed to correct them within this contact setting.

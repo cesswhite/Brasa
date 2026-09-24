@@ -1,38 +1,38 @@
-# Motor autoritativo Brasa v1
+# Authoritative Engine Brasa v1
 
-Portado del Godot instalado `4.7.2.stable.official.ed1daf0bf`, sin modificar el motor GDScript ni los guardados. No usa HTTP, D1, reloj del sistema ni azar global. El módulo no concede recompensas.
+Ported from the installed Godot `4.7.2.stable.official.ed1daf0bf`, without modifying the GDScript engine or the saves. It does not use HTTP, D1, system clock or global random. The module does not grant rewards.
 
 ## API
 
-`index.js` exporta:
+`index.js` exports:
 
 - `gameCatalog`, `ENGINE_VERSION`, `CATALOG_VERSION`, `RNG_VERSION`.
-- `buildCombatant(dto)`: recibe `character_id`, `level`, `allocations`, `move_upgrades`, `perks`, `ai_config` y metadatos opcionales `fighter_id`, `owner_id`, `identity`, `appearance`. Calcula stats con las ocho asignaciones de Historia y técnicas legales. Ignora stats derivados, habilidades y técnicas suministradas por el DTO. Valida formas y límites; el servicio debe comprobar propietario, presupuesto de puntos/fichas, recompensas y revisiones.
+- `buildCombatant(dto)`: Receives `character_id`, `level`, `allocations`, `move_upgrades`, `perks`, `ai_config` and optional metadata `fighter_id`, `owner_id`, `identity`, `appearance`. Calculates stats from the eight Story Mode attribute allocations and legal techniques. Ignores derived stats, skills and techniques supplied by the DTO. Validates shapes and limits; service must check owner, points/tokens budget, rewards and revisions.
 - `statsForProfile(profile)`, `xpForLevel(level)`, `pointsForLevel(level)`, `getStatOptions()`, `getUnlockedMoves(id,level)`, `getPerks(id)`, `resolveMove(id,moveId,tier,perks)`.
-- `getStoryStage(globalLevel)`, `getStoryOpponent(globalLevel)`: copia del encuentro exportado; fuera de1–100 devuelve `null`.
-- `validateAiConfig(raw)`: devuelve `{style,weights}` o lanza error. Estilos: balanced/aggressive/defensive/fast/counter/risky/unpredictable. Cada peso opcional corresponde a un tipo conocido y está entre0.25 y4. Los presets alteran únicamente pesos; balanced conserva la IA de Godot.
-- `simulateBattle(player,rival,seedString,options={})`: descriptores **confiables**, resultado completo con `events`, `metrics`, `winner`, `reason`, `duration`, `turns`, `player`, `rival`, `seed`, versiones y `final_state`/`terminal_state`. Cada evento mantiene su orden en el array y el `time` simulado. `options.battle_id` debe contener el ID asignado por el servicio.
-- `BattleEngine`: interfaz interna `start/advance/surrender/snapshot/summary` para corpus y herramientas.
+- `getStoryStage(globalLevel)`, `getStoryOpponent(globalLevel)`: copy of exported encounter; outside 1–100 returns `null`.
+- `validateAiConfig(raw)`: returns `{style,weights}` or throws error. Styles: balanced/aggressive/defensive/fast/counter/risky/unpredictable. Each optional weight corresponds to a known type and is between 0.25 and 4. Presets only alter weights; balanced retains Godot's AI.
+- `simulateBattle(player,rival,seedString,options={})`: **trusted** descriptors, complete result with `events`, `metrics`, `winner`, `reason`, `duration`, `turns`, `player`, `rival`, `seed`, versions and `final_state`/`terminal_state`. Each event maintains its order in the array and the simulated `time`. `options.battle_id` must contain the ID assigned by the service.
+- `BattleEngine`: `start/advance/surrender/snapshot/summary` internal interface for corpus and tools.
 
-Los descriptores completos y las opciones de pruebas no son payloads autorizables directamente desde HTTP. En particular, `combat_stats`, `ability`, `moves`, `force_signature`, `initial_hp`, `initial_statuses`, `opening_time` y `surrender_at` permiten preparar casos internos y nunca deben exponerse como entradas del cliente.
+Full descriptors and test options are not allowable payloads directly from HTTP. In particular, `combat_stats`, `ability`, `moves`, `force_signature`, `initial_hp`, `initial_statuses`, `opening_time` and `surrender_at` allow internal test cases to be prepared and should never be exposed as client input.
 
-`include_states:true` añade snapshots visuales a cada evento. El valor predeterminado es false; la reproducción normal usa eventos y el resultado final. Los snapshots completos aumentan notablemente el payload. No se implementó otro formato compacto en esta entrega.
+`include_states:true` adds visual snapshots to each event. The default value is false; normal playback uses events and the final result. Full snapshots significantly increase the payload. No other compact format was implemented in this delivery.
 
-La semilla es una cadena decimal uint64, sin ceros iniciales salvo `"0"`. El servidor genera una semilla impredecible; PCG permite después reproducir el combate. La cadena `"0"` representa una semilla determinista en este módulo, mientras que `CombatEngine.start(...,0)` local usa `randomize()`; los corpus de combate emplean semillas no nulas. Nunca transportar uint64 mediante un Number JSON.
+The seed is a uint64 decimal string, with no leading zeros except `"0"`. The server generates an unpredictable seed; PCG then allows the combat to be replayed. The string `"0"` represents a deterministic seed in this module, while local `CombatEngine.start(...,0)` uses `randomize()`; combat corpora use nonzero seeds. Never transport uint64 using a JSON number.
 
-## Catálogo y reglas
+## Catalog and rules
 
-`../data/game-catalog.json` conserva 15 personajes, 75 técnicas jugables, 90 opciones de talento, 10 técnicas de jefes y 100 encuentros, capítulos, jefes, presupuestos, XP, atributos, estados y constantes de IA. Guarda SHA-256 de los ocho archivos GDScript de origen. El mismo `catalog_version` versiona los valores de combate y de progreso; su SHA-256 identifica los bytes exportados.
+`../data/game-catalog.json` retains 15 characters, 75 playable techniques, 90 talent options, 10 boss techniques, and 100 encounters, chapters, bosses, budgets, XP, attributes, statuses, and AI constants. Saves SHA-256 of the eight source GDScript files. The same `catalog_version` versions the combat and progress values; its SHA-256 identifies the exported bytes.
 
-Las etapas17–100 usan los descriptores reales exportados con `run_seed=0`. Se conservan variantes, debilidades, técnicas, talentos, asignaciones y jefes; no se portó el hash de Godot para cambiar el personaje del pool por campaña. Los guardados y los pools locales permanecen intactos.
+Encounters 17–100 use the actual descriptors exported with `run_seed=0`. Variations, weaknesses, techniques, talents, assignments and bosses are preserved; Godot's hash was not ported to change the pool character per campaign. Saves and local pools remain intact.
 
-Se conservan mitigación, variación±8%, crítico, guardias, escudos, DoT simultáneo, tiempos de impacto/recuperación, acciones bajo stun, lentitud y reajuste de iniciativa, habilidades, fases, contraataques diferidos y rendición terminal. La Firma se arma una vez por luchador, al1%; no es1% por ataque. Al ejecutar Firma se conserva también la selección normal que Godot realiza antes de sustituirla: ese consumo de RNG importa para la paridad.
+Mitigation, variance±8%, crit, guards, shields, simultaneous DoT, hit/recovery times, actions under stun, slow and initiative reset, skills, phases, delayed counterattacks, and terminal surrender are retained. Signature eligibility is rolled once per fighter at 1%; It is not 1% per attack. Running Signature also preserves the normal selection that Godot makes before replacing it: that RNG consumption matters for parity.
 
-PCG32 procede del algoritmo de M. E. O'Neill (Apache-2.0); la adaptación float32 corresponde a Godot (MIT). Véanse [PCG](https://github.com/godotengine/godot/blob/ed1daf0bf/thirdparty/misc/pcg.cpp), [RandomPCG](https://github.com/godotengine/godot/blob/ed1daf0bf/core/math/random_pcg.h) y [RandomNumberGenerator](https://github.com/godotengine/godot/blob/ed1daf0bf/core/math/random_number_generator.h). No se usa `Math.random()`.
+PCG32 comes from M. E. O'Neill's algorithm (Apache-2.0); the float32 adaptation corresponds to Godot (MIT). See [PCG](https://github.com/godotengine/godot/blob/ed1daf0bf/thirdparty/misc/pcg.cpp), [RandomPCG](https://github.com/godotengine/godot/blob/ed1daf0bf/core/math/random_pcg.h) and [RandomNumberGenerator](https://github.com/godotengine/godot/blob/ed1daf0bf/core/math/random_number_generator.h). `Math.random()` is not used.
 
-## Reproducción de las comprobaciones
+## Reproduction of the checks
 
-Desde la raíz del proyecto Godot:
+From the root of the Godot project:
 
 ```sh
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script scripts/export_game_catalog.gd
@@ -41,6 +41,6 @@ node --test backend/tests/engine-*.test.mjs
 node backend/tests/engine-benchmark.mjs 10000 /ruta/absoluta/benchmark.json
 ```
 
-La referencia está comprimida en `backend/tests/fixtures/engine-godot.json.gz`. El exportador guarda precisión numérica completa y el test verifica su vínculo con el hash del catálogo. Los eventos se comparan campo por campo, excluyendo únicamente `message`, que es texto localizado. Todos los números se comparan con igualdad exacta.
+The reference is compressed in `backend/tests/fixtures/engine-godot.json.gz`. The exporter saves full numerical precision and the test verifies its link to the catalog hash. Events are compared field by field, excluding only `message`, which is localized text. All numbers are compared with exact equality.
 
-No existen dependencias nuevas. Los fixtures y los simuladores no se importan desde producción; `index.js` importa sólo el catálogo y los módulos puros.
+There are no new dependencies. Fixtures and simulators are not imported from production; `index.js` imports only the catalog and pure modules.

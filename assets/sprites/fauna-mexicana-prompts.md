@@ -1,6 +1,6 @@
-# Prompts de fauna mexicana
+# Mexican fauna prompts
 
-Generaciones y correcciones realizadas con la herramienta integrada image_gen. Se conservan también iteraciones descartadas; [el manifest](fauna-mexicana-origen.json) identifica las fuentes definitivas.
+Generations and corrections made with the integrated image_gen tool. Discarded iterations are also preserved; [manifest](fauna-mexicana-origen.json) identifies definitive sources.
 
 ## balam-alpha-prompt
 

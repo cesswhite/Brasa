@@ -1,4 +1,4 @@
 interface:
-  display_name: "Publicar Brasa con alcance claro"
-  short_description: "Revisa historial, licencias y contenido público"
-  default_prompt: "Usa $brasa-publication para resolver la tarea en Brasa respetando sus contratos y pruebas."
+  display_name: "Publish Brasa with clear licensing"
+  short_description: "Review history, rights, and public documentation"
+  default_prompt: "Use $brasa-publication to complete the Brasa task while preserving its contracts and relevant checks."

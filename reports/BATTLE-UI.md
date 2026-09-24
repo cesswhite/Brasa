@@ -1,29 +1,29 @@
-# Combate · HUD pintado y resultado central
+# Combat · Painted HUD and central result
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Marca BRASA / ARENA y acceso Historia encima del combate. | Se eliminan ambos elementos. Menú queda centrado arriba; Historia sigue accesible desde el menú. |
-| Texto “Ataques y habilidades automáticos” en el margen inferior. | Se retira del combate. |
-| Nombres, niveles y vida sin material propio. | Dos marcos pintados de cuero oscuro y bronce, tipografía del sistema, vida jade/coral y cifras compactas. Barras de igual ancho, reflejadas por lado. |
-| Victoria separada de la acción, al pie. | Resultado y botón forman un grupo centrado vertical y horizontalmente. La escena terminada permanece detrás con un velo, deliberadamente subordinada al resultado. |
-| Copia y acciones dispersas. | Victoria/derrota/rendición, XP y continuación agrupadas. Menú, Entrenar, Compañeros y Resumen mantienen sus acciones. Los avisos de espera/guardado aparecen junto al botón cuando hacen falta. |
-| Online presentado como selector de repeticiones. | En el combate online se ocultan título y selector; Menú centrado, HUD compartido y resultado según el lado del usuario. El botón vuelve a Arena online. Las repeticiones históricas conservan su distribución. |
+| Brand BRASA/ARENA and access Story Mode above the combat. | Both elements are removed. Menu is centered above; Story Mode is still accessible from the menu. |
+| “Automatic attacks and abilities” text at the bottom. | Removed from the combat screen. |
+| Names, levels and life without their own material. | Two dark leather and bronze painted frames, system typography, life jade/coral and compact figures. Bars of equal width, mirrored per side. |
+| Victory separated from the action, at the foot. | Result and button form a group centered vertically and horizontally. The finished scene remains veiled behind, deliberately subordinated to the result. |
+| Copy and scattered actions. | Victory/defeat/surrender, XP and continuation grouped together. Menu, Train, Companions and Summary maintain their actions. Wait/save prompts appear next to the button when needed. |
+| Online presented as a replay selector. | In online combat the title and selector are hidden; Centered menu, shared HUD and result based on user side. The button returns to Arena online. Historical replays preserve their distribution. |
 
-## Continuación real
+## Contextual continuation
 
-- Arena: **Volver a pelear** conserva el controlador existente.
-- Historia: **Siguiente encuentro**, **Preparar reintento** o **Ver legado**, según el estado de la campaña.
-- Online: **Volver a Arena online** cierra la presentación y vuelve a la sección existente. XP y rating se suministran desde la respuesta del servidor, sin recalcularlos.
+- Arena: **Refight** retains the existing controller.
+- Story: **Next Encounter**, **Prepare Retry**, or **View Legacy**, depending on campaign status.
+- Online: **Return to Arena online** closes the presentation and returns to the existing section. XP and rating are supplied from the server response, without recalculating them.
 
-El componente `game_combatant_hud.gd` reutiliza las superficies originales y los carriles de vida de `GameVisualSystem`. No fueron necesarias nuevas imágenes: el atlas pintado existente aporta los bordes y textura; nombres y cifras siguen siendo texto nativo. No hay cambios en reglas de combate, estadísticas, posiciones físicas, inventario o recompensas.
+The `game_combatant_hud.gd` component reuses the original surfaces and health bars of `GameVisualSystem`. No new images were necessary: ​​the existing painted atlas provides the edges and texture; Names and figures remain native text. There are no changes to combat rules, statistics, physical positions, inventory or rewards.
 
-## Validación
+## Validation
 
-- Layout: **2 107 comprobaciones**, siete tamaños y tres estados, sin fallos.
-- Visibilidad de resultados: **1 782 comprobaciones**, victoria y derrota en siete tamaños; recompensa única, persistencia y callbacks conservados. El criterio anterior de mantener toda la silueta fuera del resultado se sustituye expresamente por la superposición central solicitada.
-- Repeticiones: **821 comprobaciones**, sin fallos; geometría histórica, salud/eventos registrados y navegación conservados.
-- Componente de resultado: **160 comprobaciones**, sin fallos.
-- Menú: **327 comprobaciones**, sin fallos.
-- Pase nativo específico: **385 comprobaciones, 0 fallos; 49 capturas** en siete tamaños, Arena, Historia y Online, ambas perspectivas del resultado online, controles y registros inmutables. Resultado en `work/battle-ui/native-final.log`.
+- Layout: **2 107 checks**, seven sizes and three states, no errors.
+- Results visibility: **1 782 checks**, victory and defeat in seven sizes; single reward, persistence and callbacks preserved. The previous criterion of keeping the entire silhouette out of the result is expressly replaced by the requested central overlap.
+- Replays: **821 checks**, no failures; historical geometry, health/events recorded and navigation preserved.
+- Result component: **160 checks**, no failures.
+- Menu: **327 checks**, no errors.
+- Specific native pass: **385 checks, 0 failures; 49 captures** in seven sizes, Arena, Story Mode and Online, both perspectives of the online result, controls and immutable records. Result in `work/battle-ui/native-final.log`.
 
-[Capturas nativas](battle-ui/index.html). Todas usan perfiles desechables y combates reales del motor con vida inicial reducida del rival para obtener resultados rápidos y reproducibles. Online usa el formato de registro autorizado, reproducido localmente; **no es una partida de red ni una prueba de Cloudflare**. Las capturas de resultado ya muestran el arte herido existente. No se modificaron partidas personales ni se publicó ningún cambio de servidor.
+[Report index](README.md). They all use disposable profiles and real engine combat with reduced initial opponent life for fast and reproducible results. Online uses the authorized record format, reproduced locally; **this is not a network match or a Cloudflare test**. The result screenshots already show the existing wounded art. No personal games were modified and no server changes were published.

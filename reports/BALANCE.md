@@ -1,21 +1,21 @@
-# Auditoría de balance — Brasa
+# Game balance audit — Brasa
 
-Corrida final reproducible: **17,100 combates** con las nueve identidades, sus habilidades y sus Firmas habilitadas. Los niveles comprobados son 1, 10, 25 y 50. Los combatientes usan su entrenamiento inicial para aislar diferencias de personaje y crecimiento.
+Replayable Final Run: **17,100 battles** with all nine identities, their abilities, and their Signatures enabled. The levels tested are 1, 10, 25, and 50. Fighters use their initial training to isolate differences in character and growth.
 
-## Resultados
+## Results
 
-- Duración media: **32.11 s**; mediana: **30.85 s**; percentiles 10–90: **21.30–44.74 s**.
-- Firmas: **330** activaciones entre 34,200 participaciones (**0.965%**). Se lanza una sola Bernoulli del 1% por combatiente al comenzar, nunca una por ataque.
-- Aciertos: **85.5%** de ataques normales/Firma; críticos: **11.4%** de impactos.
-- Combates resueltos por límite de tiempo: **0.58%**.
-- Victorias agregadas de cada personaje por nivel: **43.9–58.3%**; **0** parejas observadas con 0% o 100%.
-- Un personaje de nivel 1 venció a su misma identidad de nivel 4 en **8.2%** de 900 encuentros. El más fuerte mantiene ventaja, pero no tiene garantizada la victoria.
+- Average duration: **32.11 s**; median: **30.85 s**; percentiles 10–90: **21.30–44.74 s**.
+- Signatures: **330** activations between 34,200 shares (**0.965%**). A single 1% Bernoulli is cast per combatant at the start, never once per attack.
+- Hits: **85.5%** from normal attacks/Signature; critical: **11.4%** of impacts.
+- Battles resolved by time limit: **0.58%**.
+- Added wins for each character by level: **43.9–58.3%**; **0** pairs observed with 0% or 100%.
+- A level 1 character defeated his level 4 identity in **8.2%** of 900 encounters. The strongest maintains an advantage, but victory is not guaranteed.
 
-## Victorias frente a todo el elenco
+## Victories in front of the entire cast
 
-Cada cifra es la tasa como participante izquierdo frente a los nueve rivales. Por nivel 1 se muestrearon 80 semillas por pareja ordenada; por niveles 10, 25 y 50, 40. Los enfrentamientos simétricos están incluidos.
+Each figure is the rate as the left participant against the nine rivals. By level 1, 80 seeds were sampled by ordered pair; by levels 10, 25 and 50, 40. Symmetrical clashes are included.
 
-| Personaje | Nivel 1 | Nivel 10 | Nivel 25 | Nivel 50 |
+| Character | Level 1 | Level 10 | Level 25 | Level 50 |
 |---|---:|---:|---:|---:|
 | Nima | 49.4% | 49.4% | 45.8% | 46.4% |
 | Luma | 49.4% | 48.6% | 53.3% | 46.7% |
@@ -27,13 +27,13 @@ Cada cifra es la tasa como participante izquierdo frente a los nueve rivales. Po
 | Neris | 52.6% | 58.3% | 49.7% | 51.9% |
 | Taro | 45.3% | 45.0% | 48.6% | 46.9% |
 
-## Matrices por nivel
+## Matrices by level
 
-Fila: personaje del jugador. Columna: rival. Las celdas indican porcentaje de victorias del jugador; cada pareja usa semillas distintas.
+Row: player character. Column: rival. The cells indicate the player's winning percentage; Each pair uses different seeds.
 
-### Nivel 1
+### Level 1
 
-| Jugador / rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
+| Player/rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Nima | 49% | 48% | 55% | 51% | 55% | 51% | 50% | 39% | 48% |
 | Luma | 52% | 51% | 46% | 55% | 52% | 48% | 42% | 42% | 55% |
@@ -45,9 +45,9 @@ Fila: personaje del jugador. Columna: rival. Las celdas indican porcentaje de vi
 | Neris | 54% | 57% | 57% | 59% | 64% | 44% | 52% | 39% | 48% |
 | Taro | 55% | 45% | 39% | 57% | 45% | 34% | 42% | 35% | 55% |
 
-### Nivel 10
+### Level 10
 
-| Jugador / rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
+| Player/rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Nima | 50% | 50% | 42% | 57% | 50% | 65% | 32% | 40% | 57% |
 | Luma | 65% | 48% | 52% | 48% | 70% | 38% | 38% | 48% | 32% |
@@ -59,9 +59,9 @@ Fila: personaje del jugador. Columna: rival. Las celdas indican porcentaje de vi
 | Neris | 57% | 52% | 70% | 57% | 45% | 55% | 55% | 60% | 72% |
 | Taro | 50% | 35% | 42% | 60% | 50% | 40% | 38% | 48% | 42% |
 
-### Nivel 25
+### Level 25
 
-| Jugador / rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
+| Player/rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Nima | 45% | 38% | 42% | 62% | 52% | 52% | 42% | 38% | 40% |
 | Luma | 60% | 48% | 40% | 62% | 62% | 62% | 55% | 40% | 50% |
@@ -73,9 +73,9 @@ Fila: personaje del jugador. Columna: rival. Las celdas indican porcentaje de vi
 | Neris | 52% | 35% | 52% | 55% | 55% | 55% | 45% | 52% | 45% |
 | Taro | 48% | 42% | 52% | 50% | 68% | 38% | 42% | 48% | 50% |
 
-### Nivel 50
+### Level 50
 
-| Jugador / rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
+| Player/rival | Nima | Luma | Mugo | Sira | Iria | Duna | Kiro | Neris | Taro |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Nima | 48% | 35% | 32% | 52% | 57% | 48% | 45% | 57% | 42% |
 | Luma | 40% | 50% | 38% | 57% | 42% | 48% | 48% | 52% | 45% |
@@ -87,30 +87,30 @@ Fila: personaje del jugador. Columna: rival. Las celdas indican porcentaje de vi
 | Neris | 60% | 40% | 55% | 55% | 55% | 45% | 57% | 45% | 55% |
 | Taro | 48% | 42% | 40% | 50% | 60% | 48% | 42% | 38% | 55% |
 
-## Reglas auditadas
+## Audited rules
 
-- Acierto entre 62% y 96%, crítico entre 3% y 32%; daño aleatorio limitado a ±8%. La defensa reduce con rendimiento decreciente y los niveles tienen una influencia adicional acotada.
-- Cada Firma se utiliza como máximo una vez, no combina crítico, siempre acierta, multiplica daño entre 1.4 y 1.8 y aplica un estado temporal. Su programación entre acciones propias 2–5 realiza aproximadamente el 1% de incidencia en encuentros completos.
-- Los estados duran acciones del afectado; una aplicación durante una acción no consume inmediatamente un turno. Lentitud recalcula el tiempo pendiente y afecta incluso cuando dura una sola acción. Veneno, quemadura y sangrado ignoran escudos; sus magnitudes y acumulaciones tienen límites explícitos.
-- Si los dos combatientes reciben daño periódico en el mismo instante, ambos daños se resuelven antes de comprobar el desenlace. Si ambos caen, un sorteo reproducible decide el ganador y queda registrado en el historial del combate.
-- La rendición termina inmediatamente. No avanza efectos, no genera ataques posteriores y produce un solo resultado; el motor nunca concede experiencia directamente.
-- El resumen conserva participantes originales, métricas, estados finales y eventos. Las estadísticas base nunca se alteran por los estados temporales.
+- Hit between 62% and 96%, critical between 3% and 32%; Random damage limited to ±8%. Defense reduces with diminishing returns and levels have limited additional influence.
+- Each Signature is used at most once, does not combo critical, always hits, multiplies damage between 1.4 and 1.8, and applies a temporary status. Its programming between own actions 2–5 performs approximately 1% of incidence in complete encounters.
+- The states last actions of the affected person; an application during an action does not immediately consume a turn. Slowness recalculates the pending time and affects even the duration of a single action. Poison, burn, and bleed ignore shields; their magnitudes and accumulations have explicit limits.
+- If both combatants receive periodic damage at the same instant, both damage is resolved before checking the outcome. If both fall, a replayable draw decides the winner and is recorded in the fight history.
+- The surrender ends immediately. It advances no effects, generates no subsequent attacks, and produces a single result; the engine never grants experience directly.
+- The summary preserves original participants, metrics, end states, and events. Base statistics are never altered by temporary states.
 
-## Cambios de balance verificados
+## Verified Balance Changes
 
-Se redujo la ventaja inicial de Duna, se hizo que el veneno de Iria creciera con su Ataque y se ajustaron las curvas de Neris, Mugo, Nima, Kiro y Duna. La última corrida dejó todos los agregados por identidad y nivel dentro del intervalo 43.9–58.3%, sin perseguir que cada pareja individual termine en 50/50.
+Reduced Duna's starting advantage, made Iria's poison grow with its Attack, and adjusted the curves of Neris, Mugo, Nima, Kiro, and Duna. The last run left all aggregates by identity and level within the interval 43.9–58.3%, without aiming for each individual pair to end in 50/50.
 
-## Reproducir
+## Play
 
-Desde la carpeta Brasa:
+From the Brasa folder:
 
 ```sh
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script tests/test_combat_v2.gd
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script tests/simulate_balance.gd
 ```
 
-La simulación escribe `reports/balance.json`. Para iterar sobre nivel 1 se admite `-- --quick`; `--output=/ruta/reporte.json` elige un archivo distinto.
+The simulation writes `reports/balance.json`. To iterate over level 1, `-- --quick` is supported; `--output=/ruta/reporte.json` choose a different file.
 
-## Alcance
+## Scope
 
-Son estimaciones de muestras finitas, no garantías de probabilidades exactas. No observar un 0% no demuestra que todas las parejas tengan idéntica dificultad. La prueba cubre crecimiento natural hasta el nivel máximo, no todas las distribuciones posibles de puntos de entrenamiento. Partidas interrumpidas o rendidas antes de la acción programada pueden terminar sin consumir una Firma sorteada. La progresión, migración y protección contra recompensas duplicadas tienen pruebas separadas.
+They are estimates from finite samples, not guarantees of exact probabilities. Not observing a 0% does not prove that all pairs have identical difficulty. The test covers natural growth up to the maximum level, not all possible distributions of training points. Games interrupted or surrendered before the scheduled action may end without consuming a drawn Signature. Progression, migration, and protection against duplicate rewards have separate tests.

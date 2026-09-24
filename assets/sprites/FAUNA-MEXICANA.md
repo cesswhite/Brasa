@@ -1,32 +1,32 @@
-# Cuatro compañeros de México
+# Four colleagues from Mexico
 
-Se crearon cuatro atlas originales con la herramienta integrada **image_gen**, con una generación separada para cada personaje y correcciones nativas de encuadre y transparencia cuando fueron necesarias. Los PNG finales se copiaron al proyecto sin alterar sus píxeles con herramientas externas.
+Four original atlases were created using the built-in **image_gen** tool, with a separate generation for each character and native framing and transparency fixes where necessary. The final PNGs were copied to the project without altering their pixels with external tools.
 
-| Personaje | Inspiración y diseño | Archivo |
+| Character | Inspiration and design | File |
 | --- | --- | --- |
-| Balam | Jaguar de pelaje dorado con rosetas, constitución robusta, faja jade y muñequeras oscuras. | [balam-v1.png](balam-v1.png) |
-| Tepa | Teporingo de pelo pardo, orejas cortas, chaqueta añil y faja mostaza. | [tepa-v1.png](tepa-v1.png) |
-| Xuna | Xoloitzcuintle de piel carbón sin pelo, orejas erguidas, chaleco cobre y faja coral. | [xuna-v1.png](xuna-v1.png) |
-| Copal | Cacomixtle de pelaje pardo, hocico fino, cola anillada, chaleco claro y faja ciruela. | [copal-v1.png](copal-v1.png) |
+| Balam | Jaguar with golden fur with rosettes, robust build, jade sash and dark wristbands. | [balam-v1.png](balam-v1.png) |
+| Tepa | Teporingo with brown hair, short ears, indigo jacket and mustard sash. | [tepa-v1.png](tepa-v1.png) |
+| Xuna | Xoloitzcuintle with charcoal skin without hair, erect ears, copper vest and coral sash. | [xuna-v1.png](xuna-v1.png) |
+| Copal | Cacomixtle with brown fur, thin snout, ringed tail, light vest and plum sash. | [copal-v1.png](copal-v1.png) |
 
-El estilo conserva las formas legibles y texturas pintadas de Brasa, con luz ámbar y sombras frías. Los personajes tienen proporciones antropomorfas de fantasía; sus nombres, personalidades y técnicas pertenecen al juego.
+The style retains the legible shapes and painted textures of Brasa, with amber lighting and cool shadows. The characters have fantasy anthropomorphic proportions; Their names, personalities and techniques belong to the game.
 
-## Poses y animación
+## Poses and animation
 
-Cada PNG contiene ocho siluetas orientadas a la derecha: reposo, respiración, preparación, golpe, impacto recibido, esquiva, victoria y derrota. Son cuatro columnas y dos filas en una imagen RGBA de 1774 × 887, con transparencia real. Los rivales usan las mismas poses reflejadas horizontalmente.
+Each PNG contains eight right-facing silhouettes: rest, breathing, preparation, hit, hit received, dodge, victory and defeat. There are four columns and two rows in an RGBA image of 1774 × 887, with real transparency. Rivals use the same horizontally mirrored poses.
 
-Los archivos JSON del mismo nombre delimitan cada silueta completa. `FighterView` calcula una escala común a partir del reposo y ancla cada pose al suelo. La separación y cobertura se verifican contra el alfa del PNG; las regiones no comparten píxeles visibles ni cortan patas, orejas, puños o colas. Los desplazamientos, saltos, anticipaciones y recuperaciones se construyen con el sistema de movimientos existente sobre estas poses.
+JSON files of the same name delimit each complete silhouette. `FighterView` computes a common scale from rest and anchors each pose to the ground. Separation and coverage are checked against the alpha of the PNG; The regions do not share visible pixels or cut off legs, ears, fists, or tails. The movements, jumps, anticipations and recoveries are built with the existing movement system on these poses.
 
-Los [prompts completos](fauna-mexicana-prompts.md) conservan el texto de las generaciones y correcciones. La [procedencia de los PNG](fauna-mexicana-origen.json) registra fuentes locales y hashes de los archivos finales. El proyecto consume únicamente las copias de esta carpeta.
+The [full prompts](fauna-mexicana-prompts.md) preserve the text of the builds and corrections. The [PNG source](fauna-mexicana-origen.json) records local sources and hashes of the final files. The project consumes only copies of this folder.
 
-## Referencias de los animales
+## Animal References
 
-El teporingo es un conejo endémico de la zona central del Eje Neovolcánico; su cuerpo compacto y sus orejas cortas guiaron a Tepa. [CONANP: ficha del teporingo](https://www.conanp.gob.mx/pdf_especies/teporingo.pdf).
+The teporingo is a rabbit endemic to the central area of the Neovolcanic Axis; Its compact body and short ears guided Tepa. [CONANP: teporingo file](https://www.conanp.gob.mx/pdf_especies/teporingo.pdf).
 
-El jaguar habita en México, con registros desde Sonora hasta Yucatán. Sus rosetas y su silueta fuerte guiaron a Balam. [CONANP: jaguar](https://www.gob.mx/conanp/articulos/jaguar-especie-ejemplar?idiom=es).
+The jaguar lives in Mexico, with records from Sonora to Yucatán. Its rosettes and strong silhouette guided Balam. [CONANP: jaguar](https://www.gob.mx/conanp/articulos/jaguar-especie-ejemplar?idiom=es).
 
-El xoloitzcuintle es una raza de perro originaria de México. Xuna toma la piel sin pelo y las orejas erguidas de su variedad más reconocible. [INAH: el perro, guardián de la vida después de la muerte](https://inah.gob.mx/index.php/boletines/el-perro-guardian-de-la-vida-despues-de-la-muerte).
+The xoloitzcuintle is a breed of dog native to Mexico. Xuna takes the hairless skin and upright ears of its most recognizable variety. [INAH: the dog, guardian of life after death](https://inah.gob.mx/index.php/boletines/el-perro-guardian-de-la-vida-despues-de-la-muerte).
 
-El cacomixtle norteño tiene distribución en México y una cola larga anillada que define a Copal. [CONANP: Bassariscus astutus](https://conanp.gob.mx/conanp/dominios/iztapopo/documentos/fichas_de_especies/Bassariscus_astutus.pdf), [Biodiversidad El Marqués: cacomixtle](https://elmarques.gob.mx/biodiversidad/portfolio-items/bassariscus-sp/).
+The northern cacomixtle has a distribution in Mexico and a long ringed tail that defines Copal. [CONANP: Bassariscus astutus](https://conanp.gob.mx/conanp/dominios/iztapopo/documentos/fichas_de_especies/Bassariscus_astutus.pdf), [El Marqués Biodiversity: cacomixtle](https://elmarques.gob.mx/biodiversidad/portfolio-items/bassariscus-sp/).
 
-La integración, las capturas nativas y las pruebas están en [Fauna mexicana](../../reports/FAUNA-MEXICANA.md).
+The integration, native captures and tests are in [Mexican fauna](../../reports/FAUNA-MEXICANA.md).

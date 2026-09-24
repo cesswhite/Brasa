@@ -1,24 +1,24 @@
-# Brasa · servicio de juego
+# Brasa · game service
 
-Cloudflare Worker + D1 para identidad, autenticación con passkeys, luchadores persistentes, Arena asíncrona, 100 encuentros de Historia, progresión, rating, historial y resultados defensivos.
+Cloudflare Worker + D1 for identity, passkey authentication, persistent fighters, asynchronous Arena, 100 Story Mode matches, progression, rating, history and defensive results.
 
-Godot presenta los eventos guardados por el servidor. El combate conserva el formato automático del juego: eliges luchador, build, estrategia y rival. Arena e Historia online comparten un perfil. Liga e Historia locales siguen disponibles y sus guardados no se importan como progreso confiable.
+Godot presents the events saved by the server. The combat retains the automatic format of the game: you choose fighter, build, strategy and rival. Arena and Story Mode online share a profile. Local League and Story Mode are still available and local saves are not imported as trusted online progress.
 
-**Nota para forks:** el siguiente párrafo es evidencia histórica de septiembre de 2026, no una garantía de disponibilidad o permiso para operar el servicio. Usa recursos propios para tu despliegue.
+**Note for forks:** the following paragraph is historical evidence from September of 2026, not a guarantee of availability or permission to operate the service. Use your own resources for your deployment.
 
-El [staging de Cloudflare](https://brasa-api-staging.acessloop.workers.dev/health) está publicado y pasó la verificación remota de acceso, Arena e Historia. El usuario activó Workers Paid, confirmado como plan actual en Cloudflare. La repetición pasó 32/32 comprobaciones de acceso y 60/60 de juego y revocación, con límite de CPU de 1000 ms por solicitud. Ese límite no es un presupuesto mensual ni un tope de facturación. [Estado, pruebas y mediciones](../reports/CLOUDFLARE-STAGING.md).
+[Cloudflare staging](https://brasa-api-staging.acessloop.workers.dev/health) is published and has passed remote access, Arena, and Story Mode verification. The user activated Workers Paid, confirmed as a current plan on Cloudflare. The replay passed 32/32 access checks and 60/60 game and revocation checks, with CPU limit of 1000 ms per request. This limit is not a monthly budget or a billing cap. [Status, tests and measurements](../reports/CLOUDFLARE-STAGING.md).
 
-## Documentación
+## Documentation
 
-- [Auditoría y plan previos](docs/ARCHITECTURE-AUDIT.md).
-- [API, persistencia, concurrencia y alcance online](docs/ONLINE.md).
-- [Autenticación, sesiones y passkeys](docs/AUTH.md).
-- [Motor determinista, corpus y simulaciones](battle-engine/README.md).
-- [Despliegue y validación de staging](docs/DEPLOYMENT.md).
+- [Previous audit and plan](docs/ARCHITECTURE-AUDIT.md).
+- [API, persistence, concurrency and online reach](docs/ONLINE.md).
+- [Authentication, sessions and passkeys](docs/AUTH.md).
+- [Deterministic engine, corpus and simulations](battle-engine/README.md).
+- [Staging deployment and validation](docs/DEPLOYMENT.md).
 
-## Desarrollo local
+## Local development
 
-Node 22 o posterior. Desde este directorio:
+Node 22 or later. From this directory:
 
 ```sh
 npm ci
@@ -29,27 +29,27 @@ npm run account:create
 npm run dev
 ```
 
-`wrangler.jsonc` mantiene `AUTH_MODE=local_dev`, loopback `127.0.0.1:8787` y D1 independiente en `.local/state`. No requiere sesión Cloudflare. `account:create` genera una credencial de siete días para desarrollo; escribe el token en un archivo 0600 y almacena sólo su hash en D1. No imprime el token. Para renovar la misma cuenta, usar `npm run account:create -- --account UUID`.
+`wrangler.jsonc` keeps `AUTH_MODE=local_dev`, loopback `127.0.0.1:8787` and independent D1 in `.local/state`. No Cloudflare session required. `account:create` generates a seven-day development credential; writes the token to a file with permissions 0600 and stores only its hash in D1. Does not print the token. To renew the same account, use `npm run account:create -- --account UUID`.
 
 ```sh
 npm run api -- --credential .local/credentials/ARCHIVO.json --path /v1/fighters
 npm run token:revoke -- --credential .local/credentials/ARCHIVO.json
 ```
 
-Las herramientas `inventory:grant` y credenciales locales nunca actúan sobre la base remota. Los fixtures de tests usan bases temporales y no tocan `.local/state` ni las partidas de Godot.
+The `inventory:grant` tool and local credentials never operate on the remote database. Test fixtures use temporary databases and do not touch `.local/state` or Godot saves.
 
-## Jugar online
+## Play online
 
-1. Abre `Jugar online.command` desde Brasa o **Arena online** en el menú del juego.
-2. Pulsa **Iniciar sesión en el navegador** y usa **Crear cuenta con passkey** en la primera visita, o **Entrar con mi passkey** si ya tienes cuenta. Confirma con tu dispositivo.
-3. Compara el código con Godot y pulsa **Autorizar este dispositivo**.
-4. Vuelve al juego, elige base de combate y nombre, y pulsa **Crear luchador**. Puedes comenzar **Historia** aunque aún no haya rivales públicos.
+1. Open `Jugar online.command` from Brasa or **Online Arena** in the game menu.
+2. Press **Login to browser** and use **Create account with passkey** on your first visit, or **Enter with my passkey** if you already have an account. Confirm with your device.
+3. Compare the code with Godot and press **Authorize this device**.
+4. Return to the game, choose combat base and name, and press **Create fighter**. You can start **Story** even if there are no public rivals yet.
 
-La passkey personal la crea el usuario en su dispositivo. El token del juego permanece en memoria; cerrar sesión lo revoca. El [acceso web directo](https://brasa-api-staging.acessloop.workers.dev/auth) no conecta Godot sin iniciar y aprobar su código. El [flujo completo](docs/AUTH.md#entrar-desde-godot) explica cada paso.
+The personal passkey is created by the user on their device. The game token remains in memory; logging out revokes it. The [web shortcut](https://brasa-api-staging.acessloop.workers.dev/auth) does not connect Godot without starting and approving its code. The [full flow](docs/AUTH.md#sign-in-from-godot) explains each step.
 
-La URL pública está en `data/online_config.json` del juego. D1, el secreto y los resultados del despliegue se documentan en [DEPLOYMENT.md](docs/DEPLOYMENT.md).
+The public URL is at `data/online_config.json` in the game. D1, the secret and the results of the deployment are documented in [DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
-## Validación reproducible
+## Reproducible validation
 
 ```sh
 npm test
@@ -58,6 +58,6 @@ node tests/engine-benchmark.mjs
 npx wrangler deploy --dry-run --config wrangler.staging.jsonc
 ```
 
-La suite incluye paridad numérica con Godot, passkeys con firmas criptográficas reales, autorización por cuenta, intención idempotente, revisiones, carreras, rollback, snapshots inmutables y límites de recompensas. Las pruebas remotas son explícitas y separan cuentas de validación del matchmaking ordinario.
+The suite includes numerical parity with Godot, passkeys with real cryptographic signatures, per-account authorization, idempotent operations, revision checks, concurrency races, rollback, immutable snapshots, and reward limits. Remote testing is explicit and separates validation accounts from ordinary matchmaking.
 
-El backend y sus dependencias están excluidos de Godot mediante `.gdignore`. `.local`, `.wrangler`, `dist`, `node_modules` y secretos se excluyen mediante `.gitignore`. No colocar secretos en `online_config.json` ni en el ejecutable.
+The backend and its dependencies are excluded from Godot using `.gdignore`. `.local`, `.wrangler`, `dist`, `node_modules`, and secrets are excluded using `.gitignore`. Do not place secrets in `online_config.json` or the executable.

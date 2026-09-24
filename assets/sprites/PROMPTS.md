@@ -1,20 +1,20 @@
-# Hojas de sprites ilustrados
+# Illustrated sprite sheets
 
-Estas son las tres hojas originales. Los siete diseños adicionales están en [PERSONAJES-V3.md](PERSONAJES-V3.md).
+These are the three original sheets. The seven additional designs are in [PERSONAJES-V3.md](PERSONAJES-V3.md).
 
-Se crearon para Brasa con la herramienta integrada `image_gen`, sin CLI ni API externa. Cada PNG original tiene 1774 × 887 píxeles y un canal alfa real. Los archivos originales se conservan sin recortar; Godot usa regiones de atlas y metadatos de anclaje para mostrarlos.
+They were built for Brasa with the built-in tool `image_gen`, without CLI or external API. Each original PNG has 1774 × 887 pixels and a real alpha channel. The original files are kept uncropped; Godot uses atlas regions and anchor metadata to display them.
 
-| Personaje | Hoja final |
+| Character | Final sheet |
 | --- | --- |
-| Nima · Lince | `lince-v2.png` |
-| Luma · Ajolote | `ajolote-v2.png` |
-| Mugo · Gólem | `golem-v2.png` |
+| Nima · Lynx | `lince-v2.png` |
+| Luma · Axolotl | `ajolote-v2.png` |
+| Mugo · Golem | `golem-v2.png` |
 
-Las ocho poses se leen por filas: reposo, respiración, preparación de ataque, puñetazo, reacción al golpe, esquiva, victoria y derrota. El movimiento combina estas imágenes con desplazamientos y transiciones de Godot; las sombras y destellos se dibujan por separado. El nombre del modelo interno no se expone en la herramienta.
+The eight poses are read in rows: rest, breathing, attack preparation, punch, reaction to the blow, dodge, victory and defeat. The movement combines these images with Godot shifts and transitions; shadows and highlights are drawn separately. The internal model name is not exposed in the tool.
 
-## Prompts de las hojas finales
+## Prompts of the final sheets
 
-### Lince
+### Lynx
 
 ```text
 Use case: stylized-concept.
@@ -35,7 +35,7 @@ BOTTOM ROW cell4: defeated: lying on side on the baseline, head left, legs right
 Deliver a pristine transparent game sprite atlas with eight isolated poses. Prioritize consistent character identity, the exact grid and usable transparent silhouettes over decorative presentation.
 ```
 
-### Ajolote
+### Axolotl
 
 ```text
 Use case: stylized-concept.
@@ -56,7 +56,7 @@ BOTTOM ROW cell4: defeated: lying on side on the baseline, head left, legs right
 Deliver a pristine transparent game sprite atlas with eight isolated poses. Prioritize consistent character identity, the exact grid and usable transparent silhouettes over decorative presentation.
 ```
 
-### Gólem
+### Golem
 
 ```text
 Use case: stylized-concept.

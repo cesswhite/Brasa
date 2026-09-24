@@ -1,45 +1,47 @@
-# Entorno Cloudflare de pruebas
+# Cloudflare testing environment
 
-Estado: **publicado en staging, con Workers Paid activado por el usuario** en [brasa-api-staging.acessloop.workers.dev](https://brasa-api-staging.acessloop.workers.dev/health). La autorización de Wrangler está completada. D1 `brasa-staging` (`9b3299f9-1c43-417e-9b02-28842b8e05a5`) tiene aplicadas las cinco migraciones: `0001_identity.sql`, `0002_auth.sql`, `0003_online_arena.sql`, `0004_validation_accounts.sql` y `0005_starter_expansions.sql`.
+> Deployment results below are historical records from September 2026. They do not establish current service availability or authorize operations on the owner’s account. Use isolated local resources or your own authorized environment.
 
-El usuario contrató **Workers Paid** y se confirmó en Cloudflare como plan actual. La nueva prueba remota terminó el **21 de septiembre de 2026 a las 03:48 UTC** —20 de septiembre en Ciudad de México— sobre la versión `3faaf02a-8427-4329-9ab8-7c8e50ef13ec`: **32/32 comprobaciones de acceso y 60/60 de juego y revocación**.
+Status: **published in staging, with Workers Paid enabled by user** in [brasa-api-staging.acessloop.workers.dev](https://brasa-api-staging.acessloop.workers.dev/health). Wrangler authorization is configured. D1 `brasa-staging` (`9b3299f9-1c43-417e-9b02-28842b8e05a5`) has all five migrations applied: `0001_identity.sql`, `0002_auth.sql`, `0003_online_arena.sql`, `0004_validation_accounts.sql` and `0005_starter_expansions.sql`.
 
-La **versión final publicada es `99077f34-8895-4b12-98ee-a3b692d8596e`**, con el mismo bundle y secreto, límite de CPU de `1000` ms por solicitud y muestreo de logs restaurado a `0.1`. Las versiones de prueba y final confirmaron remotamente `usage_model: standard` y `limits.cpu_ms: 1000`; `work/cloudflare-paid/version-settings-final.json` conserva la consulta final. El paquete ocupa 676.79 KiB comprimidos; los 102 ms de startup final no son CPU por solicitud.
+The user signed up for **Workers Paid** and was confirmed in Cloudflare as a current plan. The new remote test ended on **21 September 2026 at 03:48 UTC** —20 September in Mexico City— on version `3faaf02a-8427-4329-9ab8-7c8e50ef13ec`: **32/32 access checks and 60/60 game and revocation**.
 
-| Comprobación en Paid | Resultado |
+The **final released version is `99077f34-8895-4b12-98ee-a3b692d8596e`**, with the same bundle and secret, CPU limit of `1000` ms per request and log sampling restored to `0.1`. Test and final versions remotely confirmed `usage_model: standard` and `limits.cpu_ms: 1000`; `work/cloudflare-paid/version-settings-final.json` preserves the final query. The package occupies 676.79 compressed KiB; The final startup 102 ms are not CPU per request.
+
+| Checking in Paid | Result |
 | --- | --- |
-| HTTPS sobre la versión final | 5/5: salud, acceso, dispositivo, JavaScript y rechazo 401; `https-probes-final.json`. |
-| Registro, inicio de sesión WebAuthn y autorización de dispositivo | 32/32. |
-| Arena, Historia, progreso, reintentos, historial, defensa y revocación | 60/60. |
-| Cuentas de esta ejecución | 2 cuentas QA nuevas, con 1 luchador, 24 cosméticos y 0 sesiones cada una. |
-| Combates de esta ejecución | 1 Arena y 1 Historia, con resultados persistidos por el servidor. |
-| Reconciliación D1 acumulada | 4 cuentas QA, 0 cuentas ordinarias y 0 sesiones QA. |
-| CPU por solicitud configurada | 1000 ms; es un límite de ejecución, no un tope mensual de facturación. |
+| HTTPS over final version | 5/5: Health, Login, Device, JavaScript, and unauthenticated rejection (401); `https-probes-final.json`. |
+| Registration, WebAuthn login, and device authorization | 32/32. |
+| Arena, Story Mode, progress, retries, history, defense and revocation | 60/60. |
+| Accounts of this execution | 2 new QA accounts, with 1 fighter, 24 cosmetics and 0 sessions each. |
+| Fights of this execution | 1 Arena and 1 Story Mode, with results persisted by the server. |
+| Cumulative D1 Reconciliation | 4 QA accounts, 0 ordinary accounts and 0 QA sessions. |
+| CPU per request configured | 1000 ms; It is a performance limit, not a monthly billing limit. |
 
-Los reportes de esta ejecución están en `work/cloudflare-paid/remote-provision.json`, `remote-verify.json` y `remote-db-reconciliation.json`. El cambio de plan y configuración conserva la aplicación y sus datos. La suite local de referencia sigue siendo 365/365; no se repitió por cambiar únicamente la configuración de despliegue.
+The reports for this run are in `work/cloudflare-paid/remote-provision.json`, `remote-verify.json` and `remote-db-reconciliation.json`. Changing plans and settings preserves the app and your data. The local reference suite remains 365/365; It was not repeated by only changing the deployment configuration.
 
-Cambios locales posteriores en dos descripciones de auras y su bundle generado no están incluidos en esta publicación. El [informe](../../reports/CLOUDFLARE-STAGING.md) distingue sus fechas y hashes del snapshot desplegado.
+Later local changes to two aura descriptions and their generated bundle are not included in this publication. The [report](../../reports/CLOUDFLARE-STAGING.md) distinguishes its dates and hashes from the deployed snapshot.
 
-Los estados HTTP esperados se comprobaron bajo Paid y su límite configurado. **No se obtuvo una nueva lectura de CPU por invocación en Paid**: el panel de Observability de Chrome no cargó durante los intentos de revisión. La prueba tampoco es una prueba de carga. Las mediciones Free se conservan a continuación como evidencia histórica y no se presentan como valores de Paid. El [informe de Cloudflare](../../reports/CLOUDFLARE-STAGING.md) conserva versiones, evidencia y esta limitación.
+Expected HTTP states were checked under Paid and its configured limit. **No new CPU reading obtained per invocation on Paid**: The Chrome Observability panel did not load during review attempts. The test is also not a load test. Free measurements are preserved below as historical evidence and are not presented as Paid values. The [Cloudflare report](../../reports/CLOUDFLARE-STAGING.md) preserves versions, evidence, and this limitation.
 
-## Verificación anterior al cambio de plan
+## Verification before plan change
 
-El smoke original terminó el 21 de septiembre de 2026 a las 03:27 UTC sobre la versión `ce9db916-5337-4c93-8724-fdaed84cca91`. La versión `0f3491e2-c017-402e-a39d-5ea7dff1aec0` cerró aquella publicación con el mismo bundle, la quinta migración y muestreo `0.1`. Los datos siguientes son históricos.
+The original smoke ended on 21 September 2026 at 03:27 UTC on version `ce9db916-5337-4c93-8724-fdaed84cca91`. Version `0f3491e2-c017-402e-a39d-5ea7dff1aec0` closed that publication with the same bundle, the fifth migration and sampling `0.1`. The following data is historical.
 
-| Comprobación | Resultado |
+| Check | Result |
 | --- | --- |
-| Suite local de la publicación final | 365 pruebas, 0 fallos, tras incorporar la quinta migración. La versión del smoke había pasado 360/360. |
-| HTTPS, salud, origen, caché, UI y rechazo sin credencial | 5/5 antes del smoke y 5/5 repetidas sobre la versión final. |
-| Registro, inicio de sesión WebAuthn y autorización de dispositivo | 32/32. |
-| Arena, Historia, progreso, reintentos, historial, defensa y revocación | 60/60. |
-| Reconciliación D1 final | 5 migraciones, expansión `cats-v1`, 2 cuentas QA con `is_test=1`, 24 cosméticos —incluidos Ónix y Bruma— y 1 luchador por cuenta, 1 combate de Arena y 1 de Historia; 0 sesiones y 0 jugadores ordinarios. |
-| Catálogo publicado | 31 cosméticos, 24 iniciales; 15 personajes y 100 encuentros. |
+| Final pre-publication local suite | 365 tests, 0 failures, after incorporating the fifth migration. The smoke version had passed 360/360. |
+| HTTPS, health, origin, cache, UI and rejection without credential | 5/5 before the smoke and 5/5 repeated on the final version. |
+| Registration, WebAuthn login, and device authorization | 32/32. |
+| Arena, Story Mode, progress, retries, history, defense and revocation | 60/60. |
+| Final D1 reconciliation | 5 migrations, expansion `cats-v1`, 2 QA accounts with `is_test=1`, 24 cosmetics — including Ónix and Bruma — and 1 account fighter, 1 Arena combat and 1 Story Mode; 0 sessions and 0 ordinary players. |
+| Published catalog | 31 cosmetics, 24 starter items; 15 characters and 100 encounters. |
 
-Hash lógico/API del catálogo cosmético: `728f17d468b127d7d019e8513939e322ea6b5b03caa56f0dd27973697f99e43e`. Los reportes sin credenciales están en `work/cloudflare-deploy/https-probes-final.json`, `remote-provision.json`, `remote-verify.json` y `remote-db-reconciliation-final.json`, desde la raíz del workspace. `npm-test-release.log` registra la suite local final de 365 pruebas; `npm-test-final.log` conserva las 360 previas al smoke. Estas cifras describen esa revisión comprobada; no validan automáticamente cambios locales posteriores.
+Cosmetic catalog logical hash/API: `728f17d468b127d7d019e8513939e322ea6b5b03caa56f0dd27973697f99e43e`. The reports without credentials are in `work/cloudflare-deploy/https-probes-final.json`, `remote-provision.json`, `remote-verify.json` and `remote-db-reconciliation-final.json`, from the root of the workspace. `npm-test-release.log` records the final local suite of 365 tests; `npm-test-final.log` preserves the 360 before the smoke. These figures describe that verified revision; they do not automatically validate subsequent local changes.
 
-## Actualizar el staging existente
+## Update existing staging
 
-El Worker y D1 ya existen. Conservar el UUID de la base y el secreto de autenticación. No repetir `d1 create` ni generar otra clave para una actualización ordinaria. Desde `backend/`:
+The Worker and D1 already exist. Preserve the database UUID and authentication secret. Do not repeat `d1 create` or generate another key for an ordinary update. From `backend/`:
 
 ```sh
 npx wrangler whoami
@@ -50,46 +52,46 @@ npx wrangler deploy --dry-run --config wrangler.staging.jsonc
 npx wrangler deploy --config wrangler.staging.jsonc
 ```
 
-Antes de desplegar, revisar las migraciones nuevas y sincronizar el catálogo si cambió. La prueba remota original se ejecutó con las cuatro primeras migraciones. Después se aplicó `0005_starter_expansions.sql` en D1 remoto y se volvió a sembrar el catálogo con 35 sentencias correctas, incluido el registro de expansión `cats-v1`. Esta quinta migración registra expansiones de inventario entregadas y debe aplicarse antes de ejecutar la versión nueva de `catalogSQL()`.
+Before deploying, review new migrations and synchronize the catalog if it changed. The original remote test was run with the first four migrations. `0005_starter_expansions.sql` was then applied to remote D1 and the catalog was reseeded with correct 35 statements, including expansion register `cats-v1`. This fifth migration records delivered inventory expansions and must be applied before running the new version of `catalogSQL()`.
 
-Para sembrar el catálogo, exportar `catalogSQL()` de `scripts/admin.mjs` a un archivo temporal y ejecutarlo con `wrangler d1 execute DB --remote --config wrangler.staging.jsonc --file ARCHIVO.sql`. La versión nueva concede una sola vez los cuerpos gratuitos de Ónix y Bruma a las cuentas ya existentes; su registro evita reponerlos tras una revocación. No repone otros cosméticos ni concede premios de progreso. No sembrar usuarios, sesiones ni progreso de cliente.
+To seed the catalog, export `catalogSQL()` from `scripts/admin.mjs` to a temporary file and run it with `wrangler d1 execute DB --remote --config wrangler.staging.jsonc --file ARCHIVO.sql`. The new version grants free one-time bodies of Ónix and Bruma to existing accounts; Its registration prevents replacement after a revocation. It does not replenish other cosmetics or grant progress rewards. Do not seed users, sessions or client progress.
 
-### Secreto y observabilidad
+### Secrets and observability
 
-El primer despliegue recibió `BETTER_AUTH_SECRET` mediante `wrangler deploy --secrets-file`, con un archivo privado fuera del repositorio, permisos 0600 y 48 bytes aleatorios criptográficos. El archivo temporal se eliminó al terminar. El valor sólo permanece como secret binding del Worker y no se entrega a Godot.
+The first deployment received `BETTER_AUTH_SECRET` using `wrangler deploy --secrets-file`, with a private file outside the repository, permissions 0600 and 48 cryptographic random bytes. The temporary file was deleted upon completion. The value only remains as the secret binding of the Worker and is not delivered to Godot.
 
-Las actualizaciones ordinarias usan `wrangler deploy --config wrangler.staging.jsonc`: heredan el secreto existente. No volver a ejecutar el generador del primer despliegue ni rotarlo sin una necesidad concreta. `AUTH_MODE=better_auth`, el origen HTTPS exacto y `nodejs_compat` permanecen configurados.
+Ordinary updates use `wrangler deploy --config wrangler.staging.jsonc` - they inherit the existing secret. Do not rerun the generator from the first deployment or rotate it without a specific need. `AUTH_MODE=better_auth`, the exact HTTPS origin, and `nodejs_compat` remain configured.
 
-En la prueba de Paid se usó temporalmente `head_sampling_rate: 1.0`; la versión final `99077f34-8895-4b12-98ee-a3b692d8596e` restauró `0.1` y conserva `limits.cpu_ms: 1000`. Los logs de aplicación guardan ruta, método, estado, ID y duración de pared; esta última no mide CPU. No se registran cuerpos ni credenciales. No hay colas, cron, Durable Objects ni Workers auxiliares.
+`head_sampling_rate: 1.0` was temporarily used in the Paid test; the final version `99077f34-8895-4b12-98ee-a3b692d8596e` restored `0.1` and retains `limits.cpu_ms: 1000`. Application logs save path, method, status, ID, and wall duration; the latter does not measure CPU. No bodies or credentials are logged. There are no queues, cron, Durable Objects or auxiliary Workers.
 
-### Compatibilidad de migraciones
+### Migration Compatibility
 
-La primera aplicación remota de `0001_identity.sql` falló con `incomplete input`; se comprobó que la transacción se había revertido y no había tablas de juego. La ruta remota envía el SQL completo a la API de D1. Tres triggers que usaban `SELECT CASE WHEN EXISTS (...) THEN RAISE(...) END` se reescribieron como `SELECT RAISE(...) WHERE EXISTS (...)`, conservando condiciones y errores. Después se aplicaron las cuatro migraciones correctamente.
+The first remote application of `0001_identity.sql` failed with `incomplete input`; It was found that the transaction had been reversed and there were no game tables. The remote path sends the complete SQL to the D1 API. Three triggers that used `SELECT CASE WHEN EXISTS (...) THEN RAISE(...) END` were rewritten as `SELECT RAISE(...) WHERE EXISTS (...)`, preserving conditions and errors. All four migrations were then applied correctly.
 
-El splitter local de Wrangler ya aceptaba el SQL anterior; el fallo no se atribuye a ese parser. `tests/migrations.test.mjs` comprueba migraciones, propiedad, rollback e inmutabilidad. `work/cloudflare-deploy/migrations.log` conserva el resultado remoto exitoso.
+The Wrangler local splitter already accepted the old SQL; The failure is not attributed to that parser. `tests/migrations.test.mjs` checks migrations, ownership, rollback, and immutability. `work/cloudflare-deploy/migrations.log` retains the successful remote result.
 
-## Provisionar otro entorno
+## Provision another environment
 
-Usar un nombre, configuración y base independientes. Verificar antes la cuenta con `wrangler whoami` y las bases con `wrangler d1 list`. Si es necesaria una autorización nueva, el flujo usado fue:
+Use a separate name, configuration, and database. First verify the account with `wrangler whoami` and the databases with `wrangler d1 list`. If a new authorization is necessary, the flow used was:
 
 ```sh
 npx wrangler login --browser=false --use-keyring --scopes account:read user:read workers_scripts:write workers_tail:read d1:write
 ```
 
-La credencial OAuth se conserva cifrada con el llavero de macOS. Crear D1 sólo si no existe, copiar el UUID devuelto a la configuración de ese entorno, aplicar todas sus migraciones y sembrar el catálogo canónico. El primer Worker requiere un secreto criptográfico de al menos 32 bytes, suministrado por un archivo privado temporal o por el mecanismo de secretos soportado por Wrangler. No incluir el valor en archivos del proyecto, argumentos impresos ni configuración del cliente.
+The OAuth credential is kept encrypted with the macOS keychain. Create D1 only if it does not exist, copy the returned UUID to that environment's configuration, apply all your migrations, and seed the canonical catalog. The first Worker requires a cryptographic secret of at least 32 bytes, supplied by a temporary private file or by the secrets mechanism supported by Wrangler. Do not include the value in project files, printed arguments, or client settings.
 
-## Repetir la prueba remota
+## Repeat remote test
 
-`tests/remote-smoke.mjs` exige opt-in y un archivo de credenciales nuevo para cada ejecución:
+`tests/remote-smoke.mjs` requires opt-in and a new credentials file for each run:
 
 ```sh
 node tests/remote-smoke.mjs --allow-remote --phase provision --credentials .local/staging-smoke-NUEVA-EJECUCION.json
-# Marcar administrativamente sólo los dos account_id impresos como is_test=1.
+# Administratively mark only the two account_ids printed as is_test=1.
 node tests/remote-smoke.mjs --allow-remote --phase verify --credentials .local/staging-smoke-NUEVA-EJECUCION.json
 ```
 
-El archivo se crea con permisos 0600 y no contiene claves privadas WebAuthn. La fase `verify` exige que el servidor confirme la marca de prueba antes de crear luchadores. Al terminar revoca las sesiones y retira los bearers del archivo. Las cuentas QA quedan separadas de rivales ordinarios. El usuario crea su passkey personal en su propio dispositivo, siguiendo [el acceso desde Godot](AUTH.md#entrar-desde-godot).
+The file is created with 0600 permissions and does not contain WebAuthn private keys. Phase `verify` requires the server to confirm the test flag before creating fighters. When finished, revoke the sessions and remove the bearers from the file. QA accounts are separated from ordinary rivals. The user creates their personal passkey on their own device, following [access from Godot](AUTH.md#sign-in-from-godot).
 
-Revisar CPU real de registro y combate en Cloudflare después de cambios relevantes. Un resultado correcto de `npm test`, un dry-run o un benchmark local no sustituye esa medición. El usuario activó [Workers Paid, desde 5 USD al mes más uso adicional aplicable](https://developers.cloudflare.com/workers/platform/pricing/). El límite `limits.cpu_ms` acota CPU por solicitud: no es un presupuesto mensual ni un tope de facturación.
+Review actual CPU logging and combat in Cloudflare after relevant changes. A correct result from `npm test`, a dry-run or a local benchmark does not replace that measurement. The user activated [Workers Paid, from 5 USD per month plus applicable additional usage](https://developers.cloudflare.com/workers/platform/pricing/). The `limits.cpu_ms` limit limits CPU per request: it is not a monthly budget or billing cap.
 
-Fuentes: [Wrangler D1 y migraciones](https://developers.cloudflare.com/workers/wrangler/commands/d1/), [límites CPU y formas de medición](https://developers.cloudflare.com/workers/platform/limits/), [Workers Logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/).
+Sources: [Wrangler D1 and migrations](https://developers.cloudflare.com/workers/wrangler/commands/d1/), [CPU limits and measurement methods](https://developers.cloudflare.com/workers/platform/limits/), [Workers Logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/).

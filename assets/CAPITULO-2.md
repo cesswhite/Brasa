@@ -1,20 +1,20 @@
-# El paso de la tormenta · Arte del capítulo 2
+# Passing of the Storm Chapter Art 2
 
-El segundo capítulo utiliza dos imágenes originales creadas con la herramienta nativa `image_gen`: una plaza nocturna entre montañas y el atlas transparente de Véspera. La herramienta no expone el nombre de su modelo interno.
+The second chapter uses two original images created with the native tool `image_gen`: a night square between mountains and the transparent atlas of Véspera. The tool does not expose the name of its internal model.
 
-| Recurso | Archivo final |
+| Resource | Final file |
 | --- | --- |
-| Escenario · plaza de piedra húmeda | [arena-tormenta-v3.png](arena-tormenta-v3.png) |
-| Véspera · polilla lunar | [sprites/vespera-v3.png](sprites/vespera-v3.png) |
-| Regiones y anclajes de sus ocho poses | [sprites/vespera-v3.json](sprites/vespera-v3.json) |
+| Stage · wet stone square | [arena-tormenta-v3.png](arena-tormenta-v3.png) |
+| Véspera · lunar moth | [sprites/vespera-v3.png](sprites/vespera-v3.png) |
+| Regions and anchors of its eight poses | [sprites/vespera-v3.json](sprites/vespera-v3.json) |
 
-Ambos PNG tienen 1774 × 887 píxeles y se conservan sin retoque de píxeles. El escenario es opaco; el atlas conserva el canal alfa generado. Las poses de Véspera son reposo, respiración, preparación, golpe, impacto, esquiva, victoria y derrota. Godot las anima con el mismo controlador que el resto del plantel.
+Both PNGs have 1774 × 887 pixels and are preserved without pixel retouching. The setting is opaque; the atlas preserves the generated alpha channel. Véspera's poses are Rest, Breath, Prepare, Strike, Impact, Dodge, Victory, and Defeat. Godot animates them with the same controller as the rest of the squad.
 
-[Vista del escenario y Véspera dentro del juego](../reports/capitulo2-batalla.png).
+[Stage view and in-game Véspera](../reports/capitulo2-batalla.png).
 
-## Prompts exactos
+## Exact prompts
 
-### Escenario
+### Scenario
 
 ```text
 Use case: illustration-story

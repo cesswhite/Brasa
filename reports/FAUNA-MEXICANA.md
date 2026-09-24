@@ -1,38 +1,38 @@
-# Fauna mexicana en Brasa
+# Mexican fauna in Brasa
 
-**Cuatro personajes nuevos; 13 jugables en total.** Cada uno tiene cinco técnicas, seis opciones de talento —se pueden elegir tres— y ocho poses propias con transparencia.
+**Four new characters; 13 playable in total.** Each one has five techniques, six talent options - you can choose three - and eight poses with transparency.
 
-| Personaje | Inspiración | Estilo |
+| Character | Inspiration | Style |
 |---|---|---|
-| Balam | Jaguar | Acecho, cargas y críticos. |
-| Tepa | Teporingo | Saltos, velocidad y evasión. |
-| Xuna | Xoloitzcuintle, raza mexicana de perro | Resistencia, guardia y desgaste. |
-| Copal | Cacomixtle | Fintas, desplazamientos y contraataques. |
+| Balam | jaguar | Stalking, charges and crits. |
+| Tepa | Teporingo | Jumps, speed and evasion. |
+| Xuna | Xoloitzcuintle, Mexican breed of dog | Resistance, guard and wear. |
+| Copal | Cacomixtle | Feints, movements and counterattacks. |
 
-![Galería de los cuatro compañeros](companeros-mexicanos.png)
+![Gallery of the four companions](companeros-mexicanos.png)
 
-Los cuatro atlas se generaron con la herramienta nativa de imágenes. Cada archivo final es idéntico, byte por byte, a su fuente generada y conserva ocho poses en RGBA de 1774 × 887. La anatomía del golpe de Tepa se corrigió a partir de la observación del usuario; se revisaron sus ocho poses y el resultado dentro del combate. También se verificó que las colas y extremidades completas se mantienen visibles en las fichas y la arena móvil.
+The four atlases were generated with the native imaging tool. Each final file is identical, byte-for-byte, to its generated source and preserves eight RGBA poses of 1774 × 887. Tepa hit anatomy corrected based on user observation; His eight poses and the result within the combat were reviewed. It was also verified that full tails and limbs remain visible on the tiles and the moving arena.
 
-![Golpe corregido de Tepa](tepa-golpe-corregido.png)
+![Tepa bug fix](tepa-golpe-corregido.png)
 
-El [informe de arte](../assets/sprites/FAUNA-MEXICANA.md), los [prompts completos](../assets/sprites/fauna-mexicana-prompts.md) y el [manifiesto de fuentes y hashes](../assets/sprites/fauna-mexicana-origen.json) conservan la procedencia de los cuatro atlas finales.
+The [art report](../assets/sprites/FAUNA-MEXICANA.md), [full prompts](../assets/sprites/fauna-mexicana-prompts.md), and [sources and hashes manifest](../assets/sprites/fauna-mexicana-origen.json) preserve the provenance of the final four atlases.
 
-## Validación final
+## Final validation
 
-| Comprobación | Resultado |
+| Check | Result |
 |---|---:|
-| 22 suites de dominio, interfaz, combate y campaña | 22.707 checks; 0 fallos |
-| Smoke de interfaz | PASS |
-| 3 suites con renderizado nativo | 5.167 checks; 0 fallos |
-| Persistencia sobre copias aisladas de los guardados actuales | 318 checks; 0 fallos |
-| Capturas nativas de revisión | 40 PNG: 6 de combate/galería, 23 de sprites, 11 de fichas/plantel |
+| 22 domain, interface, combat and campaign suites | 22.707 checks; 0 faults |
+| Interface Smoke | PASS |
+| 3 suites with native rendering | 5.167 checks; 0 faults |
+| Persistence on isolated copies of current saves | 318 checks; 0 faults |
+| Native review captures | 40 PNG: 6 combat/gallery, 23 sprites, 11 tokens/roster |
 
-Los 23 logs principales incluyen las 22 suites y el smoke. Las pruebas nativas vuelven a comprobar el comportamiento con renderizado; sus cifras se presentan por separado. Se revisaron la galería, el golpe corregido, las ocho poses de Tepa y Copal, combate y ficha móvil de Copal, y el plantel horizontal. Los [resultados estructurados](fauna-mexicana-validation.json) registran cada log y su hash, capturas, arte y fuentes de balance.
+The main 23 logs include the 22 suites and the smoke. Native tests recheck behavior with rendering; their figures are presented separately. The gallery, the corrected hit, the eight poses of Tepa and Copal, combat and mobile token of Copal, and the horizontal roster have been revised. The [structured results](fauna-mexicana-validation.json) records each log and its hash, captures, art and balance sources.
 
-## Balance y progreso
+## Balance and progress
 
-La simulación final completó **48/48 campañas de 100 encuentros**, con cuatro prioridades y tres semillas por personaje: **14.082 combates**, de los cuales 8.320 son duelos de Liga y 5.762 de Historia. Las veinte técnicas nuevas se utilizaron. La media fue de 120,04 combates por campaña y 30,22 segundos por combate. El [informe de balance](MEXICAN_ROSTER_BALANCE.md) detalla estadísticas, jefes, builds y límites de la muestra; los seis hashes de sus fuentes coinciden con el código final.
+The final simulation completed **48/48 campaigns of 100 encounters**, with four priorities and three seeds per character: **14.082 combats**, of which 8.320 are League duels and 5.762 are Story Mode duels. The twenty new techniques were used. The average was 120,04 combats per campaign and 30,22 seconds per combat. The [balance report](MEXICAN_ROSTER_BALANCE.md) details stats, bosses, builds, and sample limits; all six hashes from your sources match the final code.
 
-Los nuevos IDs se añaden después de los nueve existentes. Se conservan las definiciones antiguas, los primeros 16 encuentros y los pools de la campaña. Las pruebas de persistencia comprueban la selección de los cuatro personajes, sus perfiles independientes en Liga e Historia y el regreso a los perfiles y Legados existentes sin perder campos. La comprobación de 318 checks se ejecutó sobre copias aisladas; no se repitió al preparar este documento.
+The new IDs are added after the existing nine. The old definitions, the first 16 encounters and the campaign pools are preserved. Persistence tests check the selection of the four characters, their separate profiles in League and Story Mode, and returning to existing profiles and Legacies without losing fields. The 318 checks were run on isolated copies; was not repeated in preparing this document.
 
-La aplicación se reabrió y los dos guardados reales conservaron exactamente los mismos bytes, verificados por SHA-256 antes y después. No se reinició ningún perfil.
+The application was reopened and the two actual saves retained exactly the same bytes, verified by SHA-256 before and after. No profile was reset.

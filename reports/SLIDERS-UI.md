@@ -1,12 +1,12 @@
-# Ajustes · Controles de volumen visibles
+# Settings Visible volume controls
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Carril con tamaño mínimo cero: la barra apenas se dibujaba. | Carril sólido de 10 px, base oscura y borde bronce. |
-| Tramo de volumen casi invisible. | Relleno dorado que muestra el valor seleccionado. |
-| Rombo hueco de 24 px. | Control de 32 px, relleno y borde contrastado, con dos marcas de agarre. |
-| Foco poco perceptible. | Relleno y control en crema al recibir foco o interacción resaltada. Estado deshabilitado diferenciado. |
+| Lane with zero minimum size: the bar was barely drawn. | 10 px solid rail, dark base and bronze border. |
+| Almost invisible volume stretch. | Gold fill showing the selected value. |
+| 24 px hollow rhombus. | 32 px control, contrast padding and border, with two grip marks. |
+| Inconspicuous focus. | Cream filling and control upon receiving focus or highlighted interaction. Differentiated disabled state. |
 
-Corrección en el tema compartido de HSlider y VSlider; conserva los controles nativos y las áreas interactivas de 48 px de Ajustes. No cambia los valores, el guardado ni la mezcla de audio.
+Fix on HSlider and VSlider sharing theme; retains the native controls and hotspots from 48 px in Settings. It does not change the values, saving or audio mixing.
 
-Validación: **699 comprobaciones de integración de audio y 68 del sistema visual, todas sin fallos**. Revisión nativa de Ajustes en siete tamaños, 14 capturas: mezcla habitual y extremos 0/50/100 con foco. Se usaron archivos de prueba; no se editaron preferencias personales. [Galería](sliders-ui/index.html).
+Validation: **699 audio integration checks and 68 visual system checks, all without failures**. Native Review of Adjustments in seven sizes, 14 captures: usual mix and 0/50/100 extremes with focus. Test files were used; no personal preferences were edited. [Report index](README.md).

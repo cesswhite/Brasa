@@ -1,21 +1,21 @@
-# Ascua: bordes y separación de peleadores
+# Ascua: edges and separation of fighters
 
-Se corrigieron los dos defectos señalados en las capturas del usuario. La aprobación visual anterior no los detectó; se conserva su evidencia histórica y se añade esta revisión.
+The two defects pointed out in the user screenshots were corrected. The previous visual approval did not detect them; Its historical evidence is preserved and this revision is added.
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Línea blanca en las variantes dañadas de Ascua | Restos de fondo eliminados en los cuatro bancos de daño, 56 poses |
-| Separación basada sólo en centros | Cada silueta respeta una línea de contacto común, incluida su rotación y la pose caída |
-| KO largo bajo los pies del ganador | La figura se desplaza hacia su propio lado sin mover el origen de combate |
+| White line on corrupted variants of Ascua | Background debris removed from all four damage banks, 56 poses |
+| Separation based only on centers | Each silhouette respects a common line of contact, including its rotation and the fallen pose |
+| Long KO under the feet of the winner | The figure moves to its own side without moving the combat origin |
 
-La limpieza usa la autorización previa del usuario para quitar fondos mediante código. Sólo cambia el contorno de transparencia: el interior, el lienzo, la anatomía, el pivote y la escala se conservan. No se regeneró el personaje. Los PNG anteriores están en `work/edge-spacing-fix/before/`.
+Cleaning uses user prior authorization to remove funds via code. Only the transparency outline changes: the interior, canvas, anatomy, pivot and scale are preserved. The character was not regenerated. The PNGs above are in `work/edge-spacing-fix/before/`.
 
-La separación se aplica en Main y en las repeticiones online/locales. El encuadre es común para los dos personajes y estable por tamaño de pantalla. El ajuste por pose es una traslación visual, nunca un cambio de tamaño, estadística, alcance del motor o resultado. Sombras y efectos adjuntos siguen la figura corregida. El rectángulo real de las variantes dañadas se lee de sus metadatos.
+The separation applies to Main and online/local replays. The framing is common for the two characters and stable due to screen size. Pose adjustment is a visual translation, never a change in size, statistic, motor range, or result. Shadows and attached effects follow the corrected figure. The actual rectangle of the corrupted variants is read from their metadata.
 
-Se sustituyó la antigua comprobación móvil sobre un rectángulo genérico de 166 unidades por una comprobación sobre la altura pintada canónica. La primera reserva de cámara era excesiva; se redujo tras medir todas las secuencias. Se revisaron las capturas móviles con las figuras y el espacio de separación visibles.
+The old moving check on a generic rectangle of 166 units has been replaced with a check on the canonical painted height. The first camera reservation was excessive; was reduced after measuring all sequences. Mobile captures were reviewed with figures and separation space visible.
 
-Validación: 23 cuerpos, ambas orientaciones, siete tamaños, ataques y reacciones, victoria y KO; 185472 comprobaciones de límites y estabilidad sin fallos. Regresión: Battle Layout 2139/0, Replay 821/0, continuidad visual 2215/0, animación 1288/0, daño/familias 128/0 y audio Replay 44/0. Las capturas son fixtures sin partidas ni cuentas personales.
+Validation: 23 bodies, both orientations, seven sizes, attacks and reactions, victory and KO; 185472 limits and stability checks without failures. Regression: Battle Layout 2139/0, Replay 821/0, Visual Continuity 2215/0, Animation 1288/0, Damage/Families 128/0, and Audio Replay 44/0. The captures are fixtures without games or personal accounts.
 
-[Victoria y KO corregidos](../../../work/edge-spacing-fix/native/1360x780-victory-ko.png) · [Ataque corregido](../../../work/edge-spacing-fix/native/1360x780-attack.png) · [Móvil](../../../work/edge-spacing-fix/native/390x844-attack.png) · [Comparación del borde](../../../work/edge-spacing-fix/edge-comparison.png).
+Fixed Victory and KO (`work/edge-spacing-fix/native/1360x780-victory-ko.png`; not included) · Fixed Attack (`work/edge-spacing-fix/native/1360x780-attack.png`; not included) · Mobile (`work/edge-spacing-fix/native/390x844-attack.png`; not included) · Edge Comparison (`work/edge-spacing-fix/edge-comparison.png`; not included).
 
-Cambios sólo en el cliente y sus assets; no requieren modificaciones de Cloudflare. Las instancias del juego ya abiertas necesitan reiniciarse para cargar las texturas y scripts nuevos.
+Changes only to the client and its assets; They do not require Cloudflare modifications. Already opened game instances need to be restarted to load new textures and scripts.

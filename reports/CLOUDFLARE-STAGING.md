@@ -1,68 +1,68 @@
-# Brasa en Cloudflare · 20 de septiembre de 2026
+# Brasa on Cloudflare · 20 September 2026
 
-**Workers Paid está activo, comprado por el usuario y confirmado en Cloudflare.** El servidor de pruebas está publicado con un límite de **1.000 ms de CPU por petición**. Se repitieron y aprobaron las 92 comprobaciones remotas de acceso y juego, además de cinco comprobaciones HTTPS. El modelo `standard` y el límite se consultaron directamente a Cloudflare tras el despliegue final.
+**Workers Paid is active, purchased by the user and confirmed on Cloudflare.** The test server is published with a limit of **1.000 ms CPU per request**. 92 remote access and game checks, as well as five HTTPS checks, were repeated and passed. The `standard` model and limit were queried directly to Cloudflare upon final deployment.
 
-Servicio: [brasa-api-staging.acessloop.workers.dev](https://brasa-api-staging.acessloop.workers.dev/health). El juego ya utiliza este origen HTTPS. [Evidencia estructurada, versiones, IDs y resultados](cloudflare-staging-validation.json).
+Service: [brasa-api-staging.acessloop.workers.dev](https://brasa-api-staging.acessloop.workers.dev/health). The game already uses this HTTPS origin. [Structured evidence, versions, IDs and results](cloudflare-staging-validation.json).
 
-## Publicación verificada
+## Verified post
 
-| Recurso | Estado |
+| Resource | Status |
 | --- | --- |
 | Worker | `brasa-api-staging` |
-| Versión final con Paid | `99077f34-8895-4b12-98ee-a3b692d8596e` |
-| Versión de las pruebas remotas con Paid | `3faaf02a-8427-4329-9ab8-7c8e50ef13ec` |
-| Versión histórica de las mediciones CPU con Free | `ce9db916-5337-4c93-8724-fdaed84cca91` |
-| Código Worker | Mismo bundle que la suite local aprobada; SHA-256 `d856f319739893b4147364ac781eb937626ae727b4f76dd5825034dcda1037b0` |
-| Capacidad | Modelo `standard`, máximo CPU por petición `1000 ms`, confirmado por la API de versiones |
-| D1 | `brasa-staging` · `9b3299f9-1c43-417e-9b02-28842b8e05a5` |
-| Migraciones | `0001`–`0005`, aplicadas y comprobadas en remoto |
-| Catálogo | 15 personajes, 100 encuentros, 31 cosméticos, 24 iniciales |
-| Muestreo de logs | 100 % durante las pruebas; restaurado a 10 % |
-| Secreto de Better Auth | Generado en archivo temporal privado, cargado y retirado del disco; conservado entre versiones |
+| Final version with Paid | `99077f34-8895-4b12-98ee-a3b692d8596e` |
+| Remote testing version with Paid | `3faaf02a-8427-4329-9ab8-7c8e50ef13ec` |
+| Historical version of CPU measurements with Free | `ce9db916-5337-4c93-8724-fdaed84cca91` |
+| Worker Code | Same bundle as the approved local suite; SHA-256 `d856f319739893b4147364ac781eb937626ae727b4f76dd5825034dcda1037b0` |
+| Capacity | Model `standard`, maximum CPU per request `1000 ms`, confirmed by version API |
+| D1 | `brasa-staging` `9b3299f9-1c43-417e-9b02-28842b8e05a5` |
+| Migrations | `0001`–`0005`, applied and verified remotely |
+| Catalog | 15 characters, 100 encounters, 31 cosmetics, 24 starters |
+| Log sampling | 100 % during testing; restored to 10 % |
+| Better Auth Secret | Generated in private temporary file, loaded and removed from disk; preserved between versions |
 
-La primera migración necesitó una escritura SQL equivalente para tres triggers: `SELECT RAISE(...) WHERE EXISTS(...)`. La ruta remota rechazaba `CASE ... END`; sus condiciones de propiedad no cambiaron. Se verificó la reversión del intento fallido antes de aplicar las migraciones. La quinta migración registra la entrega única de Ónix y Bruma a cuentas existentes; la siembra final preservó sus inventarios de 24 elementos.
+The first migration required an equivalent SQL write for three triggers: `SELECT RAISE(...) WHERE EXISTS(...)`. The remote path was rejecting `CASE ... END`; their ownership conditions did not change. Verified rollback of failed attempt before applying migrations. The fifth migration records the one-time delivery of Ónix and Bruma to existing accounts; The final seeding preserved their inventories of 24 items.
 
-## Resultados
+## Results
 
-| Comprobación | Resultado |
+| Check | Result |
 | --- | --- |
-| Backend local de la revisión publicada | 365 pruebas, 0 fallos ni omisiones; fuentes y bundle idénticos, sin repetir la suite por el cambio de plan |
-| HTTPS tras la publicación final | 5/5: salud, acceso, dispositivo, JavaScript y rechazo 401 |
-| Acceso remoto | 32/32: registro WebAuthn, login con firma EC, autorización del dispositivo y sesión nativa |
-| Juego remoto | 60/60: creación, inventario, permisos, progreso, Arena, Historia, historial, defensa offline y revocación |
-| Reintentos | Misma creación y batalla; sin duplicar XP, historial ni defensa |
-| Reconciliación D1 | Cuatro cuentas QA en total; la última pareja tiene un luchador por cuenta, un combate de Arena y uno de Historia |
-| Limpieza de acceso | Cero sesiones activas de prueba; ambos tokens revocados y retirados del archivo privado |
+| Local backend of published revision | 365 tests, 0 errors or omissions; identical sources and bundle, without repeating the suite due to the change of plan |
+| HTTPS after final publication | 5/5 - Health, Access, Device, JavaScript and Opt-Out 401 |
+| Remote access | 32/32: WebAuthn registration, EC-signed login, device authorization and native session |
+| Remote play | 60/60: Creation, Inventory, Permissions, Progress, Arena, Story Mode, Match History, Offline Defense and Revocation |
+| Retries | Same creation and battle; without duplicating XP, history or defense |
+| D1 Reconciliation | Four QA accounts in total; The last couple has one fighter per account, one Arena match and one Story Mode match |
+| Access cleaning | Zero active testing sessions; both tokens revoked and removed from private file |
 
-Las dos cuentas nuevas se marcaron administrativamente `is_test=1` antes de crear luchadores. No participan en el matchmaking público. La reconciliación encontró cero cuentas ordinarias y cero sesiones activas entre las cuatro cuentas QA. Las claves privadas WebAuthn de prueba existieron únicamente en memoria. La passkey personal del usuario se crea en su propio dispositivo.
+The two new accounts were administratively marked `is_test=1` before creating fighters. They do not participate in public matchmaking. Reconciliation found zero regular accounts and zero active sessions among the four QA accounts. The test WebAuthn private keys existed only in memory. The user's personal passkey is created on their own device.
 
-La primera prueba con Free se ejecutó con cuatro migraciones; después se aplicó la quinta. La nueva prueba con Paid se ejecutó con las cinco migraciones y el límite de CPU confirmado. Las 92 comprobaciones terminaron el 21 de septiembre de 2026 a las 03:48 UTC —20 de septiembre en Ciudad de México—. Tras restaurar el muestreo a 10 %, se repitieron las cinco comprobaciones HTTPS y se consultaron modelo, límite y secret binding de la versión final. [Evidencia de esta ejecución](../../../work/cloudflare-paid/remote-verify.json).
+The first test with Free was run with four migrations; then the fifth was applied. The new test with Paid was run with all five migrations and the CPU limit confirmed. 92 checks ended on 21 September 2026 at 03:48 UTC —20 September in Mexico City. After resampling to 10 %, the five HTTPS checks were repeated and the final version's model, limit, and secret binding were queried. Evidence of this execution (`work/cloudflare-paid/remote-verify.json`; not included).
 
-La versión final se creó a las 03:50:02 UTC. Después, otro trabajo local actualizó el catálogo cosmético y reconstruyó `dist/worker.js` a las 03:52:36 UTC. Esos archivos posteriores no forman parte de esta publicación ni de sus resultados; el informe identifica el hash del bundle efectivamente validado y desplegado. [Comparación y fechas](../../../work/cloudflare-paid/drift-investigation.json).
+The final version was created at 03:50:02 UTC. Another local job then updated the cosmetic catalog and rebuilt `dist/worker.js` at 03:52:36 UTC. Those later files are not part of this publication or its results; The report identifies the hash of the bundle actually validated and deployed. Comparison and dates (`work/cloudflare-paid/drift-investigation.json`; not included).
 
-## CPU: medición histórica y configuración actual
+## CPU: historical measurement and current configuration
 
-Los siguientes valores corresponden a la primera ejecución con **Free**. Se observaron en las columnas nativas `$workers.cpuTimeMs` del panel de Cloudflare, no en la duración de pared del log de aplicación. No son mediciones del plan Paid:
+The following values correspond to the first run with **Free**. They were observed in the native `$workers.cpuTimeMs` columns of the Cloudflare dashboard, not in the wall duration of the application log. They are not measurements of the Paid plan:
 
-| Operación | CPU |
+| Operation | CPU |
 | --- | --- |
-| Nonce de registro A / B | 7 / 5 ms |
-| Opciones de registro A / B | 46 / 15 ms |
-| Verificación de registro A / B | 29 / 35 ms |
-| Rechazo del ganador enviado por el cliente | 15 ms |
-| Arena original / reintento | 81 / 12 ms |
-| Historia original / reintento | 48 / 13 ms |
+| A/B Registration Nonce | 7 / 5 ms |
+| A/B Registration Options | 46 / 15 ms |
+| A/B Registration Verification | 29 / 35 ms |
+| Rejection of the winner sent by the client | 15 ms |
+| Original arena/retry | 81 / 12 ms |
+| Original story/retry | 48 / 13 ms |
 
-Las once invocaciones terminaron con `outcome=ok`, incluido el rechazo HTTP 422 intencional. Es una muestra pequeña de dos cuentas: no demuestra un percentil de servicio ni identifica qué isolate estaba caliente. Cloudflare admite excedentes ocasionales, pero eso no garantiza operación sostenida bajo el [límite Free de 10 ms](https://developers.cloudflare.com/workers/platform/limits/). [Mediciones y correlación sanitizada](../../../work/cloudflare-deploy/CPU-OBSERVATION.md).
+All eleven invocations ended with `outcome=ok`, including the intentional HTTP rejection 422. It's a small sample of two counts: it doesn't show a service percentile or identify which isolate was hot. Cloudflare supports occasional overages, but that does not guarantee sustained operation under the [10 ms Free limit](https://developers.cloudflare.com/workers/platform/limits/). Measurements and sanitized correlation (`work/cloudflare-deploy/CPU-OBSERVATION.md`; not included).
 
-La revisión del código no encontró una optimización pequeña con evidencia suficiente para llevar todas las rutas por debajo de 10 ms. La instancia de Better Auth ya se reutiliza; cambiar su manejo de contexto o revocación para ahorrar CPU requiere un trabajo específico y nueva validación. El usuario resolvió la capacidad del entorno activando Paid.
+The code review did not find a small optimization with enough evidence to bring all routes below 10 ms. The Better Auth instance is already reused; changing your context handling or revocation to save CPU requires specific work and new validation. The user resolved the environment capacity by enabling Paid.
 
-**Paid activo:** el mínimo del plan es de **5 USD por cuenta al mes**, con posibles cargos adicionales por uso; no es un tope de gasto. Incluye 10 millones de peticiones y 30 millones de milisegundos CPU mensuales. [Tarifas oficiales](https://developers.cloudflare.com/workers/platform/pricing/). El usuario realizó la compra personalmente. El límite de 1.000 ms configurado controla cada petición, no el importe mensual.
+**Active Paid:** Plan minimum is **5 USD per account per month**, with possible additional usage charges; It is not a spending ceiling. Includes 10 million requests and 30 million monthly CPU milliseconds. [Official rates](https://developers.cloudflare.com/workers/platform/pricing/). The user made the purchase personally. The configured 1.000 ms limit controls each request, not the monthly amount.
 
-La API de Cloudflare confirmó el nuevo límite y todos los estados HTTP esperados pasaron. No se obtuvo una nueva lectura de CPU porque el panel Observability permaneció sin cargar tras varios intentos; esta limitación queda registrada y no se sustituyó por tiempos de pared. [Observación de la ejecución Paid](../../../work/cloudflare-paid/CPU-OBSERVATION.md). La verificación funcional no constituye una prueba de carga sostenida.
+The Cloudflare API confirmed the new limit and all expected HTTP states passed. No new CPU reading was obtained because the Observability panel remained unloaded after several attempts; This limitation is recorded and was not replaced by wall times. Paid execution observation (`work/cloudflare-paid/CPU-OBSERVATION.md`; not included). Functional verification does not constitute a sustained load test.
 
-## Acceso personal al entorno de pruebas
+## Personal access to the test environment
 
-Abrir `Jugar online.command` o **Arena online** y pulsar **Iniciar sesión en el navegador**. Crear la cuenta con una passkey, confirmar en el dispositivo y pulsar **Autorizar este dispositivo** tras comparar el código con Godot. Al volver al juego, crear un luchador. Historia está disponible aunque todavía no haya rivales públicos; las cuentas QA no aparecen como rivales.
+Open `Jugar online.command` or **Online Arena** and press **Login in browser**. Create the account with a passkey, confirm on the device and press **Authorize this device** after comparing the code with Godot. When you return to the game, create a fighter. Story Mode is available even if there are no public rivals yet; QA accounts do not appear as rivals.
 
-El progreso online comienza aparte de la partida local. [Procedimiento operativo](../backend/docs/DEPLOYMENT.md) · [Contrato de Arena](../backend/docs/ONLINE.md).
+Online progress begins separately from local play. [Operating procedure](../backend/docs/DEPLOYMENT.md) · [Arena Contract](../backend/docs/ONLINE.md).

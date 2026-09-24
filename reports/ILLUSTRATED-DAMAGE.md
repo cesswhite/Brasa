@@ -1,80 +1,80 @@
-# Brasa · Daño ilustrado en todo el elenco
+# Brasa · Illustrated damage across cast
 
-> Actualización de producción: [escala, transparencia y daño localizado](SPRITE-PRECISION.md). Esta revisión sustituye las comparativas y hashes visuales históricos de este documento.
+> Production update: [scale, transparency and localized damage](SPRITE-PRECISION.md). This revision replaces the historical visual hashes and benchmarks in this document.
 
-El rostro, la ropa y la postura muestran el desgaste dentro de la propia pintura. Esta entrega sustituye las manchas y rayas procedurales de la implementación anterior por una biblioteca herida completa para los **23 cuerpos visuales**, conservando la identidad y los materiales de cada uno.
+The face, clothing and posture show wear and tear within the painting itself. This release replaces the procedural smudges and streaks of the previous implementation with a complete wound library for **23 visual bodies**, preserving the identity and materials of each.
 
-[Tablero de revisión](illustrated-damage/index.html) · [Fuentes, prompts y SHA-256](illustrated-damage/manifest.json) · [Estado de la QA nativa](illustrated-damage/native-qa.json).
+[Report index](README.md) · [Sources, Prompts, and SHA-256](illustrated-damage/manifest.json) · [Native QA Status](illustrated-damage/native-qa.json).
 
-![Nima, Bruma y Mugo: limpio y herido a la misma escala](illustrated-damage/comparison.png)
+![Nima, Bruma and Mugo: clean and wounded on the same scale](illustrated-damage/comparison.png)
 
-El montaje procede de los PNG de producción, con la misma celda y escala. Es una comparación técnica estática, no una captura de combate.
+The montage comes from the production PNGs, with the same cell and scale. It's a static technical comparison, not a combat capture.
 
-## Cobertura y estados
+## Coverage and states
 
-**22 cuerpos reciben arte nuevo; Ascua reutiliza sus tres bancos critical-v1 previamente existentes.** Cada cuerpo tiene ocho poses base, dieciséis de movimiento y dieciséis de reacción: **920 poses en 69 pares PNG/JSON**. Las seis apariencias familiares y los dos jefes están incluidos. La selección sigue el cuerpo visual efectivo, que puede diferir del arquetipo de combate.
+**22 bodies receive new art; Ascua reuses your three previously existing critical-v1 banks.** Each body has eight base poses, sixteen movement and sixteen reaction: **920 poses in 69 PNG/JSON pairs**. All six family appearances and two bosses are included. The selection follows the effective visual body, which may differ from the combat archetype.
 
-| Estado | Biblioteca utilizada |
+| Status | Library used |
 | --- | --- |
-| Preparado · grado 0 | Arte limpio existente. |
-| Desgastado · grado 1 | Arte limpio y poses de fatiga existentes, sin marcas procedurales. |
-| Dañado · grado 2 | Familia herida completa de 40 poses. |
-| Crítico · grado 3 | La misma familia herida del grado 2. No representa otro nivel de arte generado. |
+| Prepared · grade 0 | Existing clean art. |
+| Worn · grade 1 | Clean art and existing fatigue poses, no procedural marks. |
+| Damaged · grade 2 | Complete wounded family of 40 poses. |
+| Critical · grade 3 | The same wounded family of grade 2. It does not represent another level of generated art. |
 
-Los umbrales de presentación siguen siendo 72 %, 45 % y 22 % de vida mínima observada. La transición se coordina con la reacción; el alcance de un golpe no cambia de ilustración a mitad del contacto. La curación durante una pelea no repara la ropa. El desenlace conserva el estado y una batalla nueva lo reinicia.
+The submission thresholds remain 72 %, 45 %, and 22 % minimum observed lifetime. The transition is coordinated with the reaction; The range of a blow does not change illustration mid-contact. Healing during a fight does not repair clothing. The outcome preserves the state and a new battle restarts it.
 
-La ropa rasgada, el rostro magullado y la postura cansada persisten en preparación, golpe, desplazamiento, salto, réplica, caída, incorporación, victoria y transformación. No se añade sangre, equipamiento ajeno ni una capa de marcas flotantes. El tinte cosmético y el flash de impacto siguen siendo funciones separadas; eliminar el desgaste procedural no obliga a eliminarlos.
+The torn clothes, the bruised face and the tired posture persist in preparation, blow, displacement, jump, retort, fall, incorporation, victory and transformation. There is no added blood, foreign equipment or a layer of floating marks. Cosmetic tint and impact flash remain separate functions; eliminating procedural wear does not require eliminating them.
 
-## Cuerpos incluidos
+## Bodies included
 
-| Conjunto | Cuerpos |
+| Set | Bodies |
 | --- | --- |
-| Elenco inicial | Nima, Luma, Mugo, Sira, Iria, Duna, Kiro, Neris y Taro. |
-| Fauna mexicana | Balam, Tepa, Xuna y Copal. |
-| Gatos | Ónix y Bruma. |
-| Jefes | Ascua y Véspera. |
-| Familia Taro | Roque y Sabino. |
-| Familia Duna | Cora y Pedernal. |
-| Familia Bruma | Ámbar y Nieve. |
+| Initial cast | Nima, Luma, Mugo, Sira, Iria, Duna, Kiro, Neris and Taro. |
+| Mexican fauna | Balam, Tepa, Xuna and Copal. |
+| Cats | Ónix and Bruma. |
+| Bosses | Ascua and Véspera. |
+| Taro Family | Roque and Sabino. |
+| Duna Family | Cora and Pedernal. |
+| Bruma Family | Ámbar and Nieve. |
 
-Los materiales se resuelven desde cada referencia: piedra astillada y tela gastada en Mugo; pelaje y ropa en Bruma; piel, membranas o caparazón cuando corresponden. Se preservan color de ojos, marcas de especie, prendas y equipos reconocibles. La postura encorvada no debe aumentar el tamaño de la cabeza ni acortar los miembros.
+Materials are resolved from each reference: chipped stone and worn cloth in Mugo; fur and clothing in Bruma; skin, membranes or shell when applicable. Eye color, species markings, recognizable clothing and equipment are preserved. The stooped posture should not increase the size of the head or shorten the limbs.
 
-## Alfa real y preparación
+## Real alpha and preparation
 
-Los originales nuevos se conservan con su hash. Se generaron sobre fondo plano de extracción —verde o magenta cuando la figura requiere conservar verde—, con una excepción histórica de fondo cuadriculado en el piloto de Nima. La limpieza autorizada elimina el fondo también dentro de los huecos entre brazos, piernas, colas y prendas. Ascua conserva byte por byte los tres PNG críticos aceptados.
+New originals are preserved with their hash. They were generated on a flat extraction background —green or magenta when the figure requires keeping green—, with a historical exception of a checkered background in the Nima pilot. Authorized cleaning removes the background also within the gaps between arms, legs, tails and clothing. Ascua preserves the three accepted critical PNGs byte by byte.
 
-La extracción actúa sobre alfa. La normalización usa RGB premultiplicado y un filtro bilineal de pesos positivos para evitar contaminación verde inventada en bordes semitransparentes. Las excepciones de huecos o superficies que comparten el color del fondo se registran mediante polígonos concretos ligados al SHA de la fuente, sin reclasificar indiscriminadamente toda la ropa o piel. No se borran todos los componentes pequeños: pueden ser dedos, flecos o partes legítimas del dibujo.
+The extraction acts on alpha. The normalization uses premultiplied RGB and a bilinear filter of positive weights to avoid invented green pollution on semi-transparent edges. Exceptions of gaps or surfaces that share the background color are recorded using specific polygons linked to the SHA of the source, without indiscriminately reclassifying all clothing or skin. Not all small components are erased: they can be fingers, fringes or legitimate parts of the drawing.
 
-Los PNG finales son RGBA con transparencia real. La comprobación numérica de chroma no sustituye la revisión sobre fondos claro y oscuro: hay que comprobar huecos, ojos, color, anatomía, piezas completas y ausencia de halo. El tablero permite cambiar el fondo y ampliar cada pose. Sus miniaturas reducen todo el atlas al 50 %; no ajustan cada silueta por separado ni modifican los originales de producción.
+The final PNGs are RGBA with true transparency. The numerical chroma check does not replace the review of light and dark backgrounds: you must check holes, eyes, color, anatomy, complete pieces and absence of halo. The board allows you to change the background and zoom in on each pose. Their thumbnails reduce the entire atlas to 50 %; They do not adjust each silhouette separately or modify the production originals.
 
-## Escala, apoyos y contacto
+## Scale, supports and contact
 
-El contrato permanece en celdas de **512 × 512**, pivote **256/448** y **1,5 píxeles por unidad**. Cada banco usa un único escalar. Una figura herida puede estar más baja por su postura; no se infla hasta llenar la caja limpia. La cámara y las proporciones físicas de cada especie siguen compartidas con el resto del juego.
+The contract remains in cells of **512 × 512**, pivot **256/448** and **1,5 pixels per unit**. Each bank uses a single scalar. A wounded figure may be lower because of its posture; It does not inflate until the clean box is filled. The camera and physical proportions of each species remain shared with the rest of the game.
 
-Los metadatos describen el cuadro herido efectivo, incluyendo región, límites de alfa, raíz y procedencia. Los apoyos obtenidos por proyección se identifican expresamente como **aproximados**. No se presentan sockets de mano o torso heredados como mediciones anatómicas sobre dibujos nuevos.
+The metadata describes the effective wound box, including region, alpha boundaries, root, and provenance. The support obtained by projection is expressly identified as **approximate**. No inherited hand or torso sockets are presented as anatomical measurements on new drawings.
 
-Cuando falta una mano anotada, el renderer usa el **borde delantero pintado de la pose de golpe** como aproximación del alcance visual (`painted_strike_edge`). Esta solución no es un collider, una hitbox ni un cambio del alcance lógico. Los anclajes auxiliares sin anotación pueden usar las referencias generales del perfil; requieren revisión nativa para comprobar su colocación. La caché de daño está acotada a seis bancos y cada cuerpo se valida como conjunto completo antes de habilitar su familia herida.
+When an annotated hand is missing, the renderer uses the **painted leading edge of the hitting pose** as an approximation of the visual range (`painted_strike_edge`). This solution is not a collider, hitbox, or logical scope change. Auxiliary anchors without annotation can use the general profile references; require native review to verify placement. The damage cache is limited to six banks and each body is validated as a complete set before its wounded family is enabled.
 
-No cambian PV, estadísticas, iniciativa, RNG, técnicas, resultados, recompensas, inventario ni guardados. El trabajo modifica la representación de eventos ya existentes, no las reglas que los producen.
+They do not change HP, stats, initiative, RNG, techniques, results, rewards, inventory or saves. The work modifies the representation of already existing events, not the rules that produce them.
 
-## Validación técnica disponible
+## Technical validation available
 
-La [preservación de fuentes y referencias](illustrated-damage/evidence/final-art-preservation.json) pasó **276 comprobaciones, 0 fallos**: fuente original, referencias limpias cuando están registradas y hashes de PNG/JSON de producción. Los tres PNG de Ascua son idénticos a critical-v1. El pipeline pasó **23 pruebas, 0 fallos**. Estas cifras verifican preparación y procedencia; no son resultados de la presentación nativa.
+[source and reference preservation](illustrated-damage/evidence/final-art-preservation.json) passed **276 checks, 0 failures**: original source, clean references when checked in, and production PNG/JSON hashes. All three PNGs in Ascua are identical to critical-v1. The pipeline passed **23 tests, 0 failures**. These figures verify preparation and origin; They are not results of the native presentation.
 
-## QA final y límites de la evidencia
+## Final QA and limits of evidence
 
-- **3832 comprobaciones nativas, 0 fallos:** 23 cuerpos, 368 muestras y 39 PNG. Se prueban guardia, golpe, reacción y KO en 1360 × 880 y 390 × 844, en ambas direcciones. [Resultado](illustrated-damage/native/validation.json) y [39 copias con hashes](illustrated-damage/native-manifest.json).
-- **Seis suites headless, 56 484 comprobaciones, 0 fallos:** daño ilustrado, familias, contacto, sprites, reloj de movimientos y KO por estado. La cifra **incluye** el gate estricto de 14 977 comprobaciones que confirma 23/23 cuerpos y 920 poses; no se suma dos veces. [Regresión consolidada](illustrated-damage/evidence/final-runtime-validation.json) y [gate de cobertura](illustrated-damage/evidence/final-runtime.json).
-- **Revisión visual de las 39 capturas:** [11 láminas y los 16 contextos](illustrated-damage/evidence/root-native-art-review.json), más [las otras 12 láminas](illustrated-damage/evidence/fighter-art-native-review.json). Sin defectos de arte observados. Cada lámina muestra cuatro clips en dos orientaciones —184 sprites mostrados entre las 23—, no las 40 poses únicas en movimiento. Los bancos completos se revisan por separado en el tablero técnico.
+- **3832 native checks, 0 failures:** 23 bodies, 368 samples and 39 PNG. Guard, Punch, Reaction, and KO are tested on 1360 × 880 and 390 × 844, in both directions. [Result](illustrated-damage/native/validation.json) and [39 hashed copies](illustrated-damage/native-manifest.json).
+- **Six headless suites, 56 484 checks, 0 failures:** illustrated damage, families, contact, sprites, movement clock and status KO. The figure **includes** the strict gate of 14 977 checks that confirms 23/23 bodies and 920 poses; It is not added twice. [Consolidated regression](illustrated-damage/evidence/final-runtime-validation.json) and [coverage gate](illustrated-damage/evidence/final-runtime.json).
+- **Visual review of the 39 screenshots:** [11 plates and the 16 contexts](illustrated-damage/evidence/root-native-art-review.json), plus [the other 12 plates](illustrated-damage/evidence/fighter-art-native-review.json). No art defects noted. Each slide shows four clips in two orientations—184 sprites shown between 23—not 40 single moving poses. Complete banks are reviewed separately on the technical board.
 
-La fixture nativa usa FighterView y BattleLayout de producción, con escenarios y clips reales del renderer. **No inicia Main, no abre perfiles y no simula victorias ni recompensas.** Mostrar la animación común de guardia en el muestrario no concede esa habilidad a quien no la tenga. La paridad de mínimos de vida entre Main y Replay se comprueba separadamente en la suite de daño ilustrado. Las fuentes y el runtime permanecieron estables durante la captura.
+The native fixture uses production FighterView and BattleLayout, with real scenes and clips from the renderer. **Does not start Main, does not open profiles, and does not simulate victories or rewards.** Showing the common guard animation in the deck does not grant that ability to anyone who does not have it. Minimum health parity between Main and Replay is checked separately in the illustrated damage suite. Fonts and runtime remained stable during capture.
 
-El [primer pase](illustrated-damage/evidence/first-pass/validation.json) se conserva: 3878 comprobaciones y 46 fallos, debidos a una aserción de avance de contacto aplicada a figuras sin rival. Se restringió esa aserción a parejas, manteniendo las verificaciones de raíz y encuadre de las figuras aisladas. El pase final conserva 92 comprobaciones de contacto terminal con pareja y registra 46 muestras de KO sin pareja. No se recortó arte ni se modificó el runtime para resolverlo; los 39 PNG finales son idénticos a los ya revisados.
+The [first pass](illustrated-damage/evidence/first-pass/validation.json) is preserved: 3878 checks and 46 failures, due to a contact advance assertion applied to unrivaled figures. This assertion was restricted to pairs, maintaining the root and framing verifications of the isolated figures. The final pass preserves 92 terminal contact checks with partner and records 46 KO samples without partner. No art was cut or runtime modified to resolve it; The final 39 PNGs are identical to the ones already reviewed.
 
-El visor se comprobó en enlaces, hashes y sintaxis JavaScript. **No se realizó QA de navegador ni de DOM:** Chrome no estaba disponible mediante CUA y los entornos Node locales no incluyen jsdom, happy-dom o linkedom. Esa limitación del informe HTML no se presenta como una prueba del juego.
+The viewer was tested on links, hashes, and JavaScript syntax. **No browser or DOM QA performed:** Chrome was not available through CUA and local Node environments do not include jsdom, happy-dom, or linkedom. That limitation of the HTML report is not presented as proof of the game.
 
-## Procedencia e historial
+## Origin and history
 
-Producción: `assets/sprites/damage/illustrated-v2/<body>-<bank>.png` y JSON hermano. El [manifiesto del tablero](illustrated-damage/manifest.json) registra fuentes aprobadas, hashes de PNG/JSON, referencias limpias, prompts disponibles, validaciones y revisiones. El manifiesto global original está en `work/illustrated-damage/final-art-manifest.json`; el tablero conserva una [copia del manifiesto global](illustrated-damage/evidence/final-art-manifest.json).
+Output: `assets/sprites/damage/illustrated-v2/<body>-<bank>.png` and Brother JSON. The [dashboard manifest](illustrated-damage/manifest.json) records approved sources, PNG/JSON hashes, clean references, available prompts, validations, and revisions. The original global manifest is at `work/illustrated-damage/final-art-manifest.json`; the dashboard maintains a [copy of global manifest](illustrated-damage/evidence/final-art-manifest.json).
 
-[La entrega anterior de familias y daño híbrido](DAMAGE-AND-FAMILIES.md) se conserva como historial. Su descripción del shader y de la cobertura exclusiva de Ascua dejó de ser la implementación vigente. Las familias, desbloqueos y demás reglas de aquella entrega continúan fuera del alcance de este cambio visual.
+[Previous delivery of families and hybrid damage](DAMAGE-AND-FAMILIES.md) is retained as history. Your description of the shader and exclusive coverage of Ascua is no longer the current implementation. The families, unlocks and other rules of that installment remain outside the scope of this visual change.

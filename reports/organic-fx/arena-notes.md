@@ -1,9 +1,9 @@
-Arena: efectos de turno e impacto sin anillos
+Arena: turn and impact effects without rings
 
-El foco del turno usa dos manchas de pigmento difuso, bajas y ligeramente descentradas, mediante ParticleInk.mote. Conserva el pequeño rombo para distinguir el turno también por forma. El impacto deja únicamente las partículas existentes, dibujadas como pequeñas chispas suaves con ParticleInk.spark; ya no crea ni dibuja el anillo expansivo.
+The focus of the shift uses two diffuse pigment spots, low and slightly off-center, using ParticleInk.mote. It retains the small rhombus to distinguish the shift also by shape. The impact leaves only the existing particles, drawn as soft little sparks with ParticleInk.spark; no longer creates or draws the expanding ring.
 
-Movimiento reducido borra las partículas y actualiza el foco de turno inmediatamente, con luz y rombo estáticos. No avanza el reloj visual. Los fondos, su transformación de perspectiva, faroles, estrellas y decoración no se modificaron.
+Reduced Motion clears the particles and updates the shift focus immediately, with static light and diamond. The visual clock does not advance. The backgrounds, their perspective transformation, lanterns, stars and decoration were not changed.
 
-Comprobaciones: parser de arena_view.gd sin errores; test_battle_layout.gd pasó 2139 comprobaciones, 0 fallos, en siete tamaños y los estados reposo/combate/resultado. El test usa sus rutas aisladas dentro de work/immersive; no se abrió Main de producción ni se importaron assets.
+Checks: arena_view.gd parser no errors; test_battle_layout.gd passed 2139 checks, 0 failures, in seven sizes and idle/combat/result states. The test uses its isolated routes within work/immersive; Production Main was not opened and no assets were imported.
 
-Copia anterior exacta: arena-before.gd. Diff: arena-changes.patch. Log: test_battle_layout.log.
+Exact previous copy: arena-before.gd. Diff: arena-changes.patch. Log: test_battle_layout.log.

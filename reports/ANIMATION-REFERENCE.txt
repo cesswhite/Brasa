@@ -42,7 +42,7 @@ The objective is to create complete animation sequences that make combat feel re
 CORE ANIMATION PRINCIPLE
 ========================================
 
-Do not think:
+Don't think:
 
 "one sprite = one attack"
 
@@ -156,7 +156,7 @@ quick recovery
 
 NORMAL ATTACK
 
-wind-up
+wind up
 
 attack
 
@@ -228,7 +228,7 @@ attack pose
 
 impact pose
 
-fall
+fail
 
 landing
 
@@ -308,7 +308,7 @@ low-health reaction
 
 This creates significantly more combat variety.
 
-The reaction selected should depend on the actual combat event.
+The reaction selected should depend on the current combat event.
 
 Example:
 
@@ -362,7 +362,7 @@ recovery
 
 Do not teleport characters between positions.
 
-Godot may interpolate the actual position while the sprite animation communicates physical reaction.
+Godot may interpolate the current position while the sprite animation communicates physical reaction.
 
 ========================================
 KNOCKDOWN
@@ -380,7 +380,7 @@ loss of balance
 
 →
 
-fall
+fail
 
 →
 
@@ -416,7 +416,7 @@ stagger
 
 →
 
-fall
+fail
 
 →
 
@@ -520,7 +520,7 @@ Signature Strike effect
 
 Boss attack effect
 
-These effects should use transparent backgrounds and be composited by Godot.
+These effects should use transparent backgrounds and be composed by Godot.
 
 ========================================
 HIT FX SYSTEM
@@ -777,7 +777,7 @@ normal hit:
 very small or no hit-stop
 
 heavy hit:
-small hit-stop
+small hit stop
 
 critical:
 stronger hit-stop
@@ -807,7 +807,7 @@ medium shake
 Signature Strike:
 strong but controlled shake
 
-Boss attack:
+Boss attacks:
 context-dependent shake
 
 Avoid constant camera shaking.
@@ -997,7 +997,7 @@ Keep the feet aligned consistently relative to the defined origin.
 SPRITE ORIGIN
 ========================================
 
-Define a standard origin/pivot convention.
+Defines a standard origin/pivot convention.
 
 Prefer a ground-based pivot near the character's feet.
 
@@ -1090,7 +1090,7 @@ CRITICAL
 
 STATUS_APPLIED
 
-→ status FX
+→ FX status
 
 KNOCKDOWN
 
@@ -1100,7 +1100,7 @@ KO
 
 → KO sequence
 
-This keeps animation synchronized with actual combat results.
+This animation keeps synchronized with current combat results.
 
 ========================================
 ANIMATION STATE MACHINE
@@ -1126,9 +1126,9 @@ stagger
 
 knockdown
 
-recovering
+recovery
 
-transforming
+transformation
 
 special
 
@@ -1170,15 +1170,15 @@ Before generating sprites for a move:
 
 1. Inspect the canonical character sheet.
 
-2. Define the complete animation sequence.
+2. Defines the complete animation sequence.
 
 3. Identify key poses.
 
 4. Identify necessary transition frames.
 
-5. Define the character's body movement.
+5. Defines the character's body movement.
 
-6. Define which effects should be separate FX.
+6. Defines which effects should be separate FX.
 
 7. Generate the character frames.
 
@@ -1188,11 +1188,11 @@ Before generating sprites for a move:
 
 10. Import into Godot.
 
-11. Configure animation timing.
+11. Set animation timing.
 
 12. Add movement and effects.
 
-13. Test at actual gameplay speed.
+13. Test at current gameplay speed.
 
 14. Remove redundant frames.
 
@@ -1220,7 +1220,7 @@ different tail
 
 different chest symbol
 
-different clothing
+different clothes
 
 different proportions
 
@@ -1228,7 +1228,7 @@ different rendering style
 
 different camera angle
 
-different light source
+different light sources
 
 ========================================
 SPRITE DELIVERABLES
@@ -1238,7 +1238,7 @@ Whenever a new attack is created, do not stop after implementing its combat form
 
 Determine whether it needs new visual assets.
 
-Produce an asset checklist such as:
+Produces an asset checklist such as:
 
 attack_charge_01.png
 
@@ -1264,7 +1264,7 @@ enemy_hit_heavy_02.png
 
 enemy_hit_heavy_03.png
 
-Then integrate them into the actual Godot animation.
+Then integrate them into the current Godot animation.
 
 Do not leave new attacks using unrelated old animations unless they are intentionally compatible.
 
@@ -1290,7 +1290,7 @@ anticipation
 
 →
 
-motion
+movement
 
 →
 
@@ -1384,7 +1384,7 @@ KO transition
 
 victory animation
 
-one simple transformation sequence
+one simple sequence transformation
 
 separate impact FX
 
@@ -1402,7 +1402,7 @@ Complete this fighter first.
 
 Test it inside actual combat.
 
-Measure:
+Measurement:
 
 visual consistency
 

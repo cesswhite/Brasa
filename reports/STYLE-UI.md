@@ -1,31 +1,31 @@
-# Estilo · Entradas y celebraciones
+# Style · Entries and celebrations
 
-| Antes | Después |
+| Before | After |
 | --- | --- |
-| Dos listas sin contexto suficiente. | Entrada y Victoria tienen su propia sección y explican cuándo se muestran. |
-| Cuatro opciones en total, descritas con términos técnicos. | Ocho opciones con descripciones de la acción y una muestra del personaje. |
-| Había que encontrar los botones de demostración. | Elegir una tarjeta reproduce el gesto sobre el compañero. Repetir y Auto permiten controlar la presentación. |
-| Combinaciones y azar ocupaban espacio en esta pantalla. | Se retiran de Estilo para dar prioridad a los gestos; siguen disponibles en las otras pestañas. |
-| Opciones bloqueadas sin demostración. | Prueba temporal, requisito visible, Volver y guardado desactivado. Nunca se concede propiedad por previsualizar. |
-| Listas con poca separación. | Tarjetas con nombre, descripción y estado. Dos columnas en espacio amplio, una en pantallas estrechas; vista previa y controles persistentes. |
+| Two lists without enough context. | Entrance and Victory have their own section and explain when they are shown. |
+| Four options in total, described in technical terms. | Eight options with action descriptions and a character sample. |
+| You had to find the demo buttons. | Choosing a card reproduces the gesture on the partner. Repeat and Auto allow you to control the presentation. |
+| Combinations and chance took up space on this screen. | They are removed from Style to give priority to gestures; They are still available in the other tabs. |
+| Options locked without demo. | Temporary test, visible requirement, Return and save disabled. Ownership is never granted for previewing. |
+| Lists with little separation. | Cards with name, description and status. Two columns in wide space, one in narrow screens; preview and persistent controls. |
 
-## Opciones
+## Options
 
-**Entrada — antes de luchar:** Clásica (guardia), Pulso (chispas), Reverencia (inclinación breve; nivel 4), Bruma (nube en los pies; encuentro 6 de Historia).
+**Entry — before fighting:** Classic (guard), Pulse (sparks), Bow (short bow; level 4), Bruma (cloud at the feet; Story encounter 6).
 
-**Victoria — al ganar:** Clásica (pequeño salto), Saludo (reverencia y pose final), Serena (pose tranquila; 4 victorias de Liga), Festival (pétalos dorados; encuentro 16 de Historia).
+**Victory — upon winning:** Classic (small jump), Salute (bow and final pose), Serena (calm pose; 4 League wins), Festival (golden petals; 16 Story Mode encounter).
 
-Las cuatro nuevas opciones se desbloquean mediante los sistemas existentes. Las anteriores conservan su propiedad y comportamiento. Las miniaturas son muestras estáticas; la figura principal reproduce la animación real. Auto repite cada cuatro segundos y se puede desactivar. Con movimiento reducido o pausa no hay reproducción automática; los efectos respetan sus ajustes de presentación.
+The four new options are unlocked through existing systems. The previous ones retain their property and behavior. Thumbnails are static samples; The main figure reproduces the real animation. Auto repeats every four seconds and can be disabled. With reduced movement or pause there is no autoplay; The effects respect your presentation settings.
 
-## Verificación
+## Verification
 
-- 13 476 comprobaciones de estilos: previsualización, bloqueo de guardado, restauración del borrador, repetición, pausa y movimiento reducido. También encuadre durante los cuatro estilos nuevos en los 21 cuerpos y dos tamaños. Sin fallos.
-- Personalización final: 3 082 comprobaciones en siete tamaños, sin fallos. Captura nativa inicial: 3 174 comprobaciones. Las doce imágenes de `demo/` y el video reflejan el ajuste final de espacio y Bruma; la matriz `native/` es anterior a ese ajuste.
-- Partículas existentes: 303 comprobaciones, sin fallos.
-- Identidad: 1 054 comprobaciones; foco: 74. Sin fallos.
-- Encuadres existentes: 61 240 comprobaciones, sin fallos.
-- Servidor local: 12 pruebas, sin fallos. Umbrales exactos, rechazo de objetos no poseídos y estadísticas intactas.
+- 13 476 style checks: preview, lock save, restore draft, repeat, pause and reduced motion. Also frame during the four new styles in the 21 bodies and two sizes. No errors.
+- Final customization: 3 082 checks in seven sizes, without failures. Initial native capture: 3 174 checks. The twelve images of `demo/` and the video reflect the final space adjustment and Bruma; the `native/` array is before that setting.
+- Existing particles: 303 checks, no failures.
+- Identity: 1 054 checks; focus: 74. No errors.
+- Existing frames: 61 240 checks, no errors.
+- Local server: 12 tests, no crashes. Exact thresholds, non-possessed item rejection, and stats intact.
 
-[Capturas nativas y video](style-ui/index.html). Perfiles de prueba en memoria: no se modificaron partidas personales ni datos de producción. El video muestra ocho segundos de animaciones del renderer del juego con el reloj de presentación controlado para la captura.
+[Report index](README.md). Test profiles in memory: no personal games or production data were modified. The video shows eight seconds of animations from the game's renderer with the display clock controlled for capture.
 
-Catálogo versión 5 exportado y sincronizado con el backend local. **Los estilos nuevos requieren publicar el catálogo para estar disponibles online.** No se publicó Cloudflare en esta tarea.
+Catalog version 5 exported and synchronized with the local backend. **New styles require publishing the catalog to be available online.** No Cloudflare was published in this task.

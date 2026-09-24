@@ -1,16 +1,16 @@
 ---
 name: brasa-publication
-description: "Preparar publicaciones o cambios de visibilidad de Brasa, revisar derechos de assets, historial Git y documentación para colaboradores o LLMs."
+description: "Prepare Brasa publications or visibility changes and review asset rights, Git history, and documentation for contributors and LLMs."
 ---
 
-# Publicar Brasa con alcance claro
+# Publish Brasa with clear licensing
 
-La raíz del repositorio está en `../../..` desde esta carpeta. Lee `AGENTS.md` y `docs/LLM-GUIDE.md`; resuelve las rutas siguientes contra esa raíz.
+The repository root is `../../..` from this folder. Read `AGENTS.md` and `docs/LLM-GUIDE.md`; resolve the paths below against that root.
 
-Lee LICENSING.md, THIRD_PARTY_NOTICES.md y docs/PUBLICATION.md. Mantén MIT del código propio y los avisos PCG/Godot; no extiendas MIT a imágenes, personajes o audio sin instrucción del titular y derechos suficientes.
+Read LICENSING.md, THIRD_PARTY_NOTICES.md, and docs/PUBLICATION.md. Preserve MIT for original code and the PCG/Godot notices. Do not extend MIT to artwork, characters, or audio without the rights holder's instruction and sufficient rights.
 
-Revisa archivos e historial antes de publicar. El repo público usa historial sin audio/video; borrar un archivo del último commit no lo retira del historial. Conserva el respaldo privado y evita publicar sus ramas, tags u objetos con un push --mirror/--all.
+Inspect both files and history before publishing. The public repository has a separate history without audio/video. Deleting a file from the latest commit does not remove it from history. Preserve the private backup and do not publish its branches or objects through push --mirror/--all.
 
-No introduzcas secretos, bases, perfiles o binarios con credenciales. Comprueba rutas y licencia de cada nuevo medio. No republiques audio ElevenLabs como archivo suelto, en Git LFS o release sin permiso aplicable; los créditos no sustituyen una licencia.
+Exclude secrets, databases, profiles, and binaries containing credentials. Check paths and rights for new media. Do not redistribute ElevenLabs audio as standalone files, Git LFS objects, or release assets without the applicable permission; attribution is not a substitute for a license.
 
-Actualiza README, skills e instrucciones cuando cambie el flujo. Usa autenticación del propietario y la autorización concreta de la tarea; no cambies visibilidad por inferencia. Verifica repositorio, visibilidad, rama y commit remoto al terminar. No confundas publicación de fuente con despliegue del juego.
+Update English README, Markdown reports, skills, and instructions when workflows change. Do not restore removed HTML galleries. Preserve the application's Spanish localization. Use the owner's authenticated access within the specific authorization; do not infer permission to change visibility. Verify repository, visibility, branch, and remote commit before reporting completion. Publishing source is not deploying the game.

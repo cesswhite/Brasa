@@ -1,78 +1,78 @@
-# Capítulo 2 y corrección del nivel 2
+# Chapter 2 and correction of level 2
 
-La ruta original conserva sus ocho encuentros e identificadores. Nima, el segundo rival, ahora muestra **nivel 2**. El nuevo **Capítulo 2 · El paso de la tormenta** se desbloquea tras Ascua y se inicia mediante una acción explícita. El nivel del personaje, XP, puntos y mejoras continúan; el primer legado queda archivado.
+The original route preserves its eight meetings and identifiers. Nima, the second rival, now displays **level 2**. The new **Chapter 2 · The Passage of the Storm** is unlocked after Ascua and is started by an explicit action. Character level, XP, points and upgrades continue; the first legacy is archived.
 
-## Auditoría natural final
+## Final natural audit
 
-Se ejecutaron **3,182 combates** con CombatEngine y StoryProgression reales, sin acceso a guardados: 108 campañas de ambos capítulos (9 personajes × 4 prioridades × 3 semillas) y 360 combates para aislar el ajuste del nivel de Nima. **108/108 campañas completaron ambos capítulos**. Cada capítulo tenía un límite de seguridad de 40 combates; ninguno se acercó a ese límite.
+**3,182 combats** were executed with real CombatEngine and StoryProgression, without access to saves: 108 campaigns of both chapters (9 characters × 4 priorities × 3 seeds) and 360 combats to isolate the level adjustment of Nima. **108/108 campaigns completed both chapters**. Each chapter had a safe limit of 40 combats; none came close to that limit.
 
-| Resultado | Capítulo 1 | Capítulo 2 |
+| Result | Chapter 1 | Chapter 2 |
 |---|---:|---:|
-| Combates medios | 13.24 | 12.89 |
-| Rango observado de combates | 9–19 | 8–19 |
-| Derrotas medias | 5.24 | 4.89 |
-| Máximo de derrotas observado | 11 | 11 |
-| Nivel medio al terminar | 11.61 | 21.71 |
-| Rango de nivel final | 11–13 | 20–23 |
-| Jefe al primer intento | 56.48% | 63.89% |
+| Medium combats | 13.24 | 12.89 |
+| Observed combat range | 9–19 | 8–19 |
+| Average defeats | 5.24 | 4.89 |
+| Maximum losses observed | 11 | 11 |
+| Average level upon completion | 11.61 | 21.71 |
+| Final Level Rank | 11–13 | 20–23 |
+| Boss on the first try | 56.48% | 63.89% |
 
-Las prioridades se mantienen durante toda la campaña: no hay reasignación de puntos al cambiar de rival ni al comenzar el capítulo 2. Los puntos nuevos se invierten en el siguiente atributo de la prioridad; si está al máximo se continúa con el siguiente. Las derrotas conceden la XP real del encuentro antes de reintentar.
+Priorities are maintained throughout the campaign: there is no reallocation of points when changing opponents or starting chapter 2. The new points are invested in the next priority attribute; If it is at the maximum, continue with the next one. Defeats grant the actual XP for the encounter before retrying.
 
-## Cuatro estrategias viables
+## Four viable strategies
 
-| Prioridad | Campañas completadas | Combates medios en capítulo 2 | Máximo de derrotas | Véspera al primer intento |
+| Priority | Completed campaigns | Medium combats in chapter 2 | Maximum defeats | Véspera on first try |
 |---|---:|---:|---:|---:|
-| Equilibrio | 27/27 | 14.59 | 11 | 70.37% |
-| Agresión | 27/27 | 13.96 | 9 | 40.74% |
-| Aguante | 27/27 | 9.89 | 6 | 74.07% |
-| Ritmo | 27/27 | 13.11 | 11 | 70.37% |
+| Balance | 27/27 | 14.59 | 11 | 70.37% |
+| Aggression | 27/27 | 13.96 | 9 | 40.74% |
+| Stamina | 27/27 | 9.89 | 6 | 74.07% |
+| Rhythm | 27/27 | 13.11 | 11 | 70.37% |
 
-- Equilibrio: vida, ataque, defensa, velocidad, precisión, evasión, crítico, resistencia.
-- Agresión: ataque, ataque, vida, crítico, velocidad, precisión.
-- Aguante: vida, defensa, vida, evasión, ataque, velocidad.
-- Ritmo: velocidad, precisión, evasión, ataque, vida, crítico.
+- Balance: life, attack, defense, speed, precision, evasion, critical, resistance.
+- Aggression: Attack, Attack, Life, Critical, Speed, Accuracy.
+- Stamina: health, defense, life, evasion, attack, speed.
+- Rhythm: speed, precision, evasion, attack, life, critical.
 
-Aguante sigue siendo más eficiente en esta muestra. Todas las prioridades completan la ruta con los nueve personajes, pero eso no implica equivalencia entre todos los repartos posibles. Tres semillas por combinación permiten detectar bloqueos grandes y comprobar el ritmo de progresión; las tasas de cada celda pequeña no son probabilidades exactas.
+Stamina is still more efficient in this sample. All priorities complete the route with the nine characters, but that does not imply equivalence between all possible casts. Three seeds per combination allow detecting large blockages and checking the rate of progression; the rates for each small cell are not exact probabilities.
 
-## Ajuste acotado de Véspera
+## Dimensioned setting of Véspera
 
-| Parámetro / resultado | Primera muestra | Versión final |
+| Parameter/result | First sample | Final version |
 |---|---:|---:|
-| Vida | 730 | 780 |
-| Ataque | 48 | 52 |
-| Primer intento ganado | 88.89% | 63.89% |
-| Combates medios del capítulo | 12.51 | 12.89 |
-| Campañas completadas | 108/108 | 108/108 |
+| Life | 730 | 780 |
+| Attack | 48 | 52 |
+| First try won | 88.89% | 63.89% |
+| Medium combats of the chapter | 12.51 | 12.89 |
+| Completed campaigns | 108/108 | 108/108 |
 
-La comparación usa las mismas semillas, prioridades y personajes. Solo se aumentaron vida y ataque de Véspera para que el jefe conserve dificultad después de la élite anterior. No hubo más iteraciones de balance.
+The comparison uses the same seeds, priorities and characters. Only Véspera's health and attack have been increased so that the boss retains difficulty after the previous elite. There were no more balance iterations.
 
-Véspera es de nivel 23: 780 PV, ataque 52, defensa 30, velocidad 20, precisión 106%, evasión 22%, crítico 18%, daño crítico ×1.70 y resistencia 30%. Su armadura ligera permanece como debilidad. Al 60% de vida gana un 10% de velocidad; al 30% conserva esa velocidad y añade un 8% de ataque. Sus fases usan el despachador existente; no hay curación, invulnerabilidad, probabilidad oculta ni reglas nuevas.
+Véspera is 23 level: 780 HP, 52 Attack, 30 Defense, 20 Speed, 106% Accuracy, Evasion 22%, critical 18%, critical damage ×1.70 and resistance 30%. His light armor remains a weakness. 60% health gains 10% speed; 30% retains that speed and adds a 8% attack. Its phases use the existing dispatcher; there is no healing, invulnerability, hidden probability or new rules.
 
-Su firma Polvo de eclipse conserva la tirada normal del 1% por combate, se usa como máximo una vez, golpea con ×1.65 y reduce la precisión rival 12 puntos durante cuatro acciones propias del objetivo; la resistencia puede acortar la duración.
+His signature Eclipse Dust preserves the normal 1% roll per combat, is used at most once, hits with ×1.65, and reduces the opponent's accuracy 12 points for four target actions; resistance can shorten the duration.
 
-Los otros rivales del capítulo son Kiro (13), Iria (14), Mugo (16), Nima élite (17), Taro (18), Duna (20) y Sira élite (21). Sus perfiles distinguen ataque, veneno, aguante, velocidad, respuestas, armadura y críticos. Las victorias dan 340–680 XP; las derrotas, 95–180 XP. Los hitos élite conservan dos puntos adicionales.
+The other rivals in the chapter are Kiro (13), Iria (14), Mugo (16), Nima elite (17), Taro (18), Duna (20) and Sira elite (21). Their profiles distinguish attack, poison, stamina, speed, responses, armor and criticals. Victories give 340–680 XP; defeats, 95–180 XP. Elite milestones retain two additional points.
 
-## Corrección de Nima
+## Nima fix
 
-Se compararon las mismas 180 semillas por versión, con los nueve personajes de nivel 2 y seis puntos distribuidos. Solo se cambió el nivel de Nima en la comparación; las demás estadísticas permanecieron fijas. La tasa de victoria del jugador pasó de **80.56%** frente a Nima de nivel 3 a **82.22%** frente a Nima de nivel 2: **+1.67 puntos porcentuales**. La corrección no introduce un salto grande de dificultad ni cambia IDs o partidas guardadas.
+The same 180 seeds were compared by version, with the nine 2 level characters and six points distributed. Only the level of Nima was changed in the comparison; the other statistics remained fixed. Player win rate changed from **80.56%** vs. Nima at level 3 to **82.22%** vs. Nima at level 2: **+1.67 points percentages**. The fix does not introduce a large jump in difficulty or change IDs or saved games.
 
-En el conjunto de la muestra, la duración media fue **31.09 segundos**, la incidencia de firmas **0.959%** por combatiente y partida, y hubo **62** desenlaces por límite de tiempo.
+In the entire sample, the average duration was **31.09 seconds**, the incidence of signatures **0.959%** per combatant and game, and there were **62** outcomes per time limit.
 
-## Compatibilidad y pruebas
+## Compatibility and testing
 
-SAVE_VERSION pasa a 2. Un guardado v1 válido se normaliza únicamente en memoria como capítulo 1: no se reescribe al cargar, no se reinicia el personaje y no comienza el segundo capítulo. La primera escritura v2 desde el archivo v1 conserva una copia permanente `.v1.bak`, además de `.bak`; una copia v1 válida preexistente nunca se reemplaza.
+SAVE_VERSION becomes 2. A valid v1 save is only normalized in memory as chapter 1: it is not rewritten on load, the character is not reset, and the second chapter does not start. The first v2 write from the v1 file preserves a permanent copy of `.v1.bak` in addition to `.bak`; a pre-existing valid v1 copy is never replaced.
 
-`start_next_chapter()` congela el legado anterior y conserva nivel, XP, puntos, estadísticas, asignaciones y el historial de mejoras. Reinicia únicamente la ruta y los contadores locales del nuevo capítulo. Si no puede guardar, restaura el estado anterior para impedir una transición ficticia. Las recompensas comprueban personaje, capítulo, ID e índice local del encuentro. El registro de recompensas procesadas sigue vigente entre capítulos.
+`start_next_chapter()` freezes the previous legacy and preserves level, XP, points, stats, assignments, and upgrade history. Resets only the route and local counters of the new chapter. If it fails to save, it restores the previous state to prevent a dummy transition. Rewards check character, chapter, ID, and local encounter index. The log of processed rewards remains valid between chapters.
 
-- `tests/test_story_chapters.gd`: **299 comprobaciones, 0 fallos**. Incluye migración v1, copias permanentes, rollback, preservación y lectura de los dos legados, capítulos por personaje, rechazo de resultados antiguos y de crecimiento borrado, límites y reglas de Véspera.
-- `tests/test_story_progression.gd`: **217 comprobaciones, 0 fallos**, verificadas tras el cambio de formato.
-- `tests/simulate_story_chapters.gd`: la auditoría natural acotada descrita aquí.
+- `tests/test_story_chapters.gd`: **299 checks, 0 failures**. Includes v1 migration, permanent copies, rollback, preservation and reading of the two legacies, chapters per character, rejection of old results and erased growth, limits and Véspera rules.
+- `tests/test_story_progression.gd`: **217 checks, 0 failures**, verified after the format change.
+- `tests/simulate_story_chapters.gd`: The bounded natural audit described here.
 
-Reproducir la misma muestra desde la carpeta del proyecto:
+Play the same sample from the project folder:
 
 ```sh
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script res://tests/test_story_chapters.gd
 /Applications/Godot.app/Contents/MacOS/Godot --headless --path . --script res://tests/simulate_story_chapters.gd -- --quick
 ```
 
-Datos completos: [story_chapters_balance.json](story_chapters_balance.json). La calibración original del primer capítulo permanece como informe histórico en STORY_BALANCE.md.
+Complete data: [story_chapters_balance.json](story_chapters_balance.json). The original calibration from the first chapter remains as a history report in STORY_BALANCE.md.

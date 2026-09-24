@@ -1,4 +1,4 @@
 interface:
-  display_name: "Cambiar lógica de Brasa"
-  short_description: "Reglas, progresión y paridad entre motores"
-  default_prompt: "Usa $brasa-game para resolver la tarea en Brasa respetando sus contratos y pruebas."
+  display_name: "Change Brasa game logic"
+  short_description: "Combat rules, progression, and engine parity"
+  default_prompt: "Use $brasa-game to complete the Brasa task while preserving its contracts and relevant checks."
