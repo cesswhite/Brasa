@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        146,
+        186,
+        220,
+        262
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31039
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        147,
+        186,
+        218,
+        262
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 30681
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        137,
+        205,
+        238,
+        243
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 33352
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        133,
+        193,
+        295,
+        255
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32637
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        129,
+        170,
+        253,
+        278
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35508
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        103,
+        217,
+        276,
+        231
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31866
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        146,
+        148,
+        220,
+        300
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30338
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        70,
+        334,
+        371,
+        114
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27672
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "taro_sabio",
+  "bank": "base",
+  "source_sha256": "db2dc67e37b9b616b3c5091494ea0be5370505efac29c3066574b4fa89155d3c",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/taro_sabio/base/taro_sabio-base.png"
+}

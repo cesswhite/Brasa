@@ -1,0 +1,13 @@
+{
+  "file": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/tests/test_animation_sequences_visual.gd",
+  "native_sha256": "0e512676f980ea27a03faf403df9256aff0ced7d6cbdc739fe66a3cf70520704",
+  "movie_sha256": "0bf58b618a0086b80ec287452acec6a0d9003238c08f3cb92ff853c0cbf0dd5a",
+  "native_checks": 1118,
+  "native_failures": 0,
+  "changes": [
+    "Typed Array[Vector2i] constructed through append/assign; native SIZES unchanged.",
+    "Movie recording preserves startup window1224x792 and fits full SubViewport1360x880.",
+    "Movie caption centered using actual recording width."
+  ],
+  "runtime_files_changed": false
+}

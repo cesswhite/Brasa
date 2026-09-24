@@ -1,0 +1,23 @@
+{
+  "authority": "Story visual tokens and material manifest",
+  "assets": [
+    {
+      "file": "world.png",
+      "source": "assets/ui/companions/camp-v1.png",
+      "sha256": "960a78467b705463fa0e89860f7c2ae6e0783765b30229d785c3cbf94effe83f",
+      "operation": "byte-identical copy; CSS controls presentation"
+    },
+    {
+      "file": "fighter.png",
+      "source": "assets/sprites/normalized/nima-base-v2.png",
+      "sha256": "670a99672e15ba84fa6aaeddeaddb360f267a03a759a03be596148b3d4238e9c",
+      "operation": "byte-identical copy; CSS controls presentation"
+    },
+    {
+      "file": "surfaces.png",
+      "source": "assets/ui/shared/surfaces-v1.png",
+      "sha256": "e0c48249f4795b07c31cdb17c80c4eea4c683c3d2aa53d690d53206be61f4b53",
+      "operation": "byte-identical copy; CSS controls presentation"
+    }
+  ]
+}

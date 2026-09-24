@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        159,
+        197,
+        183,
+        251
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 16069
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        159,
+        196,
+        182,
+        252
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 16099
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        154,
+        205,
+        192,
+        243
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 17540
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        165,
+        198,
+        223,
+        250
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 16925
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        156,
+        218,
+        179,
+        230
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 16210
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        158,
+        280,
+        185,
+        168
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 13230
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        173,
+        192,
+        164,
+        256
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 14959
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        129,
+        384,
+        295,
+        64
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 11893
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "xuna",
+  "bank": "base",
+  "source_sha256": "5f9be4ba8db30b1c44d1ff163162339598e892fa9cec1a2652f09b62a2c98ff8",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/xuna/base/xuna-base.png"
+}

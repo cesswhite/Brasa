@@ -1,0 +1,78 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "frames": [
+    {
+      "name": "idle",
+      "region": [
+        0,
+        0,
+        444,
+        434
+      ]
+    },
+    {
+      "name": "idle_breathe",
+      "region": [
+        444,
+        0,
+        443,
+        434
+      ]
+    },
+    {
+      "name": "windup",
+      "region": [
+        887,
+        0,
+        443,
+        434
+      ]
+    },
+    {
+      "name": "punch",
+      "region": [
+        1330,
+        0,
+        444,
+        434
+      ]
+    },
+    {
+      "name": "hit",
+      "region": [
+        0,
+        444,
+        444,
+        443
+      ]
+    },
+    {
+      "name": "dodge",
+      "region": [
+        444,
+        444,
+        443,
+        443
+      ]
+    },
+    {
+      "name": "victory",
+      "region": [
+        887,
+        434,
+        413,
+        453
+      ]
+    },
+    {
+      "name": "defeat",
+      "region": [
+        1300,
+        444,
+        474,
+        443
+      ]
+    }
+  ]
+}

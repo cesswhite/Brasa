@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        167,
+        220,
+        165,
+        228
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18410
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        170,
+        242,
+        166,
+        206
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 17720
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        144,
+        242,
+        190,
+        206
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 18220
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        154,
+        252,
+        182,
+        196
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17899
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        121,
+        272,
+        223,
+        176
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19975
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        159,
+        299,
+        194,
+        124
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14492
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        136,
+        363,
+        236,
+        85
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 13892
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        137,
+        279,
+        207,
+        169
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18639
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        172,
+        264,
+        166,
+        184
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18989
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        172,
+        233,
+        173,
+        215
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20304
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        174,
+        259,
+        174,
+        189
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17265
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        161,
+        230,
+        167,
+        218
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18624
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        158,
+        234,
+        176,
+        214
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19417
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        163,
+        236,
+        173,
+        212
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18452
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        161,
+        236,
+        174,
+        212
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18292
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        163,
+        236,
+        170,
+        212
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18039
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "onix",
+  "bank": "reactions",
+  "source_sha256": "92958516bbf6762d3889274134125388618444e92aa1ea4bd2040c929bdc2e03",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/onix/reactions/onix-reactions.png"
+}

@@ -1,0 +1,14 @@
+{
+  "source_sha256": "92958516bbf6762d3889274134125388618444e92aa1ea4bd2040c929bdc2e03",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Black coat with warm painted rim, amber eyes, teal vest and yellow sash remain consistent; complete tail and limbs. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/onix-reactions-1.png",
+    "work/illustrated-damage/group-b/qa/onix-reactions-2.png"
+  ],
+  "poses_reviewed": 16,
+  "anatomical_sockets_verified": false
+}

@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "body_id": "mugo",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 252,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        30,
+        41,
+        269,
+        276
+      ],
+      "anchor": [
+        141.5,
+        272
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        368,
+        73,
+        228,
+        243
+      ],
+      "anchor": [
+        114.0,
+        239
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        639,
+        58,
+        275,
+        259
+      ],
+      "anchor": [
+        157.5,
+        255
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        973,
+        83,
+        273,
+        234
+      ],
+      "anchor": [
+        120.0,
+        230
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        10,
+        379,
+        307,
+        240
+      ],
+      "anchor": [
+        180.0,
+        236
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        330,
+        440,
+        295,
+        176
+      ],
+      "anchor": [
+        154.5,
+        175
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        637,
+        504,
+        315,
+        117
+      ],
+      "anchor": [
+        156.0,
+        113
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        968,
+        449,
+        282,
+        170
+      ],
+      "anchor": [
+        115.0,
+        166
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        37,
+        705,
+        279,
+        202
+      ],
+      "anchor": [
+        139.5,
+        198
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        361,
+        653,
+        251,
+        253
+      ],
+      "anchor": [
+        125.5,
+        249
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        680,
+        659,
+        222,
+        250
+      ],
+      "anchor": [
+        111.0,
+        246
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        986,
+        630,
+        248,
+        280
+      ],
+      "anchor": [
+        126.0,
+        276
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        46,
+        909,
+        242,
+        313
+      ],
+      "anchor": [
+        129.0,
+        309
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        366,
+        961,
+        244,
+        259
+      ],
+      "anchor": [
+        122.5,
+        255
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        678,
+        959,
+        246,
+        260
+      ],
+      "anchor": [
+        120.0,
+        256
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        983,
+        960,
+        247,
+        260
+      ],
+      "anchor": [
+        125.0,
+        256
+      ]
+    }
+  ]
+}

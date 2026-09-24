@@ -1,0 +1,446 @@
+{
+	"account_id": "acct_21c2b0d98849618a27240e06c021b213",
+	"created_at": 1789961096,
+	"fighters": {
+		"balam": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "balam",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "balam",
+			"fighter_id": "ftr_457a5bec9683ad78a8581449cab2096e",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Balam",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "balam",
+				"updated_at": 1789961096
+			}
+		},
+		"copal": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "copal",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "copal",
+			"fighter_id": "ftr_b6bedc0899d0c7338a75118af88ed65a",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Copal",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "copal",
+				"updated_at": 1789961096
+			}
+		},
+		"duna": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "duna",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "duna",
+			"fighter_id": "ftr_3dfb40845220856f80ba58f1bd2bc63f",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Duna",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "duna",
+				"updated_at": 1789961096
+			}
+		},
+		"iria": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "iria",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "iria",
+			"fighter_id": "ftr_dea274e021a3bdd8c020b7c9729bc977",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Iria",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "iria",
+				"updated_at": 1789961096
+			}
+		},
+		"kiro": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "kiro",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "kiro",
+			"fighter_id": "ftr_e5d86a2d1fafa3260bc04b8d43ab9232",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Kiro",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "kiro",
+				"updated_at": 1789961096
+			}
+		},
+		"luma": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "luma",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "luma",
+			"fighter_id": "ftr_8d380c976f22d9a9cf7ff3933594d103",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Luma",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "luma",
+				"updated_at": 1789961096
+			}
+		},
+		"mugo": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "mugo",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "mugo",
+			"fighter_id": "ftr_c0cb333c076e64f12261fffd2be02431",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Mugo",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "mugo",
+				"updated_at": 1789961096
+			}
+		},
+		"neris": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "neris",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "neris",
+			"fighter_id": "ftr_8f51f91a26786500691689e662fdff8f",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Neris",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "neris",
+				"updated_at": 1789961096
+			}
+		},
+		"nima": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "nima",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "nima",
+			"fighter_id": "ftr_e172d87b2313cb8490696bcda6cbce23",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Nima",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "nima",
+				"updated_at": 1789961096
+			}
+		},
+		"sira": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "luma",
+				"intro_animation_id": "classic",
+				"palette_id": "jade",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "sira",
+			"fighter_id": "ftr_380a2019b7ed10da3d0ab380427c97bf",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Estrella antigua",
+				"legacy_name": false,
+				"name_source": "custom",
+				"normalized_name": "estrella antigua",
+				"updated_at": 1789961096
+			}
+		},
+		"taro": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "taro",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "taro",
+			"fighter_id": "ftr_a599c216e4119cc016a3b17b1fb252c3",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Taro",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "taro",
+				"updated_at": 1789961096
+			}
+		},
+		"tepa": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "tepa",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "tepa",
+			"fighter_id": "ftr_6c4facbd9d34ba8962ed0fd98253868a",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Conejita 🐾",
+				"legacy_name": true,
+				"name_source": "legacy_league",
+				"normalized_name": "conejita 🐾",
+				"updated_at": 1789961096
+			}
+		},
+		"xuna": {
+			"appearance": {
+				"aura_id": "none",
+				"body_style_id": "xuna",
+				"intro_animation_id": "classic",
+				"palette_id": "original",
+				"trail_id": "none",
+				"victory_pose_id": "classic"
+			},
+			"archetype_id": "xuna",
+			"fighter_id": "ftr_4b07093e2dda5b452360e7a30b1adfb3",
+			"identity": {
+				"created_at": 1789961096,
+				"display_name": "Xuna",
+				"legacy_name": false,
+				"name_source": "default",
+				"normalized_name": "xuna",
+				"updated_at": 1789961096
+			}
+		}
+	},
+	"inventory": {
+		"aura:none": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:balam": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:copal": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:duna": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:iria": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:kiro": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:luma": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:mugo": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:neris": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:nima": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:sira": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:taro": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:tepa": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"body_style:xuna": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"intro_animation:classic": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"intro_animation:pulso": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"palette:jade": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"palette:ocaso": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"palette:original": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"trail:none": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"victory_pose:classic": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		},
+		"victory_pose:saludo": {
+			"requirement": {
+				"kind": "default",
+				"threshold": 0
+			},
+			"source": "default",
+			"unlocked_at": 1789961096
+		}
+	},
+	"updated_at": 1789961096,
+	"version": 1
+}

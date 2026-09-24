@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mantener backend de Brasa"
+  short_description: "Workers, D1, autenticación y resultados fiables"
+  default_prompt: "Usa $brasa-backend para resolver la tarea en Brasa respetando sus contratos y pruebas."

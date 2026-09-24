@@ -1,0 +1,15 @@
+{
+  "source_sha256": "37139dd95015eb6fe61985b43cf221e05a93093105b6413c16c851e3cee9e0ee",
+  "reviewed_atlas_sha256": "5c3e465cb50e60ab5607e1ac5cac3f83e25a93f81057a33292b0865e718ec22f",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "strict_key_hue": true,
+  "reviewed_by": "fighter_art",
+  "review_note": "Caparazón ocre, fajín teal rasgado, rodillas y rostro magullados; cola/patas completas. Todas las poses revisadas sobre fondos claro/oscuro y comparadas con referencia limpia; escala única de banco por consenso geométrico. Raíces proyectadas aproximadas, no anotaciones anatómicas verificadas.",
+  "evidence": {
+    "dark": "work/illustrated-damage/prepared/duna/base/duna-base-dark.png",
+    "light": "work/illustrated-damage/prepared/duna/base/duna-base-light.png",
+    "scale-review": "work/illustrated-damage/prepared/duna/base/duna-base-scale-review.png"
+  }
+}

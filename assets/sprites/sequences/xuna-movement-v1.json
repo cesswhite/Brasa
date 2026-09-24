@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "xuna",
+  "bank": "movement",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 273,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        71,
+        38,
+        191,
+        281
+      ],
+      "anchor": [
+        101.0,
+        277
+      ]
+    },
+    {
+      "name": "step_back",
+      "region": [
+        376,
+        38,
+        191,
+        281
+      ],
+      "anchor": [
+        95.5,
+        277
+      ]
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        665,
+        141,
+        213,
+        178
+      ],
+      "anchor": [
+        126.5,
+        174
+      ]
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        998,
+        41,
+        199,
+        278
+      ],
+      "anchor": [
+        99.5,
+        274
+      ]
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        62,
+        351,
+        204,
+        278
+      ],
+      "anchor": [
+        109.0,
+        274
+      ]
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        364,
+        351,
+        249,
+        279
+      ],
+      "anchor": [
+        104.0,
+        275
+      ]
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        672,
+        371,
+        277,
+        254
+      ],
+      "anchor": [
+        103.5,
+        250
+      ]
+    },
+    {
+      "name": "recovery",
+      "region": [
+        1000,
+        349,
+        196,
+        280
+      ],
+      "anchor": [
+        102.5,
+        276
+      ]
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        57,
+        699,
+        232,
+        221
+      ],
+      "anchor": [
+        66.0,
+        217
+      ]
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        349,
+        706,
+        258,
+        212
+      ],
+      "anchor": [
+        99.0,
+        208
+      ]
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        694,
+        644,
+        164,
+        275
+      ],
+      "anchor": [
+        32.0,
+        271
+      ]
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        1013,
+        638,
+        155,
+        234
+      ],
+      "anchor": [
+        84.5,
+        277
+      ]
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        61,
+        944,
+        255,
+        265
+      ],
+      "anchor": [
+        96.0,
+        271.5
+      ]
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        387,
+        946,
+        170,
+        271
+      ],
+      "anchor": [
+        83.5,
+        269.5
+      ]
+    },
+    {
+      "name": "landing",
+      "region": [
+        681,
+        1033,
+        192,
+        186
+      ],
+      "anchor": [
+        114.5,
+        182
+      ]
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        997,
+        949,
+        194,
+        271
+      ],
+      "anchor": [
+        99.0,
+        267
+      ]
+    }
+  ],
+  "notes": "Native image generation and native background extraction; original PNG copied unchanged. Sixteen complete separated silhouettes verified against canonical body in Godot native contact sheet. One common scale per bank; airborne anchors retain the projected ground origin."
+}

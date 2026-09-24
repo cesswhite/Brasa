@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        143,
+        186,
+        226,
+        262
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 29176
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        143,
+        184,
+        226,
+        264
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 29597
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        139,
+        196,
+        234,
+        252
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 31731
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        134,
+        191,
+        293,
+        257
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 30814
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        138,
+        184,
+        235,
+        264
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 31401
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        114,
+        216,
+        254,
+        232
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 29268
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        149,
+        154,
+        214,
+        294
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29627
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        80,
+        341,
+        351,
+        107
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 24494
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "taro_roque",
+  "bank": "base",
+  "source_sha256": "ce02044a32073614cab3a2b0648c756f90e5d9b7535ffb6fc4a48b085e7d7b5a",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/taro_roque/base/taro_roque-base.png"
+}

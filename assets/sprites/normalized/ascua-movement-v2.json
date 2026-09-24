@@ -1,0 +1,1794 @@
+{
+  "version": 2,
+  "body_id": "ascua",
+  "bank": "movement",
+  "profile_id": "ascua:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          273.529,
+          255.181
+        ],
+        "chest": [
+          273.529,
+          255.181
+        ],
+        "body": [
+          273.529,
+          255.181
+        ],
+        "hand": [
+          352.41,
+          227.792
+        ],
+        "right_hand": [
+          352.41,
+          227.792
+        ],
+        "left_hand": [
+          234.089,
+          240.939
+        ],
+        "head": [
+          284.485,
+          185.065
+        ],
+        "left_foot": [
+          157.0,
+          448.0
+        ],
+        "right_foot": [
+          346.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        95,
+        127,
+        290,
+        321
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "step_back",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          272.433,
+          250.799
+        ],
+        "chest": [
+          272.433,
+          250.799
+        ],
+        "body": [
+          272.433,
+          250.799
+        ],
+        "hand": [
+          332.689,
+          258.468
+        ],
+        "right_hand": [
+          332.689,
+          258.468
+        ],
+        "left_hand": [
+          226.42,
+          265.041
+        ],
+        "head": [
+          291.058,
+          189.447
+        ],
+        "left_foot": [
+          175.0,
+          448.0
+        ],
+        "right_foot": [
+          303.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        95,
+        129,
+        259,
+        319
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          284.485,
+          332.966
+        ],
+        "chest": [
+          284.485,
+          332.966
+        ],
+        "body": [
+          284.485,
+          332.966
+        ],
+        "hand": [
+          348.027,
+          336.253
+        ],
+        "right_hand": [
+          348.027,
+          336.253
+        ],
+        "left_hand": [
+          209.986,
+          327.488
+        ],
+        "head": [
+          314.065,
+          265.041
+        ],
+        "left_foot": [
+          155.0,
+          448.0
+        ],
+        "right_foot": [
+          338.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        83,
+        207,
+        294,
+        241
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          288.867,
+          255.181
+        ],
+        "chest": [
+          288.867,
+          255.181
+        ],
+        "body": [
+          288.867,
+          255.181
+        ],
+        "hand": [
+          366.652,
+          247.512
+        ],
+        "right_hand": [
+          366.652,
+          247.512
+        ],
+        "left_hand": [
+          148.635,
+          223.41
+        ],
+        "head": [
+          312.969,
+          188.352
+        ],
+        "left_foot": [
+          155.0,
+          448.0
+        ],
+        "right_foot": [
+          355.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        93,
+        132,
+        298,
+        316
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.102,
+          263.945
+        ],
+        "chest": [
+          280.102,
+          263.945
+        ],
+        "body": [
+          280.102,
+          263.945
+        ],
+        "hand": [
+          363.365,
+          250.799
+        ],
+        "right_hand": [
+          363.365,
+          250.799
+        ],
+        "left_hand": [
+          239.567,
+          257.372
+        ],
+        "head": [
+          295.44,
+          197.116
+        ],
+        "left_foot": [
+          159.0,
+          448.0
+        ],
+        "right_foot": [
+          349.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        96,
+        134,
+        289,
+        314
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.102,
+          261.754
+        ],
+        "chest": [
+          280.102,
+          261.754
+        ],
+        "body": [
+          280.102,
+          261.754
+        ],
+        "hand": [
+          425.812,
+          227.792
+        ],
+        "right_hand": [
+          425.812,
+          227.792
+        ],
+        "left_hand": [
+          220.942,
+          257.372
+        ],
+        "head": [
+          298.727,
+          198.212
+        ],
+        "left_foot": [
+          155.0,
+          448.0
+        ],
+        "right_foot": [
+          348.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        83,
+        136,
+        365,
+        312
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          245.044,
+          265.041
+        ],
+        "chest": [
+          245.044,
+          265.041
+        ],
+        "body": [
+          245.044,
+          265.041
+        ],
+        "hand": [
+          415.952,
+          243.13
+        ],
+        "right_hand": [
+          415.952,
+          243.13
+        ],
+        "left_hand": [
+          205.604,
+          233.27
+        ],
+        "head": [
+          286.676,
+          201.498
+        ],
+        "left_foot": [
+          141.0,
+          448.0
+        ],
+        "right_foot": [
+          352.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        76,
+        146,
+        364,
+        302
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "recovery",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          287.771,
+          255.181
+        ],
+        "chest": [
+          287.771,
+          255.181
+        ],
+        "body": [
+          287.771,
+          255.181
+        ],
+        "hand": [
+          357.887,
+          232.174
+        ],
+        "right_hand": [
+          357.887,
+          232.174
+        ],
+        "left_hand": [
+          238.471,
+          261.754
+        ],
+        "head": [
+          314.065,
+          185.065
+        ],
+        "left_foot": [
+          180.0,
+          448.0
+        ],
+        "right_foot": [
+          365.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        107,
+        131,
+        298,
+        317
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          338.167,
+          305.577
+        ],
+        "chest": [
+          338.167,
+          305.577
+        ],
+        "body": [
+          338.167,
+          305.577
+        ],
+        "hand": [
+          378.703,
+          311.055
+        ],
+        "right_hand": [
+          378.703,
+          311.055
+        ],
+        "left_hand": [
+          296.536,
+          290.239
+        ],
+        "head": [
+          377.608,
+          247.512
+        ],
+        "left_foot": [
+          141.0,
+          448.0
+        ],
+        "right_foot": [
+          333.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        86,
+        183,
+        321,
+        265
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          314.065,
+          271.614
+        ],
+        "chest": [
+          314.065,
+          271.614
+        ],
+        "body": [
+          314.065,
+          271.614
+        ],
+        "hand": [
+          365.556,
+          251.894
+        ],
+        "right_hand": [
+          365.556,
+          251.894
+        ],
+        "left_hand": [
+          204.509,
+          246.416
+        ],
+        "head": [
+          341.454,
+          205.881
+        ],
+        "left_foot": [
+          114.0,
+          448.0
+        ],
+        "right_foot": [
+          383.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        60,
+        152,
+        365,
+        296
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          295.44,
+          285.857
+        ],
+        "chest": [
+          295.44,
+          285.857
+        ],
+        "body": [
+          295.44,
+          285.857
+        ],
+        "hand": [
+          365.556,
+          285.857
+        ],
+        "right_hand": [
+          365.556,
+          285.857
+        ],
+        "left_hand": [
+          230.802,
+          274.901
+        ],
+        "head": [
+          321.734,
+          216.836
+        ],
+        "left_foot": [
+          186.0,
+          448.0
+        ],
+        "right_foot": [
+          301.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        83,
+        163,
+        304,
+        285
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          266.956,
+          225.601
+        ],
+        "chest": [
+          266.956,
+          225.601
+        ],
+        "body": [
+          266.956,
+          225.601
+        ],
+        "hand": [
+          326.116,
+          192.734
+        ],
+        "right_hand": [
+          326.116,
+          192.734
+        ],
+        "left_hand": [
+          193.553,
+          209.167
+        ],
+        "head": [
+          288.867,
+          165.345
+        ],
+        "left_foot": [
+          221.0,
+          448.0
+        ],
+        "right_foot": [
+          284.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        68,
+        115,
+        289,
+        300
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 32.867,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          271.338,
+          229.983
+        ],
+        "chest": [
+          271.338,
+          229.983
+        ],
+        "body": [
+          271.338,
+          229.983
+        ],
+        "hand": [
+          417.048,
+          205.881
+        ],
+        "right_hand": [
+          417.048,
+          205.881
+        ],
+        "left_hand": [
+          230.802,
+          213.549
+        ],
+        "head": [
+          292.154,
+          173.014
+        ],
+        "left_foot": [
+          138.0,
+          448.0
+        ],
+        "right_foot": [
+          300.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        85,
+        119,
+        354,
+        326
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 3.287,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          256.0,
+          243.13
+        ],
+        "chest": [
+          256.0,
+          243.13
+        ],
+        "body": [
+          256.0,
+          243.13
+        ],
+        "hand": [
+          304.205,
+          228.887
+        ],
+        "right_hand": [
+          304.205,
+          228.887
+        ],
+        "left_hand": [
+          183.693,
+          208.072
+        ],
+        "head": [
+          271.338,
+          170.823
+        ],
+        "left_foot": [
+          237.0,
+          448.0
+        ],
+        "right_foot": [
+          319.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        60,
+        114,
+        283,
+        341
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "landing",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          289.962,
+          339.539
+        ],
+        "chest": [
+          289.962,
+          339.539
+        ],
+        "body": [
+          289.962,
+          339.539
+        ],
+        "hand": [
+          380.894,
+          411.846
+        ],
+        "right_hand": [
+          380.894,
+          411.846
+        ],
+        "left_hand": [
+          239.567,
+          318.724
+        ],
+        "head": [
+          329.403,
+          279.283
+        ],
+        "left_foot": [
+          134.0,
+          448.0
+        ],
+        "right_foot": [
+          300.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        71,
+        211,
+        329,
+        237
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          284.485,
+          266.137
+        ],
+        "chest": [
+          284.485,
+          266.137
+        ],
+        "body": [
+          284.485,
+          266.137
+        ],
+        "hand": [
+          344.741,
+          251.894
+        ],
+        "right_hand": [
+          344.741,
+          251.894
+        ],
+        "left_hand": [
+          220.942,
+          263.945
+        ],
+        "head": [
+          305.3,
+          197.116
+        ],
+        "left_foot": [
+          155.0,
+          448.0
+        ],
+        "right_foot": [
+          344.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        87,
+        126,
+        293,
+        322
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual anatomy landmarks approximately ±5 source pixels.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "PILOT_REVIEW",
+      "foot_socket_annotation": {
+        "method": "Manual visual sole-center annotation against ascua-movement-socket-review.png. Left/right designate image-local contact zones and follow sprite mirror. No alpha-box anatomical inference.",
+        "estimated_error_px": 8,
+        "projected_ground_y_px": 448
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -2.9602,
+          -1.4766,
+          -1.7031
+        ]
+      }
+    }
+  ],
+  "source": {
+    "path": "work/visual-consistency/generated/ascua-movement-clean.png",
+    "sha256": "daa731cc88ae8b34705308ef85eac73f22fb95263cf74f313d5f3f898566f5ee",
+    "reference_height_px": 293,
+    "bank_scale_factor": 1.0955631399317407,
+    "canonical_height_world": 214,
+    "normalization": "Uniform source-bank affine resampling and transparent canvas placement. No frame fit, no per-frame scale.",
+    "frames": [
+      {
+        "name": "guard_shift",
+        "source_region": [
+          18,
+          9,
+          265,
+          293
+        ],
+        "source_anchor": [
+          147,
+          293
+        ],
+        "normalized_source_anchor": [
+          147,
+          293
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          94.95221843003412,
+          127.0,
+          385.2764505119454,
+          448.0
+        ]
+      },
+      {
+        "name": "step_back",
+        "source_region": [
+          331,
+          12,
+          236,
+          291
+        ],
+        "source_anchor": [
+          147,
+          291
+        ],
+        "normalized_source_anchor": [
+          147,
+          291
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          94.95221843003412,
+          129.19112627986345,
+          353.5051194539249,
+          448.0
+        ]
+      },
+      {
+        "name": "charge_crouch",
+        "source_region": [
+          635,
+          84,
+          268,
+          220
+        ],
+        "source_anchor": [
+          158,
+          220
+        ],
+        "normalized_source_anchor": [
+          158,
+          220
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          82.90102389078496,
+          206.97610921501703,
+          376.5119453924915,
+          448.0
+        ]
+      },
+      {
+        "name": "heavy_windup",
+        "source_region": [
+          963,
+          14,
+          272,
+          288
+        ],
+        "source_anchor": [
+          149,
+          288
+        ],
+        "normalized_source_anchor": [
+          149,
+          288
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          92.76109215017064,
+          132.47781569965866,
+          390.7542662116041,
+          448.0
+        ]
+      },
+      {
+        "name": "quick_windup",
+        "source_region": [
+          19,
+          322,
+          264,
+          287
+        ],
+        "source_anchor": [
+          146,
+          287
+        ],
+        "normalized_source_anchor": [
+          146,
+          287
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          96.04778156996585,
+          133.57337883959042,
+          385.2764505119454,
+          448.0
+        ]
+      },
+      {
+        "name": "quick_extend",
+        "source_region": [
+          318,
+          325,
+          333,
+          285
+        ],
+        "source_anchor": [
+          158,
+          285
+        ],
+        "normalized_source_anchor": [
+          158,
+          285
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          82.90102389078496,
+          135.76450511945387,
+          447.72354948805463,
+          448.0
+        ]
+      },
+      {
+        "name": "follow_through",
+        "source_region": [
+          633,
+          334,
+          332,
+          276
+        ],
+        "source_anchor": [
+          164,
+          276
+        ],
+        "normalized_source_anchor": [
+          164,
+          276
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          76.32764505119454,
+          145.62457337883956,
+          440.0546075085324,
+          448.0
+        ]
+      },
+      {
+        "name": "recovery",
+        "source_region": [
+          961,
+          321,
+          272,
+          289
+        ],
+        "source_anchor": [
+          136,
+          289
+        ],
+        "normalized_source_anchor": [
+          136,
+          289
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          107.00341296928326,
+          131.38225255972696,
+          404.99658703071674,
+          448.0
+        ]
+      },
+      {
+        "name": "dash_lean",
+        "source_region": [
+          19,
+          670,
+          293,
+          242
+        ],
+        "source_anchor": [
+          155,
+          242
+        ],
+        "normalized_source_anchor": [
+          155,
+          242
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          86.1877133105802,
+          183.96928327645048,
+          407.1877133105802,
+          448.0
+        ]
+      },
+      {
+        "name": "dash_stride",
+        "source_region": [
+          325,
+          635,
+          333,
+          270
+        ],
+        "source_anchor": [
+          179,
+          270
+        ],
+        "normalized_source_anchor": [
+          179,
+          270
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          59.894197952218406,
+          152.19795221843003,
+          424.71672354948805,
+          448.0
+        ]
+      },
+      {
+        "name": "jump_start",
+        "source_region": [
+          648,
+          655,
+          278,
+          260
+        ],
+        "source_anchor": [
+          158,
+          260
+        ],
+        "normalized_source_anchor": [
+          158,
+          260
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          82.90102389078496,
+          163.15358361774742,
+          387.4675767918089,
+          448.0
+        ]
+      },
+      {
+        "name": "jump_apex",
+        "source_region": [
+          958,
+          611,
+          265,
+          274
+        ],
+        "source_anchor": [
+          172,
+          304
+        ],
+        "normalized_source_anchor": [
+          172,
+          304
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          67.56313993174061,
+          114.9488054607508,
+          356.79180887372013,
+          415.1331058020478
+        ]
+      },
+      {
+        "name": "jump_strike",
+        "source_region": [
+          18,
+          918,
+          323,
+          297
+        ],
+        "source_anchor": [
+          156,
+          300
+        ],
+        "normalized_source_anchor": [
+          156,
+          300
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          85.09215017064844,
+          119.33105802047777,
+          438.9590443686007,
+          444.7133105802048
+        ]
+      },
+      {
+        "name": "jump_fall",
+        "source_region": [
+          326,
+          913,
+          258,
+          311
+        ],
+        "source_anchor": [
+          179,
+          305
+        ],
+        "normalized_source_anchor": [
+          179,
+          305
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          59.894197952218406,
+          113.8532423208191,
+          342.54948805460754,
+          454.5733788395904
+        ]
+      },
+      {
+        "name": "landing",
+        "source_region": [
+          627,
+          996,
+          301,
+          217
+        ],
+        "source_anchor": [
+          169,
+          217
+        ],
+        "normalized_source_anchor": [
+          169,
+          217
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          70.84982935153582,
+          211.358361774744,
+          400.6143344709898,
+          448.0
+        ]
+      },
+      {
+        "name": "guard_settle",
+        "source_region": [
+          954,
+          924,
+          267,
+          294
+        ],
+        "source_anchor": [
+          154,
+          294
+        ],
+        "normalized_source_anchor": [
+          154,
+          294
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.0955631399317407,
+        "normalized_alpha_bounds_float": [
+          87.28327645051192,
+          125.90443686006824,
+          379.7986348122867,
+          448.0
+        ]
+      }
+    ]
+  },
+  "art_review_status": "PILOT_REVIEW",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "4aa50bc77bbc5523fa83b688497aa2fcc1d52e04d7829cfc477f95dbed0016d0",
+  "precision_revision": 1,
+  "precision_source_sha256": "36185bfec6d18b5908248eb0cbaf27884de31577cfb85e4d834d3177a737bbbe",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint."
+}

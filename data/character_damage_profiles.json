@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "thresholds": [
+    0.72,
+    0.45,
+    0.22
+  ],
+  "threshold_rationale": "Existing small repeated attacks and healing use a monotonic minimum HP. 72/45/22 delays first wear and leaves a readable critical interval; visual-only, configurable.",
+  "tiers": [
+    "clean",
+    "worn",
+    "damaged",
+    "critical"
+  ],
+  "reset": "new battle/setup only; retain for immediate result; never persist as cosmetics",
+  "default": {
+    "shader_material": 0
+  },
+  "profiles": {
+    "nima": {
+      "character_id": "nima",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "luma": {
+      "character_id": "luma",
+      "damage_materials": [
+        "skin",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "mugo": {
+      "character_id": "mugo",
+      "damage_materials": [
+        "stone"
+      ],
+      "shader_material": 2,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "small surface cracks"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "chipped edges"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "sira": {
+      "character_id": "sira",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "iria": {
+      "character_id": "iria",
+      "damage_materials": [
+        "scales",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "duna": {
+      "character_id": "duna",
+      "damage_materials": [
+        "shell",
+        "leather",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "chipped edges"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "kiro": {
+      "character_id": "kiro",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "neris": {
+      "character_id": "neris",
+      "damage_materials": [
+        "skin",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "taro": {
+      "character_id": "taro",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "balam": {
+      "character_id": "balam",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "tepa": {
+      "character_id": "tepa",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "xuna": {
+      "character_id": "xuna",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "copal": {
+      "character_id": "copal",
+      "damage_materials": [
+        "scales",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "onix": {
+      "character_id": "onix",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "bruma": {
+      "character_id": "bruma",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "ascua": {
+      "character_id": "ascua",
+      "damage_materials": [
+        "scales",
+        "bronze",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "chipped edges"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "preserve core and emissive cracks"
+    },
+    "vespera": {
+      "character_id": "vespera",
+      "damage_materials": [
+        "scales",
+        "armor",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "taro_roque": {
+      "character_id": "taro_roque",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "taro_sabio": {
+      "character_id": "taro_sabio",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "duna_cora": {
+      "character_id": "duna_cora",
+      "damage_materials": [
+        "shell",
+        "leather",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "chipped edges"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "duna_pedernal": {
+      "character_id": "duna_pedernal",
+      "damage_materials": [
+        "shell",
+        "leather",
+        "fabric"
+      ],
+      "shader_material": 1,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "chipped edges"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "bruma_ambar": {
+      "character_id": "bruma_ambar",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    },
+    "bruma_nieve": {
+      "character_id": "bruma_nieve",
+      "damage_materials": [
+        "fur",
+        "fabric"
+      ],
+      "shader_material": 0,
+      "damage_regions": [
+        "outer torso",
+        "forearm",
+        "lower legs"
+      ],
+      "protected_regions": [
+        "face",
+        "signature core",
+        "horns",
+        "tail tip"
+      ],
+      "blood_allowed": false,
+      "worn_visuals": [
+        "localized dust",
+        "small surface scuffs"
+      ],
+      "damaged_visuals": [
+        "scratches",
+        "material abrasion",
+        "cloth seam wear"
+      ],
+      "critical_visuals": [
+        "persistent stronger wear",
+        "fatigue",
+        "compressed dirty fur"
+      ],
+      "transformation_damage_behavior": "preserve individual and monotonic damage",
+      "special_damage_behavior": "no identity changes"
+    }
+  }
+}

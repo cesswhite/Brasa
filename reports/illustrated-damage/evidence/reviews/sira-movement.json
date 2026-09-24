@@ -1,0 +1,33 @@
+{
+  "source_sha256": "5468ad2af31fca58735437a21eefd024cec38d6d43b3a4f1a6e8e4ad9bc490ca",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "combat_progression",
+  "reviewed_frames": [
+    "guard_shift",
+    "step_back",
+    "charge_crouch",
+    "heavy_windup",
+    "quick_windup",
+    "quick_extend",
+    "follow_through",
+    "recovery",
+    "dash_lean",
+    "dash_stride",
+    "jump_start",
+    "jump_apex",
+    "jump_strike",
+    "jump_fall",
+    "landing",
+    "guard_settle"
+  ],
+  "uniform_scale": 1.2482721956406166,
+  "candidate_sha256_reviewed": "cbf2944a0c897bff4f8ad582d913d83947b05a3b4f85662258eb6d325104176d",
+  "review_evidence": [
+    "work/illustrated-damage/prepared/sira/movement/sira-movement-dark.png",
+    "work/illustrated-damage/prepared/sira/movement/sira-movement-light.png",
+    "outputs/Brasa/assets/sprites/normalized/sira-movement-v2.png"
+  ],
+  "review_note": "Todas las poses revisadas sobre claro/oscuro y contra el PNG normalizado limpio. Placas jade, paños púrpura, antenas y filos conservan identidad. Astillas, ropa desgarrada y señales faciales son ilustradas. Huecos entre brazos/cuerpo, piernas y paños se distinguen de la anatomía; sin amputación o halo verde visible. Escala única por banco y apoyos proyectados coherentes; no ampliar KO para igualar altura de pie. Chroma normal, sin strict_key_hue ni cambios RGB."
+}

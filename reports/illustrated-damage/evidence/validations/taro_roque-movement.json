@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        137,
+        185,
+        242,
+        264
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 33020
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        129,
+        188,
+        245,
+        261
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32704
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        134,
+        228,
+        251,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32347
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        129,
+        185,
+        258,
+        265
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37663
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        139,
+        194,
+        237,
+        255
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 32547
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        145,
+        189,
+        304,
+        257
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35711
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        123,
+        193,
+        312,
+        255
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 36408
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        157,
+        191,
+        238,
+        257
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32518
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        130,
+        225,
+        263,
+        223
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33122
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        127,
+        208,
+        278,
+        234
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34401
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        139,
+        215,
+        230,
+        235
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33085
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        150,
+        164,
+        203,
+        268
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 33492
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        151,
+        161,
+        259,
+        285
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34609
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        155,
+        160,
+        203,
+        291
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32855
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        105,
+        237,
+        276,
+        214
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35041
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        126,
+        162,
+        241,
+        285
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 37039
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "taro_roque",
+  "bank": "movement",
+  "source_sha256": "c88820c0f67a5e7ee9958a2df9b5f797b0fd339efe179272d51440dbdb4e276f",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/taro_roque/movement/taro_roque-movement.png"
+}

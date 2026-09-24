@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        157,
+        189,
+        198,
+        259
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28268
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        159,
+        191,
+        194,
+        257
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 27754
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        146,
+        212,
+        220,
+        236
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30077
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        140,
+        202,
+        281,
+        246
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 28982
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        143,
+        191,
+        225,
+        257
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 28606
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        119,
+        230,
+        244,
+        218
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 25941
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        157,
+        161,
+        198,
+        287
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 26961
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        94,
+        349,
+        323,
+        99
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20714
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "taro",
+  "bank": "base",
+  "source_sha256": "93833c8c63070f840a16f55154ce7535e5d72015f2dd792c1b33455a47c8dddc",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/taro/base/taro-base.png"
+}

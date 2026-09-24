@@ -1,0 +1,43 @@
+{
+  "scope": "Catalog-only addition of two playable cats; all saves are isolated generated fixtures",
+  "checks": 721,
+  "failures": 0,
+  "domain_log": "work/cats/test-cat-roster.log",
+  "balance_log": "work/cats/balance-final.log",
+  "balance_report": "reports/cat_roster_balance.json",
+  "matches": 6768,
+  "completed_campaigns": 16,
+  "campaigns": 16,
+  "old_13_definitions_moves_and_perks_byte_exact_after_removing_additions": true,
+  "old_league_and_story_profiles_preserved": 13,
+  "schemas_modified": false,
+  "source_hashes": {
+    "campaign_config.gd": "92fd397546dc0aff269bda81a2a232bfec156365bcfab2d743b1c1ee3fcd49de",
+    "character_catalog.gd": "0acae89fce747f5863c39af64cdaa667590bf681c70059662d05cbc437356a49",
+    "combat_engine.gd": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+    "move_catalog.gd": "e866bb3ad5f5911b05de7dab6276c5b8c2d2a8a9eada2a594b651b1b0e60616a",
+    "story_catalog.gd": "dad92c50562724d6c4b92c6eaae774599d893905e448674a5c6244571bb466dc",
+    "story_progression.gd": "5072082c206f641d44bd79c9be8be87a88b25a07bdc84333c87af52579a0db86"
+  },
+  "source_hashes_match_after_simulation": true,
+  "new_scripts": {
+    "tests/test_cat_roster.gd": "a6926a5dd818f373bbb9135b38854a312b801e887414cd40ccf749ad76c57e8e",
+    "tests/simulate_cat_roster.gd": "d53a74b70ee649e095539ade5f79b831a68c4c225f0a08af626d867a8091e5e5"
+  },
+  "fixtures": {
+    "tests/fixtures/story-before-cats.json": "868cabaa7bac6f01c74655e109df5d968a19c07dca97251c0cd911bbd8da3ceb",
+    "tests/fixtures/roster-before-cats.json": "9a840eca212f7c0b3548e379f35a732627c3f4a5c625a5069a5b91073d7ec6a1",
+    "tests/fixtures/league-before-cats.json": "93b475851a9f5e44fea3bc69d439213ccf6700a7d22e43d682cdb684aeeb5fd4"
+  },
+  "log_hashes": {
+    "work/cats/test-cat-roster.log": "a4ff7c094345258dd8afa48e3853e506b01ab8918e4fb6b253782b39be081b03",
+    "work/cats/balance-final.log": "b9cda3195d216d22e05d6e4dc9211b875d6a2c162f4173d3638973681187c97c"
+  },
+  "limitations": [
+    "Finite seeded sample, not a guarantee of equal win rate in every matchup.",
+    "No real user saves accessed. Fixture preservation does not assert that a live user save stayed unchanged.",
+    "Art/rendering and online catalog export are verified by separate owners."
+  ],
+  "schemas_scope": "League and Story gameplay profiles only; identity sidecar separately migrates v1 to v2",
+  "identity_migration_report": "reports/cat_identity_migration_validation.json"
+}

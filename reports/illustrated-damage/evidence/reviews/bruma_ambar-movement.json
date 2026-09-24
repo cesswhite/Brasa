@@ -1,0 +1,14 @@
+{
+  "source_sha256": "7c85fc32e2ff1d53f3f90fc24504bcd25cc507be80111eb10d0752009d732a9a",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Orange tabby markings, cream chest, blue vest and rust sash remain consistent; complete paws and tail. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/bruma_ambar-movement-1.png",
+    "work/illustrated-damage/group-b/qa/bruma_ambar-movement-2.png"
+  ],
+  "poses_reviewed": 16,
+  "anatomical_sockets_verified": false
+}

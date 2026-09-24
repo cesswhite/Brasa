@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mejorar UI y sprites de Brasa"
+  short_description: "Mantiene jerarquía, escala y coherencia visual"
+  default_prompt: "Usa $brasa-visual para resolver la tarea en Brasa respetando sus contratos y pruebas."

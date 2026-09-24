@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        147,
+        201,
+        217,
+        248
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28843
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        160,
+        236,
+        211,
+        213
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26795
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        116,
+        195,
+        250,
+        254
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 31383
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        152,
+        204,
+        207,
+        245
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28717
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        176,
+        269,
+        226,
+        180
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 24777
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        127,
+        263,
+        270,
+        176
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27468
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        123,
+        352,
+        268,
+        97
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20090
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        141,
+        301,
+        240,
+        148
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23742
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        154,
+        213,
+        192,
+        236
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29517
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        148,
+        185,
+        212,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31683
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        159,
+        208,
+        192,
+        241
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27702
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        151,
+        185,
+        209,
+        264
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33161
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        141,
+        147,
+        230,
+        302
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34874
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        143,
+        179,
+        225,
+        270
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30907
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        125,
+        177,
+        255,
+        272
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36092
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        142,
+        179,
+        228,
+        270
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32361
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "bruma_ambar",
+  "bank": "reactions",
+  "source_sha256": "325f86fc1018e2e5d0ec3ca525d44ac79ab2cceb272790187a0c553b0d22a26f",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/bruma_ambar/reactions/bruma_ambar-reactions.png"
+}

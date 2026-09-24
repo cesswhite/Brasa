@@ -1,0 +1,13 @@
+{
+  "source_sha256": "cd26ae6a981080a1f077d9f5fa857976b17cab53df87de90c13f00c502d992c9",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Golden rosettes and bare torso remain bare; jade sash, obsidian guards and ivory wraps retain identity and robust mass. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/balam-base-1.png"
+  ],
+  "poses_reviewed": 8,
+  "anatomical_sockets_verified": false
+}

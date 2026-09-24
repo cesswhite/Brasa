@@ -1,0 +1,1130 @@
+{
+  "version": 2,
+  "bodies": 23,
+  "frames": 920,
+  "assets": [
+    {
+      "body_id": "ascua",
+      "bank": "base",
+      "png": "assets/sprites/normalized/ascua-base-v2.png",
+      "metadata": "assets/sprites/normalized/ascua-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.8085642317380353,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "893649afdcfa321553d18fe54691a257e8c8c69ffc725443e4ace7dbe7fb68a4",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "871e2f9778247f46cc4ffd3ca16f6dbfd7a086c9cae8fbfc570411e7a270e9ca",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "ascua",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/ascua-movement-v2.png",
+      "metadata": "assets/sprites/normalized/ascua-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.0955631399317407,
+      "source_hash_unchanged": true,
+      "art_status": "PILOT_REVIEW",
+      "sha256": "4aa50bc77bbc5523fa83b688497aa2fcc1d52e04d7829cfc477f95dbed0016d0",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "1d1f084520d3e5f9d17a0cd59a63daa95c9ae11b5d5049791de6936a14a2b90f",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "ascua",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/ascua-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/ascua-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.1888888888888889,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "8822fd6059952f8872b42ecbccb13bf3ef5197110f51e180ea9c20fa96b8e7df",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "abd21e2ae82d557456b85be5574500759b5aca856c32323605dec2dbc1191756",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "balam",
+      "bank": "base",
+      "png": "assets/sprites/normalized/balam-base-v2.png",
+      "metadata": "assets/sprites/normalized/balam-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6774193548387096,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "a64964b20adb91ae6f812285c5dbf3e2b9e3d2f15ffa6560a8ff1d704754f759",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "b64c8527b52b09dafa5091bf1e8fd9db6d8730570b66313d878a955f2e09ec92",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "balam",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/balam-movement-v2.png",
+      "metadata": "assets/sprites/normalized/balam-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.0340909090909092,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "a449f5a9066157b15b077efe0f206cfadde611dd7da3fcdfe7a1829373c93e73",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "c5d2b9ff542b61c8c69d449937137a678b4dd1694b0ded2b9812d0de0aa35474",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "balam",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/balam-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/balam-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.0263157894736843,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "a345b5d4fd5b33f8bf91deac06686b026a9dc9fc14ccfe14def329b9c7c47606",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "1273323bd7162b79e7d16802bdca28c5110dc558260c21cf8a6a80f551c75f80",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "bruma",
+      "bank": "base",
+      "png": "assets/sprites/normalized/bruma-base-v2.png",
+      "metadata": "assets/sprites/normalized/bruma-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6788321167883211,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "5e16cf04fd4aceaa52440e0ec448e5a3c285a2be08e4fbc918f9934010929467",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "3ab3e7c4b95b4b87a7c1fc1cd934a051643434f39c0027bc9902808eb089a6d2",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "bruma",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/bruma-movement-v2.png",
+      "metadata": "assets/sprites/normalized/bruma-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.5,
+      "source_hash_unchanged": true,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "sha256": "5a962c31e7453dfeb23b1e8c35cae3c943b1838746fd44d9493a1a699029b48f",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "42ecd2e5889a5751c62ca7db3ca4e2eabe503abe0d29fc049895f5b70058d7cf",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "bruma",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/bruma-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/bruma-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9587628865979382,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "eca3a8467d19d85292b4813ab5aa71d11403564f7f9412a2309a12a3039733ef",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "eb1c2658448624225605d38993011d47e6ad9de865b457a148202acb4c158b8e",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "bruma_ambar",
+      "bank": "base",
+      "png": "assets/sprites/normalized/bruma_ambar-base-v2.png",
+      "metadata": "assets/sprites/normalized/bruma_ambar-base-v2.json",
+      "frames": 8,
+      "sha256": "497374d3f04316b964651a4d21af67ed6c779a7ae2e13b0ceb3ae210748584b3",
+      "accepted_metadata_sha256": "baf18508cc4d0c552c3929d74e6f71165b8ecb78ea1554041314de2344361278",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "bruma_ambar",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/bruma_ambar-movement-v2.png",
+      "metadata": "assets/sprites/normalized/bruma_ambar-movement-v2.json",
+      "frames": 16,
+      "sha256": "4377b985ee6e00366cb67cfcdf3075850488673aa2b5904284c9cd187902e5e6",
+      "accepted_metadata_sha256": "83bcfa668e9e08dc13641f59eceb18783bbe42bc5c22f88cca2b0bf2a02dd8b7",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "bruma_ambar",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/bruma_ambar-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/bruma_ambar-reactions-v2.json",
+      "frames": 16,
+      "sha256": "c358f41c81324f57b11b137e136fb566ac82ce65c75d6d1a3dc5a6d770d6e6f8",
+      "accepted_metadata_sha256": "a632441152db82f79ba1807654eeb9e4c3409909cae5d9416b4edeab7d99871a",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "bruma_nieve",
+      "bank": "base",
+      "png": "assets/sprites/normalized/bruma_nieve-base-v2.png",
+      "metadata": "assets/sprites/normalized/bruma_nieve-base-v2.json",
+      "frames": 8,
+      "sha256": "0c93b6c56de0ee35619289effb44c9d0917cfa54dc02435411e4472ba865dfcd",
+      "accepted_metadata_sha256": "7a1a102d775da9f5c31f1d121b4c185f8800476901d7212fb42751bb32a1b6a0",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "bruma_nieve",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/bruma_nieve-movement-v2.png",
+      "metadata": "assets/sprites/normalized/bruma_nieve-movement-v2.json",
+      "frames": 16,
+      "sha256": "96b26cb436b2743fb71362510a48df8a7ffde63cb38c38743e117a5f09916fbf",
+      "accepted_metadata_sha256": "85f1510d6c1f61c1390745a673120c6e229984d2a3bcbaec811ab93c1e56a48d",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "bruma_nieve",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/bruma_nieve-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/bruma_nieve-reactions-v2.json",
+      "frames": 16,
+      "sha256": "acce729c50dee6ea2fd0c3cbf20a8fee56737cd1834f573121711d2d23158204",
+      "accepted_metadata_sha256": "1b07332a8c49a2351ae14396dee769b22921c65fcddfd3909b9bf40e4afa41cf",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "copal",
+      "bank": "base",
+      "png": "assets/sprites/normalized/copal-base-v2.png",
+      "metadata": "assets/sprites/normalized/copal-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.562962962962963,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "94f8067ccb622d127ac11ef87eaf8d78b62615435dfad2e33eaff98199f5fc0c",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "b7c242e3fbd6d6960de572f713c65b8c272a361c42b31e4000ca910054a73035",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "copal",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/copal-movement-v2.png",
+      "metadata": "assets/sprites/normalized/copal-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.7808219178082192,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "bdd28b49c07ba662ce61f470bc441af537223052c17591561453908d53235817",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "d134e2ad3da99fef7a75d348216f9ba7646ff2dde2207ea5d98f753a66d7e595",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "copal",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/copal-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/copal-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.8113879003558719,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "304d92f33ef7e71d58e806a584615a2f818728aa99635aedff78b5ebdc837601",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "1cf6a8c0617d5706ad0af212e01b99086ba2e17260c29ae23b7a4bd0b49791a5",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "duna",
+      "bank": "base",
+      "png": "assets/sprites/normalized/duna-base-v2.png",
+      "metadata": "assets/sprites/normalized/duna-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6863753213367609,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "7fc2c2da80f5ada15aec1b32043444cb3950ca4f328f78c21730ac3b874e751e",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "fd6a92ea4e489ad1919f386cba105f181fa3aece974540355b1c6731cb6789ed",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "duna",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/duna-movement-v2.png",
+      "metadata": "assets/sprites/normalized/duna-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9925650557620818,
+      "source_hash_unchanged": true,
+      "art_status": "TECHNICAL_MATTE_FRINGE_FIXED_PENDING_NATIVE",
+      "sha256": "e6f866f91caa9a7ea70f237bd3c6df2c9a87f6029dfd0939c8b8df0daa585b01",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "d7cf555a68226d706536601de8424198c59528ed8b4fc9cb0b69a2cf9af33b41",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "duna",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/duna-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/duna-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.978021978021978,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "00369c519465bdb76c238123327b5121c2460c44e0490a69a9b8302d31f677f1",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "0929eb0ddda5be9dc14022b6018d75197ffdcd105a0d06dd90d2a2c475e8a12e",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "duna_cora",
+      "bank": "base",
+      "png": "assets/sprites/normalized/duna_cora-base-v2.png",
+      "metadata": "assets/sprites/normalized/duna_cora-base-v2.json",
+      "frames": 8,
+      "sha256": "b35fd7200f864403efe2e7cda7c07a328e6c1f3a6b959c7646d8863801fdef45",
+      "accepted_metadata_sha256": "217528e0c7231babbc016c056e6a132ab7928378d5775159cbc1e516e413657f",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "duna_cora",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/duna_cora-movement-v2.png",
+      "metadata": "assets/sprites/normalized/duna_cora-movement-v2.json",
+      "frames": 16,
+      "sha256": "8c48ceeff2399d53a3babcedde2fdf3a20054f688de758c43080e4cb28123559",
+      "accepted_metadata_sha256": "560cbbc5c9c88d14a27578e0f66e90f751a078fff88859e3d632337523e168ed",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "duna_cora",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/duna_cora-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/duna_cora-reactions-v2.json",
+      "frames": 16,
+      "sha256": "e39ef4f18c37a28d18ef93d87a21296fec7761c063ad16a584864e7f56b24fda",
+      "accepted_metadata_sha256": "317b1998bb201ca4bbb4732c0dffcfe69d909d13879fbaebba63edaaf50bce5e",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "duna_pedernal",
+      "bank": "base",
+      "png": "assets/sprites/normalized/duna_pedernal-base-v2.png",
+      "metadata": "assets/sprites/normalized/duna_pedernal-base-v2.json",
+      "frames": 8,
+      "sha256": "1aa4ae9e65b947602dfdbc86359730689e6ad2cfa88dab9433404c73e6378f19",
+      "accepted_metadata_sha256": "9651e2023be67d6003a2a05f0598bb7241777cad21fe379a8e512223c20fec48",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "duna_pedernal",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/duna_pedernal-movement-v2.png",
+      "metadata": "assets/sprites/normalized/duna_pedernal-movement-v2.json",
+      "frames": 16,
+      "sha256": "2b52203136c294f37cbda1a2b97b1575af7c5b1ebc24910ea85415f0a00b517b",
+      "accepted_metadata_sha256": "f105efb2d911b1cc6ebc0f2b094d1fcbd96a5b649209c48fdf36751cc637a445",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "duna_pedernal",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/duna_pedernal-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/duna_pedernal-reactions-v2.json",
+      "frames": 16,
+      "sha256": "14d2dabf7cb941bef179d0dd9adf62ade05b4db906ef13164c6cf1caf2451473",
+      "accepted_metadata_sha256": "5be0e0849c927c42098a26af226fe9efda4fc7f9a1ed4bf6dc552245648daf69",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "iria",
+      "bank": "base",
+      "png": "assets/sprites/normalized/iria-base-v2.png",
+      "metadata": "assets/sprites/normalized/iria-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6486486486486487,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "c3f98a5cdb87f18d93ae1facfc0fa8f8252846c51d99918730ad88defad3b01e",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "fb68f06721741cc7d3bef1f2a10856135952149ee82341047447b014957c5e8a",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "iria",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/iria-movement-v2.png",
+      "metadata": "assets/sprites/normalized/iria-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.45627376425855515,
+      "source_hash_unchanged": true,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "sha256": "a598eb714fee4d2d98bb531b03d463cfeb07d69a2c15aa24f8ac2990145ad28c",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "cb4bc4012e65d80b48a30a9b8007c5aefe6ccd9789047d2e95bb741b3e3e050c",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "iria",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/iria-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/iria-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9523809523809523,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "c041c96f82e371ccdd92ac8a9db9847f492605555110cc564e7b059fc568d8f0",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "06700cc44b8625e404612093669d57374f1b1d26881404380b9ec44e0e5acc7b",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "kiro",
+      "bank": "base",
+      "png": "assets/sprites/normalized/kiro-base-v2.png",
+      "metadata": "assets/sprites/normalized/kiro-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.656934306569343,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "a830a25fae15bc4c4ed34c40c7d02baa81865110730c3a3becae7851283df30a",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "0bdf0b1bfc7f510210b5f62f9b4b5760b38d7b43007746be273d4a0dc5a22068",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "kiro",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/kiro-movement-v2.png",
+      "metadata": "assets/sprites/normalized/kiro-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.8490566037735849,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "84ef331770f7d936b72dd48c7889f4c21e28e5892f91a2ac33da01edca2048fe",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "922068505b6187182e1577b2ffe900f25106912f1f124d0ff2676b3a2475911d",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "kiro",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/kiro-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/kiro-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9215017064846417,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "2e7939048b997e4734f6bb4dfc8a3bae5555c7205372b98442d5d175b0c38f54",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "b7821bea1070016755c2c3ea2840aeceb7e782ef19e11585a77f50ee648b7e0a",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "luma",
+      "bank": "base",
+      "png": "assets/sprites/normalized/luma-base-v2.png",
+      "metadata": "assets/sprites/normalized/luma-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.5808823529411765,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "e39c7a731246c0fe0457e0082fba00fc44967c6f6a152ff59791b6e78bb56cf7",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "86068db5572b73b475570a5156f10f7681df94a39b75985f7ebd258dae88375e",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "luma",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/luma-movement-v2.png",
+      "metadata": "assets/sprites/normalized/luma-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.8464285714285714,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "ae3619ffa223b315e45b429d250d665ccb39a24a754f855909751742951bc7cd",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "343fbbe97192e7447123e99b0cb74c91c27927ab86966a5993eb9e242b0d02ba",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "luma",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/luma-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/luma-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.8745387453874539,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "61a44d654103329ef8415265759c50a96b7384d8d4f383d03d69329f3e0fe2f0",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "4992e1ca07b6eea9b52671f13e27dc6b656f5d125733de70fc3e5cef9380d67f",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "mugo",
+      "bank": "base",
+      "png": "assets/sprites/normalized/mugo-base-v2.png",
+      "metadata": "assets/sprites/normalized/mugo-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.765625,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "ecbd4d453c63893d1d011109a8157d6ecd01eb34246f6c2e2dda3e0e7551b4d5",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "9d31e142f0564452259be85e4c1694885b60e9dd4d603d06f06400f63c39abc3",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "mugo",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/mugo-movement-v2.png",
+      "metadata": "assets/sprites/normalized/mugo-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.5610687022900763,
+      "source_hash_unchanged": true,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "sha256": "4d4dcccaa925202d9bfcdb864de8fe108f1a356a2bc0bd8f26b690d340c0e29d",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "44d0a0bad8bce39f7af1e18f3bf184a28852a57cd4899bbd61b922e3a24e7954",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "mugo",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/mugo-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/mugo-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.1666666666666667,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "890155448685fd3c6ac7cf1775f37a6925eff800bd0cead99664bf379ec16a9f",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "5d2d5d48b1c7497d824f6a28051d29e21337575db100aa45be001b82a41516f4",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "neris",
+      "bank": "base",
+      "png": "assets/sprites/normalized/neris-base-v2.png",
+      "metadata": "assets/sprites/normalized/neris-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6674816625916871,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "602c7de9e52b1e2520143e3ec6562a677609cdb0d23bede595db9e4c3aeed90e",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "be126b0faef83c8c4503f26169113fd834ce4f16ddcd813458b84c29f89ee97d",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "neris",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/neris-movement-v2.png",
+      "metadata": "assets/sprites/normalized/neris-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9446366782006921,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "91b472214feb6db805cbe8955ea0f10b699c6b7658d93f5c19bccdce8d662b6f",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "2f0a3f7e6323fdd4380d052a726118a16f29d8c45138b2da8281a52d965d8318",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "neris",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/neris-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/neris-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9479166666666666,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "2caa1d15c923ac1a87ca39b4a6a46dd8a82e884bab5fdfad9cad3e1a03fd6fb8",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "a647744239d520a54297c159b3bfba4b3fac66b1396e7359da89c67e68894d93",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "nima",
+      "bank": "base",
+      "png": "assets/sprites/normalized/nima-base-v2.png",
+      "metadata": "assets/sprites/normalized/nima-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.5871121718377088,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "a2f80e69163020e9e611f337a10d7747ac0e016e450bbf28a865c64d1bf1bb65",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "ef76612a43f802c2b427e613726ad295322f975451b30e13a7709b6b78ed8bc9",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "nima",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/nima-movement-v2.png",
+      "metadata": "assets/sprites/normalized/nima-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.8172757475083057,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "be48ce09006b26513dc589594aa927f8f402bd29a15a3f94402e87371bbd2485",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "51a200b4f0517aef412732c82fc0d9a8c687013f6e6b9e845768f5a51e5dcee8",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "nima",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/nima-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/nima-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.8978102189781022,
+      "source_hash_unchanged": true,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "sha256": "53dc9adf85a52e6214bec8c3f568fe546eeb3e4468047e476301549734545af6",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "28e69aaa1328a4627de1a4ff375b8e7bcdcf070fc74fb73dacbd4fe6384da26a",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "onix",
+      "bank": "base",
+      "png": "assets/sprites/normalized/onix-base-v2.png",
+      "metadata": "assets/sprites/normalized/onix-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.5526315789473685,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "975ab9f8f4eab5196e99397a4ee04ddfb3d05494922611e97d830774715d1090",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "25f8826761b39861b0388a8203845edb7a00bc2c40933a918d86aa50b767cb13",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "onix",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/onix-movement-v2.png",
+      "metadata": "assets/sprites/normalized/onix-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.7598684210526315,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "fe92096a96451b0dc341fc936d16d8e508dea88057cb9e76dc038fcef4cf3ec9",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "c5d8f989cc7534a26b3437107633abd6fdf680566bbb43926bd374515eeaef76",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "onix",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/onix-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/onix-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.7598684210526315,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "de0df6904411108daf6d0fd3a59943b181b6ad4e115288109d47e95a01c71b5e",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "36c816501ec11b3ef4b03cbed5dd52b8fd0cbcd6f4b577cee18ee4a6b80a707d",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "sira",
+      "bank": "base",
+      "png": "assets/sprites/normalized/sira-base-v2.png",
+      "metadata": "assets/sprites/normalized/sira-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6764705882352942,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "2944c1afa834f6e4fc992d0c9feca969b5f2fd12393b47c4abe3e011953e7b60",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "f488094e3591ac9ddd289bf4f7c9c3a8cda8e3ac84320dd84463ba1c9d087ce8",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "sira",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/sira-movement-v2.png",
+      "metadata": "assets/sprites/normalized/sira-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.4981949458483754,
+      "source_hash_unchanged": true,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "sha256": "ead8f15e7524ec41bc546e6ad9b6510fb2c3c9bece34d2ac7660ee405d738e44",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "08221df9ec8f30851a3900dd796521de3410dcc6cf92ba4541e9a8ed0eb4528e",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "sira",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/sira-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/sira-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.0,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "3cd434f54b31c2e2298400c32b21c9e59649da2570afecebacc1aa607e307485",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "7029d52df4c0edd2a6b5e1521517ec57ea2235cd8a8b2c986bce4716856041f1",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "taro",
+      "bank": "base",
+      "png": "assets/sprites/normalized/taro-base-v2.png",
+      "metadata": "assets/sprites/normalized/taro-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.6952141057934509,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "0700378d5da8b0071a26959d6735bf5bb472ffe0c65472bc5975d91499244b47",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "31d2b745dcdf6e505c8c48b5cf08db14f6e94fd7c6bf07e9c2c4f8291218c55c",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "taro",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/taro-movement-v2.png",
+      "metadata": "assets/sprites/normalized/taro-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.968421052631579,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "0354ed6ecf24ef1e5e176f0817245e6ff6d31a8dda587495b443e279a7de429b",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "04731e58810c5edae4f960e6cd2c63add4bfee58c0e405025de6fa6226cf09db",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "taro",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/taro-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/taro-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.018450184501845,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "4ad1089cc41d740b74546c3c7b70836d2b614d1cbd73dfe7271a1823a5ca6e69",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "a201a846db105fddbd972b78f210d4c938087cae8c61eaf98c58aece57de231d",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "taro_roque",
+      "bank": "base",
+      "png": "assets/sprites/normalized/taro_roque-base-v2.png",
+      "metadata": "assets/sprites/normalized/taro_roque-base-v2.json",
+      "frames": 8,
+      "sha256": "adb081f0e99a1091859e1a2c4362384c79ef7fc6cc2e17cefce8b1c6bd47e5cc",
+      "accepted_metadata_sha256": "22be298b426fff362e47ac7808354210cd8cdee59751737d15ada15b07a65b63",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "taro_roque",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/taro_roque-movement-v2.png",
+      "metadata": "assets/sprites/normalized/taro_roque-movement-v2.json",
+      "frames": 16,
+      "sha256": "33681ac1603077c8bf6fe81044ef11917adaeb51f48d9f2f0c86b65ba7800324",
+      "accepted_metadata_sha256": "b4150b836d282e363824dd9869e6122d422b18657721b82f196fa85cf6837ab7",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "taro_roque",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/taro_roque-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/taro_roque-reactions-v2.json",
+      "frames": 16,
+      "sha256": "a4ee612d4b7ee832112b0a7b99c0050d60b55f2219bee501cbb2c8acc852f9fd",
+      "accepted_metadata_sha256": "bd530fb58e02c0f4703467cd6d733a5ebd278d4c880a29c63a2c1133fdb03329",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "taro_sabio",
+      "bank": "base",
+      "png": "assets/sprites/normalized/taro_sabio-base-v2.png",
+      "metadata": "assets/sprites/normalized/taro_sabio-base-v2.json",
+      "frames": 8,
+      "sha256": "4e4a908121f7fe079d07598ac45d57d9a0963b1e6346c193122552fb953d3fc9",
+      "accepted_metadata_sha256": "482c7804c97470201b2f7335c7f0dbb2c8e2b4eb9f83578f0be6d6e631813a2e",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "taro_sabio",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/taro_sabio-movement-v2.png",
+      "metadata": "assets/sprites/normalized/taro_sabio-movement-v2.json",
+      "frames": 16,
+      "sha256": "882e0fca78afb4227e1f0f103caa585f35c86716ded5a50ee425d86a3f226604",
+      "accepted_metadata_sha256": "6a8431964bfe06996ad3223d3b9e2b02d3adbe93cb25c0b6b79fde6d87c7e213",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "taro_sabio",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/taro_sabio-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/taro_sabio-reactions-v2.json",
+      "frames": 16,
+      "sha256": "ac7ff93b128c84090abc900058bb9ee802c0ee844d673bfe7560654dceaa76d4",
+      "accepted_metadata_sha256": "97f45ed313815752fd452006600850edeb827b948307baef50251ec345934ce8",
+      "precision_revision": 1,
+      "acceptance_status": "PRECISION_CORRECTED"
+    },
+    {
+      "body_id": "tepa",
+      "bank": "base",
+      "png": "assets/sprites/normalized/tepa-base-v2.png",
+      "metadata": "assets/sprites/normalized/tepa-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.522673031026253,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "4e8fce4d5fdfab73d04d1bb82b6cfabb86ba2830c287eac848ca8c1d811c6b1a",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "41d99d5fe3da3e1eb78ed3fb1cdd8f62c29ca6975bf9815c75234b671418e682",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "tepa",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/tepa-movement-v2.png",
+      "metadata": "assets/sprites/normalized/tepa-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.75,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "95baea060b7f7a7f61ebf4cb64d359dc26f0a96f6a79c6c06163d39543712d06",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "37768ec392d261341f0a5cd91119236547fd83b515f0831373dfe11fa3d30cb7",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "tepa",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/tepa-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/tepa-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.7448979591836735,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "4446e7e3d78a343b47a8debaf4bd61d1d7c77623c2982f64a6e26dd2d867bde1",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "0c3875db66869e46c0897f69f2223e4ab6d56d56ef2987c126083739f87be388",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "vespera",
+      "bank": "base",
+      "png": "assets/sprites/normalized/vespera-base-v2.png",
+      "metadata": "assets/sprites/normalized/vespera-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.7285714285714285,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "12e116506a18ed1339a650d9c770ca25f2f2c79fc00ff819d4b95e7f2a6f6413",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "69c8e4182253799bbc8325b3185ce1129bef030368fa927cf9b45e4e4588d40f",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "vespera",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/vespera-movement-v2.png",
+      "metadata": "assets/sprites/normalized/vespera-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.0303030303030303,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "c8d6072e1d76fbd9e6442aecac5eb70f130db7b1b4b74e153f8c866ba1596497",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "99eebd2b7cc942a919025062302dbb94e7011cb73ba0955b803b97a613c25c02",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "vespera",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/vespera-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/vespera-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 1.0268456375838926,
+      "source_hash_unchanged": true,
+      "art_status": "REGENERATED_STATIC_REVIEWED",
+      "sha256": "d1b219616c82b4f0952fabde2a9492a0414fa4c37f0bce7f92966fb4fd65b4ae",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "417de24c90f2b6fe19544323f90c261b2c3a2f11dd190b59bb39e973363b027b",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "xuna",
+      "bank": "base",
+      "png": "assets/sprites/normalized/xuna-base-v2.png",
+      "metadata": "assets/sprites/normalized/xuna-base-v2.json",
+      "frames": 8,
+      "size": [
+        2048,
+        1024
+      ],
+      "scale": 0.7393767705382436,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "788c98fc22cedea9d8e2bdd95f58c23dafe5d6c2851e5bf86e2e6056c7f7776f",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "45dd01fe16df7a2714992937414c82de117df3f35205c133c9ac8635e6d9f76e",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "xuna",
+      "bank": "movement",
+      "png": "assets/sprites/normalized/xuna-movement-v2.png",
+      "metadata": "assets/sprites/normalized/xuna-movement-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9560439560439561,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "7f84aabe7857d1351285a3fa9dd4b248370b0577806d4b42c76338e164a7da86",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "92b06084126c02df01f66232694a36de69902820a3fb149e33fac4fa6ddd2909",
+      "precision_revision": 1
+    },
+    {
+      "body_id": "xuna",
+      "bank": "reactions",
+      "png": "assets/sprites/normalized/xuna-reactions-v2.png",
+      "metadata": "assets/sprites/normalized/xuna-reactions-v2.json",
+      "frames": 16,
+      "size": [
+        2048,
+        2048
+      ],
+      "scale": 0.9422382671480144,
+      "source_hash_unchanged": true,
+      "art_status": "KEEP",
+      "sha256": "fc0761a1680c2f4044127f1dd6015a0966860069681f8b399f169010fe051fc1",
+      "acceptance_status": "PRECISION_CORRECTED",
+      "accepted_metadata_sha256": "e82ee9832b45accbcf8b937ff22cf9cbcabd8a77e35418c9d80c657b71b44fa8",
+      "precision_revision": 1
+    }
+  ],
+  "normalization_only": false,
+  "all_art_approved": true,
+  "audit": "work/visual-consistency/audit/audit.json",
+  "acceptance": "assets/sprites/normalized/acceptance.json",
+  "acceptance_sha256": "b143fb550123cd3edf74e917b07cf1cbe8a2b26289504157f69b9d519af0d8ca",
+  "approval_requires_matching_hashes": true,
+  "precision_revision": 1
+}

@@ -1,0 +1,19 @@
+{
+  "source_sha256": "7637985e4ba449b529a615cc407f4654672cf70ec2c84c57709bfc867d83417f",
+  "reviewed_atlas_sha256": "6b12cb4bfb6f655d184ff18a9ceb24ae6f4e1812ada6a3488b1f139c010a79bb",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "strict_key_hue": true,
+  "reviewed_by": "fighter_art",
+  "review_note": "Alas lunares violetas y crema, antenas deshilachadas y magulladuras preservadas; chroma verde oscuro de perforaciones retirado sin perder patrones claros. Todas las poses revisadas sobre fondos claro/oscuro y comparadas con referencia limpia; escala única de banco por consenso geométrico. Raíces proyectadas aproximadas, no anotaciones anatómicas verificadas.",
+  "evidence": {
+    "dark": "work/illustrated-damage/prepared/vespera/base/vespera-base-dark.png",
+    "light": "work/illustrated-damage/prepared/vespera/base/vespera-base-light.png",
+    "scale-review": "work/illustrated-damage/prepared/vespera/base/vespera-base-scale-review.png"
+  },
+  "strict_key_settings": {
+    "min_channel": 15,
+    "min_delta": 4
+  }
+}

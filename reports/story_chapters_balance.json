@@ -1,0 +1,7183 @@
+{
+	"builds": {
+		"aggressive": [
+			"attack",
+			"attack",
+			"max_hp",
+			"crit_chance",
+			"speed",
+			"accuracy"
+		],
+		"balanced": [
+			"max_hp",
+			"attack",
+			"defense",
+			"speed",
+			"accuracy",
+			"evasion",
+			"crit_chance",
+			"resistance"
+		],
+		"durable": [
+			"max_hp",
+			"defense",
+			"max_hp",
+			"evasion",
+			"attack",
+			"speed"
+		],
+		"tempo": [
+			"speed",
+			"accuracy",
+			"evasion",
+			"attack",
+			"max_hp",
+			"crit_chance"
+		]
+	},
+	"campaigns": 108,
+	"elapsed_real_seconds": 10.077,
+	"matches": 3182,
+	"mean_battle_seconds": 31.0879255681628,
+	"notes": "Real CombatEngine + StoryProgression, save disabled. All nine heroes and four fixed allocation priorities. No respec or training reset between chapters. Each chapter has a safety cutoff at 40 battles. Same seeds compare original Nima level3 against corrected level2; all other stats held fixed. Finite samples are estimates, not guarantees.",
+	"repetitions_per_hero_build": 3,
+	"rows": [
+		{
+			"build": "balanced",
+			"character_id": "nima",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								4,
+								0,
+								0,
+								0,
+								3,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 10,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 19,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 11,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								6,
+								0,
+								0,
+								0,
+								2,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								1,
+								0,
+								1,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								6,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 30
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "nima",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								2,
+								0,
+								1,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								1,
+								0,
+								0,
+								0,
+								0,
+								6
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								2,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								1,
+								3,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 27
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "nima",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								2,
+								0,
+								2,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 8,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 0,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 22
+				},
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 21
+				},
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								3,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 20
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "nima",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								0,
+								3,
+								2,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 19,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 11,
+							"final_level": 13,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								4,
+								0,
+								2,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								0,
+								2,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 13
+						}
+					],
+					"repetition": 1,
+					"total_battles": 33
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								1,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 19,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 11,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								3,
+								1,
+								4,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 32
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "luma",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								7,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								3,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								7,
+								0,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 30
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								3,
+								0,
+								0,
+								2,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 17,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 23,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								3,
+								1,
+								0,
+								3,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 32
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "luma",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								0,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								2,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								1,
+								0,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								4,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 28
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								1,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 23,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								2,
+								3,
+								0,
+								1,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 31
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "luma",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 22
+				},
+				{
+					"chapters": [
+						{
+							"battles": 10,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								2,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 21
+				},
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 20,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 18
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "luma",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								2,
+								0,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								2,
+								5,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 28
+				},
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								1,
+								0,
+								1,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								5,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 31
+				},
+				{
+					"chapters": [
+						{
+							"battles": 18,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 10,
+							"final_level": 13,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								3,
+								0,
+								0,
+								0,
+								3,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								2,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 13
+						}
+					],
+					"repetition": 2,
+					"total_battles": 29
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "mugo",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 17,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								5,
+								0,
+								0,
+								0,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								1,
+								0,
+								1,
+								0,
+								2,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 30
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								1,
+								0,
+								0,
+								0,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								2,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 28
+				},
+				{
+					"chapters": [
+						{
+							"battles": 18,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 10,
+							"final_level": 13,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								2,
+								0,
+								0,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								2,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 13
+						}
+					],
+					"repetition": 2,
+					"total_battles": 30
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "mugo",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								2,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								2,
+								0,
+								1,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								1,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 26
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "mugo",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								2,
+								1,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 25
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								2,
+								0,
+								1,
+								0,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								2,
+								0,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								2,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 24
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "mugo",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								1,
+								3,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								2,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								false,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								1,
+								1,
+								2,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 28
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								2,
+								1,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								6,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 29
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "sira",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								3,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								5,
+								0,
+								2,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 17,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								1,
+								0,
+								0,
+								2,
+								3,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								1,
+								2,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 30
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								0,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								1,
+								0,
+								0,
+								3,
+								1,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 30
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "sira",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								4,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								0,
+								2,
+								0,
+								4,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								1,
+								1,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								1,
+								0,
+								2,
+								0,
+								1,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 26
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "sira",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 20,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 18
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								5,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 22
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 22
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "sira",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								1,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								2,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 17,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								false,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								3,
+								0,
+								0,
+								3,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 8,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 0,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 25
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								3,
+								0,
+								2,
+								0,
+								2,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 28
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "iria",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								false,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								1,
+								0,
+								0,
+								1,
+								4,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								1,
+								2,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 30
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								4,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								2,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 25
+				},
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								2,
+								5,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								3,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 29
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "iria",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								1,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								1,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								0,
+								0,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								1,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 17,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								2,
+								3,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 31
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "iria",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 8,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 0,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 21
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								2,
+								1,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 22
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 23
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "iria",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 17,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								0,
+								0,
+								1,
+								2,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								3,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								2,
+								0,
+								0,
+								0,
+								0,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								false,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								2,
+								1,
+								1,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 27
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "duna",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								2,
+								0,
+								0,
+								1,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								2,
+								0,
+								3,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 17,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								1,
+								1,
+								1,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 23,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								1,
+								1,
+								0,
+								1,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 32
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								0,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								1,
+								2,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 26
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "duna",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								0,
+								3,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								2,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								2,
+								2,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								4
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								1,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 27
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "duna",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								2,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 25
+				},
+				{
+					"chapters": [
+						{
+							"battles": 10,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 20
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								2,
+								0,
+								2,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 23
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "duna",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								1,
+								1,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 10,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								true,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								2,
+								0,
+								0,
+								2,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								false,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								1,
+								3,
+								0,
+								1,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 25
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "kiro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								4,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 10,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								false,
+								false,
+								false,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								1,
+								2,
+								1,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								1,
+								2,
+								0,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 17,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								false,
+								false,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								1,
+								4,
+								1,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 31
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "kiro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								4,
+								0,
+								1,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 26
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								2,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 25
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 24
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "kiro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 19
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								1,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 21
+				},
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								3,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 21
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "kiro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								3,
+								0,
+								0,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 10,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 2,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 17,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								0,
+								4,
+								0,
+								1,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								2,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 12,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 21,
+							"first_try_wins": [
+								false,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 23
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "neris",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								2,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								0,
+								5,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								true,
+								false,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								3,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								3,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								1,
+								0,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								3,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 29
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "neris",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								1,
+								0,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								2,
+								2,
+								1,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 17,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 9,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								false,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								3,
+								1,
+								1,
+								0,
+								1,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 30
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								1,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								true,
+								false,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 26
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "neris",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 8,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 0,
+							"final_level": 20,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 19
+				},
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 20
+				},
+				{
+					"chapters": [
+						{
+							"battles": 9,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 20,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 18
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "neris",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								5,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 24
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								0,
+								5
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								3,
+								0,
+								1,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								0,
+								0,
+								2,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 26
+				}
+			]
+		},
+		{
+			"build": "balanced",
+			"character_id": "taro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								2,
+								2,
+								0,
+								0,
+								2,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								3,
+								0,
+								0,
+								0,
+								3,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 28
+				},
+				{
+					"chapters": [
+						{
+							"battles": 18,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 10,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								5,
+								0,
+								0,
+								0,
+								2,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 23,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								4,
+								0,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 33
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								5,
+								0,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								4,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 30
+				}
+			]
+		},
+		{
+			"build": "aggressive",
+			"character_id": "taro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								3,
+								0,
+								0,
+								1,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 14,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								3,
+								0,
+								1,
+								0,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 27
+				},
+				{
+					"chapters": [
+						{
+							"battles": 16,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								1,
+								3,
+								0,
+								1,
+								2
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								2,
+								2,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 1,
+					"total_battles": 29
+				},
+				{
+					"chapters": [
+						{
+							"battles": 14,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 6,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								1,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 16,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 8,
+							"final_level": 22,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								2,
+								0,
+								3,
+								0,
+								3,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 30
+				}
+			]
+		},
+		{
+			"build": "durable",
+			"character_id": "taro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								4,
+								0,
+								0,
+								0,
+								0,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 0,
+					"total_battles": 22
+				},
+				{
+					"chapters": [
+						{
+							"battles": 12,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 4,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								false,
+								true,
+								false,
+								false,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								0,
+								1,
+								1,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 9,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 1,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								true,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								0,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 21
+				},
+				{
+					"chapters": [
+						{
+							"battles": 11,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 11,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 11,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 3,
+							"final_level": 21,
+							"first_try_wins": [
+								true,
+								true,
+								true,
+								false,
+								true,
+								false,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								0,
+								2,
+								0,
+								1,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 2,
+					"total_battles": 22
+				}
+			]
+		},
+		{
+			"build": "tempo",
+			"character_id": "taro",
+			"runs": [
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								true,
+								false,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								3,
+								0,
+								1,
+								0,
+								1,
+								1
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								false,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								1,
+								3,
+								2,
+								0,
+								0,
+								1,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 0,
+					"total_battles": 30
+				},
+				{
+					"chapters": [
+						{
+							"battles": 13,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 11,
+							"first_try_wins": [
+								false,
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								0,
+								3,
+								1,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 15,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								true,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								5,
+								2,
+								0,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 11
+						}
+					],
+					"repetition": 1,
+					"total_battles": 28
+				},
+				{
+					"chapters": [
+						{
+							"battles": 15,
+							"chapter": 1,
+							"completed": true,
+							"defeats": 7,
+							"final_level": 12,
+							"first_try_wins": [
+								false,
+								true,
+								false,
+								true,
+								true,
+								true,
+								false,
+								false
+							],
+							"losses_by_stage": [
+								1,
+								0,
+								2,
+								0,
+								0,
+								0,
+								1,
+								3
+							],
+							"stage_reached": 8,
+							"starting_level": 1
+						},
+						{
+							"battles": 13,
+							"chapter": 2,
+							"completed": true,
+							"defeats": 5,
+							"final_level": 22,
+							"first_try_wins": [
+								true,
+								true,
+								false,
+								false,
+								false,
+								true,
+								true,
+								true
+							],
+							"losses_by_stage": [
+								0,
+								0,
+								1,
+								1,
+								3,
+								0,
+								0,
+								0
+							],
+							"stage_reached": 8,
+							"starting_level": 12
+						}
+					],
+					"repetition": 2,
+					"total_battles": 28
+				}
+			]
+		}
+	],
+	"second_opponent_correction": {
+		"corrected_nima_level": 2,
+		"corrected_player_win_rate": 0.822222222222222,
+		"matches_per_version": 180,
+		"old_nima_level": 3,
+		"old_player_win_rate": 0.805555555555556
+	},
+	"signature_incidence": 0.00958516656191075,
+	"timeouts": 62
+}

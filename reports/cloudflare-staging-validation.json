@@ -1,0 +1,1412 @@
+{
+  "schema_version": 2,
+  "recorded_at": "2026-09-21T03:55:16.898Z",
+  "status": "Workers Paid active; staging deployed and functionally verified",
+  "worker": {
+    "name": "brasa-api-staging",
+    "origin": "https://brasa-api-staging.acessloop.workers.dev",
+    "current_version": "99077f34-8895-4b12-98ee-a3b692d8596e",
+    "smoke_version": "3faaf02a-8427-4329-9ab8-7c8e50ef13ec",
+    "sha256": "d856f319739893b4147364ac781eb937626ae727b4f76dd5825034dcda1037b0",
+    "smoke_and_final_bundle_identical": true,
+    "gzip_kib": 676.79,
+    "final_startup_ms": 102,
+    "head_sampling_rate": 0.1,
+    "usage_model": "standard",
+    "cpu_ms": 1000,
+    "secret_rotated": false,
+    "verified_remote_settings": {
+      "version": "99077f34-8895-4b12-98ee-a3b692d8596e",
+      "created_on": "2026-09-21T03:50:02.624682Z",
+      "source": "wrangler",
+      "usage_model": "standard",
+      "limits": {
+        "cpu_ms": 1000
+      },
+      "compatibility_date": "2026-07-08",
+      "checked_at": "2026-09-21T03:51:28.154Z",
+      "secret_binding_names": [
+        "BETTER_AUTH_SECRET"
+      ]
+    }
+  },
+  "database": {
+    "name": "brasa-staging",
+    "id": "9b3299f9-1c43-417e-9b02-28842b8e05a5",
+    "migrations": [
+      "0001_identity.sql",
+      "0002_auth.sql",
+      "0003_online_arena.sql",
+      "0004_validation_accounts.sql",
+      "0005_starter_expansions.sql"
+    ],
+    "catalog_hash": "728f17d468b127d7d019e8513939e322ea6b5b03caa56f0dd27973697f99e43e",
+    "cosmetics": 31,
+    "starter_owned": 24,
+    "expansion_ledger": [
+      {
+        "id": "cats-v1"
+      }
+    ],
+    "validation_accounts": [
+      {
+        "id": "a8fb55a7-be28-4efe-bdfd-fc408dbce960",
+        "is_test": 1,
+        "fighters": 1,
+        "active_sessions": 0,
+        "owned_count": 24
+      },
+      {
+        "id": "c9d644b9-279a-46b8-be9c-c3d75d07f570",
+        "is_test": 1,
+        "fighters": 1,
+        "active_sessions": 0,
+        "owned_count": 24
+      }
+    ],
+    "ordinary_players": 0,
+    "battles": [
+      {
+        "mode": "arena",
+        "battles": 1
+      },
+      {
+        "mode": "story",
+        "battles": 1
+      }
+    ],
+    "all_account_counts": [
+      {
+        "is_test": 1,
+        "accounts": 4
+      }
+    ],
+    "battle_count_scope": "latest smoke accounts",
+    "active_test_sessions": 0
+  },
+  "validation": {
+    "local": {
+      "tests": 365,
+      "passed": 365,
+      "failed": 0,
+      "skipped": 0,
+      "log": "work/cloudflare-deploy/npm-test-release.log",
+      "repeated_after_plan_change": false,
+      "coherence_evidence": "work/cloudflare-paid/readonly-build-coherence.json",
+      "scope": "Deployed bundle matched the 365-test release; subsequent local catalog edits are outside this deployment."
+    },
+    "https": {
+      "origin": "https://brasa-api-staging.acessloop.workers.dev",
+      "worker_version": "99077f34-8895-4b12-98ee-a3b692d8596e",
+      "checked_at": "2026-09-21T03:51:28.161Z",
+      "checks": [
+        {
+          "path": "/health",
+          "status": 200,
+          "cf_ray": "a3e61c8c982c6bb3-DFW",
+          "cache_control": "no-store",
+          "csp": null,
+          "data": {
+            "service": "Brasa",
+            "environment": "staging",
+            "engine_version": "brasa-authoritative-v1",
+            "ready": true
+          }
+        },
+        {
+          "path": "/auth",
+          "status": 200,
+          "cf_ray": "a3e61c90ac536bb3-DFW",
+          "cache_control": "no-store",
+          "csp": "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'self'; img-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+        },
+        {
+          "path": "/device",
+          "status": 200,
+          "cf_ray": "a3e61c90fca46bb3-DFW",
+          "cache_control": "no-store",
+          "csp": "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'self'; img-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+        },
+        {
+          "path": "/auth/client.js",
+          "status": 200,
+          "cf_ray": "a3e61c914cdc6bb3-DFW",
+          "cache_control": "no-store",
+          "csp": "default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'self'; img-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'"
+        },
+        {
+          "path": "/v1/me",
+          "status": 401,
+          "cf_ray": "a3e61c918d326bb3-DFW",
+          "cache_control": "no-store",
+          "csp": null
+        }
+      ]
+    },
+    "provision": {
+      "origin": "https://brasa-api-staging.acessloop.workers.dev",
+      "phase": "provisioned",
+      "accounts": [
+        {
+          "account_id": "c9d644b9-279a-46b8-be9c-c3d75d07f570",
+          "label": "QA Brasa A 8e671e"
+        },
+        {
+          "account_id": "a8fb55a7-be28-4efe-bdfd-fc408dbce960",
+          "label": "QA Brasa B 89fe93"
+        }
+      ],
+      "fighter_ids": [],
+      "battle_ids": [],
+      "checks": [
+        {
+          "label": "A nonce",
+          "status": 200,
+          "cf_ray": "a3e6156eb9fd69f8-DFW"
+        },
+        {
+          "label": "A nonce HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A opciones WebAuthn",
+          "status": 200,
+          "cf_ray": "a3e615725bd669f8-DFW"
+        },
+        {
+          "label": "A opciones WebAuthn HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A registro WebAuthn",
+          "status": 200,
+          "cf_ray": "a3e61574695269f8-DFW"
+        },
+        {
+          "label": "A registro WebAuthn HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A cerrar sesión inicial",
+          "status": 200,
+          "cf_ray": "a3e61577eb7f69f8-DFW"
+        },
+        {
+          "label": "A cerrar sesión inicial HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A opciones de login",
+          "status": 200,
+          "cf_ray": "a3e6157a0970e98f-DFW"
+        },
+        {
+          "label": "A opciones de login HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A login con firma EC",
+          "status": 200,
+          "cf_ray": "a3e6157fdb8469f8-DFW"
+        },
+        {
+          "label": "A login con firma EC HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A código dispositivo",
+          "status": 200,
+          "cf_ray": "a3e615826ab069f8-DFW"
+        },
+        {
+          "label": "A código dispositivo HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A origen de verificación",
+          "passed": true
+        },
+        {
+          "label": "A pendiente antes de aprobar",
+          "status": 400,
+          "cf_ray": "a3e615838dce69f8-DFW"
+        },
+        {
+          "label": "A pendiente antes de aprobar HTTP 400",
+          "passed": true
+        },
+        {
+          "label": "A no se aprueba automáticamente",
+          "passed": true
+        },
+        {
+          "label": "A revisar dispositivo",
+          "status": 200,
+          "cf_ray": "a3e61584c92fe98f-DFW"
+        },
+        {
+          "label": "A revisar dispositivo HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A aprobación explícita",
+          "status": 200,
+          "cf_ray": "a3e615867db269f8-DFW"
+        },
+        {
+          "label": "A aprobación explícita HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A canje de dispositivo",
+          "status": 200,
+          "cf_ray": "a3e615a8bb4a3c25-DFW"
+        },
+        {
+          "label": "A canje de dispositivo HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A bearer emitido",
+          "passed": true
+        },
+        {
+          "label": "A navegador desconectado",
+          "status": 200,
+          "cf_ray": "a3e615acceca3c25-DFW"
+        },
+        {
+          "label": "A navegador desconectado HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "A identidad propia",
+          "status": 200,
+          "cf_ray": "a3e615aeef74d623-DFW"
+        },
+        {
+          "label": "A identidad propia HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B nonce",
+          "status": 200,
+          "cf_ray": "a3e615b16d043c25-DFW"
+        },
+        {
+          "label": "B nonce HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B opciones WebAuthn",
+          "status": 200,
+          "cf_ray": "a3e615b2c9ae3c25-DFW"
+        },
+        {
+          "label": "B opciones WebAuthn HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B registro WebAuthn",
+          "status": 200,
+          "cf_ray": "a3e615b45db93c25-DFW"
+        },
+        {
+          "label": "B registro WebAuthn HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B cerrar sesión inicial",
+          "status": 200,
+          "cf_ray": "a3e615b819163c25-DFW"
+        },
+        {
+          "label": "B cerrar sesión inicial HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B opciones de login",
+          "status": 200,
+          "cf_ray": "a3e615b9bc67d623-DFW"
+        },
+        {
+          "label": "B opciones de login HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B login con firma EC",
+          "status": 200,
+          "cf_ray": "a3e615bdda883c25-DFW"
+        },
+        {
+          "label": "B login con firma EC HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B código dispositivo",
+          "status": 200,
+          "cf_ray": "a3e615c03a303c25-DFW"
+        },
+        {
+          "label": "B código dispositivo HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B origen de verificación",
+          "passed": true
+        },
+        {
+          "label": "B pendiente antes de aprobar",
+          "status": 400,
+          "cf_ray": "a3e615c14db83c25-DFW"
+        },
+        {
+          "label": "B pendiente antes de aprobar HTTP 400",
+          "passed": true
+        },
+        {
+          "label": "B no se aprueba automáticamente",
+          "passed": true
+        },
+        {
+          "label": "B revisar dispositivo",
+          "status": 200,
+          "cf_ray": "a3e615c279aad623-DFW"
+        },
+        {
+          "label": "B revisar dispositivo HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B aprobación explícita",
+          "status": 200,
+          "cf_ray": "a3e615c3bcf93c25-DFW"
+        },
+        {
+          "label": "B aprobación explícita HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B canje de dispositivo",
+          "status": 200,
+          "cf_ray": "a3e615e73d9afeb2-DFW"
+        },
+        {
+          "label": "B canje de dispositivo HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B bearer emitido",
+          "passed": true
+        },
+        {
+          "label": "B navegador desconectado",
+          "status": 200,
+          "cf_ray": "a3e615e97c5ffeb2-DFW"
+        },
+        {
+          "label": "B navegador desconectado HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "B identidad propia",
+          "status": 200,
+          "cf_ray": "a3e615eb5d236725-DFW"
+        },
+        {
+          "label": "B identidad propia HTTP 200",
+          "passed": true
+        }
+      ],
+      "completed_at": "2026-09-21T03:46:55.903Z"
+    },
+    "gameplay": {
+      "origin": "https://brasa-api-staging.acessloop.workers.dev",
+      "phase": "verified",
+      "accounts": [
+        {
+          "account_id": "c9d644b9-279a-46b8-be9c-c3d75d07f570",
+          "label": "QA Brasa A 8e671e"
+        },
+        {
+          "account_id": "a8fb55a7-be28-4efe-bdfd-fc408dbce960",
+          "label": "QA Brasa B 89fe93"
+        }
+      ],
+      "fighter_ids": [
+        "3b823164-792c-4849-921c-db419be9a09c",
+        "8faf15c3-9783-4733-923c-be6427b5b1ab"
+      ],
+      "battle_ids": [
+        "d2350643-7e4f-40fa-bfdd-47a5c27833a0",
+        "afda0649-8721-49f9-b722-8607db412b52"
+      ],
+      "checks": [
+        {
+          "label": "Dos cuentas nuevas listas para verificar",
+          "passed": true
+        },
+        {
+          "label": "/v1/me",
+          "status": 200,
+          "cf_ray": "a3e6175d397647ff-DFW"
+        },
+        {
+          "label": "/v1/me HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Identidad de la cuenta guardada",
+          "passed": true
+        },
+        {
+          "label": "Servidor confirma is_test antes de crear luchadores",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters",
+          "status": 200,
+          "cf_ray": "a3e61760ac3347ff-DFW"
+        },
+        {
+          "label": "/v1/fighters HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Cuenta de prueba sin luchadores previos",
+          "passed": true
+        },
+        {
+          "label": "/v1/me",
+          "status": 200,
+          "cf_ray": "a3e617629abceb16-DFW"
+        },
+        {
+          "label": "/v1/me HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Identidad de la cuenta guardada",
+          "passed": true
+        },
+        {
+          "label": "Servidor confirma is_test antes de crear luchadores",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters",
+          "status": 200,
+          "cf_ray": "a3e617664a0247ff-DFW"
+        },
+        {
+          "label": "/v1/fighters HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Cuenta de prueba sin luchadores previos",
+          "passed": true
+        },
+        {
+          "label": "/v1/game/catalog",
+          "status": 200,
+          "cf_ray": "a3e617674b1047ff-DFW"
+        },
+        {
+          "label": "/v1/game/catalog HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Catálogo de juego completo",
+          "passed": true
+        },
+        {
+          "label": "Versiones de motor y catálogo de juego",
+          "passed": true
+        },
+        {
+          "label": "/v1/catalog",
+          "status": 200,
+          "cf_ray": "a3e617689c6347ff-DFW"
+        },
+        {
+          "label": "/v1/catalog HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Catálogo cosmético",
+          "passed": true
+        },
+        {
+          "label": "Versión y hash del catálogo cosmético",
+          "passed": true
+        },
+        {
+          "label": "/v1/owned",
+          "status": 200,
+          "cf_ray": "a3e61769ad7447ff-DFW"
+        },
+        {
+          "label": "/v1/owned HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Inventario inicial del servidor",
+          "passed": true
+        },
+        {
+          "label": "Crear luchador A",
+          "status": 201,
+          "cf_ray": "a3e6176aae9d47ff-DFW"
+        },
+        {
+          "label": "Crear luchador A HTTP 201",
+          "passed": true
+        },
+        {
+          "label": "Repetir creación A",
+          "status": 200,
+          "cf_ray": "a3e6176d793beb16-DFW"
+        },
+        {
+          "label": "Repetir creación A HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Creación idempotente",
+          "passed": true
+        },
+        {
+          "label": "Crear luchador B",
+          "status": 201,
+          "cf_ray": "a3e6176eaac247ff-DFW"
+        },
+        {
+          "label": "Crear luchador B HTTP 201",
+          "passed": true
+        },
+        {
+          "label": "Lectura ajena rechazada",
+          "status": 404,
+          "cf_ray": "a3e617714d1547ff-DFW"
+        },
+        {
+          "label": "Lectura ajena rechazada HTTP 404",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c/allocate",
+          "status": 200,
+          "cf_ray": "a3e617725e2847ff-DFW"
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c/allocate HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c/allocate",
+          "status": 200,
+          "cf_ray": "a3e61774789347ff-DFW"
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c/allocate HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Asignación exactamente una vez",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e61775798a47ff-DFW"
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Nombre y apariencia conservan progreso",
+          "passed": true
+        },
+        {
+          "label": "/v1/opponents/3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e617776b6547ff-DFW"
+        },
+        {
+          "label": "/v1/opponents/3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Previsualización persistida",
+          "passed": true
+        },
+        {
+          "label": "/v1/arena/opponents?fighter_id=3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e617787c8647ff-DFW"
+        },
+        {
+          "label": "/v1/arena/opponents?fighter_id=3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Resultado declarado por cliente rechazado",
+          "status": 422,
+          "cf_ray": "a3e61779ce1847ff-DFW"
+        },
+        {
+          "label": "Resultado declarado por cliente rechazado HTTP 422",
+          "passed": true
+        },
+        {
+          "label": "Arena autoritativa",
+          "status": 201,
+          "cf_ray": "a3e6177b396aeb16-DFW"
+        },
+        {
+          "label": "Arena autoritativa HTTP 201",
+          "passed": true
+        },
+        {
+          "label": "Reintento Arena",
+          "status": 200,
+          "cf_ray": "a3e6177ecbe447ff-DFW"
+        },
+        {
+          "label": "Reintento Arena HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Un combate por clave",
+          "passed": true
+        },
+        {
+          "label": "Snapshot y eventos reales de motor",
+          "passed": true
+        },
+        {
+          "label": "/v1/arena/offline-results",
+          "status": 200,
+          "cf_ray": "a3e617801d7347ff-DFW"
+        },
+        {
+          "label": "/v1/arena/offline-results HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Defensa offline registrada una vez",
+          "passed": true
+        },
+        {
+          "label": "/v1/history?fighter_id=3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e617816ea847ff-DFW"
+        },
+        {
+          "label": "/v1/history?fighter_id=3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Historial sin duplicado",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e617827f5f47ff-DFW"
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e61783c86547ff-DFW"
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "/v1/battles/d2350643-7e4f-40fa-bfdd-47a5c27833a0",
+          "status": 200,
+          "cf_ray": "a3e61785caad47ff-DFW"
+        },
+        {
+          "label": "/v1/battles/d2350643-7e4f-40fa-bfdd-47a5c27833a0 HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Cambio de nombre preserva snapshot histórico",
+          "passed": true
+        },
+        {
+          "label": "/v1/arena/offline-results/ack",
+          "status": 200,
+          "cf_ray": "a3e617871baf47ff-DFW"
+        },
+        {
+          "label": "/v1/arena/offline-results/ack HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "/v1/arena/offline-results/ack",
+          "status": 200,
+          "cf_ray": "a3e6178909a6eb16-DFW"
+        },
+        {
+          "label": "/v1/arena/offline-results/ack HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "/v1/arena/offline-results",
+          "status": 200,
+          "cf_ray": "a3e61789fe3747ff-DFW"
+        },
+        {
+          "label": "/v1/arena/offline-results HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Acuse offline idempotente",
+          "passed": true
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e6178b1f1247ff-DFW"
+        },
+        {
+          "label": "/v1/fighters/3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "/v1/story?fighter_id=3b823164-792c-4849-921c-db419be9a09c",
+          "status": 200,
+          "cf_ray": "a3e617916c7e47ff-DFW"
+        },
+        {
+          "label": "/v1/story?fighter_id=3b823164-792c-4849-921c-db419be9a09c HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Primera ruta del servidor",
+          "passed": true
+        },
+        {
+          "label": "Historia autoritativa",
+          "status": 201,
+          "cf_ray": "a3e617947f7847ff-DFW"
+        },
+        {
+          "label": "Historia autoritativa HTTP 201",
+          "passed": true
+        },
+        {
+          "label": "Reintento Historia",
+          "status": 200,
+          "cf_ray": "a3e6179869beeb16-DFW"
+        },
+        {
+          "label": "Reintento Historia HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Historia usa un resultado persistido",
+          "passed": true
+        },
+        {
+          "label": "XP de Historia no se duplica",
+          "passed": true
+        },
+        {
+          "label": "Revocar sesión de prueba",
+          "status": 200,
+          "cf_ray": "a3e61799cbe547ff-DFW"
+        },
+        {
+          "label": "Revocar sesión de prueba HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Bearer revocado rechazado",
+          "status": 401,
+          "cf_ray": "a3e6179bbb70eb16-DFW"
+        },
+        {
+          "label": "Bearer revocado rechazado HTTP 401",
+          "passed": true
+        },
+        {
+          "label": "Revocar sesión de prueba",
+          "status": 200,
+          "cf_ray": "a3e6179c3e0247ff-DFW"
+        },
+        {
+          "label": "Revocar sesión de prueba HTTP 200",
+          "passed": true
+        },
+        {
+          "label": "Bearer revocado rechazado",
+          "status": 401,
+          "cf_ray": "a3e6179dac97eb16-DFW"
+        },
+        {
+          "label": "Bearer revocado rechazado HTTP 401",
+          "passed": true
+        }
+      ],
+      "completed_at": "2026-09-21T03:48:05.326Z"
+    },
+    "remote_checks": {
+      "https": 5,
+      "provision": 32,
+      "gameplay": 60
+    },
+    "sessions_revoked": true,
+    "credentials_removed_from_private_file": true,
+    "reconciliation": {
+      "checked_at": "2026-09-21T03:49:55.944Z",
+      "all_checks_passed": true,
+      "results": [
+        {
+          "results": [
+            {
+              "name": "0001_identity.sql"
+            },
+            {
+              "name": "0002_auth.sql"
+            },
+            {
+              "name": "0003_online_arena.sql"
+            },
+            {
+              "name": "0004_validation_accounts.sql"
+            },
+            {
+              "name": "0005_starter_expansions.sql"
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.1507
+            },
+            "duration": 0.1507,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 5,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "hash": "728f17d468b127d7d019e8513939e322ea6b5b03caa56f0dd27973697f99e43e",
+              "version": 1
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.077
+            },
+            "duration": 0.077,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 1,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "cosmetics": 31
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.0468
+            },
+            "duration": 0.0468,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 31,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "id": "a8fb55a7-be28-4efe-bdfd-fc408dbce960",
+              "is_test": 1,
+              "fighters": 1,
+              "active_sessions": 0,
+              "owned_count": 24
+            },
+            {
+              "id": "c9d644b9-279a-46b8-be9c-c3d75d07f570",
+              "is_test": 1,
+              "fighters": 1,
+              "active_sessions": 0,
+              "owned_count": 24
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.1729
+            },
+            "duration": 0.1729,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 58,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "mode": "arena",
+              "battles": 1
+            },
+            {
+              "mode": "story",
+              "battles": 1
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.0878
+            },
+            "duration": 0.0878,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 6,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "is_test": 1,
+              "accounts": 4
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.0504
+            },
+            "duration": 0.0504,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 8,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "id": "cats-v1"
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.0415
+            },
+            "duration": 0.0415,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 1,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        },
+        {
+          "results": [
+            {
+              "active_test_sessions": 0
+            }
+          ],
+          "success": true,
+          "meta": {
+            "served_by": "v3-prod",
+            "served_by_region": "WNAM",
+            "served_by_colo": "DFW",
+            "served_by_primary": true,
+            "timings": {
+              "sql_duration_ms": 0.0962
+            },
+            "duration": 0.0962,
+            "changes": 0,
+            "last_row_id": 0,
+            "changed_db": false,
+            "size_after": 770048,
+            "rows_read": 8,
+            "rows_written": 0,
+            "total_attempts": 1
+          }
+        }
+      ]
+    }
+  },
+  "approval": {
+    "required": false,
+    "satisfied_by": "User purchased Workers Paid; plan confirmed active. No purchase performed by agent."
+  },
+  "evidence": {
+    "current_inputs_manifest": "work/cloudflare-paid/readonly-input-comparison.json",
+    "migration_logs": [
+      "work/cloudflare-deploy/migrations.log",
+      "work/cloudflare-deploy/migrations-final.log"
+    ],
+    "seed_log": "work/cloudflare-deploy/catalog-seed-final.log",
+    "deployment_log": "work/cloudflare-paid/deploy-final.log",
+    "reconciliation": "work/cloudflare-paid/remote-db-reconciliation.json",
+    "cpu": "work/cloudflare-paid/cpu-observation.json",
+    "remote_settings": "work/cloudflare-paid/version-settings-final.json"
+  },
+  "history": {
+    "free_validation": "work/cloudflare-paid/pre-paid-validation.json",
+    "free_cpu": "work/cloudflare-deploy/cpu-real-observation.json"
+  },
+  "plan": {
+    "name": "Workers Paid",
+    "activated_by": "user",
+    "ui_confirmed": true,
+    "agent_completed_purchase": false,
+    "minimum_usd_month": 5,
+    "additional_usage_may_be_charged": true
+  },
+  "historical_free_cpu": {
+    "schema_version": 1,
+    "worker": "brasa-api-staging",
+    "worker_version": "ce9db916-5337-4c93-8724-fdaed84cca91",
+    "origin": "https://brasa-api-staging.acessloop.workers.dev",
+    "source": "Cloudflare dashboard > Observability > Events, read through CUA native Chrome. Values transcribed from explicit $workers.cpuTimeMs and $workers.wallTimeMs columns; no application duration_ms used.",
+    "window_utc": [
+      "2026-09-21T03:25:33.002Z",
+      "2026-09-21T03:27:10.328Z"
+    ],
+    "head_sampling_rate": 1,
+    "query": "$workers.scriptName = \"brasa-api-staging\" AND regex($workers.event.path, \"registration/nonce|generate-register-options|verify-registration|^/v1/battles$|^/v1/story/battles$\")",
+    "dashboard_result": {
+      "matching_invocations": 11,
+      "success": 11,
+      "errors": 0
+    },
+    "columns": [
+      "label",
+      "timestamp_utc",
+      "path",
+      "cpu_ms",
+      "wall_ms",
+      "outcome",
+      "dashboard_request_id",
+      "cf_ray",
+      "http_status"
+    ],
+    "samples": [
+      [
+        "A nonce",
+        "2026-09-21T03:25:33.002Z",
+        "/api/auth/registration/nonce",
+        7,
+        259,
+        "ok",
+        "7d4ea54f515a12530773406734d9165f",
+        "a3e5f6967d9355cb-DFW",
+        200
+      ],
+      [
+        "A register options",
+        "2026-09-21T03:25:33.278Z",
+        "/api/auth/passkey/generate-register-options",
+        46,
+        254,
+        "ok",
+        "8019b287dbf6b2a181b82d0f4c101a27",
+        "a3e5f699bb4655cb-DFW",
+        200
+      ],
+      [
+        "A verify registration",
+        "2026-09-21T03:25:33.879Z",
+        "/api/auth/passkey/verify-registration",
+        29,
+        545,
+        "ok",
+        "11893a2cc90da9f0ba83e36d267a904a",
+        "a3e5f69babb355cb-DFW",
+        200
+      ],
+      [
+        "B nonce",
+        "2026-09-21T03:25:43.948Z",
+        "/api/auth/registration/nonce",
+        5,
+        131,
+        "ok",
+        "7ba0bc8f68bb750ffe39497e517ce1cc",
+        "a3e5f6dcec50e85f-DFW",
+        200
+      ],
+      [
+        "B register options",
+        "2026-09-21T03:25:44.163Z",
+        "/api/auth/passkey/generate-register-options",
+        15,
+        187,
+        "ok",
+        "b90bdbe388c614f86735174428e4bd63",
+        "a3e5f6de0d41e85f-DFW",
+        200
+      ],
+      [
+        "B verify registration",
+        "2026-09-21T03:25:44.778Z",
+        "/api/auth/passkey/verify-registration",
+        35,
+        613,
+        "ok",
+        "1622e281426b6b47b9044b753fd7d4f5",
+        "a3e5f6df7e99e85f-DFW",
+        200
+      ],
+      [
+        "Reject client-declared winner",
+        "2026-09-21T03:27:05.970Z",
+        "/v1/battles",
+        15,
+        198,
+        "ok",
+        "376dbe144a482727134a7b36f2f618c9",
+        null,
+        422
+      ],
+      [
+        "Arena original",
+        "2026-09-21T03:27:06.415Z",
+        "/v1/battles",
+        81,
+        471,
+        "ok",
+        "d2074e306778bd97101a3b6319bde9bd",
+        "a3e5f8dedadb2ccf-DFW",
+        201
+      ],
+      [
+        "Arena retry",
+        "2026-09-21T03:27:06.756Z",
+        "/v1/battles",
+        12,
+        156,
+        "ok",
+        "245cc1935b96ed4bc94624fa44ed2a85",
+        "a3e5f8e27ce646da-DFW",
+        200
+      ],
+      [
+        "Story original",
+        "2026-09-21T03:27:10.069Z",
+        "/v1/story/battles",
+        48,
+        394,
+        "ok",
+        "44d649da4113ded93eb10305692a586e",
+        "a3e5f8f6091546da-DFW",
+        201
+      ],
+      [
+        "Story retry",
+        "2026-09-21T03:27:10.328Z",
+        "/v1/story/battles",
+        13,
+        149,
+        "ok",
+        "1e20f50146702f0a460503af5581a2bd",
+        "a3e5f8f8de7c2ccf-DFW",
+        200
+      ]
+    ],
+    "correlation": "CPU/wall/outcome/dashboard request IDs and timestamps are dashboard observations. Labels, CF-Ray IDs and HTTP statuses correspond by order/path/time to root-run remote smoke reports. Cloudflare outcome ok is runtime completion, not equivalent to HTTP 2xx: the intentional 422 is included.",
+    "limitations": [
+      "Small two-account staging smoke, not a service-level percentile or load test.",
+      "A and B mean first and second QA ceremonies; cold/warm isolate state was not measured.",
+      "No secrets, cookies, headers, full query URLs, device codes, auth contexts, or private keys exported.",
+      "Dashboard generic event list showed 132 events and 0 errors; this includes invocation and application events, not 132 independent requests.",
+      "Free plan CPU headroom is insufficient for the observed critical requests despite successful outcomes; no plan or billing change was made."
+    ],
+    "official_sources": [
+      "https://developers.cloudflare.com/workers/observability/query-builder/",
+      "https://developers.cloudflare.com/changelog/post/2025-04-09-workers-timing/",
+      "https://developers.cloudflare.com/workers/observability/metrics-and-analytics/",
+      "https://developers.cloudflare.com/workers/platform/limits/",
+      "https://developers.cloudflare.com/workers/platform/pricing/"
+    ],
+    "pricing_checked": {
+      "date": "2026-09-20",
+      "free_cpu_ms_per_http": 10,
+      "paid_minimum_usd_per_account_month": 5,
+      "paid_default_cpu_ms_per_http": 30000,
+      "paid_max_cpu_ms_per_http": 300000,
+      "paid_included_requests_per_month": 10000000,
+      "paid_included_cpu_ms_per_month": 30000000,
+      "overage_note": "Usage exceeding plan allowances is charged separately. Minimum is not a spending cap."
+    }
+  },
+  "cpu_observation": {
+    "worker": "brasa-api-staging",
+    "version": "3faaf02a-8427-4329-9ab8-7c8e50ef13ec",
+    "plan": {
+      "name": "Workers Paid",
+      "verification": "Chrome Cloudflare Billing > Subscriptions displayed Workers Paid Active; Workers plans displayed Paid Current plan.",
+      "source": "read-only native Chrome UI"
+    },
+    "cpu_limit_ms": 1000,
+    "cpu_limit_source": "version-settings-smoke.json: resources.script_runtime.limits.cpu_ms",
+    "cpu_limit_ui_verified": false,
+    "cpu_measurement_status": "unavailable_dashboard_did_not_render",
+    "cpu_samples": [],
+    "cpu_measurement_attempt": {
+      "intended_metric": "$workers.cpuTimeMs",
+      "intended_source": "Cloudflare Observability invocation logs in Chrome",
+      "observed_blocker": "Observability remained a gray page with no HTML content or event table after selecting the tab, reloading, and retrying navigation. Chrome Window menu showed only the current window; no additional original log window was available.",
+      "settings_ui_blocker": "The direct Worker page also remained gray; parent verified the deployed CPU limit using Wrangler versions view instead.",
+      "no_proxy_measurements": true
+    },
+    "smoke_evidence": {
+      "provision_completed_at": "2026-09-21T03:46:55.903Z",
+      "verify_completed_at": "2026-09-21T03:48:05.326Z",
+      "sources": [
+        "remote-provision.json",
+        "remote-verify.json"
+      ],
+      "selected_requests": [
+        {
+          "label": "A registration nonce",
+          "http_status": 200,
+          "cf_ray": "a3e6156eb9fd69f8-DFW"
+        },
+        {
+          "label": "A registration options",
+          "http_status": 200,
+          "cf_ray": "a3e615725bd669f8-DFW"
+        },
+        {
+          "label": "A registration verification",
+          "http_status": 200,
+          "cf_ray": "a3e61574695269f8-DFW"
+        },
+        {
+          "label": "B registration nonce",
+          "http_status": 200,
+          "cf_ray": "a3e615b16d043c25-DFW"
+        },
+        {
+          "label": "B registration options",
+          "http_status": 200,
+          "cf_ray": "a3e615b2c9ae3c25-DFW"
+        },
+        {
+          "label": "B registration verification",
+          "http_status": 200,
+          "cf_ray": "a3e615b45db93c25-DFW"
+        },
+        {
+          "label": "Arena original",
+          "http_status": 201,
+          "cf_ray": "a3e6177b396aeb16-DFW"
+        },
+        {
+          "label": "Arena retry",
+          "http_status": 200,
+          "cf_ray": "a3e6177ecbe447ff-DFW"
+        },
+        {
+          "label": "Story original",
+          "http_status": 201,
+          "cf_ray": "a3e617947f7847ff-DFW"
+        },
+        {
+          "label": "Story retry",
+          "http_status": 200,
+          "cf_ray": "a3e6179869beeb16-DFW"
+        }
+      ]
+    },
+    "prior_free_cpu_evidence": "../cloudflare-deploy/cpu-real-observation.json",
+    "limitations": [
+      "HTTP success does not provide actual CPU usage or the invocation outcome field.",
+      "No previous Free-plan CPU samples are presented as new Paid-plan measurements.",
+      "No load test was performed; no percentile, concurrency or cold-start conclusion is available."
+    ],
+    "browser_handoff": "Chrome released to parent with Observability selected and no menus open. No settings, plan, alerts, secrets or credentials changed through the UI."
+  },
+  "limitations": [
+    "New CPU measurements unavailable because Observability did not load. Prior Free measurements remain historical.",
+    "Final remote CPU limit and standard usage model independently read back from Cloudflare; all functional HTTP checks passed. This is not a sustained load test.",
+    "Per-request CPU limit is not a monthly billing cap."
+  ],
+  "newer_local_work": {
+    "included_in_this_deployment": false,
+    "bundle_sha256": "1d26af7525472c06c9a6b17a1afc7e549c96d329b1454bacd67be95b4346377b",
+    "bundle_mtime": "2026-09-21T03:52:36.102Z",
+    "deployed_version_created_on": "2026-09-21T03:50:02.624682Z",
+    "evidence": "work/cloudflare-paid/inputs-at-close.json"
+  }
+}

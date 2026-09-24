@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        143,
+        160,
+        196,
+        288
+      ],
+      "components": 7,
+      "substantial_components": 1,
+      "visible_pixels": 25974
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        145,
+        158,
+        191,
+        290
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 26213
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        128,
+        173,
+        228,
+        275
+      ],
+      "components": 7,
+      "substantial_components": 1,
+      "visible_pixels": 29278
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        134,
+        173,
+        272,
+        275
+      ],
+      "components": 10,
+      "substantial_components": 1,
+      "visible_pixels": 28977
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        101,
+        189,
+        249,
+        259
+      ],
+      "components": 7,
+      "substantial_components": 1,
+      "visible_pixels": 26620
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        104,
+        256,
+        272,
+        192
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 20936
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        154,
+        158,
+        200,
+        290
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 27259
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        112,
+        347,
+        292,
+        101
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 21348
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "vespera",
+  "bank": "base",
+  "source_sha256": "7637985e4ba449b529a615cc407f4654672cf70ec2c84c57709bfc867d83417f",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/vespera/base/vespera-base.png"
+}

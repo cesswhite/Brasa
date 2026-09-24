@@ -1,0 +1,163 @@
+{
+  "date": "2026-09-20",
+  "engine": "Godot 4.7.2 macOS",
+  "suites": [
+    {
+      "test": "test_core",
+      "checks": 236,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_combat_v2",
+      "checks": 482,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_moves",
+      "checks": 3955,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_move_clock",
+      "checks": 148,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_move_presentation",
+      "checks": 507,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_sprites",
+      "checks": 258,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_distinct_sprites",
+      "checks": 3165,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_campaign100",
+      "checks": 2117,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_progression",
+      "checks": 217,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_chapters",
+      "checks": 299,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_campaign",
+      "checks": 1796,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_combat",
+      "checks": 518,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_progression_v2",
+      "checks": 563,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_campaign100_integration",
+      "checks": 337,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_integration",
+      "checks": 85,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_chapter_integration",
+      "checks": 386,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_panel",
+      "checks": 450,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_story_campaign_ui",
+      "checks": 557,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_battle_layout",
+      "checks": 2139,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "test_roster",
+      "checks": 283,
+      "failures": 0,
+      "passed": true
+    },
+    {
+      "test": "smoke",
+      "checks": 0,
+      "failures": 0,
+      "passed": true
+    }
+  ],
+  "checks": 18498,
+  "failures": 0,
+  "native_captures": 39,
+  "native_note": "35 StoryPanel captures across seven viewport sizes, three full main-scene captures, one movement contact sheet. These are rendered fixtures, not balance measurements.",
+  "actual_copy_migration": {
+    "checks": 11,
+    "failures": 0,
+    "source_version": 2,
+    "target_version": 3,
+    "permanent_backup_exact": true
+  },
+  "real_save_unchanged_when_reopened": true,
+  "source_hashes": {
+    "scripts/arena_view.gd": "d5ad7f19dd620ec4d918e24060a6363e904cd8255f727148f4277e9089ce4c67",
+    "scripts/balance.gd": "26e56f377f5263f18b88580105f132f770eadfe5259f328c776fb308ac9d0ab4",
+    "scripts/campaign_config.gd": "92fd397546dc0aff269bda81a2a232bfec156365bcfab2d743b1c1ee3fcd49de",
+    "scripts/character_catalog.gd": "6064f00870ae4bed8b065f6c13f462332afa0e8f8683b9aad01755b5b2622a1e",
+    "scripts/combat_engine.gd": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+    "scripts/combat_rules.gd": "028dd9e70ebf7b94dba571f11c99f07ac8ef441d368f92ac4aae03d92b3e0dfe",
+    "scripts/fighter_procedural.gd": "7623db1bc308178f83327ebe1db6ef48cba11862dbcd0ec8cc01bdbe5e9801bd",
+    "scripts/fighter_view.gd": "f1beb61b3e141567aa9fcd74b873349fe1f5124f63e1db78b35983adb754bfa4",
+    "scripts/main.gd": "5cd615c3b4167d177e489269fc1c0d0bcb0e3d764a9d16037c72a73fce316f9f",
+    "scripts/move_catalog.gd": "bcb5b2581851c5aa9a0f224a3db04f10b8a93278dd27e8ae3289196a5d79994e",
+    "scripts/progression.gd": "776fd36b5f552370c7cb6c1a76a4a0cbb012a473918be78f41632afcbbbc20af",
+    "scripts/status_effects.gd": "a0c8c8ad3aaab868d50a9b4756655ff85582928a8659844efd65d98265814485",
+    "scripts/story_catalog.gd": "dad92c50562724d6c4b92c6eaae774599d893905e448674a5c6244571bb466dc",
+    "scripts/story_progression.gd": "7ca9ae6d77cce8768b92ce885a75c1bfd52b3ab98c31d72839c2dc51ebc32619",
+    "scripts/ui/battle_layout.gd": "b408fee0ec5a91ff6b4c6129654fa098d3efe5fe3c30b7006a2e87dbba00b79e",
+    "scripts/ui/roster_panel.gd": "671ef00ba67f0747ee9ab1dba9a11df34916f29ecf5c6ec51e21b368aee2699c",
+    "scripts/ui/story_panel.gd": "70501052c5d872c632d86e4f6ed8651a815acbd235f4efe6907529515eb8181c"
+  }
+}

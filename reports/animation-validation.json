@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "scope": "15-body animation and composited combat FX",
+  "checks": 15538,
+  "failures": 0,
+  "domain": {
+    "phase": "Complete15-body animation rollout; finalgap60, envelope164",
+    "suites": {
+      "test_sprites": {
+        "checks": 258,
+        "failures": 0,
+        "log": "work/animation-sequences/test_sprites.log",
+        "validation_stage": "full_roster_before_additive_prepare_reaction_event",
+        "exit_code": 0,
+        "log_sha256": "1755119e0ea1ae15ad2b56ff0c1318251c57c525a5d1ac455abe217d78d1dab5",
+        "unchanged_since_validation": "No changes to sampled animation, layout, assets or their test sources; additive helper is tested by6218sequencechecks and91integrationchecks.",
+        "fighter_view_hash_at_run": "df5e3bbeb12965899cc20dcacb51bf5adc5718daad1736e418a0a15ca7d8a521",
+        "delivery_log": "reports/animation-test_sprites.log"
+      },
+      "test_distinct_sprites": {
+        "checks": 4775,
+        "failures": 0,
+        "log": "work/animation-sequences/test_distinct_sprites.log",
+        "validation_stage": "full_roster_before_additive_prepare_reaction_event",
+        "exit_code": 0,
+        "log_sha256": "a30e974212d6255770dda3f72a027594fc51d86bdfccf757e7afff84573d8ad1",
+        "unchanged_since_validation": "No changes to sampled animation, layout, assets or their test sources; additive helper is tested by6218sequencechecks and91integrationchecks.",
+        "fighter_view_hash_at_run": "df5e3bbeb12965899cc20dcacb51bf5adc5718daad1736e418a0a15ca7d8a521",
+        "delivery_log": "reports/animation-test_distinct_sprites.log"
+      },
+      "test_move_presentation": {
+        "checks": 751,
+        "failures": 0,
+        "log": "work/animation-sequences/test_move_presentation.log",
+        "validation_stage": "full_roster_before_additive_prepare_reaction_event",
+        "exit_code": 0,
+        "log_sha256": "9d98522c5c8b80c5320e0df9f8244259053f6f6e9d920240912615153a3c3b9e",
+        "unchanged_since_validation": "No changes to sampled animation, layout, assets or their test sources; additive helper is tested by6218sequencechecks and91integrationchecks.",
+        "fighter_view_hash_at_run": "df5e3bbeb12965899cc20dcacb51bf5adc5718daad1736e418a0a15ca7d8a521",
+        "delivery_log": "reports/animation-test_move_presentation.log"
+      },
+      "test_move_clock": {
+        "checks": 147,
+        "failures": 0,
+        "log": "work/animation-sequences/test_move_clock.log",
+        "validation_stage": "final_with_move_presentation_join",
+        "exit_code": 0,
+        "log_sha256": "d51ec47a94dd43bf06ad7efcbb9ccc7b8957847ff6076170c74c9c375c999984",
+        "delivery_log": "reports/animation-test_move_clock.log"
+      },
+      "test_animation_sequences": {
+        "checks": 6218,
+        "failures": 0,
+        "log": "work/animation-sequences/test_animation_sequences_roster.log",
+        "validation_stage": "final_with_move_presentation_join",
+        "arguments": [
+          "--require-roster"
+        ],
+        "exit_code": 0,
+        "log_sha256": "f15bf7ac6c36ded23bec54b1fe4afec386012c7318d95597eed9e14210a7c976",
+        "delivery_log": "reports/animation-test_animation_sequences.log"
+      },
+      "test_battle_layout": {
+        "checks": 2139,
+        "failures": 0,
+        "log": "work/animation-sequences/test_battle_layout.log",
+        "validation_stage": "full_roster_before_additive_prepare_reaction_event",
+        "arguments": [],
+        "exit_code": 0,
+        "log_sha256": "58528a0c5f905b9999c3391b0438a40b995f50fdbe62462b56b9dfb080a1d6dc",
+        "unchanged_since_validation": "No changes to sampled animation, layout, assets or their test sources; additive helper is tested by6218sequencechecks and91integrationchecks.",
+        "fighter_view_hash_at_run": "df5e3bbeb12965899cc20dcacb51bf5adc5718daad1736e418a0a15ca7d8a521",
+        "delivery_log": "reports/animation-test_battle_layout.log"
+      }
+    },
+    "checks": 14288,
+    "failures": 0,
+    "canonical_semantic_poses": 8,
+    "additional_pilot_poses": 32,
+    "pilot_banks": 2,
+    "sequence_cache_bank_limit": 6,
+    "source_hashes": {
+      "scripts/fighter_view.gd": "31601cc7f354c80029d18c37c53199cd49138e1b28166521dfd93eff659366a0",
+      "scripts/fighter_animation_set.gd": "d7de3c020ac7ee029f5426a7748727a086025abcdf6c5d30dc0b394865aa660f",
+      "scripts/ui/battle_layout.gd": "eee9cf5dce775ee6cc270485e57474854a2b4bf41502846566725676324a5be0",
+      "tests/test_animation_sequences.gd": "b1e37b4eca4d9017dd2d4ef24352400d19bb861eb1b8bdd5504c65527bafc3ad",
+      "tests/test_battle_layout.gd": "7e1921f120da94d5ff232814b15a267b81c3fec7411e4029bde06ead95365216",
+      "tests/test_sprites.gd": "e1d3b182996d93df652e808ec7f947a4ca44c6802cab9661ff9bb9ab26bd11d8",
+      "tests/test_distinct_sprites.gd": "439e7d4c90e82a838c528b6230a7bc347e336ec31edeb7a77acf08a6e7248a2c",
+      "tests/test_move_presentation.gd": "fdbf3ca674688b6b79c0d2eaa87e43bc2edc5e49dddef4f06d093d69fdde30c1",
+      "tests/test_move_clock.gd": "c4a0aafec3e3959fd3bb37a890aefb6cfefa5e813c1249b6e646e7e42cf77400"
+    },
+    "asset_hashes": {
+      "assets/sprites/sequences/ascua-movement-v1.json": "bf1fcf416dbb99e3e2d5af89205922011027a71795d159294d36f94445c1b69e",
+      "assets/sprites/sequences/ascua-movement-v1.png": "631a6b9e9755ab291134f541fd5977d1d6d8ef43d48e83cbfb120c888cf0cfe6",
+      "assets/sprites/sequences/ascua-reactions-v1.json": "49474a4090861f9fa69fb70f9dff830ca073eb1051bd814042f4d98c96fa7f80",
+      "assets/sprites/sequences/ascua-reactions-v1.png": "9c2615845bb20bf6a50b7ad4acc3e94921e3cebdf84633f7226a5a82526946ee",
+      "assets/sprites/sequences/balam-movement-v1.json": "f212e19ccdf67ec165b0b15edd6dd5c97667c17629b7ea5ceb7ae726590c89e6",
+      "assets/sprites/sequences/balam-movement-v1.png": "766be08d086af95e8ce91d9ee30f85ae3f51a8dc7cc494d1552dac5c06cc6b03",
+      "assets/sprites/sequences/balam-reactions-v1.json": "9595e450a6bbb51d4da294a7de7ce315a686376a4de32420db3dca2dd5a8548a",
+      "assets/sprites/sequences/balam-reactions-v1.png": "c1809cd48ea714b31a0c2f5b58f899a3dd01075a198c4fb945ca40c4a168017c",
+      "assets/sprites/sequences/copal-movement-v1.json": "5a5207633d3aebe17ff8deecc94f30253e277737035f977379cb53be1ed27969",
+      "assets/sprites/sequences/copal-movement-v1.png": "1ccdbe51a6c370898c20209b23a31e7fc93b2aa9e16eb2d5863e6e80012aab4a",
+      "assets/sprites/sequences/copal-reactions-v1.json": "30c64ad402ad63f2b10fd831096d42ac50563abd8f8e19029ae4a3de3696f0c3",
+      "assets/sprites/sequences/copal-reactions-v1.png": "ad5a2aa3c54ace479375454decd9f8db99ab6a5f9697c0c05df31fe6b2fb5146",
+      "assets/sprites/sequences/duna-movement-v1.json": "8f6541630c77de48332bf5a7a34e6ae6152b83c664bd8bd6a5caf68fba3dce3a",
+      "assets/sprites/sequences/duna-movement-v1.png": "4564dd0081a713ffaffe4aefc46172d5b3d5996a996e5afed926b710143d6c18",
+      "assets/sprites/sequences/duna-reactions-v1.json": "41c6ce90ad66282d57bf36cf16c6d4b9a806b1a97776c26db174ee21235ed42d",
+      "assets/sprites/sequences/duna-reactions-v1.png": "61f5d62a8a2a316c2de4e2f430cc260f27ac8dee83f3d12e308928f3990cbdcb",
+      "assets/sprites/sequences/iria-movement-v1.json": "32f98c53d25b8356f60d92e9d34b8ba9ca2db9b9bd968fccc6d13fdbef41c616",
+      "assets/sprites/sequences/iria-movement-v1.png": "95c8d11adee3a09bb2152a827327509ad5301ce969906a27126b0ffb8a48b01d",
+      "assets/sprites/sequences/iria-reactions-v1.json": "a8649316b84d0937bbefc99313dd3e220e861253a4490f98760410f83352c571",
+      "assets/sprites/sequences/iria-reactions-v1.png": "40d7c3344395f9dd05005032a078bcd954da5009623c549e5f20650cd45c234c",
+      "assets/sprites/sequences/kiro-movement-v1.json": "ec7c5828912d4de4f23090a5a47d0652835f7b1121210ae494b8b02d9cf355ce",
+      "assets/sprites/sequences/kiro-movement-v1.png": "56fc60a870b72f0806c13ca75d43283b44e9c87b4655a8e47e713bb55f649073",
+      "assets/sprites/sequences/kiro-reactions-v1.json": "29c0b9ca6bf9d53a2c1d9decb3c96c59d31a422b39a7d354d5d88cce08e45a34",
+      "assets/sprites/sequences/kiro-reactions-v1.png": "ca37b7a194826952ea70985c3336eeea73af106cdf4d3e63dde611b38c547895",
+      "assets/sprites/sequences/luma-movement-v1.json": "512a21c8dc7de64725d209bf59a54320dc48ffb8b614f5602236af3f4469940e",
+      "assets/sprites/sequences/luma-movement-v1.png": "d15e64143fb8591d56699903a2e3dc690a0ee72d42f42e4c33ad307f452c98b0",
+      "assets/sprites/sequences/luma-reactions-v1.json": "b82d31acc9fa85b1953588cd423adf3096bb82dbd93fcd6a474fbf379c0b545b",
+      "assets/sprites/sequences/luma-reactions-v1.png": "8cd496fdfcf1485b4c096753c9398659f764c66564811e59364c473d024eaf94",
+      "assets/sprites/sequences/mugo-movement-v1.json": "573f686c5a5317d90ae10a4d8689fe814db19224ea7f54d8c1ce8cdc7df0f6fb",
+      "assets/sprites/sequences/mugo-movement-v1.png": "749288ba3b4dde04a6151a996233edc0fcc11af81cec98379aade2e4038a1a1c",
+      "assets/sprites/sequences/mugo-reactions-v1.json": "23c1d0262830e1d442cd6c172d4a6ac32e8e2b1db1b0ad63fcbd821478011101",
+      "assets/sprites/sequences/mugo-reactions-v1.png": "a4aee15b86c06efc6d2d0bb9d06647e8575b6c444ba12be6ab12ef7e8b673269",
+      "assets/sprites/sequences/neris-movement-v1.json": "fe1830340511370288da1858c9adf17bb319510db22ed0dbbc8af5a44df9de32",
+      "assets/sprites/sequences/neris-movement-v1.png": "28228f6201d710f57e5942f41d927d6d50e91fa92f5e7e2a09450751543204af",
+      "assets/sprites/sequences/neris-reactions-v1.json": "f7d9b530bb327e1088c9b4813081dc92ba5b4cbf8fdd364dded04dd190bb921b",
+      "assets/sprites/sequences/neris-reactions-v1.png": "972cf1389cf3787486f10c0cdc303aed2220ad6fce1b6846604c287006b5ad76",
+      "assets/sprites/sequences/nima-movement-v1.json": "7764e1a1a822e8f8dd28032db362f137cbff7da60f9a34b4611b8ebea1c51347",
+      "assets/sprites/sequences/nima-movement-v1.png": "b7fd758945dc9649ed6e7c3160355c0dcc09606b3c496fb6965a2e9a69ef92e3",
+      "assets/sprites/sequences/nima-reactions-v1.json": "47f587e7f9df20cbfd6835d99dfe578cca350af82d5f43b988f63e9f69ce26be",
+      "assets/sprites/sequences/nima-reactions-v1.png": "0fc45c268c583cb4db6a7b84e3724b9345fcc0943d60fcaafe1ec146e2e7a83c",
+      "assets/sprites/sequences/sira-movement-v1.json": "5f901122a0505839ced5460bf7b515a6e4e5c89158edf275b70722cd801f7015",
+      "assets/sprites/sequences/sira-movement-v1.png": "bb6e9d2c50127f53ecd852d55fe957362eea7afa88473473f231e747a24ad02f",
+      "assets/sprites/sequences/sira-reactions-v1.json": "67e16cb986c5e7468d8fb0160d93577875031fb8ee85ba062be56aca6388b403",
+      "assets/sprites/sequences/sira-reactions-v1.png": "d63a5d1bb0da3b37a53db6405d447a3a0b2ab8ecabcf5648694e4c2879af4ec5",
+      "assets/sprites/sequences/taro-movement-v1.json": "dd472318ab447ee5170aec4e56e22c0d350ef29de9fa16c532032b764233d5cd",
+      "assets/sprites/sequences/taro-movement-v1.png": "0140db3d405db68b198277e1323f6be9ee585821c77037662a4e7b71d697549e",
+      "assets/sprites/sequences/taro-reactions-v1.json": "b2d1ea283600d380ae8b59e1fadcd488318f991927e1b57d22b82b108a43c8c7",
+      "assets/sprites/sequences/taro-reactions-v1.png": "dbce5b111cf64e5dfd38a6540f9055d4b280c6a78f1205b71dd246375756f96c",
+      "assets/sprites/sequences/tepa-movement-v1.json": "8fd414e3516599f8816f11c3ee2ca2f528871d95c8190490d03c66480d7c1a95",
+      "assets/sprites/sequences/tepa-movement-v1.png": "2336a0b5a0c45dbf1e981b92046c0c00838ca064f3e70b33d5d9233b2b8fd521",
+      "assets/sprites/sequences/tepa-reactions-v1.json": "b9f8ba7dbacaa502e343e6eb9d9c43b17f5a6844fef392c4a56342d98a121f1e",
+      "assets/sprites/sequences/tepa-reactions-v1.png": "7dacd63059929e42b69487e73f29c1d2e8e23bf69c6cbe27c5179f3a82b09e72",
+      "assets/sprites/sequences/vespera-movement-v1.json": "41ae1ccd01285e23255636808ebff52ad77cdbce1083a441ec39bb088db0c788",
+      "assets/sprites/sequences/vespera-movement-v1.png": "42c340fee446161ecc5476e0c8d0481ac491e04af4c3ef12e00115aafbc99b05",
+      "assets/sprites/sequences/vespera-reactions-v1.json": "76fc4121e801d4467557a228a1b87a25fcaa18fe10401aea4649e0e07172dd84",
+      "assets/sprites/sequences/vespera-reactions-v1.png": "44a2a087d2adb4347f3843f869a5ef2b6a5298971f695d5897e2f76a4df15d5e",
+      "assets/sprites/sequences/xuna-movement-v1.json": "58091527837b68696c8364a447b53c6307aee00080d16a8c1cdeae639d539dc0",
+      "assets/sprites/sequences/xuna-movement-v1.png": "c746a0ec7387c560b47f57c9d75db4dcd046e7ae2183c8a652022a2030579722",
+      "assets/sprites/sequences/xuna-reactions-v1.json": "d0efaab097dd8afa07ea4c2aa13cd3352e52d07d6dd773eaaba09cf7175a20d2",
+      "assets/sprites/sequences/xuna-reactions-v1.png": "90896a5aaaf3317435816eb4538443c2ce3161c1608fda813b4922b399e8b504"
+    },
+    "gameplay_sources_unchanged_since_world_ui_baseline": {
+      "scripts/combat_engine.gd": true,
+      "scripts/story_catalog.gd": true,
+      "scripts/story_progression.gd": true,
+      "scripts/campaign_config.gd": true,
+      "scripts/fighter_identity.gd": true
+    },
+    "real_saves_accessed": false,
+    "native_continuous_qa": "Finalgap60 capture/MP4 underway independently; earlier164/gap78 native1116/0 preserved inwork/animation/native-precompact.",
+    "framing": {
+      "outer_extent": 164,
+      "compact_gap_units": 60,
+      "stable_across_states": true,
+      "minimum_phone_height_test": 135,
+      "live_and_replay_shared_helper": true,
+      "note": "All15body timelines sampled bothfacings at360/390/430/768/844/1360; nativeQA separate."
+    },
+    "presentation_overrides": "move.presentation defaults, event.presentation valid-field override; terminal/non-contact priority; hit_stop0..0.1",
+    "full_roster_gate": "PASS6199/0;15bodies30banks480realframes+RGBA+disjointregions+continuousframing",
+    "final_suites_checks": 6365,
+    "body_count": 15,
+    "additional_poses": 480,
+    "sequence_banks": 30,
+    "preflight": "FighterView.prepare_combat_animation loads bothbanks without changing animationstate, idle, sprite or clocks.",
+    "mexican_asset_provenance": "work/animation/mexican-sequences-provenance.json",
+    "save_note": "This domain/asset workflow did not access actualsaves; no claim that userfiles remained unchanged while usermayplay.",
+    "snapshot_utc": "2026-09-21T03:02:44.337927+00:00",
+    "presentation_join": {
+      "api": "FighterView.prepare_reaction_event(event, elapsed_offset=0.0)",
+      "lookup": "exact nonempty move_id; active counter then scheduled move",
+      "explicit_move": "preserved even empty/null",
+      "event_presentation": "retains override priority",
+      "copies": "deep; event/move/counter/state immutable",
+      "source_changes": "Additive helper inFighterView; no engine/catalog/art/layout edits."
+    },
+    "independent_move_presentation_integration": {
+      "checks": 91,
+      "failures": 0,
+      "log": "work/animation/status-ko-presentation.log",
+      "log_sha256": "52c4c6e88fa036cb749d6cbadb6b6a5523ab3e46e0cdb9bc0d9cd5acf5cbb27f",
+      "agent": "fighter_art",
+      "included_in_domain_check_total": false
+    }
+  },
+  "combat_fx": {
+    "checks": 43,
+    "failures": 0,
+    "log": "reports/animation-combat-fx.log"
+  },
+  "status_ko_and_presentation": {
+    "checks": 91,
+    "failures": 0,
+    "log": "reports/animation-status-ko.log",
+    "scope": "Lethal status ticks and explicit move/event presentation integration in Main and replay"
+  },
+  "native": {
+    "checks": 1116,
+    "failures": 0,
+    "temporal_observations": 96,
+    "results": "reports/animation-native-results.json",
+    "manifest": "reports/animation-native-manifest.json",
+    "viewports": [
+      [
+        1360,
+        880
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "timing_note": "Real SceneTree callbacks; targets derive from an independent deterministic engine run. Actual sample time is recorded, never substituted by requested time. PNG readback can add frame latency."
+  },
+  "assets": "assets/sprites/sequences/manifest.json",
+  "movie": {
+    "file": "reports/animation-combat.mp4",
+    "sha256": "8f440ede6054c727ef099094fb03c82bc96b948ed09a0a332667acb819baf62b",
+    "capture": "Continuous Godot MovieMaker, 1224x792, 30fps",
+    "validation_checks_separate_from_total": 229,
+    "failures": 0,
+    "note": "Recorded before the additive move.presentation forwarding helper. Default catalogue, animations and geometry unchanged; final runtime separately verified by the final native run."
+  },
+  "fixture_policy": "Explicit isolated Main and replay fixtures; no production profile boot. No user-save restoration performed."
+}

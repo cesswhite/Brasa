@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        146,
+        226,
+        199,
+        222
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20558
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        144,
+        226,
+        198,
+        222
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20795
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        141,
+        227,
+        207,
+        221
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20785
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        140,
+        222,
+        238,
+        226
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20898
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        124,
+        234,
+        211,
+        214
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 22736
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        150,
+        269,
+        193,
+        179
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18650
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        134,
+        195,
+        207,
+        253
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 22644
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        112,
+        354,
+        270,
+        94
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 16193
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "luma",
+  "bank": "base",
+  "source_sha256": "01751e7277ff37656657ca8f6d2afb097bc9805c98308319b18897821ff3f2bb",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/luma/base/luma-base.png"
+}

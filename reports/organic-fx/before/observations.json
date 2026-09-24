@@ -1,0 +1,557 @@
+{
+	"baseline": true,
+	"checks": 21,
+	"failures": 0,
+	"observations": [
+		{
+			"actors": [
+				{
+					"active_frame": 2,
+					"anchor": "(130.5, 164.0)",
+					"body_id": "onix",
+					"bounds": "[P: (0, 0), S: (291, 167)]",
+					"clip": "charge",
+					"draw_scale": "(0.546053, 0.546053)",
+					"elapsed": 0.245,
+					"enabled": true,
+					"fallback": false,
+					"frame": "charge_crouch",
+					"hit_stop_remaining": 0.0,
+					"mode": "move",
+					"phase": "windup",
+					"region": "[P: (630, 162), S: (291, 167)]",
+					"source_path": "res://assets/sprites/sequences/onix-movement-v1.png",
+					"transformation": ""
+				},
+				{
+					"active_frame": 4,
+					"anchor": "(153.0, 285.0)",
+					"body_id": "bruma",
+					"bounds": "[P: (0, 0), S: (275, 287)]",
+					"clip": "heavy",
+					"draw_scale": "(-0.570447, 0.570447)",
+					"elapsed": 0.085,
+					"enabled": true,
+					"fallback": false,
+					"frame": "heavy_hit",
+					"hit_stop_remaining": 0.0,
+					"mode": "reaction",
+					"phase": "reaction",
+					"region": "[P: (723, 15), S: (275, 287)]",
+					"source_path": "res://assets/sprites/sequences/bruma-reactions-v1.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Carga y contacto",
+			"fx": {
+				"active": [
+					{
+						"age": 0.245,
+						"at": "(394.4, 453.1)",
+						"id": "charge_energy",
+						"size": 217.0
+					},
+					{
+						"age": 0.085,
+						"at": "(965.6, 453.1)",
+						"id": "heavy_hit",
+						"size": 189.0
+					},
+					{
+						"age": 0.085,
+						"at": "(965.6, 453.1)",
+						"id": "critical_hit",
+						"size": 203.0
+					}
+				],
+				"paused": false,
+				"pending": 1,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				1360,
+				880
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 0,
+					"anchor": "(121.0, 192.0)",
+					"body_id": "ascua",
+					"bounds": "[P: (0, 0), S: (224, 194)]",
+					"clip": "transformation",
+					"draw_scale": "(0.700422, 0.700422)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": false,
+					"frame": "charge_crouch",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (662, 114), S: (224, 196)]",
+					"source_path": "res://assets/sprites/sequences/ascua-movement-v1.png",
+					"transformation": "ember_core"
+				},
+				{
+					"active_frame": 0,
+					"anchor": "(0.0, 0.0)",
+					"body_id": "luma",
+					"bounds": "[P: (0, 0), S: (0, 0)]",
+					"clip": "idle",
+					"draw_scale": "(-0.406863, 0.406863)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": true,
+					"frame": "idle",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (0, 0), S: (0, 0)]",
+					"source_path": "res://assets/sprites/ajolote-v2.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Fuego y transformación",
+			"fx": {
+				"active": [
+					{
+						"age": 0.16,
+						"at": "(394.4, 453.1)",
+						"id": "transformation",
+						"size": 297.5
+					},
+					{
+						"age": 0.16,
+						"at": "(965.6, 453.1)",
+						"id": "charge_energy",
+						"size": 217.0
+					}
+				],
+				"paused": false,
+				"pending": 0,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				1360,
+				880
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 0,
+					"anchor": "(0.0, 0.0)",
+					"body_id": "onix",
+					"bounds": "[P: (0, 0), S: (0, 0)]",
+					"clip": "idle",
+					"draw_scale": "(0.397129, 0.397129)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": true,
+					"frame": "idle",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (0, 0), S: (0, 0)]",
+					"source_path": "res://assets/sprites/onix-v1.png",
+					"transformation": ""
+				},
+				{
+					"active_frame": 0,
+					"anchor": "(0.0, 0.0)",
+					"body_id": "bruma",
+					"bounds": "[P: (0, 0), S: (0, 0)]",
+					"clip": "idle",
+					"draw_scale": "(-0.403893, 0.403893)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": true,
+					"frame": "idle",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (0, 0), S: (0, 0)]",
+					"source_path": "res://assets/sprites/bruma-v1.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Veneno, escudo y entrada",
+			"fx": {
+				"active": [
+					{
+						"age": 0.16,
+						"at": "(394.4, 453.1)",
+						"id": "charge_energy",
+						"size": 217.0
+					},
+					{
+						"age": 0.16,
+						"at": "(965.6, 453.1)",
+						"id": "charge_energy",
+						"size": 217.0
+					}
+				],
+				"paused": false,
+				"pending": 0,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				1360,
+				880
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 3,
+					"anchor": "(142.0, 296.0)",
+					"body_id": "onix",
+					"bounds": "[P: (1, 0), S: (313, 291)]",
+					"clip": "jump",
+					"draw_scale": "(0.546053, 0.546053)",
+					"elapsed": 0.34,
+					"enabled": true,
+					"fallback": false,
+					"frame": "jump_strike",
+					"hit_stop_remaining": 0.0,
+					"mode": "move",
+					"phase": "travel",
+					"region": "[P: (27, 930), S: (315, 291)]",
+					"source_path": "res://assets/sprites/sequences/onix-movement-v1.png",
+					"transformation": ""
+				},
+				{
+					"active_frame": 3,
+					"anchor": "(117.5, 246.0)",
+					"body_id": "bruma",
+					"bounds": "[P: (0, 1), S: (288, 249)]",
+					"clip": "dash",
+					"draw_scale": "(-0.645914, 0.645914)",
+					"elapsed": 0.25,
+					"enabled": true,
+					"fallback": false,
+					"frame": "follow_through",
+					"hit_stop_remaining": 0.0,
+					"mode": "move",
+					"phase": "recovery",
+					"region": "[P: (730, 352), S: (288, 250)]",
+					"source_path": "res://assets/sprites/sequences/bruma-movement-v1.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Salto y desplazamiento",
+			"fx": {
+				"active": [
+					{
+						"age": 0.34,
+						"at": "(394.4, 589.6)",
+						"id": "dust",
+						"size": 136.5
+					},
+					{
+						"age": 0.2,
+						"at": "(1004.1, 502.1)",
+						"id": "dash_trail",
+						"size": 189.0
+					}
+				],
+				"paused": false,
+				"pending": 1,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				1360,
+				880
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 2,
+					"anchor": "(130.5, 164.0)",
+					"body_id": "onix",
+					"bounds": "[P: (0, 0), S: (291, 167)]",
+					"clip": "charge",
+					"draw_scale": "(0.546053, 0.546053)",
+					"elapsed": 0.245,
+					"enabled": true,
+					"fallback": false,
+					"frame": "charge_crouch",
+					"hit_stop_remaining": 0.0,
+					"mode": "move",
+					"phase": "windup",
+					"region": "[P: (630, 162), S: (291, 167)]",
+					"source_path": "res://assets/sprites/sequences/onix-movement-v1.png",
+					"transformation": ""
+				},
+				{
+					"active_frame": 4,
+					"anchor": "(153.0, 285.0)",
+					"body_id": "bruma",
+					"bounds": "[P: (0, 0), S: (275, 287)]",
+					"clip": "heavy",
+					"draw_scale": "(-0.570447, 0.570447)",
+					"elapsed": 0.085,
+					"enabled": true,
+					"fallback": false,
+					"frame": "heavy_hit",
+					"hit_stop_remaining": 0.0,
+					"mode": "reaction",
+					"phase": "reaction",
+					"region": "[P: (723, 15), S: (275, 287)]",
+					"source_path": "res://assets/sprites/sequences/bruma-reactions-v1.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Carga y contacto",
+			"fx": {
+				"active": [
+					{
+						"age": 0.245,
+						"at": "(113.1, 492.16)",
+						"id": "charge_energy",
+						"size": 116.559999704361
+					},
+					{
+						"age": 0.085,
+						"at": "(276.9, 492.16)",
+						"id": "heavy_hit",
+						"size": 101.519999742508
+					},
+					{
+						"age": 0.085,
+						"at": "(276.9, 492.16)",
+						"id": "critical_hit",
+						"size": 109.039999723434
+					}
+				],
+				"paused": false,
+				"pending": 1,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				390,
+				844
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 0,
+					"anchor": "(121.0, 192.0)",
+					"body_id": "ascua",
+					"bounds": "[P: (0, 0), S: (224, 194)]",
+					"clip": "transformation",
+					"draw_scale": "(0.700422, 0.700422)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": false,
+					"frame": "charge_crouch",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (662, 114), S: (224, 196)]",
+					"source_path": "res://assets/sprites/sequences/ascua-movement-v1.png",
+					"transformation": "ember_core"
+				},
+				{
+					"active_frame": 0,
+					"anchor": "(0.0, 0.0)",
+					"body_id": "luma",
+					"bounds": "[P: (0, 0), S: (0, 0)]",
+					"clip": "idle",
+					"draw_scale": "(-0.406863, 0.406863)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": true,
+					"frame": "idle",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (0, 0), S: (0, 0)]",
+					"source_path": "res://assets/sprites/ajolote-v2.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Fuego y transformación",
+			"fx": {
+				"active": [
+					{
+						"age": 0.16,
+						"at": "(113.1, 492.16)",
+						"id": "transformation",
+						"size": 159.799999594688
+					},
+					{
+						"age": 0.16,
+						"at": "(276.9, 492.16)",
+						"id": "charge_energy",
+						"size": 116.559999704361
+					}
+				],
+				"paused": false,
+				"pending": 0,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				390,
+				844
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 0,
+					"anchor": "(0.0, 0.0)",
+					"body_id": "onix",
+					"bounds": "[P: (0, 0), S: (0, 0)]",
+					"clip": "idle",
+					"draw_scale": "(0.397129, 0.397129)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": true,
+					"frame": "idle",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (0, 0), S: (0, 0)]",
+					"source_path": "res://assets/sprites/onix-v1.png",
+					"transformation": ""
+				},
+				{
+					"active_frame": 0,
+					"anchor": "(0.0, 0.0)",
+					"body_id": "bruma",
+					"bounds": "[P: (0, 0), S: (0, 0)]",
+					"clip": "idle",
+					"draw_scale": "(-0.403893, 0.403893)",
+					"elapsed": 0.16,
+					"enabled": true,
+					"fallback": true,
+					"frame": "idle",
+					"hit_stop_remaining": 0.0,
+					"mode": "idle",
+					"phase": "rest",
+					"region": "[P: (0, 0), S: (0, 0)]",
+					"source_path": "res://assets/sprites/bruma-v1.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Veneno, escudo y entrada",
+			"fx": {
+				"active": [
+					{
+						"age": 0.16,
+						"at": "(113.1, 492.16)",
+						"id": "charge_energy",
+						"size": 116.559999704361
+					},
+					{
+						"age": 0.16,
+						"at": "(276.9, 492.16)",
+						"id": "charge_energy",
+						"size": 116.559999704361
+					}
+				],
+				"paused": false,
+				"pending": 0,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				390,
+				844
+			]
+		},
+		{
+			"actors": [
+				{
+					"active_frame": 3,
+					"anchor": "(142.0, 296.0)",
+					"body_id": "onix",
+					"bounds": "[P: (1, 0), S: (313, 291)]",
+					"clip": "jump",
+					"draw_scale": "(0.546053, 0.546053)",
+					"elapsed": 0.34,
+					"enabled": true,
+					"fallback": false,
+					"frame": "jump_strike",
+					"hit_stop_remaining": 0.0,
+					"mode": "move",
+					"phase": "travel",
+					"region": "[P: (27, 930), S: (315, 291)]",
+					"source_path": "res://assets/sprites/sequences/onix-movement-v1.png",
+					"transformation": ""
+				},
+				{
+					"active_frame": 3,
+					"anchor": "(117.5, 246.0)",
+					"body_id": "bruma",
+					"bounds": "[P: (0, 1), S: (288, 249)]",
+					"clip": "dash",
+					"draw_scale": "(-0.645914, 0.645914)",
+					"elapsed": 0.25,
+					"enabled": true,
+					"fallback": false,
+					"frame": "follow_through",
+					"hit_stop_remaining": 0.0,
+					"mode": "move",
+					"phase": "recovery",
+					"region": "[P: (730, 352), S: (288, 250)]",
+					"source_path": "res://assets/sprites/sequences/bruma-movement-v1.png",
+					"transformation": ""
+				}
+			],
+			"baseline": true,
+			"case": "Salto y desplazamiento",
+			"fx": {
+				"active": [
+					{
+						"age": 0.34,
+						"at": "(113.1, 565.48)",
+						"id": "dust",
+						"size": 73.3199998140335
+					},
+					{
+						"age": 0.2,
+						"at": "(297.58, 518.48)",
+						"id": "dash_trail",
+						"size": 101.519999742508
+					}
+				],
+				"paused": false,
+				"pending": 1,
+				"reduced_motion": false,
+				"shake": 0.0
+			},
+			"manual_presentation_clock": true,
+			"size": [
+				390,
+				844
+			]
+		}
+	],
+	"real_saves_accessed": false,
+	"source": "Presentation-only technical fixture; replay events from an in-memory combat engine"
+}

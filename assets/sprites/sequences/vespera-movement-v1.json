@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "vespera",
+  "bank": "movement",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 272,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        50,
+        62,
+        227,
+        280
+      ],
+      "anchor": [
+        117.0,
+        276
+      ]
+    },
+    {
+      "name": "step_back",
+      "region": [
+        347,
+        61,
+        262,
+        281
+      ],
+      "anchor": [
+        142.5,
+        277
+      ]
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        665,
+        148,
+        236,
+        193
+      ],
+      "anchor": [
+        129.5,
+        189
+      ]
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        963,
+        68,
+        247,
+        274
+      ],
+      "anchor": [
+        134.5,
+        270
+      ]
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        40,
+        370,
+        250,
+        277
+      ],
+      "anchor": [
+        134.0,
+        273
+      ]
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        338,
+        368,
+        292,
+        280
+      ],
+      "anchor": [
+        131.5,
+        276
+      ]
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        643,
+        369,
+        301,
+        280
+      ],
+      "anchor": [
+        139.5,
+        276
+      ]
+    },
+    {
+      "name": "recovery",
+      "region": [
+        963,
+        369,
+        250,
+        280
+      ],
+      "anchor": [
+        137.0,
+        276
+      ]
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        30,
+        694,
+        257,
+        224
+      ],
+      "anchor": [
+        30.5,
+        220
+      ]
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        332,
+        660,
+        284,
+        253
+      ],
+      "anchor": [
+        159.0,
+        249
+      ]
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        667,
+        707,
+        219,
+        213
+      ],
+      "anchor": [
+        110.5,
+        209
+      ]
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        976,
+        656,
+        216,
+        245
+      ],
+      "anchor": [
+        124.0,
+        258
+      ]
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        39,
+        924,
+        271,
+        276
+      ],
+      "anchor": [
+        120.5,
+        284.5
+      ]
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        360,
+        925,
+        243,
+        291
+      ],
+      "anchor": [
+        113.0,
+        283.5
+      ]
+    },
+    {
+      "name": "landing",
+      "region": [
+        650,
+        995,
+        254,
+        218
+      ],
+      "anchor": [
+        130.5,
+        214
+      ]
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        965,
+        922,
+        248,
+        290
+      ],
+      "anchor": [
+        138.0,
+        286
+      ]
+    }
+  ],
+  "notes": "REVIEW-ONLY proposal. One common scale from reference_height; never normalize each frame height. Check pose identity/order, projected airborne/fall anchors and canonical match in native preview before promoting this sidecar."
+}

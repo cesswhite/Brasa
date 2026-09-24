@@ -1,0 +1,408 @@
+{
+  "captures": [
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-guard-1360x880-facing1.png",
+      "path": "native/context-taro_roque-guard-1360x880-facing1.png",
+      "sha256": "342c878cd93a01a0981a5b502011807d2f59f09614b4685bd83a4c96cac598a2",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-strike-1360x880-facing1.png",
+      "path": "native/context-taro_roque-strike-1360x880-facing1.png",
+      "sha256": "cc957040760b3bec696005e47816753d1c7a3c8e188f2b0ac097b65361be0562",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-reaction-1360x880-facing1.png",
+      "path": "native/context-taro_roque-reaction-1360x880-facing1.png",
+      "sha256": "a8c8e5655cfda0ee26eef5efc7f25a62b5deaf2e6f6f0591b1aaa00a19a9eac5",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-ko-1360x880-facing1.png",
+      "path": "native/context-taro_roque-ko-1360x880-facing1.png",
+      "sha256": "d21dd55a99d03ccabe9af2aa3243edbeec75a076be327cedbd3e9560a1a4a90d",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-guard-1360x880-facing-1.png",
+      "path": "native/context-taro_roque-guard-1360x880-facing-1.png",
+      "sha256": "db590a26965caa8aaf9f1023225d2974c68efac042c91d41e6c5c41d642f9e01",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-strike-1360x880-facing-1.png",
+      "path": "native/context-taro_roque-strike-1360x880-facing-1.png",
+      "sha256": "aae2453f29fe0430280abe0caf37ef4582e21cb088da9301d0ef8a57d1f8adc6",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-reaction-1360x880-facing-1.png",
+      "path": "native/context-taro_roque-reaction-1360x880-facing-1.png",
+      "sha256": "42972281236656e534ff8169f765d84a661e7215e5aa3503149cf8da9f1c359c",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-ko-1360x880-facing-1.png",
+      "path": "native/context-taro_roque-ko-1360x880-facing-1.png",
+      "sha256": "8709660115166cd3ea3a194a9e7be3ae90e22b4433be7757c3ad0ce77d178e7e",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-guard-390x844-facing1.png",
+      "path": "native/context-taro_roque-guard-390x844-facing1.png",
+      "sha256": "afdcd915d9a3348aa6f750e0a0556eea831905e6463a09d180668f37fa5187d4",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-strike-390x844-facing1.png",
+      "path": "native/context-taro_roque-strike-390x844-facing1.png",
+      "sha256": "5936b3f09b7e291d552376618c17026c0024a254e8f525791d885c5f48ceb50a",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-reaction-390x844-facing1.png",
+      "path": "native/context-taro_roque-reaction-390x844-facing1.png",
+      "sha256": "ca7dc610a5f083619551f7c2fa2d347904794b0732265a8b43c4a342aa6d848b",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-ko-390x844-facing1.png",
+      "path": "native/context-taro_roque-ko-390x844-facing1.png",
+      "sha256": "8522bec4c719c24c00a663280c6d5e3910935b271ad00a64477124c9f8527c1b",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-guard-390x844-facing-1.png",
+      "path": "native/context-taro_roque-guard-390x844-facing-1.png",
+      "sha256": "b398ea0a7483fd77d530849cbda52f771447c29bed94a02fc413feed03b51d44",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-strike-390x844-facing-1.png",
+      "path": "native/context-taro_roque-strike-390x844-facing-1.png",
+      "sha256": "ac418a6976b97371ce5167256b1fbc98b279da75c3d3580c4b3e63eff85deb18",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-reaction-390x844-facing-1.png",
+      "path": "native/context-taro_roque-reaction-390x844-facing-1.png",
+      "sha256": "19bf2062b3f279e080384e1d65974dcd9abf0702dc56633ffeebf1cfb819f2d3",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/context-taro_roque-ko-390x844-facing-1.png",
+      "path": "native/context-taro_roque-ko-390x844-facing-1.png",
+      "sha256": "91924beab50c43717d8b6525390eb6c0cea68fae8179be380a084273c15cfd55",
+      "size": [
+        390,
+        844
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-taro_roque.png",
+      "path": "native/sheet-taro_roque.png",
+      "sha256": "11cea94c4c03d2ef82a54626ca6e5555b79a639515b6bf34490e50669d6f17ca",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-taro_sabio.png",
+      "path": "native/sheet-taro_sabio.png",
+      "sha256": "9b716f3228890ad2783567fb89d0594204108d350089ae0903b45a2e6afc1196",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-duna_cora.png",
+      "path": "native/sheet-duna_cora.png",
+      "sha256": "5a59f99edec41ec92c5cbca27db7e69402bab0b47935dbbaed08e007495f9e40",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-duna_pedernal.png",
+      "path": "native/sheet-duna_pedernal.png",
+      "sha256": "503ce3cf10a34d4fc9f30b6e5936b4635e0fc50e1d5753a7162dbefaca2898a7",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-bruma_ambar.png",
+      "path": "native/sheet-bruma_ambar.png",
+      "sha256": "fc3d5c3c483cc4a5e2f7617c9a69a3f84d8a6501db9be10b8b55f6f02f8f8f0e",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-bruma_nieve.png",
+      "path": "native/sheet-bruma_nieve.png",
+      "sha256": "22bde802bac0c1ff1b2393db9f8fe7c3718cfb90e8ce4f635dd87bea76c18fdf",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-nima.png",
+      "path": "native/sheet-nima.png",
+      "sha256": "efeae6d55c7f5e15dda82dd49202e737733556056ed35fc30dac355b08a02d79",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-luma.png",
+      "path": "native/sheet-luma.png",
+      "sha256": "447fd2d2b2fc447b1d7279cdb5e770729f66a555539c702f5a2492e9dadda316",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-mugo.png",
+      "path": "native/sheet-mugo.png",
+      "sha256": "8ebd18afd62652cf25655947851ad8326ef93ca7a46bb32a2df88cc2c43c7f47",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-sira.png",
+      "path": "native/sheet-sira.png",
+      "sha256": "71369e2489cd5ffe4bd6ee4dae6c1ad1ab38b9aaf226aaa58c7a171845faaf0c",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-iria.png",
+      "path": "native/sheet-iria.png",
+      "sha256": "92eabe5c63b267ae6c2ed4c668fb5bc1a8d01f4fd4270d44877b495b9237b975",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-duna.png",
+      "path": "native/sheet-duna.png",
+      "sha256": "4e4e93f2c6a1099f132324533d590cc07fca5772d828ad79ac6b9c5417b839dd",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-kiro.png",
+      "path": "native/sheet-kiro.png",
+      "sha256": "34d2cea00c882b091c5bf8d6bd3aeefdeb0da2a2d58a1e13b488ec004b01dc70",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-neris.png",
+      "path": "native/sheet-neris.png",
+      "sha256": "d05a27b9d041046b4d507303319ae464ed452c75d8b4d310fed180a2fe6087c7",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-taro.png",
+      "path": "native/sheet-taro.png",
+      "sha256": "1a92f9b7572f02803e264535130f81ecd2bf892a0e4bc2fcb86b154d36c45dd7",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-balam.png",
+      "path": "native/sheet-balam.png",
+      "sha256": "808fb597ec703236f7c47c092fab4e627a7b52d5e6547676d10a160670f30070",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-tepa.png",
+      "path": "native/sheet-tepa.png",
+      "sha256": "315b329070f499cc478f8f67f06d5d77df6f0dc19a3789ac47f0cdd029017b1a",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-xuna.png",
+      "path": "native/sheet-xuna.png",
+      "sha256": "942442d76ce61f730e27560c4502f04faf7c8f89038286f21159a6cf9c209590",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-copal.png",
+      "path": "native/sheet-copal.png",
+      "sha256": "a80bdf781a593931d126673cb50230eaef9200478c701dbf694b8271556d6f2b",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-ascua.png",
+      "path": "native/sheet-ascua.png",
+      "sha256": "41827c24540a396d29b8dd09bc2d625c10e2bd3ff21ac024910ec53f42d065d8",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-vespera.png",
+      "path": "native/sheet-vespera.png",
+      "sha256": "b53a65a3965d2cc7fdf51d463846ea96f4991de0f8751c1a2e5b0ed4c679d2e8",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-onix.png",
+      "path": "native/sheet-onix.png",
+      "sha256": "85607a6154725b47b8c0c58dd480c659bcceba7a1173a01fe8fed099b99b2e70",
+      "size": [
+        1360,
+        880
+      ]
+    },
+    {
+      "first_pass_byte_identical": true,
+      "source": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/illustrated-damage/native-final/sheet-bruma.png",
+      "path": "native/sheet-bruma.png",
+      "sha256": "f03013d235d3d5a57f645559ca571ab53788f5481376f621626e01f421ccd2b6",
+      "size": [
+        1360,
+        880
+      ]
+    }
+  ],
+  "count": 39,
+  "copied_byte_identical": true,
+  "native_validation_sha256": "440f1e43319a62aa26182c552c147249ad5ae44087d0bceb608fca95fd9561d5",
+  "source_scope": "visual clip fixture; no simulated victories or new guard abilities",
+  "evidence_hashes": {
+    "evidence/final-runtime-validation.json": "dee937f63369218630f6e88e0d8c687370f9544d3be4cc23f2ff4239cefc3f8a",
+    "evidence/final-runtime.json": "680a29de1b13e8d0bc0a86dbbab50387ad88a9c9f525a00939374c783cde35d9",
+    "evidence/root-native-art-review.json": "8f62fe6480820448ef0bbd6c2c93eb3b4db1e6c884d98fdfcf0895784dd60a38",
+    "evidence/fighter-art-native-review.json": "19fca251272f4359298b666f8c22d1757eec301c6b6b662d94911b0c3b65ebde",
+    "evidence/first-pass/validation.json": "a77d105e8beea252ab8bf498f342d378ba64d0d9e65347b87a4dece3ea890f57"
+  },
+  "not_live_user_battles": true,
+  "profile_files_opened": false,
+  "review_note": "Root reviewed 11 body sheets (88 shown sprites) and all 16 contexts; fighter_art reviewed the other 12 sheets (96 shown sprites). No visual defects observed. All final screenshots are byte-identical to the reviewed first-pass images. Sheets show 4 clips mirrored, not all40 unique poses."
+}

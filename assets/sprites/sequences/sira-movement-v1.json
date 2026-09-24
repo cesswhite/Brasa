@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "sira",
+  "bank": "movement",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 292,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        48,
+        17,
+        211,
+        292
+      ],
+      "anchor": [
+        99.5,
+        292
+      ]
+    },
+    {
+      "name": "step_back",
+      "region": [
+        361,
+        28,
+        215,
+        281
+      ],
+      "anchor": [
+        107.5,
+        281
+      ]
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        660,
+        105,
+        220,
+        206
+      ],
+      "anchor": [
+        108.5,
+        206
+      ]
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        985,
+        51,
+        241,
+        258
+      ],
+      "anchor": [
+        124.0,
+        258
+      ]
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        41,
+        330,
+        227,
+        274
+      ],
+      "anchor": [
+        113.5,
+        274
+      ]
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        324,
+        332,
+        337,
+        271
+      ],
+      "anchor": [
+        134.0,
+        271
+      ]
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        662,
+        353,
+        345,
+        252
+      ],
+      "anchor": [
+        126.5,
+        252
+      ]
+    },
+    {
+      "name": "recovery",
+      "region": [
+        1025,
+        329,
+        190,
+        274
+      ],
+      "anchor": [
+        95.0,
+        274
+      ]
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        43,
+        704,
+        251,
+        193
+      ],
+      "anchor": [
+        106.5,
+        193
+      ]
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        332,
+        680,
+        317,
+        212
+      ],
+      "anchor": [
+        146.5,
+        212
+      ]
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        718,
+        626,
+        180,
+        313
+      ],
+      "anchor": [
+        25.0,
+        313
+      ]
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        1002,
+        635,
+        204,
+        233
+      ],
+      "anchor": [
+        93.0,
+        262
+      ]
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        65,
+        915,
+        222,
+        270
+      ],
+      "anchor": [
+        89.5,
+        317.5
+      ]
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        362,
+        926,
+        209,
+        293
+      ],
+      "anchor": [
+        106.0,
+        306.5
+      ]
+    },
+    {
+      "name": "landing",
+      "region": [
+        673,
+        1010,
+        235,
+        223
+      ],
+      "anchor": [
+        113.0,
+        223
+      ]
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        985,
+        945,
+        214,
+        287
+      ],
+      "anchor": [
+        107.0,
+        287
+      ]
+    }
+  ],
+  "notes": "Native Godot contact sheet reviewed against effective canonical atlas. Regions contain complete isolated poses with true alpha. One common scale from reference_height. Explicit projected floor anchors preserve airborne poses; no per-frame height normalization."
+}

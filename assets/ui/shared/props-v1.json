@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "texture": "res://assets/ui/shared/props-v1.png",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "columns": 2,
+  "rows": 3,
+  "uniform_grid": false,
+  "frames": [
+    {
+      "id": "tepa_cloth",
+      "region": [
+        26,
+        53,
+        468,
+        445
+      ],
+      "major_component_bounds_xyxy_exclusive": [
+        34,
+        61,
+        486,
+        490
+      ]
+    },
+    {
+      "id": "balam_bandages",
+      "region": [
+        567,
+        118,
+        421,
+        357
+      ],
+      "major_component_bounds_xyxy_exclusive": [
+        575,
+        126,
+        980,
+        467
+      ]
+    },
+    {
+      "id": "ascua_brazier",
+      "region": [
+        43,
+        551,
+        463,
+        387
+      ],
+      "major_component_bounds_xyxy_exclusive": [
+        51,
+        559,
+        498,
+        930
+      ]
+    },
+    {
+      "id": "storm_relic",
+      "region": [
+        628,
+        518,
+        287,
+        420
+      ],
+      "major_component_bounds_xyxy_exclusive": [
+        636,
+        526,
+        907,
+        930
+      ]
+    },
+    {
+      "id": "travel_pack",
+      "region": [
+        27,
+        966,
+        496,
+        518
+      ],
+      "major_component_bounds_xyxy_exclusive": [
+        35,
+        974,
+        515,
+        1476
+      ]
+    },
+    {
+      "id": "arena_medallion",
+      "region": [
+        599,
+        964,
+        385,
+        501
+      ],
+      "major_component_bounds_xyxy_exclusive": [
+        607,
+        972,
+        976,
+        1457
+      ]
+    }
+  ],
+  "notes": "Use explicit regions; the lower row begins above the uniform 1024px division. Six isolated major alpha components are fully contained in disjoint regions. Raw generated pixels preserved; no background removal or raster editing."
+}

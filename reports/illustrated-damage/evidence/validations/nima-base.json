@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        160,
+        216,
+        180,
+        232
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18508
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        156,
+        216,
+        184,
+        232
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18649
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        162,
+        219,
+        188,
+        229
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19623
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        163,
+        216,
+        228,
+        232
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 20265
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        103,
+        242,
+        234,
+        206
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21064
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        104,
+        284,
+        233,
+        164
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 16293
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        148,
+        210,
+        193,
+        238
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18428
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        115,
+        364,
+        282,
+        84
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15158
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "nima",
+  "bank": "base",
+  "source_sha256": "992861ef2fcc5f00e0e72414891803128053e2bc2fb3cd60131691c2cffce3e7",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/nima/base/nima-base.png"
+}

@@ -1,0 +1,275 @@
+{
+  "version": 3,
+  "atlas": "res://assets/fx/combat-v1.png",
+  "effects": {
+    "small_hit": {
+      "region": [
+        187,
+        33,
+        270,
+        258
+      ],
+      "size": 38,
+      "duration": 0.17,
+      "style": "sparks",
+      "count": 7,
+      "emission": 0,
+      "speed": 72,
+      "spread": [
+        3,
+        5
+      ],
+      "color": "ffd5a0"
+    },
+    "heavy_hit": {
+      "region": [
+        648,
+        0,
+        590,
+        312
+      ],
+      "size": 53,
+      "duration": 0.29,
+      "style": "sparks",
+      "count": 11,
+      "emission": 0.035,
+      "speed": 112,
+      "spread": [
+        5,
+        7
+      ],
+      "color": "eeb17b"
+    },
+    "critical_hit": {
+      "region": [
+        133,
+        311,
+        383,
+        343
+      ],
+      "size": 61,
+      "duration": 0.27,
+      "style": "sparks",
+      "count": 13,
+      "emission": 0.025,
+      "speed": 132,
+      "spread": [
+        4,
+        6
+      ],
+      "color": "ffe2a8"
+    },
+    "dust": {
+      "region": [
+        754,
+        364,
+        405,
+        256
+      ],
+      "size": 39,
+      "duration": 0.4,
+      "style": "dust",
+      "count": 9,
+      "emission": 0.06,
+      "speed": 38,
+      "spread": [
+        22,
+        0
+      ],
+      "color": "b2aaa0",
+      "grounded": true
+    },
+    "dash_trail": {
+      "region": [
+        43,
+        665,
+        575,
+        225
+      ],
+      "size": 44,
+      "duration": 0.22,
+      "reverse": true,
+      "style": "wake",
+      "count": 10,
+      "emission": 0.06,
+      "speed": 91,
+      "spread": [
+        6,
+        9
+      ],
+      "color": "c2b3a2"
+    },
+    "landing_dust": {
+      "region": [
+        632,
+        652,
+        607,
+        248
+      ],
+      "size": 54,
+      "duration": 0.42,
+      "style": "dust",
+      "count": 13,
+      "emission": 0.08,
+      "speed": 60,
+      "spread": [
+        30,
+        0
+      ],
+      "color": "aba296",
+      "grounded": true
+    },
+    "charge_energy": {
+      "region": [
+        90,
+        905,
+        459,
+        336
+      ],
+      "size": 35,
+      "duration": 0.46,
+      "style": "embers",
+      "count": 14,
+      "emission": 0.25,
+      "speed": 52,
+      "spread": [
+        15,
+        18
+      ],
+      "color": "ffc477"
+    },
+    "transformation": {
+      "region": [
+        700,
+        897,
+        477,
+        356
+      ],
+      "size": 49,
+      "duration": 0.74,
+      "style": "embers",
+      "count": 22,
+      "emission": 0.38,
+      "speed": 61,
+      "spread": [
+        27,
+        30
+      ],
+      "color": "ffc477"
+    },
+    "dust_small": {
+      "size": 28,
+      "duration": 0.3,
+      "style": "dust",
+      "count": 6,
+      "emission": 0.03,
+      "speed": 28,
+      "spread": [
+        12,
+        0
+      ],
+      "color": "b2aaa0",
+      "grounded": true
+    },
+    "dust_medium": {
+      "size": 40,
+      "duration": 0.38,
+      "style": "dust",
+      "count": 10,
+      "emission": 0.05,
+      "speed": 40,
+      "spread": [
+        20,
+        0
+      ],
+      "color": "b2aaa0",
+      "grounded": true
+    },
+    "dust_heavy": {
+      "size": 52,
+      "duration": 0.45,
+      "style": "dust",
+      "count": 14,
+      "emission": 0.07,
+      "speed": 56,
+      "spread": [
+        26,
+        0
+      ],
+      "color": "b2aaa0",
+      "grounded": true
+    },
+    "footplant_dust": {
+      "size": 26,
+      "duration": 0.24,
+      "style": "dust",
+      "count": 5,
+      "emission": 0.025,
+      "speed": 27,
+      "spread": [
+        9,
+        0
+      ],
+      "color": "aea499",
+      "grounded": true
+    },
+    "dash_dust": {
+      "size": 34,
+      "duration": 0.32,
+      "style": "slide",
+      "count": 9,
+      "emission": 0.055,
+      "speed": 70,
+      "spread": [
+        12,
+        0
+      ],
+      "color": "b2aaa0",
+      "grounded": true
+    },
+    "slide_dust": {
+      "size": 38,
+      "duration": 0.37,
+      "style": "slide",
+      "count": 11,
+      "emission": 0.075,
+      "speed": 57,
+      "spread": [
+        22,
+        0
+      ],
+      "color": "b2aaa0",
+      "grounded": true
+    },
+    "knockback_dust": {
+      "size": 44,
+      "duration": 0.42,
+      "style": "slide",
+      "count": 12,
+      "emission": 0.08,
+      "speed": 65,
+      "spread": [
+        24,
+        0
+      ],
+      "color": "aba296",
+      "grounded": true
+    },
+    "stone_debris": {
+      "size": 30,
+      "duration": 0.46,
+      "style": "debris",
+      "count": 6,
+      "emission": 0.025,
+      "speed": 65,
+      "spread": [
+        18,
+        0
+      ],
+      "color": "8f8577",
+      "grounded": true
+    }
+  },
+  "note": "Organic particles plus phase-marked ground contacts. Legacy atlas regions retained only for effect_texture compatibility; no body-wide illumination. Paired anatomical FX are a separate synchronized fighter track.",
+  "renderer": "organic_particles"
+}

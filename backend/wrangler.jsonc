@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "brasa-identity-local",
+  "main": "dist/worker.js",
+  "assets": {"directory":"./web/public","binding":"AUTH_ASSETS","run_worker_first":true},
+  "compatibility_date": "2026-07-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {"AUTH_MODE":"local_dev"},
+  "d1_databases": [{
+    "binding":"DB", "database_name":"brasa-local",
+    "database_id":"00000000-0000-4000-8000-000000000001",
+    "migrations_dir":"migrations"
+  }]
+}

@@ -1,0 +1,207 @@
+{
+  "scope": "Independent native FX review; explicitly staged presentation demos plus real engine record replay in memory",
+  "created_at": "2026-09-21T04:07:01.365241+00:00",
+  "functional_native": {
+    "checks": 185,
+    "failures": 0,
+    "log": {
+      "path": "work/organic-fx/test-organic-native.log",
+      "bytes": 189,
+      "sha256": "1dc58422754a22d4589a344a61d0604defd86652a59407402e0fee7d291dc05c"
+    }
+  },
+  "headless_subset_not_additive": {
+    "checks": 172,
+    "failures": 0
+  },
+  "baseline": {
+    "checks": 21,
+    "failures": 0,
+    "log": {
+      "path": "work/organic-fx/test-organic-baseline.log",
+      "bytes": 188,
+      "sha256": "3b2e2311874b446a7c82c737cbdbbf5830fd81f085502b9b6b07f5a1e0b842eb"
+    },
+    "uses_original_manifest": true
+  },
+  "video_fixture_not_additive": {
+    "checks": 12,
+    "failures": 0,
+    "log": {
+      "path": "work/organic-fx/test-organic-video.log",
+      "bytes": 194,
+      "sha256": "b19865a8909b26907af3a9ad9c45e47850cb7688e9f74c5a8f4a1563811a6d0e"
+    }
+  },
+  "source_hashes": [
+    {
+      "path": "outputs/Brasa/tests/test_organic_fx.gd",
+      "bytes": 19102,
+      "sha256": "d271a0f326fafb96954104472292fcbde02101cd6ebba640e12d1600db42967e"
+    },
+    {
+      "path": "outputs/Brasa/scripts/fighter_view.gd",
+      "bytes": 39370,
+      "sha256": "30d42acaea4f0e1782843023e1a5b2c97ef6ed4322e4096b7857e3dfb8ccde46"
+    },
+    {
+      "path": "outputs/Brasa/scripts/combat_fx.gd",
+      "bytes": 15218,
+      "sha256": "b735174c24f6efaf29114185e34d44745496b8a5a1b88baf121402cc1924bbba"
+    },
+    {
+      "path": "outputs/Brasa/scripts/particle_ink.gd",
+      "bytes": 1784,
+      "sha256": "973590f2aa39592bd3a58a70a10d47d5a0040996aef6c8c644f1a03d1c53284f"
+    },
+    {
+      "path": "outputs/Brasa/scripts/main.gd",
+      "bytes": 91928,
+      "sha256": "18528c4eccf7dedd2c646bc2776435a93612efa79184f08aed322d1d21b3f728"
+    },
+    {
+      "path": "outputs/Brasa/scripts/ui/battle_replay_panel.gd",
+      "bytes": 10524,
+      "sha256": "d41e9397c3459660091cbad5f2fb0751fa7f3e644ee7f16c2b5f6c7c47f191dc"
+    },
+    {
+      "path": "outputs/Brasa/data/combat_fx.json",
+      "bytes": 2729,
+      "sha256": "e2aa2e63295534d883561356790cf62e10f0d9e9b40cead7f9598ca3ac8797ea"
+    }
+  ],
+  "final_pngs": [
+    {
+      "path": "work/organic-fx/after/1-1360x880.png",
+      "bytes": 1150986,
+      "sha256": "5b9a15ff4bddbf969f95d0f1efa938f7e983b97ef16f43857764ffa55b2d2a4b"
+    },
+    {
+      "path": "work/organic-fx/after/1-390x844.png",
+      "bytes": 340936,
+      "sha256": "0f88bc6473d24d410e6bd13ff31f1a1569a66484353d20ded984d17060f8c156"
+    },
+    {
+      "path": "work/organic-fx/after/2-1360x880.png",
+      "bytes": 1180558,
+      "sha256": "e870b907d802bbc1c7c46755226c051581897468708db56f3d96341daee5606a"
+    },
+    {
+      "path": "work/organic-fx/after/2-390x844.png",
+      "bytes": 350964,
+      "sha256": "fe0c69a3343e895398e3d24f49e4e1f41e8159c35925737d7f144030ad490d06"
+    },
+    {
+      "path": "work/organic-fx/after/3-1360x880.png",
+      "bytes": 1170515,
+      "sha256": "305e81dbbfffec39ce33da3c1d560b37a37784038b0d50cad39e05f566a18ac5"
+    },
+    {
+      "path": "work/organic-fx/after/3-390x844.png",
+      "bytes": 345370,
+      "sha256": "87d646a037331e8090c61be82c9cdec9f4562c03d20fb590e952d65308fff70d"
+    },
+    {
+      "path": "work/organic-fx/after/4-1360x880.png",
+      "bytes": 1167808,
+      "sha256": "551c1d25fdbecc00ab0567e212bd40cb99ead1c459b83fd11be4cbc269eb03fa"
+    },
+    {
+      "path": "work/organic-fx/after/4-390x844.png",
+      "bytes": 347763,
+      "sha256": "5d820091c6a6ee43239a04ed568091d92f3ff2b6a2e7ec8e8ea7ed1f3e7649cb"
+    },
+    {
+      "path": "work/organic-fx/after/replay-paused-1360x880.png",
+      "bytes": 1051771,
+      "sha256": "3869c87e7af850b1a2c81385b15b6e929c655b58a29cb3836abadc5b52d40c1f"
+    },
+    {
+      "path": "work/organic-fx/after/replay-paused-390x844.png",
+      "bytes": 280771,
+      "sha256": "e31608fce5ce6dcacaac951cf05049066715b5cffedccb37f502a1cdf69ef46b"
+    },
+    {
+      "path": "work/organic-fx/after/replay-reduced-1360x880.png",
+      "bytes": 1051591,
+      "sha256": "244a183f6e4d860d81dc80667aea2955d1ec0f84347ac1ea913344b9e9d46b2b"
+    },
+    {
+      "path": "work/organic-fx/after/replay-reduced-390x844.png",
+      "bytes": 281339,
+      "sha256": "03f75b0ae2a05a8f04f03d78ec7be85626365a840d776c41d1c6d756553194f7"
+    }
+  ],
+  "baseline_pngs": [
+    {
+      "path": "work/organic-fx/before/1-1360x880.png",
+      "bytes": 1174884,
+      "sha256": "642d193cf047d5993535e8396c0f26a3ac572dcf866249b5544e72ea03cdbbb3"
+    },
+    {
+      "path": "work/organic-fx/before/1-390x844.png",
+      "bytes": 347595,
+      "sha256": "65126362d35c80644dd6f2a174e0c7a5cc1876e2734e49697b278020c67171a5"
+    },
+    {
+      "path": "work/organic-fx/before/2-1360x880.png",
+      "bytes": 1220252,
+      "sha256": "e10355d6c836f5ec19c9b3063af02093b975983e77ef864aac35248f3b52d850"
+    },
+    {
+      "path": "work/organic-fx/before/2-390x844.png",
+      "bytes": 358799,
+      "sha256": "605b7a9c5e75c4f181b9f5db334fde50b0988dfb1e2d1d6c124021f6b4696f6d"
+    },
+    {
+      "path": "work/organic-fx/before/3-1360x880.png",
+      "bytes": 1201745,
+      "sha256": "7331cc56ab135e3daa4a5c3c01e9ca87defa5293898fbc068efdaef7190848da"
+    },
+    {
+      "path": "work/organic-fx/before/3-390x844.png",
+      "bytes": 351922,
+      "sha256": "1e2e1e28420a5662e9fccc7c748ef71f681f69831348d7c5e039e2a5b2615599"
+    },
+    {
+      "path": "work/organic-fx/before/4-1360x880.png",
+      "bytes": 1172324,
+      "sha256": "b2489b9d8d103a6ee5b5dc6b24e73cc8bc85ae9e25dfb1303781f3d3a43c93b3"
+    },
+    {
+      "path": "work/organic-fx/before/4-390x844.png",
+      "bytes": 348274,
+      "sha256": "b9917a6f33d6a10461427df1c10a078ddc25d656289e07ba3eddc4c6b6491540"
+    }
+  ],
+  "videos": [
+    {
+      "path": "work/organic-fx/organic-fx-desktop.mp4",
+      "bytes": 528983,
+      "sha256": "d25894b6b45620e67c439ec3d45d09ad2be3e9267d66b54b7e2b406ae8793802",
+      "width": 1360,
+      "height": 880,
+      "fps": 30,
+      "frames": 96,
+      "duration_seconds": 3.2,
+      "source": "Direct native Godot PNG frame sequence",
+      "audio": false
+    },
+    {
+      "path": "work/organic-fx/organic-fx-mobile.mp4",
+      "bytes": 248895,
+      "sha256": "2299cf802af1503c710bc1458645ca399da594337d22aa15c1f932a0025928fc",
+      "width": 390,
+      "height": 844,
+      "fps": 30,
+      "frames": 96,
+      "duration_seconds": 3.2,
+      "source": "Direct native Godot PNG frame sequence",
+      "audio": false
+    }
+  ],
+  "manual_demonstration_clock": true,
+  "real_user_saves_accessed": false,
+  "raster_assets_modified": false,
+  "observations": "Visible small particles; no enclosing circles; unobstructed faces and sample HUD; leap and mirrored anchors fit. Mobile effects remain deliberately subtle; native motion evidence complements stills."
+}

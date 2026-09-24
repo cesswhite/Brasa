@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        87,
+        127,
+        297,
+        321
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 48523
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        85,
+        125,
+        301,
+        323
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 47682
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        80,
+        125,
+        320,
+        323
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 49270
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        86,
+        123,
+        351,
+        325
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 50247
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        66,
+        139,
+        309,
+        309
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 54392
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        60,
+        210,
+        334,
+        238
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 40497
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        91,
+        97,
+        291,
+        351
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 48988
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        74,
+        327,
+        359,
+        121
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 28778
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "ascua",
+  "bank": "base",
+  "source_sha256": "c79b107b5bb45bbf539448a6ba8ca23b285e012226d73b9f5be4375b33d9bad2",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/ascua/base/ascua-base.png"
+}

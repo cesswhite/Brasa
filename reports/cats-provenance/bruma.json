@@ -1,0 +1,214 @@
+[
+  {
+    "body_id": "bruma",
+    "bank": "canonical",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-de2e68f9-9f11-41bb-8df1-94012bcdc377.png",
+    "destination": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/bruma-v1.png",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/bruma-v1.json",
+    "sha256": "fe4994f042bc0fa03662ce449a54d7a3aa8c0652eed471f1a963210ad1e89042",
+    "sidecar_sha256": "2958b3f2fc5ed0ee375839181cd251c85847a15b755d2f575faaee6b5a86fa40",
+    "size": [
+      1774,
+      887
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "frames": 8,
+    "reference_height": 411,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-native.png",
+    "native_log": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-native.log",
+    "prompts": [
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-prompt.txt",
+        "text": "Use case: stylized-concept.\nAsset type: production transparent 2D game sprite atlas, exactly FOUR COLUMNS by TWO ROWS, 8 full-body poses, wide landscape 2:1 canvas.\nInput image 1: reference for the painterly Brasa game rendering style ONLY, not its badger species or clothing. Invent the specified cat as a distinct companion.\n\nCharacter: BRUMA, an adult anthropomorphic domestic shorthair CAT with solid neutral SILVER-GRAY fur, soft short coat, broad calm face and a slightly sturdy athletic build about 3.2 heads tall. Clear jade-GREEN irises in both visible eyes. Normal small triangular domestic-cat ears WITHOUT lynx tufts. A long slender silver-gray tail, curved in a compact S close to his body so no pose extends far behind the feet. No white mask, no white chest patch, no blue fur, no lynx spots, no mane.\nIdentical outfit every pose: cropped sleeveless muted PLUM vest, simple SAGE-GREEN fabric waist sash, warm dark-brown trousers, ivory cloth wrist and ankle wraps, tiny discreet copper fastening at vest. Bare feline paws. No hat, no weapons, no extra accessories.\nStyle: polished hand-painted gouache fantasy game art, tactile soft fur and cloth, controlled amber rim lighting, subtle teal reflected shadows that do not turn gray fur blue. Clear readable silhouette at small game scale, mature proportions, not a baby mascot, not photoreal, not 3D plastic. Same outfit, eye color, physical scale and anatomy in every pose. RIGHT-facing three-quarter side view throughout, including victory and defeat.\n\nGrid order, left to right:\nTOP ROW: 1 calm ready guard idle; 2 same guard breathing in, subtly raised chest; 3 punch windup with elbow drawn back; 4 extended right-facing straight punch.\nBOTTOM ROW: 5 recoil from a body hit with paws close to body and tail tucked; 6 low evasive lean/dodge; 7 restrained victorious raised fist, still right-facing; 8 defeated lying on side toward right, tail curled beside legs.\nEach pose entirely inside its own invisible cell, standing characters occupy roughly 65 percent of cell height, generous 12 percent transparent gutters. Common planted-feet baseline near 84 percent cell height; fallen character lies near that baseline at the SAME physical scale, never stretched tall. Keep ears, paws, raised fist and full tail clear of every outer edge and neighbor.\n\nDeliver a PNG with a REAL TRANSPARENT ALPHA CHANNEL. Nothing except exactly eight isolated Bruma characters. No background, checkerboard, floor, contact shadow, environment, lettering, labels, divider lines, numbers, particles or glow effects.\n"
+      },
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-alpha-prompt.txt",
+        "text": "Use case: background-extraction. Remove the checkerboard background completely. Keep exactly the eight silver-gray cat characters isolated. Output a PNG with a REAL TRANSPARENT ALPHA CHANNEL. Preserve all painting, jade-green eyes, fur color, clothing, anatomy, positions, poses and size. Do not draw a replacement background, checkerboard, shadows or floor.\n"
+      }
+    ],
+    "attempts": [
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-75a64eb1-81bc-4c87-8592-b7a7ef286dab.png",
+        "sha256": "1a56d37b7006c6042a47ac4e23087fceb2b2d962ec8fad95b84b7c7fed1adce9",
+        "mode": "RGB",
+        "size": [
+          1774,
+          887
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-prompt.txt",
+        "status": "rejected RGB checkerboard"
+      },
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-de2e68f9-9f11-41bb-8df1-94012bcdc377.png",
+        "sha256": "fe4994f042bc0fa03662ce449a54d7a3aa8c0652eed471f1a963210ad1e89042",
+        "mode": "RGBA",
+        "size": [
+          1774,
+          887
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/canonical-alpha-prompt.txt",
+        "status": "approved RGBA"
+      }
+    ],
+    "pixel_policy": "Approved source PNG copied byte-for-byte. No external raster edits; only native image_gen corrections, read-only alpha inspection, JSON metadata and native Godot previews.",
+    "visible_coverage": 1.0,
+    "rectangular_regions_disjoint": true,
+    "visual_review": "Silver-gray domestic cat, jade green eyes, plum vest, sage sash. Compact full tails; complete poses, stable common physical scale. Native preview inspected on dark teal."
+  },
+  {
+    "body_id": "bruma",
+    "bank": "movement",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-3944fc16-c7af-428e-9b3a-78ebd0c3630e.png",
+    "destination": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/bruma-movement-v1.png",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/bruma-movement-v1.json",
+    "sha256": "fe7f0ce215400d2dc4172302f2e52b409883f19e6020c386fc762d4dc0c06755",
+    "sidecar_sha256": "cd58a5c663d7715d737df092570bf6ac3c1d58e66d90a207e3a253cd8a0dde33",
+    "size": [
+      1377,
+      1142
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "frames": 16,
+    "reference_height": 257,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/cats/bruma/movement-final/bruma-movement.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/movement-native.png",
+    "native_log": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/movement-native.log",
+    "prompts": [
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/movement-prompt.txt",
+        "text": "Use case: identity-preserve.\nAsset type: transparent production 2D game animation atlas, EXACTLY FOUR COLUMNS by FOUR ROWS, 16 full-body poses.\nInput image 1 is the LOCKED CANONICAL IDENTITY of Bruma. Preserve this exact silver-gray domestic shorthair cat, jade-GREEN eyes, triangular ears with NO tufts, calm broad face, sturdy adult build, plum vest, sage waist sash, brown trousers, ivory wraps and tiny copper clasp. Preserve the same painterly gouache rendering, amber rim, gray fur that remains neutral gray, and every costume detail. Never turn him blue, white, striped, spotted, a lynx or another species. No new clothes or equipment.\n\nEach cell depicts the SAME physical scale. Standing body is roughly65% of the cell height with 12% clear transparent gutters. Keep every paw, ear and the entire long tail inside its cell. Tail follows the pose and curls closely behind or alongside hips/legs; it must never stretch far backward. All figures face RIGHT in a consistent side-three-quarter view. Adult about3heads tall, not baby/chibi. Same readable green eyes in every open-eyed pose.\nReturn actual PNG with REAL TRANSPARENT ALPHA. No background, checkerboard, ground, shadow, panels, lettering, numbers, borders, speed lines, particles or external glow. Hands and feet must not cross between cells. Common projected floor baseline near84%cell height. Airborne and fallen poses keep the SAME physical scale as standing; do not enlarge low poses.\n\nMOVEMENT bank, ordered left to right by rows:\nROW1: 1 guard_shift, alert calm ready guard with a slight weight shift; 2 step_back, retreating one controlled short step with guard held; 3 charge_crouch, compact coiled crouch, paws ready; 4 heavy_windup, strong elbow pulled back for a heavy punch, hips rotating.\nROW2: 5 quick_windup, short compact punch preparation; 6 quick_extend, fast straight rightward punch fully extended; 7 follow_through, punch continued with torso rotation; 8 recovery, forearms returning naturally to guard.\nROW3: 9 dash_lean, body leaning forward with tucked elbows; 10 dash_stride, low forward running stride, tail curved close; 11 jump_start, two feet loaded in crouch; 12 jump_apex, midair with knees tucked and guard raised, feet clearly above projected ground.\nROW4: 13 jump_strike, airborne forward punch with body diagonal and legs tucked; 14 jump_fall, descending with legs reaching toward ground; 15 landing, compressed stable landing on feet; 16 guard_settle, resettled calm guard with weight balanced.\nAll16 poses distinct but anatomically and materially coherent with the canonical Bruma. No magic color change. Keep breathing subtle, punches dynamic and silhouettes compact.\n"
+      },
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/sequence-alpha-prompt.txt",
+        "text": "Remove the background from this sprite sheet. Transparent background. Keep the sixteen gray domestic cat poses unchanged, including their green eyes and clothes. Remove the checkerboard completely and export genuine transparent PNG with alpha.\n"
+      },
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/movement-spacing-prompt.txt",
+        "text": "Use case: precise-object-edit. Correct ONLY the spacing/layout of this transparent 16-pose Bruma cat sprite atlas. Keep the exact sixteen existing poses and their left-to-right row order, silver-gray fur, green eyes, plum vest, sage sash, brown trousers, ivory wraps, copper clasp and painterly detail. Uniformly shrink ALL sixteen figures to 85% of their current size around each figure's center, giving all poses the SAME physical scale. Place them in a clean 4-column by4-row invisible grid with at least30 pixels of fully transparent gutter between the complete silhouettes of neighboring cells. In particular, row3 running feet and row4 jumping ears must be clearly separated vertically: currently they crowd each other. Keep airborne/lying poses at normal scale and preserve their relative ground projection. Do not change anatomy or motion, do not omit or add poses. Keep ears, whole tails, fists and feet inside the canvas. Return a PNG with actual transparent alpha, no background, no checkerboard, no floor or shadows.\n"
+      }
+    ],
+    "attempts": [
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-428221f8-ea8a-444d-9076-4166bb8929b3.png",
+        "sha256": "788cd5cd95967c375a1e1e6049a57438b0a14fb0592dd4018d7d3ca7d573beb9",
+        "mode": "RGB",
+        "size": [
+          1378,
+          1142
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/movement-prompt.txt",
+        "status": "rejected RGB checkerboard"
+      },
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-a511f33b-8eef-4d59-b4dc-d19a2e74cc9d.png",
+        "sha256": "e51ad8b34afaf89b8b7119f9a2923b894019025310f356fd424d4834457524b1",
+        "mode": "RGBA",
+        "size": [
+          1377,
+          1142
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/sequence-alpha-prompt.txt",
+        "status": "rejected rectangular overlaps between rows3 and4"
+      },
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-bfe91d1e-03e0-4e1d-a193-725e8b2c4ded.png",
+        "sha256": "ad215a0f757b8f98de8c699e0db119b9f638902703d6cc3f27da9b293f34434f",
+        "mode": "RGB",
+        "size": [
+          1377,
+          1142
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/movement-spacing-prompt.txt",
+        "status": "spacing corrected; RGB needs alpha extraction"
+      },
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-3944fc16-c7af-428e-9b3a-78ebd0c3630e.png",
+        "sha256": "fe7f0ce215400d2dc4172302f2e52b409883f19e6020c386fc762d4dc0c06755",
+        "mode": "RGBA",
+        "size": [
+          1377,
+          1142
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/sequence-alpha-prompt.txt",
+        "status": "approved RGBA and disjoint regions"
+      }
+    ],
+    "pixel_policy": "Approved source PNG copied byte-for-byte. No external raster edits; only native image_gen corrections, read-only alpha inspection, JSON metadata and native Godot previews.",
+    "visible_coverage": 1.0,
+    "rectangular_regions_disjoint": true,
+    "visual_review": "Silver-gray domestic cat, jade green eyes, plum vest, sage sash. Compact full tails; complete poses, stable common physical scale. Native preview inspected on dark teal."
+  },
+  {
+    "body_id": "bruma",
+    "bank": "reactions",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-4094e994-ca07-447b-83d6-445a3f26c8e7.png",
+    "destination": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/bruma-reactions-v1.png",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/bruma-reactions-v1.json",
+    "sha256": "5dea76be86b14ba8eb453f4a41e14dae77a49c8444bdf95c5bc52fccbd2d343f",
+    "sidecar_sha256": "1d86e5f1e478c2a6083854fa3bada1357ebbb6c57e2622be28d75a9d9cf5ee27",
+    "size": [
+      1350,
+      1165
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "frames": 16,
+    "reference_height": 291,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/cats/bruma/reactions/bruma-reactions.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/reactions-native.png",
+    "native_log": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/reactions-native.log",
+    "prompts": [
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/reactions-prompt.txt",
+        "text": "Use case: identity-preserve.\nAsset type: transparent production 2D game animation atlas, EXACTLY FOUR COLUMNS by FOUR ROWS, 16 full-body poses.\nInput image 1 is the LOCKED CANONICAL IDENTITY of Bruma. Preserve this exact silver-gray domestic shorthair cat, jade-GREEN eyes, triangular ears with NO tufts, calm broad face, sturdy adult build, plum vest, sage waist sash, brown trousers, ivory wraps and tiny copper clasp. Preserve the same painterly gouache rendering, amber rim, gray fur that remains neutral gray, and every costume detail. Never turn him blue, white, striped, spotted, a lynx or another species. No new clothes or equipment.\n\nEach cell depicts the SAME physical scale. Standing body is roughly65% of the cell height with 12% clear transparent gutters. Keep every paw, ear and the entire long tail inside its cell. Tail follows the pose and curls closely behind or alongside hips/legs; it must never stretch far backward. All figures face RIGHT in a consistent side-three-quarter view. Adult about3heads tall, not baby/chibi. Same readable green eyes in every open-eyed pose.\nReturn actual PNG with REAL TRANSPARENT ALPHA. No background, checkerboard, ground, shadow, panels, lettering, numbers, borders, speed lines, particles or external glow. Hands and feet must not cross between cells. Common projected floor baseline near84%cell height. Airborne and fallen poses keep the SAME physical scale as standing; do not enlarge low poses.\n\nREACTIONS bank, ordered left to right by rows:\nROW1: 1 light_hit, subtle shoulder recoil with guard; 2 body_hit, abdomen folded slightly inward and paw reacting; 3 heavy_hit, strong backward recoil with chest open; 4 critical_stagger, loss of balance with one knee raised and torso leaning back, tail tucked.\nROW2: 5 fall_start, knees failing and body beginning to collapse; 6 fall_mid, genuine midair falling sideways toward right, body nearly horizontal at its normal scale; 7 grounded, defeated lying on right-facing side with tail curled along legs; 8 getup_support, hands and one knee pressing into floor to rise.\nROW3: 9 getup_kneel, one knee up and weight returning; 10 getup_rise, half-standing through legs with guard restored; 11 low_health, tired but determined slightly hunched standing; 12 victory_start, beginning restrained celebratory fist lift.\nROW4: 13 victory_peak, one proud fist raised while still RIGHT-facing; 14 transform_start, a quiet focused inward breath with both paws briefly near chest; 15 transform_peak, chest lifted and posture confidently open; 16 transformed_idle, settled calm upright guard, same unchanged cat and clothes.\nLast3 are nonmagical focus poses: no changed fur or eye color, no fire, light aura, crown or particles. All16 poses distinct and continuous where they form falling and getting-up sequence.\n"
+      },
+      {
+        "path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/sequence-alpha-prompt.txt",
+        "text": "Remove the background from this sprite sheet. Transparent background. Keep the sixteen gray domestic cat poses unchanged, including their green eyes and clothes. Remove the checkerboard completely and export genuine transparent PNG with alpha.\n"
+      }
+    ],
+    "attempts": [
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-2f08601e-497f-4e0c-b382-9dd5135d6238.png",
+        "sha256": "5238c9ef00d45eb4aa1d7fa140c466add3cc0220f7529d858caf9e18ddc14590",
+        "mode": "RGB",
+        "size": [
+          1350,
+          1165
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/reactions-prompt.txt",
+        "status": "rejected RGB checkerboard"
+      },
+      {
+        "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-4094e994-ca07-447b-83d6-445a3f26c8e7.png",
+        "sha256": "5dea76be86b14ba8eb453f4a41e14dae77a49c8444bdf95c5bc52fccbd2d343f",
+        "mode": "RGBA",
+        "size": [
+          1350,
+          1165
+        ],
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/bruma/sequence-alpha-prompt.txt",
+        "status": "approved RGBA"
+      }
+    ],
+    "pixel_policy": "Approved source PNG copied byte-for-byte. No external raster edits; only native image_gen corrections, read-only alpha inspection, JSON metadata and native Godot previews.",
+    "visible_coverage": 1.0,
+    "rectangular_regions_disjoint": true,
+    "visual_review": "Silver-gray domestic cat, jade green eyes, plum vest, sage sash. Compact full tails; complete poses, stable common physical scale. Native preview inspected on dark teal."
+  }
+]

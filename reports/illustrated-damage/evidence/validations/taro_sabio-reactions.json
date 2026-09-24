@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        139,
+        190,
+        231,
+        261
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32701
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        139,
+        210,
+        234,
+        241
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 30763
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        115,
+        197,
+        247,
+        254
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34021
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        104,
+        190,
+        281,
+        261
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 35926
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        101,
+        197,
+        316,
+        253
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 39927
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        92,
+        243,
+        334,
+        200
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38752
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        50,
+        324,
+        379,
+        122
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31427
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        112,
+        258,
+        313,
+        190
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35546
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        131,
+        192,
+        250,
+        253
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37982
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        126,
+        185,
+        256,
+        264
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38685
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        112,
+        197,
+        240,
+        254
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34843
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        129,
+        171,
+        230,
+        279
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36270
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        130,
+        137,
+        249,
+        312
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 38268
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        112,
+        236,
+        322,
+        202
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 39243
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        93,
+        163,
+        322,
+        286
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 43920
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        135,
+        162,
+        241,
+        290
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37781
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "taro_sabio",
+  "bank": "reactions",
+  "source_sha256": "0cfdb76b110f25f87e1aec2ec4bceb91c23bf433268b3190d58e5826906c2cfc",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/taro_sabio/reactions/taro_sabio-reactions.png"
+}

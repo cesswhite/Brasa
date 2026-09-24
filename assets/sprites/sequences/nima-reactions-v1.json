@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "body_id": "nima",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 263,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        45,
+        34,
+        231,
+        298
+      ],
+      "anchor": [
+        118.5,
+        294
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        365,
+        62,
+        220,
+        271
+      ],
+      "anchor": [
+        110.0,
+        267
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        645,
+        47,
+        290,
+        286
+      ],
+      "anchor": [
+        180.0,
+        282
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        981,
+        66,
+        254,
+        269
+      ],
+      "anchor": [
+        138.0,
+        265
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        12,
+        370,
+        299,
+        231
+      ],
+      "anchor": [
+        204.0,
+        227
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        336,
+        429,
+        286,
+        168
+      ],
+      "anchor": [
+        151.0,
+        168
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        637,
+        498,
+        331,
+        101
+      ],
+      "anchor": [
+        165.0,
+        97
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        990,
+        408,
+        253,
+        194
+      ],
+      "anchor": [
+        126.5,
+        190
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        56,
+        684,
+        213,
+        229
+      ],
+      "anchor": [
+        117.5,
+        225
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        360,
+        642,
+        224,
+        280
+      ],
+      "anchor": [
+        119.0,
+        276
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        690,
+        650,
+        196,
+        276
+      ],
+      "anchor": [
+        98.5,
+        272
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        992,
+        630,
+        235,
+        296
+      ],
+      "anchor": [
+        126.0,
+        292
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        45,
+        916,
+        235,
+        312
+      ],
+      "anchor": [
+        130.5,
+        308
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        350,
+        948,
+        240,
+        278
+      ],
+      "anchor": [
+        128.5,
+        274
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        672,
+        958,
+        247,
+        268
+      ],
+      "anchor": [
+        123.5,
+        264
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        985,
+        955,
+        235,
+        271
+      ],
+      "anchor": [
+        122.5,
+        267
+      ]
+    }
+  ]
+}

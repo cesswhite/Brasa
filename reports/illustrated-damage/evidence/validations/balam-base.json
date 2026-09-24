@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        138,
+        182,
+        225,
+        266
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 30775
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        137,
+        181,
+        227,
+        267
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30341
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        134,
+        184,
+        277,
+        264
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32576
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        125,
+        187,
+        298,
+        261
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 31947
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        123,
+        189,
+        252,
+        259
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 32312
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        139,
+        265,
+        276,
+        183
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27427
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        151,
+        165,
+        213,
+        283
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33558
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        84,
+        345,
+        343,
+        103
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 25395
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "balam",
+  "bank": "base",
+  "source_sha256": "cd26ae6a981080a1f077d9f5fa857976b17cab53df87de90c13f00c502d992c9",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/balam/base/balam-base.png"
+}

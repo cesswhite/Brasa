@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        115,
+        230,
+        223,
+        218
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26825
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        114,
+        227,
+        228,
+        221
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27153
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        123,
+        235,
+        232,
+        213
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 28273
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        121,
+        234,
+        250,
+        214
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 27081
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        129,
+        230,
+        212,
+        218
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 22903
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        163,
+        246,
+        190,
+        202
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23785
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        111,
+        206,
+        225,
+        242
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 27352
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        122,
+        328,
+        257,
+        120
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21001
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "copal",
+  "bank": "base",
+  "source_sha256": "67df96e5c4b7074e0c07d904a080ad567f73f35b81ff744a0aebe7dbacb1a615",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/copal/base/copal-base.png"
+}

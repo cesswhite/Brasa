@@ -1,0 +1,71 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "note": "Regions surround the eight isolated silhouettes at alpha >= 31/255; irregular atlas gutters preserve raised hands and extended limbs. FighterView derives every frame scale from idle and grounds each silhouette independently. Source PNG is unmodified.",
+  "frames": [
+    {
+      "region": [
+        54,
+        19,
+        304,
+        405
+      ]
+    },
+    {
+      "region": [
+        480,
+        17,
+        300,
+        407
+      ]
+    },
+    {
+      "region": [
+        908,
+        57,
+        335,
+        367
+      ]
+    },
+    {
+      "region": [
+        1333,
+        43,
+        411,
+        381
+      ]
+    },
+    {
+      "region": [
+        54,
+        468,
+        324,
+        391
+      ]
+    },
+    {
+      "region": [
+        481,
+        522,
+        361,
+        335
+      ]
+    },
+    {
+      "region": [
+        944,
+        432,
+        289,
+        434
+      ]
+    },
+    {
+      "region": [
+        1275,
+        692,
+        470,
+        156
+      ]
+    }
+  ]
+}

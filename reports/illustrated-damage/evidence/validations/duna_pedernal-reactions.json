@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        116,
+        165,
+        276,
+        283
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 39474
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        110,
+        200,
+        260,
+        248
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 39108
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        120,
+        179,
+        254,
+        269
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 38917
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        116,
+        206,
+        298,
+        242
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 39724
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        98,
+        242,
+        300,
+        207
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 39826
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        90,
+        276,
+        314,
+        170
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 35024
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        84,
+        313,
+        325,
+        135
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 31656
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        100,
+        235,
+        294,
+        213
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 32468
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        116,
+        231,
+        263,
+        217
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 35843
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        105,
+        191,
+        265,
+        257
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 36696
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        122,
+        199,
+        234,
+        249
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 35270
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        121,
+        166,
+        244,
+        282
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 35579
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        110,
+        135,
+        260,
+        313
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 39902
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        104,
+        181,
+        267,
+        267
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 40048
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        106,
+        175,
+        270,
+        273
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 41804
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        105,
+        184,
+        269,
+        264
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 38751
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "duna_pedernal",
+  "bank": "reactions",
+  "source_sha256": "e3a0bb3d091deb4f18a644440defeafb24205ea33afabaa89fcc7032a53e7e03",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/duna_pedernal/reactions/duna_pedernal-reactions.png"
+}

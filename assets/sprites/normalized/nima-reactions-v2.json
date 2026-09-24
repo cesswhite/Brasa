@@ -1,0 +1,1419 @@
+{
+  "version": 2,
+  "body_id": "nima",
+  "bank": "reactions",
+  "profile_id": "nima:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          277.547,
+          298.964
+        ],
+        "chest": [
+          277.547,
+          298.964
+        ],
+        "body": [
+          277.547,
+          298.964
+        ],
+        "hand": [
+          326.927,
+          293.577
+        ]
+      },
+      "alpha_bounds_px": [
+        145,
+        178,
+        213,
+        270
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          276.65,
+          312.431
+        ],
+        "chest": [
+          276.65,
+          312.431
+        ],
+        "body": [
+          276.65,
+          312.431
+        ],
+        "hand": [
+          264.08,
+          327.693
+        ]
+      },
+      "alpha_bounds_px": [
+        160,
+        202,
+        195,
+        246
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {
+        "core": "occluded",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          238.942,
+          302.555
+        ],
+        "chest": [
+          238.942,
+          302.555
+        ],
+        "body": [
+          238.942,
+          302.555
+        ],
+        "hand": [
+          304.482,
+          282.803
+        ]
+      },
+      "alpha_bounds_px": [
+        96,
+        194,
+        260,
+        255
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          258.693,
+          307.942
+        ],
+        "chest": [
+          258.693,
+          307.942
+        ],
+        "body": [
+          258.693,
+          307.942
+        ],
+        "hand": [
+          347.577,
+          332.182
+        ]
+      },
+      "alpha_bounds_px": [
+        130,
+        203,
+        229,
+        246
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          183.277,
+          338.467
+        ],
+        "chest": [
+          183.277,
+          338.467
+        ],
+        "body": [
+          183.277,
+          338.467
+        ],
+        "hand": [
+          271.263,
+          281.905
+        ]
+      },
+      "alpha_bounds_px": [
+        74,
+        236,
+        265,
+        212
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          216.496,
+          387.847
+        ],
+        "chest": [
+          216.496,
+          387.847
+        ],
+        "body": [
+          216.496,
+          387.847
+        ],
+        "hand": [
+          254.204,
+          321.409
+        ]
+      },
+      "alpha_bounds_px": [
+        120,
+        289,
+        257,
+        155
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 4.489,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "grounded",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          240.737,
+          393.234
+        ],
+        "chest": [
+          240.737,
+          393.234
+        ],
+        "body": [
+          240.737,
+          393.234
+        ],
+        "hand": [
+          173.401,
+          428.248
+        ]
+      },
+      "alpha_bounds_px": [
+        110,
+        357,
+        294,
+        91
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {
+        "core": "occluded",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.241,
+          377.971
+        ],
+        "chest": [
+          280.241,
+          377.971
+        ],
+        "body": [
+          280.241,
+          377.971
+        ],
+        "hand": [
+          347.577,
+          430.044
+        ]
+      },
+      "alpha_bounds_px": [
+        145,
+        268,
+        222,
+        180
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.241,
+          328.591
+        ],
+        "chest": [
+          280.241,
+          328.591
+        ],
+        "body": [
+          280.241,
+          328.591
+        ],
+        "hand": [
+          238.044,
+          427.35
+        ]
+      },
+      "alpha_bounds_px": [
+        152,
+        234,
+        191,
+        214
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          270.365,
+          302.555
+        ],
+        "chest": [
+          270.365,
+          302.555
+        ],
+        "body": [
+          270.365,
+          302.555
+        ],
+        "hand": [
+          320.642,
+          285.496
+        ]
+      },
+      "alpha_bounds_px": [
+        155,
+        201,
+        192,
+        248
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "low_health",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          251.511,
+          321.409
+        ],
+        "chest": [
+          251.511,
+          321.409
+        ],
+        "body": [
+          251.511,
+          321.409
+        ],
+        "hand": [
+          227.27,
+          376.175
+        ]
+      },
+      "alpha_bounds_px": [
+        170,
+        206,
+        172,
+        243
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {
+        "core": "occluded",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          259.591,
+          292.679
+        ],
+        "chest": [
+          259.591,
+          292.679
+        ],
+        "body": [
+          259.591,
+          292.679
+        ],
+        "hand": [
+          299.095,
+          208.285
+        ]
+      },
+      "alpha_bounds_px": [
+        146,
+        191,
+        202,
+        258
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          256.898,
+          300.759
+        ],
+        "chest": [
+          256.898,
+          300.759
+        ],
+        "body": [
+          256.898,
+          300.759
+        ],
+        "hand": [
+          291.912,
+          194.818
+        ]
+      },
+      "alpha_bounds_px": [
+        141,
+        177,
+        207,
+        271
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          268.569,
+          307.942
+        ],
+        "chest": [
+          268.569,
+          307.942
+        ],
+        "body": [
+          268.569,
+          307.942
+        ],
+        "hand": [
+          319.745,
+          307.942
+        ]
+      },
+      "alpha_bounds_px": [
+        146,
+        202,
+        209,
+        247
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          263.182,
+          307.044
+        ],
+        "chest": [
+          263.182,
+          307.044
+        ],
+        "body": [
+          263.182,
+          307.044
+        ],
+        "hand": [
+          340.394,
+          339.365
+        ]
+      },
+      "alpha_bounds_px": [
+        149,
+        203,
+        218,
+        245
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          261.387,
+          303.453
+        ],
+        "chest": [
+          261.387,
+          303.453
+        ],
+        "body": [
+          261.387,
+          303.453
+        ],
+        "hand": [
+          309.869,
+          316.92
+        ]
+      },
+      "alpha_bounds_px": [
+        141,
+        203,
+        210,
+        245
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manually placed visible chest and active hand/blade landmarks on the final source PNG; approximate ±8 source pixels. Nima grounded core is occluded and not an emission source.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "CORRECTED_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.8025,
+          -0.5156,
+          -0.0156
+        ]
+      }
+    }
+  ],
+  "source": {
+    "path": "work/visual-consistency/generated/audit-fixes/nima-reactions-v2-clean.png",
+    "sha256": "50b2227f614c51b0af52eda05164d7223a859fdcb07f8b441c69adf71f05e8e2",
+    "reference_height_px": 274,
+    "bank_scale_factor": 0.8978102189781022,
+    "canonical_height_world": 164,
+    "normalization": "Uniform source-bank affine resampling and transparent canvas placement. No frame fit, no per-frame scale.",
+    "frames": [
+      {
+        "name": "light_hit",
+        "source_region": [
+          37,
+          34,
+          238,
+          302
+        ],
+        "source_anchor": [
+          124,
+          301
+        ],
+        "normalized_source_anchor": [
+          124,
+          301
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          144.6715328467153,
+          177.75912408759126,
+          357.4525547445255,
+          448.0
+        ]
+      },
+      {
+        "name": "body_hit",
+        "source_region": [
+          372,
+          62,
+          217,
+          275
+        ],
+        "source_anchor": [
+          107,
+          274
+        ],
+        "normalized_source_anchor": [
+          107,
+          274
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          159.93430656934305,
+          202.0,
+          354.75912408759126,
+          448.0
+        ]
+      },
+      {
+        "name": "heavy_hit",
+        "source_region": [
+          645,
+          53,
+          289,
+          284
+        ],
+        "source_anchor": [
+          178,
+          283
+        ],
+        "normalized_source_anchor": [
+          178,
+          283
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          96.1897810218978,
+          194.8175182481752,
+          355.6569343065693,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "critical_stagger",
+        "source_region": [
+          977,
+          64,
+          255,
+          275
+        ],
+        "source_anchor": [
+          140,
+          274
+        ],
+        "normalized_source_anchor": [
+          140,
+          274
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          130.3065693430657,
+          202.8978102189781,
+          359.24817518248176,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "fall_start",
+        "source_region": [
+          11,
+          375,
+          296,
+          238
+        ],
+        "source_anchor": [
+          203,
+          237
+        ],
+        "normalized_source_anchor": [
+          203,
+          237
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          73.74452554744525,
+          235.21897810218977,
+          339.4963503649635,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "fall_mid",
+        "source_region": [
+          337,
+          435,
+          287,
+          173
+        ],
+        "source_anchor": [
+          152,
+          177
+        ],
+        "normalized_source_anchor": [
+          152,
+          177
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          120.43065693430657,
+          289.0875912408759,
+          377.2043795620438,
+          443.5109489051095
+        ]
+      },
+      {
+        "name": "grounded",
+        "source_region": [
+          642,
+          510,
+          328,
+          102
+        ],
+        "source_anchor": [
+          163,
+          101
+        ],
+        "normalized_source_anchor": [
+          163,
+          101
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          109.65693430656935,
+          357.3211678832117,
+          404.13868613138686,
+          448.0
+        ]
+      },
+      {
+        "name": "getup_support",
+        "source_region": [
+          992,
+          414,
+          248,
+          201
+        ],
+        "source_anchor": [
+          124,
+          200
+        ],
+        "normalized_source_anchor": [
+          124,
+          200
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          144.6715328467153,
+          268.4379562043796,
+          367.3284671532847,
+          448.0
+        ]
+      },
+      {
+        "name": "getup_kneel",
+        "source_region": [
+          56,
+          681,
+          213,
+          240
+        ],
+        "source_anchor": [
+          116,
+          239
+        ],
+        "normalized_source_anchor": [
+          116,
+          239
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          151.85401459854015,
+          234.32116788321167,
+          343.0875912408759,
+          448.0
+        ]
+      },
+      {
+        "name": "getup_rise",
+        "source_region": [
+          369,
+          651,
+          215,
+          277
+        ],
+        "source_anchor": [
+          113,
+          276
+        ],
+        "normalized_source_anchor": [
+          113,
+          276
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          154.54744525547446,
+          201.1021897810219,
+          347.57664233576645,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "low_health",
+        "source_region": [
+          694,
+          659,
+          192,
+          270
+        ],
+        "source_anchor": [
+          96,
+          269
+        ],
+        "normalized_source_anchor": [
+          96,
+          269
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          170.7080291970803,
+          206.4890510948905,
+          342.18978102189783,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "victory_start",
+        "source_region": [
+          1001,
+          643,
+          226,
+          288
+        ],
+        "source_anchor": [
+          123,
+          287
+        ],
+        "normalized_source_anchor": [
+          123,
+          287
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          145.56934306569343,
+          191.22627737226276,
+          348.4744525547445,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "victory_peak",
+        "source_region": [
+          44,
+          925,
+          232,
+          303
+        ],
+        "source_anchor": [
+          129,
+          302
+        ],
+        "normalized_source_anchor": [
+          129,
+          302
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          141.08029197080293,
+          177.75912408759126,
+          348.4744525547445,
+          448.0
+        ]
+      },
+      {
+        "name": "transform_start",
+        "source_region": [
+          356,
+          950,
+          233,
+          276
+        ],
+        "source_anchor": [
+          123,
+          275
+        ],
+        "normalized_source_anchor": [
+          123,
+          275
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          145.56934306569343,
+          202.0,
+          354.75912408759126,
+          448.8978102189781
+        ]
+      },
+      {
+        "name": "transform_peak",
+        "source_region": [
+          672,
+          952,
+          244,
+          274
+        ],
+        "source_anchor": [
+          120,
+          273
+        ],
+        "normalized_source_anchor": [
+          120,
+          273
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          149.16058394160584,
+          202.8978102189781,
+          367.3284671532847,
+          448.0
+        ]
+      },
+      {
+        "name": "transformed_idle",
+        "source_region": [
+          984,
+          953,
+          234,
+          274
+        ],
+        "source_anchor": [
+          128,
+          273
+        ],
+        "normalized_source_anchor": [
+          128,
+          273
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.8978102189781022,
+        "normalized_alpha_bounds_float": [
+          141.08029197080293,
+          202.8978102189781,
+          350.27007299270076,
+          448.0
+        ]
+      }
+    ]
+  },
+  "art_review_status": "CORRECTED_STATIC_REVIEW",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "53dc9adf85a52e6214bec8c3f568fe546eeb3e4468047e476301549734545af6",
+  "precision_revision": 1,
+  "precision_source_sha256": "82a552906084ca96c3cd4cfa16828f125e9b0de05000c69a29ddd75474a051a1",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint."
+}

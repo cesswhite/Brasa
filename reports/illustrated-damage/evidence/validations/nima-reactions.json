@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        151,
+        213,
+        201,
+        235
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 22440
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        166,
+        224,
+        183,
+        224
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20899
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        107,
+        213,
+        238,
+        236
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23124
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        132,
+        224,
+        225,
+        225
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23365
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        77,
+        255,
+        259,
+        193
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 22596
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        125,
+        300,
+        247,
+        144
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18797
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        124,
+        358,
+        266,
+        90
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15649
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        147,
+        287,
+        218,
+        161
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19161
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        153,
+        246,
+        189,
+        202
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23172
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        156,
+        214,
+        190,
+        235
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23133
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        167,
+        231,
+        178,
+        218
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 22000
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        148,
+        206,
+        198,
+        243
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 24713
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        139,
+        185,
+        211,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 25762
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        141,
+        212,
+        219,
+        237
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 24376
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        148,
+        211,
+        220,
+        237
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 25515
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        145,
+        217,
+        202,
+        231
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23282
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "nima",
+  "bank": "reactions",
+  "source_sha256": "c12dbfd85242e9af1e228474838e154329142cc3907ac9d4409fd85b2821f036",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/nima/reactions/nima-reactions.png"
+}

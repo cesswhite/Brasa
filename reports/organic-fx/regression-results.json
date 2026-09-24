@@ -1,0 +1,44 @@
+[
+  {
+    "test": "test_move_clock",
+    "exit_code": 0,
+    "results": [
+      "MOVE CLOCK: 151 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_status_ko_presentation",
+    "exit_code": 0,
+    "results": [
+      "STATUS KO PRESENTATION: 91 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_customization_visuals",
+    "exit_code": 0,
+    "results": [
+      "CUSTOMIZATION VISUALS: 2068 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_animation_sequences",
+    "exit_code": 0,
+    "results": [
+      "ANIMATION SEQUENCES: 7010 checks, 0 failures; pilot=true"
+    ]
+  },
+  {
+    "test": "test_identity_integration",
+    "exit_code": 0,
+    "results": [
+      "IDENTITY INTEGRATION: 86 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_online_ui",
+    "exit_code": 0,
+    "results": [
+      "ONLINE UI: 758 checks, 0 failures"
+    ]
+  }
+]

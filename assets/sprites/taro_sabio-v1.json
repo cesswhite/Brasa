@@ -1,0 +1,342 @@
+{
+  "version": 2,
+  "body_id": "taro_sabio",
+  "bank": "base",
+  "profile_id": "taro_sabio:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "idle",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        147,
+        172,
+        218,
+        276
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "idle_breathe",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        147,
+        172,
+        218,
+        276
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "windup",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        137,
+        196,
+        238,
+        252
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "punch",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        134,
+        183,
+        293,
+        265
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "hit",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        136,
+        176,
+        239,
+        272
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "dodge",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        109,
+        217,
+        264,
+        231
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "victory",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        109,
+        138,
+        294,
+        310
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    },
+    {
+      "name": "defeat",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ]
+      },
+      "alpha_bounds_px": [
+        82,
+        340,
+        347,
+        108
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED"
+    }
+  ],
+  "source": {
+    "path": "work/damage-families/generated/taro_sabio-base.png",
+    "sha256": "737928c1be60bf65f46beeccabc67c8eead25bfdd7179a14e5c1e58296a0ae4c",
+    "uniform_bank_scalar": 0.8598130841121495,
+    "preparation": "Authorized matte cleanup; uniform bank scale; projected template pose roots. No drawn pixels recolored/repainted.",
+    "frames": [
+      {
+        "name": "idle",
+        "height_ratio_to_pose": 1.0,
+        "width_ratio_to_pose": 1.0583,
+        "source_anchor": [
+          220.5,
+          411.0
+        ]
+      },
+      {
+        "name": "idle_breathe",
+        "height_ratio_to_pose": 0.9964,
+        "width_ratio_to_pose": 1.0792,
+        "source_anchor": [
+          219.0,
+          411.0
+        ]
+      },
+      {
+        "name": "windup",
+        "height_ratio_to_pose": 1.012,
+        "width_ratio_to_pose": 1.0439,
+        "source_anchor": [
+          209.0,
+          412.0
+        ]
+      },
+      {
+        "name": "punch",
+        "height_ratio_to_pose": 1.0232,
+        "width_ratio_to_pose": 1.0427,
+        "source_anchor": [
+          212.0054347826087,
+          412.0
+        ]
+      },
+      {
+        "name": "hit",
+        "height_ratio_to_pose": 1.0226,
+        "width_ratio_to_pose": 1.0913,
+        "source_anchor": [
+          245.08152173913044,
+          385.0
+        ]
+      },
+      {
+        "name": "dodge",
+        "height_ratio_to_pose": 1.0176,
+        "width_ratio_to_pose": 1.0732,
+        "source_anchor": [
+          283.94565217391306,
+          382.0
+        ]
+      },
+      {
+        "name": "victory",
+        "height_ratio_to_pose": 1.0473,
+        "width_ratio_to_pose": 1.5,
+        "source_anchor": [
+          272.5,
+          385.0
+        ]
+      },
+      {
+        "name": "defeat",
+        "height_ratio_to_pose": 1.0485,
+        "width_ratio_to_pose": 1.081,
+        "source_anchor": [
+          202.08152173913044,
+          384.0
+        ]
+      }
+    ]
+  },
+  "art_review_status": "ACCEPTED",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "c8369e7c1cf8bf1089cdad0f05b15f79ecb5bd6ae1b8986d44c7a14a0c51648c",
+  "review_evidence": "work/damage-families/review/taro_sabio.jpg"
+}

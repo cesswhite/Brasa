@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        156,
+        211,
+        184,
+        237
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 19435
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        161,
+        223,
+        181,
+        225
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17862
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        165,
+        228,
+        181,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20378
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        142,
+        218,
+        221,
+        230
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21730
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        100,
+        226,
+        245,
+        222
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21468
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        131,
+        275,
+        265,
+        174
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21928
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        136,
+        381,
+        276,
+        67
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 12089
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        147,
+        279,
+        217,
+        169
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17218
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        171,
+        260,
+        178,
+        188
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18466
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        169,
+        217,
+        171,
+        231
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18815
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        161,
+        219,
+        175,
+        229
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17540
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        168,
+        211,
+        170,
+        237
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 17311
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        161,
+        177,
+        184,
+        271
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 19626
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        142,
+        260,
+        197,
+        188
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 17520
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        141,
+        184,
+        223,
+        264
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 22557
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        158,
+        195,
+        186,
+        253
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19030
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "xuna",
+  "bank": "reactions",
+  "source_sha256": "6d43d93060271d5ba49235bf03ec409ff8913dd4a3a2752dd6f90c9747722e42",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/xuna/reactions/xuna-reactions.png"
+}

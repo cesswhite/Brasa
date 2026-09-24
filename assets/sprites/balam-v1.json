@@ -1,0 +1,15 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "note": "Eight isolated silhouettes, read-only alpha bounds at 31/255 with 2-3 px margins. Compact victory keeps both rows separate; rectangles are disjoint. Custom regions retain tails, fists and defeated body. Source PNG remains unmodified; FighterView derives all frame scales from idle and anchors feet independently.",
+  "frames": [
+    {"region": [37, 15, 335, 409]},
+    {"region": [471, 14, 338, 408]},
+    {"region": [898, 24, 423, 397]},
+    {"region": [1321, 27, 446, 393]},
+    {"region": [55, 478, 357, 375]},
+    {"region": [486, 591, 387, 266]},
+    {"region": [943, 465, 300, 396]},
+    {"region": [1280, 699, 482, 142]}
+  ]
+}

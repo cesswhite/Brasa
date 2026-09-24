@@ -1,0 +1,35 @@
+{
+  "name": "brasa-local-identity-service",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "catalog:sync": "node scripts/catalog.mjs",
+    "catalog:check": "node scripts/catalog.mjs --check",
+    "build": "npm run catalog:sync && node scripts/build.mjs",
+    "db:migrate": "wrangler d1 migrations apply DB --local --persist-to .local/state",
+    "db:seed": "node scripts/local.mjs seed",
+    "account:create": "node scripts/local.mjs account",
+    "token:revoke": "node scripts/local.mjs revoke",
+    "inventory:grant": "node scripts/local.mjs grant",
+    "dev": "npm run build && wrangler dev --local --ip 127.0.0.1 --port 8787 --persist-to .local/state",
+    "test": "npm run build && node --test --test-concurrency=1 tests/*.test.mjs",
+    "api": "node scripts/request.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "miniflare": "4.20260708.1",
+    "wrangler": "4.110.0"
+  },
+  "dependencies": {
+    "@better-auth/passkey": "1.7.5",
+    "better-auth": "1.7.5"
+  },
+  "overrides": {
+    "sharp": "0.35.4",
+    "undici": "7.29.0"
+  }
+}

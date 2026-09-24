@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        81,
+        111,
+        309,
+        338
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 53741
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        91,
+        129,
+        300,
+        320
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 47935
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        76,
+        137,
+        331,
+        312
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 55607
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        60,
+        166,
+        313,
+        282
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 53279
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        57,
+        188,
+        349,
+        261
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 52233
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        93,
+        242,
+        323,
+        205
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 42797
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        73,
+        331,
+        357,
+        119
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30082
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        88,
+        253,
+        338,
+        196
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37973
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        88,
+        196,
+        309,
+        252
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 42239
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        85,
+        132,
+        306,
+        317
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 50336
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        88,
+        143,
+        296,
+        306
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 46421
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        85,
+        115,
+        308,
+        335
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 51947
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        67,
+        66,
+        325,
+        383
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 61188
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        79,
+        126,
+        321,
+        323
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 53517
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        80,
+        128,
+        323,
+        321
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 51917
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        94,
+        128,
+        323,
+        320
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 53067
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "ascua",
+  "bank": "reactions",
+  "source_sha256": "b3afc032a8527975fb2b07d71bac3874071f0d8f18672093a89ae0d9e40eb7ce",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/ascua/reactions/ascua-reactions.png"
+}

@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        118,
+        160,
+        274,
+        289
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 53336
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        139,
+        180,
+        249,
+        269
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 43384
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        126,
+        245,
+        268,
+        204
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38810
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        103,
+        155,
+        313,
+        295
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 49152
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        113,
+        172,
+        288,
+        277
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 49471
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        98,
+        164,
+        339,
+        286
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 55317
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        112,
+        175,
+        315,
+        275
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 49003
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        118,
+        153,
+        277,
+        296
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 53743
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        118,
+        211,
+        320,
+        237
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 45158
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        91,
+        202,
+        336,
+        246
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 46830
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        131,
+        155,
+        265,
+        294
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 44467
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        118,
+        120,
+        271,
+        280
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 43110
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        86,
+        138,
+        373,
+        310
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 56740
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        132,
+        154,
+        248,
+        295
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 50484
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        105,
+        223,
+        314,
+        227
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 48231
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        108,
+        152,
+        294,
+        298
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 55933
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "mugo",
+  "bank": "movement",
+  "source_sha256": "fd7adc0edc465b156f3966c5ac2038bce39ed09f288398c37272025c440cac77",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/mugo/movement/mugo-movement.png"
+}

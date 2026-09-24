@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        141,
+        172,
+        200,
+        278
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 25938
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        143,
+        169,
+        197,
+        280
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 26798
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        118,
+        237,
+        218,
+        213
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 25104
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        117,
+        183,
+        230,
+        267
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 30080
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        132,
+        184,
+        221,
+        265
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27914
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        129,
+        183,
+        264,
+        266
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 28192
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        137,
+        188,
+        218,
+        262
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 26736
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        139,
+        183,
+        205,
+        266
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 26180
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        118,
+        241,
+        236,
+        208
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 25419
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        125,
+        228,
+        260,
+        216
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 27955
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        133,
+        226,
+        185,
+        224
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 23157
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        123,
+        188,
+        224,
+        252
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24188
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        135,
+        168,
+        248,
+        269
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 26952
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        149,
+        173,
+        205,
+        276
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 26476
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        99,
+        263,
+        262,
+        187
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26846
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        142,
+        175,
+        201,
+        274
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 26688
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "vespera",
+  "bank": "movement",
+  "source_sha256": "97830506f915d3a95cd57f8c1a2ee13a46d8c9b3afbf1ef353ed8b2cefe1e961",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/vespera/movement/vespera-movement.png"
+}

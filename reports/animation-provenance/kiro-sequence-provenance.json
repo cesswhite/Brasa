@@ -1,0 +1,459 @@
+{
+  "version": 1,
+  "body_id": "kiro",
+  "status": "complete_native_reviewed",
+  "canonical": {
+    "absolute_path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/kiro-v3.png",
+    "banks": {
+      "movement": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "reactions": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ]
+    },
+    "body_id": "kiro",
+    "display_scale": 0.403892944038929,
+    "frames": [
+      {
+        "anchor": [
+          133.0,
+          415.0
+        ],
+        "bounds": [
+          4,
+          4,
+          271,
+          411
+        ],
+        "name": "idle",
+        "region": [
+          58,
+          6,
+          279,
+          419
+        ]
+      },
+      {
+        "anchor": [
+          134.0,
+          415.0
+        ],
+        "bounds": [
+          4,
+          4,
+          264,
+          411
+        ],
+        "name": "idle_breathe",
+        "region": [
+          505,
+          7,
+          272,
+          419
+        ]
+      },
+      {
+        "anchor": [
+          148.0,
+          396.0
+        ],
+        "bounds": [
+          4,
+          4,
+          309,
+          392
+        ],
+        "name": "windup",
+        "region": [
+          930,
+          23,
+          317,
+          396
+        ]
+      },
+      {
+        "anchor": [
+          158.0,
+          397.0
+        ],
+        "bounds": [
+          4,
+          4,
+          393,
+          393
+        ],
+        "name": "punch",
+        "region": [
+          1357,
+          21,
+          401,
+          401
+        ]
+      },
+      {
+        "anchor": [
+          180.0,
+          413.0
+        ],
+        "bounds": [
+          4,
+          4,
+          322,
+          409
+        ],
+        "name": "hit",
+        "region": [
+          43,
+          449,
+          330,
+          417
+        ]
+      },
+      {
+        "anchor": [
+          200.0,
+          357.0
+        ],
+        "bounds": [
+          4,
+          4,
+          342,
+          353
+        ],
+        "name": "dodge",
+        "region": [
+          497,
+          493,
+          350,
+          361
+        ]
+      },
+      {
+        "anchor": [
+          121.5,
+          444.0
+        ],
+        "bounds": [
+          4,
+          0,
+          279,
+          444
+        ],
+        "name": "victory",
+        "region": [
+          963,
+          419,
+          287,
+          448
+        ]
+      },
+      {
+        "anchor": [
+          200.5,
+          162.0
+        ],
+        "bounds": [
+          4,
+          4,
+          449,
+          158
+        ],
+        "name": "defeat",
+        "region": [
+          1309,
+          689,
+          457,
+          166
+        ]
+      }
+    ],
+    "name": "Kiro",
+    "path": "res://assets/sprites/kiro-v3.png",
+    "reference_height": 411,
+    "sha256": "ac769c263d0ccac3817515e0aa30952af11723bee5921ac5a9a8e63910c89c75",
+    "source_size": [
+      1774,
+      887
+    ]
+  },
+  "visual_observation": {
+    "observed_identity": "Adult muscular russet wild-boar pugilist. Exact broad boar face, long pink-brown snout, short ivory tusks, small pointed ears, fierce small eyes, thick rust-red bristle crest and shoulder mane, fur-covered bare torso, cream wrist/forearm wraps, brown copper-studded knuckle guards, red tied cloth waist sash, dark travel/leather trousers with round worn knee patches, cream ankle wraps and original broad dark hooved toes.",
+    "anatomy": "Keep the reference exact tusk size, bristle silhouette, snout proportions, fur coverage, glove/knuckle-guard construction, cloth wraps and patched trousers. No visible new tail if absent in the reference, no flames, chest gem, giant tusks, horn crown, metal chest armor, human face, human bare skin or shortened chibi legs.",
+    "transform": "Transformation uses only a controlled fiercer posture and modestly intensified EXISTING warm eye/fur highlights. He remains the same russet boar in the same outfit; no fire, flaming hair, new horns, glowing chest core, added scars or enlarged muscles."
+  },
+  "canonical_sha256": "ac769c263d0ccac3817515e0aa30952af11723bee5921ac5a9a8e63910c89c75",
+  "canonical_mode": "RGBA",
+  "canonical_size": [
+    1774,
+    887
+  ],
+  "banks": {
+    "movement": {
+      "body_id": "kiro",
+      "bank": "movement",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/kiro-movement-v1.txt",
+      "prompt_sha256": "f756865e647a8d8b7251ed7521066c292db63f868895958a2e3bb4a7a49fed7a",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/kiro-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/kiro-movement-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/kiro-movement-v1.json",
+      "expected_frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-d483edfe-9a7c-414b-9cd8-514da7124897.png",
+          "sha256": "ceab6b7dccbaa137b109e02beed19a7d8f9028fa14f11fc5904d7b5b8b7aa864",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/kiro-movement-v1.txt",
+          "prompt_sha256": "f756865e647a8d8b7251ed7521066c292db63f868895958a2e3bb4a7a49fed7a",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/kiro-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "kiro-movement-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-948578f4-cec1-4bdd-bc8e-0f1a7626cfb4.png",
+          "sha256": "0823646f0a46894b9dfe1d426d5c89607a4661291095dce46923c854aab84e9b",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/kiro-movement-alpha-result.txt",
+          "prompt_sha256": "b3f6465ea0254c37ced63d5b5ddc044ae4e0bc2cbe4c24895594a1c376831d06",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-d483edfe-9a7c-414b-9cd8-514da7124897.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "kiro-movement-alpha2-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-e98ec8c5-71bc-4ba5-9c17-a29283b294b1.png",
+          "sha256": "56fc60a870b72f0806c13ca75d43283b44e9c87b4655a8e47e713bb55f649073",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/kiro-movement-alpha2-result.txt",
+          "prompt_sha256": "0351b5a136fd606de7b24db8157c2982acc0f1f9bdf81dbf85e859344da0a362",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-d483edfe-9a7c-414b-9cd8-514da7124897.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "kiro",
+        "bank": "movement",
+        "destination": "outputs/Brasa/assets/sprites/sequences/kiro-movement-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/kiro-movement-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-e98ec8c5-71bc-4ba5-9c17-a29283b294b1.png",
+        "sha256": "56fc60a870b72f0806c13ca75d43283b44e9c87b4655a8e47e713bb55f649073",
+        "metadata_sha256": "ec7c5828912d4de4f23090a5a47d0652835f7b1121210ae494b8b02d9cf355ce",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.5729836771136192
+        },
+        "frame_count": 16,
+        "reference_height": 290,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/kiro-movement.inspection.json",
+        "native_capture": "work/animation/kiro-movement-native.png",
+        "native_capture_sha256": "f61c9d02a4cc54e0a04d6b5b94233f0ca191d08d6f0acdc0828d87365d3872c4",
+        "native_log": "work/animation/kiro-movement-native.log",
+        "png_bytes": 1703116
+      }
+    },
+    "reactions": {
+      "body_id": "kiro",
+      "bank": "reactions",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/kiro-reactions-v1.txt",
+      "prompt_sha256": "a560aaada15c85e8a130c85e039e007c6028eda3cb17f0e2b8f3f7560eb345cb",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/kiro-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/kiro-reactions-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/kiro-reactions-v1.json",
+      "expected_frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ab76c5c6-eed9-4511-ae52-5e91a6e024d5.png",
+          "sha256": "d718aa378d5be667fc62af85f5f887dc06aafb8bf82888c67d8f93ec3d58b615",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/kiro-reactions-v1.txt",
+          "prompt_sha256": "a560aaada15c85e8a130c85e039e007c6028eda3cb17f0e2b8f3f7560eb345cb",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/kiro-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "kiro-reactions-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-7fbb2719-281e-4e87-9819-1357f9d01c37.png",
+          "sha256": "3df3992a9de6eb97b1f5a131240be5f6dd3a061f8ad7b13db966c2608e7d2483",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/kiro-reactions-alpha-result.txt",
+          "prompt_sha256": "7b297a7bea3acf54893762521b0a594a08f0933ef5592b59069f6028e347ad16",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ab76c5c6-eed9-4511-ae52-5e91a6e024d5.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "kiro-reactions-alpha2-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ca2ab0aa-0b09-492e-a929-f8506407bf62.png",
+          "sha256": "13a883ef9ba7c8e448d27a02e765d18c0c8cedea588995e822ae10147da7fa06",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/kiro-reactions-alpha2-result.txt",
+          "prompt_sha256": "0351b5a136fd606de7b24db8157c2982acc0f1f9bdf81dbf85e859344da0a362",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ab76c5c6-eed9-4511-ae52-5e91a6e024d5.png"
+          ],
+          "status": "superseded_spacing_correction"
+        },
+        {
+          "step": "kiro-reactions-spacing-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-a93c96c0-d6c4-4dc6-b817-9472940e6221.png",
+          "sha256": "ca37b7a194826952ea70985c3336eeea73af106cdf4d3e63dde611b38c547895",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/kiro-reactions-spacing-result.txt",
+          "prompt_sha256": "144d9ddf12786d9298ce9b7832b28d0eebc0f68d6328ea2e8007ffcdbaa97f83",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ca2ab0aa-0b09-492e-a929-f8506407bf62.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "kiro",
+        "bank": "reactions",
+        "destination": "outputs/Brasa/assets/sprites/sequences/kiro-reactions-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/kiro-reactions-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-a93c96c0-d6c4-4dc6-b817-9472940e6221.png",
+        "sha256": "ca37b7a194826952ea70985c3336eeea73af106cdf4d3e63dde611b38c547895",
+        "metadata_sha256": "29c0b9ca6bf9d53a2c1d9decb3c96c59d31a422b39a7d354d5d88cce08e45a34",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.7252848301702495
+        },
+        "frame_count": 16,
+        "reference_height": 219,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/kiro-reactions.inspection.json",
+        "native_capture": "work/animation/kiro-reactions-native.png",
+        "native_capture_sha256": "badbd25d070cdcb3a44931defd29983b468a08b011d667aa5b945d9f9356aaa0",
+        "native_log": "work/animation/kiro-reactions-native.log",
+        "png_bytes": 1136419
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "source_sha256": "c12dbfd85242e9af1e228474838e154329142cc3907ac9d4409fd85b2821f036",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "combat_progression",
+  "reviewed_frames": [
+    "light_hit",
+    "body_hit",
+    "heavy_hit",
+    "critical_stagger",
+    "fall_start",
+    "fall_mid",
+    "grounded",
+    "getup_support",
+    "getup_kneel",
+    "getup_rise",
+    "low_health",
+    "victory_start",
+    "victory_peak",
+    "transform_start",
+    "transform_peak",
+    "transformed_idle"
+  ],
+  "uniform_scale": 0.9670783345095272,
+  "candidate_sha256_reviewed": "6299cc1e8d3906734e8f3386a2b6d8a1a8fb726272122bb877cadd5613756ec5",
+  "review_evidence": [
+    "work/illustrated-damage/prepared/nima/reactions/nima-reactions-dark.png",
+    "work/illustrated-damage/prepared/nima/reactions/nima-reactions-light.png",
+    "work/illustrated-damage/prepared/nima/reactions/nima-reactions-clean-comparison.png",
+    "outputs/Brasa/assets/sprites/normalized/nima-reactions-v2.png"
+  ],
+  "review_note": "Inspección de las16 poses sobre claro/oscuro y referencia limpia: identidad de lince, bufanda rota y desgaste ilustrado coherentes; brazos, piernas, cola y huecos intactos; sin halo de chroma visible. Escala única mantiene cabeza/cuerpo y apoyo proyectado; grounded continúa bajo, saltos conservan altura proyectada. No se añaden sockets anatómicos."
+}

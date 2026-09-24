@@ -1,0 +1,1421 @@
+Expand the current character animation system substantially.
+
+The existing sprite sheets should be treated as the canonical visual authority for each character.
+
+Do not redesign the character when creating new animation frames.
+
+Preserve exactly:
+
+body proportions
+
+head shape
+
+horns
+
+tail
+
+clothing
+
+armor
+
+accessories
+
+materials
+
+color palette
+
+lighting direction
+
+outline treatment
+
+rendering style
+
+silhouette
+
+character scale
+
+The current sprite sheet contains useful major poses, but the game should not rely only on isolated static poses.
+
+The objective is to create complete animation sequences that make combat feel responsive, fluid, physical, and visually satisfying.
+
+========================================
+CORE ANIMATION PRINCIPLE
+========================================
+
+Do not think:
+
+"one sprite = one attack"
+
+Think:
+
+ANTICIPATION
+
+→
+
+MOVEMENT
+
+→
+
+IMPACT
+
+→
+
+REACTION
+
+→
+
+RECOVERY
+
+Every important combat action should have enough frames to communicate these stages.
+
+Do not create unnecessary frames purely to increase frame count.
+
+Each frame should contribute to movement readability.
+
+========================================
+SPRITE GENERATION SYSTEM
+========================================
+
+For every existing character, create additional sprite sequences while preserving exact visual identity.
+
+Whenever generating new sprites, use the existing approved sprite sheet as the strongest visual reference.
+
+Never regenerate the character from a text description alone if a canonical sprite reference exists.
+
+The new frames must look like they belong to the same original sprite sheet.
+
+Maintain identical:
+
+character dimensions
+
+camera angle
+
+perspective
+
+rendering quality
+
+scale
+
+lighting
+
+armor placement
+
+costume details
+
+body proportions
+
+tail proportions
+
+horn geometry
+
+color relationships
+
+The character must not slowly mutate between frames.
+
+========================================
+ANIMATION CATEGORIES
+========================================
+
+Each fighter should eventually support animation sets similar to:
+
+IDLE
+
+idle breathing
+
+idle variation
+
+combat stance
+
+small weight shift
+
+impatient idle
+
+low-health idle
+
+MOVEMENT
+
+step forward
+
+step backward
+
+dash forward
+
+dash backward
+
+jump start
+
+jump rising
+
+jump apex
+
+falling
+
+landing
+
+quick recovery
+
+NORMAL ATTACK
+
+wind-up
+
+attack
+
+impact
+
+recovery
+
+QUICK ATTACK
+
+very short anticipation
+
+fast strike
+
+impact
+
+quick recovery
+
+HEAVY ATTACK
+
+large anticipation
+
+body weight preparation
+
+powerful attack
+
+impact
+
+longer recovery
+
+CHARGE ATTACK
+
+step backward
+
+lower stance
+
+charge preparation
+
+energy buildup if appropriate
+
+rapid forward movement
+
+strike
+
+impact
+
+recoil/recovery
+
+DASH ATTACK
+
+lean forward
+
+initial burst
+
+movement smear or speed frame
+
+attack
+
+impact
+
+stop/recovery
+
+JUMP ATTACK
+
+takeoff
+
+airborne preparation
+
+attack pose
+
+impact pose
+
+fall
+
+landing
+
+recovery
+
+COUNTER
+
+defensive preparation
+
+block/avoid
+
+counter strike
+
+recovery
+
+SPECIAL ABILITY
+
+ability-specific anticipation
+
+activation
+
+main effect
+
+impact
+
+recovery
+
+SIGNATURE STRIKE
+
+unique cinematic preparation
+
+strong movement
+
+impact
+
+rare visual effect
+
+special recovery pose
+
+The Signature Strike should visually feel much more important than a normal attack.
+
+========================================
+HIT REACTIONS
+========================================
+
+Create multiple hit reactions.
+
+Do not reuse one generic damaged pose for every attack.
+
+Possible reactions:
+
+light hit
+
+medium hit
+
+heavy hit
+
+head impact
+
+body impact
+
+low hit
+
+critical hit
+
+knockback
+
+airborne hit
+
+stagger
+
+guard hit
+
+status-effect reaction
+
+low-health reaction
+
+This creates significantly more combat variety.
+
+The reaction selected should depend on the actual combat event.
+
+Example:
+
+Quick Attack
+
+→
+
+small recoil
+
+Heavy Attack
+
+→
+
+large torso recoil
+
+Critical Hit
+
+→
+
+strong impact reaction
+
+Charge Attack
+
+→
+
+knockback reaction
+
+Signature Strike
+
+→
+
+special reaction
+
+========================================
+KNOCKBACK
+========================================
+
+Support knockback animations.
+
+A powerful attack should be able to visually move the opponent backward.
+
+Use:
+
+impact frame
+
+backward movement
+
+balance-loss frame
+
+recovery
+
+Do not teleport characters between positions.
+
+Godot may interpolate the actual position while the sprite animation communicates physical reaction.
+
+========================================
+KNOCKDOWN
+========================================
+
+Create knockdown sequences.
+
+Example:
+
+heavy impact
+
+→
+
+loss of balance
+
+→
+
+fall
+
+→
+
+ground impact
+
+→
+
+lying state
+
+→
+
+stand-up animation
+
+Not every attack should cause knockdown.
+
+Reserve it for appropriate moves, critical events, special abilities, or specific combat mechanics.
+
+========================================
+KO
+========================================
+
+Do not transition instantly from standing to the existing defeated sprite.
+
+Create a proper KO sequence.
+
+Example:
+
+final hit reaction
+
+→
+
+stagger
+
+→
+
+fall
+
+→
+
+ground impact
+
+→
+
+final KO pose
+
+The final resting pose can reuse the existing defeated sprite where appropriate.
+
+========================================
+VICTORY
+========================================
+
+Create more than one victory animation where practical.
+
+Possible examples:
+
+raise fist
+
+roar
+
+relaxed pose
+
+character-specific gesture
+
+signature victory pose
+
+Boss victory animation
+
+These can later become unlockable cosmetic victory poses.
+
+========================================
+SPRITE EFFECTS
+========================================
+
+Do NOT bake all combat effects directly into character sprites.
+
+Create a separate combat FX library.
+
+Character animation and combat effects should be independent whenever possible.
+
+Possible FX include:
+
+small impact flash
+
+medium impact flash
+
+heavy impact flash
+
+critical impact
+
+dust burst
+
+ground dust
+
+speed lines
+
+dash trail
+
+jump dust
+
+landing dust
+
+energy buildup
+
+energy release
+
+slash arc
+
+punch shockwave
+
+sparks
+
+stone fragments
+
+fire
+
+electricity
+
+smoke
+
+magic particles
+
+status-effect particles
+
+stun stars or equivalent thematic effect
+
+poison effect
+
+burn effect
+
+bleed effect if visually appropriate
+
+shield impact
+
+block flash
+
+Signature Strike effect
+
+Boss attack effect
+
+These effects should use transparent backgrounds and be composited by Godot.
+
+========================================
+HIT FX SYSTEM
+========================================
+
+Every attack should be able to define an impact FX.
+
+Example:
+
+Quick Punch
+
+impact_fx:
+small_hit
+
+Heavy Punch
+
+impact_fx:
+heavy_hit
+
+Charge Attack
+
+impact_fx:
+shockwave_hit
+
+Fire Ability
+
+impact_fx:
+fire_burst
+
+Critical Hit
+
+can add:
+critical_overlay
+
+The attack sprite itself should not need to contain the impact explosion.
+
+========================================
+LAYERED EFFECTS
+========================================
+
+Allow multiple visual effects to happen simultaneously.
+
+For example:
+
+Heavy Critical Charge Attack
+
+could show:
+
+character attack animation
+
++
+
+dash trail
+
++
+
+heavy impact flash
+
++
+
+small camera shake
+
++
+
+critical effect
+
++
+
+dust particles
+
++
+
+enemy heavy-hit reaction
+
+Do not create a unique pre-rendered sprite sheet for every possible combination.
+
+Compose effects dynamically.
+
+========================================
+TRANSFORMATIONS
+========================================
+
+Support character transformations as a future-capable system.
+
+A transformation is a temporary or persistent alternate visual/combat state.
+
+Do not implement transformations as random sprite replacements.
+
+A transformation should have:
+
+transformation start animation
+
+transition frames
+
+transformed idle
+
+transformed movement
+
+transformed attacks
+
+transformed hit reactions
+
+transformed KO state where required
+
+transformation end animation if reversible
+
+Transformation data should be explicit.
+
+Conceptually:
+
+TransformationDefinition
+
+id
+
+character_id
+
+trigger
+
+duration
+
+visual_form
+
+stat_modifiers
+
+move_changes
+
+passive_changes
+
+fx_theme
+
+animation_set
+
+Do not make transformation logic part of individual UI scenes.
+
+========================================
+TRANSFORMATION EXAMPLE
+========================================
+
+For a character similar to the current horned fighter, a transformation could visually evolve:
+
+normal glowing chest core
+
+→
+
+core becomes brighter
+
+→
+
+energy travels through body cracks
+
+→
+
+eyes intensify
+
+→
+
+armor or skin gains controlled glowing details
+
+→
+
+transformed combat stance
+
+Avoid completely redesigning the character.
+
+The transformed version should remain immediately recognizable as the same fighter.
+
+Transformation visual language should evolve existing character motifs.
+
+========================================
+TRANSFORMATION ANIMATION
+========================================
+
+A transformation could contain approximately:
+
+preparation
+
+energy buildup
+
+body reaction
+
+peak transformation frame
+
+settling pose
+
+transformed idle
+
+Use particles and shaders for energy effects where possible rather than generating dozens of nearly identical character sprites.
+
+========================================
+SPRITE + GODOT HYBRID ANIMATION
+========================================
+
+Do not attempt to represent every movement exclusively through sprite frames.
+
+Use a hybrid system.
+
+SPRITES:
+
+body pose
+
+attack pose
+
+reaction
+
+character deformation
+
+GODOT:
+
+position movement
+
+small rotation
+
+scale punch
+
+camera shake
+
+screenshake
+
+hit stop
+
+flash
+
+afterimages
+
+particles
+
+shader effects
+
+trails
+
+dust
+
+lighting effects
+
+This gives significantly more fluidity without requiring hundreds of images per fighter.
+
+========================================
+HIT STOP
+========================================
+
+Add subtle hit-stop for powerful attacks.
+
+When a strong attack lands:
+
+briefly freeze or dramatically slow the visual action for a very small amount of time
+
+then continue.
+
+Keep it subtle.
+
+Examples:
+
+normal hit:
+very small or no hit-stop
+
+heavy hit:
+small hit-stop
+
+critical:
+stronger hit-stop
+
+Signature Strike:
+most noticeable hit-stop
+
+The exact duration should be tuned during gameplay testing.
+
+========================================
+CAMERA RESPONSE
+========================================
+
+Allow attacks to request camera feedback.
+
+Examples:
+
+small hit:
+no shake or extremely subtle shake
+
+heavy hit:
+small shake
+
+critical:
+medium shake
+
+Signature Strike:
+strong but controlled shake
+
+Boss attack:
+context-dependent shake
+
+Avoid constant camera shaking.
+
+Impact loses meaning if every attack shakes the screen heavily.
+
+========================================
+ATTACK ANTICIPATION
+========================================
+
+Powerful attacks require readable anticipation.
+
+Heavy attacks should visually communicate danger before they land.
+
+Examples:
+
+body leans backward
+
+arm pulls back
+
+stance lowers
+
+energy gathers
+
+feet reposition
+
+Do not make all attacks start instantly.
+
+Quick attacks can have little anticipation.
+
+Heavy and Charge attacks should have more.
+
+========================================
+FOLLOW-THROUGH
+========================================
+
+Do not stop animations exactly at the impact pose.
+
+Attacks need follow-through.
+
+Example:
+
+punch
+
+→
+
+extension
+
+→
+
+body continues slightly forward
+
+→
+
+arm returns
+
+→
+
+combat stance
+
+This small detail dramatically improves perceived animation quality.
+
+========================================
+IN-BETWEEN FRAMES
+========================================
+
+Add transitional frames between important poses.
+
+The current sprite sheet should be considered a collection of key poses.
+
+Generate in-between frames when the transition between two existing poses feels abrupt.
+
+Prioritize transitions with large silhouette changes.
+
+Examples:
+
+idle → punch
+
+idle → crouch
+
+idle → jump
+
+attack → idle
+
+hit → idle
+
+standing → KO
+
+Do not blindly interpolate every pose.
+
+Create meaningful hand-authored or generated intermediate poses.
+
+========================================
+FRAME COUNT GUIDELINES
+========================================
+
+Do not enforce identical frame counts on every move.
+
+As a starting point:
+
+idle:
+4–8 meaningful frames
+
+quick attack:
+4–6 frames
+
+normal attack:
+5–8 frames
+
+heavy attack:
+7–12 frames
+
+charge attack:
+8–14 frames
+
+dash:
+5–8 frames
+
+jump attack:
+7–12 frames
+
+hit reaction:
+3–6 frames
+
+heavy hit:
+4–8 frames
+
+knockdown:
+6–10 frames
+
+stand-up:
+5–8 frames
+
+transformation:
+8–16+ frames
+
+Signature Strike:
+10–20+ frames if justified
+
+These are guidelines.
+
+Animation quality is more important than arbitrary frame count.
+
+========================================
+ANIMATION SPEED
+========================================
+
+Separate animation frame count from animation playback speed.
+
+Quick moves should play faster.
+
+Heavy moves can contain more anticipation.
+
+Transformations may be slower and more dramatic.
+
+Do not assume all sprite animations use the same FPS.
+
+Tune per animation.
+
+========================================
+SPRITE SHEET CONSISTENCY
+========================================
+
+All frames in one animation must share:
+
+canvas size
+
+character scale
+
+ground baseline
+
+pivot conventions
+
+lighting
+
+perspective
+
+art style
+
+transparent background
+
+Do not allow the character to visually grow or shrink between frames unless the animation intentionally changes scale.
+
+Keep the feet aligned consistently relative to the defined origin.
+
+========================================
+SPRITE ORIGIN
+========================================
+
+Define a standard origin/pivot convention.
+
+Prefer a ground-based pivot near the character's feet.
+
+Every generated animation frame must respect it.
+
+This prevents visual jitter when switching sprites.
+
+========================================
+SPRITE JITTER
+========================================
+
+When importing generated sprites, detect and correct frame-to-frame jitter.
+
+The character should not shift horizontally or vertically because generated images were cropped differently.
+
+Normalize:
+
+canvas size
+
+pivot
+
+baseline
+
+frame bounds
+
+Do this during asset preparation.
+
+========================================
+ATTACK DATA INTEGRATION
+========================================
+
+Moves should reference animation identifiers.
+
+Example:
+
+move:
+charge_strike
+
+animation:
+attack_charge_strike
+
+impact_fx:
+impact_heavy
+
+trail_fx:
+dash_fire
+
+hit_reaction:
+heavy
+
+camera_feedback:
+medium
+
+hit_stop:
+heavy
+
+Do not encode these visual references directly inside combat formulas.
+
+Combat calculates what happened.
+
+Presentation determines how it looks.
+
+========================================
+COMBAT EVENT PRESENTATION
+========================================
+
+Use server/local Battle Engine events to trigger animation.
+
+Example:
+
+MOVE_STARTED
+
+→ attack anticipation
+
+ATTACK_TRAVEL
+
+→ dash/jump movement
+
+HIT
+
+→ impact FX
+
+→ target reaction
+
+CRITICAL
+
+→ critical FX
+
+→ hit stop
+
+STATUS_APPLIED
+
+→ status FX
+
+KNOCKDOWN
+
+→ knockdown animation
+
+KO
+
+→ KO sequence
+
+This keeps animation synchronized with actual combat results.
+
+========================================
+ANIMATION STATE MACHINE
+========================================
+
+Create a proper fighter animation state system.
+
+Possible states:
+
+idle
+
+moving
+
+attacking
+
+charging
+
+airborne
+
+hit
+
+stagger
+
+knockdown
+
+recovering
+
+transforming
+
+special
+
+victory
+
+ko
+
+Prevent impossible visual states.
+
+For example:
+
+do not start idle while the fighter is falling
+
+do not play victory before KO resolution
+
+do not play a second attack halfway through an uninterruptible heavy attack
+
+========================================
+INTERRUPTION RULES
+========================================
+
+Animations should define whether they can be interrupted.
+
+Quick recovery may be interruptible.
+
+Heavy attack wind-up may or may not be interruptible depending on gameplay.
+
+Hit reactions normally interrupt appropriate offensive states.
+
+KO interrupts everything.
+
+Keep gameplay rules separate from purely visual transitions.
+
+========================================
+SPRITE ASSET GENERATION WORKFLOW
+========================================
+
+Before generating sprites for a move:
+
+1. Inspect the canonical character sheet.
+
+2. Define the complete animation sequence.
+
+3. Identify key poses.
+
+4. Identify necessary transition frames.
+
+5. Define the character's body movement.
+
+6. Define which effects should be separate FX.
+
+7. Generate the character frames.
+
+8. Normalize frame dimensions and pivot.
+
+9. Generate the FX sprites separately.
+
+10. Import into Godot.
+
+11. Configure animation timing.
+
+12. Add movement and effects.
+
+13. Test at actual gameplay speed.
+
+14. Remove redundant frames.
+
+15. Verify the character remains visually consistent.
+
+========================================
+GENERATIVE IMAGE RULE
+========================================
+
+Never generate an entire new animation without repeatedly comparing against the canonical character reference.
+
+For every sprite-generation prompt, explicitly state that the character identity must remain identical.
+
+Do not allow:
+
+different horn sizes
+
+different armor
+
+missing accessories
+
+different number of fingers
+
+different tail
+
+different chest symbol
+
+different clothing
+
+different proportions
+
+different rendering style
+
+different camera angle
+
+different light source
+
+========================================
+SPRITE DELIVERABLES
+========================================
+
+Whenever a new attack is created, do not stop after implementing its combat formula.
+
+Determine whether it needs new visual assets.
+
+Produce an asset checklist such as:
+
+attack_charge_01.png
+
+attack_charge_02.png
+
+attack_charge_03.png
+
+attack_charge_04.png
+
+attack_charge_05.png
+
+attack_charge_06.png
+
+fx_charge_energy.png
+
+fx_charge_trail.png
+
+fx_charge_impact.png
+
+enemy_hit_heavy_01.png
+
+enemy_hit_heavy_02.png
+
+enemy_hit_heavy_03.png
+
+Then integrate them into the actual Godot animation.
+
+Do not leave new attacks using unrelated old animations unless they are intentionally compatible.
+
+========================================
+VISUAL QUALITY GOAL
+========================================
+
+Combat should no longer look like:
+
+static pose
+
+→
+
+different static pose
+
+→
+
+damage number
+
+Instead it should feel like:
+
+anticipation
+
+→
+
+motion
+
+→
+
+attack
+
+→
+
+impact
+
+→
+
+hit effect
+
+→
+
+enemy reaction
+
+→
+
+follow-through
+
+→
+
+recovery
+
+The player should be able to understand the weight, speed, and personality of an attack simply by watching it.
+
+========================================
+DO NOT OVERPRODUCE
+========================================
+
+More frames are not automatically better.
+
+Prioritize:
+
+strong poses
+
+clear silhouettes
+
+good timing
+
+impact
+
+anticipation
+
+recovery
+
+consistency
+
+A carefully designed 6-frame attack can look better than a poorly generated 20-frame sequence.
+
+Use Godot motion, particles, shaders, hit-stop, camera feedback, and FX to fill the gap between key sprites.
+
+========================================
+FIRST IMPLEMENTATION TARGET
+========================================
+
+Use the currently approved horned fighter sprite sheet as the first animation expansion test.
+
+Treat the existing character as immutable visual identity.
+
+Create one complete test package containing:
+
+enhanced idle
+
+step backward
+
+dash forward
+
+Quick Attack
+
+Heavy Attack
+
+Charge Attack
+
+Jump Attack
+
+light hit reaction
+
+heavy hit reaction
+
+critical hit reaction
+
+knockback
+
+knockdown
+
+stand-up
+
+KO transition
+
+victory animation
+
+one simple transformation sequence
+
+separate impact FX
+
+dash FX
+
+landing dust
+
+critical FX
+
+transformation FX
+
+Do not attempt every fighter simultaneously.
+
+Complete this fighter first.
+
+Test it inside actual combat.
+
+Measure:
+
+visual consistency
+
+timing
+
+responsiveness
+
+sprite jitter
+
+asset memory
+
+animation readability
+
+how well FX combine with sprites
+
+Only after the pipeline works correctly should the same system be expanded to the other fighters.

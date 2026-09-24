@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        165,
+        191,
+        182,
+        257
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 22200
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        160,
+        213,
+        192,
+        235
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 19516
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        158,
+        202,
+        196,
+        246
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 21814
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        101,
+        227,
+        183,
+        221
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 20021
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        147,
+        233,
+        215,
+        215
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 21912
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        151,
+        266,
+        243,
+        181
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 21270
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        80,
+        363,
+        279,
+        85
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 15342
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        135,
+        270,
+        242,
+        178
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20806
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        144,
+        249,
+        214,
+        199
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 19766
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        159,
+        192,
+        188,
+        256
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 22823
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        165,
+        204,
+        180,
+        244
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18861
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        168,
+        175,
+        176,
+        273
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 21879
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        170,
+        157,
+        172,
+        291
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 23077
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        160,
+        185,
+        193,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20932
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        153,
+        198,
+        207,
+        251
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 23158
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        164,
+        181,
+        184,
+        267
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 21064
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "sira",
+  "bank": "reactions",
+  "source_sha256": "7c166d523c00feeeaa484772afb9976048a89583819dfda64dc5eb02ac1eabfb",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/sira/reactions/sira-reactions.png"
+}

@@ -1,0 +1,1538 @@
+{
+  "version": 2,
+  "body_id": "sira",
+  "bank": "movement",
+  "profile_id": "sira:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          259.487,
+          271.639
+        ],
+        "chest": [
+          259.487,
+          271.639
+        ],
+        "body": [
+          259.487,
+          271.639
+        ],
+        "hand": [
+          294.859,
+          259.682
+        ],
+        "left_foot": [
+          165.329,
+          448.0
+        ],
+        "right_foot": [
+          320.267,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        152,
+        173,
+        197,
+        276
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "step_back",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          267.957,
+          276.621
+        ],
+        "chest": [
+          267.957,
+          276.621
+        ],
+        "body": [
+          267.957,
+          276.621
+        ],
+        "hand": [
+          347.668,
+          277.119
+        ],
+        "left_foot": [
+          168.318,
+          448.0
+        ],
+        "right_foot": [
+          325.249,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        157,
+        180,
+        197,
+        268
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          279.913,
+          329.43
+        ],
+        "chest": [
+          279.913,
+          329.43
+        ],
+        "body": [
+          279.913,
+          329.43
+        ],
+        "hand": [
+          309.805,
+          342.881
+        ],
+        "left_foot": [
+          161.343,
+          448.0
+        ],
+        "right_foot": [
+          326.245,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        147,
+        256,
+        205,
+        191
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.498,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          261.978,
+          297.545
+        ],
+        "chest": [
+          261.978,
+          297.545
+        ],
+        "body": [
+          261.978,
+          297.545
+        ],
+        "hand": [
+          197.213,
+          221.321
+        ],
+        "left_foot": [
+          155.863,
+          448.0
+        ],
+        "right_foot": [
+          341.191,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        141,
+        198,
+        221,
+        249
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.498,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          256.0,
+          275.625
+        ],
+        "chest": [
+          256.0,
+          275.625
+        ],
+        "body": [
+          256.0,
+          275.625
+        ],
+        "hand": [
+          186.751,
+          239.256
+        ],
+        "left_foot": [
+          159.848,
+          448.0
+        ],
+        "right_foot": [
+          324.751,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        145,
+        187,
+        203,
+        263
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          258.491,
+          282.599
+        ],
+        "chest": [
+          258.491,
+          282.599
+        ],
+        "body": [
+          258.491,
+          282.599
+        ],
+        "hand": [
+          358.628,
+          258.686
+        ],
+        "left_foot": [
+          141.913,
+          448.0
+        ],
+        "right_foot": [
+          317.278,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        128,
+        200,
+        289,
+        250
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          259.986,
+          295.552
+        ],
+        "chest": [
+          259.986,
+          295.552
+        ],
+        "body": [
+          259.986,
+          295.552
+        ],
+        "hand": [
+          379.054,
+          276.123
+        ],
+        "left_foot": [
+          149.386,
+          448.0
+        ],
+        "right_foot": [
+          338.7,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        134,
+        213,
+        304,
+        238
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "recovery",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          257.993,
+          290.072
+        ],
+        "chest": [
+          257.993,
+          290.072
+        ],
+        "body": [
+          257.993,
+          290.072
+        ],
+        "hand": [
+          297.848,
+          292.563
+        ],
+        "left_foot": [
+          169.812,
+          448.0
+        ],
+        "right_foot": [
+          330.729,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        155,
+        191,
+        198,
+        259
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          299.841,
+          326.939
+        ],
+        "chest": [
+          299.841,
+          326.939
+        ],
+        "body": [
+          299.841,
+          326.939
+        ],
+        "hand": [
+          302.83,
+          348.361
+        ],
+        "left_foot": [
+          132.946,
+          448.0
+        ],
+        "right_foot": [
+          290.375,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        120,
+        246,
+        244,
+        204
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          300.339,
+          312.989
+        ],
+        "chest": [
+          300.339,
+          312.989
+        ],
+        "body": [
+          300.339,
+          312.989
+        ],
+        "hand": [
+          358.628,
+          354.838
+        ],
+        "left_foot": [
+          121.487,
+          448.0
+        ],
+        "right_foot": [
+          347.17,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        107,
+        230,
+        262,
+        217
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.498,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          257.495,
+          266.657
+        ],
+        "chest": [
+          257.495,
+          266.657
+        ],
+        "body": [
+          257.495,
+          266.657
+        ],
+        "hand": [
+          327.74,
+          188.939
+        ],
+        "left_foot": [
+          199.704,
+          448.0
+        ],
+        "right_foot": [
+          321.264,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        185,
+        163,
+        165,
+        288
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          242.549,
+          278.614
+        ],
+        "chest": [
+          242.549,
+          278.614
+        ],
+        "body": [
+          242.549,
+          278.614
+        ],
+        "hand": [
+          286.888,
+          293.56
+        ],
+        "left_foot": [
+          248.029,
+          448.0
+        ],
+        "right_foot": [
+          275.43,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        155,
+        198,
+        160,
+        207
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 42.845,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          259.986,
+          268.152
+        ],
+        "chest": [
+          259.986,
+          268.152
+        ],
+        "body": [
+          259.986,
+          268.152
+        ],
+        "hand": [
+          384.534,
+          230.289
+        ],
+        "left_foot": [
+          151.379,
+          448.0
+        ],
+        "right_foot": [
+          286.888,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        139,
+        171,
+        315,
+        279
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          250.52,
+          282.101
+        ],
+        "chest": [
+          250.52,
+          282.101
+        ],
+        "body": [
+          250.52,
+          282.101
+        ],
+        "hand": [
+          280.91,
+          266.159
+        ],
+        "left_foot": [
+          211.661,
+          448.0
+        ],
+        "right_foot": [
+          247.531,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        144,
+        174,
+        182,
+        278
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "landing",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          286.39,
+          346.368
+        ],
+        "chest": [
+          286.39,
+          346.368
+        ],
+        "body": [
+          286.39,
+          346.368
+        ],
+        "hand": [
+          322.758,
+          372.274
+        ],
+        "left_foot": [
+          166.823,
+          448.0
+        ],
+        "right_foot": [
+          330.729,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        152,
+        272,
+        203,
+        179
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          254.007,
+          271.639
+        ],
+        "chest": [
+          254.007,
+          271.639
+        ],
+        "body": [
+          254.007,
+          271.639
+        ],
+        "hand": [
+          290.375,
+          266.159
+        ],
+        "left_foot": [
+          155.863,
+          448.0
+        ],
+        "right_foot": [
+          330.231,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        140,
+        175,
+        211,
+        275
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible chest and active fist/scythe; each sole X manually annotated, foot socket Y projected to the exact same ground as root. Airborne projected feet still reference world floor. Approximate ±8 source px.",
+      "socket_visibility": {},
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_REFINED_PENDING_NATIVE",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6377,
+          0.9531,
+          -3.3672
+        ]
+      }
+    }
+  ],
+  "source": {
+    "path": "work/visual-consistency/generated/audit-fixes/material-refinement-runtime/sira-movement-material-refined-clean.png",
+    "sha256": "596b0f5e9f804051f477e43598f377d364e529ddbc11595a50cd93bb59e181d4",
+    "reference_height_px": 554,
+    "bank_scale_factor": 0.4981949458483754,
+    "canonical_height_world": 184,
+    "normalization": "Uniform source-bank affine resampling and transparent canvas placement. No frame fit, no per-frame scale.",
+    "frames": [
+      {
+        "name": "guard_shift",
+        "source_region": [
+          104,
+          61,
+          402,
+          562
+        ],
+        "source_anchor": [
+          212,
+          557
+        ],
+        "normalized_source_anchor": [
+          212,
+          557
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          151.87725631768953,
+          172.0,
+          349.1624548736462,
+          448.99638989169677
+        ]
+      },
+      {
+        "name": "step_back",
+        "source_region": [
+          759,
+          76,
+          402,
+          546
+        ],
+        "source_anchor": [
+          202,
+          542
+        ],
+        "normalized_source_anchor": [
+          202,
+          542
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          156.8592057761733,
+          179.47292418772565,
+          353.6462093862816,
+          448.49819494584835
+        ]
+      },
+      {
+        "name": "charge_crouch",
+        "source_region": [
+          100,
+          788,
+          419,
+          391
+        ],
+        "source_anchor": [
+          222,
+          389
+        ],
+        "normalized_source_anchor": [
+          222,
+          389
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          146.8953068592058,
+          255.69675090252707,
+          352.15162454873644,
+          447.50180505415165
+        ]
+      },
+      {
+        "name": "heavy_windup",
+        "source_region": [
+          733,
+          684,
+          451,
+          509
+        ],
+        "source_anchor": [
+          235,
+          506
+        ],
+        "normalized_source_anchor": [
+          235,
+          506
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          140.4187725631769,
+          197.40794223826717,
+          362.115523465704,
+          447.50180505415165
+        ]
+      },
+      {
+        "name": "quick_windup",
+        "source_region": [
+          1348,
+          69,
+          414,
+          537
+        ],
+        "source_anchor": [
+          226,
+          529
+        ],
+        "normalized_source_anchor": [
+          226,
+          529
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          145.40072202166067,
+          186.4476534296029,
+          348.1660649819495,
+          450.4909747292419
+        ]
+      },
+      {
+        "name": "quick_extend",
+        "source_region": [
+          1904,
+          94,
+          587,
+          509
+        ],
+        "source_anchor": [
+          261,
+          501
+        ],
+        "normalized_source_anchor": [
+          261,
+          501
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          127.46570397111913,
+          199.89891696750902,
+          416.91696750902526,
+          449.99277978339353
+        ]
+      },
+      {
+        "name": "follow_through",
+        "source_region": [
+          1304,
+          719,
+          617,
+          484
+        ],
+        "source_anchor": [
+          249,
+          475
+        ],
+        "normalized_source_anchor": [
+          249,
+          475
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          133.942238267148,
+          213.35018050541518,
+          437.3429602888086,
+          450.98916967509024
+        ]
+      },
+      {
+        "name": "recovery",
+        "source_region": [
+          1964,
+          684,
+          405,
+          526
+        ],
+        "source_anchor": [
+          207,
+          518
+        ],
+        "normalized_source_anchor": [
+          207,
+          518
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          154.8664259927798,
+          191.42960288808666,
+          353.1480144404332,
+          449.99277978339353
+        ]
+      },
+      {
+        "name": "dash_lean",
+        "source_region": [
+          59,
+          1396,
+          498,
+          415
+        ],
+        "source_anchor": [
+          277,
+          408
+        ],
+        "normalized_source_anchor": [
+          277,
+          408
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          119.49458483754512,
+          246.23104693140795,
+          363.6101083032491,
+          449.99277978339353
+        ]
+      },
+      {
+        "name": "dash_stride",
+        "source_region": [
+          664,
+          1370,
+          532,
+          443
+        ],
+        "source_anchor": [
+          302,
+          441
+        ],
+        "normalized_source_anchor": [
+          302,
+          441
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          107.53790613718411,
+          229.79061371841158,
+          369.0902527075812,
+          447.50180505415165
+        ]
+      },
+      {
+        "name": "jump_start",
+        "source_region": [
+          173,
+          1878,
+          339,
+          585
+        ],
+        "source_anchor": [
+          147,
+          576
+        ],
+        "normalized_source_anchor": [
+          147,
+          576
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          184.75812274368232,
+          163.03249097472928,
+          349.66064981949455,
+          450.4909747292419
+        ]
+      },
+      {
+        "name": "jump_apex",
+        "source_region": [
+          755,
+          1949,
+          328,
+          423
+        ],
+        "source_anchor": [
+          206,
+          505
+        ],
+        "normalized_source_anchor": [
+          206,
+          505
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          154.8664259927798,
+          197.90613718411555,
+          315.2851985559567,
+          405.1552346570397
+        ]
+      },
+      {
+        "name": "jump_strike",
+        "source_region": [
+          1327,
+          1314,
+          637,
+          568
+        ],
+        "source_anchor": [
+          237,
+          560
+        ],
+        "normalized_source_anchor": [
+          237,
+          560
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          139.42238267148014,
+          170.50541516245488,
+          453.78339350180505,
+          449.99277978339353
+        ]
+      },
+      {
+        "name": "jump_fall",
+        "source_region": [
+          1979,
+          1323,
+          373,
+          566
+        ],
+        "source_anchor": [
+          229,
+          554
+        ],
+        "normalized_source_anchor": [
+          229,
+          554
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          143.90613718411552,
+          173.99277978339353,
+          325.74729241877253,
+          451.985559566787
+        ]
+      },
+      {
+        "name": "landing",
+        "source_region": [
+          1357,
+          2098,
+          415,
+          367
+        ],
+        "source_anchor": [
+          213,
+          358
+        ],
+        "normalized_source_anchor": [
+          213,
+          358
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          151.37906137184115,
+          271.6389891696751,
+          354.6425992779783,
+          450.4909747292419
+        ]
+      },
+      {
+        "name": "guard_settle",
+        "source_region": [
+          1966,
+          1912,
+          430,
+          560
+        ],
+        "source_anchor": [
+          237,
+          552
+        ],
+        "normalized_source_anchor": [
+          237,
+          552
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.4981949458483754,
+        "normalized_alpha_bounds_float": [
+          139.42238267148014,
+          174.98916967509024,
+          350.6570397111913,
+          450.4909747292419
+        ]
+      }
+    ]
+  },
+  "art_review_status": "MATERIAL_REFINED_PENDING_NATIVE",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "ead8f15e7524ec41bc546e6ad9b6510fb2c3c9bece34d2ac7660ee405d738e44",
+  "precision_revision": 1,
+  "precision_source_sha256": "dd0e65f7d9be4f8c7bbe39c80ea27951ddb7b92647de832d6eccc15940e1b656",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint."
+}

@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        152,
+        191,
+        207,
+        257
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 27192
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        154,
+        220,
+        204,
+        228
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 24499
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        127,
+        194,
+        238,
+        254
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 28683
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        158,
+        212,
+        214,
+        236
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 27032
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        134,
+        265,
+        246,
+        183
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 26018
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        107,
+        308,
+        270,
+        141
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 21592
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        95,
+        341,
+        326,
+        107
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 22780
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        135,
+        274,
+        242,
+        174
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24112
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        149,
+        249,
+        214,
+        199
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 23787
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        156,
+        227,
+        203,
+        221
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 22140
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        164,
+        235,
+        184,
+        213
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20412
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        160,
+        202,
+        193,
+        246
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 23231
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        159,
+        162,
+        194,
+        286
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 25411
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        156,
+        204,
+        201,
+        244
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24459
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        154,
+        199,
+        204,
+        249
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 25381
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        156,
+        201,
+        200,
+        247
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24961
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "iria",
+  "bank": "reactions",
+  "source_sha256": "7b47d7b4f0414884d12936865c2ac338e808598fa9ac0f72a27beae974cf966a",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/iria/reactions/iria-reactions.png"
+}

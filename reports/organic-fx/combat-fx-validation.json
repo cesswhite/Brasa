@@ -1,0 +1,71 @@
+{
+  "scope": "CombatFX eight reusable emitters rendered as organic particles",
+  "checks": 129,
+  "failures": 0,
+  "log": "work/organic-fx/test-combat-fx.log",
+  "log_sha256": "a07bc1b8d3a1885b0e9feb274748a39c10f70bec2503bc1f0b535a6319637e9f",
+  "source_hashes": {
+    "scripts/combat_fx.gd": "b735174c24f6efaf29114185e34d44745496b8a5a1b88baf121402cc1924bbba",
+    "data/combat_fx.json": "e2aa2e63295534d883561356790cf62e10f0d9e9b40cead7f9598ca3ac8797ea",
+    "tests/test_combat_fx.gd": "42ddec3ae6121455877d6a431f8467e9058bb0bcc8ab1969332b5f203d7d044e",
+    "scripts/particle_ink.gd": "973590f2aa39592bd3a58a70a10d47d5a0040996aef6c8c644f1a03d1c53284f"
+  },
+  "limits": {
+    "emitters": 20,
+    "reserved_particles": 320,
+    "pending": 12,
+    "particles_per_emitter": 24,
+    "configured_max_duration": 0.74,
+    "reflected_light_strength": 0.065
+  },
+  "verified": [
+    "stable eight effect IDs",
+    "no legacy radial atlas loaded during normal rendering",
+    "small mote/spark dimensions",
+    "phase-delayed travel and landing",
+    "anchor conversion across transformed parents",
+    "moving hand emitter follows body while released particles drift",
+    "heal/poison/shield behaviors differ",
+    "pause freezes visual/pending clocks",
+    "late replay events skip expired emitters",
+    "catchup matches analytic stationary particles",
+    "WeakRef actor release clears future pending emission",
+    "bounded emitter/particle populations",
+    "reduced motion suppresses particles, shake and light",
+    "global random sequence unchanged",
+    "event dictionaries untouched",
+    "optional impact none preserves independent camera feedback"
+  ],
+  "native_visual_review": {
+    "desktop_samples_1_2": "Approved by root after final legibility changes",
+    "live_main": {
+      "checks": 153,
+      "failures": 0,
+      "log": "work/organic-fx/live-main.log",
+      "log_sha256": "472c85a567ddd2540efabacd0b5656e3e31f62ea207c9833ccd201bffda6376f"
+    },
+    "mobile_and_video": "Independent QA completing; no unverified pass claimed here"
+  },
+  "assets_modified": false,
+  "gameplay_modules_modified": false,
+  "user_saves_accessed": false,
+  "legibility_revision": {
+    "spark_core_radius": [
+      1.0,
+      1.5
+    ],
+    "ember_radius_x": [
+      1.5,
+      2.2
+    ],
+    "ember_radius_y": [
+      1.9,
+      2.5
+    ],
+    "charge_particles": 14,
+    "transformation_particles": 22,
+    "torso_edge_birth_fraction": "2/3 of attached body/chest particles originate near hands or back, with a small outward offset",
+    "birth_profile": "front-loaded across same bounded emission window",
+    "native_review": "Desktop final samples 1 and 2 approved by root; product code frozen. Mobile/video handled by independent native QA."
+  }
+}

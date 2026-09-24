@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        115,
+        195,
+        247,
+        253
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 31512
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        113,
+        195,
+        250,
+        253
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30852
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        111,
+        210,
+        262,
+        238
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 32812
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        105,
+        214,
+        312,
+        234
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 32723
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        96,
+        197,
+        274,
+        251
+      ],
+      "components": 8,
+      "substantial_components": 1,
+      "visible_pixels": 33263
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        114,
+        251,
+        266,
+        197
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 28306
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        128,
+        149,
+        234,
+        299
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 31370
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        81,
+        321,
+        334,
+        127
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 28175
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "duna",
+  "bank": "base",
+  "source_sha256": "37139dd95015eb6fe61985b43cf221e05a93093105b6413c16c851e3cee9e0ee",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/duna/base/duna-base.png"
+}

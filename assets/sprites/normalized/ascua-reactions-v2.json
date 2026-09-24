@@ -1,0 +1,1458 @@
+{
+  "version": 2,
+  "body_id": "ascua",
+  "bank": "reactions",
+  "profile_id": "ascua:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          276.0,
+          242.0
+        ],
+        "chest": [
+          276.0,
+          242.0
+        ],
+        "body": [
+          276.0,
+          242.0
+        ],
+        "hand": [
+          345.0,
+          211.0
+        ]
+      },
+      "alpha_bounds_px": [
+        84,
+        110,
+        303,
+        338
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          273.0,
+          260.0
+        ],
+        "chest": [
+          273.0,
+          260.0
+        ],
+        "body": [
+          273.0,
+          260.0
+        ],
+        "hand": [
+          240.0,
+          292.0
+        ]
+      },
+      "alpha_bounds_px": [
+        93,
+        128,
+        296,
+        320
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          250.0,
+          230.0
+        ],
+        "chest": [
+          250.0,
+          230.0
+        ],
+        "body": [
+          250.0,
+          230.0
+        ],
+        "hand": [
+          348.0,
+          207.0
+        ]
+      },
+      "alpha_bounds_px": [
+        76,
+        135,
+        331,
+        313
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          228.0,
+          257.0
+        ],
+        "chest": [
+          228.0,
+          257.0
+        ],
+        "body": [
+          228.0,
+          257.0
+        ],
+        "hand": [
+          333.0,
+          208.0
+        ]
+      },
+      "alpha_bounds_px": [
+        62,
+        166,
+        308,
+        281
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          190.0,
+          265.0
+        ],
+        "chest": [
+          190.0,
+          265.0
+        ],
+        "body": [
+          190.0,
+          265.0
+        ],
+        "hand": [
+          279.0,
+          215.0
+        ]
+      },
+      "alpha_bounds_px": [
+        59,
+        179,
+        345,
+        269
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          223.0,
+          337.0
+        ],
+        "chest": [
+          223.0,
+          337.0
+        ],
+        "body": [
+          223.0,
+          337.0
+        ],
+        "hand": [
+          310.0,
+          270.0
+        ]
+      },
+      "alpha_bounds_px": [
+        92,
+        238,
+        325,
+        210
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "grounded",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          214.0,
+          391.0
+        ],
+        "chest": [
+          214.0,
+          391.0
+        ],
+        "body": [
+          214.0,
+          391.0
+        ],
+        "hand": [
+          164.0,
+          431.0
+        ]
+      },
+      "alpha_bounds_px": [
+        72,
+        337,
+        360,
+        112
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "occluded",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          234.0,
+          355.0
+        ],
+        "chest": [
+          234.0,
+          355.0
+        ],
+        "body": [
+          234.0,
+          355.0
+        ],
+        "hand": [
+          287.0,
+          332.0
+        ]
+      },
+      "alpha_bounds_px": [
+        85,
+        247,
+        344,
+        201
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          270.0,
+          326.0
+        ],
+        "chest": [
+          270.0,
+          326.0
+        ],
+        "body": [
+          270.0,
+          326.0
+        ],
+        "hand": [
+          204.0,
+          420.0
+        ]
+      },
+      "alpha_bounds_px": [
+        88,
+        197,
+        309,
+        250
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.0,
+          248.0
+        ],
+        "chest": [
+          280.0,
+          248.0
+        ],
+        "body": [
+          280.0,
+          248.0
+        ],
+        "hand": [
+          349.0,
+          230.0
+        ]
+      },
+      "alpha_bounds_px": [
+        87,
+        129,
+        302,
+        319
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "low_health",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          268.0,
+          266.0
+        ],
+        "chest": [
+          268.0,
+          266.0
+        ],
+        "body": [
+          268.0,
+          266.0
+        ],
+        "hand": [
+          313.0,
+          354.0
+        ]
+      },
+      "alpha_bounds_px": [
+        93,
+        139,
+        285,
+        309
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          272.0,
+          234.0
+        ],
+        "chest": [
+          272.0,
+          234.0
+        ],
+        "body": [
+          272.0,
+          234.0
+        ],
+        "hand": [
+          329.0,
+          128.0
+        ]
+      },
+      "alpha_bounds_px": [
+        89,
+        108,
+        300,
+        341
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          275.0,
+          238.0
+        ],
+        "chest": [
+          275.0,
+          238.0
+        ],
+        "body": [
+          275.0,
+          238.0
+        ],
+        "hand": [
+          191.0,
+          105.0
+        ]
+      },
+      "alpha_bounds_px": [
+        74,
+        83,
+        311,
+        365
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          270.0,
+          248.0
+        ],
+        "chest": [
+          270.0,
+          248.0
+        ],
+        "body": [
+          270.0,
+          248.0
+        ],
+        "hand": [
+          321.0,
+          235.0
+        ]
+      },
+      "alpha_bounds_px": [
+        85,
+        127,
+        309,
+        321
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          272.0,
+          249.0
+        ],
+        "chest": [
+          272.0,
+          249.0
+        ],
+        "body": [
+          272.0,
+          249.0
+        ],
+        "hand": [
+          349.0,
+          270.0
+        ]
+      },
+      "alpha_bounds_px": [
+        85,
+        129,
+        313,
+        319
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          290.0,
+          250.0
+        ],
+        "chest": [
+          290.0,
+          250.0
+        ],
+        "body": [
+          290.0,
+          250.0
+        ],
+        "hand": [
+          359.0,
+          221.0
+        ]
+      },
+      "alpha_bounds_px": [
+        104,
+        127,
+        303,
+        321
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visual landmarks on the final 512px normalized image; estimated ±8px. Not inferred from alpha bounds. Hidden core in KO/grounded is projected and emission must remain disabled.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -0.6195,
+          -3.6484,
+          -5.2188
+        ]
+      }
+    }
+  ],
+  "source": {
+    "path": "outputs/Brasa/assets/sprites/sequences/ascua-reactions-v1.png",
+    "sha256": "9c2615845bb20bf6a50b7ad4acc3e94921e3cebdf84633f7226a5a82526946ee",
+    "reference_height_px": 270,
+    "bank_scale_factor": 1.1888888888888889,
+    "canonical_height_world": 214,
+    "normalization": "Uniform source-bank affine resampling and transparent canvas placement. No frame fit, no per-frame scale.",
+    "frames": [
+      {
+        "name": "light_hit",
+        "source_region": [
+          16,
+          29,
+          260,
+          290
+        ],
+        "source_anchor": [
+          147,
+          287
+        ],
+        "normalized_source_anchor": [
+          147,
+          287
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          84.80000000000001,
+          110.35555555555555,
+          386.77777777777777,
+          448.0
+        ]
+      },
+      {
+        "name": "body_hit",
+        "source_region": [
+          338,
+          42,
+          254,
+          276
+        ],
+        "source_anchor": [
+          140,
+          273
+        ],
+        "normalized_source_anchor": [
+          140,
+          273
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          93.12222222222223,
+          127.0,
+          387.9666666666667,
+          448.0
+        ]
+      },
+      {
+        "name": "heavy_hit",
+        "source_region": [
+          636,
+          51,
+          284,
+          269
+        ],
+        "source_anchor": [
+          154,
+          266
+        ],
+        "normalized_source_anchor": [
+          154,
+          266
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          76.47777777777779,
+          135.32222222222225,
+          406.9888888888889,
+          448.0
+        ]
+      },
+      {
+        "name": "critical_stagger",
+        "source_region": [
+          970,
+          80,
+          265,
+          243
+        ],
+        "source_anchor": [
+          166,
+          240
+        ],
+        "normalized_source_anchor": [
+          166,
+          240
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          62.21111111111111,
+          166.23333333333335,
+          370.1333333333333,
+          448.0
+        ]
+      },
+      {
+        "name": "fall_start",
+        "source_region": [
+          20,
+          386,
+          297,
+          233
+        ],
+        "source_anchor": [
+          169,
+          230
+        ],
+        "normalized_source_anchor": [
+          169,
+          230
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          58.644444444444446,
+          178.1222222222222,
+          404.6111111111111,
+          448.0
+        ]
+      },
+      {
+        "name": "fall_mid",
+        "source_region": [
+          345,
+          432,
+          279,
+          183
+        ],
+        "source_anchor": [
+          141,
+          180
+        ],
+        "normalized_source_anchor": [
+          141,
+          180
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          91.93333333333334,
+          237.56666666666666,
+          416.5,
+          448.0
+        ]
+      },
+      {
+        "name": "grounded",
+        "source_region": [
+          636,
+          514,
+          309,
+          100
+        ],
+        "source_anchor": [
+          158,
+          97
+        ],
+        "normalized_source_anchor": [
+          158,
+          97
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          71.72222222222223,
+          336.2444444444444,
+          431.9555555555555,
+          448.0
+        ]
+      },
+      {
+        "name": "getup_support",
+        "source_region": [
+          953,
+          439,
+          295,
+          175
+        ],
+        "source_anchor": [
+          147,
+          172
+        ],
+        "normalized_source_anchor": [
+          147,
+          172
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          84.80000000000001,
+          247.07777777777778,
+          428.3888888888889,
+          448.0
+        ]
+      },
+      {
+        "name": "getup_kneel",
+        "source_region": [
+          25,
+          693,
+          265,
+          217
+        ],
+        "source_anchor": [
+          144,
+          214
+        ],
+        "normalized_source_anchor": [
+          144,
+          214
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          88.36666666666667,
+          197.14444444444445,
+          396.2888888888889,
+          448.0
+        ]
+      },
+      {
+        "name": "getup_rise",
+        "source_region": [
+          340,
+          643,
+          260,
+          274
+        ],
+        "source_anchor": [
+          145,
+          271
+        ],
+        "normalized_source_anchor": [
+          145,
+          271
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          87.17777777777778,
+          129.3777777777778,
+          389.15555555555557,
+          448.0
+        ]
+      },
+      {
+        "name": "low_health",
+        "source_region": [
+          654,
+          651,
+          246,
+          266
+        ],
+        "source_anchor": [
+          140,
+          263
+        ],
+        "normalized_source_anchor": [
+          140,
+          263
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          93.12222222222223,
+          138.8888888888889,
+          378.4555555555555,
+          448.0
+        ]
+      },
+      {
+        "name": "victory_start",
+        "source_region": [
+          968,
+          625,
+          258,
+          292
+        ],
+        "source_anchor": [
+          143,
+          289
+        ],
+        "normalized_source_anchor": [
+          143,
+          289
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          89.55555555555554,
+          107.97777777777776,
+          389.15555555555557,
+          448.0
+        ]
+      },
+      {
+        "name": "victory_peak",
+        "source_region": [
+          30,
+          916,
+          267,
+          313
+        ],
+        "source_anchor": [
+          156,
+          310
+        ],
+        "normalized_source_anchor": [
+          156,
+          310
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          74.1,
+          83.01111111111112,
+          384.4,
+          448.0
+        ]
+      },
+      {
+        "name": "transform_start",
+        "source_region": [
+          344,
+          953,
+          266,
+          276
+        ],
+        "source_anchor": [
+          147,
+          273
+        ],
+        "normalized_source_anchor": [
+          147,
+          273
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          84.80000000000001,
+          127.0,
+          393.9111111111111,
+          448.0
+        ]
+      },
+      {
+        "name": "transform_peak",
+        "source_region": [
+          649,
+          955,
+          270,
+          274
+        ],
+        "source_anchor": [
+          147,
+          271
+        ],
+        "normalized_source_anchor": [
+          147,
+          271
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          84.80000000000001,
+          129.3777777777778,
+          398.66666666666663,
+          448.0
+        ]
+      },
+      {
+        "name": "transformed_idle",
+        "source_region": [
+          965,
+          953,
+          261,
+          276
+        ],
+        "source_anchor": [
+          131,
+          273
+        ],
+        "normalized_source_anchor": [
+          131,
+          273
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 1.1888888888888889,
+        "normalized_alpha_bounds_float": [
+          103.82222222222222,
+          127.0,
+          406.9888888888889,
+          448.0
+        ]
+      }
+    ]
+  },
+  "art_review_status": "KEEP",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "8822fd6059952f8872b42ecbccb13bf3ef5197110f51e180ea9c20fa96b8e7df",
+  "precision_revision": 1,
+  "precision_source_sha256": "a77a72e2e81b74508a5b575ce2de3c6112e059d226ebe73e2c04cc859978e02c",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint."
+}

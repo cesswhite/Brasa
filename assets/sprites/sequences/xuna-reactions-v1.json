@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "xuna",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 277,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        61,
+        34,
+        221,
+        285
+      ],
+      "anchor": [
+        119.0,
+        281
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        362,
+        53,
+        213,
+        268
+      ],
+      "anchor": [
+        111.5,
+        264
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        694,
+        71,
+        209,
+        248
+      ],
+      "anchor": [
+        105.0,
+        244
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        978,
+        54,
+        254,
+        266
+      ],
+      "anchor": [
+        130.5,
+        262
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        56,
+        355,
+        261,
+        246
+      ],
+      "anchor": [
+        166.0,
+        242
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        339,
+        406,
+        285,
+        196
+      ],
+      "anchor": [
+        134.5,
+        191
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        648,
+        526,
+        313,
+        75
+      ],
+      "anchor": [
+        137.0,
+        71
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        983,
+        413,
+        234,
+        187
+      ],
+      "anchor": [
+        117.0,
+        183
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        56,
+        676,
+        200,
+        224
+      ],
+      "anchor": [
+        95.5,
+        220
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        372,
+        643,
+        192,
+        267
+      ],
+      "anchor": [
+        97.5,
+        263
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        671,
+        653,
+        198,
+        260
+      ],
+      "anchor": [
+        107.0,
+        256
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        1007,
+        637,
+        189,
+        279
+      ],
+      "anchor": [
+        97.5,
+        275
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        66,
+        915,
+        204,
+        311
+      ],
+      "anchor": [
+        105.5,
+        307
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        350,
+        1002,
+        214,
+        213
+      ],
+      "anchor": [
+        123.5,
+        209
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        674,
+        930,
+        236,
+        296
+      ],
+      "anchor": [
+        122.0,
+        292
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        991,
+        941,
+        204,
+        285
+      ],
+      "anchor": [
+        107.5,
+        281
+      ]
+    }
+  ],
+  "notes": "Native image generation and native background extraction; original PNG copied unchanged. Sixteen complete separated silhouettes verified against canonical body in Godot native contact sheet. One common scale per bank; airborne anchors retain the projected ground origin."
+}

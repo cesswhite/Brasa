@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        102,
+        189,
+        263,
+        258
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 38506
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        90,
+        190,
+        264,
+        258
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 38663
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        73,
+        261,
+        313,
+        187
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35317
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        106,
+        184,
+        273,
+        264
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 42431
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        99,
+        197,
+        274,
+        251
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 38388
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        94,
+        197,
+        307,
+        250
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38252
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        97,
+        216,
+        333,
+        232
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 37783
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        107,
+        193,
+        265,
+        255
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 37389
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        81,
+        269,
+        288,
+        179
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31964
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        91,
+        238,
+        313,
+        210
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 36319
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        116,
+        175,
+        268,
+        273
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 36347
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        149,
+        187,
+        223,
+        219
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28768
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        104,
+        179,
+        303,
+        270
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 34931
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        108,
+        192,
+        276,
+        253
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 37104
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        84,
+        260,
+        295,
+        187
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30812
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        96,
+        180,
+        276,
+        268
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 39260
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "duna_pedernal",
+  "bank": "movement",
+  "source_sha256": "553a6b2636cfea901378ae5419a84498154faf956687106c75882dcdee5a6597",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/duna_pedernal/movement/duna_pedernal-movement.png"
+}

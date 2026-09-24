@@ -1,0 +1,1357 @@
+{
+  "version": 2,
+  "body_id": "iria",
+  "bank": "movement",
+  "profile_id": "iria:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          276.076,
+          305.643
+        ],
+        "chest": [
+          276.076,
+          305.643
+        ],
+        "body": [
+          276.076,
+          305.643
+        ],
+        "hand": [
+          327.179,
+          267.772
+        ],
+        "left_foot": [
+          180.259,
+          448.0
+        ],
+        "right_foot": [
+          333.567,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        148,
+        209,
+        208,
+        239
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        0,
+        0,
+        314,
+        314
+      ],
+      "source_anchor_relative": [
+        155.571717417087,
+        302.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "step_back",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          278.357,
+          314.768
+        ],
+        "chest": [
+          278.357,
+          314.768
+        ],
+        "body": [
+          278.357,
+          314.768
+        ],
+        "hand": [
+          325.81,
+          287.392
+        ],
+        "left_foot": [
+          188.928,
+          448.0
+        ],
+        "right_foot": [
+          321.247,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        162,
+        225,
+        184,
+        223
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        314,
+        0,
+        313,
+        314
+      ],
+      "source_anchor_relative": [
+        155.53585870854351,
+        303.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          282.008,
+          369.065
+        ],
+        "chest": [
+          282.008,
+          369.065
+        ],
+        "body": [
+          282.008,
+          369.065
+        ],
+        "hand": [
+          342.236,
+          434.312
+        ],
+        "left_foot": [
+          167.939,
+          448.0
+        ],
+        "right_foot": [
+          328.548,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        140,
+        281,
+        223,
+        167
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        627,
+        0,
+        313,
+        314
+      ],
+      "source_anchor_relative": [
+        156.45568209422288,
+        303.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          272.426,
+          319.331
+        ],
+        "chest": [
+          272.426,
+          319.331
+        ],
+        "body": [
+          272.426,
+          319.331
+        ],
+        "hand": [
+          227.711,
+          242.677
+        ],
+        "left_foot": [
+          174.327,
+          448.0
+        ],
+        "right_foot": [
+          332.654,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        144,
+        228,
+        218,
+        221
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        940,
+        0,
+        314,
+        314
+      ],
+      "source_anchor_relative": [
+        157.80378806281524,
+        302.23207064572824
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          281.095,
+          320.7
+        ],
+        "chest": [
+          281.095,
+          320.7
+        ],
+        "body": [
+          281.095,
+          320.7
+        ],
+        "hand": [
+          222.236,
+          288.304
+        ],
+        "left_foot": [
+          186.646,
+          448.0
+        ],
+        "right_foot": [
+          329.916,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        155,
+        236,
+        205,
+        213
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        0,
+        314,
+        314,
+        313
+      ],
+      "source_anchor_relative": [
+        152.34810596859236,
+        301.23207064572824
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          273.795,
+          297.43
+        ],
+        "chest": [
+          273.795,
+          297.43
+        ],
+        "body": [
+          273.795,
+          297.43
+        ],
+        "hand": [
+          391.057,
+          259.559
+        ],
+        "left_foot": [
+          174.327,
+          448.0
+        ],
+        "right_foot": [
+          334.479,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        141,
+        211,
+        267,
+        237
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        314,
+        314,
+        313,
+        313
+      ],
+      "source_anchor_relative": [
+        152.2933069459726,
+        302.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          260.563,
+          309.293
+        ],
+        "chest": [
+          260.563,
+          309.293
+        ],
+        "body": [
+          260.563,
+          309.293
+        ],
+        "hand": [
+          374.631,
+          277.81
+        ],
+        "left_foot": [
+          162.92,
+          448.0
+        ],
+        "right_foot": [
+          324.897,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        135,
+        232,
+        253,
+        217
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        627,
+        314,
+        313,
+        313
+      ],
+      "source_anchor_relative": [
+        155.77638855150536,
+        301.23207064572824
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "recovery",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          274.707,
+          306.099
+        ],
+        "chest": [
+          274.707,
+          306.099
+        ],
+        "body": [
+          274.707,
+          306.099
+        ],
+        "hand": [
+          330.373,
+          274.16
+        ],
+        "left_foot": [
+          176.152,
+          448.0
+        ],
+        "right_foot": [
+          330.829,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        149,
+        211,
+        209,
+        237
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        940,
+        314,
+        314,
+        313
+      ],
+      "source_anchor_relative": [
+        153.4198233856794,
+        302.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          315.772,
+          356.289
+        ],
+        "chest": [
+          315.772,
+          356.289
+        ],
+        "body": [
+          315.772,
+          356.289
+        ],
+        "hand": [
+          371.437,
+          345.795
+        ],
+        "left_foot": [
+          199.422,
+          448.0
+        ],
+        "right_foot": [
+          302.996,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        173,
+        286,
+        213,
+        162
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        0,
+        627,
+        314,
+        313
+      ],
+      "source_anchor_relative": [
+        145.95366017461384,
+        286.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          291.133,
+          354.008
+        ],
+        "chest": [
+          291.133,
+          354.008
+        ],
+        "body": [
+          291.133,
+          354.008
+        ],
+        "hand": [
+          354.099,
+          345.338
+        ],
+        "left_foot": [
+          142.388,
+          448.0
+        ],
+        "right_foot": [
+          355.011,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        121,
+        287,
+        260,
+        163
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        314,
+        627,
+        313,
+        313
+      ],
+      "source_anchor_relative": [
+        164.33964677135876,
+        285.4641412914565
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          294.327,
+          307.924
+        ],
+        "chest": [
+          294.327,
+          307.924
+        ],
+        "body": [
+          294.327,
+          307.924
+        ],
+        "hand": [
+          291.589,
+          224.882
+        ],
+        "left_foot": [
+          207.179,
+          448.0
+        ],
+        "right_foot": [
+          306.19,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        179,
+        209,
+        180,
+        239
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        627,
+        627,
+        313,
+        313
+      ],
+      "source_anchor_relative": [
+        155.51691839446724,
+        287.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          274.251,
+          307.468
+        ],
+        "chest": [
+          274.251,
+          307.468
+        ],
+        "body": [
+          274.251,
+          307.468
+        ],
+        "hand": [
+          257.825,
+          232.183
+        ],
+        "left_foot": [
+          250.981,
+          448.0
+        ],
+        "right_foot": [
+          283.376,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        193,
+        216,
+        139,
+        192
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        940,
+        627,
+        314,
+        313
+      ],
+      "source_anchor_relative": [
+        158.0084591972336,
+        287.71717417087007
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          276.989,
+          291.498
+        ],
+        "chest": [
+          276.989,
+          291.498
+        ],
+        "body": [
+          276.989,
+          291.498
+        ],
+        "hand": [
+          413.871,
+          253.171
+        ],
+        "left_foot": [
+          165.658,
+          448.0
+        ],
+        "right_foot": [
+          306.19,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        130,
+        211,
+        300,
+        221
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        0,
+        940,
+        314,
+        314
+      ],
+      "source_anchor_relative": [
+        156.56969549747797,
+        257.286869668348
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          262.388,
+          298.342
+        ],
+        "chest": [
+          262.388,
+          298.342
+        ],
+        "body": [
+          262.388,
+          298.342
+        ],
+        "hand": [
+          303.909,
+          268.228
+        ],
+        "left_foot": [
+          234.099,
+          448.0
+        ],
+        "right_foot": [
+          297.065,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        179,
+        211,
+        143,
+        236
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        314,
+        940,
+        313,
+        314
+      ],
+      "source_anchor_relative": [
+        157.72361144849464,
+        257.76792935427176
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "landing",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          273.795,
+          358.57
+        ],
+        "chest": [
+          273.795,
+          358.57
+        ],
+        "body": [
+          273.795,
+          358.57
+        ],
+        "hand": [
+          344.517,
+          433.856
+        ],
+        "left_foot": [
+          176.152,
+          448.0
+        ],
+        "right_foot": [
+          329.916,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        145,
+        286,
+        230,
+        157
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        627,
+        940,
+        313,
+        314
+      ],
+      "source_anchor_relative": [
+        158.428282582913,
+        257.8396467713588
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          269.688,
+          308.837
+        ],
+        "chest": [
+          269.688,
+          308.837
+        ],
+        "body": [
+          269.688,
+          308.837
+        ],
+        "hand": [
+          318.51,
+          273.247
+        ],
+        "left_foot": [
+          179.802,
+          448.0
+        ],
+        "right_foot": [
+          321.247,
+          448.0
+        ]
+      },
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "socket_annotation_method": "Clean pose geometry preserved byte-exactly; inherits only existing clean annotations, no inferred anatomy.",
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "alpha_bounds_px": [
+        144,
+        214,
+        209,
+        234
+      ],
+      "alpha_bounds_threshold": 31,
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "source_region": [
+        940,
+        940,
+        314,
+        314
+      ],
+      "source_anchor_relative": [
+        155.25947015703815,
+        255.0
+      ],
+      "art_status": "ACCEPTED",
+      "precision_correction": {
+        "revision": 2,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "clean_pose_geometry",
+        "lab_offset": [
+          -3.4973,
+          -0.6719,
+          -4.0781
+        ]
+      }
+    }
+  ],
+  "damage_family": "illustrated-v2",
+  "damage_tiers": [
+    2,
+    3
+  ],
+  "source": {
+    "path": "work/illustrated-damage/generated/iria-movement.png",
+    "sha256": "b0ce0b8996a20482c68694804df5ddcf49909f0ed4f6ff20388b57ee174b861b",
+    "normalization": {
+      "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+      "sample_ratios": [
+        1.289941,
+        1.257669,
+        1.331461,
+        1.314465
+      ],
+      "uniform_scale": 1.302203118603699,
+      "explicit_review_override": false,
+      "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+    },
+    "alpha_extraction": {
+      "mode": "magenta",
+      "removed_pixels": 1377741,
+      "fraction": 0.87614,
+      "internal_holes_included": true,
+      "rgb_unchanged": true,
+      "strict_key_hue": true,
+      "strict_key_settings": {
+        "min_channel": 30,
+        "min_delta": 14
+      },
+      "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+      "resampled_key_alpha_removed": 450
+    },
+    "clean_metadata_sha256": "cb4bc4012e65d80b48a30a9b8007c5aefe6ccd9789047d2e95bb741b3e3e050c",
+    "clean_atlas_sha256": "a598eb714fee4d2d98bb531b03d463cfeb07d69a2c15aa24f8ac2990145ad28c"
+  },
+  "art_review_status": "ACCEPTED",
+  "atlas_sha256": "08a4f5099c8b5f02ee4693b74ea29ed7143a1fb24b0ca9d01140dcf681b6322e",
+  "precision_revision": 2,
+  "precision_source_sha256": "aa250e1b04103bf5b3e703e6c271ae0a5d6ae412fb0565ad8951c4c8f2e80659",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint. Revision 2: stronger local injury contrast and compact region selection retain visible facial bruises and clothing damage.",
+  "damage_composition": "localized_authored_detail_on_exact_clean_pose"
+}

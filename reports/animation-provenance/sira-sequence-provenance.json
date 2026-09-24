@@ -1,0 +1,444 @@
+{
+  "version": 1,
+  "body_id": "sira",
+  "status": "complete_native_reviewed",
+  "canonical": {
+    "absolute_path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sira-v3.png",
+    "banks": {
+      "movement": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "reactions": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ]
+    },
+    "body_id": "sira",
+    "display_scale": 0.406862745098039,
+    "frames": [
+      {
+        "anchor": [
+          132.5,
+          412.0
+        ],
+        "bounds": [
+          4,
+          4,
+          275,
+          408
+        ],
+        "name": "idle",
+        "region": [
+          73,
+          11,
+          283,
+          416
+        ]
+      },
+      {
+        "anchor": [
+          121.5,
+          413.0
+        ],
+        "bounds": [
+          4,
+          4,
+          235,
+          409
+        ],
+        "name": "idle_breathe",
+        "region": [
+          527,
+          11,
+          243,
+          417
+        ]
+      },
+      {
+        "anchor": [
+          154.5,
+          367.0
+        ],
+        "bounds": [
+          4,
+          4,
+          301,
+          363
+        ],
+        "name": "windup",
+        "region": [
+          916,
+          53,
+          309,
+          371
+        ]
+      },
+      {
+        "anchor": [
+          171.5,
+          353.0
+        ],
+        "bounds": [
+          4,
+          4,
+          446,
+          349
+        ],
+        "name": "punch",
+        "region": [
+          1318,
+          68,
+          454,
+          357
+        ]
+      },
+      {
+        "anchor": [
+          162.5,
+          375.0
+        ],
+        "bounds": [
+          4,
+          4,
+          273,
+          371
+        ],
+        "name": "hit",
+        "region": [
+          81,
+          483,
+          281,
+          379
+        ]
+      },
+      {
+        "anchor": [
+          177.0,
+          276.0
+        ],
+        "bounds": [
+          4,
+          4,
+          346,
+          272
+        ],
+        "name": "dodge",
+        "region": [
+          507,
+          552,
+          354,
+          280
+        ]
+      },
+      {
+        "anchor": [
+          114.0,
+          436.0
+        ],
+        "bounds": [
+          4,
+          4,
+          234,
+          432
+        ],
+        "name": "victory",
+        "region": [
+          989,
+          429,
+          242,
+          440
+        ]
+      },
+      {
+        "anchor": [
+          255.0,
+          109.0
+        ],
+        "bounds": [
+          4,
+          4,
+          401,
+          105
+        ],
+        "name": "defeat",
+        "region": [
+          1315,
+          734,
+          409,
+          113
+        ]
+      }
+    ],
+    "name": "Sira",
+    "path": "res://assets/sprites/sira-v3.png",
+    "reference_height": 408,
+    "sha256": "b5a39b7e714f7f944a65c86403bd9c057f74a560cf92723b3fde15e354261686",
+    "source_size": [
+      1774,
+      887
+    ]
+  },
+  "visual_observation": {
+    "observed_identity": "Elegant slender adult praying mantis duelist. Exact triangular pale-jade/lilac chitin head, narrow amber insect eyes, two fine antennae, segmented mantis forelimbs with long curved natural blades, long lean digitigrade insect legs, folded leaf-shaped wing covers at hips/back, fitted dark obsidian-plum waistcoat and long split purple panels with restrained gold trim. Preserve her exact tall narrow body proportions and delicate joint structure.",
+    "anatomy": "Sira has the original mantis bladed forelimbs, NOT human fists, gloves, furry paws or ordinary human arms. Adapt punch/guard/support actions to her natural segmented forelimbs and their blade edges. Do not add an extra pair of arms, lose the folded wing covers, enlarge the head/eyes, shorten the antennae, or change insect foot shapes.",
+    "transform": "Transformation uses only a subtly brighter existing amber eye color and very restrained highlights along EXISTING pale-jade/lilac chitin edges. No new blades, armor, gems, light beams or glowing symbols."
+  },
+  "canonical_sha256": "b5a39b7e714f7f944a65c86403bd9c057f74a560cf92723b3fde15e354261686",
+  "canonical_mode": "RGBA",
+  "canonical_size": [
+    1774,
+    887
+  ],
+  "banks": {
+    "movement": {
+      "body_id": "sira",
+      "bank": "movement",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/sira-movement-v1.txt",
+      "prompt_sha256": "0a74ab28c7a22b73e96546b0fe944962051fadc80acc164cfbab7899c6701914",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sira-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/sira-movement-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/sira-movement-v1.json",
+      "expected_frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-f2fdf2be-b638-4a95-9024-1e389d8fa7d9.png",
+          "sha256": "00ffdd1be61fa182fafe13fb556e88ec071bd2ac996041c9fa31063f507840fe",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/sira-movement-v1.txt",
+          "prompt_sha256": "0a74ab28c7a22b73e96546b0fe944962051fadc80acc164cfbab7899c6701914",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sira-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "sira-movement-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-9f8d9ef6-ec4d-4136-a142-cc802d4e8a60.png",
+          "sha256": "a328c72d90263a831ecdd01121e6b17f5c6c171cff55661491a9479f336a5f25",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/sira-movement-alpha-result.txt",
+          "prompt_sha256": "f0ca0955628a81042b4bc21304e9d19615c838ff8bcec184638a790698666034",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-f2fdf2be-b638-4a95-9024-1e389d8fa7d9.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "sira-movement-alpha2-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-a1f061b8-87bc-49fe-be7f-d234189fa51f.png",
+          "sha256": "4b9b4b9047a588b046b2d9070ef6b9e1dd445d95e78b37d35e1d794f6637aea6",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/sira-movement-alpha2-result.txt",
+          "prompt_sha256": "71e06efa887e3c54c947fe1f7cc1782cb4fa8919b4c4cb4b48d47350e0cd2e40",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-9f8d9ef6-ec4d-4136-a142-cc802d4e8a60.png",
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sira-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "sira-movement-alpha3-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-b4437752-7e77-4e3c-b326-fd95f053d264.png",
+          "sha256": "bb6e9d2c50127f53ecd852d55fe957362eea7afa88473473f231e747a24ad02f",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/sira-movement-alpha3-result.txt",
+          "prompt_sha256": "2416a643a82bf02841d39b63e32545544ba233b9d3fa9e634e854487f31630ec",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-f2fdf2be-b638-4a95-9024-1e389d8fa7d9.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "sira",
+        "bank": "movement",
+        "destination": "outputs/Brasa/assets/sprites/sequences/sira-movement-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/sira-movement-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-b4437752-7e77-4e3c-b326-fd95f053d264.png",
+        "sha256": "bb6e9d2c50127f53ecd852d55fe957362eea7afa88473473f231e747a24ad02f",
+        "metadata_sha256": "5f901122a0505839ced5460bf7b515a6e4e5c89158edf275b70722cd801f7015",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.6496239147964155
+        },
+        "frame_count": 16,
+        "reference_height": 292,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/sira-movement.inspection.json",
+        "native_capture": "work/animation/sira-movement-native.png",
+        "native_capture_sha256": "9f54d2799596228a094fabfcc84b9c8271fb36ee7599b84253d68988920f11b7",
+        "native_log": "work/animation/sira-movement-native.log",
+        "png_bytes": 1397466
+      }
+    },
+    "reactions": {
+      "body_id": "sira",
+      "bank": "reactions",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/sira-reactions-v1.txt",
+      "prompt_sha256": "7359352a6c4a205b224668f1c3e39f91c4d9cdb0bc30486072c0bf02dbbeada0",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sira-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/sira-reactions-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/sira-reactions-v1.json",
+      "expected_frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1f5620ac-0a33-44e3-895e-108e4632fc0d.png",
+          "sha256": "2cba1a1c06c2fbbab65a8d735936c3d589e185ef8d41f25ea52280667031ba8d",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/sira-reactions-v1.txt",
+          "prompt_sha256": "7359352a6c4a205b224668f1c3e39f91c4d9cdb0bc30486072c0bf02dbbeada0",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sira-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "sira-reactions-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-458be204-f407-4e5a-b139-0476d4807989.png",
+          "sha256": "d63a5d1bb0da3b37a53db6405d447a3a0b2ab8ecabcf5648694e4c2879af4ec5",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/sira-reactions-alpha-result.txt",
+          "prompt_sha256": "11d5d4e635e20420fe0a7c042f33009aa852f2424be23eb00dead855011c3cb1",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1f5620ac-0a33-44e3-895e-108e4632fc0d.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "sira",
+        "bank": "reactions",
+        "destination": "outputs/Brasa/assets/sprites/sequences/sira-reactions-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/sira-reactions-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-458be204-f407-4e5a-b139-0476d4807989.png",
+        "sha256": "d63a5d1bb0da3b37a53db6405d447a3a0b2ab8ecabcf5648694e4c2879af4ec5",
+        "metadata_sha256": "67e16cb986c5e7468d8fb0160d93577875031fb8ee85ba062be56aca6388b403",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.713476365264328
+        },
+        "frame_count": 16,
+        "reference_height": 276,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/sira-reactions.inspection.json",
+        "native_capture": "work/animation/sira-reactions-native.png",
+        "native_capture_sha256": "f3ea40f5be4b96a36066ddbd684a60ea2f0e531109e09d86d899e7d96b5981ac",
+        "native_log": "work/animation/sira-reactions-native.log",
+        "png_bytes": 1207779
+      }
+    }
+  }
+}

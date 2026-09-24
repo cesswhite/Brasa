@@ -1,0 +1,13 @@
+{
+  "source_sha256": "5f9be4ba8db30b1c44d1ff163162339598e892fa9cec1a2652f09b62a2c98ff8",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Hairless charcoal skin remains skin, without added fur; rust vest, red sash, long ears and tail remain complete. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/xuna-base-1.png"
+  ],
+  "poses_reviewed": 8,
+  "anatomical_sockets_verified": false
+}

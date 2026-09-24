@@ -1,0 +1,499 @@
+{
+  "status": "all8banks approved and promoted",
+  "body_ids": [
+    "balam",
+    "tepa",
+    "xuna",
+    "copal"
+  ],
+  "additional_frames": 128,
+  "native_generation_calls": 24,
+  "pixel_edits_outside_native_generation": false,
+  "actual_saves_accessed": false,
+  "canonical_references": {
+    "balam": {
+      "reference": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/balam-v1.png",
+      "reference_sha256": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166",
+      "prompts": [
+        "work/animation/mexican-prompts/balam-movement-v1.txt",
+        "work/animation/mexican-prompts/balam-reactions-v1.txt"
+      ]
+    },
+    "tepa": {
+      "reference": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/tepa-v1.png",
+      "reference_sha256": "263c0f1bc7b14c0304d7b4923b42ec59a2b44c91724a72b0f72c43bca415f2ae",
+      "prompts": [
+        "work/animation/mexican-prompts/tepa-movement-v1.txt",
+        "work/animation/mexican-prompts/tepa-reactions-v1.txt"
+      ]
+    },
+    "xuna": {
+      "reference": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/xuna-v1.png",
+      "reference_sha256": "2cfd6c722eeeb659bfb37bca2591966fa8e3eddea9b1388425aaeaf15a4c1091",
+      "prompts": [
+        "work/animation/mexican-prompts/xuna-movement-v1.txt",
+        "work/animation/mexican-prompts/xuna-reactions-v1.txt"
+      ]
+    },
+    "copal": {
+      "reference": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/copal-v1.png",
+      "reference_sha256": "0a6d220da5abcbc5be4d6dbf0c567637539bbf0169a02decab541693310f1c20",
+      "prompts": [
+        "work/animation/mexican-prompts/copal-movement-v1.txt",
+        "work/animation/mexican-prompts/copal-reactions-v1.txt"
+      ]
+    }
+  },
+  "assets": {
+    "xuna-movement-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/xuna-movement-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-1fd8b670-ceaf-4008-8cb7-5b13b4451d43.png",
+      "sha256": "c746a0ec7387c560b47f57c9d75db4dcd046e7ae2183c8a652022a2030579722",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/xuna-movement-v1.json",
+      "metadata_sha256": "58091527837b68696c8364a447b53c6307aee00080d16a8c1cdeae639d539dc0",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.7628240348587868,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/xuna-movement-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/xuna-movement/xuna-movement.inspection.json"
+    },
+    "copal-movement-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/copal-movement-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-c3cab69d-d86d-4b05-97be-f808bf1551f6.png",
+      "sha256": "1ccdbe51a6c370898c20209b23a31e7fc93b2aa9e16eb2d5863e6e80012aab4a",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/copal-movement-v1.json",
+      "metadata_sha256": "5a5207633d3aebe17ff8deecc94f30253e277737035f977379cb53be1ed27969",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.5488942560838809,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/copal-movement-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/copal-movement/copal-movement.inspection.json"
+    },
+    "balam-movement-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/balam-movement-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-de7468bd-fccd-4d51-aba6-99e9fc9c5ade.png",
+      "sha256": "766be08d086af95e8ce91d9ee30f85ae3f51a8dc7cc494d1552dac5c06cc6b03",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/balam-movement-v1.json",
+      "metadata_sha256": "f212e19ccdf67ec165b0b15edd6dd5c97667c17629b7ea5ceb7ae726590c89e6",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.6261100046040867,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/balam-movement-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/balam-movement/balam-movement.inspection.json"
+    },
+    "tepa-reactions-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/tepa-reactions-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-9605f242-4d23-4621-96ba-97deacf61d99.png",
+      "sha256": "7dacd63059929e42b69487e73f29c1d2e8e23bf69c6cbe27c5179f3a82b09e72",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/tepa-reactions-v1.json",
+      "metadata_sha256": "b9f8ba7dbacaa502e343e6eb9d9c43b17f5a6844fef392c4a56342d98a121f1e",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.6556085915818981,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/tepa-reactions-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/tepa-reactions/tepa-reactions.inspection.json"
+    },
+    "tepa-movement-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/tepa-movement-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-416b6e7e-06bf-44b6-a971-9c3b9e1530b2.png",
+      "sha256": "2336a0b5a0c45dbf1e981b92046c0c00838ca064f3e70b33d5d9233b2b8fd521",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/tepa-movement-v1.json",
+      "metadata_sha256": "8fd414e3516599f8816f11c3ee2ca2f528871d95c8190490d03c66480d7c1a95",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.6483978541394809,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/tepa-movement-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/tepa-movement/tepa-movement.inspection.json"
+    },
+    "balam-reactions-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/balam-reactions-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-8f20f82a-62a6-4a78-a0c6-5a8e9fc6c26e.png",
+      "sha256": "c1809cd48ea714b31a0c2f5b58f899a3dd01075a198c4fb945ca40c4a168017c",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/balam-reactions-v1.json",
+      "metadata_sha256": "9595e450a6bbb51d4da294a7de7ce315a686376a4de32420db3dca2dd5a8548a",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.5961141253888673,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/balam-reactions-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/balam-reactions/balam-reactions.inspection.json"
+    },
+    "copal-reactions-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/copal-reactions-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-e063c868-18ce-4c50-bb26-689a4e31659b.png",
+      "sha256": "ad5a2aa3c54ace479375454decd9f8db99ab6a5f9697c0c05df31fe6b2fb5146",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/copal-reactions-v1.json",
+      "metadata_sha256": "30c64ad402ad63f2b10fd831096d42ac50563abd8f8e19029ae4a3de3696f0c3",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.6936050253224768,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/copal-reactions-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/copal-reactions-approved/copal-reactions.inspection.json"
+    },
+    "xuna-reactions-v1": {
+      "path": "outputs/Brasa/assets/sprites/sequences/xuna-reactions-v1.png",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-9ac46fe2-f4e6-44e7-95da-fc50438b93f9.png",
+      "sha256": "90896a5aaaf3317435816eb4538443c2ce3161c1608fda813b4922b399e8b504",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/xuna-reactions-v1.json",
+      "metadata_sha256": "d0efaab097dd8afa07ea4c2aa13cd3352e52d07d6dd773eaaba09cf7175a20d2",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "transparent_pixel_fraction": 0.7344383141411598,
+      "frame_count": 16,
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "pixel_copy_matches_native_output": true,
+      "native_preview": "work/animation/mexican-previews/xuna-reactions-v1.png",
+      "geometry_report": "work/animation/mexican-inspection/xuna-reactions/xuna-reactions.inspection.json"
+    }
+  },
+  "calls": [
+    {
+      "id": "xuna-movement-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nXUNA identity lock: lean athletic anthropomorphic Mexican hairless xoloitzcuintle dog, smooth charcoal-gray skin with no fur, long slim canine muzzle, tall pointed ears with warm inner ears, narrow amber eyes, slender bare whip-like tail. Orange/copper sleeveless fitted lace-front vest, turquoise bead necklace and small turquoise wrist accents, white hand wraps, red waist sash with long hanging end, brown cropped trousers, bare charcoal canine feet. Never grow a fluffy tail, fur, mane, horns, new armor or weapon; retain the reference's lean proportions and understated calm expression.\n\nSixteen DIFFERENT movement frames, left-to-right then top-to-bottom:\nRow1: (1) guard_shift: weight subtly shifts in ready boxing guard; (2) step_back: clear short backward step with guarded hands; (3) charge_crouch: knees bend and torso lowers to gather forward force; (4) heavy_windup: torso twists back, striking fist drawn far behind shoulder, planted feet.\nRow2: (5) quick_windup: compact brief fist preparation near chest, small torso turn; (6) quick_extend: anatomically correct fully extended punch to the right, rear hand guarding; (7) follow_through: body weight continues forward AFTER the punch with shoulder rotation; (8) recovery: fist retracts halfway and torso returns toward balance.\nRow3: (9) dash_lean: planted forward lean preparing a burst; (10) dash_stride: one strong forward running stride, body low; (11) jump_start: pushing off with both feet leaving the shared baseline, legs compress; (12) jump_apex: visibly airborne compact knees and guarded fist above the projected ground baseline.\nRow4: (13) jump_strike: airborne rightward punch with natural compact legs; (14) jump_fall: descending from jump, knees and arms preparing landing; (15) landing: both feet planted with compressed knees, low stable body; (16) guard_settle: completed balanced defensive guard.\nThe silhouettes must tell a coherent anticipation→extension→follow-through→recovery and takeoff→airborne→landing story. Do not substitute generic idle poses for these distinct actions.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-0bd0a02b-8042-4e18-a1aa-ef61b0fcfd91.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/xuna-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "78a9e055db34ba5c0a9587392cbf5cb2512ad17864c412e31e2b3475107bfcd5",
+      "mode": "RGB"
+    },
+    {
+      "id": "xuna-movement-v1",
+      "step": "alpha",
+      "prompt": "Use case: background-extraction. Edit ONLY the attached sprite sheet background: remove the entire baked gray-and-white checkerboard and make those background pixels actually transparent alpha0. Deliver a genuine RGBA PNG with transparent background. Preserve the EXACT same sixteen character poses, same pixels' painted appearance, same dimensions, same4x4 arrangement, positions, anatomy, costume, colors, lighting, contours and scale. No new drawing, no reposing, no character redesign. Do not erase white/cream character details. No checkerboard should remain embedded in the resulting image. Keep all sixteen full silhouettes intact, including thin tails, ears and fingers. This is alpha extraction, not a new composition.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-2812e4dc-04f3-4eab-b9c6-27baecc0e230.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-0bd0a02b-8042-4e18-a1aa-ef61b0fcfd91.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "6f089a40b54dcf19d135c9cfd041112f69f4d05dd6d1e0c7e1769ec45d94cdfe",
+      "mode": "RGB"
+    },
+    {
+      "id": "xuna-movement-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied XUNA movement sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-1fd8b670-ceaf-4008-8cb7-5b13b4451d43.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-0bd0a02b-8042-4e18-a1aa-ef61b0fcfd91.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "c746a0ec7387c560b47f57c9d75db4dcd046e7ae2183c8a652022a2030579722",
+      "mode": "RGBA"
+    },
+    {
+      "id": "copal-movement-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nCOPAL identity lock: anthropomorphic cacomixtle/ringtail, huge warm rounded ears, narrow foxlike muzzle, cream facial mask and dark expressive eye markings, tan-brown fur, and the very large curled black-and-cream RINGED TAIL in the reference. Tail has alternating rings all around it, not skunk lengthwise stripes; keep the SAME large tail volume and length consistently, fully visible even in hit/grounded frames. Cream sleeveless wrap vest, plum/purple sash with long hanging ends, rust-brown cropped trousers, pale forearm/ankle wraps, dark brown hands/feet. No weapons or new accessories. Tail must bend naturally within its own cell without shrinking, detaching, becoming a second tail or crossing adjacent cells.\n\nSixteen DIFFERENT movement frames, left-to-right then top-to-bottom:\nRow1: (1) guard_shift: weight subtly shifts in ready boxing guard; (2) step_back: clear short backward step with guarded hands; (3) charge_crouch: knees bend and torso lowers to gather forward force; (4) heavy_windup: torso twists back, striking fist drawn far behind shoulder, planted feet.\nRow2: (5) quick_windup: compact brief fist preparation near chest, small torso turn; (6) quick_extend: anatomically correct fully extended punch to the right, rear hand guarding; (7) follow_through: body weight continues forward AFTER the punch with shoulder rotation; (8) recovery: fist retracts halfway and torso returns toward balance.\nRow3: (9) dash_lean: planted forward lean preparing a burst; (10) dash_stride: one strong forward running stride, body low; (11) jump_start: pushing off with both feet leaving the shared baseline, legs compress; (12) jump_apex: visibly airborne compact knees and guarded fist above the projected ground baseline.\nRow4: (13) jump_strike: airborne rightward punch with natural compact legs; (14) jump_fall: descending from jump, knees and arms preparing landing; (15) landing: both feet planted with compressed knees, low stable body; (16) guard_settle: completed balanced defensive guard.\nThe silhouettes must tell a coherent anticipation→extension→follow-through→recovery and takeoff→airborne→landing story. Do not substitute generic idle poses for these distinct actions.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-93f3a007-23a1-405c-aca5-4d4891d3329f.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/copal-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "de59cc124576385d577dec97b32be5e2ed69408b34eefa763d0b77d96f60aaf3",
+      "mode": "RGB"
+    },
+    {
+      "id": "copal-movement-v1",
+      "step": "alpha",
+      "prompt": "Use case: background-extraction. Edit ONLY the attached sprite sheet background: remove the entire baked gray-and-white checkerboard and make those background pixels actually transparent alpha0. Deliver a genuine RGBA PNG with transparent background. Preserve the EXACT same sixteen character poses, same pixels' painted appearance, same dimensions, same4x4 arrangement, positions, anatomy, costume, colors, lighting, contours and scale. No new drawing, no reposing, no character redesign. Do not erase white/cream character details. No checkerboard should remain embedded in the resulting image. Keep all sixteen full silhouettes intact, including thin tails, ears and fingers. This is alpha extraction, not a new composition.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-1900d044-da34-4e73-9911-76daeadc82e3.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-93f3a007-23a1-405c-aca5-4d4891d3329f.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "27d72943a533fa491246e4d4bee52877d60393302091946efd4c045db86116dd",
+      "mode": "RGB"
+    },
+    {
+      "id": "copal-movement-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied COPAL movement sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-915b9778-7fcb-47c9-97d6-3f5938ad41b9.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-93f3a007-23a1-405c-aca5-4d4891d3329f.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "ea57ed391a4d4f88bdb8ef670a436815bacbf768ca31ddf4f50aa62d67111b4f",
+      "mode": "RGB"
+    },
+    {
+      "id": "copal-movement-v1",
+      "step": "alpha3",
+      "prompt": "Remove the background of this image. Make it TRANSPARENT. Return the same sixteen sprites as a transparent PNG with a real alpha channel. The gray-and-white checkerboard must be removed, including all spaces between limbs. Preserve the sixteen full character silhouettes and their existing positions, colors, anatomy, costume and scale exactly. No painted checkerboard, no white or black background. Transparent background only.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-c3cab69d-d86d-4b05-97be-f808bf1551f6.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-93f3a007-23a1-405c-aca5-4d4891d3329f.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "1ccdbe51a6c370898c20209b23a31e7fc93b2aa9e16eb2d5863e6e80012aab4a",
+      "mode": "RGBA"
+    },
+    {
+      "id": "balam-movement-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nBALAM identity lock: powerful anthropomorphic golden jaguar, true dark rosette spots over head/arms/legs/back and thick spotted feline tail, cream muzzle and chest, round ears, amber eyes. Broad muscular shoulders but exactly the canonical proportions. Black/dark-green forearm wraps, loose charcoal cropped trousers, jade-green waist sash with hanging woven ends and subtle gold motifs, dark ankle wraps and bare feline paws. No new armor, weapons, headgear or shoes. Tail remains a thick spotted jaguar tail, never striped or tufted like a lion.\n\nSixteen DIFFERENT movement frames, left-to-right then top-to-bottom:\nRow1: (1) guard_shift: weight subtly shifts in ready boxing guard; (2) step_back: clear short backward step with guarded hands; (3) charge_crouch: knees bend and torso lowers to gather forward force; (4) heavy_windup: torso twists back, striking fist drawn far behind shoulder, planted feet.\nRow2: (5) quick_windup: compact brief fist preparation near chest, small torso turn; (6) quick_extend: anatomically correct fully extended punch to the right, rear hand guarding; (7) follow_through: body weight continues forward AFTER the punch with shoulder rotation; (8) recovery: fist retracts halfway and torso returns toward balance.\nRow3: (9) dash_lean: planted forward lean preparing a burst; (10) dash_stride: one strong forward running stride, body low; (11) jump_start: pushing off with both feet leaving the shared baseline, legs compress; (12) jump_apex: visibly airborne compact knees and guarded fist above the projected ground baseline.\nRow4: (13) jump_strike: airborne rightward punch with natural compact legs; (14) jump_fall: descending from jump, knees and arms preparing landing; (15) landing: both feet planted with compressed knees, low stable body; (16) guard_settle: completed balanced defensive guard.\nThe silhouettes must tell a coherent anticipation→extension→follow-through→recovery and takeoff→airborne→landing story. Do not substitute generic idle poses for these distinct actions.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-ed41adb3-70ee-4737-9869-a05a16a65a57.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/balam-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "c967186de317249e1b6f56192dbe80a4dd3431c0f96e8230d3731f37237485b0",
+      "mode": "RGB"
+    },
+    {
+      "id": "balam-movement-v1",
+      "step": "alpha",
+      "prompt": "Use case: background-extraction. Edit ONLY the attached sprite sheet background: remove the entire baked gray-and-white checkerboard and make those background pixels actually transparent alpha0. Deliver a genuine RGBA PNG with transparent background. Preserve the EXACT same sixteen character poses, same pixels' painted appearance, same dimensions, same4x4 arrangement, positions, anatomy, costume, colors, lighting, contours and scale. No new drawing, no reposing, no character redesign. Do not erase white/cream character details. No checkerboard should remain embedded in the resulting image. Keep all sixteen full silhouettes intact, including thin tails, ears and fingers. This is alpha extraction, not a new composition.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-de7468bd-fccd-4d51-aba6-99e9fc9c5ade.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-ed41adb3-70ee-4737-9869-a05a16a65a57.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "766be08d086af95e8ce91d9ee30f85ae3f51a8dc7cc494d1552dac5c06cc6b03",
+      "mode": "RGBA"
+    },
+    {
+      "id": "tepa-reactions-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nTEPA identity lock: compact anthropomorphic brown teporingo rabbit, friendly determined expressive amber eye, short upright rounded rabbit ears exactly as reference, short round fluffy tail. Canonical small rounded face, short snout and compact athletic proportions, not a human muscular torso. Blue short-sleeve wraparound martial-arts gi, yellow tied belt and two yellow hanging ends, brown cropped trousers, white wrist/hand wraps, bare brown rabbit feet. Crucial approved anatomy: punches use the ONE natural-size attached forearm shown in canonical fourth frame; elbows connect normally to sleeves and shoulder. Do not duplicate punching arms, add human fingers or stretch arms to giant size. Preserve two intact rabbit ears and the small round tail in all poses.\n\nSixteen DIFFERENT reaction frames, left-to-right then top-to-bottom:\nRow1: (1) light_hit: slight shoulder/head recoil, feet stay planted; (2) body_hit: torso folds a little from a stomach impact, one arm protects the body; (3) heavy_hit: larger torso recoil and bent knees; (4) critical_stagger: loss of balance leaning backward with a widened stance and arms displaced.\nRow2: (5) fall_start: beginning to topple backward, one foot losing support; (6) fall_mid: halfway falling toward the ground, body diagonal, support arm approaching ground; (7) grounded: fully lying on side in the SAME small low anatomical scale and direction as canonical defeated pose, not enlarged; (8) getup_support: on ground pushing torso up using a planted hand.\nRow3: (9) getup_kneel: supported on one bent knee while rising; (10) getup_rise: near-standing rising posture, hands returning to guard; (11) low_health: standing tired but alert with low shoulders and guarded chest; (12) victory_start: straightens with initial confident celebration gesture.\nRow4: (13) victory_peak: completed species-appropriate raised-fist celebratory pose, keeps body fully in cell; (14) transform_start: purely VISUAL focus preparation, crouch slightly, shoulders tense; (15) transform_peak: focused confident open stance, only a subtle emphasis of existing colors in body markings, NO new anatomy or costume, no detached effects; (16) transformed_idle: same character and anatomy back in settled composed alert guard. This future cosmetic sequence does not add armor, change stats or imply new powers.\nRecoil is non-graphic: no blood, wounds or gore. Falling and rising form one coherent sequence. Never reuse one generic hit pose four times.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-d4400c2c-c9e8-42b1-93a5-90f40f58f3f9.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/tepa-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "76b164c6ed975206bf670a53d7c1de13610fcbfef17b909da1f3618af34af285",
+      "mode": "RGB"
+    },
+    {
+      "id": "tepa-reactions-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied TEPA reactions sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-9605f242-4d23-4621-96ba-97deacf61d99.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-d4400c2c-c9e8-42b1-93a5-90f40f58f3f9.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "7dacd63059929e42b69487e73f29c1d2e8e23bf69c6cbe27c5179f3a82b09e72",
+      "mode": "RGBA"
+    },
+    {
+      "id": "tepa-movement-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nTEPA identity lock: compact anthropomorphic brown teporingo rabbit, friendly determined expressive amber eye, short upright rounded rabbit ears exactly as reference, short round fluffy tail. Canonical small rounded face, short snout and compact athletic proportions, not a human muscular torso. Blue short-sleeve wraparound martial-arts gi, yellow tied belt and two yellow hanging ends, brown cropped trousers, white wrist/hand wraps, bare brown rabbit feet. Crucial approved anatomy: punches use the ONE natural-size attached forearm shown in canonical fourth frame; elbows connect normally to sleeves and shoulder. Do not duplicate punching arms, add human fingers or stretch arms to giant size. Preserve two intact rabbit ears and the small round tail in all poses.\n\nSixteen DIFFERENT movement frames, left-to-right then top-to-bottom:\nRow1: (1) guard_shift: weight subtly shifts in ready boxing guard; (2) step_back: clear short backward step with guarded hands; (3) charge_crouch: knees bend and torso lowers to gather forward force; (4) heavy_windup: torso twists back, striking fist drawn far behind shoulder, planted feet.\nRow2: (5) quick_windup: compact brief fist preparation near chest, small torso turn; (6) quick_extend: anatomically correct fully extended punch to the right, rear hand guarding; (7) follow_through: body weight continues forward AFTER the punch with shoulder rotation; (8) recovery: fist retracts halfway and torso returns toward balance.\nRow3: (9) dash_lean: planted forward lean preparing a burst; (10) dash_stride: one strong forward running stride, body low; (11) jump_start: pushing off with both feet leaving the shared baseline, legs compress; (12) jump_apex: visibly airborne compact knees and guarded fist above the projected ground baseline.\nRow4: (13) jump_strike: airborne rightward punch with natural compact legs; (14) jump_fall: descending from jump, knees and arms preparing landing; (15) landing: both feet planted with compressed knees, low stable body; (16) guard_settle: completed balanced defensive guard.\nThe silhouettes must tell a coherent anticipation→extension→follow-through→recovery and takeoff→airborne→landing story. Do not substitute generic idle poses for these distinct actions.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-d9f4a4d0-2190-46b9-9378-50c99c4aa5d6.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/tepa-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "a0e89f353ac86ecff791aa970236556f850174d0d20b5ccff83da53c6fe9c722",
+      "mode": "RGB"
+    },
+    {
+      "id": "tepa-movement-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied TEPA movement sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-5029e57c-17bf-49d0-a269-bcdb4dc5b57b.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-d9f4a4d0-2190-46b9-9378-50c99c4aa5d6.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "5abf004afb1769599df3b94cf3ba5af57cbaff9729894458a800090ae5a50a44",
+      "mode": "RGB"
+    },
+    {
+      "id": "tepa-movement-v1",
+      "step": "alpha3",
+      "prompt": "Remove the background of this image. Make it TRANSPARENT. Return the same sixteen sprites as a transparent PNG with a real alpha channel. The gray-and-white checkerboard must be removed, including all spaces between limbs. Preserve the sixteen full character silhouettes and their existing positions, colors, anatomy, costume and scale exactly. No painted checkerboard, no white or black background. Transparent background only.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-416b6e7e-06bf-44b6-a971-9c3b9e1530b2.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-d9f4a4d0-2190-46b9-9378-50c99c4aa5d6.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "2336a0b5a0c45dbf1e981b92046c0c00838ca064f3e70b33d5d9233b2b8fd521",
+      "mode": "RGBA"
+    },
+    {
+      "id": "balam-reactions-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nBALAM identity lock: powerful anthropomorphic golden jaguar, true dark rosette spots over head/arms/legs/back and thick spotted feline tail, cream muzzle and chest, round ears, amber eyes. Broad muscular shoulders but exactly the canonical proportions. Black/dark-green forearm wraps, loose charcoal cropped trousers, jade-green waist sash with hanging woven ends and subtle gold motifs, dark ankle wraps and bare feline paws. No new armor, weapons, headgear or shoes. Tail remains a thick spotted jaguar tail, never striped or tufted like a lion.\n\nSixteen DIFFERENT reaction frames, left-to-right then top-to-bottom:\nRow1: (1) light_hit: slight shoulder/head recoil, feet stay planted; (2) body_hit: torso folds a little from a stomach impact, one arm protects the body; (3) heavy_hit: larger torso recoil and bent knees; (4) critical_stagger: loss of balance leaning backward with a widened stance and arms displaced.\nRow2: (5) fall_start: beginning to topple backward, one foot losing support; (6) fall_mid: halfway falling toward the ground, body diagonal, support arm approaching ground; (7) grounded: fully lying on side in the SAME small low anatomical scale and direction as canonical defeated pose, not enlarged; (8) getup_support: on ground pushing torso up using a planted hand.\nRow3: (9) getup_kneel: supported on one bent knee while rising; (10) getup_rise: near-standing rising posture, hands returning to guard; (11) low_health: standing tired but alert with low shoulders and guarded chest; (12) victory_start: straightens with initial confident celebration gesture.\nRow4: (13) victory_peak: completed species-appropriate raised-fist celebratory pose, keeps body fully in cell; (14) transform_start: purely VISUAL focus preparation, crouch slightly, shoulders tense; (15) transform_peak: focused confident open stance, only a subtle emphasis of existing colors in body markings, NO new anatomy or costume, no detached effects; (16) transformed_idle: same character and anatomy back in settled composed alert guard. This future cosmetic sequence does not add armor, change stats or imply new powers.\nRecoil is non-graphic: no blood, wounds or gore. Falling and rising form one coherent sequence. Never reuse one generic hit pose four times.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-97a681bf-fa56-4a09-ae45-674192ec8644.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/balam-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "13146ac808afb745ebdcb5582fbe116bf39b0ade7d73f5053b2c9e4bb83ac723",
+      "mode": "RGB"
+    },
+    {
+      "id": "balam-reactions-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied BALAM reactions sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-644fa5d3-9745-41c4-882e-f4728a13fc39.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-97a681bf-fa56-4a09-ae45-674192ec8644.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "e2af24bf2b2774c6d4ccb94223982ed952781a3d340f855a7f5e0c63b0aaff8e",
+      "mode": "RGB"
+    },
+    {
+      "id": "balam-reactions-v1",
+      "step": "alpha3",
+      "prompt": "Remove the background of this image. Make it TRANSPARENT. Return the same sixteen sprites as a transparent PNG with a real alpha channel. The gray-and-white checkerboard must be removed, including all spaces between limbs. Preserve the sixteen full character silhouettes and their existing positions, colors, anatomy, costume and scale exactly. No painted checkerboard, no white or black background. Transparent background only.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-8f20f82a-62a6-4a78-a0c6-5a8e9fc6c26e.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-97a681bf-fa56-4a09-ae45-674192ec8644.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "c1809cd48ea714b31a0c2f5b58f899a3dd01075a198c4fb945ca40c4a168017c",
+      "mode": "RGBA"
+    },
+    {
+      "id": "copal-reactions-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nCOPAL identity lock: anthropomorphic cacomixtle/ringtail, huge warm rounded ears, narrow foxlike muzzle, cream facial mask and dark expressive eye markings, tan-brown fur, and the very large curled black-and-cream RINGED TAIL in the reference. Tail has alternating rings all around it, not skunk lengthwise stripes; keep the SAME large tail volume and length consistently, fully visible even in hit/grounded frames. Cream sleeveless wrap vest, plum/purple sash with long hanging ends, rust-brown cropped trousers, pale forearm/ankle wraps, dark brown hands/feet. No weapons or new accessories. Tail must bend naturally within its own cell without shrinking, detaching, becoming a second tail or crossing adjacent cells.\n\nSixteen DIFFERENT reaction frames, left-to-right then top-to-bottom:\nRow1: (1) light_hit: slight shoulder/head recoil, feet stay planted; (2) body_hit: torso folds a little from a stomach impact, one arm protects the body; (3) heavy_hit: larger torso recoil and bent knees; (4) critical_stagger: loss of balance leaning backward with a widened stance and arms displaced.\nRow2: (5) fall_start: beginning to topple backward, one foot losing support; (6) fall_mid: halfway falling toward the ground, body diagonal, support arm approaching ground; (7) grounded: fully lying on side in the SAME small low anatomical scale and direction as canonical defeated pose, not enlarged; (8) getup_support: on ground pushing torso up using a planted hand.\nRow3: (9) getup_kneel: supported on one bent knee while rising; (10) getup_rise: near-standing rising posture, hands returning to guard; (11) low_health: standing tired but alert with low shoulders and guarded chest; (12) victory_start: straightens with initial confident celebration gesture.\nRow4: (13) victory_peak: completed species-appropriate raised-fist celebratory pose, keeps body fully in cell; (14) transform_start: purely VISUAL focus preparation, crouch slightly, shoulders tense; (15) transform_peak: focused confident open stance, only a subtle emphasis of existing colors in body markings, NO new anatomy or costume, no detached effects; (16) transformed_idle: same character and anatomy back in settled composed alert guard. This future cosmetic sequence does not add armor, change stats or imply new powers.\nRecoil is non-graphic: no blood, wounds or gore. Falling and rising form one coherent sequence. Never reuse one generic hit pose four times.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-947eadf0-26dc-4033-b1c3-d08a241dc4a7.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/copal-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "7bc5b19e253a52adef3adc3ef0c244c5d2997bc5a01e2f852ac76cad7a1aaba9",
+      "mode": "RGB"
+    },
+    {
+      "id": "copal-reactions-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied COPAL reactions sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-aaeb1718-1e0b-4337-ade8-d4b3b46b36b2.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-947eadf0-26dc-4033-b1c3-d08a241dc4a7.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "95ae98b05e167094d847052ca70ad58046f39a5ae48429649be7bf8ec2178543",
+      "mode": "RGB"
+    },
+    {
+      "id": "copal-reactions-v1",
+      "step": "alpha3",
+      "prompt": "Remove the background of this image. Make it TRANSPARENT. Return the same sixteen sprites as a transparent PNG with a real alpha channel. The gray-and-white checkerboard must be removed, including all spaces between limbs. Preserve the sixteen full character silhouettes and their existing positions, colors, anatomy, costume and scale exactly. No painted checkerboard, no white or black background. Transparent background only.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-97438ab7-fc2d-4809-a988-4589f1e9872b.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-947eadf0-26dc-4033-b1c3-d08a241dc4a7.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "2ff381a1024476885321fbecc005635b95217922fbfeebc0aba362f8b2bbf016",
+      "mode": "RGBA"
+    },
+    {
+      "id": "copal-reactions-v1",
+      "step": "layout",
+      "prompt": "Edit this transparent Copal sixteen-pose sprite sheet ONLY to fix its spacing. Preserve the same16 poses, row-major order, character identity, large ringed tail, costume, anatomy, colors and painterly style. Keep a4x4 grid on the same square canvas but make ALL sixteen entire full-body sprites uniformly25% smaller and center each in its own equal cell with a common projected ground baseline. This must create wide transparent gutters between every silhouette: no arms or tails crossing cell boundaries, no clipped pixels, no touching neighbors. Do not enlarge small fallen/crouched poses; apply the SAME size reduction to every pose. Preserve the existing real RGBA alpha transparency, with alpha0 empty space, NOT a painted checkerboard. No text, no lines, no frames, no floor or effects. The only change is uniformly smaller sprites and regular separated placement.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-5b5cf529-89ed-421b-a157-b68168d463bf.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-97438ab7-fc2d-4809-a988-4589f1e9872b.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "1fdcd92391938f2c7ee0a5f6d744ae8b610b2674748748fd8950de0871479892",
+      "mode": "RGB"
+    },
+    {
+      "id": "copal-reactions-v1",
+      "step": "final-alpha",
+      "prompt": "Remove the background from this sprite sheet. Transparent background. Keep the sixteen ringtail poses unchanged.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-e063c868-18ce-4c50-bb26-689a4e31659b.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-5b5cf529-89ed-421b-a157-b68168d463bf.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "ad5a2aa3c54ace479375454decd9f8db99ab6a5f9697c0c05df31fe6b2fb5146",
+      "mode": "RGBA"
+    },
+    {
+      "id": "xuna-reactions-v1",
+      "step": "generation",
+      "prompt": "Use case: stylized-concept. Asset type: production 2D fighting-game sprite animation bank.\nThe attached image is the canonical IDENTITY AND STYLE REFERENCE, not an edit target. Create a NEW square 4-column by 4-row sprite sheet containing exactly SIXTEEN full-body poses of this SAME single character. Preserve the identical face, species, proportions, clothes, accessories, fur/skin patterns, colors, warm directional lighting, painterly shaded outlines and three-quarter camera facing RIGHT. This is one consistent character photographed at sixteen animation instants, not sixteen redesigns.\nOutput a genuinely transparent RGBA PNG. Every empty pixel surrounding characters must have alpha zero: no opaque black/white/gray field, no checkerboard baked into pixels. No grid lines, numbers, captions, text, labels, watermark, frames, props, floor shadows or environment. No sparks, impacts, speed streaks, auras or dust baked in; these are separate game effects.\nLayout: exact invisible 4x4 equal-cell grid in row-major order. Keep EACH full silhouette safely inside its own cell, with generous clear transparent gutters of at least 12% around the cell edges. Standing poses occupy only 65–70% of cell height, never fill cells. Keep the same anatomical scale across all sixteen frames; do not enlarge crouched or fallen bodies to fill their cell. Keep an identical projected ground origin near the feet, with the standing baseline around86% down each cell; airborne poses rise above that baseline. Arms, ears, hands, tails and feet must remain completely visible and separated from neighboring poses. NO touching or crossing between cells. Never crop the canvas edge.\nAnatomy: exactly two arms, two legs, two hands, two feet and the canonical number of ears and tails in every pose. Clear limb attachments, consistent species-specific hands/feet; no duplicate hands, fused limbs, missing feet, oversized human arm, or extra appendages. Preserve the character silhouette even in recoil or grounded poses.\n\nXUNA identity lock: lean athletic anthropomorphic Mexican hairless xoloitzcuintle dog, smooth charcoal-gray skin with no fur, long slim canine muzzle, tall pointed ears with warm inner ears, narrow amber eyes, slender bare whip-like tail. Orange/copper sleeveless fitted lace-front vest, turquoise bead necklace and small turquoise wrist accents, white hand wraps, red waist sash with long hanging end, brown cropped trousers, bare charcoal canine feet. Never grow a fluffy tail, fur, mane, horns, new armor or weapon; retain the reference's lean proportions and understated calm expression.\n\nSixteen DIFFERENT reaction frames, left-to-right then top-to-bottom:\nRow1: (1) light_hit: slight shoulder/head recoil, feet stay planted; (2) body_hit: torso folds a little from a stomach impact, one arm protects the body; (3) heavy_hit: larger torso recoil and bent knees; (4) critical_stagger: loss of balance leaning backward with a widened stance and arms displaced.\nRow2: (5) fall_start: beginning to topple backward, one foot losing support; (6) fall_mid: halfway falling toward the ground, body diagonal, support arm approaching ground; (7) grounded: fully lying on side in the SAME small low anatomical scale and direction as canonical defeated pose, not enlarged; (8) getup_support: on ground pushing torso up using a planted hand.\nRow3: (9) getup_kneel: supported on one bent knee while rising; (10) getup_rise: near-standing rising posture, hands returning to guard; (11) low_health: standing tired but alert with low shoulders and guarded chest; (12) victory_start: straightens with initial confident celebration gesture.\nRow4: (13) victory_peak: completed species-appropriate raised-fist celebratory pose, keeps body fully in cell; (14) transform_start: purely VISUAL focus preparation, crouch slightly, shoulders tense; (15) transform_peak: focused confident open stance, only a subtle emphasis of existing colors in body markings, NO new anatomy or costume, no detached effects; (16) transformed_idle: same character and anatomy back in settled composed alert guard. This future cosmetic sequence does not add armor, change stats or imply new powers.\nRecoil is non-graphic: no blood, wounds or gore. Falling and rising form one coherent sequence. Never reuse one generic hit pose four times.\nFinal check: exactly16 separate complete full-body sprites, correct order, fixed identity and scale, clear transparent gutters, true alpha background.\n",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-246eaa8d-9c34-4cb7-ac13-1f1a57b71fc2.png",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/xuna-v1.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "a41d0c63e292c060e518779cf465ac651be13170ed8c0527cc08e24abd87c861",
+      "mode": "RGB"
+    },
+    {
+      "id": "xuna-reactions-v1",
+      "step": "alpha2",
+      "prompt": "Use case: background-extraction. EDIT the supplied XUNA reactions sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, ear shapes, tail, clothing, and every pose unchanged. Preserve the4by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-9ac46fe2-f4e6-44e7-95da-fc50438b93f9.png",
+      "referenced_image_paths": [
+        "/Users/cess/.codex/generated_images/01a0bd27-80f7-7c81-8c38-c1e76c2e60c1/exec-246eaa8d-9c34-4cb7-ac13-1f1a57b71fc2.png"
+      ],
+      "tool": "image_gen.imagegen",
+      "sha256": "90896a5aaaf3317435816eb4538443c2ce3161c1608fda813b4922b399e8b504",
+      "mode": "RGBA"
+    }
+  ]
+}

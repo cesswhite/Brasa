@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        171,
+        205,
+        173,
+        244
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 18228
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        162,
+        204,
+        187,
+        245
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18595
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        157,
+        253,
+        212,
+        197
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 19038
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        150,
+        204,
+        207,
+        245
+      ],
+      "components": 7,
+      "substantial_components": 1,
+      "visible_pixels": 23557
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        155,
+        201,
+        203,
+        248
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 23768
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        152,
+        203,
+        269,
+        246
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 24920
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        155,
+        201,
+        258,
+        248
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 25193
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        167,
+        200,
+        176,
+        249
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18877
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        135,
+        250,
+        251,
+        196
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 18818
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        114,
+        229,
+        260,
+        214
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 21569
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        166,
+        251,
+        191,
+        197
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 18557
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        165,
+        203,
+        182,
+        219
+      ],
+      "components": 7,
+      "substantial_components": 1,
+      "visible_pixels": 21098
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        163,
+        182,
+        237,
+        262
+      ],
+      "components": 8,
+      "substantial_components": 1,
+      "visible_pixels": 24587
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        175,
+        185,
+        159,
+        261
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 19878
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        147,
+        247,
+        215,
+        202
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 20759
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        164,
+        186,
+        180,
+        263
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 20982
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "neris",
+  "bank": "movement",
+  "source_sha256": "b2b7bb63ecd35343ba09f99ca71f89750aeecf5e01557d195a52cfe62bc33e59",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/neris/movement/neris-movement.png"
+}

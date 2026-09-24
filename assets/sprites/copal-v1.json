@@ -1,0 +1,15 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "note": "Eight isolated silhouettes, read-only alpha bounds at 31/255 with 3 px margins. Native image_gen correction curls the hit-reaction tail closer to the torso for narrow viewports. Custom regions preserve all visible pixels and do not overlap. Source PNG remains byte-identical to the final native extraction; FighterView derives all scales from idle and anchors feet independently.",
+  "frames": [
+    {"region": [21, 14, 412, 411]},
+    {"region": [451, 16, 401, 409]},
+    {"region": [867, 38, 418, 388]},
+    {"region": [1294, 38, 467, 387]},
+    {"region": [81, 454, 371, 397]},
+    {"region": [540, 488, 332, 363]},
+    {"region": [890, 426, 390, 435]},
+    {"region": [1303, 630, 451, 214]}
+  ]
+}

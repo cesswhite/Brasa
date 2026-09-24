@@ -1,0 +1,34 @@
+{
+  "source_sha256": "9c952b4b7fbe33c5bdb6007fff91e6bbea4edf1a1d2df9909518f75af13356a6",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "combat_progression",
+  "reviewed_frames": [
+    "light_hit",
+    "body_hit",
+    "heavy_hit",
+    "critical_stagger",
+    "fall_start",
+    "fall_mid",
+    "grounded",
+    "getup_support",
+    "getup_kneel",
+    "getup_rise",
+    "low_health",
+    "victory_start",
+    "victory_peak",
+    "transform_start",
+    "transform_peak",
+    "transformed_idle"
+  ],
+  "uniform_scale": 1.0416607972953937,
+  "candidate_sha256_reviewed": "c428c1e01398d7120bac52814c022b95de91a4b17f69566f751c2fdcca1609b9",
+  "review_evidence": [
+    "work/illustrated-damage/prepared/luma/reactions/luma-reactions-dark.png",
+    "work/illustrated-damage/prepared/luma/reactions/luma-reactions-light.png",
+    "outputs/Brasa/assets/sprites/normalized/luma-reactions-v2.png"
+  ],
+  "review_note": "Inspección de todas las poses sobre claro/oscuro y contra normalizado limpio: branquias rojas, piel rosa, cola y fajín oro conservan identidad. Moretones faciales, desgaste de piel y ropa rota están dibujados. Huecos brazo/torso, cola/fajín y piernas transparentes; sin amputaciones ni halo visible. Escala única y apoyos proyectados coherentes; KO bajo y salto elevado, sin ampliar figura caída. Sin nuevos sockets anatómicos.",
+  "final_reinspection_note": "Revisados otra vez los40 cuadros después de limpieza de alpha posterior al reescalado. En movement se limpiaron tres huecos fuente bajo el puño retrasado de dash_lean y se volvió a inspeccionar esa pose sobre claro/oscuro. Las demás poses no cambiaron por los polígonos."
+}

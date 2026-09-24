@@ -1,0 +1,191 @@
+{
+  "body_id": "onix",
+  "name": "Ónix",
+  "tool": "built-in image_gen",
+  "fallback_cli": false,
+  "external_pixel_edits": false,
+  "model_selector": "not exposed by built-in tool",
+  "scope": "8 canonical poses plus 16 movement and 16 reactions",
+  "style_reference": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/tepa-v1.png",
+  "canonical": {
+    "status": "frozen",
+    "destination": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/onix-v1.png",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/onix-v1.json",
+    "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-2921bdc6-8a78-4f67-8e11-106ee16cb60a.png",
+    "sha256": "6a6f6adad172784c9707d498f9fe34fe62f8a5a7298adaa6cd8a8117e50bab2b",
+    "size": [
+      1774,
+      887
+    ],
+    "mode": "RGBA",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/canonical-native.png",
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/canonical/inspection.json",
+    "attempts": [
+      {
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/canonical-prompt.txt",
+        "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-e9103c53-eae4-4d19-96ca-483a2ab1349a.png",
+        "sha256": "15354fa6e89c2a2f52243fc0bb1851717b191d5ef4c9461fce617d622e97f015",
+        "mode": "RGB",
+        "accepted": false,
+        "reason": "Baked checkerboard instead of alpha"
+      },
+      {
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/canonical-alpha-prompt.txt",
+        "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-2921bdc6-8a78-4f67-8e11-106ee16cb60a.png",
+        "sha256": "6a6f6adad172784c9707d498f9fe34fe62f8a5a7298adaa6cd8a8117e50bab2b",
+        "mode": "RGBA",
+        "accepted": true,
+        "edit": "Native background extraction only"
+      }
+    ],
+    "sidecar_sha256": "3cec3f361ba37a9b0cde1c8a206a8f8c0040dca754ae242c2bf80f7021a7acd9"
+  },
+  "movement": {
+    "status": "frozen",
+    "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/movement-prompt.txt",
+    "identity_reference_sha256": "6a6f6adad172784c9707d498f9fe34fe62f8a5a7298adaa6cd8a8117e50bab2b",
+    "attempts": [
+      {
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/movement-prompt.txt",
+        "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0a566ff6-a00a-46eb-91eb-1cc3eda448f5.png",
+        "sha256": "8e3b1d4353a38c8f193a028bc565c7ab9466d3fe90ba994313df2be019c86db9",
+        "mode": "RGB",
+        "size": [
+          1254,
+          1254
+        ],
+        "accepted": false,
+        "reason": "Baked checkerboard instead of alpha"
+      },
+      {
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/bank-alpha-prompt.txt",
+        "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-4bf9a1db-c301-4ac2-b2ea-8cbd8ad73944.png",
+        "sha256": "e0388f45120dbbbdbf0729a298898fbe130c7d6cdc2de95b4e84782164f9933b",
+        "mode": "RGBA",
+        "accepted": true,
+        "edit": "Native background extraction only"
+      }
+    ],
+    "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-4bf9a1db-c301-4ac2-b2ea-8cbd8ad73944.png",
+    "destination": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/onix-movement-v1.png",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/onix-movement-v1.json",
+    "sha256": "e0388f45120dbbbdbf0729a298898fbe130c7d6cdc2de95b4e84782164f9933b",
+    "sidecar_sha256": "f3efaa3206b84cd5d283391b59705f2580e5c8d943dd759985a59c574377fac4",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "frame_count": 16,
+    "reference_height": 304,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/movement/inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/movement-native.png",
+    "native_log": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/movement-native.log",
+    "geometry": {
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "outside_visible_pixels": 0,
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "zero_fraction": 0.6196572880657494
+      },
+      "intrinsic_lift_pixels": {
+        "guard_shift": 0,
+        "step_back": 0,
+        "charge_crouch": 0,
+        "heavy_windup": 0,
+        "quick_windup": 0,
+        "quick_extend": 0,
+        "follow_through": 0,
+        "recovery": 0,
+        "dash_lean": 0,
+        "dash_stride": 0,
+        "jump_start": 0,
+        "jump_apex": 32,
+        "jump_strike": 8.0,
+        "jump_fall": 20.0,
+        "landing": 0,
+        "guard_settle": 0
+      }
+    },
+    "anchors_reviewed": true
+  },
+  "reactions": {
+    "status": "frozen",
+    "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/reactions-prompt.txt",
+    "identity_reference_sha256": "6a6f6adad172784c9707d498f9fe34fe62f8a5a7298adaa6cd8a8117e50bab2b",
+    "attempts": [
+      {
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/reactions-prompt.txt",
+        "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-f77f29d4-b445-4b33-8902-075d3bf4d828.png",
+        "sha256": "31431db2f96f1f93a6c52ee97ab4a4dade2e723edf33dd123ef8886be90dee16",
+        "mode": "RGB",
+        "size": [
+          1254,
+          1254
+        ],
+        "accepted": false,
+        "reason": "Baked checkerboard instead of alpha"
+      },
+      {
+        "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/bank-alpha-prompt.txt",
+        "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-71f2b6d1-e13d-4c69-a3cf-7c617a1395d4.png",
+        "sha256": "e088d4ab43c0200139eb00c82b5c6facedd9f0782c096579239aeb8ab200ba21",
+        "mode": "RGBA",
+        "accepted": true,
+        "edit": "Native background extraction only"
+      }
+    ],
+    "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-71f2b6d1-e13d-4c69-a3cf-7c617a1395d4.png",
+    "destination": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/onix-reactions-v1.png",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/onix-reactions-v1.json",
+    "sha256": "e088d4ab43c0200139eb00c82b5c6facedd9f0782c096579239aeb8ab200ba21",
+    "sidecar_sha256": "44d0e41ddea3320848514e5d55c202dd8ffea3cea421d693817aceb3da89b940",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "frame_count": 16,
+    "reference_height": 304,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/reactions/inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/reactions-native.png",
+    "native_log": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/reactions-native.log",
+    "geometry": {
+      "coverage": 1.0,
+      "region_intersections": [],
+      "visible_outer_edge_pixels": 0,
+      "outside_visible_pixels": 0,
+      "alpha": {
+        "minimum": 0,
+        "maximum": 255,
+        "zero_fraction": 0.6305392123196203
+      },
+      "intrinsic_lift_pixels": {
+        "light_hit": 0,
+        "body_hit": 0,
+        "heavy_hit": 0,
+        "critical_stagger": 0,
+        "fall_start": 0,
+        "fall_mid": 33,
+        "grounded": 0,
+        "getup_support": 0,
+        "getup_kneel": 0,
+        "getup_rise": 0,
+        "low_health": 0,
+        "victory_start": 0,
+        "victory_peak": 0,
+        "transform_start": 0,
+        "transform_peak": 0,
+        "transformed_idle": 0
+      }
+    },
+    "anchors_reviewed": true,
+    "scale_rationale": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/cats/onix/reactions-scale.json"
+  },
+  "status": "all_40_poses_frozen",
+  "png_bytes": 4057252,
+  "native_review": "Three native contact sheets reviewed against canonical identity at reference166px. No clipping, neighboring fragments or alpha backgrounds. All sprites face right; projected airborne anchors retain common body scale."
+}

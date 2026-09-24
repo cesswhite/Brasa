@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "reviewed_at_utc": "2026-09-21T20:11:37.430857+00:00",
+  "reviewer": "fighter_art",
+  "method": "Read-only inspection of supplied native 1360x880 sheets at original resolution. Balam detail enlarged from screenshot only to distinguish runtime trail from matte; no production pixels changed.",
+  "sheet_count": 12,
+  "visible_sprite_count": 96,
+  "visual_failures": 0,
+  "coverage_limit": "Each sheet shows four clips mirrored, not all forty unique atlas poses. These observations do not establish animation timing or replace separate automated assertions.",
+  "automation_status": "Root reports final native run 3832 checks / 0 failures, including 92 paired terminal-contact checks. The 46 unpaired sheet samples no longer receive the inapplicable pair assertion. This reviewer independently verified all 12 assigned final screenshot hashes equal the reviewed first-pass images.",
+  "runtime_observation": {
+    "body": "balam",
+    "clip": "strike",
+    "observation": "Faint separated silhouette behind attacker, absent in guard.",
+    "explanation": "FighterView renders AttackTrail with the same texture offset by 11 px, tinted at trail_opacity. This is presentation rather than a key-color extraction remainder.",
+    "source": "outputs/Brasa/scripts/fighter_view.gd:562-572",
+    "classification": "Informational; no art change requested."
+  },
+  "production_changes": false,
+  "imports_run": false,
+  "sheets": [
+    {
+      "body": "duna",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-duna.png",
+      "sha256": "4e4e93f2c6a1099f132324533d590cc07fca5772d828ad79ac6b9c5417b839dd",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Caparazón, cola, garras y orejas completos. Arañazos y fajín roto coherentes; huecos entre piernas y flecos limpios en ambos sentidos.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-duna.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "duna_cora",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-duna_cora.png",
+      "sha256": "5a59f99edec41ec92c5cbca27db7e69402bab0b47935dbbaed08e007495f9e40",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Placas oscuras y dibujos de la armadura conservados; magulladuras visibles en muslos y rostro. Ningún recorte de cola o guantes.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-duna_cora.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "duna_pedernal",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-duna_pedernal.png",
+      "sha256": "503ce3cf10a34d4fc9f30b6e5936b4635e0fc50e1d5753a7162dbefaca2898a7",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Escudo y placas grabadas completos en golpe y reacción; KO conserva tamaño corporal y cola. Separaciones del fajín dejan ver el escenario.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-duna_pedernal.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "iria",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-iria.png",
+      "sha256": "92eabe5c63b267ae6c2ed4c668fb5bc1a8d01f4fd4270d44877b495b9237b975",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Piel verde y manchas conservadas tras extracción magenta. Dedos largos, bolsa y flecos completos, sin fondo rosa en huecos.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-iria.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "vespera",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-vespera.png",
+      "sha256": "b53a65a3965d2cc7fdf51d463846ea96f4991de0f8751c1a2e5b0ed4c679d2e8",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Antenas y extremos de alas completos. Patrones crema/violeta y desgaste pintado legibles; perforaciones visibles sin manchas verdes.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-vespera.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "ascua",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-ascua.png",
+      "sha256": "41827c24540a396d29b8dd09bc2d625c10e2bd3ff21ac024910ec53f42d065d8",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Cuernos, cola, pecho ámbar y jirones completos; pose tendida íntegra. Se conserva el arte crítico anterior.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-ascua.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "bruma",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-bruma.png",
+      "sha256": "f03013d235d3d5a57f645559ca571ab53788f5481376f621626e01f421ccd2b6",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Pelaje plata, vendas y ropa ciruela/salvia conservados. Rasgaduras y magulladuras legibles; cola completa en ambos sentidos.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-bruma.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "onix",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-onix.png",
+      "sha256": "85607a6154725b47b8c0c58dd480c659bcceba7a1173a01fe8fed099b99b2e70",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Silueta de gato negro, ojos amarillos y fajín ocre legibles. Cola y orejas completas; ropa rota coherente, sin recorte de pelo oscuro.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-onix.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "balam",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-balam.png",
+      "sha256": "808fb597ec703236f7c47c092fab4e627a7b52d5e6547676d10a160670f30070",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Manchas de jaguar, vendajes y fajín verde conservados; pecho y rostro magullados. Borde de guardia limpio. El contorno separado al golpear corresponde a la copia AttackTrail de runtime.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-balam.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "tepa",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-tepa.png",
+      "sha256": "315b329070f499cc478f8f67f06d5d77df6f0dc19a3789ac47f0cdd029017b1a",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Orejas, patas y cola corta completas; camisa añil, vendas y fajín ocre conservados. Daño de rostro/rodilla y rasgaduras legibles.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-tepa.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "xuna",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-xuna.png",
+      "sha256": "942442d76ce61f730e27560c4502f04faf7c8f89038286f21159a6cf9c209590",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Hocico, orejas grandes y cola fina completos; piel gris y ropa cobre/coral conservadas. Heridas y tela dañada coherentes.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-xuna.png",
+      "final_hash_identical": true
+    },
+    {
+      "body": "copal",
+      "screenshot": "work/illustrated-damage/native-first-pass/sheet-copal.png",
+      "sha256": "a80bdf781a593931d126673cb50230eaef9200478c701dbf694b8271556d6f2b",
+      "visible_sprites_reviewed": 8,
+      "clips": [
+        "guard",
+        "strike",
+        "reaction",
+        "ko"
+      ],
+      "facings": [
+        1,
+        -1
+      ],
+      "visual_result": "PASS",
+      "note": "Cola anillada completa en cuatro clips y ambos sentidos. Ropa marfil/violeta y rasgaduras conservadas; huecos de brazos/piernas transparentes.",
+      "final_screenshot": "work/illustrated-damage/native-final/sheet-copal.png",
+      "final_hash_identical": true
+    }
+  ],
+  "final_gate": {
+    "checks": 3832,
+    "failures": 0,
+    "paired_terminal_contact_checks": 92,
+    "unpaired_samples": 46,
+    "test_result_source": "Root confirmation, separate from this visual review",
+    "assigned_final_screenshot_hashes_verified": 12,
+    "visual_review_applies_to_final": true
+  }
+}

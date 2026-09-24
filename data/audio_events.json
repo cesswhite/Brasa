@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "provenance": "work/audio/production-plan.json; curated natural-speed revision; source variants and hashes in SOURCE-MANIFEST.json",
+  "path_pattern": "res://assets/audio/{id}/{id}_{variant:02d}.{extension}",
+  "cues": {
+    "impact_light": {
+      "bus": "Combat",
+      "gain_db": -8,
+      "priority": 70,
+      "variants": 2,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.485,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.5,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/impact_light/impact_light_01.wav",
+        "res://assets/audio/impact_light/impact_light_02.wav"
+      ]
+    },
+    "impact_heavy": {
+      "bus": "Combat",
+      "gain_db": -6,
+      "priority": 75,
+      "variants": 4,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.675,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.5,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/impact_heavy/impact_heavy_01.wav",
+        "res://assets/audio/impact_heavy/impact_heavy_02.wav",
+        "res://assets/audio/impact_heavy/impact_heavy_03.wav",
+        "res://assets/audio/impact_heavy/impact_heavy_04.wav"
+      ]
+    },
+    "critical_accent": {
+      "bus": "Combat",
+      "gain_db": -10,
+      "priority": 85,
+      "variants": 1,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.63,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.5,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/critical_accent/critical_accent_01.wav"
+      ]
+    },
+    "guard": {
+      "bus": "Combat",
+      "gain_db": -10,
+      "priority": 70,
+      "variants": 1,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.315,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.5,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/guard/guard_01.wav"
+      ]
+    },
+    "dodge": {
+      "bus": "Movement",
+      "gain_db": -12,
+      "priority": 45,
+      "variants": 4,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.52,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.12,
+      "max_simultaneous": 2,
+      "late_window": 0.14,
+      "paths": [
+        "res://assets/audio/dodge/dodge_01.wav",
+        "res://assets/audio/dodge/dodge_02.wav",
+        "res://assets/audio/dodge/dodge_03.wav",
+        "res://assets/audio/dodge/dodge_04.wav"
+      ]
+    },
+    "whoosh_quick": {
+      "bus": "Movement",
+      "gain_db": -17,
+      "priority": 35,
+      "variants": 2,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.77,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.12,
+      "max_simultaneous": 2,
+      "late_window": 0.14,
+      "paths": [
+        "res://assets/audio/whoosh_quick/whoosh_quick_01.wav",
+        "res://assets/audio/whoosh_quick/whoosh_quick_02.wav"
+      ]
+    },
+    "whoosh_heavy": {
+      "bus": "Movement",
+      "gain_db": -15,
+      "priority": 40,
+      "variants": 3,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.925,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.12,
+      "max_simultaneous": 2,
+      "late_window": 0.14,
+      "paths": [
+        "res://assets/audio/whoosh_heavy/whoosh_heavy_01.wav",
+        "res://assets/audio/whoosh_heavy/whoosh_heavy_02.wav",
+        "res://assets/audio/whoosh_heavy/whoosh_heavy_03.wav"
+      ]
+    },
+    "footstep_earth": {
+      "bus": "Movement",
+      "gain_db": -18,
+      "priority": 20,
+      "variants": 1,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.74,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.12,
+      "max_simultaneous": 2,
+      "late_window": 0.14,
+      "paths": [
+        "res://assets/audio/footstep_earth/footstep_earth_01.wav"
+      ]
+    },
+    "slide_earth": {
+      "bus": "Movement",
+      "gain_db": -14,
+      "priority": 25,
+      "variants": 1,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.79,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.12,
+      "max_simultaneous": 2,
+      "late_window": 0.14,
+      "paths": [
+        "res://assets/audio/slide_earth/slide_earth_01.wav"
+      ]
+    },
+    "landing_earth": {
+      "bus": "Combat",
+      "gain_db": -10,
+      "priority": 50,
+      "variants": 4,
+      "extension": "wav",
+      "loop": false,
+      "duration": 1.04,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.5,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/landing_earth/landing_earth_01.wav",
+        "res://assets/audio/landing_earth/landing_earth_02.wav",
+        "res://assets/audio/landing_earth/landing_earth_03.wav",
+        "res://assets/audio/landing_earth/landing_earth_04.wav"
+      ]
+    },
+    "ascua_charge": {
+      "bus": "Combat",
+      "gain_db": -19,
+      "priority": 55,
+      "variants": 4,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.95,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/ascua_charge/ascua_charge_01.wav",
+        "res://assets/audio/ascua_charge/ascua_charge_02.wav",
+        "res://assets/audio/ascua_charge/ascua_charge_03.wav",
+        "res://assets/audio/ascua_charge/ascua_charge_04.wav"
+      ]
+    },
+    "ascua_release": {
+      "bus": "Combat",
+      "gain_db": -17,
+      "priority": 65,
+      "variants": 3,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.935,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/ascua_release/ascua_release_01.wav",
+        "res://assets/audio/ascua_release/ascua_release_02.wav",
+        "res://assets/audio/ascua_release/ascua_release_03.wav"
+      ]
+    },
+    "ascua_transform": {
+      "bus": "Combat",
+      "gain_db": -9,
+      "priority": 90,
+      "variants": 3,
+      "extension": "wav",
+      "loop": false,
+      "duration": 2.04,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 1.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/ascua_transform/ascua_transform_01.wav",
+        "res://assets/audio/ascua_transform/ascua_transform_02.wav",
+        "res://assets/audio/ascua_transform/ascua_transform_03.wav"
+      ]
+    },
+    "ascua_reaction": {
+      "bus": "Voice",
+      "gain_db": -18,
+      "priority": 50,
+      "variants": 3,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.855,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 2.0,
+      "max_simultaneous": 1,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/ascua_reaction/ascua_reaction_01.wav",
+        "res://assets/audio/ascua_reaction/ascua_reaction_02.wav",
+        "res://assets/audio/ascua_reaction/ascua_reaction_03.wav"
+      ]
+    },
+    "ko_ground": {
+      "bus": "Combat",
+      "gain_db": -8,
+      "priority": 100,
+      "variants": 3,
+      "extension": "wav",
+      "loop": false,
+      "duration": 1.99,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.5,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.6,
+      "paths": [
+        "res://assets/audio/ko_ground/ko_ground_01.wav",
+        "res://assets/audio/ko_ground/ko_ground_02.wav",
+        "res://assets/audio/ko_ground/ko_ground_03.wav"
+      ]
+    },
+    "ui_confirm": {
+      "bus": "UI",
+      "gain_db": -18,
+      "priority": 60,
+      "variants": 4,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.52,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/ui_confirm/ui_confirm_01.wav",
+        "res://assets/audio/ui_confirm/ui_confirm_02.wav",
+        "res://assets/audio/ui_confirm/ui_confirm_03.wav",
+        "res://assets/audio/ui_confirm/ui_confirm_04.wav"
+      ]
+    },
+    "fight_intro": {
+      "bus": "UI",
+      "gain_db": -12,
+      "priority": 85,
+      "variants": 1,
+      "extension": "wav",
+      "loop": false,
+      "duration": 1.62,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/fight_intro/fight_intro_01.wav"
+      ]
+    },
+    "victory": {
+      "bus": "UI",
+      "gain_db": -11,
+      "priority": 100,
+      "variants": 2,
+      "extension": "wav",
+      "loop": false,
+      "duration": 1.865,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.6,
+      "paths": [
+        "res://assets/audio/victory/victory_01.wav",
+        "res://assets/audio/victory/victory_02.wav"
+      ]
+    },
+    "defeat": {
+      "bus": "UI",
+      "gain_db": -13,
+      "priority": 100,
+      "variants": 2,
+      "extension": "wav",
+      "loop": false,
+      "duration": 1.775,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 2,
+      "late_window": 0.6,
+      "paths": [
+        "res://assets/audio/defeat/defeat_01.wav",
+        "res://assets/audio/defeat/defeat_02.wav"
+      ]
+    },
+    "faroles_ambience": {
+      "bus": "Ambience",
+      "gain_db": -19,
+      "priority": 10,
+      "variants": 1,
+      "extension": "ogg",
+      "loop": true,
+      "duration": 29.53,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 1,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/faroles_ambience/faroles_ambience_01.ogg"
+      ]
+    },
+    "faroles_music": {
+      "bus": "Music",
+      "gain_db": -20,
+      "priority": 10,
+      "variants": 1,
+      "extension": "ogg",
+      "loop": true,
+      "duration": 60.03,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.055,
+      "max_simultaneous": 1,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/faroles_music/faroles_music_01.ogg"
+      ]
+    },
+    "ascua_signature": {
+      "bus": "Combat",
+      "gain_db": -16.0,
+      "priority": 92,
+      "variants": 1,
+      "extension": "wav",
+      "loop": false,
+      "duration": 0.915,
+      "pitch_spread": 0.0,
+      "gain_spread_db": 0.0,
+      "cooldown": 0.15,
+      "max_simultaneous": 2,
+      "late_window": 0.25,
+      "paths": [
+        "res://assets/audio/ascua_signature/ascua_signature_01.wav"
+      ]
+    }
+  },
+  "arenas": {
+    "arena_faroles": {
+      "surface": "earth",
+      "music": "faroles_music",
+      "ambience": "faroles_ambience"
+    },
+    "arena_tormenta": {
+      "surface": "wet_stone",
+      "music": "",
+      "ambience": ""
+    }
+  },
+  "profiles": {
+    "ascua": {
+      "charge": "ascua_charge",
+      "release": "ascua_release",
+      "phase": "ascua_transform",
+      "reaction": "ascua_reaction",
+      "signature": "ascua_signature"
+    }
+  },
+  "ui_aliases": {
+    "confirm": "ui_confirm",
+    "upgrade": "ui_confirm",
+    "select": "ui_confirm",
+    "navigate": "ui_confirm",
+    "ui_confirm": "ui_confirm",
+    "fight_intro": "fight_intro",
+    "victory": "victory",
+    "defeat": "defeat"
+  },
+  "impact_overrides": {
+    "hit": "impact_light",
+    "heavy": "impact_heavy",
+    "impact_light": "impact_light",
+    "impact_heavy": "impact_heavy"
+  },
+  "mix_policy": {
+    "master_effect": "AudioEffectHardLimiter",
+    "resource_name": "Brasa Master Safety",
+    "master_pre_gain_db": 7.0,
+    "master_ceiling_db": -1.0,
+    "position": "Master effect chain before the Master volume control",
+    "reason": "Measured first native mix was -33.5/-33.3 LUFS-I with -14.0/-14.1 dBFS true peaks; gain adjusted once globally, not per cue.",
+    "deduplication": "Add only when no Master effect has resource_name Brasa Master Safety; preserve all host effects and user fader/mute."
+  }
+}

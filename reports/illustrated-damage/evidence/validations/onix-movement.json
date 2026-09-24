@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        162,
+        228,
+        176,
+        220
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18757
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        123,
+        228,
+        193,
+        220
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 17989
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        161,
+        325,
+        213,
+        123
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15866
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        156,
+        228,
+        191,
+        220
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 20577
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        161,
+        229,
+        181,
+        219
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 19070
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        159,
+        232,
+        217,
+        216
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19988
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        152,
+        237,
+        207,
+        211
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 18852
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        160,
+        231,
+        178,
+        217
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18893
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        211,
+        287,
+        208,
+        161
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 17183
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        83,
+        265,
+        203,
+        183
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17303
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        173,
+        278,
+        164,
+        170
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15729
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        164,
+        243,
+        152,
+        181
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 13958
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        157,
+        232,
+        222,
+        210
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17531
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        169,
+        234,
+        163,
+        199
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 16491
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        162,
+        304,
+        193,
+        144
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 16237
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        163,
+        236,
+        174,
+        212
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 17878
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "onix",
+  "bank": "movement",
+  "source_sha256": "14fe0113634a8a73ac28470a59808c84a10d9337db61535201df2ef1a7f279fa",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/onix/movement/onix-movement.png"
+}

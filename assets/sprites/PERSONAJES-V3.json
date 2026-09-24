@@ -1,0 +1,69 @@
+{
+  "generator": "native image_gen",
+  "pose_count": 8,
+  "assets": [
+    {
+      "id": "sira",
+      "file": "sira-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "b5a39b7e714f7f944a65c86403bd9c057f74a560cf92723b3fde15e354261686"
+    },
+    {
+      "id": "iria",
+      "file": "iria-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "6d5bcd5b9e642984eeb86e5fce0851b45a3e7ffca3f1d7917bc70159a40977fc"
+    },
+    {
+      "id": "duna",
+      "file": "duna-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "ce5ba2926c3d36ef36a984e1da38f1faab3479a61ca80349a06677c4f84fd7fe"
+    },
+    {
+      "id": "kiro",
+      "file": "kiro-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "ac769c263d0ccac3817515e0aa30952af11723bee5921ac5a9a8e63910c89c75"
+    },
+    {
+      "id": "neris",
+      "file": "neris-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "b9d2aa02aaf221875c00be9764339fb6661050918ded06e40004f7e3496c1630"
+    },
+    {
+      "id": "taro",
+      "file": "taro-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "ced08a86029a3807649c6b1d10e32905e4ec3424e4b58d1313bd33270d1a78e7"
+    },
+    {
+      "id": "ascua",
+      "file": "ascua-v3.png",
+      "width": 1774,
+      "height": 887,
+      "bit_depth": 8,
+      "png_color_type": 6,
+      "sha256": "c514961c787ce4048ab50233af880ad00b71ba8796e3b1b873ae29d59c8665fd"
+    }
+  ]
+}

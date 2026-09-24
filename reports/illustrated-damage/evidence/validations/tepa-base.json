@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        182,
+        243,
+        147,
+        205
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14206
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        183,
+        243,
+        146,
+        205
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14138
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        181,
+        245,
+        150,
+        203
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 15459
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        179,
+        245,
+        177,
+        203
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14394
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        172,
+        268,
+        153,
+        180
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 13810
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        185,
+        305,
+        145,
+        143
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 12350
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        194,
+        245,
+        124,
+        203
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 14156
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        152,
+        373,
+        208,
+        75
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 10332
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "tepa",
+  "bank": "base",
+  "source_sha256": "7ace318915ee91fe4f7b7d06d8ce2f3a27dfba0460940b38e2576ca49e87a056",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/tepa/base/tepa-base.png"
+}

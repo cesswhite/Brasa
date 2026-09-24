@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "duna",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 273,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        30,
+        36,
+        274,
+        299
+      ],
+      "anchor": [
+        139.0,
+        297
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        321,
+        78,
+        289,
+        254
+      ],
+      "anchor": [
+        160.5,
+        252
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        660,
+        63,
+        266,
+        272
+      ],
+      "anchor": [
+        142.0,
+        270
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        967,
+        85,
+        276,
+        250
+      ],
+      "anchor": [
+        128.5,
+        248
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        16,
+        420,
+        293,
+        214
+      ],
+      "anchor": [
+        154.5,
+        212
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        320,
+        465,
+        307,
+        167
+      ],
+      "anchor": [
+        163.0,
+        167
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        636,
+        503,
+        317,
+        132
+      ],
+      "anchor": [
+        168.5,
+        130
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        957,
+        410,
+        288,
+        223
+      ],
+      "anchor": [
+        153.0,
+        221
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        17,
+        683,
+        282,
+        240
+      ],
+      "anchor": [
+        149.5,
+        238
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        331,
+        653,
+        267,
+        272
+      ],
+      "anchor": [
+        152.5,
+        270
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        652,
+        657,
+        237,
+        270
+      ],
+      "anchor": [
+        136.0,
+        268
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        968,
+        640,
+        235,
+        289
+      ],
+      "anchor": [
+        131.0,
+        287
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        32,
+        924,
+        265,
+        302
+      ],
+      "anchor": [
+        148.5,
+        300
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        331,
+        943,
+        278,
+        279
+      ],
+      "anchor": [
+        157.5,
+        277
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        642,
+        944,
+        278,
+        280
+      ],
+      "anchor": [
+        154.5,
+        278
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        961,
+        945,
+        274,
+        277
+      ],
+      "anchor": [
+        153.5,
+        275
+      ]
+    }
+  ],
+  "notes": "Native Godot contact sheet reviewed against effective canonical atlas. Regions contain complete isolated poses with true alpha. One common scale from reference_height. Explicit projected floor anchors preserve airborne poses; no per-frame height normalization."
+}

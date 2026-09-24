@@ -1,0 +1,576 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-20T23:17:13.448470+00:00",
+  "scope": {
+    "new_characters": [
+      "balam",
+      "tepa",
+      "xuna",
+      "copal"
+    ],
+    "playable_total": 13,
+    "moves_per_new_character": 5,
+    "perk_options_per_new_character": 6,
+    "selectable_perks_max": 3,
+    "poses_per_new_character": 8,
+    "product_changes_during_report": false
+  },
+  "headless": {
+    "executions": 23,
+    "assertion_suites": 22,
+    "checks": 22707,
+    "failures": 0,
+    "smoke_passed": true,
+    "results": [
+      {
+        "log": "work/mexican_roster/final-tests/smoke.log",
+        "sha256": "0c3d773ca1d0a8b5fd92a6eb8d2c4e120b360b06f831200b3cd424646a201318",
+        "checks": null,
+        "failures": 0,
+        "passed": true,
+        "summary": "UI_SMOKE_PASS: roster, training drawer, upgrade, signature, fight, unique reward, summary, history, details, replay, surrender cancel/confirm, reload"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_battle_layout.log",
+        "sha256": "58528a0c5f905b9999c3391b0438a40b995f50fdbe62462b56b9dfb080a1d6dc",
+        "checks": 2139,
+        "failures": 0,
+        "passed": true,
+        "summary": "BATTLE LAYOUT: 2139 checks, 0 failures across 7 sizes and idle/active/result states"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_campaign100.log",
+        "sha256": "9e76f819205343408f8fcaf32a002f8a2ef2f91298de3d6b068048aff743fc4c",
+        "checks": 2117,
+        "failures": 0,
+        "passed": true,
+        "summary": "CAMPAIGN100: 2117 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_campaign100_integration.log",
+        "sha256": "6a951b6e4edc04fde7c0ede9d0a683c4d7ab2c4e44b986537b143dbdfbb63a5a",
+        "checks": 337,
+        "failures": 0,
+        "passed": true,
+        "summary": "CAMPAIGN100 INTEGRATION: 337 checks, 0 failures; fixture /Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/campaign100/integration/main_408841.json"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_combat_v2.log",
+        "sha256": "8d27b5f1026fbdaabf156c210d5d076d4acca0c28ea9c63fed0e98f0d2c3f47a",
+        "checks": 495,
+        "failures": 0,
+        "passed": true,
+        "summary": "COMBAT V2: 495 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_core.log",
+        "sha256": "bbc260855181aaf3c672f220da02c644758b555f12bff594551c454793acfe93",
+        "checks": 236,
+        "failures": 0,
+        "passed": true,
+        "summary": "CORE TESTS: 236 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_distinct_sprites.log",
+        "sha256": "a30e974212d6255770dda3f72a027594fc51d86bdfccf757e7afff84573d8ad1",
+        "checks": 4775,
+        "failures": 0,
+        "passed": true,
+        "summary": "DISTINCT SPRITES: 4775 checks, 0 failures; 15 installed, pending=[]"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_mexican_roster.log",
+        "sha256": "bd2142dd0f5dafa857fe28495a38bbcae6dff6ddbbd5ee177a8fcf1f5da319cc",
+        "checks": 816,
+        "failures": 0,
+        "passed": true,
+        "summary": "MEXICAN ROSTER: 816 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_mexican_roster_ui.log",
+        "sha256": "20cd62c4ca047462b406374023a9e0072dda6cdf14739d403e285e1ef74d46b4",
+        "checks": 45,
+        "failures": 0,
+        "passed": true,
+        "summary": "MEXICAN ROSTER UI: 45 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_move_clock.log",
+        "sha256": "d51ec47a94dd43bf06ad7efcbb9ccc7b8957847ff6076170c74c9c375c999984",
+        "checks": 147,
+        "failures": 0,
+        "passed": true,
+        "summary": "MOVE CLOCK: 147 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_move_presentation.log",
+        "sha256": "9d98522c5c8b80c5320e0df9f8244259053f6f6e9d920240912615153a3c3b9e",
+        "checks": 751,
+        "failures": 0,
+        "passed": true,
+        "summary": "MOVE PRESENTATION: 751 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_moves.log",
+        "sha256": "06037499206bad15b2ea7f098c23d3c776a92d449a5ecc401496e1b8641ba981",
+        "checks": 4411,
+        "failures": 0,
+        "passed": true,
+        "summary": "MOVES: 4411 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_progression_v2.log",
+        "sha256": "a3aed861b42efa52f83b86fe847e1ed4752fb8f81ae76ebd41884ad3f5ca7270",
+        "checks": 704,
+        "failures": 0,
+        "passed": true,
+        "summary": "PROGRESSION V2: 704 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_roster.log",
+        "sha256": "8c4e61979916817508ed3041755fad89638951e47746eb5bd786d8b2d3ea530b",
+        "checks": 341,
+        "failures": 0,
+        "passed": true,
+        "summary": "ROSTER TESTS: 341 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_sprites.log",
+        "sha256": "1755119e0ea1ae15ad2b56ff0c1318251c57c525a5d1ac455abe217d78d1dab5",
+        "checks": 258,
+        "failures": 0,
+        "passed": true,
+        "summary": "SPRITE TESTS: 258 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_campaign.log",
+        "sha256": "b632642e776629450241e058dae89c2c5006c7002b7189a5d57a1658658d3b7e",
+        "checks": 2591,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY CAMPAIGN: 2591 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_campaign_ui.log",
+        "sha256": "a9cd923bf552cdfbd0b2d0f1c43cdc1ebed2abc117b0e88cba23eb3339818abf",
+        "checks": 557,
+        "failures": 0,
+        "passed": true,
+        "summary": "CAMPAIGN UI: 557 checks, 0 failures across seven viewport sizes"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_chapter_integration.log",
+        "sha256": "12ad2838c755fdb0c21b601a5a06da91984bed43a6fa3d885c4573e61bc83daa",
+        "checks": 386,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY CHAPTER INTEGRATION: 386 checks, 0 failures; 0 native captures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_chapters.log",
+        "sha256": "3b8bc31b87e87d73b51f0feccdc35b4dcbc79e127429cad49c7049e4bccd16d3",
+        "checks": 299,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY CHAPTERS: 299 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_combat.log",
+        "sha256": "5dd93b88028df97f68ec8efe36c6d9a3ec98dad6c07f3f6055c06a32406fe64c",
+        "checks": 530,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY COMBAT: 530 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_integration.log",
+        "sha256": "68df75d89f9e7f710fa24760f768b25b960de673bbfceb0a6f781236023a2806",
+        "checks": 85,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY INTEGRATION: 85 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_panel.log",
+        "sha256": "f609b3aff648dc3cdfaacd618ff80a5486d9a28a7ad94399b927bc599c0fb1d5",
+        "checks": 450,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY PANEL: 450 checks, 0 failures across 7 native viewport sizes"
+      },
+      {
+        "log": "work/mexican_roster/final-tests/test_story_progression.log",
+        "sha256": "5bee3723f98ff5f973f9c0eb674cf3914f23cc6056c0f3f07eb3c74659d46040",
+        "checks": 237,
+        "failures": 0,
+        "passed": true,
+        "summary": "STORY PROGRESSION: 237 checks, 0 failures"
+      }
+    ]
+  },
+  "native": {
+    "executions": 3,
+    "checks": 5167,
+    "failures": 0,
+    "renderer": "OpenGL 4.1 Metal, Compatibility, Apple M1 Max",
+    "results": [
+      {
+        "log": "work/mexican_roster/native-main.log",
+        "sha256": "9726f88d55db95434b6fb625966b07c648f460c544f2c05f4b6762861da05733",
+        "checks": 51,
+        "failures": 0,
+        "passed": true,
+        "summary": "MEXICAN ROSTER UI: 51 checks, 0 failures"
+      },
+      {
+        "log": "work/mexican_roster/native-sprites.log",
+        "sha256": "6e8cab69e2ad8d5c4e2a12464f039648f6de0b7f0a6d5be795ae5a8741a2c207",
+        "checks": 4775,
+        "failures": 0,
+        "passed": true,
+        "summary": "DISTINCT SPRITES: 4775 checks, 0 failures; 15 installed, pending=[]"
+      },
+      {
+        "log": "work/mexican_roster/native-roster.log",
+        "sha256": "5789728bac30e2bebf247aca231c657558df58e6c89058c6b901bd253d477ac8",
+        "checks": 341,
+        "failures": 0,
+        "passed": true,
+        "summary": "ROSTER TESTS: 341 checks, 0 failures"
+      }
+    ],
+    "capture_count": 40,
+    "captures": {
+      "main-qa": [
+        {
+          "path": "work/mexican_roster/main-qa/arena-balam.png",
+          "sha256": "d6d74ab4794703301c63c66c449f24ae5d308054bb1b6b0b495c3b5f66b29d0e"
+        },
+        {
+          "path": "work/mexican_roster/main-qa/arena-copal.png",
+          "sha256": "fd78ee7a1b1ab3c25a58738dac073016f21056ab1cc36267c041a1d4b3d291db"
+        },
+        {
+          "path": "work/mexican_roster/main-qa/arena-tepa.png",
+          "sha256": "cb25406b805b95027e0fc71b012b7b08a14dc4fd8ba0dc8f7ab0e2aca201cb4b"
+        },
+        {
+          "path": "work/mexican_roster/main-qa/arena-xuna.png",
+          "sha256": "86303888c598ccddbcb75c44ec9b62d7a06398501aa8bcc6de7e5bf623300c1c"
+        },
+        {
+          "path": "work/mexican_roster/main-qa/companeros-mexicanos.png",
+          "sha256": "b5248b298d9ed16b70c7a1ca53c0e37c659a2ebd547d2c0a656fbd9dd923b938"
+        },
+        {
+          "path": "work/mexican_roster/main-qa/tepa-golpe-corregido.png",
+          "sha256": "9f05dfc178a47ce2135e4e0386201672ad016c9f220b611a6b130fbd4be0c883"
+        }
+      ],
+      "sprite-qa": [
+        {
+          "path": "work/mexican_roster/sprite-qa/all-identities.png",
+          "sha256": "5af7a5db93c0a299ea91512ceed6ef1e8c2292a8f2a4dc091c0f5d88a6591116"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-1224x792.png",
+          "sha256": "17c7e66acf64bfbb7ca5e62b3094a0ebc9b5b4217a2012994483e5bc23730e59"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-1360x880.png",
+          "sha256": "4c81f600f6a0b75b2c2380f4f308f21cf54d8fb12eb2877be68eb30d63f0dffd"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-1920x1080.png",
+          "sha256": "995f0ac67f8f5aa212846d6ca072b2d61f5945bb2c48a879266a1aaafe61dab5"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-390x844.png",
+          "sha256": "1ea79659c545769ac0a064795eb24da34c127dfdaf98d023d4a24b56ead5214c"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-430x932.png",
+          "sha256": "75079dfcf6e60b8c1c5f3cbc16d1a1cadedc3f0ad17f45d39d8b56b0902fb78c"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-768x1024.png",
+          "sha256": "03f52088de74f49f0f6509e680b3ffe36313d3b32063e9d12cf0d8fc110726ed"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/battle-fit-844x390.png",
+          "sha256": "975127af36ef94a30967e708c318751dfa712e6e3d798a0e12859991142f4715"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-ascua.png",
+          "sha256": "54b5d593a5b859a2d0bcd038e929be3bb59ed0f1534e32174fea144a090b1322"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-balam.png",
+          "sha256": "b1059b65cc5ff37ce92bcecbdc4e55e10b79d399b48bd1ab004830cd4c92296a"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-copal.png",
+          "sha256": "80ac66c47fe50f546913e83b0de8c2b086b4f53495099da460fb7e1f7f080773"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-duna.png",
+          "sha256": "7bb839b47ec145b5f3a3bb04564ff39d49f69da3c294634a8d3db437505e1575"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-iria.png",
+          "sha256": "a6fcc6043ff3f13ed786e53bf09a1f0bd32555b44a19b59e40448a663ee6545d"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-kiro.png",
+          "sha256": "6177af6eab01a63e91f870f54e2a9432b32945fd9b17f416320eb5577e27adfa"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-luma.png",
+          "sha256": "752d6670f60098d23a94173d08d2cdb473134cc1d1df029aec5a0817d02eba4b"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-mugo.png",
+          "sha256": "f257926c510cccac350c34802bcf5428164afd7fcf7eb5afa376d7adb2d12ad1"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-neris.png",
+          "sha256": "9d914d9b44cc5a902cbe86985ff0d35144c1a5eb6059e34de8209f657b09149d"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-nima.png",
+          "sha256": "def2ac6d341f5153aeaeb5eedf660a640f3a045b0df1b7369ae58d98e95f90b8"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-sira.png",
+          "sha256": "c8c09bd9aef5f203ba1fe507adc7f8b9eb6d0efd97625907d1542ab4a04eec89"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-taro.png",
+          "sha256": "dd30157129ab54ece6ea5f3331d59cf7fe409709b4e2c82101d84b793fe84d4d"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-tepa.png",
+          "sha256": "24ee3ebed8bd077be403d9a26fa430d5b7f02a26daf8867ede69a8a06cb459ff"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-vespera.png",
+          "sha256": "6bad7644cac3922c6921415172340136bea5743868c8bb6f27ab65986e64c3ec"
+        },
+        {
+          "path": "work/mexican_roster/sprite-qa/poses-xuna.png",
+          "sha256": "a57420c027696712265bfd7ef3513c4855b79e25e572c516f1a0e48fe7bfd9d6"
+        }
+      ],
+      "roster-qa": [
+        {
+          "path": "work/mexican_roster/roster-qa/detail-390x844.png",
+          "sha256": "1050fbfeaaede6f09b4b85a7af383f9f8668920f65c2ae3f572510927cfe4972"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/detail-430x932.png",
+          "sha256": "2c20aab7e360373f32579c40e5c59c80fd5ce80ef116eafb0c4b6bfe2da703a0"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/detail-768x1024.png",
+          "sha256": "99b7a72d6328810931890634f747d506f75e243f0c17e07258d3bf68616b48d2"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/detail-844x390.png",
+          "sha256": "c5a789f151bfdb29b597060e9798d2af9d1d598cac93fed08f561e00c6e86adc"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-1224x792.png",
+          "sha256": "71b35c9501fa6a4e0f8b124f26718c48b2fecd2e2aaf9f333caafcfc2c59c254"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-1360x880.png",
+          "sha256": "2048468c764feb3db7e1ef7581736f9d2afd724b2a6b9c68dac087c13261eb33"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-1920x1080.png",
+          "sha256": "e9fa6948f3e4811f67d60e5efc654d794a4401284bfc78c89874e1bca818ba3b"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-390x844.png",
+          "sha256": "221fb6774d6cf47a4034e089df455c6a9647ef79da980f67ffe0ae285375b425"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-430x932.png",
+          "sha256": "22a9937dff482eaeac4aa86d79e8155293c79881cba18179f231165fcaf2c58e"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-768x1024.png",
+          "sha256": "d8e3b223a1293f35762fef25ce2605f67962f341fc1f2b3ebbdf4d02ac67fa65"
+        },
+        {
+          "path": "work/mexican_roster/roster-qa/roster-844x390.png",
+          "sha256": "c3c548b1545b8a2e929407bf8619f5f888c4b9e5e867fb520a3a3ef304858c23"
+        }
+      ]
+    },
+    "visual_review": {
+      "reviewer": "root",
+      "approved": [
+        "gallery",
+        "Tepa corrected punch",
+        "Tepa arena",
+        "all eight Tepa/Copal poses",
+        "390-wide Copal vs Véspera battle",
+        "390-wide Copal details",
+        "844-wide landscape roster"
+      ]
+    }
+  },
+  "actual_save_copy_test": {
+    "script": "work/mexican_roster/test_actual_copy.gd",
+    "script_sha256": "5f85db179a20f951849bd1719fa3bee9c160048532769b34ecd01556f473a426",
+    "checks": 318,
+    "failures": 0,
+    "evidence": "Root reported the successful isolated-copy execution earlier in this task; not rerun while consolidating reports.",
+    "actual_saves_accessed_by_report_task": false
+  },
+  "actual_app_reopen": {
+    "before": {
+      "brasa_save.json": "e16460c7a378a27938c2c28e6dddcdbda76068172fbc31f764742fb5f9cd34f3",
+      "brasa_save.json.story.json": "2c8b2ce511543768353f0211c51fad9c4fabd5673c459d22bac62b2054d6faa8"
+    },
+    "after": {
+      "brasa_save.json": "e16460c7a378a27938c2c28e6dddcdbda76068172fbc31f764742fb5f9cd34f3",
+      "brasa_save.json.story.json": "2c8b2ce511543768353f0211c51fad9c4fabd5673c459d22bac62b2054d6faa8"
+    },
+    "byte_identical": true,
+    "active_story_id": "nima",
+    "verification": "Closed completed-round window, reopened Jugar.command, read Historia route and Compañeros; no battles or character changes committed.",
+    "status": "passed",
+    "evidence_path": "work/mexican_roster/reopen-proof.json",
+    "evidence_sha256": "475c55d4d3c59719e029a2ff25ae205a0eb7fabefe8b3151580372c38244589d"
+  },
+  "balance": {
+    "report": "MEXICAN_ROSTER_BALANCE.md",
+    "results": "mexican_roster_balance.json",
+    "results_sha256": "82c31fc18583a11b775280d38d77ce00d2b87b021862d58d79dd014286cc8f84",
+    "matches": 14082,
+    "league_matches": 8320,
+    "campaigns": 48,
+    "completed": 48,
+    "source_hashes": {
+      "campaign_config.gd": {
+        "expected": "92fd397546dc0aff269bda81a2a232bfec156365bcfab2d743b1c1ee3fcd49de",
+        "actual": "92fd397546dc0aff269bda81a2a232bfec156365bcfab2d743b1c1ee3fcd49de",
+        "matches": true
+      },
+      "character_catalog.gd": {
+        "expected": "9725454df52ccc0f484643488db815c2c6ca80e7d7bfe5ee853d9c1600a6d910",
+        "actual": "9725454df52ccc0f484643488db815c2c6ca80e7d7bfe5ee853d9c1600a6d910",
+        "matches": true
+      },
+      "combat_engine.gd": {
+        "expected": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+        "actual": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+        "matches": true
+      },
+      "move_catalog.gd": {
+        "expected": "89517e3842b31d4867721f00dc6adda102ba6114623099497ecbba4d15d7052c",
+        "actual": "89517e3842b31d4867721f00dc6adda102ba6114623099497ecbba4d15d7052c",
+        "matches": true
+      },
+      "story_catalog.gd": {
+        "expected": "dad92c50562724d6c4b92c6eaae774599d893905e448674a5c6244571bb466dc",
+        "actual": "dad92c50562724d6c4b92c6eaae774599d893905e448674a5c6244571bb466dc",
+        "matches": true
+      },
+      "story_progression.gd": {
+        "expected": "7ca9ae6d77cce8768b92ce885a75c1bfd52b3ab98c31d72839c2dc51ebc32619",
+        "actual": "7ca9ae6d77cce8768b92ce885a75c1bfd52b3ab98c31d72839c2dc51ebc32619",
+        "matches": true
+      }
+    }
+  },
+  "art": {
+    "report": "../assets/sprites/FAUNA-MEXICANA.md",
+    "prompts": "../assets/sprites/fauna-mexicana-prompts.md",
+    "manifest": "../assets/sprites/fauna-mexicana-origen.json",
+    "manifest_sha256": "8461e8bbbc8a8179f69ad01d093755fa833a3af54b5228c8ac99da6c18b87058",
+    "assets": [
+      {
+        "id": "balam",
+        "path": "outputs/Brasa/assets/sprites/balam-v1.png",
+        "metadata": "outputs/Brasa/assets/sprites/balam-v1.json",
+        "native_source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-668c764d-7622-4e8d-85d9-f0ac7a3e7b13.png",
+        "sha256": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166",
+        "native_source_sha256": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166",
+        "metadata_sha256": "584ae3ceba28862096800ca55a112cac47f2a5ad211cb9dd7da1422251a7eecc",
+        "matches_manifest": true,
+        "native_byte_identity": true,
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "png_color_type": 6,
+        "poses": 8
+      },
+      {
+        "id": "tepa",
+        "path": "outputs/Brasa/assets/sprites/tepa-v1.png",
+        "metadata": "outputs/Brasa/assets/sprites/tepa-v1.json",
+        "native_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ad479a6f-7db5-40b4-bcbd-c76c6c982697.png",
+        "sha256": "263c0f1bc7b14c0304d7b4923b42ec59a2b44c91724a72b0f72c43bca415f2ae",
+        "native_source_sha256": "263c0f1bc7b14c0304d7b4923b42ec59a2b44c91724a72b0f72c43bca415f2ae",
+        "metadata_sha256": "8972be6d82d25191a3b3523a606c83f8eec360a95834ecb7134df1b0f26e0a54",
+        "matches_manifest": true,
+        "native_byte_identity": true,
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "png_color_type": 6,
+        "poses": 8
+      },
+      {
+        "id": "xuna",
+        "path": "outputs/Brasa/assets/sprites/xuna-v1.png",
+        "metadata": "outputs/Brasa/assets/sprites/xuna-v1.json",
+        "native_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0b0a9377-9bdc-41e3-8fa1-3a29e24aab6e.png",
+        "sha256": "2cfd6c722eeeb659bfb37bca2591966fa8e3eddea9b1388425aaeaf15a4c1091",
+        "native_source_sha256": "2cfd6c722eeeb659bfb37bca2591966fa8e3eddea9b1388425aaeaf15a4c1091",
+        "metadata_sha256": "45a4fddaa17bd7682cb7263d668104243104d2c6eb6f718821390031524f4f2d",
+        "matches_manifest": true,
+        "native_byte_identity": true,
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "png_color_type": 6,
+        "poses": 8
+      },
+      {
+        "id": "copal",
+        "path": "outputs/Brasa/assets/sprites/copal-v1.png",
+        "metadata": "outputs/Brasa/assets/sprites/copal-v1.json",
+        "native_source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-40a8a5ce-08d2-4c9e-9d0b-7f7c9e9682a4.png",
+        "sha256": "0a6d220da5abcbc5be4d6dbf0c567637539bbf0169a02decab541693310f1c20",
+        "native_source_sha256": "0a6d220da5abcbc5be4d6dbf0c567637539bbf0169a02decab541693310f1c20",
+        "metadata_sha256": "00d1bd672366a0ccc67dd9c38752eab6715fe06772a56ec3fe28ae5181ca0b97",
+        "matches_manifest": true,
+        "native_byte_identity": true,
+        "width": 1774,
+        "height": 887,
+        "bit_depth": 8,
+        "png_color_type": 6,
+        "poses": 8
+      }
+    ],
+    "correction": "Tepa punch anatomy corrected through native image generation; final atlas checked with all eight poses."
+  },
+  "report_captures": [
+    {
+      "source": "work/mexican_roster/main-qa/companeros-mexicanos.png",
+      "report_copy": "outputs/Brasa/reports/companeros-mexicanos.png",
+      "sha256": "b5248b298d9ed16b70c7a1ca53c0e37c659a2ebd547d2c0a656fbd9dd923b938",
+      "byte_identical": true
+    },
+    {
+      "source": "work/mexican_roster/main-qa/tepa-golpe-corregido.png",
+      "report_copy": "outputs/Brasa/reports/tepa-golpe-corregido.png",
+      "sha256": "9f05dfc178a47ce2135e4e0386201672ad016c9f220b611a6b130fbd4be0c883",
+      "byte_identical": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "method": "Built-in image_gen; native generations and edits. PNGs copied without external pixel modifications.",
+  "assets": [
+    {
+      "id": "balam",
+      "asset": "balam-v1.png",
+      "metadata": "balam-v1.json",
+      "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-668c764d-7622-4e8d-85d9-f0ac7a3e7b13.png",
+      "sha256": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166",
+      "metadata_sha256": "584ae3ceba28862096800ca55a112cac47f2a5ad211cb9dd7da1422251a7eecc",
+      "byte_identical_to_native_source": true,
+      "dimensions": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "tepa",
+      "asset": "tepa-v1.png",
+      "metadata": "tepa-v1.json",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-ad479a6f-7db5-40b4-bcbd-c76c6c982697.png",
+      "sha256": "263c0f1bc7b14c0304d7b4923b42ec59a2b44c91724a72b0f72c43bca415f2ae",
+      "metadata_sha256": "8972be6d82d25191a3b3523a606c83f8eec360a95834ecb7134df1b0f26e0a54",
+      "byte_identical_to_native_source": true,
+      "dimensions": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "xuna",
+      "asset": "xuna-v1.png",
+      "metadata": "xuna-v1.json",
+      "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0b0a9377-9bdc-41e3-8fa1-3a29e24aab6e.png",
+      "sha256": "2cfd6c722eeeb659bfb37bca2591966fa8e3eddea9b1388425aaeaf15a4c1091",
+      "metadata_sha256": "45a4fddaa17bd7682cb7263d668104243104d2c6eb6f718821390031524f4f2d",
+      "byte_identical_to_native_source": true,
+      "dimensions": [
+        1774,
+        887
+      ]
+    },
+    {
+      "id": "copal",
+      "asset": "copal-v1.png",
+      "metadata": "copal-v1.json",
+      "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-40a8a5ce-08d2-4c9e-9d0b-7f7c9e9682a4.png",
+      "sha256": "0a6d220da5abcbc5be4d6dbf0c567637539bbf0169a02decab541693310f1c20",
+      "metadata_sha256": "00d1bd672366a0ccc67dd9c38752eab6715fe06772a56ec3fe28ae5181ca0b97",
+      "byte_identical_to_native_source": true,
+      "dimensions": [
+        1774,
+        887
+      ]
+    }
+  ]
+}

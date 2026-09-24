@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        179,
+        253,
+        153,
+        197
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 14935
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        180,
+        265,
+        151,
+        184
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 13930
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        164,
+        266,
+        177,
+        183
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15364
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        148,
+        268,
+        176,
+        181
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 16778
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        164,
+        258,
+        186,
+        191
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17089
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        139,
+        316,
+        228,
+        133
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15894
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        148,
+        351,
+        226,
+        96
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14197
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        165,
+        292,
+        171,
+        154
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14290
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        174,
+        265,
+        160,
+        183
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15908
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        174,
+        252,
+        158,
+        197
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15951
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        179,
+        254,
+        148,
+        194
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14786
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        176,
+        251,
+        153,
+        197
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 15375
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        183,
+        234,
+        159,
+        214
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 18047
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        156,
+        294,
+        196,
+        154
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17003
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        141,
+        241,
+        200,
+        207
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 19864
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        167,
+        235,
+        167,
+        213
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17328
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "tepa",
+  "bank": "reactions",
+  "source_sha256": "e5184004d2c47ae0710023436eebeb385ce8d994a595e9be4951457c3c39d083",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/tepa/reactions/tepa-reactions.png"
+}

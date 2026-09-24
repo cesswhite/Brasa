@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        161,
+        225,
+        169,
+        223
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19191
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        178,
+        225,
+        163,
+        223
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19186
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        167,
+        285,
+        197,
+        163
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19374
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        143,
+        226,
+        207,
+        222
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 22467
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        167,
+        221,
+        173,
+        227
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21007
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        159,
+        230,
+        230,
+        218
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21327
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        165,
+        230,
+        219,
+        218
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20513
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        162,
+        222,
+        180,
+        226
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 20260
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        180,
+        275,
+        222,
+        173
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21045
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        159,
+        265,
+        230,
+        183
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21536
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        243,
+        211,
+        172,
+        237
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 19715
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        165,
+        213,
+        189,
+        196
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 17449
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        150,
+        209,
+        239,
+        238
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21480
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        154,
+        211,
+        177,
+        236
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21182
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        142,
+        282,
+        209,
+        166
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20602
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        163,
+        213,
+        181,
+        235
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21207
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "nima",
+  "bank": "movement",
+  "source_sha256": "ff2381c87467d231e5f90629066cc24f73655c32212dbfb2d6319d7d32a1c082",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/nima/movement/nima-movement.png"
+}

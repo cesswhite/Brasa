@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        133,
+        184,
+        235,
+        265
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 32087
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        133,
+        188,
+        240,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31512
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        117,
+        246,
+        273,
+        202
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33397
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        109,
+        198,
+        282,
+        251
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36066
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        131,
+        179,
+        253,
+        270
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36323
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        126,
+        199,
+        296,
+        254
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 33631
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        119,
+        197,
+        313,
+        256
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34981
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        122,
+        183,
+        250,
+        266
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33063
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        119,
+        225,
+        296,
+        222
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37071
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        115,
+        209,
+        314,
+        237
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 38027
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        140,
+        212,
+        231,
+        236
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31214
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        137,
+        159,
+        219,
+        273
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32083
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        122,
+        160,
+        296,
+        288
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36657
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        127,
+        152,
+        289,
+        293
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38145
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        119,
+        248,
+        301,
+        202
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37247
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        118,
+        168,
+        250,
+        282
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 35621
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "balam",
+  "bank": "movement",
+  "source_sha256": "40131dad972c192d215dd868ee166662bb6407b83cf43e30d5b4559419bea229",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/balam/movement/balam-movement.png"
+}

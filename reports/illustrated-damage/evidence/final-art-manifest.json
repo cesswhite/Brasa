@@ -1,0 +1,3560 @@
+{
+  "bodies": 23,
+  "banks": 69,
+  "poses": 920,
+  "newly_generated_bodies": 22,
+  "reused_prior_body": "ascua",
+  "tiers_share_family": [
+    2,
+    3
+  ],
+  "banks_data": [
+    {
+      "body": "ascua",
+      "bank": "base",
+      "status": "ACCEPTED_PRIOR_ART",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "c79b107b5bb45bbf539448a6ba8ca23b285e012226d73b9f5be4375b33d9bad2",
+      "json_sha256": "1744061305b7921df4c698b17e42c9f3ea570098bc8633c4c6d501d511db9227",
+      "source": {
+        "path": "outputs/Brasa/assets/sprites/damage/ascua-critical-base-v1.png",
+        "sha256": "c79b107b5bb45bbf539448a6ba8ca23b285e012226d73b9f5be4375b33d9bad2",
+        "normalization": {
+          "uniform_scale": 1.0,
+          "method": "Byte-identical existing normalized critical atlas"
+        },
+        "alpha_extraction": {
+          "mode": "reuse_accepted_rgba",
+          "removed_pixels": 0,
+          "rgb_unchanged": true
+        },
+        "clean_metadata_sha256": "89b6056cc5746c5fdb08a826e86f081203bd81cc213871e9a018fe63fb54157b"
+      }
+    },
+    {
+      "body": "ascua",
+      "bank": "movement",
+      "status": "ACCEPTED_PRIOR_ART",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "d755754842bd13195870ab4e793aacf185ba4911fbe5ee71a84b7a31afbc3576",
+      "json_sha256": "b5a08097aa674181a43f97f2d4762ae22c2af33f013e7edf8ae6112231300b21",
+      "source": {
+        "path": "outputs/Brasa/assets/sprites/damage/ascua-critical-movement-v1.png",
+        "sha256": "d755754842bd13195870ab4e793aacf185ba4911fbe5ee71a84b7a31afbc3576",
+        "normalization": {
+          "uniform_scale": 1.0,
+          "method": "Byte-identical existing normalized critical atlas"
+        },
+        "alpha_extraction": {
+          "mode": "reuse_accepted_rgba",
+          "removed_pixels": 0,
+          "rgb_unchanged": true
+        },
+        "clean_metadata_sha256": "057ea8090f46b50fd1a2df9ae3d7b145a88c4c89a8812d7ea4ffc32391ae5e1d"
+      }
+    },
+    {
+      "body": "ascua",
+      "bank": "reactions",
+      "status": "ACCEPTED_PRIOR_ART",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "b3afc032a8527975fb2b07d71bac3874071f0d8f18672093a89ae0d9e40eb7ce",
+      "json_sha256": "2c72bd17634b08b0fa9e43f2bd8a6c61b02cf116612c8347aa695745c4042100",
+      "source": {
+        "path": "outputs/Brasa/assets/sprites/damage/ascua-critical-reactions-v1.png",
+        "sha256": "b3afc032a8527975fb2b07d71bac3874071f0d8f18672093a89ae0d9e40eb7ce",
+        "normalization": {
+          "uniform_scale": 1.0,
+          "method": "Byte-identical existing normalized critical atlas"
+        },
+        "alpha_extraction": {
+          "mode": "reuse_accepted_rgba",
+          "removed_pixels": 0,
+          "rgb_unchanged": true
+        },
+        "clean_metadata_sha256": "e076edb0eaef2b9e4ece6acf2cf9230996bbf73c34393c00b4c49b00b248d548"
+      }
+    },
+    {
+      "body": "balam",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "242d2c88f26169cde7773acd80f99cdacbf99ba37334cf7779395326cd70d5d9",
+      "json_sha256": "7cd390491ace8d51e78d712a98a87b6b99a38ddb0ae43c38daf03ae898f13895",
+      "source": {
+        "path": "work/illustrated-damage/generated/balam-base.png",
+        "sha256": "cd26ae6a981080a1f077d9f5fa857976b17cab53df87de90c13f00c502d992c9",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.871711,
+            0.866279,
+            0.808943
+          ],
+          "uniform_scale": 0.8662790697674418,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1253313,
+          "fraction": 0.79649,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 2
+        },
+        "clean_metadata_sha256": "b841194dced109b66dd21b7ad99b3a696fd0e49a14ee36f6bb5a0c58dff9623c",
+        "clean_atlas_sha256": "66a9a53275a8c7bb8f92aea5746aaeaf4dc40bab01a75103594d594f56487883"
+      }
+    },
+    {
+      "body": "balam",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "f9d031c3698bd6c39d19da309ace15a0d7fa3b4515ef562e26aeb2ed4d2d8f44",
+      "json_sha256": "bb7f0ed2b80e614fbd88e5fe11cef329188a2eeb3e045552b46ba20ba1675dfb",
+      "source": {
+        "path": "work/illustrated-damage/generated/balam-movement.png",
+        "sha256": "40131dad972c192d215dd868ee166662bb6407b83cf43e30d5b4559419bea229",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.227053,
+            1.177885,
+            1.245902,
+            1.188841
+          ],
+          "uniform_scale": 1.2079471709066782,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1198800,
+          "fraction": 0.76235,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "c9a26ffc39dbcd8e236ae8ad1df4f912ada3c8898740078ad903e57a3012567e",
+        "clean_atlas_sha256": "1b0d330ce41953de7b5e0278e77b2802d325f4196dcf22cfd55cd9f98383e56b"
+      }
+    },
+    {
+      "body": "balam",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "20f69f6d956e81e6bd569baf55f27587983efbbead64c94cdad9b36d8c5086e5",
+      "json_sha256": "7091edcba3ecf28ddc9ceb036ad4c7ca59c6ced5452cc4ce8ab5b71fe569c293",
+      "source": {
+        "path": "work/illustrated-damage/generated/balam-reactions.png",
+        "sha256": "2d17f6e276ff08291986171def8885846805320846dfaf5d10cc5774544c511b",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.110599,
+            1.101382,
+            1.083665,
+            1.075117
+          ],
+          "uniform_scale": 1.0925239135623404,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1142994,
+          "fraction": 0.72686,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 4
+        },
+        "clean_metadata_sha256": "87e8b274308db7bb5ae6f77e816ad9f8740ae769b4bcb8e04962eee5890bc317",
+        "clean_atlas_sha256": "463523a16c775439be7bbe752efd3455e3c20100d19883b6ad713d27a4c03bab"
+      }
+    },
+    {
+      "body": "bruma",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "a226a1f449aae699ef88b67e56067eeae24a3192708c47be4c4c25402a17048a",
+      "json_sha256": "77284577f8945fad499b31b5e32c6490dc6ef412139f033e010c55151ed11b07",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma-base.png",
+        "sha256": "50fb6471d3b0530527b8c61a2bad1da19c26a8d4f985778196b5e22f53cfe21b",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.118943,
+            1.117647,
+            1.032374
+          ],
+          "uniform_scale": 1.1176470588235294,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1381046,
+          "fraction": 0.87767,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval."
+        },
+        "clean_metadata_sha256": "8833e7b87c46a1343ea5d771bb66c0b3c49bbe40cc3f3d50d46941e1c1546591",
+        "clean_atlas_sha256": "99f8fa6e55eee67c8ed74499fd392c974735638f43b6ec9d8b7384df2d375cc1"
+      }
+    },
+    {
+      "body": "bruma",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "b0135831137c34f371388610e58ac9c358dfd8fb7cbbac232e844f398ba699c9",
+      "json_sha256": "4f486e57ec81b8cfe4bba1b072a79810deccb188ccad7cdd46e0714f3439196e",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma-movement.png",
+        "sha256": "919011ac2d53b074e0c0969262e253f3e22c3c493f997d6631b89556b33dd707",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.480447,
+            1.379679,
+            1.379679,
+            1.415205
+          ],
+          "uniform_scale": 1.3974419113738,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1334989,
+          "fraction": 0.84895,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 6
+        },
+        "clean_metadata_sha256": "f69c35cb9cc518656f7da8238c65df496f6d41d98497aaf37ce7b10a8ea2720f",
+        "clean_atlas_sha256": "ae9080a89e127f4e7363cc4cf66058c01657beb33624a346149a974b4bbee6c7"
+      }
+    },
+    {
+      "body": "bruma",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "ca4767e4c59aab142395466df4f80e387cdbef8734ce567c703d048526fc2f63",
+      "json_sha256": "b557ba77285f43867c70aa743a9d73e3fdf0f9d15fef7a5d46f3cd42051f5328",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma-reactions.png",
+        "sha256": "c08f0a2677409e8409b9a052ec2c273646ff7da71269ad61ea521204279cc085",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.121739,
+            1.121693,
+            1.121053,
+            1.129534
+          ],
+          "uniform_scale": 1.121716126063952,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1194307,
+          "fraction": 0.75949,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "ccf0c71ad44c999e65a823dce2e3449bddd29bec52e335bc87f4398d8a803044",
+        "clean_atlas_sha256": "c8ae9b4f024f58f70839c7e07f01fead8e1b506d280c95db6fdfc082b0285b56"
+      }
+    },
+    {
+      "body": "bruma_ambar",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "26b413cbe92e546ea87a019e0e87a3aab16d2f0e115f980a5c44cee4a985e0c5",
+      "json_sha256": "980ff6e4d13311a7208f2044baedcdf2f4869c96d549c94680d8b4e1d0f8ecf8",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma_ambar-base.png",
+        "sha256": "89d9a03af56d009e367651764c2416df7f15815847a537706d07219b71543580",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.863636,
+            0.877814,
+            0.853556
+          ],
+          "uniform_scale": 0.8636363636363636,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1268681,
+          "fraction": 0.80626,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 4
+        },
+        "clean_metadata_sha256": "aba759c9f1385c72951b3f6b8e62394773899871a174c98b6a7c2ee138e82ef6",
+        "clean_atlas_sha256": "176724f961ff08d6781d5b00327f382062a5405399385bce7a2c0cb218f84648"
+      }
+    },
+    {
+      "body": "bruma_ambar",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "897f02686915895b2510e3deaacaa56d454d286d3d9154170a79e76c80865ec3",
+      "json_sha256": "595a7173b424d9b0f996ed5795802b32662b490e66cc44e0cac16bef480fa26e",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma_ambar-movement.png",
+        "sha256": "7c85fc32e2ff1d53f3f90fc24504bcd25cc507be80111eb10d0752009d732a9a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.454545,
+            1.438202,
+            1.445498,
+            1.375661
+          ],
+          "uniform_scale": 1.4418499387613823,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1314658,
+          "fraction": 0.83602,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 8
+        },
+        "clean_metadata_sha256": "f4b10c7be9efd16158d1ce9403276be365955edd77e333ece586b993ea31ecaf",
+        "clean_atlas_sha256": "0da8edf4728f0e552e8710c88bc3811ba7b6d0ffc3a79f771a3511ffd6753753"
+      }
+    },
+    {
+      "body": "bruma_ambar",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "62c43dc51bd020a21e25a6c1768a89c99852ad874a85e34361bfd68fb783b31d",
+      "json_sha256": "caefd1e230d917eb030a760b44bc81d41e477ea94c2f53919d2ad7f514df7a6f",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma_ambar-reactions.png",
+        "sha256": "325f86fc1018e2e5d0ec3ca525d44ac79ab2cceb272790187a0c553b0d22a26f",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.513514,
+            1.407407,
+            1.411392,
+            1.425
+          ],
+          "uniform_scale": 1.4181962025316457,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1345332,
+          "fraction": 0.85553,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 2
+        },
+        "clean_metadata_sha256": "65b61137e1c95d4cbef5f575f0662794cdb8b8d68a0ab4f11ef8efcce1c29e19",
+        "clean_atlas_sha256": "2e84cf681fefaf8044255c1b5092ff246d6e339da87ceefb43ddc6da635a20fe"
+      }
+    },
+    {
+      "body": "bruma_nieve",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "ac34f07d5ebbce6c1eadc97eff5e7a2a74004e92fffad9c503535ed555cb6934",
+      "json_sha256": "cb0840fbfc3570706dcbd4acd7365b5edd985718e59b732452f13ef8d79befbc",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma_nieve-base.png",
+        "sha256": "4bb4dd74fd78dc25e59034c00c4012ae83eded0269f61d80daf762a411d6852c",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.804054,
+            0.809264,
+            0.767606
+          ],
+          "uniform_scale": 0.8040540540540541,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1218357,
+          "fraction": 0.77428,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 2
+        },
+        "clean_metadata_sha256": "f30cd3386a4f530bf800d0be8f22922c185ba963671cadff25ecdb0dcd404fb5",
+        "clean_atlas_sha256": "037a44580c6d556ac12ae0e5298447d9db08b8c900c3f3565c41e621b4e6e6b4"
+      }
+    },
+    {
+      "body": "bruma_nieve",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "ed5a3cb346e2cf53a9c8706712fa04b07c7264712b76663081ecd2c983c78e7d",
+      "json_sha256": "314ce1ca1d91f65c811e651f2811a9074a997b96cb9d406417e2f1f695ad5d90",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma_nieve-movement.png",
+        "sha256": "3422314a22dc1dee7480f877d18ce30f4d019bb90a9cd268dd75c97722ca91d2",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.488372,
+            1.423529,
+            1.44878,
+            1.410405
+          ],
+          "uniform_scale": 1.4361549497847919,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1335119,
+          "fraction": 0.84903,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 5
+        },
+        "clean_metadata_sha256": "5968a07607b02c8cd43d3f4a7f9b26b13bfa6d4e48008c5cf52c47672bfbaabd",
+        "clean_atlas_sha256": "74832d32ee4a7e87b5bea6b46984d0feb8d98b65b8941bc323f7583caf3ccdc0"
+      }
+    },
+    {
+      "body": "bruma_nieve",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "87c34cd0a0a9053be5595ece89c07148ffc3cd6536d795775ac10be7fe4e820a",
+      "json_sha256": "62527a0214029579b58d197a5ea2ac91296067bd36fee31019a28c619b5221f6",
+      "source": {
+        "path": "work/illustrated-damage/generated/bruma_nieve-reactions.png",
+        "sha256": "67275d95ab92bdbb725ac446eb95be6b2454cfefef1eb00cc73a5229cc3cb341",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.407821,
+            1.415584,
+            1.408377,
+            1.410256
+          ],
+          "uniform_scale": 1.409316686803598,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1342896,
+          "fraction": 0.85398,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 8
+        },
+        "clean_metadata_sha256": "d1860f3930cadd5d2c0b8243fe9d1fb45e2c7004b43d07a6190eed290984d84c",
+        "clean_atlas_sha256": "a92c47bb31f7060141f8d3ae6d24600dd7580919ccacaf5cc8f66b1110f06112"
+      }
+    },
+    {
+      "body": "copal",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "fc04026f25ef32bf93c431ba75f925406ffde308376ad3b49e170d1e2a105246",
+      "json_sha256": "327a496538eece83218439578224b2f41ae2f402c371b21aa03001e7f3ca9b05",
+      "source": {
+        "path": "work/illustrated-damage/generated/copal-base.png",
+        "sha256": "67df96e5c4b7074e0c07d904a080ad567f73f35b81ff744a0aebe7dbacb1a615",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.63388,
+            0.636095,
+            0.614731
+          ],
+          "uniform_scale": 0.6338797814207651,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1072184,
+          "fraction": 0.68138,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "09c9c74b66360bfdacd863cf93708c278eb99e2dacc98e38e57002cfb6abacab",
+        "clean_atlas_sha256": "aeb64823a4b449546a511975fae57dd6c8d87ef68b1986bc0ced2d0137352728"
+      }
+    },
+    {
+      "body": "copal",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "6e88bba5f363ca7c766b66b403cd5d28c836c5de65d3996cf27996fade31c55a",
+      "json_sha256": "cc63a6003dfd060dd58d950ba81e8efd7426128db5ca04d572f3b54b3d79de41",
+      "source": {
+        "path": "work/illustrated-damage/generated/copal-movement.png",
+        "sha256": "1a7f7fcc9ff5055d25c7a111ff58ac9d3e76d98a59a56729b40741c8b0f01df9",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.028436,
+            1.014423,
+            1.013825,
+            1.013453
+          ],
+          "uniform_scale": 1.014123980857852,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1160129,
+          "fraction": 0.73775,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 0
+        },
+        "clean_metadata_sha256": "6fdb581b4851e26bf6e1f1bb70140c37ea276ba0712d0f96d3ab7f34127ba180",
+        "clean_atlas_sha256": "77bf7d7815c30e23d649b68ace87e30d837e147ba1f9f089c64ca238495641ab"
+      }
+    },
+    {
+      "body": "copal",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "e8d8edd930c865957518093d5753ce017b266993afb72388b2d23d8aebe4a0cf",
+      "json_sha256": "fe6f72a0ffa5da34380be570ca18ae0c11cb85e07ff94986f689127eddd74c01",
+      "source": {
+        "path": "work/illustrated-damage/generated/copal-reactions.png",
+        "sha256": "7d75187c985476b610a51237997e829743aa2554309236370097880590fe28ef",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.023923,
+            1.060345,
+            1.036842,
+            1.080189
+          ],
+          "uniform_scale": 1.0485934664246823,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1196544,
+          "fraction": 0.76091,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "7a228d14b4e95d5d1ba02c13cb43700661875aac318d0ca8f00fae08e1167f9e",
+        "clean_atlas_sha256": "1afdaf6a7f882b07ba20de591e29d2a72c93dc24fe2f882a3a3993552cbe1e49"
+      }
+    },
+    {
+      "body": "duna",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "5c3e465cb50e60ab5607e1ac5cac3f83e25a93f81057a33292b0865e718ec22f",
+      "json_sha256": "9319c9ea0b8c652322415ff9c222c6f3b236a15e9e199ee7e581828d25a4e93c",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna-base.png",
+        "sha256": "37139dd95015eb6fe61985b43cf221e05a93093105b6413c16c851e3cee9e0ee",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.825,
+            0.818898,
+            0.8
+          ],
+          "uniform_scale": 0.8188976377952756,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1208013,
+          "fraction": 0.76771,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 187
+        },
+        "clean_metadata_sha256": "e9ae8594a7d53f147e7fc03a6864192a31104c6e36ec9d643d9e4eccf49858e4",
+        "clean_atlas_sha256": "10d1b1a2240665c824c00cada02f550664a8e736fae7f270b16249b39b7f4428"
+      }
+    },
+    {
+      "body": "duna",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "09b2fba946f330107df9ad388bfaf245c8a722cac7770af2b8157b62211915c3",
+      "json_sha256": "898099bdf628dfa4310f0ec6b89935ec155edd1f7d02ee35a46e2542177a055e",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna-movement.png",
+        "sha256": "3013f92553baa34f031a90d85df2f0d9c85447fd7e0aab14691e0b10dbdede6e",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.326531,
+            1.31,
+            1.317391,
+            1.209091
+          ],
+          "uniform_scale": 1.3136956521739132,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1236966,
+          "fraction": 0.78662,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 661
+        },
+        "clean_metadata_sha256": "9fe968edd72c2b4a2646aaa5c070de4fc7250fd00d39c1b8083f7fe8188faae9",
+        "clean_atlas_sha256": "1f97255b96c59be9349388f8faa46315aed70e5cfc21d5d8ee8d2fd1c43c1f2f"
+      }
+    },
+    {
+      "body": "duna",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "b0baced2d11df94ac9987f8d7d5e4f5557ef2d02913a2f6a832e814b57c6e9ab",
+      "json_sha256": "ae2fcc1e891410fbdc3f61837148977cb9bd0bb5fe2eadc658ba74fc191cb2c7",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna-reactions.png",
+        "sha256": "ed0d5da7eb575505020c3f45c71771c64870dc95cee3916829a3f2a3bd0f597b",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.259615,
+            1.238298,
+            1.224771,
+            1.253521
+          ],
+          "uniform_scale": 1.2459094995504945,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1231649,
+          "fraction": 0.78323,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 434
+        },
+        "clean_metadata_sha256": "28ceb617a811f538047183799421a277af2150a6eaea9f85c056bfd2b8ffbfc4",
+        "clean_atlas_sha256": "8c83706ab77f0098881a9d06d42b9057e37f0e1ed322cd934993d48cbe0a7f3b"
+      }
+    },
+    {
+      "body": "duna_cora",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "f24da99b7c8d35fba64b8c6a3783ae87b6c6f097b20963e2fd2dbeee1c3b01de",
+      "json_sha256": "67d6232366dbdcba86689d21986d5353b0598a089e03c5ec75a73394784e3f7e",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna_cora-base.png",
+        "sha256": "403e27ce671ae04116a85120d06167b2da93c87675f7f7a7cc8f849fdfd1fa8a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.803226,
+            0.771429,
+            0.782051
+          ],
+          "uniform_scale": 0.782051282051282,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1138551,
+          "fraction": 0.72356,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 80
+        },
+        "clean_metadata_sha256": "e449611a6a61df250f0d26d1fcfbfd177128f589750660a617c40225ce67fb86",
+        "clean_atlas_sha256": "6cab2ffd5c85521aefe9d5d1f2a03055083f6de6cd3f78895ed22f1ff26f4771"
+      }
+    },
+    {
+      "body": "duna_cora",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "02224390b1f30755a8fc39d6523d940dc7f92ae4426f59cfd98200d2e76df06c",
+      "json_sha256": "b93be1ddf5cbb01b1879d82a75c62a1315a1a059e79e76f26b3616141da7c2fa",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna_cora-movement.png",
+        "sha256": "88d29728b81fcfa1ba8143b1aa9417738e9a1f357730087024a5b014fd39639e",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.188341,
+            1.134454,
+            1.099644,
+            1.17094
+          ],
+          "uniform_scale": 1.152696976226388,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1139554,
+          "fraction": 0.72487,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 215
+        },
+        "clean_metadata_sha256": "8192c1ff3c24576c0db6023a988706d179b68b326a2931412424b652576e32b6",
+        "clean_atlas_sha256": "c14ebf871006bfcb81d3ec97d3b2f3c83654ea23d1f7e33af4c5bd313643c73b"
+      }
+    },
+    {
+      "body": "duna_cora",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "81a5f376d692eb4a398ca42fc38e71dbe3faaa072a6ef531bc515bfc3686cddd",
+      "json_sha256": "5382ee5c84d0a686e4bfd38cf5c6f53e20f898f4c0d01a9c16b917be26af3acf",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna_cora-reactions.png",
+        "sha256": "31659c636dad08df297d9eb7310091b0eda3b055aab4657f799ecc9cc3059ed5",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.311111,
+            1.298387,
+            1.288793,
+            1.284519
+          ],
+          "uniform_scale": 1.2935901001112347,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1168529,
+          "fraction": 0.7431,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 243
+        },
+        "clean_metadata_sha256": "ad2e1c90f03a2927f5bc31bee9805aa57ed6639845c502fc37f7cec834ad587b",
+        "clean_atlas_sha256": "4c2d36cb0b5b6eb681b25fb3ddc75d754948313da7ff425a04c6c98afc79e41c"
+      }
+    },
+    {
+      "body": "duna_pedernal",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "bcce49f5981832379d926f5eaa82e5d0c6d729fc8fc115b40f9c83737f0ed165",
+      "json_sha256": "66a350da045bdbdf99cb1b3284f29d7cd2027f8cf6b2ff946b93bcb75c937286",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna_pedernal-base.png",
+        "sha256": "7790399cb6d781b320a7c841edbdbec1ad3f4b509f7c72016413979f2f2abcce",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.829851,
+            0.808184,
+            0.842466
+          ],
+          "uniform_scale": 0.8298507462686567,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1182737,
+          "fraction": 0.75164,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 224
+        },
+        "clean_metadata_sha256": "36db25b4797c241a4911dcd7f25ddd81aa8e30ac9ed5be2901bd37892c4a2ce7",
+        "clean_atlas_sha256": "e6bf8c194496f958cc1689aebd33429ed929814ccc73afcaa2769315744c6bc7"
+      }
+    },
+    {
+      "body": "duna_pedernal",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "84543285149722cd290a5bc9c0d60592d2d505ab9d0b899092c8ec3f01fa271b",
+      "json_sha256": "b433a6d3e3ca2f680025a98aa2600798eb6da482e4866fc706e7610abb12c414",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna_pedernal-movement.png",
+        "sha256": "553a6b2636cfea901378ae5419a84498154faf956687106c75882dcdee5a6597",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.114894,
+            1.069959,
+            1.131868,
+            1.138655
+          ],
+          "uniform_scale": 1.1233808744447042,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1118940,
+          "fraction": 0.71155,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 417
+        },
+        "clean_metadata_sha256": "e4e7e52ef3079c196583c126d18136b9de1406491a539d1aa0987d23f24bfc83",
+        "clean_atlas_sha256": "1cd902025da4b6f8654b18bebad384c2482909cb6cb16ebbabc30d1936def780"
+      }
+    },
+    {
+      "body": "duna_pedernal",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "da30fe02c1c13e7a8b7889247b12e24c14038b04b1598faa93e64488c1457252",
+      "json_sha256": "9a7901a1327bbc1ea62152c62a964788575452603d6435c749e184e05901131b",
+      "source": {
+        "path": "work/illustrated-damage/generated/duna_pedernal-reactions.png",
+        "sha256": "e3a0bb3d091deb4f18a644440defeafb24205ea33afabaa89fcc7032a53e7e03",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.236967,
+            1.268,
+            1.262911,
+            1.208531
+          ],
+          "uniform_scale": 1.2499388113833079,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1195562,
+          "fraction": 0.76029,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 426
+        },
+        "clean_metadata_sha256": "e52142f367e283779af19c54ebf4f8829514e16758dae4774ef8535336d71c60",
+        "clean_atlas_sha256": "200983f21881b628adaa1c1f8e8c4f0509a05b7c1531180315c3aa7b9c474c6d"
+      }
+    },
+    {
+      "body": "iria",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "559d78cc656f158531ad81286ae7de18cef8f50d5da36ee1acd001283c24c1c0",
+      "json_sha256": "3ef16490d5a11b36964ba92ccf1b4368f7f816e8769fb329b1d1101c96d20e76",
+      "source": {
+        "path": "work/illustrated-damage/generated/iria-base.png",
+        "sha256": "118a936376fc6ae6bc7da4774ba34acb119843b8ecd3f324b103c9d15ebd607a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.765101,
+            0.754153,
+            0.715415
+          ],
+          "uniform_scale": 0.7541528239202658,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "magenta",
+          "removed_pixels": 1287405,
+          "fraction": 0.81816,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 85
+        },
+        "clean_metadata_sha256": "906e5d2b411592ead0e9527e1fdbbc23107b1b1143e3de19176b70f427aedb9c",
+        "clean_atlas_sha256": "ea7f1d498ba869846ac51f4cd5d3667c560993b755a7d81ec1a6deb9ef101a28"
+      }
+    },
+    {
+      "body": "iria",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "aa250e1b04103bf5b3e703e6c271ae0a5d6ae412fb0565ad8951c4c8f2e80659",
+      "json_sha256": "0d163974238265cafd2279d8e4233bbea9229a396a98625c4fc835ba2b9b0c83",
+      "source": {
+        "path": "work/illustrated-damage/generated/iria-movement.png",
+        "sha256": "b0ce0b8996a20482c68694804df5ddcf49909f0ed4f6ff20388b57ee174b861b",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.289941,
+            1.257669,
+            1.331461,
+            1.314465
+          ],
+          "uniform_scale": 1.302203118603699,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "magenta",
+          "removed_pixels": 1377741,
+          "fraction": 0.87614,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 450
+        },
+        "clean_metadata_sha256": "fb84da68949e494e60ec538046535cc0f59b2faf9ed9179e10b00acfd14c08cc",
+        "clean_atlas_sha256": "02bea391ddb8eb39484994e1b5323e2f0b31426612a9d8e7ddaa49d5f741fbf0"
+      }
+    },
+    {
+      "body": "iria",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "17b4b1254ad6201f6c8ecf33e7c3171175c7b09fea9c7d2bc988d4b0a43fe79a",
+      "json_sha256": "0057e3c118770e6a79d3d0c91bd7cc95473f6e38fefea452be104e86f91df740",
+      "source": {
+        "path": "work/illustrated-damage/generated/iria-reactions.png",
+        "sha256": "7b47d7b4f0414884d12936865c2ac338e808598fa9ac0f72a27beae974cf966a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.157609,
+            1.12,
+            1.081448,
+            1.071429
+          ],
+          "uniform_scale": 1.1007239819004524,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "magenta",
+          "removed_pixels": 1257171,
+          "fraction": 0.79946,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 202
+        },
+        "clean_metadata_sha256": "87d5dce63251bc9d1f1869433f0b771ab84b43bb66c49903a44ddd250bc2d246",
+        "clean_atlas_sha256": "ee9a3f6a570d25eb6a3fcfa1b88ee29d4872645b3aa6da7b320cbd05dec73863"
+      }
+    },
+    {
+      "body": "kiro",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "e4c1876e0809dc0043672fef1c79e5309cd6d29d34603588e4785ac669ea1d12",
+      "json_sha256": "a147ab262e90a57cbcf0a94ce7b06f2bda1c497da03763575b71307e0917f30a",
+      "source": {
+        "path": "work/illustrated-damage/generated/kiro-base.png",
+        "sha256": "f3284fcf1aa9d4b411f201debead02d73b5f4da23ffb6b350f8c14f7b7f1149f",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.808765,
+            0.811321,
+            0.785408
+          ],
+          "uniform_scale": 0.8087649402390438,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1245581,
+          "fraction": 0.79158,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 155
+        },
+        "clean_metadata_sha256": "09d3df57c4cff2953bf8847f5580aee421270f69fecd5dca4bdb560a4062f7d6",
+        "clean_atlas_sha256": "2258fac375604c1ff3ce03654c96d6c7f206e895a098e613b2a1e423754afbbe"
+      }
+    },
+    {
+      "body": "kiro",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "e5af97b5c271e7c168fb90be76c1748cb5f06ce7b08806c37e50b51c2c941ba9",
+      "json_sha256": "41f025d41d803308d0a7e1066937985d9185e5895aa669354f64ba51ea2438a4",
+      "source": {
+        "path": "work/illustrated-damage/generated/kiro-movement.png",
+        "sha256": "5aa0a239eb117f2e7e392cea2bd4a487692c271d2b95b1b38ed92f4cc10718ac",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.151685,
+            1.121387,
+            1.077551,
+            1.060109
+          ],
+          "uniform_scale": 1.0994691518225788,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1224215,
+          "fraction": 0.77851,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 396
+        },
+        "clean_metadata_sha256": "0c2d323023e646dcde1cd7296e50371b32173be74a7619291ad4d3722f808c57",
+        "clean_atlas_sha256": "22f2ce08af39e9da0e77efa45cc1f857f70d9322ae86695177ec0ba1e2f71684"
+      }
+    },
+    {
+      "body": "kiro",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "94c6adc24f0f005df12b9985df703eb64e892b4842949fe92ca6fcfb04081a9c",
+      "json_sha256": "b365f09a0b8d308091b797722f2b2485316ec8975188c5d5995a83f12fe2d8db",
+      "source": {
+        "path": "work/illustrated-damage/generated/kiro-reactions.png",
+        "sha256": "81c3fd8f01dd5e1e7ef9a293ca06c26de63b75f0ae00d422bf0f299287ea4894",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.152439,
+            1.131148,
+            1.131455,
+            1.119565
+          ],
+          "uniform_scale": 1.1313014700223196,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1202735,
+          "fraction": 0.76485,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 390
+        },
+        "clean_metadata_sha256": "17c79249a46210ca3841e739bd499312de583f5ee060b224fdd9d30ed928ae18",
+        "clean_atlas_sha256": "002e5d8ddc5deebbf6a812ac9fe6887ed992e39d63b75ba29b2af07fdde4ec6f"
+      }
+    },
+    {
+      "body": "luma",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "7ac07ecad8eca2bbd8901177a11ae3a81484b9fb0564137bced7d78ce91c9241",
+      "json_sha256": "2c270e42bcb4b33323d0a8815ef84807364b8e082332dffe2c63700bb2bd883b",
+      "source": {
+        "path": "work/illustrated-damage/generated/luma-base.png",
+        "sha256": "01751e7277ff37656657ca8f6d2afb097bc9805c98308319b18897821ff3f2bb",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.799242,
+            0.760656,
+            0.778195
+          ],
+          "uniform_scale": 0.7781954887218046,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1309537,
+          "fraction": 0.83222,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "832e5693a6043060bed04178c06269e3744979aeeb8284d0593f810505cc1e1a",
+        "clean_atlas_sha256": "1ab20600ad50cf31bc19656d5b0c40cc5e6c031566fb27993a65b9102ec4e7e7"
+      }
+    },
+    {
+      "body": "luma",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "8074856628ac31f949e4bf5993967c6a6e11b8ed3434f20b4da705f8915ac516",
+      "json_sha256": "ab6db5a14ed30021c29cde8042b4d2e0cdb7114d2ce6da2aebf16362a0854baa",
+      "source": {
+        "path": "work/illustrated-damage/generated/luma-movement.png",
+        "sha256": "0b2f20c9b00c85a2560b767b4f15408159dfc6986f5bc90f3bea1632d50c0b5a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.256684,
+            1.237838,
+            1.231638,
+            1.123762
+          ],
+          "uniform_scale": 1.234738127958467,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1319008,
+          "fraction": 0.83879,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "reviewed_matte_polygons_source_global": [
+            [
+              [
+                146,
+                771
+              ],
+              [
+                153,
+                772
+              ],
+              [
+                155,
+                775
+              ],
+              [
+                158,
+                776
+              ],
+              [
+                160,
+                779
+              ],
+              [
+                157,
+                781
+              ],
+              [
+                151,
+                779
+              ],
+              [
+                146,
+                779
+              ]
+            ],
+            [
+              [
+                140,
+                782
+              ],
+              [
+                143,
+                779
+              ],
+              [
+                146,
+                780
+              ],
+              [
+                146,
+                784
+              ],
+              [
+                143,
+                787
+              ],
+              [
+                138,
+                789
+              ],
+              [
+                131,
+                788
+              ],
+              [
+                130,
+                786
+              ],
+              [
+                134,
+                786
+              ]
+            ],
+            [
+              [
+                150,
+                784
+              ],
+              [
+                154,
+                783
+              ],
+              [
+                155,
+                785
+              ],
+              [
+                154,
+                789
+              ],
+              [
+                151,
+                790
+              ],
+              [
+                149,
+                788
+              ]
+            ]
+          ],
+          "reviewed_matte_polygon_alpha_removed": 91,
+          "resampled_key_alpha_removed": 8
+        },
+        "clean_metadata_sha256": "2bde8973d9078a28e83c8f9040242c5a611d153853bcb22b882c02d787cb3dd7",
+        "clean_atlas_sha256": "a325a39877f4261412c04e6ef470567070a3fe6bc0c9f88ff5f3de349803fc3d"
+      }
+    },
+    {
+      "body": "luma",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "c428c1e01398d7120bac52814c022b95de91a4b17f69566f751c2fdcca1609b9",
+      "json_sha256": "32c3efaed797ee800247007bbcc485e0e50308802c19cd00d8fb169a9ff860ab",
+      "source": {
+        "path": "work/illustrated-damage/generated/luma-reactions.png",
+        "sha256": "9c952b4b7fbe33c5bdb6007fff91e6bbea4edf1a1d2df9909518f75af13356a6",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.074866,
+            1.048387,
+            1.0199,
+            1.034934
+          ],
+          "uniform_scale": 1.0416607972953937,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1220239,
+          "fraction": 0.77598,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 7
+        },
+        "clean_metadata_sha256": "ece69b12fdb1796de81a6a4023fddb7ff1f841c751e63ff556fe7b55f27952b4",
+        "clean_atlas_sha256": "2a1cf9f5aff744d39d39c040216fdfc1d6e8b647d391bc72325a557321b3b093"
+      }
+    },
+    {
+      "body": "mugo",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "498d0acbd162e3aae7f80d1b9feeaefd1ca73500be0419079d6723cb0f95df26",
+      "json_sha256": "6d72d7eae9b51c108a1c4c743ddaec1ae195d48e14f6fc33e806105b2b40ee61",
+      "source": {
+        "path": "work/illustrated-damage/generated/mugo-base.png",
+        "sha256": "e86832cd4f3f3b06ccf0dffa64c55a66c4d589e16f38c22b79f2d5b6fd6ac894",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.992537,
+            1.018809,
+            1.038961
+          ],
+          "uniform_scale": 1.0188087774294672,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1237899,
+          "fraction": 0.7867,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "reviewed_foreground_polygons_source_global": [
+            [
+              [
+                229,
+                215
+              ],
+              [
+                239,
+                215
+              ],
+              [
+                239,
+                224
+              ],
+              [
+                229,
+                224
+              ]
+            ],
+            [
+              [
+                678,
+                217
+              ],
+              [
+                685,
+                217
+              ],
+              [
+                685,
+                225
+              ],
+              [
+                678,
+                225
+              ]
+            ]
+          ],
+          "reviewed_foreground_alpha_restored": 64,
+          "resampled_key_alpha_removed": 6
+        },
+        "clean_metadata_sha256": "f505236dfbfb777542134c62b386ce980ee9650a1c406e8d0ea644ca5c323105",
+        "clean_atlas_sha256": "c4386ccb0a25e3da161147bfe536ff505999eadc764b8ba125d761778631c3ce"
+      }
+    },
+    {
+      "body": "mugo",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "e0a994cd0807f019e68aab1649e80927e4e56af3da465e4e6bdfb4bcf7333c78",
+      "json_sha256": "42f9a7c3b41c4803866d39cf686e942e9eca54114bbc2bbefda65336a282ad61",
+      "source": {
+        "path": "work/illustrated-damage/generated/mugo-movement.png",
+        "sha256": "fd7adc0edc465b156f3966c5ac2038bce39ed09f288398c37272025c440cac77",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.526829,
+            1.52381,
+            1.518018,
+            1.427083
+          ],
+          "uniform_scale": 1.5209137709137708,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1241511,
+          "fraction": 0.78951,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "reviewed_foreground_polygons_source_global": [
+            [
+              [
+                1156,
+                472
+              ],
+              [
+                1171,
+                472
+              ],
+              [
+                1171,
+                482
+              ],
+              [
+                1156,
+                482
+              ]
+            ],
+            [
+              [
+                1106,
+                168
+              ],
+              [
+                1119,
+                168
+              ],
+              [
+                1119,
+                177
+              ],
+              [
+                1106,
+                177
+              ]
+            ],
+            [
+              [
+                166,
+                152
+              ],
+              [
+                178,
+                152
+              ],
+              [
+                178,
+                161
+              ],
+              [
+                166,
+                161
+              ]
+            ],
+            [
+              [
+                160,
+                1068
+              ],
+              [
+                170,
+                1068
+              ],
+              [
+                170,
+                1077
+              ],
+              [
+                160,
+                1077
+              ]
+            ],
+            [
+              [
+                819,
+                454
+              ],
+              [
+                828,
+                454
+              ],
+              [
+                828,
+                463
+              ],
+              [
+                819,
+                463
+              ]
+            ],
+            [
+              [
+                1107,
+                1073
+              ],
+              [
+                1118,
+                1073
+              ],
+              [
+                1118,
+                1080
+              ],
+              [
+                1107,
+                1080
+              ]
+            ],
+            [
+              [
+                806,
+                771
+              ],
+              [
+                816,
+                771
+              ],
+              [
+                816,
+                778
+              ],
+              [
+                806,
+                778
+              ]
+            ],
+            [
+              [
+                483,
+                1079
+              ],
+              [
+                493,
+                1079
+              ],
+              [
+                493,
+                1086
+              ],
+              [
+                483,
+                1086
+              ]
+            ],
+            [
+              [
+                473,
+                464
+              ],
+              [
+                484,
+                464
+              ],
+              [
+                484,
+                470
+              ],
+              [
+                473,
+                470
+              ]
+            ],
+            [
+              [
+                811,
+                1126
+              ],
+              [
+                821,
+                1126
+              ],
+              [
+                821,
+                1133
+              ],
+              [
+                811,
+                1133
+              ]
+            ],
+            [
+              [
+                214,
+                812
+              ],
+              [
+                223,
+                812
+              ],
+              [
+                223,
+                820
+              ],
+              [
+                214,
+                820
+              ]
+            ],
+            [
+              [
+                1111,
+                772
+              ],
+              [
+                1120,
+                772
+              ],
+              [
+                1120,
+                778
+              ],
+              [
+                1111,
+                778
+              ]
+            ],
+            [
+              [
+                173,
+                472
+              ],
+              [
+                181,
+                472
+              ],
+              [
+                181,
+                479
+              ],
+              [
+                173,
+                479
+              ]
+            ],
+            [
+              [
+                798,
+                206
+              ],
+              [
+                807,
+                206
+              ],
+              [
+                807,
+                212
+              ],
+              [
+                798,
+                212
+              ]
+            ],
+            [
+              [
+                514,
+                802
+              ],
+              [
+                522,
+                802
+              ],
+              [
+                522,
+                808
+              ],
+              [
+                514,
+                808
+              ]
+            ]
+          ],
+          "reviewed_foreground_alpha_restored": 565,
+          "resampled_key_alpha_removed": 9
+        },
+        "clean_metadata_sha256": "2c61425e59b787563f9f37d9084358d86ad75c338e2b05edbd029b52361e768a",
+        "clean_atlas_sha256": "9791d3ca6cb991c013694bf5bbc710a1ed901b618bb35eec84a9353acbdfe32e"
+      }
+    },
+    {
+      "body": "mugo",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "2b0722e6208fb698e80aedea16fb121c8d6abf665225bbf6f4169fb6fa4ae800",
+      "json_sha256": "d9a64fdf8c9c66a0b953ce857abbd3a29eb3c1dcd5de498a9a9b5200047d40da",
+      "source": {
+        "path": "work/illustrated-damage/generated/mugo-reactions.png",
+        "sha256": "3686b2906934c5498540225bfe6e097337cff4336d4fd5cdf07303992fb98e7b",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.521505,
+            1.495798,
+            1.491892,
+            1.5
+          ],
+          "uniform_scale": 1.4978991596638656,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1220946,
+          "fraction": 0.77643,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "reviewed_foreground_polygons_source_global": [
+            [
+              [
+                113,
+                455
+              ],
+              [
+                123,
+                455
+              ],
+              [
+                123,
+                465
+              ],
+              [
+                113,
+                465
+              ]
+            ],
+            [
+              [
+                162,
+                1067
+              ],
+              [
+                172,
+                1067
+              ],
+              [
+                172,
+                1076
+              ],
+              [
+                162,
+                1076
+              ]
+            ],
+            [
+              [
+                488,
+                166
+              ],
+              [
+                497,
+                166
+              ],
+              [
+                497,
+                176
+              ],
+              [
+                488,
+                176
+              ]
+            ],
+            [
+              [
+                1101,
+                769
+              ],
+              [
+                1111,
+                769
+              ],
+              [
+                1111,
+                778
+              ],
+              [
+                1101,
+                778
+              ]
+            ],
+            [
+              [
+                450,
+                522
+              ],
+              [
+                459,
+                522
+              ],
+              [
+                459,
+                532
+              ],
+              [
+                450,
+                532
+              ]
+            ],
+            [
+              [
+                795,
+                783
+              ],
+              [
+                804,
+                783
+              ],
+              [
+                804,
+                791
+              ],
+              [
+                795,
+                791
+              ]
+            ],
+            [
+              [
+                184,
+                825
+              ],
+              [
+                192,
+                825
+              ],
+              [
+                192,
+                835
+              ],
+              [
+                184,
+                835
+              ]
+            ],
+            [
+              [
+                476,
+                782
+              ],
+              [
+                486,
+                782
+              ],
+              [
+                486,
+                788
+              ],
+              [
+                476,
+                788
+              ]
+            ],
+            [
+              [
+                1101,
+                1086
+              ],
+              [
+                1110,
+                1086
+              ],
+              [
+                1110,
+                1093
+              ],
+              [
+                1101,
+                1093
+              ]
+            ],
+            [
+              [
+                1126,
+                171
+              ],
+              [
+                1133,
+                171
+              ],
+              [
+                1133,
+                178
+              ],
+              [
+                1126,
+                178
+              ]
+            ],
+            [
+              [
+                751,
+                135
+              ],
+              [
+                759,
+                135
+              ],
+              [
+                759,
+                142
+              ],
+              [
+                751,
+                142
+              ]
+            ]
+          ],
+          "reviewed_foreground_alpha_restored": 364,
+          "resampled_key_alpha_removed": 3
+        },
+        "clean_metadata_sha256": "2b87d01b9fe6e80833c2385b710e15553f977032b7810a3e150d0009885975e3",
+        "clean_atlas_sha256": "e75c607bbb9ffd9bfe2bdd5b4bbf6c7adedba149cca42370b04455a96297c8d7"
+      }
+    },
+    {
+      "body": "neris",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "edb8ce72c76de4be5e21fed81a15d1e59099792f78a2607de79c047bc9820665",
+      "json_sha256": "aa74a6395609c49c1262bc706261ac4841f4fc572e9fdbac27e5007d81cc3987",
+      "source": {
+        "path": "work/illustrated-damage/generated/neris-base.png",
+        "sha256": "64cd4359111ad3856e6719f90e2012c8d59e9e7710cf84dfda28fa4278a40bfd",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.792308,
+            0.757396,
+            0.720339
+          ],
+          "uniform_scale": 0.757396449704142,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1313552,
+          "fraction": 0.83478,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 228
+        },
+        "clean_metadata_sha256": "5130bec5c36513c12d060a48bff277b41b38c69bc30a09558acdfd2dd8014f3f",
+        "clean_atlas_sha256": "51c089a2e855b7b119c54f49d5112070dc14681a0fd97c7c279794866419c216"
+      }
+    },
+    {
+      "body": "neris",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "25a57678683ec3bcc396acbee558de0181181cf3e84580aeb9d8a435dd39fb09",
+      "json_sha256": "6ad67877b6b039424aa3e5c58c963b8219322781d97ade1921f9d787c0d2f00d",
+      "source": {
+        "path": "work/illustrated-damage/generated/neris-movement.png",
+        "sha256": "b2b7bb63ecd35343ba09f99ca71f89750aeecf5e01557d195a52cfe62bc33e59",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.314465,
+            1.326923,
+            1.286408,
+            1.275362
+          ],
+          "uniform_scale": 1.3004365878976614,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1380901,
+          "fraction": 0.87815,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 511
+        },
+        "clean_metadata_sha256": "7dabcb5dbd992042f02c5f701bfff7dd6e182a66a0a7f9ecc413a7d9305c7f29",
+        "clean_atlas_sha256": "eacfe41bf39b7b22a859345e184c79e6ad6ab5f93e0584c711078311ba16092e"
+      }
+    },
+    {
+      "body": "neris",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "902772f1460edb889d845f679c194420913f28fd650aded39c6967c980a854ea",
+      "json_sha256": "a8b2e440231843bc763a696918c4d226b035d31992c698308d04eca26be035ec",
+      "source": {
+        "path": "work/illustrated-damage/generated/neris-reactions.png",
+        "sha256": "2568121bec84a6b515c83a453ec56dbdc856bcf9b8b7b15fd307e359e2a15eb0",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.060465,
+            1.010811,
+            1.090164,
+            1.044444
+          ],
+          "uniform_scale": 1.052454780361757,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1244938,
+          "fraction": 0.79169,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 406
+        },
+        "clean_metadata_sha256": "654d02aff8f9e7f31b20afc886cda605d8ccfe1a50c19668bc4656dfbce445bd",
+        "clean_atlas_sha256": "d73c776279574e68cc239e57437e7bf31770e347a0357efe0e1ca75737f98b72"
+      }
+    },
+    {
+      "body": "nima",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "e003f45165987b8210de1a129bcb144ea0bf10c646465d96b2f671d1489d5d98",
+      "json_sha256": "069239a64f8b01c2aedc0a0a5fbea91f9aeaaa32f740fe3e8adbb37c008c8aa1",
+      "source": {
+        "path": "work/illustrated-damage/generated/nima-base.png",
+        "sha256": "992861ef2fcc5f00e0e72414891803128053e2bc2fb3cd60131691c2cffce3e7",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.650519,
+            0.674286,
+            0.62963
+          ],
+          "uniform_scale": 0.6505190311418685,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "checker",
+          "removed_pixels": 1230779,
+          "fraction": 0.78217,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval."
+        },
+        "clean_metadata_sha256": "f922a74bed14d987575d92100da63b4a16a32f7f342e3d6422fdc194ea044253",
+        "clean_atlas_sha256": "670a99672e15ba84fa6aaeddeaddb360f267a03a759a03be596148b3d4238e9c"
+      }
+    },
+    {
+      "body": "nima",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "d46e32802b2796e5146a9cf6319c7d85eacf215b84560c5c96281d84f17e1492",
+      "json_sha256": "816cac33598dd5f7d0ff3f48326447a46e801ddfd9f9786572cd54d71694eaef",
+      "source": {
+        "path": "work/illustrated-damage/generated/nima-movement.png",
+        "sha256": "ff2381c87467d231e5f90629066cc24f73655c32212dbfb2d6319d7d32a1c082",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.014706,
+            1.029412,
+            1.004405,
+            0.955307
+          ],
+          "uniform_scale": 1.0095555843482766,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1258859,
+          "fraction": 0.80054,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval."
+        },
+        "clean_metadata_sha256": "381f4252b0b347d4a94d9a4431ec6a36d42c689d8ff6fdd2f9a43f2e72a7e4dd",
+        "clean_atlas_sha256": "94d72b6a81da0c769c7839f9b41d0fd633569d7f6bfe72b5f3bd1dd4d46882b4"
+      }
+    },
+    {
+      "body": "nima",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "6299cc1e8d3906734e8f3386a2b6d8a1a8fb726272122bb877cadd5613756ec5",
+      "json_sha256": "5554ce7bb8f482cb59b6e0e962f62f6f9a76707b5a420161a99c4b22763116fb",
+      "source": {
+        "path": "work/illustrated-damage/generated/nima-reactions.png",
+        "sha256": "c12dbfd85242e9af1e228474838e154329142cc3907ac9d4409fd85b2821f036",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.984615,
+            0.949541,
+            0.928889,
+            1.004785
+          ],
+          "uniform_scale": 0.9670783345095272,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1198738,
+          "fraction": 0.76231,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval."
+        },
+        "clean_metadata_sha256": "d70aa046ec0a1551f22c1fc20b6a608d0b680cf8691451cdd2c2b35a71fb6f36",
+        "clean_atlas_sha256": "82a552906084ca96c3cd4cfa16828f125e9b0de05000c69a29ddd75474a051a1"
+      }
+    },
+    {
+      "body": "onix",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "517d38b2987215a88e714ab1011bd94d8641e2c4504c74fcc40e6c7b9059b936",
+      "json_sha256": "c929469e09a571eb6a488c7218ed93af2cf5c70b31a2fd66bfaad9823146384b",
+      "source": {
+        "path": "work/illustrated-damage/generated/onix-base.png",
+        "sha256": "d22cca287b2c5c764b0bbbae6ed7277b8b64ce0130a600bbfb450105fff25379",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.697531,
+            0.679739,
+            0.651064
+          ],
+          "uniform_scale": 0.6797385620915033,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1298551,
+          "fraction": 0.82524,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 0
+        },
+        "clean_metadata_sha256": "8ea8310eead7539627e70e4efec3f3a133a9e92fe8b036af5a8de6644390ce18",
+        "clean_atlas_sha256": "c53b15b7e563b644a1c46ade28fdddf24c002a583002bc135797bf06d44b4626"
+      }
+    },
+    {
+      "body": "onix",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "583a9c5b2a608eff31c3269fe49c99800419af10d9e7e46b94060d54b79e5a7e",
+      "json_sha256": "c294aad23256558e61112331ea803fdc7f44130b17fb26a1e9776aa6c151e3cd",
+      "source": {
+        "path": "work/illustrated-damage/generated/onix-movement.png",
+        "sha256": "14fe0113634a8a73ac28470a59808c84a10d9337db61535201df2ef1a7f279fa",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.940426,
+            0.917098,
+            0.926724,
+            0.962162
+          ],
+          "uniform_scale": 0.933574834922964,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1256055,
+          "fraction": 0.79875,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "d4050efcc5df10f31591c8a94982d92cfca871d2d4dc19ac6e84d3b450c55e1e",
+        "clean_atlas_sha256": "13c6798430e348300704885d99fe164642d3e18d722ab6934d3aa4d6cb38434c"
+      }
+    },
+    {
+      "body": "onix",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "b1d1c80a228a8f1e6dceb1d6356ac6b4cdf1a03c2c9e2c31fbc74808ae034394",
+      "json_sha256": "1983beef54bb802644965dfa6ceac8bf561fe6b65a7add8844c02503410b91b3",
+      "source": {
+        "path": "work/illustrated-damage/generated/onix-reactions.png",
+        "sha256": "92958516bbf6762d3889274134125388618444e92aa1ea4bd2040c929bdc2e03",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.982955,
+            0.972067,
+            0.926136,
+            0.982659
+          ],
+          "uniform_scale": 0.9773629993218587,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1277373,
+          "fraction": 0.81231,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 0
+        },
+        "clean_metadata_sha256": "99e3458a82a97a6cbc39f34d961f8a216c911d97995bab254efd36d075d64563",
+        "clean_atlas_sha256": "cba3ef1f2541fb786f7bae17206e28294de4e8167cdc608511afcb99a169264e"
+      }
+    },
+    {
+      "body": "sira",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "c3957dcd625fac9567bd66f76673b370107a8a8824fe1af095357af1ebfff476",
+      "json_sha256": "f7588f2ef22b8378231440c32b5bfb68b770d1bd0755daa1a97938114fdf9a1c",
+      "source": {
+        "path": "work/illustrated-damage/generated/sira-base.png",
+        "sha256": "9979d4e1956fa65651dd417c4eb362e830a6ff1b8c5f509d86749b9d9f8ed9dc",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.755556,
+            0.788512,
+            0.745283
+          ],
+          "uniform_scale": 0.7555555555555555,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1359754,
+          "fraction": 0.86414,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 3
+        },
+        "clean_metadata_sha256": "61ea346b6e0ef7696ee66714784b13c8de67c5b570d704456621cf0bbfa49ef4",
+        "clean_atlas_sha256": "7056e0863754bd4a4ea8bc71159c446ad1a555b74b40118eec76c34f0f56383c"
+      }
+    },
+    {
+      "body": "sira",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "cbf2944a0c897bff4f8ad582d913d83947b05a3b4f85662258eb6d325104176d",
+      "json_sha256": "33ae17310f30aa45eaea061802d860a7280872048af1a4eda9384a2646fabcb9",
+      "source": {
+        "path": "work/illustrated-damage/generated/sira-movement.png",
+        "sha256": "5468ad2af31fca58735437a21eefd024cec38d6d43b3a4f1a6e8e4ad9bc490ca",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.262626,
+            1.194118,
+            1.28866,
+            1.233918
+          ],
+          "uniform_scale": 1.2482721956406166,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1395296,
+          "fraction": 0.8873,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 8
+        },
+        "clean_metadata_sha256": "0e19958a72d81c7a849a98968c922709ef2dfaffe12a8c655381283accd823f7",
+        "clean_atlas_sha256": "dd0e65f7d9be4f8c7bbe39c80ea27951ddb7b92647de832d6eccc15940e1b656"
+      }
+    },
+    {
+      "body": "sira",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "26a583d78df3508dc882b480785de38d549b48e78a51193b24356e6df69db7fb",
+      "json_sha256": "7128acde912f9615e3bfa59209dcb28e0ef423e536263bbf536b9c2cc6456977",
+      "source": {
+        "path": "work/illustrated-damage/generated/sira-reactions.png",
+        "sha256": "7c166d523c00feeeaa484772afb9976048a89583819dfda64dc5eb02ac1eabfb",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.064327,
+            1.10828,
+            1.107955,
+            1.083333
+          ],
+          "uniform_scale": 1.0956439393939394,
+          "explicit_review_override": true,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1303199,
+          "fraction": 0.82873,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 9
+        },
+        "clean_metadata_sha256": "94bbeb89d189aecd55fbae3572491fe269e77857e22fab62d53ba780da1c0914",
+        "clean_atlas_sha256": "daaabdbac3c226cc7916e88eac4066450e09500256b79c682b08f8719e428a66"
+      }
+    },
+    {
+      "body": "taro",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "b27d4ea582b549f0f11aef44ffc8c8d202d717583df4c34be0f41d21c66e0abf",
+      "json_sha256": "987b98614cee633422d8d8e25391b739ac8e6ac3b2af1efd245ddf214aee1fd5",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro-base.png",
+        "sha256": "93833c8c63070f840a16f55154ce7535e5d72015f2dd792c1b33455a47c8dddc",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.904762,
+            0.872671,
+            0.863436
+          ],
+          "uniform_scale": 0.8726708074534162,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1292775,
+          "fraction": 0.82157,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "reviewed_strict_key_polygons_source_global": [
+            [
+              [
+                1509.256,
+                77.979
+              ],
+              [
+                1669.683,
+                77.979
+              ],
+              [
+                1669.683,
+                204.028
+              ],
+              [
+                1509.256,
+                204.028
+              ]
+            ]
+          ],
+          "reviewed_strict_key_alpha_removed": 36,
+          "reviewed_matte_polygons_source_global": [
+            [
+              [
+                1643,
+                168
+              ],
+              [
+                1648,
+                168
+              ],
+              [
+                1648,
+                171
+              ],
+              [
+                1643,
+                171
+              ]
+            ],
+            [
+              [
+                1637,
+                158
+              ],
+              [
+                1641,
+                158
+              ],
+              [
+                1641,
+                159
+              ],
+              [
+                1637,
+                159
+              ]
+            ],
+            [
+              [
+                1624,
+                141
+              ],
+              [
+                1624,
+                141
+              ],
+              [
+                1624,
+                142
+              ],
+              [
+                1624,
+                142
+              ]
+            ]
+          ],
+          "reviewed_matte_polygon_alpha_removed": 25,
+          "resampled_key_alpha_removed": 3
+        },
+        "clean_metadata_sha256": "a20367e27100edded1ec317a385bab44e7a000e53a7b42be987931ff28c50712",
+        "clean_atlas_sha256": "545414ca28812e00c3aa90d2e23630007d31f85e7717fbffbc0e71cacedb76ac"
+      }
+    },
+    {
+      "body": "taro",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "ab80f02add7682fc340a4b46160852006c6e87adb74317163f4870328e4cb1da",
+      "json_sha256": "cb041c25b05ff79e345821785ff9682e9240610157836aa478fcd0950c60f34d",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro-movement.png",
+        "sha256": "e2480c80224a1667eb463be11ac1bf0a03e1a4c4e75a92e19ca07902c4d805ef",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.242105,
+            1.17801,
+            1.237705,
+            1.157609
+          ],
+          "uniform_scale": 1.2078576946184878,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1229436,
+          "fraction": 0.78183,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 2
+        },
+        "clean_metadata_sha256": "d99cc7b0c6401572aa1c3dee8d5cc39c643070bd8f9f5da36311184bbf427fc9",
+        "clean_atlas_sha256": "a5c4d97374b55d47713a99ec8f73812e90611e97cdb66ef27a1a34794e4007e6"
+      }
+    },
+    {
+      "body": "taro",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "a7badc0c75c8ca263f8596c6b898b3481608a48efe14810d1abd9b4f98723052",
+      "json_sha256": "db6f35ec771f9c86a473d98e419b347fc706868a5910293f48580990b9651116",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro-reactions.png",
+        "sha256": "9822dc730f2fa01d1a2f0df310bcec1c382219019bc6d440dae804b89a9d7a28",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.238579,
+            1.174359,
+            1.183673,
+            1.190217
+          ],
+          "uniform_scale": 1.1869454303460514,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1233364,
+          "fraction": 0.78433,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "588572811b364b7a471710d1bd6f43d95a7b46eba589f3b1e047d0ea31b6613a",
+        "clean_atlas_sha256": "62aaeeb3c27a67a127e17825aeea60f0c3f208f317adef5e2534886aaf531122"
+      }
+    },
+    {
+      "body": "taro_roque",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "184686e981d921de6b8a3fa6c9fec85f221f437c2ef1646b3c35f26059fd0140",
+      "json_sha256": "4f41a4aafbb01220877ff0c803046a1b58cc181828daa6a411b10aebab3cc995",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro_roque-base.png",
+        "sha256": "ce02044a32073614cab3a2b0648c756f90e5d9b7535ffb6fc4a48b085e7d7b5a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.868056,
+            0.874627,
+            0.91358
+          ],
+          "uniform_scale": 0.8746268656716418,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1269450,
+          "fraction": 0.80675,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 3
+        },
+        "clean_metadata_sha256": "0ddab86a9d37e41d29a22f81ad1385f997251b0e440d9cdeb8c7825cb0117fb0",
+        "clean_atlas_sha256": "e2a3678240c100733391965be53141fb69479b4f3e2f600486b805dac5ef9596"
+      }
+    },
+    {
+      "body": "taro_roque",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "99c7a417f624b292ec040d61fa7bc30b201e0ed56559acda772208471a5a242c",
+      "json_sha256": "62406f95b0e022e05c769d504f9c13ed0525e229ead39733560d80c7adb09a12",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro_roque-movement.png",
+        "sha256": "c88820c0f67a5e7ee9958a2df9b5f797b0fd339efe179272d51440dbdb4e276f",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.315789,
+            1.362069,
+            1.368889,
+            1.338983
+          ],
+          "uniform_scale": 1.3505260081823494,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1278810,
+          "fraction": 0.81323,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "36f596230ee4b4809190d5151aa1073ccb378b3f87b250ddf11e1a79fe09751c",
+        "clean_atlas_sha256": "309cd77f3d32319afefdd9e33dfdb9f0dad7798e79561d9834f4f9e0ce827903"
+      }
+    },
+    {
+      "body": "taro_roque",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "ab97151a1a2bbf54128aa6ea87d3579104470b9d4eb1144ee51067e98ed019d9",
+      "json_sha256": "a31c730ecb0621d6bb5bb307ebba910d49a6b4e65a874e7dbb8be3f2c8312bfc",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro_roque-reactions.png",
+        "sha256": "4aa7f5f0d9daa77c3db7fa7974014a9ab8676b8386487b735ae944fc4d8f1d02",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.194175,
+            1.210784,
+            1.189873,
+            1.195
+          ],
+          "uniform_scale": 1.1945873786407768,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1210159,
+          "fraction": 0.76957,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 4
+        },
+        "clean_metadata_sha256": "b8e199abe8041dc8b91beac6bf2e93df2d30696ed3a0cfb2d62718e04135e77b",
+        "clean_atlas_sha256": "95338cc31bb023205dad48d7b803db04d5eb2e74f59b92a74fbb4adbed92cf35"
+      }
+    },
+    {
+      "body": "taro_sabio",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "78f8105d1b0de06418b6cb172968da4f985dcc607010765223b3a6fc7278db5f",
+      "json_sha256": "eee9364b79a703cec7853077ec1c17c513370ecb81ba25dbc805a77bb608bf2a",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro_sabio-base.png",
+        "sha256": "db2dc67e37b9b616b3c5091494ea0be5370505efac29c3066574b4fa89155d3c",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.891386,
+            0.887879,
+            0.922619
+          ],
+          "uniform_scale": 0.8913857677902621,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1259607,
+          "fraction": 0.80049,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "05dd69bc63b5301077df626bc87bd801970d2f1891fbd0b51d969b67c4b6461a",
+        "clean_atlas_sha256": "c8369e7c1cf8bf1089cdad0f05b15f79ecb5bd6ae1b8986d44c7a14a0c51648c"
+      }
+    },
+    {
+      "body": "taro_sabio",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "f2c1dba7c30b3671e47a206c3db238094b6f832711fd8ff90a5d565578f64f20",
+      "json_sha256": "b99568ddd2b45e64bba8941f36bb8f61662035e76814526d4b6923a335eedb32",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro_sabio-movement.png",
+        "sha256": "84b55b542a648dc45f1f9b153469ed5934e5f07445e611bc1b8a0054e9ece573",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.377778,
+            1.342857,
+            1.339367,
+            1.284946
+          ],
+          "uniform_scale": 1.3411118293471234,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1284143,
+          "fraction": 0.81662,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 8
+        },
+        "clean_metadata_sha256": "5707f099dbf8e21417181560f1b49e371267db6b91019b7314105484cceda077",
+        "clean_atlas_sha256": "b3674769f904ddedfa105695d99b0c1fd7baa7d92b303f89d9d9341243e7e0e3"
+      }
+    },
+    {
+      "body": "taro_sabio",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "cdde126ee7c8087d04f7045f64e472e1c324b2572f0cf5d6bafea1e9264f9ae3",
+      "json_sha256": "266d226680abda73e681b25c813c018f499306c8317d5768ef66693da580927c",
+      "source": {
+        "path": "work/illustrated-damage/generated/taro_sabio-reactions.png",
+        "sha256": "0cfdb76b110f25f87e1aec2ec4bceb91c23bf433268b3190d58e5826906c2cfc",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.442623,
+            1.439306,
+            1.408072,
+            1.431138
+          ],
+          "uniform_scale": 1.4352220414662007,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1294446,
+          "fraction": 0.82317,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "strict_key_settings": {
+            "min_channel": 30,
+            "min_delta": 14
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 7
+        },
+        "clean_metadata_sha256": "0bd55b4718ab9a6e6b322f2b3ba3c328700e8494452a742929b0f0750099fad8",
+        "clean_atlas_sha256": "d9a0366a5e47e9d1de27ecdf525993e9ee3ca931856106f3978b67b288aedf77"
+      }
+    },
+    {
+      "body": "tepa",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "9baf51fa361c713032bb3cea040b93df6c0bfede9bb7a0a11ae3756a56a15f03",
+      "json_sha256": "d5d6291d3818350a379983d0054ff91cdd5a621aff2d0e819d76c81023fe4ead",
+      "source": {
+        "path": "work/illustrated-damage/generated/tepa-base.png",
+        "sha256": "7ace318915ee91fe4f7b7d06d8ce2f3a27dfba0460940b38e2576ca49e87a056",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.592885,
+            0.59,
+            0.578199
+          ],
+          "uniform_scale": 0.59,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1265834,
+          "fraction": 0.80445,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 1
+        },
+        "clean_metadata_sha256": "d8ac89d8748f93b81a1b535286bf73497bd0b39b98c765c4c67107634b5da1fa",
+        "clean_atlas_sha256": "74d3993a37274b7b10ebe3e4007f795def3bb0dd790b4ab256932bc7324a9e76"
+      }
+    },
+    {
+      "body": "tepa",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "a0dc7382f2dfdcd1b34088a285fe29b2e61c6e2ee309ce63cd0451546d3e0f63",
+      "json_sha256": "eae328d71c9eea758602d821e92525271f53628c5f8f6b0a51ca939649a408ea",
+      "source": {
+        "path": "work/illustrated-damage/generated/tepa-movement.png",
+        "sha256": "5de7d32c0f328403eb64090b508198c8c376e5849e971fa5a5a0b3ec5d7b87d6",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.080537,
+            1.060403,
+            1.097297,
+            1.066667
+          ],
+          "uniform_scale": 1.0736017897091723,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1361737,
+          "fraction": 0.86596,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 2
+        },
+        "clean_metadata_sha256": "6bfaaa9f6298cd9c346803fca2db3864feb4218bfad0d562ae5db0c6f0406769",
+        "clean_atlas_sha256": "8e2f6d42f2158ca674aa4674922ad9f111fa729c6e04f85a1aacc9082550b6e3"
+      }
+    },
+    {
+      "body": "tepa",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "0cfabe5c3f94dcd12f0ae7dbebe3127d4615fb77c06c8ccbfe37d1be522cb18f",
+      "json_sha256": "c894caeb97ad057bc0914eb28f7134e5c9ea6a612b58a23dfc3b8937b59df13d",
+      "source": {
+        "path": "work/illustrated-damage/generated/tepa-reactions.png",
+        "sha256": "e5184004d2c47ae0710023436eebeb385ce8d994a595e9be4951457c3c39d083",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.0,
+            0.99375,
+            0.979798,
+            0.982143
+          ],
+          "uniform_scale": 0.9879464285714286,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1315041,
+          "fraction": 0.83627,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 2
+        },
+        "clean_metadata_sha256": "5616d7231005b1c0f18891f9470a6c07220ae3a3a41ad8a27fe9c695c1c3cc7f",
+        "clean_atlas_sha256": "2c5ae60b6ac53a61f1084d888adea9fc02e86b4ec2aa3d3f5e84bf107e7fc81e"
+      }
+    },
+    {
+      "body": "vespera",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "6b12cb4bfb6f655d184ff18a9ceb24ae6f4e1812ada6a3488b1f139c010a79bb",
+      "json_sha256": "6e087f560f05e2626d4ba36be1af8d056115108e6d312f7c150b349c739330ff",
+      "source": {
+        "path": "work/illustrated-damage/generated/vespera-base.png",
+        "sha256": "7637985e4ba449b529a615cc407f4654672cf70ec2c84c57709bfc867d83417f",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.744186,
+            0.753463,
+            0.757576
+          ],
+          "uniform_scale": 0.7534626038781164,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1216910,
+          "fraction": 0.77336,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 15,
+            "min_delta": 4
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 194
+        },
+        "clean_metadata_sha256": "4820cc12cfc2b98c759c3aa990f961e886e73d10e0b1e1af859f9e9e39512ba5",
+        "clean_atlas_sha256": "9fd1b5233a83df666423fc5c37970a504071a720da537412c7802014f53cbf92"
+      }
+    },
+    {
+      "body": "vespera",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "c28bac7972241200d8f4c14b92afa791a6b00927b2cb8a7f460cf1dd4389b8b5",
+      "json_sha256": "23b750580c1ec0839c61b7edc410085ecbafdd895558663f817d3644cffdc101",
+      "source": {
+        "path": "work/illustrated-damage/generated/vespera-movement.png",
+        "sha256": "97830506f915d3a95cd57f8c1a2ee13a46d8c9b3afbf1ef353ed8b2cefe1e961",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.090047,
+            1.034653,
+            1.170124,
+            1.086957
+          ],
+          "uniform_scale": 1.0885019575520296,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1223219,
+          "fraction": 0.77787,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 15,
+            "min_delta": 4
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 435
+        },
+        "clean_metadata_sha256": "e86cb051b861184be5b750b6025104787594de2896299c113f4b355f1dfd30cc",
+        "clean_atlas_sha256": "b415213e2e3a29217f78e4011356a4588488eb7c82c0139e49edc54ac7de1285"
+      }
+    },
+    {
+      "body": "vespera",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "533f857b04a2b5d0e347848c31d046b4454b8e02d105cea43cc3d0fff964a31e",
+      "json_sha256": "b66b6eb018cb53340a97648cff60bdabd45e77b5644ea9d70cf8884726c45135",
+      "source": {
+        "path": "work/illustrated-damage/generated/vespera-reactions.png",
+        "sha256": "42d1c89d0bc1169047135993e95b8c2204e3c8ed75dbaec53ff4f1b0d112647a",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.215859,
+            1.154696,
+            1.18,
+            1.2
+          ],
+          "uniform_scale": 1.19,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1256583,
+          "fraction": 0.79909,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": true,
+          "strict_key_settings": {
+            "min_channel": 15,
+            "min_delta": 4
+          },
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 307
+        },
+        "clean_metadata_sha256": "45b707e6295595b11dcbafa390c086a2f06b5a7a27fa8593dfec1bd2def4e352",
+        "clean_atlas_sha256": "3d5d732bdbfd13138cf4c41fca08340124fa57947c181fc4bead378a38a569c9"
+      }
+    },
+    {
+      "body": "xuna",
+      "bank": "base",
+      "status": "ACCEPTED",
+      "frames": 8,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "cd9c0c03a9847d279b7301ff3261dab199ea1eec26790b0b8a262ca317a64d1c",
+      "json_sha256": "af69b5532c5b1e8c6aa0ebf9829a4c5d95f54c15a16749bf06beca2951cd6a41",
+      "source": {
+        "path": "work/illustrated-damage/generated/xuna-base.png",
+        "sha256": "5f9be4ba8db30b1c44d1ff163162339598e892fa9cec1a2652f09b62a2c98ff8",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.698182,
+            0.715625,
+            0.680851
+          ],
+          "uniform_scale": 0.6981818181818182,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1327210,
+          "fraction": 0.84346,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 0
+        },
+        "clean_metadata_sha256": "3d6215502f590a2e7b0ed32d0556d8d9cf71dacbe958dab311b488c068ac0afb",
+        "clean_atlas_sha256": "a2b142b7dcc5a22f5326dbde18f991e53b1f35263929de9d34c5c3e510d57769"
+      }
+    },
+    {
+      "body": "xuna",
+      "bank": "movement",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "542c9611ad478ef3e12f817a01a57c2fca84f4003da052a6509fe2089b9bfcf7",
+      "json_sha256": "9c9adb2296c318a22eb628a790d9437dc2d9eb3746374caae40b4972201b0b58",
+      "source": {
+        "path": "work/illustrated-damage/generated/xuna-movement.png",
+        "sha256": "9c3c054e2daf528df54e2401d9948cef3a1a2037775a7b4d170b3eae162e9855",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            1.08982,
+            1.147239,
+            1.127451,
+            1.065868
+          ],
+          "uniform_scale": 1.108635669836797,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1354720,
+          "fraction": 0.8615,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 0
+        },
+        "clean_metadata_sha256": "d367ed2a869ccae1d87f2589314e46711e2153ccd73c138d08b6005e16478db3",
+        "clean_atlas_sha256": "bcf08f54af316a2de4592032056bb0ca291c07d2c660b254fe95ac0b02cfd660"
+      }
+    },
+    {
+      "body": "xuna",
+      "bank": "reactions",
+      "status": "ACCEPTED",
+      "frames": 16,
+      "rgba": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "png_sha256": "38ab1180cfd18ae88173e19eecdd630469d28fad9dc92a74e684d2e09a81a170",
+      "json_sha256": "ad18496c223b34010b165f712b625271f1bab7a62bad381bb12eaf217f7563e5",
+      "source": {
+        "path": "work/illustrated-damage/generated/xuna-reactions.png",
+        "sha256": "6d43d93060271d5ba49235bf03ec409ff8913dd4a3a2752dd6f90c9747722e42",
+        "normalization": {
+          "method": "Conservative median across several stable poses, min(width ratio,height ratio); provisional geometric scale, not anatomical measurement",
+          "sample_ratios": [
+            0.994253,
+            0.983957,
+            0.965,
+            0.973545
+          ],
+          "uniform_scale": 0.9787510963981552,
+          "explicit_review_override": false,
+          "warning": "No per-frame scale; do not increase scale to compensate for damaged hunched posture."
+        },
+        "alpha_extraction": {
+          "mode": "chroma",
+          "removed_pixels": 1264535,
+          "fraction": 0.80415,
+          "internal_holes_included": true,
+          "rgb_unchanged": true,
+          "strict_key_hue": false,
+          "policy": "Global matte membership + at most3px contaminated fringe, alpha-only. Inspect actual dark/light composites before approval.",
+          "resampled_key_alpha_removed": 0
+        },
+        "clean_metadata_sha256": "12a48a56db3b6cc0bc003bdb036f32c7546ba97f47d7684e299f338e2571bb2d",
+        "clean_atlas_sha256": "47275f549fa48789597cdb42915a1329808da9762dbe3485e1f887d5263b990e"
+      }
+    }
+  ]
+}

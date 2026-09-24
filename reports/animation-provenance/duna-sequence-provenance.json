@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "body_id": "duna",
+  "status": "complete_native_reviewed",
+  "canonical": {
+    "absolute_path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/duna-v3.png",
+    "banks": {
+      "movement": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "reactions": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ]
+    },
+    "body_id": "duna",
+    "display_scale": 0.426735218508997,
+    "frames": [
+      {
+        "anchor": [
+          220.0,
+          393.0
+        ],
+        "bounds": [
+          4,
+          4,
+          382,
+          389
+        ],
+        "name": "idle",
+        "region": [
+          12,
+          15,
+          390,
+          397
+        ]
+      },
+      {
+        "anchor": [
+          221.5,
+          405.0
+        ],
+        "bounds": [
+          4,
+          4,
+          383,
+          401
+        ],
+        "name": "idle_breathe",
+        "region": [
+          456,
+          5,
+          391,
+          409
+        ]
+      },
+      {
+        "anchor": [
+          216.0,
+          365.0
+        ],
+        "bounds": [
+          4,
+          4,
+          384,
+          361
+        ],
+        "name": "windup",
+        "region": [
+          883,
+          43,
+          392,
+          369
+        ]
+      },
+      {
+        "anchor": [
+          225.0,
+          357.0
+        ],
+        "bounds": [
+          4,
+          4,
+          456,
+          353
+        ],
+        "name": "punch",
+        "region": [
+          1302,
+          51,
+          464,
+          361
+        ]
+      },
+      {
+        "anchor": [
+          238.0,
+          387.0
+        ],
+        "bounds": [
+          4,
+          4,
+          400,
+          383
+        ],
+        "name": "hit",
+        "region": [
+          37,
+          464,
+          408,
+          391
+        ]
+      },
+      {
+        "anchor": [
+          202.5,
+          306.0
+        ],
+        "bounds": [
+          4,
+          4,
+          372,
+          302
+        ],
+        "name": "dodge",
+        "region": [
+          501,
+          544,
+          380,
+          310
+        ]
+      },
+      {
+        "anchor": [
+          186.5,
+          440.0
+        ],
+        "bounds": [
+          4,
+          4,
+          333,
+          436
+        ],
+        "name": "victory",
+        "region": [
+          915,
+          414,
+          341,
+          444
+        ]
+      },
+      {
+        "anchor": [
+          246.0,
+          190.0
+        ],
+        "bounds": [
+          4,
+          4,
+          460,
+          186
+        ],
+        "name": "defeat",
+        "region": [
+          1297,
+          654,
+          468,
+          194
+        ]
+      }
+    ],
+    "name": "Duna",
+    "path": "res://assets/sprites/duna-v3.png",
+    "reference_height": 389,
+    "sha256": "ce5ba2926c3d36ef36a984e1da38f1faab3479a61ca80349a06677c4f84fd7fe",
+    "source_size": [
+      1774,
+      887
+    ]
+  },
+  "visual_observation": {
+    "observed_identity": "Adult stocky sand-colored armadillo guardian. Exact long narrow animal snout, upright large armadillo ears, small dark eyes, heavy overlapping ochre/golden segmented shell on shoulders and back, cream layered belly, thick ochre leather/armored forearm guards and dark fingerless fists, dark-teal tied waist sash with long gold-trimmed cloth panels, dark-teal ankle wraps, large clawed feet and short tapering plated tail.",
+    "anatomy": "Preserve the exact overlapping shell plates and their body attachment, shell thickness, snout length, ear shape, claws, tail length and low broad posture. Natural shoulder-elbow-wrist connections under the armor; the shell moves with torso rotation and does not become a floating shield. No new armor, helmet, scales replacing shell, horns, jewels or changed costume.",
+    "transform": "Transformation uses only a firmer braced stance and subtly brighter warm highlights along EXISTING shell edges. The same plates, belly, eyes, ears, sash and tail remain unchanged; no glowing chest core, new seams, spikes, giant armor or external aura."
+  },
+  "canonical_sha256": "ce5ba2926c3d36ef36a984e1da38f1faab3479a61ca80349a06677c4f84fd7fe",
+  "canonical_mode": "RGBA",
+  "canonical_size": [
+    1774,
+    887
+  ],
+  "banks": {
+    "movement": {
+      "body_id": "duna",
+      "bank": "movement",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/duna-movement-v1.txt",
+      "prompt_sha256": "0ef6c8a3f4432e57e76a79bd4b3ea23b7f3179fe34a6b47370c8489f0db08cad",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/duna-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/duna-movement-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/duna-movement-v1.json",
+      "expected_frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-bef89ad0-9b33-4efc-b9bf-47148b0c37df.png",
+          "sha256": "ee68c8916af36d52053d6c9e64848f2507ed4f0de094b3235567a75d3bd58604",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/duna-movement-v1.txt",
+          "prompt_sha256": "0ef6c8a3f4432e57e76a79bd4b3ea23b7f3179fe34a6b47370c8489f0db08cad",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/duna-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "duna-movement-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1495ba07-69b7-4e5f-91db-0dd52f946779.png",
+          "sha256": "cb2a96474dedc7df6b2192ecd5747e5936b2b62363c9f942ab775755702bfda0",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/duna-movement-alpha-result.txt",
+          "prompt_sha256": "af986fdfc7eddabcd1b7990ffc30f61ca4469bed30a34adb08201877aeb61fb8",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-bef89ad0-9b33-4efc-b9bf-47148b0c37df.png"
+          ],
+          "status": "superseded_spacing_correction"
+        },
+        {
+          "step": "duna-movement-spacing-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0fa134ff-1e60-4478-8414-86f632604e40.png",
+          "sha256": "e6b01ec13553d5ec2722cb3552063167fc6bd4d9f3d02fe198e33eb07d68e08d",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/duna-movement-spacing-result.txt",
+          "prompt_sha256": "b83b2362e4b243e2f412ec5c03c92afaa0b8cdc69a5a8ff8cde4a1672f13ad34",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1495ba07-69b7-4e5f-91db-0dd52f946779.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "duna-movement-spacing-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-bcdf85dd-5915-48cb-9104-296df77b19f7.png",
+          "sha256": "4564dd0081a713ffaffe4aefc46172d5b3d5996a996e5afed926b710143d6c18",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/duna-movement-spacing-alpha-result.txt",
+          "prompt_sha256": "1718988c4d882791b0c4ed09e61b940154f0b1dcb568da272cfdf48910ece14d",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0fa134ff-1e60-4478-8414-86f632604e40.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "duna",
+        "bank": "movement",
+        "destination": "outputs/Brasa/assets/sprites/sequences/duna-movement-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/duna-movement-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-bcdf85dd-5915-48cb-9104-296df77b19f7.png",
+        "sha256": "4564dd0081a713ffaffe4aefc46172d5b3d5996a996e5afed926b710143d6c18",
+        "metadata_sha256": "8f6541630c77de48332bf5a7a34e6ae6152b83c664bd8bd6a5caf68fba3dce3a",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.686807638205271
+        },
+        "frame_count": 16,
+        "reference_height": 222,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/duna-movement.inspection.json",
+        "native_capture": "work/animation/duna-movement-native.png",
+        "native_capture_sha256": "31d742253021f93b9db9b21fb1b8f5fb4b026a6cbb2ee23d03f741bc6964fea9",
+        "native_log": "work/animation/duna-movement-native.log",
+        "png_bytes": 1246723
+      }
+    },
+    "reactions": {
+      "body_id": "duna",
+      "bank": "reactions",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/duna-reactions-v1.txt",
+      "prompt_sha256": "c9f862c0746e373ae59f7cb9d129245847bc424c9e1c2f8f36fcf55d0f73c581",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/duna-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/duna-reactions-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/duna-reactions-v1.json",
+      "expected_frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-e8bd2b0c-d9a2-42f5-9bbc-e24c9071e3f9.png",
+          "sha256": "d89d6fd38cdfb36a785d0e00142680f29ffc5157f8903192b42a35fd1ca8df37",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/duna-reactions-v1.txt",
+          "prompt_sha256": "c9f862c0746e373ae59f7cb9d129245847bc424c9e1c2f8f36fcf55d0f73c581",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/duna-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "duna-reactions-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-21486785-015e-473b-b9d6-0ec7b8527a5c.png",
+          "sha256": "61f5d62a8a2a316c2de4e2f430cc260f27ac8dee83f3d12e308928f3990cbdcb",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/duna-reactions-alpha-result.txt",
+          "prompt_sha256": "9cebf53386dfb759bae02b50a75d3ecad91bf8912bdabe02452a83e58767a548",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-e8bd2b0c-d9a2-42f5-9bbc-e24c9071e3f9.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "duna",
+        "bank": "reactions",
+        "destination": "outputs/Brasa/assets/sprites/sequences/duna-reactions-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/duna-reactions-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-21486785-015e-473b-b9d6-0ec7b8527a5c.png",
+        "sha256": "61f5d62a8a2a316c2de4e2f430cc260f27ac8dee83f3d12e308928f3990cbdcb",
+        "metadata_sha256": "41c6ce90ad66282d57bf36cf16c6d4b9a806b1a97776c26db174ee21235ed42d",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.5585157798076459
+        },
+        "frame_count": 16,
+        "reference_height": 273,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/duna-reactions.inspection.json",
+        "native_capture": "work/animation/duna-reactions-native.png",
+        "native_capture_sha256": "399a643f9af5785103319384f2cca501c7e69f8cb64c511e56057b19e22033a5",
+        "native_log": "work/animation/duna-reactions-native.log",
+        "png_bytes": 1741062
+      }
+    }
+  }
+}

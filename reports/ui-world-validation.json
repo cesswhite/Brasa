@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-09-21T01:09:29.872316+00:00",
+  "godot": "4.7.2.stable.official.ed1daf0bf",
+  "checks": 3824,
+  "failures": 0,
+  "suites": {
+    "story_panel": {
+      "checks": 443,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/story_panel.log"
+    },
+    "story_campaign_ui": {
+      "checks": 557,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/story_campaign_ui.log"
+    },
+    "story_integration": {
+      "checks": 85,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/story_integration.log"
+    },
+    "story_chapter_integration": {
+      "checks": 386,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/story_chapter_integration.log"
+    },
+    "identity_integration": {
+      "checks": 80,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/identity_integration.log"
+    },
+    "world_visuals": {
+      "checks": 973,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/world_visuals.log"
+    },
+    "world_surfaces_headless": {
+      "checks": 37,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/world_surfaces_headless.log"
+    },
+    "world_surfaces_native": {
+      "checks": 44,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/world_surfaces_native.log"
+    },
+    "story_world_native": {
+      "checks": 1219,
+      "failures": 0,
+      "engine_errors": false,
+      "log": "ui-world-test-logs/story_world_native.log"
+    }
+  },
+  "sizes": [
+    [
+      1360,
+      880
+    ],
+    [
+      1224,
+      792
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ],
+    [
+      844,
+      390
+    ]
+  ],
+  "native_story_captures": 63,
+  "source_before_after": {
+    "scripts/ui/story_panel.gd": {
+      "before": "8af689e3a480ddef0ee00aef849a597044210159654a7e85c996fdb309fff998",
+      "after": "ba81b56e67deacecaa1a57005c0e4e13aa1b0b88d7b654bd2dfc44b60abb8008",
+      "unchanged": false
+    },
+    "scripts/story_progression.gd": {
+      "before": "5072082c206f641d44bd79c9be8be87a88b25a07bdc84333c87af52579a0db86",
+      "after": "5072082c206f641d44bd79c9be8be87a88b25a07bdc84333c87af52579a0db86",
+      "unchanged": true
+    },
+    "scripts/story_catalog.gd": {
+      "before": "dad92c50562724d6c4b92c6eaae774599d893905e448674a5c6244571bb466dc",
+      "after": "dad92c50562724d6c4b92c6eaae774599d893905e448674a5c6244571bb466dc",
+      "unchanged": true
+    },
+    "scripts/main.gd": {
+      "before": "142c528765bd8ec8fad2794731d8419fd6442e0561765a84b6b9cfd726597cf8",
+      "after": "f3ff2069f2f465cbeceea92dae0d566fa04ea52b68f8d657edb8c3c233c16014",
+      "unchanged": false
+    },
+    "scripts/combat_engine.gd": {
+      "before": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+      "after": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+      "unchanged": true
+    },
+    "scripts/fighter_identity.gd": {
+      "before": "5137b869b1d315a2ea3e9f77462f9c4f9a651dc57acbcd5e374655c782a0cbf6",
+      "after": "5137b869b1d315a2ea3e9f77462f9c4f9a651dc57acbcd5e374655c782a0cbf6",
+      "unchanged": true
+    },
+    "scripts/campaign_config.gd": {
+      "before": "92fd397546dc0aff269bda81a2a232bfec156365bcfab2d743b1c1ee3fcd49de",
+      "after": "92fd397546dc0aff269bda81a2a232bfec156365bcfab2d743b1c1ee3fcd49de",
+      "unchanged": true
+    }
+  },
+  "real_save_before_after": {
+    "brasa_save.json": {
+      "before": "e16460c7a378a27938c2c28e6dddcdbda76068172fbc31f764742fb5f9cd34f3",
+      "after": "e16460c7a378a27938c2c28e6dddcdbda76068172fbc31f764742fb5f9cd34f3",
+      "unchanged": true
+    },
+    "brasa_save.json.bak": {
+      "before": "5383b86b7a4512747b3fe4cad36e75bfc4df9b617a045a7eff0fcff6b0de8a3e",
+      "after": "5383b86b7a4512747b3fe4cad36e75bfc4df9b617a045a7eff0fcff6b0de8a3e",
+      "unchanged": true
+    },
+    "brasa_save.json.story.json.v2.bak": {
+      "before": "cd817fe5a39cdf815a978c39aa53ddba27f8506591510083e7e0e57c06a567de",
+      "after": "cd817fe5a39cdf815a978c39aa53ddba27f8506591510083e7e0e57c06a567de",
+      "unchanged": true
+    },
+    "brasa_save.json.story.json.v1.bak": {
+      "before": "d2570084af0560288d98ec346c55038f6d9dd4fb97bed4cac2a36320f0a90fdd",
+      "after": "d2570084af0560288d98ec346c55038f6d9dd4fb97bed4cac2a36320f0a90fdd",
+      "unchanged": true
+    },
+    "brasa_save.json.v1.bak": {
+      "before": "5c1cfcf47b47c0b284ca804056ec1d7d49551eca7d6b7bd2d9dedebeee93ed25",
+      "after": "5c1cfcf47b47c0b284ca804056ec1d7d49551eca7d6b7bd2d9dedebeee93ed25",
+      "unchanged": true
+    },
+    "brasa_save.json.story.json": {
+      "before": "2c8b2ce511543768353f0211c51fad9c4fabd5673c459d22bac62b2054d6faa8",
+      "after": "2c8b2ce511543768353f0211c51fad9c4fabd5673c459d22bac62b2054d6faa8",
+      "unchanged": true
+    },
+    "brasa_save.json.story.json.bak": {
+      "before": "332b8829ecaec1da1d51c042285b9574458258bc2ae7fa51bde0b7a1dd6b0b9a",
+      "after": "332b8829ecaec1da1d51c042285b9574458258bc2ae7fa51bde0b7a1dd6b0b9a",
+      "unchanged": true
+    }
+  },
+  "generated_images": {
+    "assets/ui/story/journey-v1.png": {
+      "sha256": "bda1413cae175e4219dfc6163c88853659cc2e1b756b6c5ccc5dd1931ba5d6be",
+      "original_unchanged": true,
+      "bytes": 2486607
+    },
+    "assets/ui/story/storm-v1.png": {
+      "sha256": "7619e04af241f8e1b1d4156833efeb033db4682d612c972cc6e6cf59687d457c",
+      "original_unchanged": true,
+      "bytes": 2760005
+    },
+    "assets/ui/shared/surfaces-v1.png": {
+      "sha256": "e0c48249f4795b07c31cdb17c80c4eea4c683c3d2aa53d690d53206be61f4b53",
+      "original_unchanged": true,
+      "bytes": 1512854
+    },
+    "assets/ui/workshop/workshop-v1.png": {
+      "sha256": "8675e55b0f846f090c57e2080d0d47f50e7e5ce223b17286161af5f1e6e32b4f",
+      "original_unchanged": true,
+      "bytes": 2732384
+    },
+    "assets/ui/companions/camp-v1.png": {
+      "sha256": "960a78467b705463fa0e89860f7c2ae6e0783765b30229d785c3cbf94effe83f",
+      "original_unchanged": true,
+      "bytes": 2602215
+    },
+    "assets/ui/legacy/archive-v1.png": {
+      "sha256": "d9533847daa082f226a800f951bcca931a57c2b5a8528c547fef52b528d6a0e1",
+      "original_unchanged": true,
+      "bytes": 2511000
+    },
+    "assets/ui/shared/props-v1.png": {
+      "sha256": "df5b61a095e44325f834fadb40cf3430a50fd51104507639e804c79dede9df27",
+      "original_unchanged": true,
+      "bytes": 2386283
+    }
+  },
+  "final_ui_sources": {
+    "scripts/ui/story_panel.gd": "ba81b56e67deacecaa1a57005c0e4e13aa1b0b88d7b654bd2dfc44b60abb8008",
+    "scripts/ui/world_visuals.gd": "e4a78f5517c28859d90200448762045fc7c722c161694976e5e7b2c7e61fd9cd",
+    "scripts/ui/world_backdrop.gd": "ae0e0d36ac33b51cd41d78ed7ceb24c3177784ad177386053d7295058e754682",
+    "scripts/main.gd": "f3ff2069f2f465cbeceea92dae0d566fa04ea52b68f8d657edb8c3c233c16014",
+    "data/ui_visual_manifest.json": "2dbacbc253f9c85340cbc8767bed81d54e17eacac84291e874827eb846fc972e"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_sha256": "3422314a22dc1dee7480f877d18ce30f4d019bb90a9cd268dd75c97722ca91d2",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Cream and charcoal coat, pale blue eyes, olive vest and ochre sash remain consistent. Wounded follow_through has a complete arm; the preexisting clean reference defect remains untouched. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/bruma_nieve-movement-1.png",
+    "work/illustrated-damage/group-b/qa/bruma_nieve-movement-2.png"
+  ],
+  "poses_reviewed": 16,
+  "anatomical_sockets_verified": false
+}

@@ -1,0 +1,77 @@
+[
+	{
+		"body": "nima",
+		"frame": "heavy_windup",
+		"source": "res://assets/sprites/sequences/nima-movement-v1.png"
+	},
+	{
+		"body": "luma",
+		"frame": "quick_extend",
+		"source": "res://assets/sprites/sequences/luma-movement-v1.png"
+	},
+	{
+		"body": "mugo",
+		"frame": "heavy_windup",
+		"source": "res://assets/sprites/sequences/mugo-movement-v1.png"
+	},
+	{
+		"body": "sira",
+		"frame": "dash_stride",
+		"source": "res://assets/sprites/sequences/sira-movement-v1.png"
+	},
+	{
+		"body": "iria",
+		"frame": "jump_apex",
+		"source": "res://assets/sprites/sequences/iria-movement-v1.png"
+	},
+	{
+		"body": "duna",
+		"frame": "heavy_windup",
+		"source": "res://assets/sprites/sequences/duna-movement-v1.png"
+	},
+	{
+		"body": "kiro",
+		"frame": "quick_extend",
+		"source": "res://assets/sprites/sequences/kiro-movement-v1.png"
+	},
+	{
+		"body": "neris",
+		"frame": "heavy_windup",
+		"source": "res://assets/sprites/sequences/neris-movement-v1.png"
+	},
+	{
+		"body": "taro",
+		"frame": "dash_stride",
+		"source": "res://assets/sprites/sequences/taro-movement-v1.png"
+	},
+	{
+		"body": "balam",
+		"frame": "jump_apex",
+		"source": "res://assets/sprites/sequences/balam-movement-v1.png"
+	},
+	{
+		"body": "tepa",
+		"frame": "heavy_windup",
+		"source": "res://assets/sprites/sequences/tepa-movement-v1.png"
+	},
+	{
+		"body": "xuna",
+		"frame": "quick_extend",
+		"source": "res://assets/sprites/sequences/xuna-movement-v1.png"
+	},
+	{
+		"body": "copal",
+		"frame": "heavy_windup",
+		"source": "res://assets/sprites/sequences/copal-movement-v1.png"
+	},
+	{
+		"body": "ascua",
+		"frame": "dash_stride",
+		"source": "res://assets/sprites/sequences/ascua-movement-v1.png"
+	},
+	{
+		"body": "vespera",
+		"frame": "jump_apex",
+		"source": "res://assets/sprites/sequences/vespera-movement-v1.png"
+	}
+]

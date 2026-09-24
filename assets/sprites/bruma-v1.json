@@ -1,0 +1,79 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "note": "Eight isolated native image_gen silhouettes. Original PNG bytes retained; JSON regions only. Read-only alpha >=31 coverage100%; native runtime derives ground anchors from visible feet.",
+  "frames": [
+    {
+      "name": "idle",
+      "region": [
+        47,
+        8,
+        320,
+        419
+      ]
+    },
+    {
+      "name": "idle_breathe",
+      "region": [
+        490,
+        8,
+        320,
+        419
+      ]
+    },
+    {
+      "name": "windup",
+      "region": [
+        925,
+        45,
+        338,
+        382
+      ]
+    },
+    {
+      "name": "punch",
+      "region": [
+        1352,
+        26,
+        407,
+        400
+      ]
+    },
+    {
+      "name": "hit",
+      "region": [
+        46,
+        444,
+        342,
+        417
+      ]
+    },
+    {
+      "name": "dodge",
+      "region": [
+        487,
+        523,
+        385,
+        338
+      ]
+    },
+    {
+      "name": "victory",
+      "region": [
+        947,
+        435,
+        290,
+        431
+      ]
+    },
+    {
+      "name": "defeat",
+      "region": [
+        1300,
+        708,
+        447,
+        151
+      ]
+    }
+  ]
+}

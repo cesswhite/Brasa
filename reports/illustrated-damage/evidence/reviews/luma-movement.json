@@ -1,0 +1,135 @@
+{
+  "source_sha256": "0b2f20c9b00c85a2560b767b4f15408159dfc6986f5bc90f3bea1632d50c0b5a",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "combat_progression",
+  "reviewed_frames": [
+    "guard_shift",
+    "step_back",
+    "charge_crouch",
+    "heavy_windup",
+    "quick_windup",
+    "quick_extend",
+    "follow_through",
+    "recovery",
+    "dash_lean",
+    "dash_stride",
+    "jump_start",
+    "jump_apex",
+    "jump_strike",
+    "jump_fall",
+    "landing",
+    "guard_settle"
+  ],
+  "uniform_scale": 1.234738127958467,
+  "candidate_sha256_reviewed": "8074856628ac31f949e4bf5993967c6a6e11b8ed3434f20b4da705f8915ac516",
+  "review_evidence": [
+    "work/illustrated-damage/prepared/luma/movement/luma-movement-dark.png",
+    "work/illustrated-damage/prepared/luma/movement/luma-movement-light.png",
+    "outputs/Brasa/assets/sprites/normalized/luma-movement-v2.png"
+  ],
+  "review_note": "Inspección de todas las poses sobre claro/oscuro y contra normalizado limpio: branquias rojas, piel rosa, cola y fajín oro conservan identidad. Moretones faciales, desgaste de piel y ropa rota están dibujados. Huecos brazo/torso, cola/fajín y piernas transparentes; sin amputaciones ni halo visible. Escala única y apoyos proyectados coherentes; KO bajo y salto elevado, sin ampliar figura caída. Sin nuevos sockets anatómicos.",
+  "matte_polygons": [
+    [
+      [
+        146,
+        771
+      ],
+      [
+        153,
+        772
+      ],
+      [
+        155,
+        775
+      ],
+      [
+        158,
+        776
+      ],
+      [
+        160,
+        779
+      ],
+      [
+        157,
+        781
+      ],
+      [
+        151,
+        779
+      ],
+      [
+        146,
+        779
+      ]
+    ],
+    [
+      [
+        140,
+        782
+      ],
+      [
+        143,
+        779
+      ],
+      [
+        146,
+        780
+      ],
+      [
+        146,
+        784
+      ],
+      [
+        143,
+        787
+      ],
+      [
+        138,
+        789
+      ],
+      [
+        131,
+        788
+      ],
+      [
+        130,
+        786
+      ],
+      [
+        134,
+        786
+      ]
+    ],
+    [
+      [
+        150,
+        784
+      ],
+      [
+        154,
+        783
+      ],
+      [
+        155,
+        785
+      ],
+      [
+        154,
+        789
+      ],
+      [
+        151,
+        790
+      ],
+      [
+        149,
+        788
+      ]
+    ]
+  ],
+  "matte_note": "Tres pequeños huecos de fondo verde oscuro bajo el puño retrasado en dash_lean, revisados en la fuente ampliada luma-arm-gap-source.png. Evita eliminar globalmente el verde de la camisa.",
+  "final_reinspection_note": "Revisados otra vez los40 cuadros después de limpieza de alpha posterior al reescalado. En movement se limpiaron tres huecos fuente bajo el puño retrasado de dash_lean y se volvió a inspeccionar esa pose sobre claro/oscuro. Las demás poses no cambiaron por los polígonos."
+}

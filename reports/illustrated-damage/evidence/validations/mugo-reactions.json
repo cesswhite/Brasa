@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        89,
+        145,
+        318,
+        304
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 56144
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        128,
+        182,
+        256,
+        267
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 47563
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        75,
+        166,
+        315,
+        283
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 53631
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        118,
+        191,
+        315,
+        258
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 51516
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        54,
+        187,
+        342,
+        262
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 50200
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        82,
+        247,
+        333,
+        198
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 44610
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        78,
+        317,
+        358,
+        133
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34617
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        127,
+        254,
+        318,
+        195
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 41832
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        96,
+        218,
+        319,
+        231
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 48356
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        117,
+        167,
+        279,
+        282
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 51574
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        130,
+        166,
+        251,
+        283
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 47635
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        114,
+        139,
+        280,
+        310
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 54788
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        110,
+        91,
+        274,
+        358
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 56673
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        116,
+        155,
+        278,
+        294
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 54677
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        118,
+        155,
+        282,
+        294
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 55448
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        115,
+        157,
+        279,
+        292
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 55034
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "mugo",
+  "bank": "reactions",
+  "source_sha256": "3686b2906934c5498540225bfe6e097337cff4336d4fd5cdf07303992fb98e7b",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/mugo/reactions/mugo-reactions.png"
+}

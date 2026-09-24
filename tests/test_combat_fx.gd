@@ -1,0 +1,181 @@
+extends SceneTree
+const FX = preload("res://scripts/combat_fx.gd")
+const Fighter = preload("res://scripts/fighter_view.gd")
+const Story = preload("res://scripts/story_catalog.gd")
+var checks := 0
+var failures := 0
+func _init() -> void: _run.call_deferred()
+func check(value: bool, message: String) -> void:
+	checks += 1
+	if not value:
+		failures += 1
+		push_error("COMBAT FX: "+message)
+func _run() -> void:
+	var layer := FX.new()
+	root.add_child(layer)
+	layer.set_process(false)
+	var definition := FX.definitions()
+	check(definition.effects.size()==16 and definition.renderer=="organic_particles","legacy effects and eight dedicated ground particle effects")
+	for id: String in definition.effects:
+		layer.clear()
+		layer.emit_effect(id,Vector2(100,100))
+		layer._process(0.05)
+		var state:Dictionary=layer.debug_state()
+		check(state.active.size()==1 and state.active[0].id==id,"requested effect retains stable ID "+id)
+		check(not state.active[0].particles.is_empty(),"effect produces small particles "+id)
+		for particle:Dictionary in state.active[0].particles:
+			check(particle.radius.x<=4.5 and particle.radius.y<=4.5 and particle.length<=7.01,"no large radial sprites in "+id)
+		layer._process(2)
+		check(layer.debug_state().active.is_empty(),"effect expires without callbacks "+id)
+	check(FX._atlas==null,"normal rendering never loads legacy radial atlas")
+	layer.emit_effect("missing",Vector2.ZERO)
+	check(layer.debug_state().active.is_empty(),"unknown emitter safely ignored")
+	layer.clear()
+	var actor := Fighter.new()
+	root.add_child(actor)
+	actor.setup_character(Story.boss_definition(1))
+	actor.set_process(false)
+	actor.position=Vector2(300,300)
+	var event := {"type":"move_started","move":{"animation_type":"charge","windup":0.4,"travel":0.2,"recovery":0.3}}
+	var original := event.duplicate(true)
+	layer.play_move(event,actor)
+	check(layer.debug_state().active.size()==1 and layer.debug_state().active[0].id=="charge_energy","charge anticipation independent from contact")
+	check(layer.debug_state().pending==1,"one compact move schedule contains all phase markers")
+	layer.motion_paused=true
+	var before := layer.debug_state()
+	layer._process(0.3)
+	check(layer.debug_state()==before,"pause holds emitter and pending clocks")
+	layer.motion_paused=false
+	layer._process(0.41)
+	check(layer.debug_state().pending==1 and layer.debug_state().active.back().id=="dash_trail","travel fires at phase time while recovery remains scheduled")
+	check(event==original,"FX never mutate move event")
+	layer.clear()
+	layer.play_move({"move":{"animation_type":"counter","damage_multiplier":0.0}},actor)
+	check(layer.debug_state().active.is_empty(),"defensive counter stance never draws offensive travel")
+	layer.clear()
+	layer.play_move({"move":{"animation_type":"jump_down","windup":0.1,"travel":0.2}},actor,0.061)
+	check(layer.debug_state().active.size()==1 and layer.debug_state().active[0].id=="dust_small" and layer.debug_state().pending==1,"jump aliases share explicit takeoff and landing markers")
+	layer.clear()
+	var override_event := event.duplicate(true)
+	override_event["presentation"] = {"trail_fx":"critical_hit"}
+	layer.play_move(override_event,actor,0.41)
+	check(layer.debug_state().active.back().id=="critical_hit","move presentation can choose registered trail without combat changes")
+	layer.clear()
+	override_event.presentation.trail_fx = "none"
+	layer.play_move(override_event,actor)
+	layer._process(0.41)
+	var has_trail := false
+	for item: Dictionary in layer.debug_state().active: has_trail=has_trail or str(item.id)=="dash_trail"
+	check(not has_trail,"move presentation can omit a trail while retaining ground contact dust")
+	layer.clear()
+	layer.play_impact(Vector2(100,100),{"impact_fx":"critical_hit","reaction":"critical","animation_type":"charge","camera_feedback":"medium"})
+	check(layer.debug_state().active.size()==2,"heavy and critical layers combine")
+	layer._process(0.04)
+	check(layer.camera_offset().length()<=3.6,"camera response remains restrained")
+	layer._process(1)
+	check(layer.debug_state().active.is_empty() and layer.camera_offset()==Vector2.ZERO,"effects and camera settle")
+	layer.play_impact(Vector2.ZERO,{"impact_fx":"heavy_hit"},1,1,10)
+	check(layer.debug_state().active.is_empty(),"late event does not resurrect expired flash")
+	for i in range(80): layer.emit_effect("small_hit",Vector2(i,0))
+	check(layer.debug_state().active.size()==FX.MAX_EFFECTS,"bounded visual population")
+	layer.reduced_motion=true
+	layer._process(0.01)
+	layer.play_move(event,actor)
+	layer.emit_effect("heavy_hit",Vector2.ZERO)
+	check(layer.debug_state().active.is_empty() and layer.debug_state().pending==0 and layer.camera_offset()==Vector2.ZERO,"reduced motion has no bursts trails or shake")
+	layer.reduced_motion=false
+	layer.play_move(event,actor)
+	actor.free()
+	layer._process(0.5)
+	check(layer.debug_state().pending==0,"released fighters do not leave deferred callbacks")
+	layer.clear()
+	_organic_contract(layer)
+	layer.free()
+	print("COMBAT FX: %d checks, %d failures" % [checks,failures])
+	quit(1 if failures else 0)
+
+class AnchorActor extends Node2D:
+	var facing:int=1
+	var hand:Vector2=Vector2(23,-57)
+	var light_calls:Array[Dictionary]=[]
+	func illuminate_effect(color:Color,strength:float,duration:float,age:float)->void:
+		light_calls.append({"color":color,"strength":strength,"duration":duration,"age":age})
+	func effect_anchor(kind:String="body")->Vector2:
+		return hand if kind=="hand" else Vector2(0,-65) if kind=="chest" else Vector2.ZERO
+func _organic_contract(layer:Node2D)->void:
+	var parent_actor:=Node2D.new()
+	root.add_child(parent_actor)
+	parent_actor.position=Vector2(75,31)
+	parent_actor.scale=Vector2(0.8,0.8)
+	var actor:=AnchorActor.new()
+	parent_actor.add_child(actor)
+	actor.position=Vector2(130,190)
+	layer.position=Vector2(17,-13)
+	layer.scale=Vector2(1.2,1.2)
+	var event:Dictionary={"move":{"animation_type":"charge","windup":0.4,"travel":0.2}}
+	var untouched:Dictionary=event.duplicate(true)
+	layer.play_move(event,actor)
+	var state:Dictionary=layer.debug_state()
+	var origin:Vector2=layer.to_local(actor.to_global(actor.effect_anchor("hand")))
+	check(state.active[0].at.is_equal_approx(origin),"emitter converts body anchor across distinct transformed parents")
+	var first:Vector2=state.active[0].particles[0].at
+	actor.position.x+=100
+	actor.hand.y-=20
+	layer._process(0.12)
+	state=layer.debug_state()
+	check(state.active[0].at.is_equal_approx(layer.to_local(actor.to_global(actor.hand))),"emission follows animated hand rather than actor center")
+	check(state.active[0].particles[0].at.distance_to(first)<20,"released ember drifts independently instead of snapping to moving actor")
+	check(state.active[0].particles.size()>1,"charge emits a short sequence of motes across its phase")
+	check(event==untouched,"anchored particles preserve original event dictionary")
+	check(actor.light_calls.is_empty(),"charging never brightens the entire actor")
+	layer.clear()
+	layer.emit_attached("transformation",actor,"chest",0.1)
+	var caught:Dictionary=layer.debug_state()
+	check(caught.active.size()==1 and caught.active[0].at.is_equal_approx(layer.to_local(actor.to_global(actor.effect_anchor("chest")))),"public attached API follows chest across transforms")
+	check(caught.active[0].age==0.1 and actor.light_calls.is_empty(),"attached replay event catches up without global reflected light")
+	var light_count:int=actor.light_calls.size()
+	layer.clear()
+	layer.emit_attached("transformation",actor,"chest",4.0)
+	check(layer.debug_state().active.is_empty() and actor.light_calls.size()==light_count,"expired attached event cannot resurrect particles or light")
+	layer.reduced_motion=true
+	layer.emit_attached("transformation",actor)
+	check(layer.debug_state().active.is_empty() and actor.light_calls.size()==light_count,"reduced motion suppresses attached particles and illumination")
+	layer.reduced_motion=false
+	layer.emit_effect("transformation",Vector2.ZERO)
+	layer._process(0.2)
+	var stepped:Dictionary=layer.debug_state()
+	layer.clear()
+	layer.emit_effect("transformation",Vector2.ZERO,1.0,1,0.2)
+	check(layer.debug_state().active==stepped.active,"stationary replay catchup matches analytical particle age")
+	layer.clear()
+	var styles:Array[String]=[]
+	for type:String in ["heal","shield","status_tick"]:
+		layer.play_status({"type":type,"effect":"poison"},actor)
+		styles.append(str(layer.debug_state().active.back().style))
+	check(styles==["heal","shield","poison"],"healing, guard and poison have distinct organic behaviors")
+	layer.play_status({"type":"status_applied","effect":"shield"},actor)
+	check(layer.debug_state().active.back().style=="shield","shield status shares the guard particle identity")
+	layer.clear()
+	layer.play_impact(Vector2.ZERO,{"impact_fx":"none","camera_feedback":"medium"})
+	layer._process(0.04)
+	check(layer.debug_state().active.is_empty() and layer.camera_offset().length()>0,"explicit no-impact respects independent camera feedback")
+	layer.clear()
+	seed(1987)
+	var expected:int=randi()
+	seed(1987)
+	for i in range(30):layer.emit_effect("transformation",Vector2.ZERO)
+	layer._process(0.2)
+	check(randi()==expected,"presentation does not consume global random numbers")
+	check(layer.debug_state().particles<=FX.MAX_PARTICLES and layer.debug_state().active.size()<=FX.MAX_EFFECTS,"dense transformations remain globally bounded")
+	layer.clear()
+	layer.play_move(event,actor,5.0)
+	layer.play_status({"type":"heal"},actor,5.0)
+	check(layer.debug_state().active.is_empty() and layer.debug_state().pending==0,"replay catchup skips expired phases without ghost particles")
+	layer.play_move(event,actor)
+	actor.free()
+	layer._process(0.001)
+	check(layer.debug_state().pending==0,"weak actor release clears even future pending phases promptly")
+	layer._process(2.0)
+	check(layer.debug_state().active.is_empty(),"released actor leaves no permanent emitter")
+	parent_actor.free()
+	layer.clear()

@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        131,
+        186,
+        246,
+        262
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 33470
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        114,
+        227,
+        252,
+        221
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 31711
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        131,
+        211,
+        232,
+        237
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 31599
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        139,
+        225,
+        252,
+        223
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32022
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        117,
+        261,
+        262,
+        187
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30870
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        107,
+        296,
+        280,
+        150
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28674
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        100,
+        324,
+        293,
+        124
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 25695
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        114,
+        244,
+        266,
+        204
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29657
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        114,
+        228,
+        267,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36803
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        112,
+        188,
+        251,
+        260
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35043
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        123,
+        200,
+        232,
+        248
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34228
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        129,
+        176,
+        227,
+        272
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35817
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        112,
+        155,
+        256,
+        293
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37950
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        101,
+        180,
+        273,
+        268
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38899
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        108,
+        180,
+        266,
+        268
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 39353
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        109,
+        182,
+        261,
+        266
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 37410
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "duna",
+  "bank": "reactions",
+  "source_sha256": "ed0d5da7eb575505020c3f45c71771c64870dc95cee3916829a3f2a3bd0f597b",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/duna/reactions/duna-reactions.png"
+}

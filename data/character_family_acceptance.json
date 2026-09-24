@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "status": "ACCEPTED",
+  "reviewed_at": "2026-09-21T16:50:07.209880+00:00",
+  "scope": "Six individual families (240 poses), Ascua baked damaged reactions plus critical full pose coverage (56 poses), 23 runtime damage profiles. Historical canonical acceptance is preserved separately.",
+  "new_individuals": 6,
+  "family_banks": 18,
+  "family_poses": 240,
+  "damage_banks": 4,
+  "damage_poses": 56,
+  "canvas": [
+    512,
+    512
+  ],
+  "pivot": [
+    256,
+    448
+  ],
+  "pixels_per_world_unit": 1.5,
+  "preparation": "Authorized neutral matte cleanup, transparent gutter slicing, one scalar per bank, pose-root translation. No per-frame scale fitting.",
+  "review": "All 240 individual cells and family contact sheets visually reviewed. Native critical playback covers 32 pose names per body; remaining cells reviewed in static grids. Seven real-clock native passes with 651 captures; no invented transformations.",
+  "limitations": [
+    "Painterly figures preserve species scale and anatomy; no claim of pixel-identical silhouettes between drawings.",
+    "Only Ascua has baked torn-cloth damage. The roster uses material surface wear and existing fatigue poses, as the requested initial hybrid rollout.",
+    "New individuals have complete authored outfit bundles; individual beard/clothing parts are not independently composited.",
+    "Anatomical sockets absent in original packs remain absent; surface-only wear regions may fall back to alpha diagnostics and never influence pivot, scale, hitboxes or FX."
+  ],
+  "files": [
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/taro_roque-base-v2.json",
+      "metadata_sha256": "0ddab86a9d37e41d29a22f81ad1385f997251b0e440d9cdeb8c7825cb0117fb0",
+      "atlas_sha256": "e2a3678240c100733391965be53141fb69479b4f3e2f600486b805dac5ef9596"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/taro_roque-movement-v2.json",
+      "metadata_sha256": "36f596230ee4b4809190d5151aa1073ccb378b3f87b250ddf11e1a79fe09751c",
+      "atlas_sha256": "309cd77f3d32319afefdd9e33dfdb9f0dad7798e79561d9834f4f9e0ce827903"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/taro_roque-reactions-v2.json",
+      "metadata_sha256": "b8e199abe8041dc8b91beac6bf2e93df2d30696ed3a0cfb2d62718e04135e77b",
+      "atlas_sha256": "95338cc31bb023205dad48d7b803db04d5eb2e74f59b92a74fbb4adbed92cf35"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/taro_sabio-base-v2.json",
+      "metadata_sha256": "05dd69bc63b5301077df626bc87bd801970d2f1891fbd0b51d969b67c4b6461a",
+      "atlas_sha256": "c8369e7c1cf8bf1089cdad0f05b15f79ecb5bd6ae1b8986d44c7a14a0c51648c"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/taro_sabio-movement-v2.json",
+      "metadata_sha256": "5707f099dbf8e21417181560f1b49e371267db6b91019b7314105484cceda077",
+      "atlas_sha256": "b3674769f904ddedfa105695d99b0c1fd7baa7d92b303f89d9d9341243e7e0e3"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/taro_sabio-reactions-v2.json",
+      "metadata_sha256": "0bd55b4718ab9a6e6b322f2b3ba3c328700e8494452a742929b0f0750099fad8",
+      "atlas_sha256": "d9a0366a5e47e9d1de27ecdf525993e9ee3ca931856106f3978b67b288aedf77"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/duna_cora-base-v2.json",
+      "metadata_sha256": "e449611a6a61df250f0d26d1fcfbfd177128f589750660a617c40225ce67fb86",
+      "atlas_sha256": "6cab2ffd5c85521aefe9d5d1f2a03055083f6de6cd3f78895ed22f1ff26f4771"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/duna_cora-movement-v2.json",
+      "metadata_sha256": "8192c1ff3c24576c0db6023a988706d179b68b326a2931412424b652576e32b6",
+      "atlas_sha256": "c14ebf871006bfcb81d3ec97d3b2f3c83654ea23d1f7e33af4c5bd313643c73b"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/duna_cora-reactions-v2.json",
+      "metadata_sha256": "ad2e1c90f03a2927f5bc31bee9805aa57ed6639845c502fc37f7cec834ad587b",
+      "atlas_sha256": "4c2d36cb0b5b6eb681b25fb3ddc75d754948313da7ff425a04c6c98afc79e41c"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/duna_pedernal-base-v2.json",
+      "metadata_sha256": "36db25b4797c241a4911dcd7f25ddd81aa8e30ac9ed5be2901bd37892c4a2ce7",
+      "atlas_sha256": "e6bf8c194496f958cc1689aebd33429ed929814ccc73afcaa2769315744c6bc7"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/duna_pedernal-movement-v2.json",
+      "metadata_sha256": "e4e7e52ef3079c196583c126d18136b9de1406491a539d1aa0987d23f24bfc83",
+      "atlas_sha256": "1cd902025da4b6f8654b18bebad384c2482909cb6cb16ebbabc30d1936def780"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/duna_pedernal-reactions-v2.json",
+      "metadata_sha256": "e52142f367e283779af19c54ebf4f8829514e16758dae4774ef8535336d71c60",
+      "atlas_sha256": "200983f21881b628adaa1c1f8e8c4f0509a05b7c1531180315c3aa7b9c474c6d"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/bruma_ambar-base-v2.json",
+      "metadata_sha256": "aba759c9f1385c72951b3f6b8e62394773899871a174c98b6a7c2ee138e82ef6",
+      "atlas_sha256": "176724f961ff08d6781d5b00327f382062a5405399385bce7a2c0cb218f84648"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/bruma_ambar-movement-v2.json",
+      "metadata_sha256": "f4b10c7be9efd16158d1ce9403276be365955edd77e333ece586b993ea31ecaf",
+      "atlas_sha256": "0da8edf4728f0e552e8710c88bc3811ba7b6d0ffc3a79f771a3511ffd6753753"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/bruma_ambar-reactions-v2.json",
+      "metadata_sha256": "65b61137e1c95d4cbef5f575f0662794cdb8b8d68a0ab4f11ef8efcce1c29e19",
+      "atlas_sha256": "2e84cf681fefaf8044255c1b5092ff246d6e339da87ceefb43ddc6da635a20fe"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/bruma_nieve-base-v2.json",
+      "metadata_sha256": "f30cd3386a4f530bf800d0be8f22922c185ba963671cadff25ecdb0dcd404fb5",
+      "atlas_sha256": "037a44580c6d556ac12ae0e5298447d9db08b8c900c3f3565c41e621b4e6e6b4"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/bruma_nieve-movement-v2.json",
+      "metadata_sha256": "5968a07607b02c8cd43d3f4a7f9b26b13bfa6d4e48008c5cf52c47672bfbaabd",
+      "atlas_sha256": "74832d32ee4a7e87b5bea6b46984d0feb8d98b65b8941bc323f7583caf3ccdc0"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/normalized/bruma_nieve-reactions-v2.json",
+      "metadata_sha256": "d1860f3930cadd5d2c0b8243fe9d1fb45e2c7004b43d07a6190eed290984d84c",
+      "atlas_sha256": "a92c47bb31f7060141f8d3ae6d24600dd7580919ccacaf5cc8f66b1110f06112"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/damage/ascua-critical-base-v1.json",
+      "metadata_sha256": "c38c4348c6685dc6a230db4eb679edd4661f475cd766c146e27e555d4acc23e2",
+      "atlas_sha256": "c79b107b5bb45bbf539448a6ba8ca23b285e012226d73b9f5be4375b33d9bad2"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/damage/ascua-critical-reactions-v1.json",
+      "metadata_sha256": "382f05c1b358c8de7bd6b024ba95c6f680e3b106bf9f2e06dfe55995ef19ed0f",
+      "atlas_sha256": "b3afc032a8527975fb2b07d71bac3874071f0d8f18672093a89ae0d9e40eb7ce"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/damage/ascua-damaged-reactions-v1.json",
+      "metadata_sha256": "61374e88d0f2be83a5390896eb07f078be75d08fae918aab4e1fbff78d33d8a3",
+      "atlas_sha256": "95aa1c86befc523e5c4d661bd36f266735fc9acad3a82b1184243363408615d4"
+    },
+    {
+      "path": "outputs/Brasa/assets/sprites/damage/ascua-critical-movement-v1.json",
+      "metadata_sha256": "1dfaedb2225db68f3673870791ed604d2aa96e4f65f098d3b56ec3d882038d78",
+      "atlas_sha256": "d755754842bd13195870ab4e793aacf185ba4911fbe5ee71a84b7a31afbc3576"
+    }
+  ],
+  "native": [
+    {
+      "body": "duna_pedernal",
+      "seconds": 17.862928,
+      "poses": 32,
+      "failures": 0
+    },
+    {
+      "body": "ascua",
+      "seconds": 20.932172,
+      "poses": 32,
+      "failures": 0
+    },
+    {
+      "body": "bruma_nieve",
+      "seconds": 17.930207,
+      "poses": 32,
+      "failures": 0
+    },
+    {
+      "body": "duna_cora",
+      "seconds": 18.01276,
+      "poses": 32,
+      "failures": 0
+    },
+    {
+      "body": "taro_roque",
+      "seconds": 18.000097,
+      "poses": 32,
+      "failures": 0
+    },
+    {
+      "body": "taro_sabio",
+      "seconds": 17.940219,
+      "poses": 32,
+      "failures": 0
+    },
+    {
+      "body": "bruma_ambar",
+      "seconds": 17.924162,
+      "poses": 32,
+      "failures": 0
+    }
+  ],
+  "amendments": [
+    {
+      "reason": "User rejected residual white matte and fighters overlapping on 2026-09-21. Earlier visual approval did not catch these defects.",
+      "evidence": "work/edge-spacing-fix/native",
+      "previous_manifest": "work/edge-spacing-fix/before/family-acceptance.json",
+      "matte_cleanup": "work/edge-spacing-fix/matte-results.json",
+      "clearance_test": "work/edge-spacing-fix/native.log"
+    }
+  ]
+}

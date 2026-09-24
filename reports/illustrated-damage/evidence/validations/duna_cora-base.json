@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        110,
+        192,
+        257,
+        256
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33610
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        110,
+        197,
+        256,
+        251
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 32170
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        113,
+        205,
+        258,
+        243
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33769
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        105,
+        201,
+        312,
+        247
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34768
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        90,
+        190,
+        286,
+        258
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 36471
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        112,
+        248,
+        270,
+        200
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30583
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        123,
+        147,
+        244,
+        301
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 36262
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        81,
+        314,
+        334,
+        134
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 32004
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "duna_cora",
+  "bank": "base",
+  "source_sha256": "403e27ce671ae04116a85120d06167b2da93c87675f7f7a7cc8f849fdfd1fa8a",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/duna_cora/base/duna_cora-base.png"
+}

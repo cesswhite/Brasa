@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        171,
+        225,
+        162,
+        223
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 16980
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        170,
+        225,
+        162,
+        223
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 17076
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        163,
+        228,
+        179,
+        220
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 18447
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        157,
+        227,
+        208,
+        221
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 17210
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        171,
+        236,
+        160,
+        212
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 16691
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        167,
+        313,
+        182,
+        135
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 13862
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        168,
+        230,
+        161,
+        218
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 16731
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        139,
+        360,
+        232,
+        88
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 12781
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "onix",
+  "bank": "base",
+  "source_sha256": "d22cca287b2c5c764b0bbbae6ed7277b8b64ce0130a600bbfb450105fff25379",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/onix/base/onix-base.png"
+}

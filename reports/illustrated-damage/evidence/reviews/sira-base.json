@@ -1,0 +1,25 @@
+{
+  "source_sha256": "9979d4e1956fa65651dd417c4eb362e830a6ff1b8c5f509d86749b9d9f8ed9dc",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "combat_progression",
+  "reviewed_frames": [
+    "idle",
+    "idle_breathe",
+    "windup",
+    "punch",
+    "hit",
+    "dodge",
+    "victory",
+    "defeat"
+  ],
+  "uniform_scale": 0.7555555555555555,
+  "candidate_sha256_reviewed": "c3957dcd625fac9567bd66f76673b370107a8a8824fe1af095357af1ebfff476",
+  "review_evidence": [
+    "work/illustrated-damage/prepared/sira/base/sira-base-dark.png",
+    "work/illustrated-damage/prepared/sira/base/sira-base-light.png",
+    "outputs/Brasa/assets/sprites/normalized/sira-base-v2.png"
+  ],
+  "review_note": "Todas las poses revisadas sobre claro/oscuro y contra el PNG normalizado limpio. Placas jade, paños púrpura, antenas y filos conservan identidad. Astillas, ropa desgarrada y señales faciales son ilustradas. Huecos entre brazos/cuerpo, piernas y paños se distinguen de la anatomía; sin amputación o halo verde visible. Escala única por banco y apoyos proyectados coherentes; no ampliar KO para igualar altura de pie. Chroma normal, sin strict_key_hue ni cambios RGB."
+}

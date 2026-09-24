@@ -1,0 +1,33 @@
+--- native-1118/test_animation_sequences_visual.gd
++++ movie/test_animation_sequences_visual.gd
+@@ -83,7 +83,9 @@
+ 		DirAccess.make_dir_recursive_absolute(capture_dir)
+ 	root.content_scale_mode = Window.CONTENT_SCALE_MODE_DISABLED
+ 	root.content_scale_size = Vector2i.ZERO
+-	root.size = SIZES[0] if movie_demo else Vector2i(360,240)
++	# MovieMaker fixes its recording size before this deferred setup. Preserve
++	# that native window and fit the full 1360x880 SubViewport into it uniformly.
++	if not movie_demo: root.size = Vector2i(360,240)
+ 	_build_battle()
+ 	if expected.is_empty(): quit(1); return
+ 	_build_targets()
+@@ -93,7 +95,9 @@
+ 		quit(0 if failures==0 else 1)
+ 		return
+ 	var cold_memory := _memory()
+-	var test_sizes: Array[Vector2i] = [SIZES[0]] if movie_demo else SIZES
++	var test_sizes: Array[Vector2i] = []
++	if movie_demo: test_sizes.append(SIZES[0])
++	else: test_sizes.assign(SIZES)
+ 	for dimensions: Vector2i in test_sizes:
+ 		canvas = SubViewport.new()
+ 		canvas.size = dimensions
+@@ -114,7 +118,7 @@
+ 			root.add_child(movie_surface)
+ 			movie_caption = Label.new()
+ 			movie_caption.text = "BATALLA DE PRUEBA · TIEMPOS DEL MOTOR"
+-			movie_caption.position = Vector2(300,24)
++			movie_caption.position = Vector2((float(root.size.x)-760.0)*0.5,24)
+ 			movie_caption.size = Vector2(760,30)
+ 			movie_caption.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+ 			movie_caption.add_theme_font_size_override("font_size",15)

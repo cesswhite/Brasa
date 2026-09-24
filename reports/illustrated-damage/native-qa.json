@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "label": "QA nativa · 3832 comprobaciones, 0 fallos",
+  "description": "Godot nativo: 23 cuerpos, 39 PNG y 368 muestras de clips. Regresión headless: 6 suites, 56 484 comprobaciones, 0 fallos, incluido el gate estricto de 920 poses. Fixtures aisladas; no se abren perfiles ni se simulan recompensas.",
+  "checks": 3832,
+  "failures": 0,
+  "bodies": 23,
+  "captures": 39,
+  "runtime_checks": 56484,
+  "runtime_suites": 6,
+  "strict_checks_included": 14977,
+  "links": [
+    {
+      "href": "native/validation.json",
+      "label": "Resultado nativo"
+    },
+    {
+      "href": "evidence/final-runtime-validation.json",
+      "label": "Seis suites"
+    },
+    {
+      "href": "evidence/final-runtime.json",
+      "label": "Gate estricto"
+    },
+    {
+      "href": "native-manifest.json",
+      "label": "39 capturas y hashes"
+    },
+    {
+      "href": "evidence/root-native-art-review.json",
+      "label": "Revisión visual · 11 láminas y16 contextos"
+    },
+    {
+      "href": "evidence/fighter-art-native-review.json",
+      "label": "Revisión visual · 12 láminas"
+    }
+  ],
+  "first_pass": {
+    "checks": 3878,
+    "failures": 46,
+    "validation": "evidence/first-pass/validation.json",
+    "reason": "La fixture exigía conservar desplazamiento de contacto en 46 KO de figuras sin rival. Se limitó esa aserción a la pareja; raíces y contención siguen comprobándose en figuras aisladas. No hubo un recorte de arte ni un cambio del runtime."
+  },
+  "browser_qa": "Not performed: CUA Chrome unavailable; jsdom/happy-dom/linkedom are not installed in available local Node environments."
+}

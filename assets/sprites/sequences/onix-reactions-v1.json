@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "onix",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 304,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        51,
+        17,
+        226,
+        327
+      ],
+      "anchor": [
+        122.0,
+        324
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        373,
+        41,
+        235,
+        303
+      ],
+      "anchor": [
+        121.0,
+        300
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        673,
+        40,
+        277,
+        305
+      ],
+      "anchor": [
+        161.5,
+        302
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        971,
+        66,
+        259,
+        279
+      ],
+      "anchor": [
+        143.5,
+        276
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        39,
+        378,
+        305,
+        255
+      ],
+      "anchor": [
+        183.5,
+        252
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        356,
+        424,
+        262,
+        176
+      ],
+      "anchor": [
+        130.5,
+        206
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        630,
+        516,
+        320,
+        122
+      ],
+      "anchor": [
+        163.0,
+        119
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        956,
+        393,
+        282,
+        239
+      ],
+      "anchor": [
+        161.5,
+        236
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        46,
+        672,
+        229,
+        273
+      ],
+      "anchor": [
+        116.0,
+        270
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        352,
+        645,
+        233,
+        300
+      ],
+      "anchor": [
+        113.5,
+        297
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        665,
+        674,
+        243,
+        270
+      ],
+      "anchor": [
+        115.0,
+        267
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        992,
+        650,
+        218,
+        294
+      ],
+      "anchor": [
+        125.0,
+        291
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        43,
+        953,
+        235,
+        288
+      ],
+      "anchor": [
+        130.0,
+        285
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        357,
+        946,
+        221,
+        295
+      ],
+      "anchor": [
+        119.5,
+        292
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        673,
+        946,
+        232,
+        295
+      ],
+      "anchor": [
+        126.0,
+        292
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        987,
+        947,
+        230,
+        294
+      ],
+      "anchor": [
+        125.5,
+        291
+      ]
+    }
+  ],
+  "notes": "Native image_gen PNG, untouched pixels. Rectangular regions and foot/projected anchors only. One common body scale per bank; no individual frame resizing. Alpha threshold 31/255 with transparent padding."
+}

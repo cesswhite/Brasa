@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "bruma",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 291,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        55,
+        14,
+        231,
+        288
+      ],
+      "anchor": [
+        115.5,
+        286
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        398,
+        56,
+        239,
+        246
+      ],
+      "anchor": [
+        109.0,
+        244
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        723,
+        15,
+        275,
+        287
+      ],
+      "anchor": [
+        153.0,
+        285
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        1070,
+        15,
+        224,
+        287
+      ],
+      "anchor": [
+        112.5,
+        285
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        44,
+        350,
+        267,
+        211
+      ],
+      "anchor": [
+        99.0,
+        209
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        352,
+        350,
+        329,
+        202
+      ],
+      "anchor": [
+        158.0,
+        210
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        699,
+        450,
+        312,
+        112
+      ],
+      "anchor": [
+        155.5,
+        110
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        1050,
+        382,
+        284,
+        180
+      ],
+      "anchor": [
+        136.5,
+        178
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        50,
+        582,
+        221,
+        265
+      ],
+      "anchor": [
+        116.0,
+        263
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        394,
+        574,
+        236,
+        273
+      ],
+      "anchor": [
+        120.0,
+        271
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        735,
+        583,
+        210,
+        269
+      ],
+      "anchor": [
+        106.0,
+        267
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        1076,
+        574,
+        212,
+        278
+      ],
+      "anchor": [
+        106.5,
+        276
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        68,
+        847,
+        225,
+        311
+      ],
+      "anchor": [
+        112.5,
+        309
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        396,
+        873,
+        227,
+        284
+      ],
+      "anchor": [
+        114.0,
+        282
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        725,
+        866,
+        252,
+        292
+      ],
+      "anchor": [
+        130.0,
+        290
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        1070,
+        862,
+        231,
+        295
+      ],
+      "anchor": [
+        116.0,
+        293
+      ]
+    }
+  ],
+  "notes": "REVIEW-ONLY proposal. One common scale from reference_height; never normalize each frame height. Check pose identity/order, projected airborne/fall anchors and canonical match in native preview before promoting this sidecar."
+}

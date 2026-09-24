@@ -1,0 +1,14 @@
+{
+  "source_sha256": "7d75187c985476b610a51237997e829743aa2554309236370097880590fe28ef",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Ringed tail remains whole and curled within each pose, including hit and grounded; ivory vest and plum sash retain identity. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/copal-reactions-1.png",
+    "work/illustrated-damage/group-b/qa/copal-reactions-2.png"
+  ],
+  "poses_reviewed": 16,
+  "anatomical_sockets_verified": false
+}

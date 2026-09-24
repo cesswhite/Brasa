@@ -1,0 +1,71 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "note": "Eight isolated full silhouettes in order idle, breathing, windup, punch, hit, dodge, victory, defeat. Rectangles enclose alpha >30/255 with two pixels edge padding; no foreign large component pixels. FighterView derives all scales from idle and foot anchors from each silhouette. Native RGBA PNG copied without external pixel edits.",
+  "frames": [
+    {
+      "region": [
+        95,
+        57,
+        238,
+        357
+      ]
+    },
+    {
+      "region": [
+        544,
+        55,
+        242,
+        359
+      ]
+    },
+    {
+      "region": [
+        966,
+        69,
+        264,
+        347
+      ]
+    },
+    {
+      "region": [
+        1398,
+        66,
+        314,
+        350
+      ]
+    },
+    {
+      "region": [
+        125,
+        488,
+        249,
+        325
+      ]
+    },
+    {
+      "region": [
+        531,
+        583,
+        246,
+        234
+      ]
+    },
+    {
+      "region": [
+        991,
+        464,
+        221,
+        357
+      ]
+    },
+    {
+      "region": [
+        1338,
+        725,
+        387,
+        85
+      ]
+    }
+  ]
+}

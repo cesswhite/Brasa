@@ -1,0 +1,15 @@
+{
+  "source_sha256": "b0ce0b8996a20482c68694804df5ddcf49909f0ed4f6ff20388b57ee174b861b",
+  "reviewed_atlas_sha256": "aa250e1b04103bf5b3e703e6c271ae0a5d6ae412fb0565ad8951c4c8f2e80659",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "strict_key_hue": true,
+  "reviewed_by": "fighter_art",
+  "review_note": "Piel verde moteada, ojos ámbar y manos completas; fondo magenta y huecos del tejido separados de la piel. Todas las poses revisadas sobre fondos claro/oscuro y comparadas con referencia limpia; escala única de banco por consenso geométrico. Raíces proyectadas aproximadas, no anotaciones anatómicas verificadas.",
+  "evidence": {
+    "dark": "work/illustrated-damage/prepared/iria/movement/iria-movement-dark.png",
+    "light": "work/illustrated-damage/prepared/iria/movement/iria-movement-light.png",
+    "scale-review": "work/illustrated-damage/prepared/iria/movement/iria-movement-scale-review.png"
+  }
+}

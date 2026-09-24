@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "canonical_sprite_scale": {
+    "canvas": [
+      512,
+      512
+    ],
+    "pivot": [
+      256,
+      448
+    ],
+    "pixels_per_world_unit": 1.5
+  },
+  "species": [
+    {
+      "id": "badger",
+      "name": "Tejón",
+      "material": "dense directional fur; woven cloth",
+      "anatomy": "stocky badger; broad torso; rounded ears; cream/charcoal facial mask",
+      "canonical_body": "taro",
+      "height_range": "canonical profile; no tier-based growth",
+      "body_mass_range": "canonical stocky/standard silhouette only",
+      "allowed_ages": [
+        "adult",
+        "veteran",
+        "elder"
+      ],
+      "allowed_body_variations": [
+        "standard"
+      ],
+      "palette_policy": "authored individuals only",
+      "equipment_compatibility": "baked full-pose art; no unsupported mix-and-match",
+      "animation_style": "shared canonical pose timings"
+    },
+    {
+      "id": "armadillo",
+      "name": "Armadillo",
+      "material": "overlapping keratin shell, leather, woven sash",
+      "anatomy": "stocky armadillo; narrow long snout, large ears, plated tail",
+      "canonical_body": "duna",
+      "height_range": "canonical profile; no tier-based growth",
+      "body_mass_range": "canonical stocky/standard silhouette only",
+      "allowed_ages": [
+        "adult",
+        "veteran",
+        "elder"
+      ],
+      "allowed_body_variations": [
+        "standard"
+      ],
+      "palette_policy": "authored individuals only",
+      "equipment_compatibility": "baked full-pose art; no unsupported mix-and-match",
+      "animation_style": "shared canonical pose timings"
+    },
+    {
+      "id": "cat",
+      "name": "Gato",
+      "material": "short soft fur, woven vest and wraps",
+      "anatomy": "adult domestic shorthair cat; triangular ears, long slender tail",
+      "canonical_body": "bruma",
+      "height_range": "canonical profile; no tier-based growth",
+      "body_mass_range": "canonical stocky/standard silhouette only",
+      "allowed_ages": [
+        "adult",
+        "veteran",
+        "elder"
+      ],
+      "allowed_body_variations": [
+        "standard"
+      ],
+      "palette_policy": "authored individuals only",
+      "equipment_compatibility": "baked full-pose art; no unsupported mix-and-match",
+      "animation_style": "shared canonical pose timings"
+    }
+  ],
+  "individuals": {
+    "taro_roque": {
+      "id": "taro_roque",
+      "base": "taro",
+      "name": "Roque",
+      "description": "Experienced adult badger: preserve Taro species anatomy, stocky build and black/cream badger face mask, add short coarse chin beard, warmer brown-gray fur, small healed cheek scar, muted rust-brown reinforced sleeveless wrap vest, dark trousers, ochre sash, simple leather wrist braces with ONE jade bead. Same size not bulkier. Calm precise fighter.",
+      "species_id": "badger",
+      "age_category": "adult",
+      "experience_tier": "experienced",
+      "body_variant": "standard",
+      "visual_rank": 2,
+      "story_introduction": 21,
+      "player_available": true,
+      "npc_available": true,
+      "weapon_type": "unarmed",
+      "weapon_gameplay": "cosmetic; existing authoritative moves, range and stats unchanged",
+      "asset": "res://assets/sprites/taro_roque-v1.png",
+      "unlock": {
+        "kind": "story_cleared",
+        "threshold": 21
+      },
+      "damage_profile": "taro",
+      "audio_family": "taro",
+      "display_description": "Tejón adulto · barba corta, chaleco de cuero y cicatriz discreta."
+    },
+    "taro_sabio": {
+      "id": "taro_sabio",
+      "base": "taro",
+      "name": "Sabino",
+      "description": "Capable elder master badger: same strong stocky badger anatomy and black/cream face markings, silver eyebrows and medium tapering cream-gray beard, sage-green woven sleeveless wrap jacket with restrained ivory stitched hems, dark brown trousers and weathered ochre sash, small jade wrist beads. Distinct calm experienced face, no cane or weapon, never frail or oversized.",
+      "species_id": "badger",
+      "age_category": "elder",
+      "experience_tier": "master",
+      "body_variant": "standard",
+      "visual_rank": 4,
+      "story_introduction": 61,
+      "player_available": true,
+      "npc_available": true,
+      "weapon_type": "unarmed",
+      "weapon_gameplay": "cosmetic; existing authoritative moves, range and stats unchanged",
+      "asset": "res://assets/sprites/taro_sabio-v1.png",
+      "unlock": {
+        "kind": "story_cleared",
+        "threshold": 61
+      },
+      "damage_profile": "taro",
+      "audio_family": "taro",
+      "display_description": "Tejón maestro · pelo plateado, barba y tejido verde salvia."
+    },
+    "duna_cora": {
+      "id": "duna_cora",
+      "base": "duna",
+      "name": "Cora",
+      "description": "Armored individual of same armadillo species: same long narrow snout, ears, tan scales, naturally segmented shell and heavy stocky anatomy. Slate-ochre shell with dark geometric edge markings, fitted aged bronze shell edge reinforcements and forearm guards, burgundy waist sash with subtle geometric embroidery, charcoal ankle wraps. No added body bulk, no enormous shoulders, armor follows original shell. Defender.",
+      "species_id": "armadillo",
+      "age_category": "adult",
+      "experience_tier": "experienced",
+      "body_variant": "standard",
+      "visual_rank": 2,
+      "story_introduction": 22,
+      "player_available": true,
+      "npc_available": true,
+      "weapon_type": "unarmed",
+      "weapon_gameplay": "cosmetic; existing authoritative moves, range and stats unchanged",
+      "asset": "res://assets/sprites/duna_cora-v1.png",
+      "unlock": {
+        "kind": "story_cleared",
+        "threshold": 22
+      },
+      "damage_profile": "duna",
+      "audio_family": "duna",
+      "display_description": "Armadillo guardián · refuerzos de bronce y faja bordada."
+    },
+    "duna_pedernal": {
+      "id": "duna_pedernal",
+      "base": "duna",
+      "name": "Pedernal",
+      "description": "Veteran armadillo shield fighter, SAME stocky anatomy, narrow snout, ears, segmented darker sandstone shell, healed short snout scar, deep teal sash with ochre repaired stitching, weathered leather. Small ROUND weathered bronze BUCKLER strapped rigidly to LEAD FOREARM (the arm that extends to right in strike), no handheld sword. Strikes are buckler punches: shield follows that forearm in windup, straight bash, recoil, guard, victory, and remains strapped in KO. Other hand bare wrapped fist. Shield diameter about head height, never oversized. No random disappearing shield. Shell has pale edge engravings.",
+      "species_id": "armadillo",
+      "age_category": "veteran",
+      "experience_tier": "veteran",
+      "body_variant": "standard",
+      "visual_rank": 4,
+      "story_introduction": 62,
+      "player_available": true,
+      "npc_available": true,
+      "weapon_type": "buckler",
+      "weapon_gameplay": "cosmetic; existing authoritative moves, range and stats unchanged",
+      "asset": "res://assets/sprites/duna_pedernal-v1.png",
+      "unlock": {
+        "kind": "story_cleared",
+        "threshold": 62
+      },
+      "damage_profile": "duna",
+      "audio_family": "duna",
+      "display_description": "Armadillo veterano · broquel de bronce, caparazón grabado y ropa reparada."
+    },
+    "bruma_ambar": {
+      "id": "bruma_ambar",
+      "base": "bruma",
+      "name": "Ámbar",
+      "description": "Distinct adult orange TABBY domestic cat, same established feline anatomy/size but clearly new individual: amber ginger fur with dark russet tabby stripes on forehead, cheeks, arms and ringed tail, cream muzzle, amber eyes, ear-tip notch, small cheek tufts, sleeveless indigo cross-wrap vest with a cream stitched edge, terracotta sash, dark brown trousers, ivory wrist and ankle wraps. Agile confident personality, not full-sprite recolor; new face, markings and garment cut. No lynx tufts.",
+      "species_id": "cat",
+      "age_category": "adult",
+      "experience_tier": "experienced",
+      "body_variant": "standard",
+      "visual_rank": 2,
+      "story_introduction": 23,
+      "player_available": true,
+      "npc_available": true,
+      "weapon_type": "unarmed",
+      "weapon_gameplay": "cosmetic; existing authoritative moves, range and stats unchanged",
+      "asset": "res://assets/sprites/bruma_ambar-v1.png",
+      "unlock": {
+        "kind": "story_cleared",
+        "threshold": 23
+      },
+      "damage_profile": "bruma",
+      "audio_family": "bruma",
+      "display_description": "Gato atigrado · pelaje naranja, cola anillada y chaleco índigo."
+    },
+    "bruma_nieve": {
+      "id": "bruma_nieve",
+      "base": "bruma",
+      "name": "Nieve",
+      "description": "Veteran domestic cat: same canonical feline anatomy/size, warm off-white fur with asymmetric charcoal patch over rear ear and around rear eye, dark gray ringed tail and forearms, blue-green eyes, small healed cheek scar, tufted mature cheek fur, fitted muted pine-green sleeveless vest with bronze fastening and repaired shoulder seam, pale ochre sash, brown trousers and dark wrist wraps. Calm veteran counter specialist, no weapon, no size inflation, same painterly fur.",
+      "species_id": "cat",
+      "age_category": "veteran",
+      "experience_tier": "veteran",
+      "body_variant": "standard",
+      "visual_rank": 4,
+      "story_introduction": 63,
+      "player_available": true,
+      "npc_available": true,
+      "weapon_type": "unarmed",
+      "weapon_gameplay": "cosmetic; existing authoritative moves, range and stats unchanged",
+      "asset": "res://assets/sprites/bruma_nieve-v1.png",
+      "unlock": {
+        "kind": "story_cleared",
+        "threshold": 63
+      },
+      "damage_profile": "bruma",
+      "audio_family": "bruma",
+      "display_description": "Gata veterana · manchas oscuras, ojos claros y chaleco verde."
+    }
+  },
+  "reserved_npcs": [
+    "ascua",
+    "vespera"
+  ],
+  "player_policy": "Six curated complete appearances, combining fur/shell, beard/markings and clothing. Named boss signatures remain unavailable. No stat or hitbox changes."
+}

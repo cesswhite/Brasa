@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        134,
+        184,
+        239,
+        266
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31676
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        137,
+        183,
+        238,
+        267
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31877
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        133,
+        258,
+        273,
+        192
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30702
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        136,
+        184,
+        248,
+        266
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33338
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        135,
+        193,
+        246,
+        256
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31267
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        111,
+        190,
+        295,
+        259
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32152
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        126,
+        193,
+        305,
+        256
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33837
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        119,
+        192,
+        240,
+        257
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30779
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        111,
+        229,
+        268,
+        221
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33018
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        110,
+        227,
+        295,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33094
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        151,
+        171,
+        206,
+        279
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29119
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        138,
+        159,
+        207,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26094
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        132,
+        196,
+        305,
+        233
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32586
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        146,
+        186,
+        205,
+        256
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29016
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        136,
+        257,
+        255,
+        195
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31157
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        129,
+        181,
+        250,
+        269
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32212
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "bruma_nieve",
+  "bank": "movement",
+  "source_sha256": "3422314a22dc1dee7480f877d18ce30f4d019bb90a9cd268dd75c97722ca91d2",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/bruma_nieve/movement/bruma_nieve-movement.png"
+}

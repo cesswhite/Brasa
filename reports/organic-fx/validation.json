@@ -1,0 +1,533 @@
+{
+  "date": "2026-09-20",
+  "scope": "Organic character-integrated presentation effects",
+  "godot": "4.7.2 stable macOS, OpenGL Compatibility",
+  "viewport_sizes": [
+    [
+      1360,
+      880
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "suites": [
+    {
+      "name": "combat_fx",
+      "checks": 129,
+      "failures": 0,
+      "log": "test-combat-fx.log"
+    },
+    {
+      "name": "organic_fx_headless",
+      "checks": 172,
+      "failures": 0,
+      "log": "test-organic-headless.log"
+    },
+    {
+      "name": "organic_fx_native",
+      "checks": 185,
+      "failures": 0,
+      "log": "test-organic-native.log"
+    },
+    {
+      "name": "battle_layout",
+      "checks": 2139,
+      "failures": 0,
+      "log": "test_battle_layout.log"
+    },
+    {
+      "name": "live_main",
+      "checks": 153,
+      "failures": 0,
+      "log": "live-main.log"
+    },
+    {
+      "name": "backend_cosmetics",
+      "tests": 9,
+      "failures": 0,
+      "log": "backend-cosmetics-test.log"
+    }
+  ],
+  "regression_suites": [
+    {
+      "test": "test_move_clock",
+      "exit_code": 0,
+      "results": [
+        "MOVE CLOCK: 151 checks, 0 failures"
+      ]
+    },
+    {
+      "test": "test_status_ko_presentation",
+      "exit_code": 0,
+      "results": [
+        "STATUS KO PRESENTATION: 91 checks, 0 failures"
+      ]
+    },
+    {
+      "test": "test_customization_visuals",
+      "exit_code": 0,
+      "results": [
+        "CUSTOMIZATION VISUALS: 2068 checks, 0 failures"
+      ]
+    },
+    {
+      "test": "test_animation_sequences",
+      "exit_code": 0,
+      "results": [
+        "ANIMATION SEQUENCES: 7010 checks, 0 failures; pilot=true"
+      ]
+    },
+    {
+      "test": "test_identity_integration",
+      "exit_code": 0,
+      "results": [
+        "IDENTITY INTEGRATION: 86 checks, 0 failures"
+      ]
+    },
+    {
+      "test": "test_online_ui",
+      "exit_code": 0,
+      "results": [
+        "ONLINE UI: 758 checks, 0 failures"
+      ]
+    }
+  ],
+  "baseline_native_checks": 21,
+  "baseline_native_failures": 0,
+  "assets_preserved_count": 61,
+  "preserved": [
+    {
+      "path": "scripts/combat_engine.gd",
+      "before": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b",
+      "after": "d77276714ca3c5dfc25a0d2c87d1f76f8fb356c174f4597d5cac5b2c5b6fd21b"
+    },
+    {
+      "path": "scripts/combat_rules.gd",
+      "before": "028dd9e70ebf7b94dba571f11c99f07ac8ef441d368f92ac4aae03d92b3e0dfe",
+      "after": "028dd9e70ebf7b94dba571f11c99f07ac8ef441d368f92ac4aae03d92b3e0dfe"
+    },
+    {
+      "path": "scripts/character_catalog.gd",
+      "before": "0acae89fce747f5863c39af64cdaa667590bf681c70059662d05cbc437356a49",
+      "after": "0acae89fce747f5863c39af64cdaa667590bf681c70059662d05cbc437356a49"
+    },
+    {
+      "path": "scripts/move_catalog.gd",
+      "before": "e866bb3ad5f5911b05de7dab6276c5b8c2d2a8a9eada2a594b651b1b0e60616a",
+      "after": "e866bb3ad5f5911b05de7dab6276c5b8c2d2a8a9eada2a594b651b1b0e60616a"
+    },
+    {
+      "path": "scripts/progression.gd",
+      "before": "8e2226634ff2047502c0e796438414dc6015ff3ba5437096a4a53eda919e94b2",
+      "after": "8e2226634ff2047502c0e796438414dc6015ff3ba5437096a4a53eda919e94b2"
+    },
+    {
+      "path": "scripts/story_progression.gd",
+      "before": "5072082c206f641d44bd79c9be8be87a88b25a07bdc84333c87af52579a0db86",
+      "after": "5072082c206f641d44bd79c9be8be87a88b25a07bdc84333c87af52579a0db86"
+    },
+    {
+      "path": "scripts/fighter_identity.gd",
+      "before": "7a0b701c1a00d04897a6a1cb26dbdb3b1d4ae6d0f4a1b59f016bb066a86f80b5",
+      "after": "7a0b701c1a00d04897a6a1cb26dbdb3b1d4ae6d0f4a1b59f016bb066a86f80b5"
+    },
+    {
+      "path": "assets/arena-faroles-v2.png",
+      "before": "ca48d86bd4b7b6e7d3fd8d2f5803e86a1cbd564023e53c08f71d3a0bb7e5f0e9",
+      "after": "ca48d86bd4b7b6e7d3fd8d2f5803e86a1cbd564023e53c08f71d3a0bb7e5f0e9"
+    },
+    {
+      "path": "assets/arena-tormenta-v3.png",
+      "before": "94e4d94c38b036fe4b91f4d912b7716d55eb7281421e861f9af0cf4a5917b35f",
+      "after": "94e4d94c38b036fe4b91f4d912b7716d55eb7281421e861f9af0cf4a5917b35f"
+    },
+    {
+      "path": "assets/fx/combat-v1.png",
+      "before": "749d197f06ebc91dc4a13eb3f8fa4e8b1990a79807e20cf536c592c538b8b868",
+      "after": "749d197f06ebc91dc4a13eb3f8fa4e8b1990a79807e20cf536c592c538b8b868"
+    },
+    {
+      "path": "assets/sprites/balam-v1.png",
+      "before": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166",
+      "after": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166"
+    },
+    {
+      "path": "assets/sprites/xuna-v1.png",
+      "before": "2cfd6c722eeeb659bfb37bca2591966fa8e3eddea9b1388425aaeaf15a4c1091",
+      "after": "2cfd6c722eeeb659bfb37bca2591966fa8e3eddea9b1388425aaeaf15a4c1091"
+    },
+    {
+      "path": "assets/sprites/golem-v2.png",
+      "before": "181bf35ba2ed8f34cfc2fce91d3158ed6825186ceb5d1b1df64f9f600b6d3a9f",
+      "after": "181bf35ba2ed8f34cfc2fce91d3158ed6825186ceb5d1b1df64f9f600b6d3a9f"
+    },
+    {
+      "path": "assets/sprites/onix-v1.png",
+      "before": "6a6f6adad172784c9707d498f9fe34fe62f8a5a7298adaa6cd8a8117e50bab2b",
+      "after": "6a6f6adad172784c9707d498f9fe34fe62f8a5a7298adaa6cd8a8117e50bab2b"
+    },
+    {
+      "path": "assets/sprites/vespera-v3.png",
+      "before": "a7c631326c3ef06acb1c066433ad25c3908c81518b0ebe9380fedd41d53af55e",
+      "after": "a7c631326c3ef06acb1c066433ad25c3908c81518b0ebe9380fedd41d53af55e"
+    },
+    {
+      "path": "assets/sprites/neris-v3.png",
+      "before": "b9d2aa02aaf221875c00be9764339fb6661050918ded06e40004f7e3496c1630",
+      "after": "b9d2aa02aaf221875c00be9764339fb6661050918ded06e40004f7e3496c1630"
+    },
+    {
+      "path": "assets/sprites/taro-v3.png",
+      "before": "ced08a86029a3807649c6b1d10e32905e4ec3424e4b58d1313bd33270d1a78e7",
+      "after": "ced08a86029a3807649c6b1d10e32905e4ec3424e4b58d1313bd33270d1a78e7"
+    },
+    {
+      "path": "assets/sprites/iria-v3.png",
+      "before": "6d5bcd5b9e642984eeb86e5fce0851b45a3e7ffca3f1d7917bc70159a40977fc",
+      "after": "6d5bcd5b9e642984eeb86e5fce0851b45a3e7ffca3f1d7917bc70159a40977fc"
+    },
+    {
+      "path": "assets/sprites/copal-v1.png",
+      "before": "0a6d220da5abcbc5be4d6dbf0c567637539bbf0169a02decab541693310f1c20",
+      "after": "0a6d220da5abcbc5be4d6dbf0c567637539bbf0169a02decab541693310f1c20"
+    },
+    {
+      "path": "assets/sprites/ascua-v3.png",
+      "before": "c514961c787ce4048ab50233af880ad00b71ba8796e3b1b873ae29d59c8665fd",
+      "after": "c514961c787ce4048ab50233af880ad00b71ba8796e3b1b873ae29d59c8665fd"
+    },
+    {
+      "path": "assets/sprites/duna-v3.png",
+      "before": "ce5ba2926c3d36ef36a984e1da38f1faab3479a61ca80349a06677c4f84fd7fe",
+      "after": "ce5ba2926c3d36ef36a984e1da38f1faab3479a61ca80349a06677c4f84fd7fe"
+    },
+    {
+      "path": "assets/sprites/bruma-v1.png",
+      "before": "fe4994f042bc0fa03662ce449a54d7a3aa8c0652eed471f1a963210ad1e89042",
+      "after": "fe4994f042bc0fa03662ce449a54d7a3aa8c0652eed471f1a963210ad1e89042"
+    },
+    {
+      "path": "assets/sprites/sira-v3.png",
+      "before": "b5a39b7e714f7f944a65c86403bd9c057f74a560cf92723b3fde15e354261686",
+      "after": "b5a39b7e714f7f944a65c86403bd9c057f74a560cf92723b3fde15e354261686"
+    },
+    {
+      "path": "assets/sprites/kiro-v3.png",
+      "before": "ac769c263d0ccac3817515e0aa30952af11723bee5921ac5a9a8e63910c89c75",
+      "after": "ac769c263d0ccac3817515e0aa30952af11723bee5921ac5a9a8e63910c89c75"
+    },
+    {
+      "path": "assets/sprites/lince-v2.png",
+      "before": "87c8b6e06a36be059495eecffd59aa232478b7046391fd9e83b7571f81ef57ea",
+      "after": "87c8b6e06a36be059495eecffd59aa232478b7046391fd9e83b7571f81ef57ea"
+    },
+    {
+      "path": "assets/sprites/ajolote-v2.png",
+      "before": "b69031b39d3f39e2112af6a1e474622f35e157159e65b9a2dda3358919b97b89",
+      "after": "b69031b39d3f39e2112af6a1e474622f35e157159e65b9a2dda3358919b97b89"
+    },
+    {
+      "path": "assets/sprites/tepa-v1.png",
+      "before": "263c0f1bc7b14c0304d7b4923b42ec59a2b44c91724a72b0f72c43bca415f2ae",
+      "after": "263c0f1bc7b14c0304d7b4923b42ec59a2b44c91724a72b0f72c43bca415f2ae"
+    },
+    {
+      "path": "assets/ui/workshop/workshop-v1.png",
+      "before": "8675e55b0f846f090c57e2080d0d47f50e7e5ce223b17286161af5f1e6e32b4f",
+      "after": "8675e55b0f846f090c57e2080d0d47f50e7e5ce223b17286161af5f1e6e32b4f"
+    },
+    {
+      "path": "assets/ui/legacy/archive-v1.png",
+      "before": "d9533847daa082f226a800f951bcca931a57c2b5a8528c547fef52b528d6a0e1",
+      "after": "d9533847daa082f226a800f951bcca931a57c2b5a8528c547fef52b528d6a0e1"
+    },
+    {
+      "path": "assets/ui/shared/surfaces-v1.png",
+      "before": "e0c48249f4795b07c31cdb17c80c4eea4c683c3d2aa53d690d53206be61f4b53",
+      "after": "e0c48249f4795b07c31cdb17c80c4eea4c683c3d2aa53d690d53206be61f4b53"
+    },
+    {
+      "path": "assets/ui/shared/props-v1.png",
+      "before": "df5b61a095e44325f834fadb40cf3430a50fd51104507639e804c79dede9df27",
+      "after": "df5b61a095e44325f834fadb40cf3430a50fd51104507639e804c79dede9df27"
+    },
+    {
+      "path": "assets/ui/companions/camp-v1.png",
+      "before": "960a78467b705463fa0e89860f7c2ae6e0783765b30229d785c3cbf94effe83f",
+      "after": "960a78467b705463fa0e89860f7c2ae6e0783765b30229d785c3cbf94effe83f"
+    },
+    {
+      "path": "assets/ui/story/storm-v1.png",
+      "before": "7619e04af241f8e1b1d4156833efeb033db4682d612c972cc6e6cf59687d457c",
+      "after": "7619e04af241f8e1b1d4156833efeb033db4682d612c972cc6e6cf59687d457c"
+    },
+    {
+      "path": "assets/ui/story/journey-v1.png",
+      "before": "bda1413cae175e4219dfc6163c88853659cc2e1b756b6c5ccc5dd1931ba5d6be",
+      "after": "bda1413cae175e4219dfc6163c88853659cc2e1b756b6c5ccc5dd1931ba5d6be"
+    },
+    {
+      "path": "assets/sprites/sequences/onix-movement-v1.png",
+      "before": "e0388f45120dbbbdbf0729a298898fbe130c7d6cdc2de95b4e84782164f9933b",
+      "after": "e0388f45120dbbbdbf0729a298898fbe130c7d6cdc2de95b4e84782164f9933b"
+    },
+    {
+      "path": "assets/sprites/sequences/mugo-reactions-v1.png",
+      "before": "a4aee15b86c06efc6d2d0bb9d06647e8575b6c444ba12be6ab12ef7e8b673269",
+      "after": "a4aee15b86c06efc6d2d0bb9d06647e8575b6c444ba12be6ab12ef7e8b673269"
+    },
+    {
+      "path": "assets/sprites/sequences/kiro-movement-v1.png",
+      "before": "56fc60a870b72f0806c13ca75d43283b44e9c87b4655a8e47e713bb55f649073",
+      "after": "56fc60a870b72f0806c13ca75d43283b44e9c87b4655a8e47e713bb55f649073"
+    },
+    {
+      "path": "assets/sprites/sequences/vespera-reactions-v1.png",
+      "before": "44a2a087d2adb4347f3843f869a5ef2b6a5298971f695d5897e2f76a4df15d5e",
+      "after": "44a2a087d2adb4347f3843f869a5ef2b6a5298971f695d5897e2f76a4df15d5e"
+    },
+    {
+      "path": "assets/sprites/sequences/ascua-reactions-v1.png",
+      "before": "9c2615845bb20bf6a50b7ad4acc3e94921e3cebdf84633f7226a5a82526946ee",
+      "after": "9c2615845bb20bf6a50b7ad4acc3e94921e3cebdf84633f7226a5a82526946ee"
+    },
+    {
+      "path": "assets/sprites/sequences/duna-movement-v1.png",
+      "before": "4564dd0081a713ffaffe4aefc46172d5b3d5996a996e5afed926b710143d6c18",
+      "after": "4564dd0081a713ffaffe4aefc46172d5b3d5996a996e5afed926b710143d6c18"
+    },
+    {
+      "path": "assets/sprites/sequences/nima-movement-v1.png",
+      "before": "b7fd758945dc9649ed6e7c3160355c0dcc09606b3c496fb6965a2e9a69ef92e3",
+      "after": "b7fd758945dc9649ed6e7c3160355c0dcc09606b3c496fb6965a2e9a69ef92e3"
+    },
+    {
+      "path": "assets/sprites/sequences/ascua-movement-v1.png",
+      "before": "631a6b9e9755ab291134f541fd5977d1d6d8ef43d48e83cbfb120c888cf0cfe6",
+      "after": "631a6b9e9755ab291134f541fd5977d1d6d8ef43d48e83cbfb120c888cf0cfe6"
+    },
+    {
+      "path": "assets/sprites/sequences/copal-movement-v1.png",
+      "before": "1ccdbe51a6c370898c20209b23a31e7fc93b2aa9e16eb2d5863e6e80012aab4a",
+      "after": "1ccdbe51a6c370898c20209b23a31e7fc93b2aa9e16eb2d5863e6e80012aab4a"
+    },
+    {
+      "path": "assets/sprites/sequences/xuna-movement-v1.png",
+      "before": "c746a0ec7387c560b47f57c9d75db4dcd046e7ae2183c8a652022a2030579722",
+      "after": "c746a0ec7387c560b47f57c9d75db4dcd046e7ae2183c8a652022a2030579722"
+    },
+    {
+      "path": "assets/sprites/sequences/tepa-reactions-v1.png",
+      "before": "7dacd63059929e42b69487e73f29c1d2e8e23bf69c6cbe27c5179f3a82b09e72",
+      "after": "7dacd63059929e42b69487e73f29c1d2e8e23bf69c6cbe27c5179f3a82b09e72"
+    },
+    {
+      "path": "assets/sprites/sequences/bruma-reactions-v1.png",
+      "before": "5dea76be86b14ba8eb453f4a41e14dae77a49c8444bdf95c5bc52fccbd2d343f",
+      "after": "5dea76be86b14ba8eb453f4a41e14dae77a49c8444bdf95c5bc52fccbd2d343f"
+    },
+    {
+      "path": "assets/sprites/sequences/tepa-movement-v1.png",
+      "before": "2336a0b5a0c45dbf1e981b92046c0c00838ca064f3e70b33d5d9233b2b8fd521",
+      "after": "2336a0b5a0c45dbf1e981b92046c0c00838ca064f3e70b33d5d9233b2b8fd521"
+    },
+    {
+      "path": "assets/sprites/sequences/vespera-movement-v1.png",
+      "before": "42c340fee446161ecc5476e0c8d0481ac491e04af4c3ef12e00115aafbc99b05",
+      "after": "42c340fee446161ecc5476e0c8d0481ac491e04af4c3ef12e00115aafbc99b05"
+    },
+    {
+      "path": "assets/sprites/sequences/balam-movement-v1.png",
+      "before": "766be08d086af95e8ce91d9ee30f85ae3f51a8dc7cc494d1552dac5c06cc6b03",
+      "after": "766be08d086af95e8ce91d9ee30f85ae3f51a8dc7cc494d1552dac5c06cc6b03"
+    },
+    {
+      "path": "assets/sprites/sequences/copal-reactions-v1.png",
+      "before": "ad5a2aa3c54ace479375454decd9f8db99ab6a5f9697c0c05df31fe6b2fb5146",
+      "after": "ad5a2aa3c54ace479375454decd9f8db99ab6a5f9697c0c05df31fe6b2fb5146"
+    },
+    {
+      "path": "assets/sprites/sequences/mugo-movement-v1.png",
+      "before": "749288ba3b4dde04a6151a996233edc0fcc11af81cec98379aade2e4038a1a1c",
+      "after": "749288ba3b4dde04a6151a996233edc0fcc11af81cec98379aade2e4038a1a1c"
+    },
+    {
+      "path": "assets/sprites/sequences/balam-reactions-v1.png",
+      "before": "c1809cd48ea714b31a0c2f5b58f899a3dd01075a198c4fb945ca40c4a168017c",
+      "after": "c1809cd48ea714b31a0c2f5b58f899a3dd01075a198c4fb945ca40c4a168017c"
+    },
+    {
+      "path": "assets/sprites/sequences/iria-reactions-v1.png",
+      "before": "40d7c3344395f9dd05005032a078bcd954da5009623c549e5f20650cd45c234c",
+      "after": "40d7c3344395f9dd05005032a078bcd954da5009623c549e5f20650cd45c234c"
+    },
+    {
+      "path": "assets/sprites/sequences/iria-movement-v1.png",
+      "before": "95c8d11adee3a09bb2152a827327509ad5301ce969906a27126b0ffb8a48b01d",
+      "after": "95c8d11adee3a09bb2152a827327509ad5301ce969906a27126b0ffb8a48b01d"
+    },
+    {
+      "path": "assets/sprites/sequences/taro-movement-v1.png",
+      "before": "0140db3d405db68b198277e1323f6be9ee585821c77037662a4e7b71d697549e",
+      "after": "0140db3d405db68b198277e1323f6be9ee585821c77037662a4e7b71d697549e"
+    },
+    {
+      "path": "assets/sprites/sequences/onix-reactions-v1.png",
+      "before": "e088d4ab43c0200139eb00c82b5c6facedd9f0782c096579239aeb8ab200ba21",
+      "after": "e088d4ab43c0200139eb00c82b5c6facedd9f0782c096579239aeb8ab200ba21"
+    },
+    {
+      "path": "assets/sprites/sequences/neris-reactions-v1.png",
+      "before": "972cf1389cf3787486f10c0cdc303aed2220ad6fce1b6846604c287006b5ad76",
+      "after": "972cf1389cf3787486f10c0cdc303aed2220ad6fce1b6846604c287006b5ad76"
+    },
+    {
+      "path": "assets/sprites/sequences/nima-reactions-v1.png",
+      "before": "0fc45c268c583cb4db6a7b84e3724b9345fcc0943d60fcaafe1ec146e2e7a83c",
+      "after": "0fc45c268c583cb4db6a7b84e3724b9345fcc0943d60fcaafe1ec146e2e7a83c"
+    },
+    {
+      "path": "assets/sprites/sequences/luma-movement-v1.png",
+      "before": "d15e64143fb8591d56699903a2e3dc690a0ee72d42f42e4c33ad307f452c98b0",
+      "after": "d15e64143fb8591d56699903a2e3dc690a0ee72d42f42e4c33ad307f452c98b0"
+    },
+    {
+      "path": "assets/sprites/sequences/sira-movement-v1.png",
+      "before": "bb6e9d2c50127f53ecd852d55fe957362eea7afa88473473f231e747a24ad02f",
+      "after": "bb6e9d2c50127f53ecd852d55fe957362eea7afa88473473f231e747a24ad02f"
+    },
+    {
+      "path": "assets/sprites/sequences/xuna-reactions-v1.png",
+      "before": "90896a5aaaf3317435816eb4538443c2ce3161c1608fda813b4922b399e8b504",
+      "after": "90896a5aaaf3317435816eb4538443c2ce3161c1608fda813b4922b399e8b504"
+    },
+    {
+      "path": "assets/sprites/sequences/neris-movement-v1.png",
+      "before": "28228f6201d710f57e5942f41d927d6d50e91fa92f5e7e2a09450751543204af",
+      "after": "28228f6201d710f57e5942f41d927d6d50e91fa92f5e7e2a09450751543204af"
+    },
+    {
+      "path": "assets/sprites/sequences/duna-reactions-v1.png",
+      "before": "61f5d62a8a2a316c2de4e2f430cc260f27ac8dee83f3d12e308928f3990cbdcb",
+      "after": "61f5d62a8a2a316c2de4e2f430cc260f27ac8dee83f3d12e308928f3990cbdcb"
+    },
+    {
+      "path": "assets/sprites/sequences/sira-reactions-v1.png",
+      "before": "d63a5d1bb0da3b37a53db6405d447a3a0b2ab8ecabcf5648694e4c2879af4ec5",
+      "after": "d63a5d1bb0da3b37a53db6405d447a3a0b2ab8ecabcf5648694e4c2879af4ec5"
+    },
+    {
+      "path": "assets/sprites/sequences/taro-reactions-v1.png",
+      "before": "dbce5b111cf64e5dfd38a6540f9055d4b280c6a78f1205b71dd246375756f96c",
+      "after": "dbce5b111cf64e5dfd38a6540f9055d4b280c6a78f1205b71dd246375756f96c"
+    },
+    {
+      "path": "assets/sprites/sequences/bruma-movement-v1.png",
+      "before": "fe7f0ce215400d2dc4172302f2e52b409883f19e6020c386fc762d4dc0c06755",
+      "after": "fe7f0ce215400d2dc4172302f2e52b409883f19e6020c386fc762d4dc0c06755"
+    },
+    {
+      "path": "assets/sprites/sequences/kiro-reactions-v1.png",
+      "before": "ca37b7a194826952ea70985c3336eeea73af106cdf4d3e63dde611b38c547895",
+      "after": "ca37b7a194826952ea70985c3336eeea73af106cdf4d3e63dde611b38c547895"
+    },
+    {
+      "path": "assets/sprites/sequences/luma-reactions-v1.png",
+      "before": "8cd496fdfcf1485b4c096753c9398659f764c66564811e59364c473d024eaf94",
+      "after": "8cd496fdfcf1485b4c096753c9398659f764c66564811e59364c473d024eaf94"
+    }
+  ],
+  "intentional_description_change": [
+    {
+      "path": "data/cosmetic_catalog.json",
+      "before": "72f42b0563806b7060a5d457982f9c7fa1f7c45885e320ba429fc5aa256ef951",
+      "after": "d59f3d23101b6496f4b257d4ef8a53db760f8721cf2769e853e6b15cc78d9a67"
+    }
+  ],
+  "source_sha256": {
+    "scripts/particle_ink.gd": "973590f2aa39592bd3a58a70a10d47d5a0040996aef6c8c644f1a03d1c53284f",
+    "scripts/fighter_view.gd": "30d42acaea4f0e1782843023e1a5b2c97ef6ed4322e4096b7857e3dfb8ccde46",
+    "scripts/combat_fx.gd": "b735174c24f6efaf29114185e34d44745496b8a5a1b88baf121402cc1924bbba",
+    "scripts/arena_view.gd": "8357976ce036c3009e45c410d1930c57a0ea49dea9bacff0fefbbc35aa419d38",
+    "scripts/main.gd": "18528c4eccf7dedd2c646bc2776435a93612efa79184f08aed322d1d21b3f728",
+    "scripts/ui/battle_replay_panel.gd": "d41e9397c3459660091cbad5f2fb0751fa7f3e644ee7f16c2b5f6c7c47f191dc",
+    "scripts/cosmetic_catalog.gd": "805cc02d3a1215d87b7b2aef5e1a358cb549ab9c0688e18f279f28f16d696285",
+    "data/combat_fx.json": "e2aa2e63295534d883561356790cf62e10f0d9e9b40cead7f9598ca3ac8797ea",
+    "data/cosmetic_catalog.json": "d59f3d23101b6496f4b257d4ef8a53db760f8721cf2769e853e6b15cc78d9a67",
+    "tests/test_combat_fx.gd": "42ddec3ae6121455877d6a431f8467e9058bb0bcc8ab1969332b5f203d7d044e",
+    "tests/test_organic_fx.gd": "d271a0f326fafb96954104472292fcbde02101cd6ebba640e12d1600db42967e"
+  },
+  "evidence_sha256": {
+    "COMBAT-FX.md": "bf48627a0f3eec37745e7e1a6ba9e993bcfeab2e710cf355ffbcdc454435d2dc",
+    "after/1-1360x880.png": "5b9a15ff4bddbf969f95d0f1efa938f7e983b97ef16f43857764ffa55b2d2a4b",
+    "after/1-390x844.png": "0f88bc6473d24d410e6bd13ff31f1a1569a66484353d20ded984d17060f8c156",
+    "after/2-1360x880.png": "e870b907d802bbc1c7c46755226c051581897468708db56f3d96341daee5606a",
+    "after/2-390x844.png": "fe0c69a3343e895398e3d24f49e4e1f41e8159c35925737d7f144030ad490d06",
+    "after/3-1360x880.png": "305e81dbbfffec39ce33da3c1d560b37a37784038b0d50cad39e05f566a18ac5",
+    "after/3-390x844.png": "87d646a037331e8090c61be82c9cdec9f4562c03d20fb590e952d65308fff70d",
+    "after/4-1360x880.png": "551c1d25fdbecc00ab0567e212bd40cb99ead1c459b83fd11be4cbc269eb03fa",
+    "after/4-390x844.png": "5d820091c6a6ee43239a04ed568091d92f3ff2b6a2e7ec8e8ea7ed1f3e7649cb",
+    "after/observations.json": "b591365417b76ed479b4dea4806c61f6f842bfdeefe02b8ebe99d9e3c3796d2c",
+    "after/replay-paused-1360x880.png": "3869c87e7af850b1a2c81385b15b6e929c655b58a29cb3836abadc5b52d40c1f",
+    "after/replay-paused-390x844.png": "e31608fce5ce6dcacaac951cf05049066715b5cffedccb37f502a1cdf69ef46b",
+    "after/replay-reduced-1360x880.png": "244a183f6e4d860d81dc80667aea2955d1ec0f84347ac1ea913344b9e9d46b2b",
+    "after/replay-reduced-390x844.png": "03f75b0ae2a05a8f04f03d78ec7be85626365a840d776c41d1c6d756553194f7",
+    "arena-notes.md": "f9c5a5b2e598402fe894ef0280fe292ff9525eb190d8cf07ca4dab58e441cd52",
+    "backend-build.log": "17f956b44c1db102b9811ec0b1fc2453e732b1d606d82efd708acbc46893f477",
+    "backend-cosmetics-test.log": "867d1371ed1435200cb97839980519e33b77a2d1fa7224fde730eda259fc5f75",
+    "before/1-1360x880.png": "642d193cf047d5993535e8396c0f26a3ac572dcf866249b5544e72ea03cdbbb3",
+    "before/1-390x844.png": "65126362d35c80644dd6f2a174e0c7a5cc1876e2734e49697b278020c67171a5",
+    "before/2-1360x880.png": "e10355d6c836f5ec19c9b3063af02093b975983e77ef864aac35248f3b52d850",
+    "before/2-390x844.png": "605b7a9c5e75c4f181b9f5db334fde50b0988dfb1e2d1d6c124021f6b4696f6d",
+    "before/3-1360x880.png": "7331cc56ab135e3daa4a5c3c01e9ca87defa5293898fbc068efdaef7190848da",
+    "before/3-390x844.png": "1e2e1e28420a5662e9fccc7c748ef71f681f69831348d7c5e039e2a5b2615599",
+    "before/4-1360x880.png": "b2489b9d8d103a6ee5b5dc6b24e73cc8bc85ae9e25dfb1303781f3d3a43c93b3",
+    "before/4-390x844.png": "b9917a6f33d6a10461427df1c10a078ddc25d656289e07ba3eddc4c6b6491540",
+    "before/observations.json": "2a5f4059d2befb6f3eaf6e66769d8d1917b6778ea62cef656d1e1220d3d3a6dd",
+    "combat-fx-validation.json": "fd67d853034ddb5b8e1d74045877405087edcc125141471cddd496036f72d39f",
+    "export-cosmetics.log": "878814bf1c4cbd1d23bbc3491576a7f1c1962ab923fb2b23522a5212f7673d93",
+    "live/battle-bruma-1360x880.png": "b2d4f4e831659a64533222211d985715a54bc625910ede1de0f81153e9860bb2",
+    "live/battle-bruma-390x844.png": "064dcb6866432566dcf10f015243ab5acd68c98791a905556768bf4605e22857",
+    "live/battle-onix-1360x880.png": "53a09cf7ee6b9411e226ef63b0082f21857d6307e0bde673c5567675dc609496",
+    "live/battle-onix-390x844.png": "4cf55b2c1800b60ce5214ba4b787f20848ef35698ccd23d7eeac6c25ac78a265",
+    "live/cats-showcase.png": "525d901a0d212a0efe0892bc5a24c8e9cc13926e43158d34a15f7b4e47161b05",
+    "live/league-battle-bruma-1360x880.png": "2d4815cc5f42c1916efcfc777b33a0ad1a5b3f182c63330de6c0c71b7ee22303",
+    "live/league-battle-bruma-390x844.png": "8c5aaf7d93105bc9df22110e710176766b1e2ea02be1bafc1f8e0967ca6d5955",
+    "live/league-battle-onix-1360x880.png": "545596b478407f0e1b98dd6b2f1640a643768fb854ab0dd4950d998856c880e2",
+    "live/league-battle-onix-390x844.png": "81a7f9956a26134d4201d609741ad1e7e1ffc1b065981237bf99d783161b9edf",
+    "live/league-bruma-1360x880.png": "158efbd7f421c0092f4099a6a6b71e8228aca5b3926c3829dca7352fc50e5f7e",
+    "live/league-bruma-390x844.png": "52e203394a953a86e07c2b5410e27952784f4050e0455613ee10b50639f53851",
+    "live/league-onix-1360x880.png": "24f5d65e86d3dd805a6e1627748c8370b4581fe26ea89dc214f615c65f0ccf15",
+    "live/league-onix-390x844.png": "ca0ac2fd220ce885810d4dda4dc81fd8478b6ae87d855c06dad75bd620aff9cd",
+    "live/observations.json": "740f49f999efa2c7aecab06c14af066e312c45c4da378ad468e73823be7515aa",
+    "live/story-bruma-1360x880.png": "2708e8ae4ace5b7fe90e6bca2c226510a0375ed2a68622dafb3348b440c09747",
+    "live/story-bruma-390x844.png": "43d7a0f8ad2afc032140e4ed4c49e45ff11549addaf9249dce00d8d1eec8fdb9",
+    "live/story-onix-1360x880.png": "c201cf918a8ab35d7c3c51b8fb8bceb4a5a4395dc4ab581876718a78e8393230",
+    "live/story-onix-390x844.png": "b4d7684e7245a1beabb8a9aca93c8afbd5412933d467b4f39c01a46d31dfb437",
+    "live-main.log": "472c85a567ddd2540efabacd0b5656e3e31f62ea207c9833ccd201bffda6376f",
+    "organic-fx-desktop.mp4": "d25894b6b45620e67c439ec3d45d09ad2be3e9267d66b54b7e2b406ae8793802",
+    "organic-fx-mobile.mp4": "2299cf802af1503c710bc1458645ca399da594337d22aa15c1f932a0025928fc",
+    "parse-fighter.log": "6d1c065383a27c36804949b6ffa4b09714470b112e5dacc0bd5aeb7b9c147c4e",
+    "regression-results.json": "59cf305b77716a2cee419bf749b126110085a58a94170d94c8e5f9dc61ff1015",
+    "test-combat-fx.log": "a07bc1b8d3a1885b0e9feb274748a39c10f70bec2503bc1f0b535a6319637e9f",
+    "test-organic-baseline.log": "3b2e2311874b446a7c82c737cbdbbf5830fd81f085502b9b6b07f5a1e0b842eb",
+    "test-organic-headless.log": "eff78d3787c1f12ce1fa9aa75cfab526ed08642cce712879fed7473aa110a192",
+    "test-organic-native.log": "1dc58422754a22d4589a344a61d0604defd86652a59407402e0fee7d291dc05c",
+    "test-organic-video.log": "b19865a8909b26907af3a9ad9c45e47850cb7688e9f74c5a8f4a1563811a6d0e",
+    "test_animation_sequences.log": "be1f89d5e582ac364cf2384798c96a4e2db3b44b0ccc3b300cce3c248fb1092d",
+    "test_battle_layout.log": "58528a0c5f905b9999c3391b0438a40b995f50fdbe62462b56b9dfb080a1d6dc",
+    "test_customization_visuals.log": "25fdfffe8f0adc82d08ea942568623590e849ef274c4729de8db0b8d6c0f04ae",
+    "test_identity_integration.log": "fff51de55eac531e122fbfea35eb8ab8f6abce4c537cd9b3bde1805e936b6533",
+    "test_move_clock.log": "2cfb26997cb00a50e3713b248bda5153c82ed7c9ceb22828da98ff2e169bca07",
+    "test_online_ui.log": "bb8e6681e2edabb60805265092c2d97ec1d65e1633c9202de0136caa52639539",
+    "test_status_ko_presentation.log": "52c4c6e88fa036cb749d6cbadb6b6a5523ab3e46e0cdb9bc0d9cd5acf5cbb27f",
+    "visual-review.md": "2ae3013295cd0d7c6c87c8d3d12bedc8a31b801508e7944e442979fc6df4d862",
+    "visual-validation.json": "0f4829cba4b8afc5b26345641d4205dfcc13443985a8004a1f0e0595a126a834"
+  },
+  "manual_samples": "before/after are staged technical samples with a manual presentation clock",
+  "live_samples": "live/ captures actual League and Story events in Main with disposable test profiles; no forced battle poses",
+  "user_saves_accessed": false,
+  "remote_deployment_performed": false
+}

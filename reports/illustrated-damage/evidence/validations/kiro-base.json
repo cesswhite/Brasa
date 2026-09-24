@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        171,
+        194,
+        179,
+        254
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 27061
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        170,
+        193,
+        175,
+        255
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 27150
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        161,
+        199,
+        203,
+        249
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 27918
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        155,
+        198,
+        258,
+        250
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 28206
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        138,
+        184,
+        217,
+        264
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 31255
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        126,
+        225,
+        227,
+        223
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 26538
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        176,
+        157,
+        189,
+        291
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 28219
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        118,
+        344,
+        313,
+        104
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 22017
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "kiro",
+  "bank": "base",
+  "source_sha256": "f3284fcf1aa9d4b411f201debead02d73b5f4da23ffb6b350f8c14f7b7f1149f",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/kiro/base/kiro-base.png"
+}

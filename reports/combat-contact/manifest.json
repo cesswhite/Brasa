@@ -1,0 +1,296 @@
+{
+  "schema": 1,
+  "title": "Brasa · contacto Antes / Después",
+  "checks": {
+    "native_checks": 528,
+    "native_failures": 0,
+    "native_png_count": 128,
+    "matched_original_samples": 108,
+    "same_engine_times": true,
+    "same_actor_root_positions_and_scale": true,
+    "reduced_bounds_unchanged": true,
+    "reduced_samples": 16,
+    "fx_above_actor_siblings": true,
+    "actor_z_zero": true
+  },
+  "before_sources": {
+    "res://scripts/fighter_view.gd": "8af0a152ec90fbbffb5754789b5ebe26fd06ddb7883cf076b255660ef4189e6e",
+    "res://scripts/main.gd": "d8e8c6807c50f48c5fecabe307871ebdffa418706944223bc3940d4d3bf72463",
+    "res://scripts/ui/battle_layout.gd": "2907cd9dc9aa246303042bca96db072459cfa6e4a38734d6b38ef493f8f074b3",
+    "res://scripts/ui/battle_replay_panel.gd": "9a3df253569fd5217262f0c6975cbab9dfdadae1b6a112c59f9634ebf0f5de6c"
+  },
+  "after_sources": {
+    "res://scripts/fighter_view.gd": "2b677dab6b0f50b29f685e3f7a518be23b06d150ee605efb617aea0fbe314dee",
+    "res://scripts/main.gd": "19b925b9065dc100c472658aefacadf592f5bef9b11eb87e93f21531ddff2ada",
+    "res://scripts/ui/battle_layout.gd": "2907cd9dc9aa246303042bca96db072459cfa6e4a38734d6b38ef493f8f074b3",
+    "res://scripts/ui/battle_replay_panel.gd": "71116fa65325121b8c83d1b5fba9faf71ed532f0a344df9ed7d392b4344e3475"
+  },
+  "before_tool_sha256": "1c1e857a7a6566b67f50d2d11291e8769de5628061a92a467e0aa080dab77edf",
+  "after_tool_sha256": "076e97a3e571d7dcd9be5dcb7bfb9c498dbfc91dfa909322434bd8869e60b97b",
+  "harness_delta": "The 108 original samples are unchanged. AFTER adds contact/layer telemetry and 20 terminal KO samples; Main, replay and renderer remain production code. No game saves are loaded.",
+  "method": "Deterministic engine events advanced at 120Hz through production Main dispatch and FighterView; samples are continuous within each case. Opponent initiative is delayed only in this isolated engine fixture. No pose assignment, save loading, rewards, audio or network.",
+  "limits": [
+    "painted_gap_pixels measures whole opaque bounding-box separation, not anatomical fist-to-torso distance. Negative values mean overlap.",
+    "Reduced motion intentionally avoids the extra approach; its opaque bounds match BEFORE for all 16 original reduced-motion samples.",
+    "KO cases use real terminal events with initial rival HP=1 and a 1.8-second replay presentation tail.",
+    "Replay is populated directly from isolated snapshots: its history picker is empty and the example HP normalization differs from account history. Those fixture labels/bars are not a live-account regression.",
+    "The 108-frame after-v1 exploratory pass has no observations.json and is not the final gate."
+  ],
+  "screenshots": [
+    {
+      "phase": "before",
+      "file": "before/nima_mugo_quick-1360x880-normal-contact.png",
+      "original": "work/contact/before/nima_mugo_quick-1360x880-normal-contact.png",
+      "sha256": "faf9e0e06e42eee43ec5498793108fbcb1006fc7dd05b7ee5b5bf88d5a6c99e5",
+      "bytes": 1168153
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_mugo_quick-1360x880-normal-contact.png",
+      "original": "work/contact/after/nima_mugo_quick-1360x880-normal-contact.png",
+      "sha256": "8ebf26d38674254cede06ea0d6a9cb3acb719fbc18df00d9a1acb7d85da67155",
+      "bytes": 1166242
+    },
+    {
+      "phase": "before",
+      "file": "before/mugo_nima_heavy-1360x880-normal-contact.png",
+      "original": "work/contact/before/mugo_nima_heavy-1360x880-normal-contact.png",
+      "sha256": "c0881cb900543ebb6d9292573f4158e2c96ee93bfdef48d8b4ccb182d9b544dd",
+      "bytes": 1204776
+    },
+    {
+      "phase": "after",
+      "file": "after/mugo_nima_heavy-1360x880-normal-contact.png",
+      "original": "work/contact/after/mugo_nima_heavy-1360x880-normal-contact.png",
+      "sha256": "ee1a823854045a1bda6625ba47d0ff6c63de9bb1dbf595f61c99a5524c097471",
+      "bytes": 1206365
+    },
+    {
+      "phase": "before",
+      "file": "before/nima_tepa_quick-1360x880-normal-contact.png",
+      "original": "work/contact/before/nima_tepa_quick-1360x880-normal-contact.png",
+      "sha256": "a6f7c6928a839e3b2b9ca3bcb9c92bcc71f787228f79762d5f5fef5a9422922a",
+      "bytes": 1121507
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_tepa_quick-1360x880-normal-contact.png",
+      "original": "work/contact/after/nima_tepa_quick-1360x880-normal-contact.png",
+      "sha256": "25625949929405064e89bb881ee29fb2421df2af50e7c33412e6b9bbd32c140d",
+      "bytes": 1120196
+    },
+    {
+      "phase": "before",
+      "file": "before/mugo_nima_quick-1360x880-normal-contact.png",
+      "original": "work/contact/before/mugo_nima_quick-1360x880-normal-contact.png",
+      "sha256": "c7a84ed0b75ecdb72d5ddf8391a6ac0c65a60b15c4f3cc2d3c6ad662df1a1579",
+      "bytes": 1166512
+    },
+    {
+      "phase": "after",
+      "file": "after/mugo_nima_quick-1360x880-normal-contact.png",
+      "original": "work/contact/after/mugo_nima_quick-1360x880-normal-contact.png",
+      "sha256": "87c3c537fed84323ec938f6da0865a2c9938f2eecb875f09fff731d657d772af",
+      "bytes": 1165377
+    },
+    {
+      "phase": "before",
+      "file": "before/nima_mugo_heavy-1360x880-normal-contact.png",
+      "original": "work/contact/before/nima_mugo_heavy-1360x880-normal-contact.png",
+      "sha256": "c4947b2fe7ca9ecc95000f43af99538c657afcf0b80538c6a3536b0e0eddc9f0",
+      "bytes": 1208226
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_mugo_heavy-1360x880-normal-contact.png",
+      "original": "work/contact/after/nima_mugo_heavy-1360x880-normal-contact.png",
+      "sha256": "cb026ad852ba159ff91232f48b66a8304ec6159c03d95cde3cbc77fbbb15815d",
+      "bytes": 1204615
+    },
+    {
+      "phase": "before",
+      "file": "before/ascua_mugo_heavy-1360x880-normal-contact.png",
+      "original": "work/contact/before/ascua_mugo_heavy-1360x880-normal-contact.png",
+      "sha256": "902b835ebe7ac32f1bba3628a327163aad3190af46fce128af980fa17c048f94",
+      "bytes": 1223388
+    },
+    {
+      "phase": "after",
+      "file": "after/ascua_mugo_heavy-1360x880-normal-contact.png",
+      "original": "work/contact/after/ascua_mugo_heavy-1360x880-normal-contact.png",
+      "sha256": "21153ebe8bf1c47c7a314e1cbf49db3727090bcea37edb122e1102d33022f0d6",
+      "bytes": 1223670
+    },
+    {
+      "phase": "before",
+      "file": "before/nima_mugo_jump-1360x880-normal-contact.png",
+      "original": "work/contact/before/nima_mugo_jump-1360x880-normal-contact.png",
+      "sha256": "50a8f2ee1ab582adf8b726293003904895d9d2936753e0c3da544e67380bc875",
+      "bytes": 1152611
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_mugo_jump-1360x880-normal-contact.png",
+      "original": "work/contact/after/nima_mugo_jump-1360x880-normal-contact.png",
+      "sha256": "a01a4cbd7fc9d81a41f87ec3cf4c66adc94afd6deabfb0eb04dbc9a9fc72c432",
+      "bytes": 1147626
+    },
+    {
+      "phase": "before",
+      "file": "before/nima_mugo_quick-390x844-normal-contact.png",
+      "original": "work/contact/before/nima_mugo_quick-390x844-normal-contact.png",
+      "sha256": "b039a8d25975bc6b6591914c437807162a048a08d03a5693521139d83555dcaf",
+      "bytes": 350806
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_mugo_quick-390x844-normal-contact.png",
+      "original": "work/contact/after/nima_mugo_quick-390x844-normal-contact.png",
+      "sha256": "99383cd68901166cf3dd4b3cb4b4ed1c161f504d8c40cabe498d57eff024cc6e",
+      "bytes": 350010
+    },
+    {
+      "phase": "before",
+      "file": "before/mugo_nima_heavy-390x844-normal-contact.png",
+      "original": "work/contact/before/mugo_nima_heavy-390x844-normal-contact.png",
+      "sha256": "fbb6434fcc4f704cbe13516b97e9f1078006fb3fd2a31928527a4f29b92b1f4c",
+      "bytes": 359866
+    },
+    {
+      "phase": "after",
+      "file": "after/mugo_nima_heavy-390x844-normal-contact.png",
+      "original": "work/contact/after/mugo_nima_heavy-390x844-normal-contact.png",
+      "sha256": "b4f251a56bf6c17b8510f490238c53a8e657a4f6f3ec8f7643f70e8a1be8d873",
+      "bytes": 359928
+    },
+    {
+      "phase": "before",
+      "file": "before/nima_tepa_quick-390x844-normal-contact.png",
+      "original": "work/contact/before/nima_tepa_quick-390x844-normal-contact.png",
+      "sha256": "d266a62059271670e528cd5c1ae876669d61a4b077a6baac99c7880f61403d89",
+      "bytes": 339275
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_tepa_quick-390x844-normal-contact.png",
+      "original": "work/contact/after/nima_tepa_quick-390x844-normal-contact.png",
+      "sha256": "60a22dbddb0ab3d84c9550f47a5b40bf88d0a125649927eecdb8c511aee47962",
+      "bytes": 339018
+    },
+    {
+      "phase": "before",
+      "file": "before/nima_mugo_quick-1360x880-normal-recovery.png",
+      "original": "work/contact/before/nima_mugo_quick-1360x880-normal-recovery.png",
+      "sha256": "4c9b0bdb9bbee15ffb42868cf531caf7623ce79bbb58117b044a6992d3d95452",
+      "bytes": 1178841
+    },
+    {
+      "phase": "after",
+      "file": "after/nima_mugo_quick-1360x880-normal-recovery.png",
+      "original": "work/contact/after/nima_mugo_quick-1360x880-normal-recovery.png",
+      "sha256": "5365b46df70a358260b43de4e936cc8d7266f5f72faea0a0fb9e13ee9c0489f3",
+      "bytes": 1178926
+    },
+    {
+      "phase": "before",
+      "file": "before/mugo_nima_heavy-390x844-normal-recovery.png",
+      "original": "work/contact/before/mugo_nima_heavy-390x844-normal-recovery.png",
+      "sha256": "33150001048b97c7351c341782dacc59dfe8a650a3c059eb5bed692634c280dd",
+      "bytes": 355573
+    },
+    {
+      "phase": "after",
+      "file": "after/mugo_nima_heavy-390x844-normal-recovery.png",
+      "original": "work/contact/after/mugo_nima_heavy-390x844-normal-recovery.png",
+      "sha256": "c8ba9a465f082682cae3c62ecc691579172961aec4f587dc530af30b272677a3",
+      "bytes": 355612
+    },
+    {
+      "phase": "before",
+      "file": "before/replay-mugo_nima_heavy-1360x880-contact.png",
+      "original": "work/contact/before/replay-mugo_nima_heavy-1360x880-contact.png",
+      "sha256": "b24df301c40f4e34226100d6994a114b42ef94d62f212e0f19175891dcbd8a82",
+      "bytes": 1260821
+    },
+    {
+      "phase": "after",
+      "file": "after/replay-mugo_nima_heavy-1360x880-contact.png",
+      "original": "work/contact/after/replay-mugo_nima_heavy-1360x880-contact.png",
+      "sha256": "75613036fcb9df1f3633cba7e2bb24838d45523cafeeaa2eb80b7e72eaa3c3ae",
+      "bytes": 1259266
+    },
+    {
+      "phase": "before",
+      "file": "before/replay-nima_mugo_quick-390x844-contact.png",
+      "original": "work/contact/before/replay-nima_mugo_quick-390x844-contact.png",
+      "sha256": "9c6a66d921910c8a5a7d664d3a98222859c03be8411934d9b0720413b4a2f3ca",
+      "bytes": 363675
+    },
+    {
+      "phase": "after",
+      "file": "after/replay-nima_mugo_quick-390x844-contact.png",
+      "original": "work/contact/after/replay-nima_mugo_quick-390x844-contact.png",
+      "sha256": "857e6f2b6af27ee480c17b21215b0bd276bbf622d727d05d10a5b8068a4e3bd2",
+      "bytes": 362452
+    },
+    {
+      "phase": "before",
+      "file": "before/mugo_nima_heavy-390x844-reduced-contact.png",
+      "original": "work/contact/before/mugo_nima_heavy-390x844-reduced-contact.png",
+      "sha256": "998a6206e213f14bbf004fc6a15ce6d038261fd467316d460f02587ada3115b4",
+      "bytes": 358749
+    },
+    {
+      "phase": "after",
+      "file": "after/mugo_nima_heavy-390x844-reduced-contact.png",
+      "original": "work/contact/after/mugo_nima_heavy-390x844-reduced-contact.png",
+      "sha256": "998a6206e213f14bbf004fc6a15ce6d038261fd467316d460f02587ada3115b4",
+      "bytes": 358749
+    },
+    {
+      "phase": "after",
+      "file": "after/ko-nima_mugo_quick-390x844-contact.png",
+      "original": "work/contact/after/ko-nima_mugo_quick-390x844-contact.png",
+      "sha256": "ea15f82f922a1e2747cf89f67599676350253c2617372e15e53f1f34a72fb45b",
+      "bytes": 360388
+    },
+    {
+      "phase": "after",
+      "file": "after/ko-nima_mugo_quick-390x844-settled.png",
+      "original": "work/contact/after/ko-nima_mugo_quick-390x844-settled.png",
+      "sha256": "f7b31e6598353e7fef6c907426725a042937225457e0ff9fb3c0f5ab947fbdd1",
+      "bytes": 356890
+    },
+    {
+      "phase": "after",
+      "file": "after/ko-mugo_nima_heavy-390x844-contact.png",
+      "original": "work/contact/after/ko-mugo_nima_heavy-390x844-contact.png",
+      "sha256": "1a7ada761857eb3c089eff84f92a1d73729c9d3f16f8dae03b8ce95cdc4e6522",
+      "bytes": 364744
+    },
+    {
+      "phase": "after",
+      "file": "after/ko-mugo_nima_heavy-390x844-settled.png",
+      "original": "work/contact/after/ko-mugo_nima_heavy-390x844-settled.png",
+      "sha256": "f18e4277e6419e396ca8237e35fd27d2616b4296df7634eaab0d39da34cd7e78",
+      "bytes": 362129
+    }
+  ],
+  "montages": [
+    {
+      "file": "desktop-comparison.png",
+      "sha256": "877561cae6aefb05dae057932dffbb3ae6ce38546cdf3353de513f7b817eb20c",
+      "operation": "Native screenshot comparison only; same crop/scale per before/after pair. No art generation or retouching."
+    },
+    {
+      "file": "phone-comparison.png",
+      "sha256": "547a2791d39a0d16f54331444137479c6d406ca708a87a66a02fddebe365f8f5",
+      "operation": "Native screenshot comparison only; same crop/scale per before/after pair. No art generation or retouching."
+    },
+    {
+      "file": "contact-strip.png",
+      "sha256": "a8ee6237c68a35176f667bce2a5eabd84d5e19a86b1e355880b535a64c075555",
+      "operation": "First two rows of desktop comparison, preserving identical crop/scale across each pair."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "model_selector": "not exposed by tool",
+  "prompt": "Create a TRANSPARENT PNG sprite sheet of eight hand-painted fantasy combat effects for a 2D fighting game. The output must have a transparent alpha channel, like isolated sticker cutouts. Square canvas. Exactly TWO COLUMNS by FOUR ROWS, eight isolated sprites with clear empty gaps between them. No text. No labels. No characters. No scenery. No floor. Do not draw a checkerboard. Warm gold, cream, copper, ochre and a little muted teal; illustrated paint texture, not photorealistic. Row 1: small punch spark on left, heavy impact burst on right. Row 2: critical starburst on left, small earth dust puff on right. Row 3: horizontal dash streak on left, flat landing dust ring on right. Row 4: hollow energy gathering halo on left, hollow transformation ember corona on right. Every effect fully visible and separated. Background transparent, including inside the hollow rings. Clean export-ready alpha edges for direct game compositing.",
+  "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-8af2d032-84de-4d1e-a497-4089c9e548f4.png",
+  "destination": "outputs/Brasa/assets/fx/combat-v1.png",
+  "source_sha256": "749d197f06ebc91dc4a13eb3f8fa4e8b1990a79807e20cf536c592c538b8b868",
+  "sha256": "749d197f06ebc91dc4a13eb3f8fa4e8b1990a79807e20cf536c592c538b8b868",
+  "pixel_edits": false,
+  "mode": "RGBA",
+  "size": [
+    1254,
+    1254
+  ],
+  "alpha0_fraction": 0.5834357170292703,
+  "registry": "outputs/Brasa/data/combat_fx.json"
+}

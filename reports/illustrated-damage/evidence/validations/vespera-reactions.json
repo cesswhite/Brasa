@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        147,
+        176,
+        185,
+        273
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 24383
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        148,
+        187,
+        185,
+        263
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24942
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        150,
+        193,
+        203,
+        257
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26587
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        167,
+        186,
+        212,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26744
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        112,
+        193,
+        254,
+        256
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29367
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        91,
+        206,
+        316,
+        206
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28551
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        101,
+        334,
+        297,
+        114
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23270
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        117,
+        248,
+        273,
+        200
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27654
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        131,
+        186,
+        236,
+        263
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 28466
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        111,
+        178,
+        232,
+        271
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30087
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        140,
+        183,
+        193,
+        266
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27092
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        142,
+        162,
+        203,
+        287
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 29247
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        134,
+        145,
+        217,
+        305
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31247
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        118,
+        156,
+        238,
+        293
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 33764
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        122,
+        150,
+        242,
+        300
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 35757
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        128,
+        146,
+        222,
+        303
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 30973
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "vespera",
+  "bank": "reactions",
+  "source_sha256": "42d1c89d0bc1169047135993e95b8c2204e3c8ed75dbaec53ff4f1b0d112647a",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/vespera/reactions/vespera-reactions.png"
+}

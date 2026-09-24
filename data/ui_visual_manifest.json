@@ -1,0 +1,1051 @@
+{
+  "version": 2,
+  "style_bible": {
+    "rendering": "Painterly hand-painted fantasy matching the Brasa sprite cast",
+    "materials": [
+      "weathered bronze",
+      "dark leather",
+      "stone",
+      "woven cloth",
+      "warm lantern light"
+    ],
+    "text_in_assets": false,
+    "max_props": 3,
+    "layer_order": [
+      "environment",
+      "props",
+      "readability_veil",
+      "native_controls",
+      "native_text",
+      "character",
+      "dialog"
+    ],
+    "notes": "Backgrounds stay opaque; native gradients support readability. Only current environment and shared atlases are retained."
+  },
+  "assets": {
+    "journey": {
+      "path": "res://assets/ui/story/journey-v1.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "storm": {
+      "path": "res://assets/ui/story/storm-v1.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "workshop": {
+      "path": "res://assets/ui/workshop/workshop-v1.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "camp": {
+      "path": "res://assets/ui/companions/camp-v1.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "archive": {
+      "path": "res://assets/ui/legacy/archive-v1.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "surfaces": {
+      "path": "res://assets/ui/shared/surfaces-v1.png",
+      "shared": true,
+      "kind": "atlas",
+      "runtime_scale": 0.35
+    },
+    "props": {
+      "path": "res://assets/ui/shared/props-v1.png",
+      "shared": true,
+      "kind": "atlas"
+    },
+    "arena": {
+      "path": "res://assets/arena-faroles-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "arena_competitive": {
+      "path": "res://assets/arena-tormenta-v3.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_nima": {
+      "path": "res://assets/ui/refuges/nima-v1.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_luma": {
+      "path": "res://assets/ui/refuges/luma-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_mugo": {
+      "path": "res://assets/ui/refuges/mugo-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_sira": {
+      "path": "res://assets/ui/refuges/sira-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_iria": {
+      "path": "res://assets/ui/refuges/iria-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_duna": {
+      "path": "res://assets/ui/refuges/duna-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_kiro": {
+      "path": "res://assets/ui/refuges/kiro-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_neris": {
+      "path": "res://assets/ui/refuges/neris-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_taro": {
+      "path": "res://assets/ui/refuges/taro-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_balam": {
+      "path": "res://assets/ui/refuges/balam-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_xuna": {
+      "path": "res://assets/ui/refuges/xuna-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_tepa": {
+      "path": "res://assets/ui/refuges/tepa-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_copal": {
+      "path": "res://assets/ui/refuges/copal-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_onix": {
+      "path": "res://assets/ui/refuges/onix-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_bruma": {
+      "path": "res://assets/ui/refuges/bruma-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_taro_roque": {
+      "path": "res://assets/ui/refuges/taro_roque-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_taro_sabio": {
+      "path": "res://assets/ui/refuges/taro_sabio-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_duna_cora": {
+      "path": "res://assets/ui/refuges/duna_cora-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_duna_pedernal": {
+      "path": "res://assets/ui/refuges/duna_pedernal-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_bruma_ambar": {
+      "path": "res://assets/ui/refuges/bruma_ambar-v2.png",
+      "shared": false,
+      "kind": "background"
+    },
+    "refuge_bruma_nieve": {
+      "path": "res://assets/ui/refuges/bruma_nieve-v2.png",
+      "shared": false,
+      "kind": "background"
+    }
+  },
+  "contexts": {
+    "route_journey": {
+      "id": "route_journey",
+      "background": "journey",
+      "accent": "efb66f",
+      "shade": "0b2026",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "route_storm": {
+      "id": "route_storm",
+      "background": "storm",
+      "accent": "a4d5e6",
+      "shade": "101e2c",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "route_late": {
+      "id": "route_late",
+      "background": "storm",
+      "accent": "dfc891",
+      "shade": "101e26",
+      "background_tint": "e8d7c0",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "route_boss": {
+      "id": "route_boss",
+      "background": "storm",
+      "accent": "edb18c",
+      "shade": "1c1421",
+      "background_tint": "f2d6d0",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "workshop": {
+      "id": "workshop",
+      "background": "workshop",
+      "accent": "ecc18d",
+      "shade": "221a19",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "moves": {
+      "id": "moves",
+      "background": "workshop",
+      "accent": "cbb398",
+      "shade": "181b23",
+      "background_tint": "d5e2ef",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "camp": {
+      "id": "camp",
+      "background": "camp",
+      "accent": "f0bc84",
+      "shade": "211c1a",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "legacy": {
+      "id": "legacy",
+      "background": "archive",
+      "accent": "decdb0",
+      "shade": "171d28",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "route_boss_journey": {
+      "id": "route_boss_journey",
+      "background": "journey",
+      "accent": "efb780",
+      "shade": "281b17",
+      "background_tint": "ffe4c3",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "route_boss_storm": {
+      "id": "route_boss_storm",
+      "background": "storm",
+      "accent": "afcedf",
+      "shade": "151b2f",
+      "background_tint": "e5def4",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "route_boss_late": {
+      "id": "route_boss_late",
+      "background": "storm",
+      "accent": "edb39b",
+      "shade": "251422",
+      "background_tint": "f4c8c1",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "main_menu": {
+      "id": "main_menu",
+      "background": "camp",
+      "accent": "f0bc84",
+      "shade": "211c1a",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "arena": {
+      "id": "arena",
+      "background": "arena",
+      "accent": "efb66f",
+      "shade": "0b2026",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "online_arena": {
+      "id": "online_arena",
+      "background": "arena_competitive",
+      "accent": "a4d5e6",
+      "shade": "101e2c",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "creation": {
+      "id": "creation",
+      "background": "workshop",
+      "accent": "ecc18d",
+      "shade": "221a19",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "fighter": {
+      "id": "fighter",
+      "background": "camp",
+      "accent": "f0bc84",
+      "shade": "211c1a",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    },
+    "settings": {
+      "id": "settings",
+      "background": "camp",
+      "accent": "f0bc84",
+      "shade": "211c1a",
+      "background_tint": "ffffff",
+      "primary_button_style": "primary",
+      "secondary_button_style": "secondary",
+      "panel_style": "panel",
+      "boss_panel_style": "boss_panel",
+      "chapter_badge": "encounter_badge",
+      "elite_badge": "elite_badge",
+      "separator": "separator",
+      "overlay": "readability_veil"
+    }
+  },
+  "surface_aliases": {
+    "navigation": "navigation_strip",
+    "navigation_active": "navigation_active_strip",
+    "danger": "secondary",
+    "reward": "panel",
+    "dialog": "panel",
+    "tooltip": "panel"
+  },
+  "surfaces": {
+    "primary": {
+      "asset": "surfaces",
+      "region": [
+        0.04005524861878453,
+        0.08011049723756906,
+        0.4544198895027624,
+        0.12246777163904236
+      ],
+      "slice": [
+        24,
+        8,
+        24,
+        8
+      ],
+      "padding": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "source_rect": [
+        58,
+        87,
+        658,
+        133
+      ]
+    },
+    "secondary": {
+      "asset": "surfaces",
+      "region": [
+        0.5193370165745856,
+        0.07826887661141804,
+        0.4468232044198895,
+        0.12430939226519337
+      ],
+      "slice": [
+        24,
+        8,
+        24,
+        8
+      ],
+      "padding": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "source_rect": [
+        752,
+        85,
+        647,
+        135
+      ]
+    },
+    "panel": {
+      "asset": "surfaces",
+      "region": [
+        0.03729281767955801,
+        0.24033149171270718,
+        0.4544198895027624,
+        0.20994475138121546
+      ],
+      "slice": [
+        26,
+        22,
+        26,
+        22
+      ],
+      "padding": [
+        18,
+        16,
+        18,
+        16
+      ],
+      "source_rect": [
+        54,
+        261,
+        658,
+        228
+      ]
+    },
+    "boss_panel": {
+      "asset": "surfaces",
+      "region": [
+        0.5200276243093923,
+        0.24033149171270718,
+        0.4509668508287293,
+        0.20994475138121546
+      ],
+      "slice": [
+        26,
+        22,
+        26,
+        22
+      ],
+      "padding": [
+        18,
+        16,
+        18,
+        16
+      ],
+      "source_rect": [
+        753,
+        261,
+        653,
+        228
+      ]
+    },
+    "encounter_badge": {
+      "asset": "surfaces",
+      "region": [
+        0.15538674033149172,
+        0.48250460405156537,
+        0.23204419889502761,
+        0.3011049723756906
+      ],
+      "slice": [
+        26,
+        22,
+        26,
+        22
+      ],
+      "padding": [
+        18,
+        16,
+        18,
+        16
+      ],
+      "source_rect": [
+        225,
+        524,
+        336,
+        327
+      ]
+    },
+    "boss_badge": {
+      "asset": "surfaces",
+      "region": [
+        0.6277624309392266,
+        0.4521178637200737,
+        0.23480662983425415,
+        0.3259668508287293
+      ],
+      "slice": [
+        26,
+        22,
+        26,
+        22
+      ],
+      "padding": [
+        18,
+        16,
+        18,
+        16
+      ],
+      "source_rect": [
+        909,
+        491,
+        340,
+        354
+      ]
+    },
+    "separator": {
+      "asset": "surfaces",
+      "region": [
+        0.04005524861878453,
+        0.848987108655617,
+        0.4654696132596685,
+        0.06629834254143646
+      ],
+      "slice": [
+        26,
+        22,
+        26,
+        22
+      ],
+      "padding": [
+        18,
+        16,
+        18,
+        16
+      ],
+      "source_rect": [
+        58,
+        922,
+        674,
+        72
+      ]
+    },
+    "elite_badge": {
+      "asset": "surfaces",
+      "region": [
+        0.6678176795580111,
+        0.7799263351749539,
+        0.15400552486187846,
+        0.19889502762430938
+      ],
+      "slice": [
+        26,
+        22,
+        26,
+        22
+      ],
+      "padding": [
+        18,
+        16,
+        18,
+        16
+      ],
+      "source_rect": [
+        967,
+        847,
+        223,
+        216
+      ]
+    },
+    "navigation_strip": {
+      "asset": "surfaces",
+      "region": [
+        0.5732044198895028,
+        0.07826887661141804,
+        0.33908839779005523,
+        0.12430939226519337
+      ],
+      "source_rect": [
+        830,
+        85,
+        491,
+        135
+      ],
+      "slice": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "padding": [
+        3,
+        8,
+        3,
+        8
+      ]
+    },
+    "navigation_active_strip": {
+      "asset": "surfaces",
+      "region": [
+        0.09116022099447514,
+        0.08011049723756906,
+        0.35220994475138123,
+        0.12246777163904236
+      ],
+      "source_rect": [
+        132,
+        87,
+        510,
+        133
+      ],
+      "slice": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "padding": [
+        3,
+        8,
+        3,
+        8
+      ]
+    }
+  },
+  "states": {
+    "normal": "ffffff",
+    "hover": "fff3db",
+    "pressed": "b9a789",
+    "disabled": "717878"
+  },
+  "anchors": {
+    "lower_left": {
+      "position": [
+        0.03,
+        0.91
+      ],
+      "pivot": [
+        0,
+        1
+      ]
+    },
+    "lower_right": {
+      "position": [
+        0.96,
+        0.91
+      ],
+      "pivot": [
+        1,
+        1
+      ]
+    },
+    "upper_right": {
+      "position": [
+        0.97,
+        0.2
+      ],
+      "pivot": [
+        1,
+        0
+      ]
+    }
+  },
+  "props": [
+    {
+      "id": "tepa_cloth",
+      "asset": "props",
+      "region": [
+        0.025390625,
+        0.034505208333333336,
+        0.45703125,
+        0.2897135416666667
+      ],
+      "eligible_screens": [
+        "workshop",
+        "moves",
+        "camp",
+        "main_menu",
+        "creation",
+        "fighter"
+      ],
+      "condition": {
+        "field": "body_style_id",
+        "value": "tepa"
+      },
+      "priority": 80,
+      "anchor": "lower_left",
+      "size": [
+        144,
+        136
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        26,
+        53,
+        468,
+        445
+      ]
+    },
+    {
+      "id": "balam_bandages",
+      "asset": "props",
+      "region": [
+        0.5537109375,
+        0.07682291666666667,
+        0.4111328125,
+        0.232421875
+      ],
+      "eligible_screens": [
+        "workshop",
+        "moves",
+        "camp",
+        "main_menu",
+        "creation",
+        "fighter"
+      ],
+      "condition": {
+        "field": "body_style_id",
+        "value": "balam"
+      },
+      "priority": 80,
+      "anchor": "lower_left",
+      "size": [
+        148,
+        128
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        567,
+        118,
+        421,
+        357
+      ]
+    },
+    {
+      "id": "ascua_brazier",
+      "asset": "props",
+      "region": [
+        0.0419921875,
+        0.3587239583333333,
+        0.4521484375,
+        0.251953125
+      ],
+      "eligible_screens": [
+        "route_journey",
+        "workshop",
+        "camp",
+        "legacy",
+        "route_boss_journey",
+        "main_menu",
+        "arena",
+        "online_arena",
+        "fighter"
+      ],
+      "condition": {
+        "field": "story_cleared",
+        "value": 8
+      },
+      "priority": 70,
+      "anchor": "lower_right",
+      "size": [
+        142,
+        168
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        43,
+        551,
+        463,
+        387
+      ]
+    },
+    {
+      "id": "storm_relic",
+      "asset": "props",
+      "region": [
+        0.61328125,
+        0.3372395833333333,
+        0.2802734375,
+        0.2734375
+      ],
+      "eligible_screens": [
+        "route_storm",
+        "route_late",
+        "route_boss",
+        "legacy",
+        "route_boss_journey",
+        "route_boss_storm",
+        "route_boss_late",
+        "main_menu",
+        "online_arena"
+      ],
+      "condition": {
+        "all": [
+          {
+            "field": "story_cleared",
+            "value": 16
+          },
+          {
+            "field": "cosmetic_owned",
+            "value": "palette:luna"
+          }
+        ]
+      },
+      "priority": 85,
+      "anchor": "lower_right",
+      "size": [
+        134,
+        162
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        628,
+        518,
+        287,
+        420
+      ]
+    },
+    {
+      "id": "travel_pack",
+      "asset": "props",
+      "region": [
+        0.0263671875,
+        0.62890625,
+        0.484375,
+        0.3372395833333333
+      ],
+      "eligible_screens": [
+        "route_journey",
+        "route_storm",
+        "route_late",
+        "route_boss",
+        "workshop",
+        "moves",
+        "camp",
+        "legacy",
+        "route_boss_journey",
+        "route_boss_storm",
+        "route_boss_late",
+        "main_menu",
+        "creation",
+        "fighter",
+        "settings"
+      ],
+      "condition": {
+        "any": [
+          {
+            "field": "story_cleared",
+            "value": 1
+          },
+          {
+            "field": "cosmetic_equipped",
+            "slot": "palette_id",
+            "value": "jade"
+          }
+        ]
+      },
+      "priority": 25,
+      "anchor": "lower_left",
+      "size": [
+        172,
+        148
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        27,
+        966,
+        496,
+        518
+      ]
+    },
+    {
+      "id": "arena_medallion",
+      "asset": "props",
+      "region": [
+        0.5849609375,
+        0.6276041666666666,
+        0.3759765625,
+        0.326171875
+      ],
+      "eligible_screens": [
+        "workshop",
+        "camp",
+        "legacy",
+        "main_menu",
+        "arena",
+        "online_arena",
+        "fighter"
+      ],
+      "condition": {
+        "field": "arena_wins",
+        "value": 10
+      },
+      "priority": 75,
+      "anchor": "upper_right",
+      "size": [
+        98,
+        122
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        599,
+        964,
+        385,
+        501
+      ]
+    },
+    {
+      "id": "equipped_farol",
+      "asset": "props",
+      "region": [
+        0.0419921875,
+        0.3587239583333333,
+        0.4521484375,
+        0.251953125
+      ],
+      "eligible_screens": [
+        "route_journey",
+        "route_storm",
+        "camp",
+        "main_menu",
+        "arena",
+        "online_arena",
+        "creation",
+        "fighter"
+      ],
+      "condition": {
+        "all": [
+          {
+            "field": "cosmetic_owned",
+            "value": "aura:farol"
+          },
+          {
+            "field": "cosmetic_equipped",
+            "slot": "aura_id",
+            "value": "farol"
+          }
+        ]
+      },
+      "priority": 90,
+      "anchor": "lower_right",
+      "size": [
+        112,
+        134
+      ],
+      "variation": "fixed",
+      "min_width": 0,
+      "source_rect": [
+        43,
+        551,
+        463,
+        387
+      ]
+    }
+  ]
+}

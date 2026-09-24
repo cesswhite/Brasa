@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        140,
+        172,
+        232,
+        276
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29957
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        140,
+        172,
+        232,
+        276
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29984
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        141,
+        186,
+        238,
+        262
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32384
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        132,
+        182,
+        295,
+        266
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 30613
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        137,
+        175,
+        239,
+        273
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27976
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        109,
+        228,
+        278,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27530
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        142,
+        149,
+        228,
+        299
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30063
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        91,
+        349,
+        332,
+        99
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 24750
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "bruma_nieve",
+  "bank": "base",
+  "source_sha256": "4bb4dd74fd78dc25e59034c00c4012ae83eded0269f61d80daf762a411d6852c",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/bruma_nieve/base/bruma_nieve-base.png"
+}

@@ -1,0 +1,48 @@
+{
+  "description": "Pre-migration stage rectangles measured from original visual audit source. Actor normalization has since changed independently and is intentionally excluded.",
+  "source_sha256": "d41e9397c3459660091cbad5f2fb0751fa7f3e644ee7f16c2b5f6c7c47f191dc",
+  "sizes": {
+    "1224x792": [
+      32.0,
+      192.0,
+      1160.0,
+      478.0
+    ],
+    "1360x880": [
+      32.0,
+      192.0,
+      1296.0,
+      566.0
+    ],
+    "1920x1080": [
+      32.0,
+      192.0,
+      1856.0,
+      766.0
+    ],
+    "390x844": [
+      16.0,
+      192.0,
+      358.0,
+      530.0
+    ],
+    "430x932": [
+      16.0,
+      192.0,
+      398.0,
+      618.0
+    ],
+    "768x1024": [
+      32.0,
+      192.0,
+      704.0,
+      710.0
+    ],
+    "844x390": [
+      32.0,
+      166.0,
+      780.0,
+      102.0
+    ]
+  }
+}

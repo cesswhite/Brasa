@@ -1,0 +1,627 @@
+{
+  "checks": 276,
+  "failures": 0,
+  "banks": [
+    {
+      "bank": "ascua-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "prior_rgba_byte_identical": true
+      }
+    },
+    {
+      "bank": "ascua-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "prior_rgba_byte_identical": true
+      }
+    },
+    {
+      "bank": "ascua-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "prior_rgba_byte_identical": true
+      }
+    },
+    {
+      "bank": "balam-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "balam-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "balam-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma_ambar-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma_ambar-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma_ambar-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma_nieve-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma_nieve-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "bruma_nieve-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "copal-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "copal-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "copal-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna_cora-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna_cora-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna_cora-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna_pedernal-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna_pedernal-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "duna_pedernal-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "iria-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "iria-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "iria-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "kiro-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "kiro-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "kiro-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "luma-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "luma-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "luma-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "mugo-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "mugo-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "mugo-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "neris-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "neris-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "neris-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "nima-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "nima-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "nima-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "onix-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "onix-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "onix-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "sira-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "sira-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "sira-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro_roque-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro_roque-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro_roque-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro_sabio-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro_sabio-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "taro_sabio-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "tepa-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "tepa-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "tepa-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "vespera-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "vespera-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "vespera-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "xuna-base",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "xuna-movement",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    },
+    {
+      "bank": "xuna-reactions",
+      "checks": {
+        "source": true,
+        "production_png": true,
+        "clean_json": true,
+        "clean_png": true
+      }
+    }
+  ]
+}

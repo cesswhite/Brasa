@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "body_id": "ascua",
+  "canonical": "outputs/Brasa/assets/sprites/ascua-v3.png",
+  "tool": "built-in image_gen",
+  "pixel_edits": false,
+  "assets": [
+    {
+      "id": "ascua-movement-v1",
+      "bank": "movement",
+      "destination": "outputs/Brasa/assets/sprites/sequences/ascua-movement-v1.png",
+      "frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED ASCÚA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve his exact thick sweeping horn geometry, reptilian head/snout, amber eyes, black charcoal scales with fine ember seams, amber diamond chest core, short worn golden-ochre shoulder cape, ornate bronze forearm bracers, belt and long dark/ochre tabard, thick long tapering tail, clawed animal hands and feet, powerful adult body proportions. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, horns, fists, feet and tail fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 8 percent of every cell; each character at the SAME skeletal size/scale, standing height about70 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) guard_shift: canonical guard, weight subtly shifted to rear leg; (2) step_back: one short backward step, guard up, rear foot moving left; (3) charge_crouch: low deliberate crouch, hips back, coiled legs, both fists tight; (4) heavy_windup: large grounded preparation, torso rotates away from opponent, striking elbow pulled back, opposite fist guarding head.\nROW2: (5) quick_windup: compact short fist retraction near ribs; (6) quick_extend: short fast rightward punch, natural bent elbow nearly extended, wrist aligned, opposite fist guards; (7) follow_through: striking arm continuing slightly forward across a rotated torso after punch; (8) recovery: fist withdrawing toward guard, hips returning balanced.\nROW3: (9) dash_lean: strong forward lean and rear leg coiled, both feet visible; (10) dash_stride: one long low forward stride, rear leg extended naturally, tail balancing, guard maintained; (11) jump_start: heel lift and leg extension beginning takeoff; (12) jump_apex: clearly airborne with knees tucked, fist prepared, same body size, feet above virtual floor.\nROW4: (13) jump_strike: airborne punch to screen right, torso turned and one knee raised, coherent arm anatomy; (14) jump_fall: descent preparation, legs unfolding toward floor, fists returning; (15) landing: knees bent absorbing landing, torso low, hands balanced; (16) guard_settle: return to exact canonical standing guard, no redundant attack pose. Meaningful readable transitions; retain all canonical costume and silhouette features in EVERY frame.",
+      "attempts": [
+        {
+          "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED ASCÚA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve his exact thick sweeping horn geometry, reptilian head/snout, amber eyes, black charcoal scales with fine ember seams, amber diamond chest core, short worn golden-ochre shoulder cape, ornate bronze forearm bracers, belt and long dark/ochre tabard, thick long tapering tail, clawed animal hands and feet, powerful adult body proportions. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, horns, fists, feet and tail fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 8 percent of every cell; each character at the SAME skeletal size/scale, standing height about70 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) guard_shift: canonical guard, weight subtly shifted to rear leg; (2) step_back: one short backward step, guard up, rear foot moving left; (3) charge_crouch: low deliberate crouch, hips back, coiled legs, both fists tight; (4) heavy_windup: large grounded preparation, torso rotates away from opponent, striking elbow pulled back, opposite fist guarding head.\nROW2: (5) quick_windup: compact short fist retraction near ribs; (6) quick_extend: short fast rightward punch, natural bent elbow nearly extended, wrist aligned, opposite fist guards; (7) follow_through: striking arm continuing slightly forward across a rotated torso after punch; (8) recovery: fist withdrawing toward guard, hips returning balanced.\nROW3: (9) dash_lean: strong forward lean and rear leg coiled, both feet visible; (10) dash_stride: one long low forward stride, rear leg extended naturally, tail balancing, guard maintained; (11) jump_start: heel lift and leg extension beginning takeoff; (12) jump_apex: clearly airborne with knees tucked, fist prepared, same body size, feet above virtual floor.\nROW4: (13) jump_strike: airborne punch to screen right, torso turned and one knee raised, coherent arm anatomy; (14) jump_fall: descent preparation, legs unfolding toward floor, fists returning; (15) landing: knees bent absorbing landing, torso low, hands balanced; (16) guard_settle: return to exact canonical standing guard, no redundant attack pose. Meaningful readable transitions; retain all canonical costume and silhouette features in EVERY frame.",
+          "reference": "outputs/Brasa/assets/sprites/ascua-v3.png",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-d038483c-68d4-455f-b54e-7f26ad39ec75.png",
+          "status": "rejected_missing_alpha",
+          "sha256": "64948999fa6da0c5e613ef874aa5fcaef145ea23143a2e832fee0bbc582a4a34",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT the supplied ASCÚA movement sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, horn shapes, tail, clothing, chest core, and every pose unchanged. Preserve the 4 by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-5cd8bed3-04ab-4cf9-b3a4-819ec9cd5bce.png",
+          "reference": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-d038483c-68d4-455f-b54e-7f26ad39ec75.png",
+          "status": "rejected_intersecting_frame_bounds",
+          "sha256": "d25bda619415dd249af5b11b50390d47c605812f5bb2fdaade8300f7128924bb",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "prompt": "Use case: identity-preserve / precise layout correction. Image1 is the approved 16-frame ASCÚA movement atlas to correct; Image2 is his canonical identity reference only. Correct ONLY the atlas spacing of Image1. Preserve its exact sixteen poses in the same row-major4x4 order, the exact character design, horns, tail, body proportions, costume, chest diamond, ornate bracers, and original painted rendering. Uniformly reduce EVERY ONE of the sixteen complete figures by about14 percent relative to its current size. Recenter each reduced figure inside its own equal quarter-width/quarter-height cell, preserving a consistent floor baseline and fixed skeletal scale. No pose may extend into any neighbor's cell. Require a visible transparent gutter of at least10 percent of cell width on BOTH left and right sides, and at least8 percent cell height above/below each entire silhouette including horns, fist and tail. In particular the extended fist of row2column3 must not reach the tail of row2column4, and the horn of row3column4 must not reach the feet in row2column4. Preserve dynamic pose anatomy; do not shorten limbs, tails or horns to make them fit. Grounded poses stay on the same virtual floor; jumping figures keep their lifted feet. Keep all sixteen poses, no omissions, no duplicate frames, no camera/lighting/design changes. Return a PNG with a TRUE TRANSPARENT BACKGROUND, actual RGBA alpha, no white, black or checkerboard painted background. No text/gridlines/shadows/FX or new elements. This is a spacing correction for a game atlas, not a redesign.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-fc30b729-3a36-453f-b50b-d8699ab0bb23.png",
+          "references": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-5cd8bed3-04ab-4cf9-b3a4-819ec9cd5bce.png",
+            "outputs/Brasa/assets/sprites/ascua-v3.png"
+          ],
+          "status": "rejected_missing_alpha_spacing_fixed",
+          "sha256": "b1519bed16d52fd4464b7cf8c14e5836c082108c4632cd5910185c180630263b",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT the supplied ASCÚA movement sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, horn shapes, tail, clothing, chest core, and every pose unchanged. Preserve the 4 by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-97f8ed84-ffc5-4f06-9636-687c53f0d2b4.png",
+          "reference": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-fc30b729-3a36-453f-b50b-d8699ab0bb23.png",
+          "status": "selected_rgba",
+          "sha256": "631a6b9e9755ab291134f541fd5977d1d6d8ef43d48e83cbfb120c888cf0cfe6",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ]
+        }
+      ],
+      "final_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-97f8ed84-ffc5-4f06-9636-687c53f0d2b4.png",
+      "reference_height": 237,
+      "status": "selected_native_qa",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/ascua-movement-v1.json",
+      "native_preview": "work/animation/ascua-movement-native.png",
+      "sha256": "631a6b9e9755ab291134f541fd5977d1d6d8ef43d48e83cbfb120c888cf0cfe6",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha0_fraction": 0.6388170295246598,
+      "metadata_sha256": "bf1fcf416dbb99e3e2d5af89205922011027a71795d159294d36f94445c1b69e",
+      "file_bytes": 1416129,
+      "rgba_bytes": 6290064
+    },
+    {
+      "id": "ascua-reactions-v1",
+      "bank": "reactions",
+      "destination": "outputs/Brasa/assets/sprites/sequences/ascua-reactions-v1.png",
+      "frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED ASCÚA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve his exact thick sweeping horn geometry, reptilian head/snout, amber eyes, black charcoal scales with fine ember seams, amber diamond chest core, short worn golden-ochre shoulder cape, ornate bronze forearm bracers, belt and long dark/ochre tabard, thick long tapering tail, clawed animal hands and feet, powerful adult body proportions. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, horns, fists, feet and tail fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 8 percent of every cell; each character at the SAME skeletal size/scale, standing height about70 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) light_hit: small sharp backward shoulder recoil, guard remains near face; (2) body_hit: torso folds slightly from gut impact, one hand protects abdomen; (3) heavy_hit: strong backward torso recoil and braced legs; (4) critical_stagger: clear loss of balance, knees buckle, arms trying to recover, head still same anatomy.\nROW2: (5) fall_start: rear knee collapsing as body tips backward/sideways toward the reference defeated orientation; (6) fall_mid: halfway to ground with one supporting forearm and hip descending, no detached limbs; (7) grounded: the SAME final lying defeated pose from the reference sheet bottom-right, head to the left, tail stretched right, costume/horns/body dimensions unchanged, no redesign; (8) getup_support: from that grounded pose, one forearm and hand pushing against virtual floor, chest lifting, legs folded underneath.\nROW3: (9) getup_kneel: supported one-knee kneeling rise, one hand near ground; (10) getup_rise: nearly standing, knees still bent, fist lifting to guard; (11) low_health: standing but exhausted forward shoulders, one guarded hand over abdomen, visibly strained eyes; (12) victory_start: grounded straightening posture beginning to raise one fist, proud but same exact face.\nROW4: (13) victory_peak: proud canonical raised-fist victory, keep fist and horns comfortably within cell, no roar redesign; (14) transform_start: same guard with chest core modestly brightening, hands poised beside chest, all anatomy and clothing unchanged; (15) transform_peak: same recognizable body in a strong braced stance, chest core and EXISTING fine ember seams brighter, eyes slightly brighter, all light tightly confined to existing character surfaces, no explosion or aura; (16) transformed_idle: canonical combat guard with gently brighter existing amber core and fine seams, exact same horns/tail/costume/proportions. Transformation is only controlled light in existing motifs, not new armor or giant body. Maintain fixed skeletal scale, especially the fallen and kneeling frames; never scale them up.",
+      "attempts": [
+        {
+          "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED ASCÚA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve his exact thick sweeping horn geometry, reptilian head/snout, amber eyes, black charcoal scales with fine ember seams, amber diamond chest core, short worn golden-ochre shoulder cape, ornate bronze forearm bracers, belt and long dark/ochre tabard, thick long tapering tail, clawed animal hands and feet, powerful adult body proportions. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, horns, fists, feet and tail fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 8 percent of every cell; each character at the SAME skeletal size/scale, standing height about70 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) light_hit: small sharp backward shoulder recoil, guard remains near face; (2) body_hit: torso folds slightly from gut impact, one hand protects abdomen; (3) heavy_hit: strong backward torso recoil and braced legs; (4) critical_stagger: clear loss of balance, knees buckle, arms trying to recover, head still same anatomy.\nROW2: (5) fall_start: rear knee collapsing as body tips backward/sideways toward the reference defeated orientation; (6) fall_mid: halfway to ground with one supporting forearm and hip descending, no detached limbs; (7) grounded: the SAME final lying defeated pose from the reference sheet bottom-right, head to the left, tail stretched right, costume/horns/body dimensions unchanged, no redesign; (8) getup_support: from that grounded pose, one forearm and hand pushing against virtual floor, chest lifting, legs folded underneath.\nROW3: (9) getup_kneel: supported one-knee kneeling rise, one hand near ground; (10) getup_rise: nearly standing, knees still bent, fist lifting to guard; (11) low_health: standing but exhausted forward shoulders, one guarded hand over abdomen, visibly strained eyes; (12) victory_start: grounded straightening posture beginning to raise one fist, proud but same exact face.\nROW4: (13) victory_peak: proud canonical raised-fist victory, keep fist and horns comfortably within cell, no roar redesign; (14) transform_start: same guard with chest core modestly brightening, hands poised beside chest, all anatomy and clothing unchanged; (15) transform_peak: same recognizable body in a strong braced stance, chest core and EXISTING fine ember seams brighter, eyes slightly brighter, all light tightly confined to existing character surfaces, no explosion or aura; (16) transformed_idle: canonical combat guard with gently brighter existing amber core and fine seams, exact same horns/tail/costume/proportions. Transformation is only controlled light in existing motifs, not new armor or giant body. Maintain fixed skeletal scale, especially the fallen and kneeling frames; never scale them up.",
+          "reference": "outputs/Brasa/assets/sprites/ascua-v3.png",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0c6b6338-2f4e-4f21-b394-882147b461b6.png",
+          "status": "rejected_missing_alpha",
+          "sha256": "a401e165541bd84e84163bea190cf89facc6721a20834c6b4374fa88075fcff2",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ]
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT the supplied ASCÚA reactions sprite sheet. Remove the gray-and-white checkerboard background completely and return a PNG with a TRUE TRANSPARENT BACKGROUND / RGBA alpha channel. The checkerboard is not part of the artwork: all empty space and every space between limbs must be genuinely transparent, not white, not black, not another painted checkerboard. Keep all sixteen character sprites, their exact positions, colors, size, limb anatomy, horn shapes, tail, clothing, chest core, and every pose unchanged. Preserve the 4 by4 layout and the full canvas size. Do not redraw or redesign the sprites. Do not add text, borders, floor, shadows, glows or effects. This is only foreground extraction to actual transparent alpha for a game atlas. Deliver transparent PNG with clean edges.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-48eb0f80-99f7-40fe-9c39-e251ae4c797f.png",
+          "reference": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-0c6b6338-2f4e-4f21-b394-882147b461b6.png",
+          "status": "selected_rgba",
+          "sha256": "9c2615845bb20bf6a50b7ad4acc3e94921e3cebdf84633f7226a5a82526946ee",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ]
+        }
+      ],
+      "final_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-48eb0f80-99f7-40fe-9c39-e251ae4c797f.png",
+      "reference_height": 270,
+      "status": "selected_native_qa",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/ascua-reactions-v1.json",
+      "native_preview": "work/animation/ascua-reactions-native.png",
+      "sha256": "9c2615845bb20bf6a50b7ad4acc3e94921e3cebdf84633f7226a5a82526946ee",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "alpha0_fraction": 0.5809975860341008,
+      "metadata_sha256": "49474a4090861f9fa69fb70f9dff830ca073eb1051bd814042f4d98c96fa7f80",
+      "file_bytes": 1652123,
+      "rgba_bytes": 6290064
+    }
+  ],
+  "validation": "work/animation/ascua-region-validation.json",
+  "created_at": "2026-09-21T01:36:25.047Z",
+  "canonical_sha256": "c514961c787ce4048ab50233af880ad00b71ba8796e3b1b873ae29d59c8665fd",
+  "memory": {
+    "compressed_png_bytes": 3068252,
+    "rgba8_base_level_bytes": 12580128,
+    "note": "Two unique bank textures. RGBA8 estimate excludes any renderer bookkeeping/mipmaps; runtime memory measured separately."
+  }
+}

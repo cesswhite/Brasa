@@ -1,0 +1,26 @@
+{
+  "source_sha256": "01751e7277ff37656657ca8f6d2afb097bc9805c98308319b18897821ff3f2bb",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "combat_progression",
+  "reviewed_frames": [
+    "idle",
+    "idle_breathe",
+    "windup",
+    "punch",
+    "hit",
+    "dodge",
+    "victory",
+    "defeat"
+  ],
+  "uniform_scale": 0.7781954887218046,
+  "candidate_sha256_reviewed": "7ac07ecad8eca2bbd8901177a11ae3a81484b9fb0564137bced7d78ce91c9241",
+  "review_evidence": [
+    "work/illustrated-damage/prepared/luma/base/luma-base-dark.png",
+    "work/illustrated-damage/prepared/luma/base/luma-base-light.png",
+    "outputs/Brasa/assets/sprites/normalized/luma-base-v2.png"
+  ],
+  "review_note": "Inspección de todas las poses sobre claro/oscuro y contra normalizado limpio: branquias rojas, piel rosa, cola y fajín oro conservan identidad. Moretones faciales, desgaste de piel y ropa rota están dibujados. Huecos brazo/torso, cola/fajín y piernas transparentes; sin amputaciones ni halo visible. Escala única y apoyos proyectados coherentes; KO bajo y salto elevado, sin ampliar figura caída. Sin nuevos sockets anatómicos.",
+  "final_reinspection_note": "Revisados otra vez los40 cuadros después de limpieza de alpha posterior al reescalado. En movement se limpiaron tres huecos fuente bajo el puño retrasado de dash_lean y se volvió a inspeccionar esa pose sobre claro/oscuro. Las demás poses no cambiaron por los polígonos."
+}

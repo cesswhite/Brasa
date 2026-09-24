@@ -1,0 +1,211 @@
+[
+  {
+    "body_id": "neris",
+    "bank": "movement",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-52cf010f-88a8-4a17-b232-dd29260d67d7.png",
+    "png": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/neris-movement-v1.png",
+    "sha256": "28228f6201d710f57e5942f41d927d6d50e91fa92f5e7e2a09450751543204af",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/neris-movement-v1.json",
+    "sidecar_sha256": "fe1830340511370288da1858c9adf17bb319510db22ed0dbbc8af5a44df9de32",
+    "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/neris-v3.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6725298820488949,
+    "frames": 16,
+    "reference_height": 250,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/inspection/neris-movement/neris-movement.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/movement-native.png",
+    "initial_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/movement-prompt.txt",
+    "spacing_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/movement-extraction-prompt.txt",
+    "alpha_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/movement-alpha-prompt.txt",
+    "native_pixels_unchanged": true,
+    "geometry_valid": true,
+    "pixel_policy": "PNG copied byte-for-byte from built-in image_gen output; no raster edits outside image_gen. Geometry JSON and native Godot previews only.",
+    "coverage_threshold": 31,
+    "visible_coverage_fraction": 1.0,
+    "native_preview_verified": true
+  },
+  {
+    "body_id": "neris",
+    "bank": "reactions",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-08d7e24e-7df7-4cb0-9c2d-932a6c9fa6b8.png",
+    "png": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/neris-reactions-v1.png",
+    "sha256": "972cf1389cf3787486f10c0cdc303aed2220ad6fce1b6846604c287006b5ad76",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/neris-reactions-v1.json",
+    "sidecar_sha256": "f7d9b530bb327e1088c9b4813081dc92ba5b4cbf8fdd364dded04dd190bb921b",
+    "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/neris-v3.png",
+    "size": [
+      1266,
+      1243
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6095747560747771,
+    "frames": 16,
+    "reference_height": 275,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/inspection/neris-reactions/neris-reactions.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/reactions-native.png",
+    "initial_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/reactions-prompt.txt",
+    "spacing_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/reactions-extraction-prompt.txt",
+    "alpha_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/neris/reactions-alpha-prompt.txt",
+    "native_pixels_unchanged": true,
+    "geometry_valid": true,
+    "pixel_policy": "PNG copied byte-for-byte from built-in image_gen output; no raster edits outside image_gen. Geometry JSON and native Godot previews only.",
+    "coverage_threshold": 31,
+    "visible_coverage_fraction": 1.0,
+    "native_preview_verified": true
+  },
+  {
+    "body_id": "taro",
+    "bank": "movement",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-b38ca967-db37-4a6c-8048-4cac4e450f1a.png",
+    "png": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/taro-movement-v1.png",
+    "sha256": "0140db3d405db68b198277e1323f6be9ee585821c77037662a4e7b71d697549e",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/taro-movement-v1.json",
+    "sidecar_sha256": "dd472318ab447ee5170aec4e56e22c0d350ef29de9fa16c532032b764233d5cd",
+    "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/taro-v3.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.65414533143065,
+    "frames": 16,
+    "reference_height": 252,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/inspection/taro-movement/taro-movement.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/movement-native.png",
+    "initial_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/movement-prompt.txt",
+    "spacing_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/movement-extraction-prompt.txt",
+    "alpha_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/movement-alpha-prompt.txt",
+    "native_pixels_unchanged": true,
+    "geometry_valid": true,
+    "pixel_policy": "PNG copied byte-for-byte from built-in image_gen output; no raster edits outside image_gen. Geometry JSON and native Godot previews only.",
+    "coverage_threshold": 31,
+    "visible_coverage_fraction": 1.0,
+    "native_preview_verified": true
+  },
+  {
+    "body_id": "taro",
+    "bank": "reactions",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-d6df12e2-bf21-4acc-b79c-6c8892e7de0f.png",
+    "png": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/taro-reactions-v1.png",
+    "sha256": "dbce5b111cf64e5dfd38a6540f9055d4b280c6a78f1205b71dd246375756f96c",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/taro-reactions-v1.json",
+    "sidecar_sha256": "b2d1ea283600d380ae8b59e1fadcd488318f991927e1b57d22b82b108a43c8c7",
+    "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/taro-v3.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6019894233190632,
+    "frames": 16,
+    "reference_height": 260,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/inspection/taro-reactions/taro-reactions.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/reactions-native.png",
+    "initial_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/reactions-prompt.txt",
+    "spacing_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/reactions-extraction-prompt.txt",
+    "alpha_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/reactions-alpha-final-prompt.txt",
+    "native_pixels_unchanged": true,
+    "geometry_valid": true,
+    "pixel_policy": "PNG copied byte-for-byte from built-in image_gen output; no raster edits outside image_gen. Geometry JSON and native Godot previews only.",
+    "coverage_threshold": 31,
+    "visible_coverage_fraction": 1.0,
+    "native_preview_verified": true,
+    "rejected_alpha_retry": {
+      "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-d52f0667-5856-4a51-b41a-7ba907517547.png",
+      "reason": "RGB: no transparent alpha channel",
+      "prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/taro/reactions-alpha-retry-prompt.txt"
+    }
+  },
+  {
+    "body_id": "vespera",
+    "bank": "movement",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-d18bd068-74e8-407e-be04-858feab98434.png",
+    "png": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/vespera-movement-v1.png",
+    "sha256": "42c340fee446161ecc5476e0c8d0481ac491e04af4c3ef12e00115aafbc99b05",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/vespera-movement-v1.json",
+    "sidecar_sha256": "41ae1ccd01285e23255636808ebff52ad77cdbce1083a441ec39bb088db0c788",
+    "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/vespera-v3.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6320113754009499,
+    "frames": 16,
+    "reference_height": 272,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/inspection/vespera-movement/vespera-movement.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/movement-native.png",
+    "initial_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/movement-prompt.txt",
+    "spacing_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/movement-extraction-prompt.txt",
+    "alpha_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/movement-alpha-prompt.txt",
+    "native_pixels_unchanged": true,
+    "geometry_valid": true,
+    "pixel_policy": "PNG copied byte-for-byte from built-in image_gen output; no raster edits outside image_gen. Geometry JSON and native Godot previews only.",
+    "coverage_threshold": 31,
+    "visible_coverage_fraction": 1.0,
+    "native_preview_verified": true
+  },
+  {
+    "body_id": "vespera",
+    "bank": "reactions",
+    "tool": "image_gen built-in",
+    "source": "/Users/cess/.codex/generated_images/01a0bd28-1a65-7d02-a458-d6eb8d2b151a/exec-cc0ef605-fb77-4fa1-965e-08fabbdf14f9.png",
+    "png": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/vespera-reactions-v1.png",
+    "sha256": "44a2a087d2adb4347f3843f869a5ef2b6a5298971f695d5897e2f76a4df15d5e",
+    "sidecar": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/sequences/vespera-reactions-v1.json",
+    "sidecar_sha256": "76fc4121e801d4467557a228a1b87a25fcaa18fe10401aea4649e0e07172dd84",
+    "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/vespera-v3.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6472989781979961,
+    "frames": 16,
+    "reference_height": 275,
+    "inspection": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/inspection/vespera-reactions/vespera-reactions.inspection.json",
+    "native_preview": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/reactions-native.png",
+    "initial_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/reactions-prompt.txt",
+    "spacing_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/reactions-extraction-prompt.txt",
+    "alpha_prompt": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/work/animation/vespera/reactions-alpha-prompt.txt",
+    "native_pixels_unchanged": true,
+    "geometry_valid": true,
+    "pixel_policy": "PNG copied byte-for-byte from built-in image_gen output; no raster edits outside image_gen. Geometry JSON and native Godot previews only.",
+    "coverage_threshold": 31,
+    "visible_coverage_fraction": 1.0,
+    "native_preview_verified": true
+  }
+]

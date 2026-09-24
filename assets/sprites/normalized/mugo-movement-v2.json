@@ -1,0 +1,1586 @@
+{
+  "version": 2,
+  "body_id": "mugo",
+  "bank": "movement",
+  "profile_id": "mugo:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.687,
+          260.042
+        ],
+        "chest": [
+          280.687,
+          260.042
+        ],
+        "body": [
+          280.687,
+          260.042
+        ],
+        "hand": [
+          369.336,
+          276.874
+        ],
+        "left_foot": [
+          158.935,
+          448.0
+        ],
+        "right_foot": [
+          350.26,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        119,
+        155,
+        272,
+        293
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "step_back",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          304.252,
+          262.286
+        ],
+        "chest": [
+          304.252,
+          262.286
+        ],
+        "body": [
+          304.252,
+          262.286
+        ],
+        "hand": [
+          360.359,
+          279.118
+        ],
+        "left_foot": [
+          175.767,
+          448.0
+        ],
+        "right_foot": [
+          321.084,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        141,
+        172,
+        245,
+        276
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          280.687,
+          339.714
+        ],
+        "chest": [
+          280.687,
+          339.714
+        ],
+        "body": [
+          280.687,
+          339.714
+        ],
+        "hand": [
+          364.847,
+          387.405
+        ],
+        "left_foot": [
+          163.985,
+          448.0
+        ],
+        "right_foot": [
+          338.477,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        129,
+        243,
+        262,
+        205
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          278.443,
+          280.802
+        ],
+        "chest": [
+          278.443,
+          280.802
+        ],
+        "body": [
+          278.443,
+          280.802
+        ],
+        "hand": [
+          197.649,
+          183.737
+        ],
+        "left_foot": [
+          148.275,
+          448.0
+        ],
+        "right_foot": [
+          363.725,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        103,
+        152,
+        313,
+        297
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          284.053,
+          262.286
+        ],
+        "chest": [
+          284.053,
+          262.286
+        ],
+        "body": [
+          284.053,
+          262.286
+        ],
+        "hand": [
+          356.992,
+          262.286
+        ],
+        "left_foot": [
+          148.275,
+          448.0
+        ],
+        "right_foot": [
+          361.481,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        113,
+        171,
+        288,
+        277
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          266.66,
+          250.504
+        ],
+        "chest": [
+          266.66,
+          250.504
+        ],
+        "body": [
+          266.66,
+          250.504
+        ],
+        "hand": [
+          413.66,
+          215.718
+        ],
+        "left_foot": [
+          141.542,
+          448.0
+        ],
+        "right_foot": [
+          355.87,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        99,
+        156,
+        337,
+        293
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          277.321,
+          249.382
+        ],
+        "chest": [
+          277.321,
+          249.382
+        ],
+        "body": [
+          277.321,
+          249.382
+        ],
+        "hand": [
+          400.195,
+          242.649
+        ],
+        "left_foot": [
+          156.691,
+          448.0
+        ],
+        "right_foot": [
+          345.771,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        119,
+        172,
+        301,
+        277
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "occluded",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "recovery",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          279.004,
+          252.187
+        ],
+        "chest": [
+          279.004,
+          252.187
+        ],
+        "body": [
+          279.004,
+          252.187
+        ],
+        "hand": [
+          364.286,
+          274.069
+        ],
+        "left_foot": [
+          157.813,
+          448.0
+        ],
+        "right_foot": [
+          350.26,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        118,
+        149,
+        277,
+        300
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          354.187,
+          320.076
+        ],
+        "chest": [
+          354.187,
+          320.076
+        ],
+        "body": [
+          354.187,
+          320.076
+        ],
+        "hand": [
+          398.511,
+          330.737
+        ],
+        "left_foot": [
+          174.645,
+          448.0
+        ],
+        "right_foot": [
+          327.817,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        134,
+        231,
+        289,
+        216
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 1.122,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          328.939,
+          303.805
+        ],
+        "chest": [
+          328.939,
+          303.805
+        ],
+        "body": [
+          328.939,
+          303.805
+        ],
+        "hand": [
+          376.069,
+          318.954
+        ],
+        "left_foot": [
+          133.687,
+          448.0
+        ],
+        "right_foot": [
+          364.847,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        105,
+        218,
+        308,
+        229
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.561,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          297.519,
+          257.798
+        ],
+        "chest": [
+          297.519,
+          257.798
+        ],
+        "body": [
+          297.519,
+          257.798
+        ],
+        "hand": [
+          351.382,
+          260.603
+        ],
+        "left_foot": [
+          185.305,
+          448.0
+        ],
+        "right_foot": [
+          282.37,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        151,
+        173,
+        225,
+        275
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          277.321,
+          253.309
+        ],
+        "chest": [
+          277.321,
+          253.309
+        ],
+        "body": [
+          277.321,
+          253.309
+        ],
+        "hand": [
+          215.603,
+          180.37
+        ],
+        "left_foot": [
+          230.191,
+          448.0
+        ],
+        "right_foot": [
+          265.538,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        137,
+        145,
+        233,
+        254
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 48.813,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          270.027,
+          240.405
+        ],
+        "chest": [
+          270.027,
+          240.405
+        ],
+        "body": [
+          270.027,
+          240.405
+        ],
+        "hand": [
+          417.027,
+          187.103
+        ],
+        "left_foot": [
+          264.977,
+          448.0
+        ],
+        "right_foot": [
+          312.107,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        94,
+        150,
+        357,
+        297
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.561,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          282.931,
+          260.042
+        ],
+        "chest": [
+          282.931,
+          260.042
+        ],
+        "body": [
+          282.931,
+          260.042
+        ],
+        "hand": [
+          343.527,
+          256.676
+        ],
+        "left_foot": [
+          207.748,
+          448.0
+        ],
+        "right_foot": [
+          328.939,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        138,
+        169,
+        236,
+        279
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "landing",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          305.374,
+          329.053
+        ],
+        "chest": [
+          305.374,
+          329.053
+        ],
+        "body": [
+          305.374,
+          329.053
+        ],
+        "hand": [
+          268.905,
+          421.069
+        ],
+        "left_foot": [
+          160.057,
+          448.0
+        ],
+        "right_foot": [
+          336.233,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        120,
+        238,
+        284,
+        211
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ],
+        "core": [
+          276.76,
+          253.309
+        ],
+        "chest": [
+          276.76,
+          253.309
+        ],
+        "body": [
+          276.76,
+          253.309
+        ],
+        "hand": [
+          355.87,
+          275.752
+        ],
+        "left_foot": [
+          160.057,
+          448.0
+        ],
+        "right_foot": [
+          348.576,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        118,
+        163,
+        274,
+        286
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Manual visible core/hand/blade and sole-center x points; feet projected onto authored ground y. Approximately ±8 original source px. Airborne foot points are floor projections, not physical contact. No anatomy inferred from alpha bounds.",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      },
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          -3.6011,
+          -1.0312,
+          -2.5781
+        ]
+      }
+    }
+  ],
+  "source": {
+    "path": "work/visual-consistency/generated/audit-fixes/material-refinement/mugo-material-family.png",
+    "sha256": "c35e89fb1dc14d303afab796bff16d0be4f6637000f57b65662f78260e510952",
+    "reference_height_px": 524,
+    "bank_scale_factor": 0.5610687022900763,
+    "canonical_height_world": 196,
+    "normalization": "Uniform source-bank affine resampling and transparent canvas placement. No frame fit, no per-frame scale.",
+    "frames": [
+      {
+        "name": "guard_shift",
+        "source_region": [
+          0,
+          0,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          119.09923664122138,
+          154.56106870229007,
+          391.2175572519084,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "step_back",
+        "source_region": [
+          800,
+          0,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          141.54198473282443,
+          171.95419847328247,
+          385.60687022900765,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "charge_crouch",
+        "source_region": [
+          1600,
+          0,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          129.19847328244276,
+          242.64885496183206,
+          391.2175572519084,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "heavy_windup",
+        "source_region": [
+          2400,
+          0,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          102.82824427480915,
+          152.31679389312978,
+          415.90458015267177,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "quick_windup",
+        "source_region": [
+          0,
+          800,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          113.4885496183206,
+          170.2709923664122,
+          400.7557251908397,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "quick_extend",
+        "source_region": [
+          800,
+          800,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          99.46183206106869,
+          156.2442748091603,
+          436.1030534351145,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "follow_through",
+        "source_region": [
+          1600,
+          800,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          119.09923664122138,
+          171.95419847328247,
+          419.8320610687023,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "recovery",
+        "source_region": [
+          2400,
+          800,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          117.97709923664124,
+          148.38931297709922,
+          395.14503816793894,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "dash_lean",
+        "source_region": [
+          0,
+          1600,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          133.68702290076337,
+          231.42748091603053,
+          422.63740458015263,
+          446.87786259541986
+        ]
+      },
+      {
+        "name": "dash_stride",
+        "source_region": [
+          800,
+          1600,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          105.07251908396947,
+          218.5229007633588,
+          413.0992366412214,
+          447.4389312977099
+        ]
+      },
+      {
+        "name": "jump_start",
+        "source_region": [
+          1600,
+          1600,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          150.51908396946567,
+          172.51526717557255,
+          376.0687022900763,
+          448.0
+        ]
+      },
+      {
+        "name": "jump_apex",
+        "source_region": [
+          2400,
+          1600,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          136.49236641221376,
+          145.58396946564886,
+          369.8969465648855,
+          399.18702290076334
+        ]
+      },
+      {
+        "name": "jump_strike",
+        "source_region": [
+          0,
+          2400,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          93.85114503816794,
+          150.0725190839695,
+          451.25190839694653,
+          447.4389312977099
+        ]
+      },
+      {
+        "name": "jump_fall",
+        "source_region": [
+          800,
+          2400,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          138.17557251908397,
+          169.14885496183206,
+          373.82442748091603,
+          448.0
+        ]
+      },
+      {
+        "name": "landing",
+        "source_region": [
+          1600,
+          2400,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          119.66030534351145,
+          238.16030534351145,
+          404.12213740458014,
+          448.5610687022901
+        ]
+      },
+      {
+        "name": "guard_settle",
+        "source_region": [
+          2400,
+          2400,
+          800,
+          800
+        ],
+        "source_anchor": [
+          400,
+          700
+        ],
+        "normalized_source_anchor": [
+          400,
+          700
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.5610687022900763,
+        "normalized_alpha_bounds_float": [
+          117.97709923664124,
+          162.9770992366412,
+          391.77862595419845,
+          448.5610687022901
+        ]
+      }
+    ]
+  },
+  "art_review_status": "MATERIAL_FAMILY_STATIC_REVIEW",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "4d4dcccaa925202d9bfcdb864de8fe108f1a356a2bc0bd8f26b690d340c0e29d",
+  "precision_revision": 1,
+  "precision_source_sha256": "9791d3ca6cb991c013694bf5bbc710a1ed901b618bb35eec84a9353acbdfe32e",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint."
+}

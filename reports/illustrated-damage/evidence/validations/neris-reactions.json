@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        172,
+        197,
+        171,
+        252
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 21915
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        159,
+        206,
+        182,
+        242
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 21259
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        132,
+        207,
+        220,
+        242
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 23741
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        151,
+        210,
+        226,
+        237
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26387
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        128,
+        224,
+        262,
+        224
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24374
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        112,
+        229,
+        274,
+        178
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 22120
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        110,
+        348,
+        284,
+        99
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 17005
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        144,
+        269,
+        223,
+        179
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 22330
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        158,
+        230,
+        192,
+        219
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 21415
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        156,
+        221,
+        213,
+        227
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24445
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        165,
+        221,
+        177,
+        228
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 20195
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        167,
+        205,
+        186,
+        245
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 24698
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        159,
+        174,
+        195,
+        276
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 25534
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        153,
+        193,
+        205,
+        257
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 23885
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        123,
+        192,
+        257,
+        257
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 31402
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        155,
+        187,
+        190,
+        262
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23874
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "neris",
+  "bank": "reactions",
+  "source_sha256": "2568121bec84a6b515c83a453ec56dbdc856bcf9b8b7b15fd307e359e2a15eb0",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/neris/reactions/neris-reactions.png"
+}

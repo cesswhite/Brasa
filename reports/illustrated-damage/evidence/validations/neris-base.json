@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        176,
+        203,
+        160,
+        245
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 17207
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        174,
+        203,
+        164,
+        245
+      ],
+      "components": 8,
+      "substantial_components": 1,
+      "visible_pixels": 17365
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        157,
+        210,
+        198,
+        238
+      ],
+      "components": 7,
+      "substantial_components": 1,
+      "visible_pixels": 20588
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        143,
+        221,
+        256,
+        227
+      ],
+      "components": 8,
+      "substantial_components": 1,
+      "visible_pixels": 20081
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        145,
+        208,
+        203,
+        240
+      ],
+      "components": 9,
+      "substantial_components": 1,
+      "visible_pixels": 21708
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        116,
+        239,
+        248,
+        209
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 19593
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        166,
+        184,
+        180,
+        264
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 21956
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        121,
+        349,
+        284,
+        99
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 15397
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "neris",
+  "bank": "base",
+  "source_sha256": "64cd4359111ad3856e6719f90e2012c8d59e9e7710cf84dfda28fa4278a40bfd",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/neris/base/neris-base.png"
+}

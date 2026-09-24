@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "light_hit",
+      "bounds": [
+        141,
+        177,
+        225,
+        271
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 32967
+    },
+    {
+      "name": "body_hit",
+      "bounds": [
+        137,
+        194,
+        237,
+        256
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 31963
+    },
+    {
+      "name": "heavy_hit",
+      "bounds": [
+        123,
+        176,
+        250,
+        275
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 36589
+    },
+    {
+      "name": "critical_stagger",
+      "bounds": [
+        58,
+        188,
+        293,
+        262
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 38972
+    },
+    {
+      "name": "fall_start",
+      "bounds": [
+        142,
+        204,
+        264,
+        242
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 31715
+    },
+    {
+      "name": "fall_mid",
+      "bounds": [
+        98,
+        243,
+        324,
+        203
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33718
+    },
+    {
+      "name": "grounded",
+      "bounds": [
+        80,
+        341,
+        350,
+        106
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27077
+    },
+    {
+      "name": "getup_support",
+      "bounds": [
+        120,
+        288,
+        264,
+        171
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29724
+    },
+    {
+      "name": "getup_kneel",
+      "bounds": [
+        118,
+        225,
+        234,
+        222
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33785
+    },
+    {
+      "name": "getup_rise",
+      "bounds": [
+        131,
+        186,
+        237,
+        264
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 33031
+    },
+    {
+      "name": "low_health",
+      "bounds": [
+        135,
+        205,
+        232,
+        244
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 29901
+    },
+    {
+      "name": "victory_start",
+      "bounds": [
+        115,
+        185,
+        230,
+        262
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 32242
+    },
+    {
+      "name": "victory_peak",
+      "bounds": [
+        137,
+        166,
+        237,
+        282
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 31559
+    },
+    {
+      "name": "transform_start",
+      "bounds": [
+        123,
+        269,
+        275,
+        178
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28617
+    },
+    {
+      "name": "transform_peak",
+      "bounds": [
+        105,
+        176,
+        299,
+        270
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 37780
+    },
+    {
+      "name": "transformed_idle",
+      "bounds": [
+        115,
+        175,
+        233,
+        271
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 32795
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "balam",
+  "bank": "reactions",
+  "source_sha256": "2d17f6e276ff08291986171def8885846805320846dfaf5d10cc5774544c511b",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/balam/reactions/balam-reactions.png"
+}

@@ -1,0 +1,4126 @@
+{
+  "version": 1,
+  "status": "ACCEPTED",
+  "accepted_at_utc": "2026-09-21T06:04:40.939069+00:00",
+  "bodies": 17,
+  "banks": 51,
+  "poses": 680,
+  "original_audit": {
+    "KEEP": 344,
+    "FIX": 208,
+    "REGENERATE": 128
+  },
+  "corrected_source_banks": 21,
+  "corrected_source_poses": 336,
+  "criteria": "Continuidad de identidad, anatomía, masa, material, escala física y apoyo a tamaño de juego. No exige identidad píxel a píxel entre ilustraciones. Se preserva cada rechazo histórico y se acepta únicamente la fuente corregida revisada.",
+  "scope_limits": [
+    "El showcase ejercita 33 nombres de pose por cuerpo. Las seis celdas base heredadas restantes y low_health se revisaron en estático a densidad común; no se afirman recorridos nativos de esas celdas sin uso en este fixture.",
+    "Las transformaciones no registradas se omiten expresamente; no se aplica la forma de Ascua a otros cuerpos.",
+    "El vídeo MovieMaker de Ascua es evidencia visual a 60 fps simulados, separado de los pases de reloj real sin captura.",
+    "Los hashes de entradas son los exactos en el momento de revisión. Cambios posteriores de metadatos sólo editoriales deben registrarse explícitamente y no reemplazar esta evidencia."
+  ],
+  "pending": [],
+  "approval_requires_matching_hashes": true,
+  "canonical_profiles": {
+    "path": "outputs/Brasa/data/character_visual_profiles.json",
+    "sha256": "fbe92b375e8cbc935aa884b7140562637afd19dfd57a263ca2d7c822587a116a"
+  },
+  "art_review": {
+    "path": "work/visual-consistency/roster-native/acceptance-final.json",
+    "sha256": "901d53e1569c5354ab0c04c31bc408e2d697cbf4a230270b3eacfdffb6aa2fc0"
+  },
+  "regression_evidence": {
+    "path": "work/visual-consistency/validation-final.json",
+    "sha256": "33682209cce81951b1fbf1766879550f855c6ef943ab888c9c864658e96c5877"
+  },
+  "integrity_evidence": "work/visual-consistency/final-asset-integrity.json",
+  "metrics": {
+    "regression_checks": 48587,
+    "realtime_runs": 17,
+    "realtime_observations": 1749,
+    "native_pose_observations": 561,
+    "realtime_failures": 0,
+    "capture_runs": 17,
+    "capture_pngs": 1733,
+    "capture_failures": 0,
+    "maximum_full_run_wall_vs_process_seconds": 0.01743577777810046,
+    "maximum_single_process_delta_seconds": 0.0350816666666667
+  },
+  "assets": [
+    {
+      "body_id": "ascua",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Piedra oscura facetada, metal dorado gastado, tela ocre y núcleo ámbar; proporciones de cabeza, torso, patas y cola coherentes.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/ascua-base-v2.png",
+        "sha256": "70a3eebfe112bcd0f241638ee71a21ddbb80af87bf592bf81ac0dd3dfcc6a41f"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/ascua-base-v2.json",
+        "sha256": "89b6056cc5746c5fdb08a826e86f081203bd81cc213871e9a018fe63fb54157b"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/ascua/realtime/showcase.json",
+          "sha256": "95ea67446189b9b745d04cbdd96bbe9a156dcf2ae6b260a7a8ea4f7ae0488351"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/realtime/input-hashes.json",
+          "sha256": "94456d8854a7501a0822d13764b3ac3747ecee29b28e8fc2e351cdddacd5d9b6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/showcase.json",
+          "sha256": "805fd778dc44fb6226fd05014e288365a46345440a1c98a16d3c66d791010505"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/input-hashes.json",
+          "sha256": "134b685997e58698d53e599f4224cd98fc17287b57913b6a4a6405baa09cbb04"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/base-bank-reviewed.png",
+          "sha256": "c302c6279b15e5c78d34fb1c0471e033bad21aec5f3abf0260fb9603f79f7e97"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "ascua",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "El piloto corregido conserva el material del idle. La revisión final usa 32 contactos manuales de pie; heavy y aterrizaje muestran polvo breve sobre suelo sin emisión suspendida.Piedra oscura facetada, metal dorado gastado, tela ocre y núcleo ámbar; proporciones de cabeza, torso, patas y cola coherentes.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/ascua-movement-v2.png",
+        "sha256": "36185bfec6d18b5908248eb0cbaf27884de31577cfb85e4d834d3177a737bbbe"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/ascua-movement-v2.json",
+        "sha256": "057ea8090f46b50fd1a2df9ae3d7b145a88c4c89a8812d7ea4ffc32391ae5e1d"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/ascua/realtime/showcase.json",
+          "sha256": "95ea67446189b9b745d04cbdd96bbe9a156dcf2ae6b260a7a8ea4f7ae0488351"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/realtime/input-hashes.json",
+          "sha256": "94456d8854a7501a0822d13764b3ac3747ecee29b28e8fc2e351cdddacd5d9b6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/showcase.json",
+          "sha256": "805fd778dc44fb6226fd05014e288365a46345440a1c98a16d3c66d791010505"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/input-hashes.json",
+          "sha256": "134b685997e58698d53e599f4224cd98fc17287b57913b6a4a6405baa09cbb04"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/material-at-native-scale.png",
+          "sha256": "d1a349070dc461541966707b7e0b15c043a60ab4057293a964d2ff88a1d03e96"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/chronological-03.jpg",
+          "sha256": "894cc50eaa9fc166cb88bed18ae47c6f2472b11de02e8668f8242503ffbb1a96"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "2bf02caaf23dc97223d14b92bfa7936005906aae9fa1bd73b2ae4688fba71c69"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/movie/movie-manifest.json",
+          "sha256": "0467024d0967ae26ecaac611ede52a86155964698f187f03ed15f6de7951a07a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/movie/footplant-detail.png",
+          "sha256": "d3001f4274cd4b17627af6ce60c9827e7a66a35b9526bab082363c0d85e0b7ef"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/movie/landing-detail.png",
+          "sha256": "eb3a1c08344b31cca824257fa25bae210314d2ba166068e016f98bc8c215e0a9"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "ascua",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Piedra oscura facetada, metal dorado gastado, tela ocre y núcleo ámbar; proporciones de cabeza, torso, patas y cola coherentes.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/ascua-reactions-v2.png",
+        "sha256": "a77a72e2e81b74508a5b575ce2de3c6112e059d226ebe73e2c04cc859978e02c"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/ascua-reactions-v2.json",
+        "sha256": "e076edb0eaef2b9e4ece6acf2cf9230996bbf73c34393c00b4c49b00b248d548"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/ascua/realtime/showcase.json",
+          "sha256": "95ea67446189b9b745d04cbdd96bbe9a156dcf2ae6b260a7a8ea4f7ae0488351"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/realtime/input-hashes.json",
+          "sha256": "94456d8854a7501a0822d13764b3ac3747ecee29b28e8fc2e351cdddacd5d9b6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/showcase.json",
+          "sha256": "805fd778dc44fb6226fd05014e288365a46345440a1c98a16d3c66d791010505"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/captures/input-hashes.json",
+          "sha256": "134b685997e58698d53e599f4224cd98fc17287b57913b6a4a6405baa09cbb04"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/material-at-native-scale.png",
+          "sha256": "d1a349070dc461541966707b7e0b15c043a60ab4057293a964d2ff88a1d03e96"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/ascua/chronological-06.jpg",
+          "sha256": "3d625f12136d0c015a7178169ee6e510316eb2d37eaf482f4ba0f37cda8873ad"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-1.png",
+          "sha256": "4bb64bfd795a1e40b306b80c9285478a6f25b49fb59a50364572aae2b56dbef9"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "balam",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelo de jaguar con rosetas, abdomen crema, vendas y tela oscura; torso y extremidades mantienen masa.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/balam-base-v2.png",
+        "sha256": "66a9a53275a8c7bb8f92aea5746aaeaf4dc40bab01a75103594d594f56487883"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/balam-base-v2.json",
+        "sha256": "b841194dced109b66dd21b7ad99b3a696fd0e49a14ee36f6bb5a0c58dff9623c"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/balam/realtime/showcase.json",
+          "sha256": "0a0ab221429badc7396f63643743e07c25661b68b5e09cd3ebc0861c1654b139"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/realtime/input-hashes.json",
+          "sha256": "97c527b6ef4ef1ce3b37db8f096a7cd378c6542b9ce2af55ad851bbcfc729d80"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/showcase.json",
+          "sha256": "8a0d55f1aa8c3acc9ed2887eac939c0d1b8005aed777b7501423ea103c6b272e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/input-hashes.json",
+          "sha256": "e99f236d691f604f5af9a4f22e00b6ec6d9a6cabaa771c121726c7adf5f013d5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/base-bank-reviewed.png",
+          "sha256": "6ddad6412d9ce71b68738e1b47cb1b51d4e32e44da6f4b77f296089f663e3961"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "balam",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelo de jaguar con rosetas, abdomen crema, vendas y tela oscura; torso y extremidades mantienen masa.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/balam-movement-v2.png",
+        "sha256": "1b0d330ce41953de7b5e0278e77b2802d325f4196dcf22cfd55cd9f98383e56b"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/balam-movement-v2.json",
+        "sha256": "c9a26ffc39dbcd8e236ae8ad1df4f912ada3c8898740078ad903e57a3012567e"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/balam/realtime/showcase.json",
+          "sha256": "0a0ab221429badc7396f63643743e07c25661b68b5e09cd3ebc0861c1654b139"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/realtime/input-hashes.json",
+          "sha256": "97c527b6ef4ef1ce3b37db8f096a7cd378c6542b9ce2af55ad851bbcfc729d80"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/showcase.json",
+          "sha256": "8a0d55f1aa8c3acc9ed2887eac939c0d1b8005aed777b7501423ea103c6b272e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/input-hashes.json",
+          "sha256": "e99f236d691f604f5af9a4f22e00b6ec6d9a6cabaa771c121726c7adf5f013d5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/material-at-native-scale.png",
+          "sha256": "3fae33952d02789917e03ac192c4afecb6ad2528afbda4fdcc8f4fcf7c5403c6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/chronological-03.jpg",
+          "sha256": "2cfc531a493194199dee473d3e0b5b28410fb16100810eb926b403d2381445ce"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "55ed608eb9b51d1f6213938839b118004b7737df9ccbec753b7a9b00f4712a6d"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "balam",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelo de jaguar con rosetas, abdomen crema, vendas y tela oscura; torso y extremidades mantienen masa.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/balam-reactions-v2.png",
+        "sha256": "463523a16c775439be7bbe752efd3455e3c20100d19883b6ad713d27a4c03bab"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/balam-reactions-v2.json",
+        "sha256": "87e8b274308db7bb5ae6f77e816ad9f8740ae769b4bcb8e04962eee5890bc317"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/balam/realtime/showcase.json",
+          "sha256": "0a0ab221429badc7396f63643743e07c25661b68b5e09cd3ebc0861c1654b139"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/realtime/input-hashes.json",
+          "sha256": "97c527b6ef4ef1ce3b37db8f096a7cd378c6542b9ce2af55ad851bbcfc729d80"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/showcase.json",
+          "sha256": "8a0d55f1aa8c3acc9ed2887eac939c0d1b8005aed777b7501423ea103c6b272e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/captures/input-hashes.json",
+          "sha256": "e99f236d691f604f5af9a4f22e00b6ec6d9a6cabaa771c121726c7adf5f013d5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/material-at-native-scale.png",
+          "sha256": "3fae33952d02789917e03ac192c4afecb6ad2528afbda4fdcc8f4fcf7c5403c6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/balam/chronological-06.jpg",
+          "sha256": "28463157ac9d1ce62d648ae36c47f898c484ac1ededdaf31139270baccf6fe57"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-1.png",
+          "sha256": "4bb64bfd795a1e40b306b80c9285478a6f25b49fb59a50364572aae2b56dbef9"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "bruma",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelaje gris estratificado, rostro felino estrecho, chaleco ciruela y pantalón marrón; cola y torso mantienen volumen.",
+      "accepted_variations": "Reactions conservado tiene un rim naranja algo más intenso; mantiene pelo, cara y volumen a tamaño de juego.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/bruma-base-v2.png",
+        "sha256": "99f8fa6e55eee67c8ed74499fd392c974735638f43b6ec9d8b7384df2d375cc1"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/bruma-base-v2.json",
+        "sha256": "8833e7b87c46a1343ea5d771bb66c0b3c49bbe40cc3f3d50d46941e1c1546591"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/bruma/realtime/showcase.json",
+          "sha256": "e2b89128875925c5bced75ad17846510360d396658ab8f671282ee740b9065b8"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/realtime/input-hashes.json",
+          "sha256": "d4f0c76ffcc4f384716702bd5eafa471aa420d59c95ff55d80ab8a092898ea16"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/showcase.json",
+          "sha256": "ae05f930c6cdeaad58902aeacedf67fb5fa0971074c687dc21fe7b4b0bee0cde"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/input-hashes.json",
+          "sha256": "2e434126ac23dcabd26317c96c1bcc9fbcea9de184d55f505aa7054e836c6ae9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/base-bank-reviewed.png",
+          "sha256": "686ae072908205936872d40e1030597b147baf6365ae6873bc54584632727200"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "bruma",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "El movement anterior redondeaba pelo/rostro y saturaba el chaleco. La corrección recupera pelo fino, cara estrecha y ciruela apagado; cola corregida y masa estables en recovery y salto nativos.Pelaje gris estratificado, rostro felino estrecho, chaleco ciruela y pantalón marrón; cola y torso mantienen volumen.",
+      "accepted_variations": "Reactions conservado tiene un rim naranja algo más intenso; mantiene pelo, cara y volumen a tamaño de juego.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/bruma-movement-v2.png",
+        "sha256": "ae9080a89e127f4e7363cc4cf66058c01657beb33624a346149a974b4bbee6c7"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/bruma-movement-v2.json",
+        "sha256": "f69c35cb9cc518656f7da8238c65df496f6d41d98497aaf37ce7b10a8ea2720f"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/bruma/realtime/showcase.json",
+          "sha256": "e2b89128875925c5bced75ad17846510360d396658ab8f671282ee740b9065b8"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/realtime/input-hashes.json",
+          "sha256": "d4f0c76ffcc4f384716702bd5eafa471aa420d59c95ff55d80ab8a092898ea16"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/showcase.json",
+          "sha256": "ae05f930c6cdeaad58902aeacedf67fb5fa0971074c687dc21fe7b4b0bee0cde"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/input-hashes.json",
+          "sha256": "2e434126ac23dcabd26317c96c1bcc9fbcea9de184d55f505aa7054e836c6ae9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/material-at-native-scale.png",
+          "sha256": "80a3d501ecd96ef5fb8045d3532cfbb509db89aebf8f53db52f98b0eae3dc21e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/chronological-03.jpg",
+          "sha256": "bee47cafd234f92f04c178149e01bf1b4128367a6e56eee9f3e0775d65e4dc11"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "b62dd7035813f81639ce2e7e82120f7bad80232798bdca2a496fab3d353bb4ad"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "bruma",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelaje gris estratificado, rostro felino estrecho, chaleco ciruela y pantalón marrón; cola y torso mantienen volumen.",
+      "accepted_variations": "Reactions conservado tiene un rim naranja algo más intenso; mantiene pelo, cara y volumen a tamaño de juego.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/bruma-reactions-v2.png",
+        "sha256": "c8ae9b4f024f58f70839c7e07f01fead8e1b506d280c95db6fdfc082b0285b56"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/bruma-reactions-v2.json",
+        "sha256": "ccf0c71ad44c999e65a823dce2e3449bddd29bec52e335bc87f4398d8a803044"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/bruma/realtime/showcase.json",
+          "sha256": "e2b89128875925c5bced75ad17846510360d396658ab8f671282ee740b9065b8"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/realtime/input-hashes.json",
+          "sha256": "d4f0c76ffcc4f384716702bd5eafa471aa420d59c95ff55d80ab8a092898ea16"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/showcase.json",
+          "sha256": "ae05f930c6cdeaad58902aeacedf67fb5fa0971074c687dc21fe7b4b0bee0cde"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/captures/input-hashes.json",
+          "sha256": "2e434126ac23dcabd26317c96c1bcc9fbcea9de184d55f505aa7054e836c6ae9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/material-at-native-scale.png",
+          "sha256": "80a3d501ecd96ef5fb8045d3532cfbb509db89aebf8f53db52f98b0eae3dc21e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/bruma/chronological-06.jpg",
+          "sha256": "03042f03dd415a291f68bb751bda85ff3e916db321feadbed5f31a435f54ef07"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-1.png",
+          "sha256": "4bb64bfd795a1e40b306b80c9285478a6f25b49fb59a50364572aae2b56dbef9"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "copal",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelo de cola anillada, rostro estrecho, chaleco crema y faja púrpura; anatomía esbelta consistente.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/copal-base-v2.png",
+        "sha256": "aeb64823a4b449546a511975fae57dd6c8d87ef68b1986bc0ced2d0137352728"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/copal-base-v2.json",
+        "sha256": "09c9c74b66360bfdacd863cf93708c278eb99e2dacc98e38e57002cfb6abacab"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/copal/realtime/showcase.json",
+          "sha256": "73a078f428bd19812125c9e4cf18a33a2ef9f07660162484ced339fd0669a920"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/realtime/input-hashes.json",
+          "sha256": "c393cbc40c87e10059173e302db9abe6a494c05a37263ceef4f5bfa8874b6856"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/showcase.json",
+          "sha256": "7ce303b83c6d58440986feec23be26a3f273fad7a9131d5fb41c886c2977b990"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/input-hashes.json",
+          "sha256": "acf72ea02e1fb9bc4b4f83710a6edb5f7825324f4bdb9ecb396a1698c5c1e792"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/base-bank-reviewed.png",
+          "sha256": "8d15f511ec5a8e857434bfd170ebe3a364ea829f593ec85933f04371d453c460"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "copal",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelo de cola anillada, rostro estrecho, chaleco crema y faja púrpura; anatomía esbelta consistente.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/copal-movement-v2.png",
+        "sha256": "77bf7d7815c30e23d649b68ace87e30d837e147ba1f9f089c64ca238495641ab"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/copal-movement-v2.json",
+        "sha256": "6fdb581b4851e26bf6e1f1bb70140c37ea276ba0712d0f96d3ab7f34127ba180"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/copal/realtime/showcase.json",
+          "sha256": "73a078f428bd19812125c9e4cf18a33a2ef9f07660162484ced339fd0669a920"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/realtime/input-hashes.json",
+          "sha256": "c393cbc40c87e10059173e302db9abe6a494c05a37263ceef4f5bfa8874b6856"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/showcase.json",
+          "sha256": "7ce303b83c6d58440986feec23be26a3f273fad7a9131d5fb41c886c2977b990"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/input-hashes.json",
+          "sha256": "acf72ea02e1fb9bc4b4f83710a6edb5f7825324f4bdb9ecb396a1698c5c1e792"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/material-at-native-scale.png",
+          "sha256": "90bdc883cefa66ac2dd7d65ee3ef72c802e09e81da66156628ed1db9bb76f3f8"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/chronological-03.jpg",
+          "sha256": "920c2c1bcc231e0f75df866d89480920f128f77c4ef8be5a6ab2582f344a2d32"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "5c61495405953eec4f67625034a4fc4dced243f3bb4730b42ad23e4ba9d57d64"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "copal",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelo de cola anillada, rostro estrecho, chaleco crema y faja púrpura; anatomía esbelta consistente.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/copal-reactions-v2.png",
+        "sha256": "1afdaf6a7f882b07ba20de591e29d2a72c93dc24fe2f882a3a3993552cbe1e49"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/copal-reactions-v2.json",
+        "sha256": "7a228d14b4e95d5d1ba02c13cb43700661875aac318d0ca8f00fae08e1167f9e"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/copal/realtime/showcase.json",
+          "sha256": "73a078f428bd19812125c9e4cf18a33a2ef9f07660162484ced339fd0669a920"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/realtime/input-hashes.json",
+          "sha256": "c393cbc40c87e10059173e302db9abe6a494c05a37263ceef4f5bfa8874b6856"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/showcase.json",
+          "sha256": "7ce303b83c6d58440986feec23be26a3f273fad7a9131d5fb41c886c2977b990"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/captures/input-hashes.json",
+          "sha256": "acf72ea02e1fb9bc4b4f83710a6edb5f7825324f4bdb9ecb396a1698c5c1e792"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/material-at-native-scale.png",
+          "sha256": "90bdc883cefa66ac2dd7d65ee3ef72c802e09e81da66156628ed1db9bb76f3f8"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/copal/chronological-06.jpg",
+          "sha256": "e8c12e4256fac28b321e088c76eebb4f8968195002061eb6609efe71b92760fa"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-1.png",
+          "sha256": "4bb64bfd795a1e40b306b80c9285478a6f25b49fb59a50364572aae2b56dbef9"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "duna",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Placas ocre rugosas, escamas, abdomen claro y tejido azul; caparazón, hocico y masa corporal coherentes.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/duna-base-v2.png",
+        "sha256": "10d1b1a2240665c824c00cada02f550664a8e736fae7f270b16249b39b7f4428"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/duna-base-v2.json",
+        "sha256": "e9ae8594a7d53f147e7fc03a6864192a31104c6e36ec9d643d9e4eccf49858e4"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/duna/realtime/showcase.json",
+          "sha256": "38b8f1541c3869976055cfc907ccc48e74e87e08bf64537f8e85521d9f67abed"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/realtime/input-hashes.json",
+          "sha256": "1bc5b32e339e5b964f08be960fb60bb592f77b484942c3f88fe73afd1d61ce5b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/showcase.json",
+          "sha256": "872fc96acfd730dfccce7eecb1102e0a41e50ec1580d6e8e9ea3e6693cf0ba22"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/input-hashes.json",
+          "sha256": "846f7552ee4845baf29d0d7b27f5be629f3c18dce6734c5a97326147897d7aa3"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/base-bank-reviewed.png",
+          "sha256": "6740497defa8222910db0fdccb8df29e58a3b68f6ee85d42b454b2b743ca3602"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "duna",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "El movement conservaba material pero tenía una cavidad magenta y luego una franja rosa residual. Dos limpiezas focales eliminan cavidad y antialias contaminado; la captura nativa final de recovery confirma hocico/nudillos íntegros y ausencia de franja rosa.Placas ocre rugosas, escamas, abdomen claro y tejido azul; caparazón, hocico y masa corporal coherentes.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/duna-movement-v2.png",
+        "sha256": "1f97255b96c59be9349388f8faa46315aed70e5cfc21d5d8ee8d2fd1c43c1f2f"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/duna-movement-v2.json",
+        "sha256": "9fe968edd72c2b4a2646aaa5c070de4fc7250fd00d39c1b8083f7fe8188faae9"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/duna/realtime/showcase.json",
+          "sha256": "38b8f1541c3869976055cfc907ccc48e74e87e08bf64537f8e85521d9f67abed"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/realtime/input-hashes.json",
+          "sha256": "1bc5b32e339e5b964f08be960fb60bb592f77b484942c3f88fe73afd1d61ce5b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/showcase.json",
+          "sha256": "872fc96acfd730dfccce7eecb1102e0a41e50ec1580d6e8e9ea3e6693cf0ba22"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/input-hashes.json",
+          "sha256": "846f7552ee4845baf29d0d7b27f5be629f3c18dce6734c5a97326147897d7aa3"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/material-at-native-scale.png",
+          "sha256": "6c61fc484ed07857eae16ad0438e9cdc97f83cdd8abc012f324c71e73aae0f30"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/chronological-03.jpg",
+          "sha256": "69bcd2fb5efa318aabbb3aac5f929df7641c7d28cb03be93b5f6673858597c39"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "95d9d315aa29b4e60656a6e2c6fee529095cb19d8eae63cf60a59d7d5d7abecf"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "duna",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Placas ocre rugosas, escamas, abdomen claro y tejido azul; caparazón, hocico y masa corporal coherentes.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/duna-reactions-v2.png",
+        "sha256": "8c83706ab77f0098881a9d06d42b9057e37f0e1ed322cd934993d48cbe0a7f3b"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/duna-reactions-v2.json",
+        "sha256": "28ceb617a811f538047183799421a277af2150a6eaea9f85c056bfd2b8ffbfc4"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/duna/realtime/showcase.json",
+          "sha256": "38b8f1541c3869976055cfc907ccc48e74e87e08bf64537f8e85521d9f67abed"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/realtime/input-hashes.json",
+          "sha256": "1bc5b32e339e5b964f08be960fb60bb592f77b484942c3f88fe73afd1d61ce5b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/showcase.json",
+          "sha256": "872fc96acfd730dfccce7eecb1102e0a41e50ec1580d6e8e9ea3e6693cf0ba22"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/captures/input-hashes.json",
+          "sha256": "846f7552ee4845baf29d0d7b27f5be629f3c18dce6734c5a97326147897d7aa3"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/material-at-native-scale.png",
+          "sha256": "6c61fc484ed07857eae16ad0438e9cdc97f83cdd8abc012f324c71e73aae0f30"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/duna/chronological-06.jpg",
+          "sha256": "3e5b563d1d16bb74270675dd90429b0bb529b1d64997d99515832d1a9ea98cfc"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-2.png",
+          "sha256": "ebc2e625183e4af1fe374fd7681abb29fac0af97bfe4f391bc9b29d050319795"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "iria",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Piel moteada verde, ojo y rostro de rana, cuero gastado y tela deshilada; proporciones estables.",
+      "accepted_variations": "Reactions conservado simplifica el detalle en low_health; retiene moteado, ojo y lectura de piel, con variación ilustrativa menor.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/iria-base-v2.png",
+        "sha256": "ea7f1d498ba869846ac51f4cd5d3667c560993b755a7d81ec1a6deb9ef101a28"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/iria-base-v2.json",
+        "sha256": "906e5d2b411592ead0e9527e1fdbbc23107b1b1143e3de19176b70f427aedb9c"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/iria/realtime/showcase.json",
+          "sha256": "35ca1a5ae67a867beb48ebf14b68a60a730b151cb9d1480357109323b33642f7"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/realtime/input-hashes.json",
+          "sha256": "cdf242cb31a019043af39c27121b952fa86bc8fe4bee06d38c4c28829a34e4ee"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/showcase.json",
+          "sha256": "87a3bfe510405c199b40ca3907db99af5b44b6ad4642e1ee05eed7b182841bec"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/input-hashes.json",
+          "sha256": "b9264dae93bf8af40465107f65125cf39755709c5e8688b452a3ab83ea1f90b4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/base-bank-reviewed.png",
+          "sha256": "5788fc4e419412f6910b9616acb17808fa7947d86984f90472cf4603cf68f38f"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "iria",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "El movement anterior alisaba la piel y simplificaba el ojo. La corrección recupera moteado, rostro, cuero gastado y tela deshilada en las 16 poses; el paso idle→movimiento→idle ya no cambia de material.Piel moteada verde, ojo y rostro de rana, cuero gastado y tela deshilada; proporciones estables.",
+      "accepted_variations": "Reactions conservado simplifica el detalle en low_health; retiene moteado, ojo y lectura de piel, con variación ilustrativa menor.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/iria-movement-v2.png",
+        "sha256": "02bea391ddb8eb39484994e1b5323e2f0b31426612a9d8e7ddaa49d5f741fbf0"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/iria-movement-v2.json",
+        "sha256": "fb84da68949e494e60ec538046535cc0f59b2faf9ed9179e10b00acfd14c08cc"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/iria/realtime/showcase.json",
+          "sha256": "35ca1a5ae67a867beb48ebf14b68a60a730b151cb9d1480357109323b33642f7"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/realtime/input-hashes.json",
+          "sha256": "cdf242cb31a019043af39c27121b952fa86bc8fe4bee06d38c4c28829a34e4ee"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/showcase.json",
+          "sha256": "87a3bfe510405c199b40ca3907db99af5b44b6ad4642e1ee05eed7b182841bec"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/input-hashes.json",
+          "sha256": "b9264dae93bf8af40465107f65125cf39755709c5e8688b452a3ab83ea1f90b4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/material-at-native-scale.png",
+          "sha256": "8302cc3a9768024616aa38951048a80babe05d2f3ef1d51b015d9c4e14801b8a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/chronological-03.jpg",
+          "sha256": "495ab18d181cb5962762ed08cef78920e79e426ab411aedbc1abf81fc35bdfa6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "7c07aabd0028874920217ae6ed866d6fb607c7d062d5b25bfe21453c2bbb116c"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "iria",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Piel moteada verde, ojo y rostro de rana, cuero gastado y tela deshilada; proporciones estables.",
+      "accepted_variations": "Reactions conservado simplifica el detalle en low_health; retiene moteado, ojo y lectura de piel, con variación ilustrativa menor.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/iria-reactions-v2.png",
+        "sha256": "ee9a3f6a570d25eb6a3fcfa1b88ee29d4872645b3aa6da7b320cbd05dec73863"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/iria-reactions-v2.json",
+        "sha256": "87d5dce63251bc9d1f1869433f0b771ab84b43bb66c49903a44ddd250bc2d246"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/iria/realtime/showcase.json",
+          "sha256": "35ca1a5ae67a867beb48ebf14b68a60a730b151cb9d1480357109323b33642f7"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/realtime/input-hashes.json",
+          "sha256": "cdf242cb31a019043af39c27121b952fa86bc8fe4bee06d38c4c28829a34e4ee"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/showcase.json",
+          "sha256": "87a3bfe510405c199b40ca3907db99af5b44b6ad4642e1ee05eed7b182841bec"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/captures/input-hashes.json",
+          "sha256": "b9264dae93bf8af40465107f65125cf39755709c5e8688b452a3ab83ea1f90b4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/material-at-native-scale.png",
+          "sha256": "8302cc3a9768024616aa38951048a80babe05d2f3ef1d51b015d9c4e14801b8a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/iria/chronological-06.jpg",
+          "sha256": "c166cf9f375a5e6852271112cd734ee019e0257556b4ce520672d473a0dae40e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-2.png",
+          "sha256": "ebc2e625183e4af1fe374fd7681abb29fac0af97bfe4f391bc9b29d050319795"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "kiro",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelaje grueso marrón, hocico y colmillos, guantes y tela gastada; torso pesado conservado.",
+      "accepted_variations": "Rim algo más vivo en algunas poses, dentro de la variación de iluminación.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/kiro-base-v2.png",
+        "sha256": "2258fac375604c1ff3ce03654c96d6c7f206e895a098e613b2a1e423754afbbe"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/kiro-base-v2.json",
+        "sha256": "09d3df57c4cff2953bf8847f5580aee421270f69fecd5dca4bdb560a4062f7d6"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/kiro/realtime/showcase.json",
+          "sha256": "bd549df6d4418f408d0e9d6ec36b46a3715a7d3890706fef07510594098f6f99"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/realtime/input-hashes.json",
+          "sha256": "731725adf5673bbbe639757b8084cea563f507504b0c68914dfec3af0fb41a0a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/showcase.json",
+          "sha256": "5827a6b3ae0f9ab28f13a7ba320678428ef736ce7f9d5278caba92f922ba8ad0"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/input-hashes.json",
+          "sha256": "b56d2f08d711dc58d85bbeff6df7791fdc3e9e555176e15f2026e6821249745b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/base-bank-reviewed.png",
+          "sha256": "dbe6868f1afd932a866fc2f0bf97af4beff7fbbcb080571f764cc95b292ef259"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "kiro",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelaje grueso marrón, hocico y colmillos, guantes y tela gastada; torso pesado conservado.",
+      "accepted_variations": "Rim algo más vivo en algunas poses, dentro de la variación de iluminación.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/kiro-movement-v2.png",
+        "sha256": "22f2ce08af39e9da0e77efa45cc1f857f70d9322ae86695177ec0ba1e2f71684"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/kiro-movement-v2.json",
+        "sha256": "0c2d323023e646dcde1cd7296e50371b32173be74a7619291ad4d3722f808c57"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/kiro/realtime/showcase.json",
+          "sha256": "bd549df6d4418f408d0e9d6ec36b46a3715a7d3890706fef07510594098f6f99"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/realtime/input-hashes.json",
+          "sha256": "731725adf5673bbbe639757b8084cea563f507504b0c68914dfec3af0fb41a0a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/showcase.json",
+          "sha256": "5827a6b3ae0f9ab28f13a7ba320678428ef736ce7f9d5278caba92f922ba8ad0"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/input-hashes.json",
+          "sha256": "b56d2f08d711dc58d85bbeff6df7791fdc3e9e555176e15f2026e6821249745b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/material-at-native-scale.png",
+          "sha256": "974056a961c61d596afbb0072db1901880812cc78abd6ecc951041c809a28f25"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/chronological-03.jpg",
+          "sha256": "3b1cec69969611337a48bd21037848d8b27563eda25dd969720dd51bbda32b99"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "8b56214acb51e688a9be3009e6bf229dfb602631ba70b28f9192599294ff0862"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "kiro",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelaje grueso marrón, hocico y colmillos, guantes y tela gastada; torso pesado conservado.",
+      "accepted_variations": "Rim algo más vivo en algunas poses, dentro de la variación de iluminación.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/kiro-reactions-v2.png",
+        "sha256": "002e5d8ddc5deebbf6a812ac9fe6887ed992e39d63b75ba29b2af07fdde4ec6f"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/kiro-reactions-v2.json",
+        "sha256": "17c79249a46210ca3841e739bd499312de583f5ee060b224fdd9d30ed928ae18"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/kiro/realtime/showcase.json",
+          "sha256": "bd549df6d4418f408d0e9d6ec36b46a3715a7d3890706fef07510594098f6f99"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/realtime/input-hashes.json",
+          "sha256": "731725adf5673bbbe639757b8084cea563f507504b0c68914dfec3af0fb41a0a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/showcase.json",
+          "sha256": "5827a6b3ae0f9ab28f13a7ba320678428ef736ce7f9d5278caba92f922ba8ad0"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/captures/input-hashes.json",
+          "sha256": "b56d2f08d711dc58d85bbeff6df7791fdc3e9e555176e15f2026e6821249745b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/material-at-native-scale.png",
+          "sha256": "974056a961c61d596afbb0072db1901880812cc78abd6ecc951041c809a28f25"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/kiro/chronological-06.jpg",
+          "sha256": "3b3bf066ecc91370faab3597350ebf50bedaa08958bc5837d9fbfe16b4c19db0"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-2.png",
+          "sha256": "ebc2e625183e4af1fe374fd7681abb29fac0af97bfe4f391bc9b29d050319795"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "luma",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Piel rosada lisa, branquias, cola, ropa oscura y faja amarilla; cabeza y cuerpo mantienen proporción.",
+      "accepted_variations": "Algún trazo más suave; la piel sigue siendo lisa y la ropa conserva su lectura.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/luma-base-v2.png",
+        "sha256": "1ab20600ad50cf31bc19656d5b0c40cc5e6c031566fb27993a65b9102ec4e7e7"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/luma-base-v2.json",
+        "sha256": "832e5693a6043060bed04178c06269e3744979aeeb8284d0593f810505cc1e1a"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/luma/realtime/showcase.json",
+          "sha256": "4fe0a844cfcf0d6a382ab945623fdc8bdc22e3cdc68ec8e8b40b43d521c9e60c"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/realtime/input-hashes.json",
+          "sha256": "a7caa6b6cb3642df7abc591804011b3fdc179d6f6a2e7480ec906cd5d47e426a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/showcase.json",
+          "sha256": "939e87a7b65ed33a9ea6241330eaa92b6f7b7bbcd88054a472fc766fb1db98c4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/input-hashes.json",
+          "sha256": "eb5c1ac9c5324a302b27634d96ae5c42afa8d5ae37cbda44d14ab981aca5c68e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/base-bank-reviewed.png",
+          "sha256": "536e7d2d29d774e19a712649820330bf3a8a1e7ed2b4ba4195d0b63c7e333e05"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "luma",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Piel rosada lisa, branquias, cola, ropa oscura y faja amarilla; cabeza y cuerpo mantienen proporción.",
+      "accepted_variations": "Algún trazo más suave; la piel sigue siendo lisa y la ropa conserva su lectura.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/luma-movement-v2.png",
+        "sha256": "a325a39877f4261412c04e6ef470567070a3fe6bc0c9f88ff5f3de349803fc3d"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/luma-movement-v2.json",
+        "sha256": "2bde8973d9078a28e83c8f9040242c5a611d153853bcb22b882c02d787cb3dd7"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/luma/realtime/showcase.json",
+          "sha256": "4fe0a844cfcf0d6a382ab945623fdc8bdc22e3cdc68ec8e8b40b43d521c9e60c"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/realtime/input-hashes.json",
+          "sha256": "a7caa6b6cb3642df7abc591804011b3fdc179d6f6a2e7480ec906cd5d47e426a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/showcase.json",
+          "sha256": "939e87a7b65ed33a9ea6241330eaa92b6f7b7bbcd88054a472fc766fb1db98c4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/input-hashes.json",
+          "sha256": "eb5c1ac9c5324a302b27634d96ae5c42afa8d5ae37cbda44d14ab981aca5c68e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/material-at-native-scale.png",
+          "sha256": "dbf7efd80672a02dcf63fb4df2469ba648c90448cf03a6239cf93ca81bd569ca"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/chronological-03.jpg",
+          "sha256": "fc259bcfda96633034e3b318472759099197b9c820b61d10052e0848bc9f78c5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "553078cfd6fcc3336977bb8f2a167547723ee6cd13fc8280f9f825dfda9fd58f"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "luma",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Piel rosada lisa, branquias, cola, ropa oscura y faja amarilla; cabeza y cuerpo mantienen proporción.",
+      "accepted_variations": "Algún trazo más suave; la piel sigue siendo lisa y la ropa conserva su lectura.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/luma-reactions-v2.png",
+        "sha256": "2a1cf9f5aff744d39d39c040216fdfc1d6e8b647d391bc72325a557321b3b093"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/luma-reactions-v2.json",
+        "sha256": "ece69b12fdb1796de81a6a4023fddb7ff1f841c751e63ff556fe7b55f27952b4"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/luma/realtime/showcase.json",
+          "sha256": "4fe0a844cfcf0d6a382ab945623fdc8bdc22e3cdc68ec8e8b40b43d521c9e60c"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/realtime/input-hashes.json",
+          "sha256": "a7caa6b6cb3642df7abc591804011b3fdc179d6f6a2e7480ec906cd5d47e426a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/showcase.json",
+          "sha256": "939e87a7b65ed33a9ea6241330eaa92b6f7b7bbcd88054a472fc766fb1db98c4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/captures/input-hashes.json",
+          "sha256": "eb5c1ac9c5324a302b27634d96ae5c42afa8d5ae37cbda44d14ab981aca5c68e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/material-at-native-scale.png",
+          "sha256": "dbf7efd80672a02dcf63fb4df2469ba648c90448cf03a6239cf93ca81bd569ca"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/luma/chronological-06.jpg",
+          "sha256": "29a45052641ce2a8699ff48e3a2c7484fb7a7d766a9a1f8f167101f60dd2dc61"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-2.png",
+          "sha256": "ebc2e625183e4af1fe374fd7681abb29fac0af97bfe4f391bc9b29d050319795"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "mugo",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Piedra verde con planos y facetas, rostro angular, cuero y tela; núcleo jade/ámbar y torso pesado conservados.",
+      "accepted_variations": "Reactions conservado tiene algo menos de grano fino en low_health; retiene facetas y lectura pétrea, sin convertirlas en plástico.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/mugo-base-v2.png",
+        "sha256": "c4386ccb0a25e3da161147bfe536ff505999eadc764b8ba125d761778631c3ce"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/mugo-base-v2.json",
+        "sha256": "f505236dfbfb777542134c62b386ce980ee9650a1c406e8d0ea644ca5c323105"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/mugo/realtime/showcase.json",
+          "sha256": "5af1126995b0d8fb345e37266ee6583bb033d019bb1f4c61a912757d0693c183"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/realtime/input-hashes.json",
+          "sha256": "8c5786de3373f15e9085a13a597c56c423c012be7c12763ebe81e05fe66103f6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/showcase.json",
+          "sha256": "0876eb1193884d95f4843d48e1584785cca9e8fab2716580bf8eb04bbec57791"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/input-hashes.json",
+          "sha256": "e944eb4a168511f5d6c48739a7e3e1dd7b7f91ff34d5ea628582c4ac01907c54"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/base-bank-reviewed.png",
+          "sha256": "044e2affa78ab9f095a337dcabebd98815bdb5c10404e4f1be5d43c9a49a2ab9"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "mugo",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "El movement anterior suavizaba piedra y cara y cambiaba el núcleo hacia cian. La corrección recupera planos angulares, núcleo jade/ámbar y masa en las 16 poses, confirmados en recovery, salto y regreso a idle nativos.Piedra verde con planos y facetas, rostro angular, cuero y tela; núcleo jade/ámbar y torso pesado conservados.",
+      "accepted_variations": "Reactions conservado tiene algo menos de grano fino en low_health; retiene facetas y lectura pétrea, sin convertirlas en plástico.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/mugo-movement-v2.png",
+        "sha256": "9791d3ca6cb991c013694bf5bbc710a1ed901b618bb35eec84a9353acbdfe32e"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/mugo-movement-v2.json",
+        "sha256": "2c61425e59b787563f9f37d9084358d86ad75c338e2b05edbd029b52361e768a"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/mugo/realtime/showcase.json",
+          "sha256": "5af1126995b0d8fb345e37266ee6583bb033d019bb1f4c61a912757d0693c183"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/realtime/input-hashes.json",
+          "sha256": "8c5786de3373f15e9085a13a597c56c423c012be7c12763ebe81e05fe66103f6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/showcase.json",
+          "sha256": "0876eb1193884d95f4843d48e1584785cca9e8fab2716580bf8eb04bbec57791"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/input-hashes.json",
+          "sha256": "e944eb4a168511f5d6c48739a7e3e1dd7b7f91ff34d5ea628582c4ac01907c54"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/material-at-native-scale.png",
+          "sha256": "87f31da0eaec5f45dad9222a218f00189b159996d6cb9e0a2b8e2bfe253d30f9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/chronological-03.jpg",
+          "sha256": "d2f3350d1bf22f19ffdccf050174c044e36fde64f9ac1e3a13b16e7acd095f43"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "524b24d9ed1385ff5af08485326e1c8a449056269900e69604b4976c1f6fc422"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "mugo",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Piedra verde con planos y facetas, rostro angular, cuero y tela; núcleo jade/ámbar y torso pesado conservados.",
+      "accepted_variations": "Reactions conservado tiene algo menos de grano fino en low_health; retiene facetas y lectura pétrea, sin convertirlas en plástico.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/mugo-reactions-v2.png",
+        "sha256": "e75c607bbb9ffd9bfe2bdd5b4bbf6c7adedba149cca42370b04455a96297c8d7"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/mugo-reactions-v2.json",
+        "sha256": "2b87d01b9fe6e80833c2385b710e15553f977032b7810a3e150d0009885975e3"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/mugo/realtime/showcase.json",
+          "sha256": "5af1126995b0d8fb345e37266ee6583bb033d019bb1f4c61a912757d0693c183"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/realtime/input-hashes.json",
+          "sha256": "8c5786de3373f15e9085a13a597c56c423c012be7c12763ebe81e05fe66103f6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/showcase.json",
+          "sha256": "0876eb1193884d95f4843d48e1584785cca9e8fab2716580bf8eb04bbec57791"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/captures/input-hashes.json",
+          "sha256": "e944eb4a168511f5d6c48739a7e3e1dd7b7f91ff34d5ea628582c4ac01907c54"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/material-at-native-scale.png",
+          "sha256": "87f31da0eaec5f45dad9222a218f00189b159996d6cb9e0a2b8e2bfe253d30f9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/mugo/chronological-06.jpg",
+          "sha256": "6ecde704663fce5ed5337aed55587f033835ef909151c610323734e3fd8fb0c2"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-3.png",
+          "sha256": "4b031e88f47251b30b9bf4b0ab15f22fac0d452441438d8910eafe2d1a7299f2"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "neris",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Plumaje blanco/azul segmentado, pico fino, patas escamosas y lino claro; alas y cuello conservan anatomía.",
+      "accepted_variations": "El azul varía levemente entre ilustraciones; se conservan plumas individuales y lino.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/neris-base-v2.png",
+        "sha256": "51c089a2e855b7b119c54f49d5112070dc14681a0fd97c7c279794866419c216"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/neris-base-v2.json",
+        "sha256": "5130bec5c36513c12d060a48bff277b41b38c69bc30a09558acdfd2dd8014f3f"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/neris/realtime/showcase.json",
+          "sha256": "1274f46a5b74f10ac27f898af0e14b2a81bcc39716afd243b22ff29a552769b5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/realtime/input-hashes.json",
+          "sha256": "a07bf0c95efe65e05c9373be5c510d9593757c265472d623b75db488eeca339b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/showcase.json",
+          "sha256": "359f5690792963acf8e781cc2c116e34449fe6c7074b25a02f51a7fdcffda9f6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/input-hashes.json",
+          "sha256": "80473e4f2172d002f6be1168e2edbf20530addd250bf20c9d811ed605bf1772e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/base-bank-reviewed.png",
+          "sha256": "2a1c5a0568c4b191e034ab093e5e0acbf40e91f2130f030b297965fb09c390ef"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "neris",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Plumaje blanco/azul segmentado, pico fino, patas escamosas y lino claro; alas y cuello conservan anatomía.",
+      "accepted_variations": "El azul varía levemente entre ilustraciones; se conservan plumas individuales y lino.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/neris-movement-v2.png",
+        "sha256": "eacfe41bf39b7b22a859345e184c79e6ad6ab5f93e0584c711078311ba16092e"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/neris-movement-v2.json",
+        "sha256": "7dabcb5dbd992042f02c5f701bfff7dd6e182a66a0a7f9ecc413a7d9305c7f29"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/neris/realtime/showcase.json",
+          "sha256": "1274f46a5b74f10ac27f898af0e14b2a81bcc39716afd243b22ff29a552769b5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/realtime/input-hashes.json",
+          "sha256": "a07bf0c95efe65e05c9373be5c510d9593757c265472d623b75db488eeca339b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/showcase.json",
+          "sha256": "359f5690792963acf8e781cc2c116e34449fe6c7074b25a02f51a7fdcffda9f6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/input-hashes.json",
+          "sha256": "80473e4f2172d002f6be1168e2edbf20530addd250bf20c9d811ed605bf1772e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/material-at-native-scale.png",
+          "sha256": "836a3778f324166f95c8de1ae30174e8b3ac14d53b7b27b4d87309b251521dab"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/chronological-03.jpg",
+          "sha256": "9afb0fa4ec6a0b8786a0aae57bf93d8dafaf26d1d56f7bd08a21aeef147a580b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "268a5c0c5d293a1175dad885ae803153af70507d2dd7cdbe6d223b8ae89a2570"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "neris",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Plumaje blanco/azul segmentado, pico fino, patas escamosas y lino claro; alas y cuello conservan anatomía.",
+      "accepted_variations": "El azul varía levemente entre ilustraciones; se conservan plumas individuales y lino.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/neris-reactions-v2.png",
+        "sha256": "d73c776279574e68cc239e57437e7bf31770e347a0357efe0e1ca75737f98b72"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/neris-reactions-v2.json",
+        "sha256": "654d02aff8f9e7f31b20afc886cda605d8ccfe1a50c19668bc4656dfbce445bd"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/neris/realtime/showcase.json",
+          "sha256": "1274f46a5b74f10ac27f898af0e14b2a81bcc39716afd243b22ff29a552769b5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/realtime/input-hashes.json",
+          "sha256": "a07bf0c95efe65e05c9373be5c510d9593757c265472d623b75db488eeca339b"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/showcase.json",
+          "sha256": "359f5690792963acf8e781cc2c116e34449fe6c7074b25a02f51a7fdcffda9f6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/captures/input-hashes.json",
+          "sha256": "80473e4f2172d002f6be1168e2edbf20530addd250bf20c9d811ed605bf1772e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/material-at-native-scale.png",
+          "sha256": "836a3778f324166f95c8de1ae30174e8b3ac14d53b7b27b4d87309b251521dab"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/neris/chronological-06.jpg",
+          "sha256": "2fb11a6612b6e3e0ded9d13def2289c47fa95856aa6e40baaa3b6cf997b3a286"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-3.png",
+          "sha256": "4b031e88f47251b30b9bf4b0ab15f22fac0d452441438d8910eafe2d1a7299f2"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "nima",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelo manchado, orejas con penachos, cuero y tejido oscuro con bufanda roja; masa corporal coherente.",
+      "accepted_variations": "La cara/botas algo más gráficas y la bufanda más saturada son variación ilustrativa menor a tamaño de juego. Movement y reactions se aceptan por separado; no se mantiene el rechazo preliminar que confundió ambos bancos.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/nima-base-v2.png",
+        "sha256": "670a99672e15ba84fa6aaeddeaddb360f267a03a759a03be596148b3d4238e9c"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/nima-base-v2.json",
+        "sha256": "f922a74bed14d987575d92100da63b4a16a32f7f342e3d6422fdc194ea044253"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/nima/realtime/showcase.json",
+          "sha256": "6a596136ec35bfaa97c4bacd83399d868219eb9a18bb8b64b5e645400526cbca"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/realtime/input-hashes.json",
+          "sha256": "7e12c443b135feb54aabbe9d55a83111b6e034c0b31705bd88789bbb971aa2b3"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/showcase.json",
+          "sha256": "57fce37eb0fc3ae0b3c71fcb43c2773ee396d398bfd08654a5562da17de4ba1f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/input-hashes.json",
+          "sha256": "8c91aee16e2afd3668adae91a402d0f0ab040ca9a36dcae9b5f82bfa38873cdf"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/base-bank-reviewed.png",
+          "sha256": "1f41dd78c27882bba68afac9d5437ebe4b82c3743a3d5eca8ac12065f6ada537"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "nima",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelo manchado, orejas con penachos, cuero y tejido oscuro con bufanda roja; masa corporal coherente.",
+      "accepted_variations": "La cara/botas algo más gráficas y la bufanda más saturada son variación ilustrativa menor a tamaño de juego. Movement y reactions se aceptan por separado; no se mantiene el rechazo preliminar que confundió ambos bancos.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/nima-movement-v2.png",
+        "sha256": "94d72b6a81da0c769c7839f9b41d0fd633569d7f6bfe72b5f3bd1dd4d46882b4"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/nima-movement-v2.json",
+        "sha256": "381f4252b0b347d4a94d9a4431ec6a36d42c689d8ff6fdd2f9a43f2e72a7e4dd"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/nima/realtime/showcase.json",
+          "sha256": "6a596136ec35bfaa97c4bacd83399d868219eb9a18bb8b64b5e645400526cbca"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/realtime/input-hashes.json",
+          "sha256": "7e12c443b135feb54aabbe9d55a83111b6e034c0b31705bd88789bbb971aa2b3"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/showcase.json",
+          "sha256": "57fce37eb0fc3ae0b3c71fcb43c2773ee396d398bfd08654a5562da17de4ba1f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/input-hashes.json",
+          "sha256": "8c91aee16e2afd3668adae91a402d0f0ab040ca9a36dcae9b5f82bfa38873cdf"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/material-at-native-scale.png",
+          "sha256": "09e7692728c818cfc15ec455981581e59f7151e21dac6b593d26c816340fd591"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/chronological-03.jpg",
+          "sha256": "08d306a9c1dfc14285a102839aa0dc61f013d45f424b26b894ea0f0e9706627a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "822068110c68dcdd1a41ca62e0ba6fbf0d70f58e80e22e38fbc7d3883486ae1d"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "nima",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelo manchado, orejas con penachos, cuero y tejido oscuro con bufanda roja; masa corporal coherente.",
+      "accepted_variations": "La cara/botas algo más gráficas y la bufanda más saturada son variación ilustrativa menor a tamaño de juego. Movement y reactions se aceptan por separado; no se mantiene el rechazo preliminar que confundió ambos bancos.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/nima-reactions-v2.png",
+        "sha256": "82a552906084ca96c3cd4cfa16828f125e9b0de05000c69a29ddd75474a051a1"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/nima-reactions-v2.json",
+        "sha256": "d70aa046ec0a1551f22c1fc20b6a608d0b680cf8691451cdd2c2b35a71fb6f36"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/nima/realtime/showcase.json",
+          "sha256": "6a596136ec35bfaa97c4bacd83399d868219eb9a18bb8b64b5e645400526cbca"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/realtime/input-hashes.json",
+          "sha256": "7e12c443b135feb54aabbe9d55a83111b6e034c0b31705bd88789bbb971aa2b3"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/showcase.json",
+          "sha256": "57fce37eb0fc3ae0b3c71fcb43c2773ee396d398bfd08654a5562da17de4ba1f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/captures/input-hashes.json",
+          "sha256": "8c91aee16e2afd3668adae91a402d0f0ab040ca9a36dcae9b5f82bfa38873cdf"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/material-at-native-scale.png",
+          "sha256": "09e7692728c818cfc15ec455981581e59f7151e21dac6b593d26c816340fd591"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/nima/chronological-06.jpg",
+          "sha256": "d98347fafcc43f5b0fc307f193c5aa76ebec2c7b5e63fc0a58e8100945b2f0a0"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-3.png",
+          "sha256": "4b031e88f47251b30b9bf4b0ab15f22fac0d452441438d8910eafe2d1a7299f2"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "onix",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelo de gato oscuro, ropa verde/marrón y faja amarilla; cabeza, cuerpo y cola coherentes.",
+      "accepted_variations": "Menor grano fino en algunas poses; mantiene pelo oscuro y telas, sin cambio apreciable de masa.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/onix-base-v2.png",
+        "sha256": "c53b15b7e563b644a1c46ade28fdddf24c002a583002bc135797bf06d44b4626"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/onix-base-v2.json",
+        "sha256": "8ea8310eead7539627e70e4efec3f3a133a9e92fe8b036af5a8de6644390ce18"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/onix/realtime/showcase.json",
+          "sha256": "beb877054eb8f8c1cdb1eefa06a25be3665f40df1f52076ecc76546e36b8650a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/realtime/input-hashes.json",
+          "sha256": "41c2d34966ad4dc022e2e64d141cf480d8d9ac79ba9070d81667485538158b6d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/showcase.json",
+          "sha256": "bbee21328705261dc7fd27877773a95830eefa885b33cc43a765cccfd31ed30e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/input-hashes.json",
+          "sha256": "ba5982f939029736ae03c44cf5c48516195520a7da0f591c3887702c8a0d91ab"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/base-bank-reviewed.png",
+          "sha256": "6b33453b6e12de87315625823adc806d5bf3e588a0dc871dc53ef2374566616b"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "onix",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelo de gato oscuro, ropa verde/marrón y faja amarilla; cabeza, cuerpo y cola coherentes.",
+      "accepted_variations": "Menor grano fino en algunas poses; mantiene pelo oscuro y telas, sin cambio apreciable de masa.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/onix-movement-v2.png",
+        "sha256": "13c6798430e348300704885d99fe164642d3e18d722ab6934d3aa4d6cb38434c"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/onix-movement-v2.json",
+        "sha256": "d4050efcc5df10f31591c8a94982d92cfca871d2d4dc19ac6e84d3b450c55e1e"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/onix/realtime/showcase.json",
+          "sha256": "beb877054eb8f8c1cdb1eefa06a25be3665f40df1f52076ecc76546e36b8650a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/realtime/input-hashes.json",
+          "sha256": "41c2d34966ad4dc022e2e64d141cf480d8d9ac79ba9070d81667485538158b6d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/showcase.json",
+          "sha256": "bbee21328705261dc7fd27877773a95830eefa885b33cc43a765cccfd31ed30e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/input-hashes.json",
+          "sha256": "ba5982f939029736ae03c44cf5c48516195520a7da0f591c3887702c8a0d91ab"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/material-at-native-scale.png",
+          "sha256": "d18d7a11ae7c4329d85544e5960bccb8f324a5798c6294361daf7d3ed7b68bc6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/chronological-03.jpg",
+          "sha256": "57b34a5af3c8d545cc6418a0f2d2fde783c60a675a06d49ccca355c3d0417b83"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "bbbf050665913e3ed698b2169df3daff38fc9ae96ef0f5859ad2359ae5c6ce5e"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "onix",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelo de gato oscuro, ropa verde/marrón y faja amarilla; cabeza, cuerpo y cola coherentes.",
+      "accepted_variations": "Menor grano fino en algunas poses; mantiene pelo oscuro y telas, sin cambio apreciable de masa.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/onix-reactions-v2.png",
+        "sha256": "cba3ef1f2541fb786f7bae17206e28294de4e8167cdc608511afcb99a169264e"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/onix-reactions-v2.json",
+        "sha256": "99e3458a82a97a6cbc39f34d961f8a216c911d97995bab254efd36d075d64563"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/onix/realtime/showcase.json",
+          "sha256": "beb877054eb8f8c1cdb1eefa06a25be3665f40df1f52076ecc76546e36b8650a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/realtime/input-hashes.json",
+          "sha256": "41c2d34966ad4dc022e2e64d141cf480d8d9ac79ba9070d81667485538158b6d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/showcase.json",
+          "sha256": "bbee21328705261dc7fd27877773a95830eefa885b33cc43a765cccfd31ed30e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/captures/input-hashes.json",
+          "sha256": "ba5982f939029736ae03c44cf5c48516195520a7da0f591c3887702c8a0d91ab"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/material-at-native-scale.png",
+          "sha256": "d18d7a11ae7c4329d85544e5960bccb8f324a5798c6294361daf7d3ed7b68bc6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/onix/chronological-06.jpg",
+          "sha256": "66f4392b7ff5383c3ce9575ac06a9f323db3d6c29b5c912a850d85617cbab104"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-3.png",
+          "sha256": "4b031e88f47251b30b9bf4b0ab15f22fac0d452441438d8910eafe2d1a7299f2"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "sira",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Quitina mate moteada, cuchillas curvas, tela berenjena y miembros delgados; anatomía de mantis coherente.",
+      "accepted_variations": "Reactions conservado simplifica algo el grano en posturas pequeñas; sigue leyendo como quitina mate con extremidades finas.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/sira-base-v2.png",
+        "sha256": "7056e0863754bd4a4ea8bc71159c446ad1a555b74b40118eec76c34f0f56383c"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/sira-base-v2.json",
+        "sha256": "61ea346b6e0ef7696ee66714784b13c8de67c5b570d704456621cf0bbfa49ef4"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/sira/realtime/showcase.json",
+          "sha256": "cc06ca2d492babf6b80dd0b53c18f1f69e7279c6a3cfacd107c5370fbbfff695"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/realtime/input-hashes.json",
+          "sha256": "8fba2f4eccb539e39285f6334b225514297573d0b253e4714c56924bcab125e6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/showcase.json",
+          "sha256": "9812208964921ec5df30e2a597c34ab8ab83cdff93b17ab2fea41ffabbd426d9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/input-hashes.json",
+          "sha256": "3ed1816b4d3df998bf7c3147f7ff7828c2a569d5acf5e116e2fbb547ae10c0e1"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/base-bank-reviewed.png",
+          "sha256": "4074200b30f5861d66aa1ca695f44ceb0fa2a5e975d6963d343ba835d7ea8741"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "sira",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "El movement anterior hacía placas brillantes y miembros gruesos. La corrección recupera quitina mate irregular, tibias finas y pies pequeños; recovery y salto nativos mantienen anatomía y material.Quitina mate moteada, cuchillas curvas, tela berenjena y miembros delgados; anatomía de mantis coherente.",
+      "accepted_variations": "Reactions conservado simplifica algo el grano en posturas pequeñas; sigue leyendo como quitina mate con extremidades finas.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/sira-movement-v2.png",
+        "sha256": "dd0e65f7d9be4f8c7bbe39c80ea27951ddb7b92647de832d6eccc15940e1b656"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/sira-movement-v2.json",
+        "sha256": "0e19958a72d81c7a849a98968c922709ef2dfaffe12a8c655381283accd823f7"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/sira/realtime/showcase.json",
+          "sha256": "cc06ca2d492babf6b80dd0b53c18f1f69e7279c6a3cfacd107c5370fbbfff695"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/realtime/input-hashes.json",
+          "sha256": "8fba2f4eccb539e39285f6334b225514297573d0b253e4714c56924bcab125e6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/showcase.json",
+          "sha256": "9812208964921ec5df30e2a597c34ab8ab83cdff93b17ab2fea41ffabbd426d9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/input-hashes.json",
+          "sha256": "3ed1816b4d3df998bf7c3147f7ff7828c2a569d5acf5e116e2fbb547ae10c0e1"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/material-at-native-scale.png",
+          "sha256": "6de11a144a3e5e88c7c81be91010dffeea4db3c9b7d55fa79a97841dcc715b93"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/chronological-03.jpg",
+          "sha256": "e1908625450c456a028ab2591fc7a24fb899d8c242fbcc4b2ddbb899cf4c1efe"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "c10d514d45591161520e7dbad74a0c81129667b0b4e602d7022a583fc9d1ec77"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "sira",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Quitina mate moteada, cuchillas curvas, tela berenjena y miembros delgados; anatomía de mantis coherente.",
+      "accepted_variations": "Reactions conservado simplifica algo el grano en posturas pequeñas; sigue leyendo como quitina mate con extremidades finas.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/sira-reactions-v2.png",
+        "sha256": "daaabdbac3c226cc7916e88eac4066450e09500256b79c682b08f8719e428a66"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/sira-reactions-v2.json",
+        "sha256": "94bbeb89d189aecd55fbae3572491fe269e77857e22fab62d53ba780da1c0914"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/sira/realtime/showcase.json",
+          "sha256": "cc06ca2d492babf6b80dd0b53c18f1f69e7279c6a3cfacd107c5370fbbfff695"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/realtime/input-hashes.json",
+          "sha256": "8fba2f4eccb539e39285f6334b225514297573d0b253e4714c56924bcab125e6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/showcase.json",
+          "sha256": "9812208964921ec5df30e2a597c34ab8ab83cdff93b17ab2fea41ffabbd426d9"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/captures/input-hashes.json",
+          "sha256": "3ed1816b4d3df998bf7c3147f7ff7828c2a569d5acf5e116e2fbb547ae10c0e1"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/material-at-native-scale.png",
+          "sha256": "6de11a144a3e5e88c7c81be91010dffeea4db3c9b7d55fa79a97841dcc715b93"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/sira/chronological-06.jpg",
+          "sha256": "d2dd06cb9223d0765e9636e7050834913ec5684a306c5921a58b1c9374a22763"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-4.png",
+          "sha256": "c0153ab661fd63fb5bae890c90c5f816199bf01ee9a6c95ae6cc120be3f469b7"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "taro",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelaje de tejón grueso, rostro alargado, ropa oscura gastada y cuerda; torso pesado conservado.",
+      "accepted_variations": "Contraste de pelo y borde ligeramente variable; no cambia el material.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/taro-base-v2.png",
+        "sha256": "545414ca28812e00c3aa90d2e23630007d31f85e7717fbffbc0e71cacedb76ac"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/taro-base-v2.json",
+        "sha256": "a20367e27100edded1ec317a385bab44e7a000e53a7b42be987931ff28c50712"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/taro/realtime/showcase.json",
+          "sha256": "86d1f90d5a1af35baee5d674d789f7ae78cd6e339ba2bea39de36b1c2c665c2a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/realtime/input-hashes.json",
+          "sha256": "51e626ed6e73ed48bbbf6476ef02bab8c4c8388408a8d9f0c3fbcb9652f6c5b5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/showcase.json",
+          "sha256": "80ce8c51f8900a50e53a1c7cce1ed7801943b0a956817c166259aa8f26693565"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/input-hashes.json",
+          "sha256": "7c96d0853e4ad92491a127bd996aa5be2a84fdd79b4744b85699febc0b8e7ac7"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/base-bank-reviewed.png",
+          "sha256": "8f0e7d18b163cfe4e4c4303fa57f9bfc72c35311837c0aa972244cd02f2ed025"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "taro",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelaje de tejón grueso, rostro alargado, ropa oscura gastada y cuerda; torso pesado conservado.",
+      "accepted_variations": "Contraste de pelo y borde ligeramente variable; no cambia el material.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/taro-movement-v2.png",
+        "sha256": "a5c4d97374b55d47713a99ec8f73812e90611e97cdb66ef27a1a34794e4007e6"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/taro-movement-v2.json",
+        "sha256": "d99cc7b0c6401572aa1c3dee8d5cc39c643070bd8f9f5da36311184bbf427fc9"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/taro/realtime/showcase.json",
+          "sha256": "86d1f90d5a1af35baee5d674d789f7ae78cd6e339ba2bea39de36b1c2c665c2a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/realtime/input-hashes.json",
+          "sha256": "51e626ed6e73ed48bbbf6476ef02bab8c4c8388408a8d9f0c3fbcb9652f6c5b5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/showcase.json",
+          "sha256": "80ce8c51f8900a50e53a1c7cce1ed7801943b0a956817c166259aa8f26693565"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/input-hashes.json",
+          "sha256": "7c96d0853e4ad92491a127bd996aa5be2a84fdd79b4744b85699febc0b8e7ac7"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/material-at-native-scale.png",
+          "sha256": "e99824729f0f1539aff06694b8d954be2e4541e9b30f159660ef5e1b54e2f91f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/chronological-03.jpg",
+          "sha256": "b1c1eba0b4c469e138b7bb27ed66960347191075f66d483174db0196c90ffceb"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "322e7889001dc039f4facfadd7964c502d099b9c9ca7a7bda0c845b66cd39fdb"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "taro",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelaje de tejón grueso, rostro alargado, ropa oscura gastada y cuerda; torso pesado conservado.",
+      "accepted_variations": "Contraste de pelo y borde ligeramente variable; no cambia el material.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/taro-reactions-v2.png",
+        "sha256": "62aaeeb3c27a67a127e17825aeea60f0c3f208f317adef5e2534886aaf531122"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/taro-reactions-v2.json",
+        "sha256": "588572811b364b7a471710d1bd6f43d95a7b46eba589f3b1e047d0ea31b6613a"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/taro/realtime/showcase.json",
+          "sha256": "86d1f90d5a1af35baee5d674d789f7ae78cd6e339ba2bea39de36b1c2c665c2a"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/realtime/input-hashes.json",
+          "sha256": "51e626ed6e73ed48bbbf6476ef02bab8c4c8388408a8d9f0c3fbcb9652f6c5b5"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/showcase.json",
+          "sha256": "80ce8c51f8900a50e53a1c7cce1ed7801943b0a956817c166259aa8f26693565"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/captures/input-hashes.json",
+          "sha256": "7c96d0853e4ad92491a127bd996aa5be2a84fdd79b4744b85699febc0b8e7ac7"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/material-at-native-scale.png",
+          "sha256": "e99824729f0f1539aff06694b8d954be2e4541e9b30f159660ef5e1b54e2f91f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/taro/chronological-06.jpg",
+          "sha256": "d7cf86b95de442121d5ec752fb57ee3456f403715d7163c895658b46cea4b5a6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-4.png",
+          "sha256": "c0153ab661fd63fb5bae890c90c5f816199bf01ee9a6c95ae6cc120be3f469b7"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "tepa",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Pelo fino marrón, cuerpo compacto de conejo, túnica azul y faja amarilla; golpe recto y brazos anatómicamente legibles.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/tepa-base-v2.png",
+        "sha256": "74d3993a37274b7b10ebe3e4007f795def3bb0dd790b4ab256932bc7324a9e76"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/tepa-base-v2.json",
+        "sha256": "d8ac89d8748f93b81a1b535286bf73497bd0b39b98c765c4c67107634b5da1fa"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/tepa/realtime/showcase.json",
+          "sha256": "1ba8fb5a19c900061be6f691d114963fec3ef7342400247b1be1d1cf432e492f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/realtime/input-hashes.json",
+          "sha256": "aa24112d2d27e65a77c8badaed98900cb46990f304ac740ce4265d07bfd7dcd4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/showcase.json",
+          "sha256": "4d897101cb191fb7e7400f0be6563c4e75f8a57286e3f79d236dd3876070af05"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/input-hashes.json",
+          "sha256": "e030026258861055cfcc466f84d429b2022558c27854eccd70e71fdd306ea555"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/base-bank-reviewed.png",
+          "sha256": "bd475104b4950fd551ade098fa13cc1c21a62c9d358d06534fb0b088a9069164"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "tepa",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Pelo fino marrón, cuerpo compacto de conejo, túnica azul y faja amarilla; golpe recto y brazos anatómicamente legibles.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/tepa-movement-v2.png",
+        "sha256": "8e2f6d42f2158ca674aa4674922ad9f111fa729c6e04f85a1aacc9082550b6e3"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/tepa-movement-v2.json",
+        "sha256": "6bfaaa9f6298cd9c346803fca2db3864feb4218bfad0d562ae5db0c6f0406769"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/tepa/realtime/showcase.json",
+          "sha256": "1ba8fb5a19c900061be6f691d114963fec3ef7342400247b1be1d1cf432e492f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/realtime/input-hashes.json",
+          "sha256": "aa24112d2d27e65a77c8badaed98900cb46990f304ac740ce4265d07bfd7dcd4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/showcase.json",
+          "sha256": "4d897101cb191fb7e7400f0be6563c4e75f8a57286e3f79d236dd3876070af05"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/input-hashes.json",
+          "sha256": "e030026258861055cfcc466f84d429b2022558c27854eccd70e71fdd306ea555"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/material-at-native-scale.png",
+          "sha256": "2159a1fd1add8fe151a2beaa7243c5f450b28a418c3b637669acf2aa3699ac65"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/chronological-03.jpg",
+          "sha256": "bb823d2f96ea60faebbf71086add07ac7f012dd22eac66ee8c08c39e2e6ae5a4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "af9cb97da1d4fcb04900a84329e0e17bdf2635a3bfc7f06dae9fadf0ddee9758"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "tepa",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Pelo fino marrón, cuerpo compacto de conejo, túnica azul y faja amarilla; golpe recto y brazos anatómicamente legibles.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/tepa-reactions-v2.png",
+        "sha256": "2c5ae60b6ac53a61f1084d888adea9fc02e86b4ec2aa3d3f5e84bf107e7fc81e"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/tepa-reactions-v2.json",
+        "sha256": "5616d7231005b1c0f18891f9470a6c07220ae3a3a41ad8a27fe9c695c1c3cc7f"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/tepa/realtime/showcase.json",
+          "sha256": "1ba8fb5a19c900061be6f691d114963fec3ef7342400247b1be1d1cf432e492f"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/realtime/input-hashes.json",
+          "sha256": "aa24112d2d27e65a77c8badaed98900cb46990f304ac740ce4265d07bfd7dcd4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/showcase.json",
+          "sha256": "4d897101cb191fb7e7400f0be6563c4e75f8a57286e3f79d236dd3876070af05"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/captures/input-hashes.json",
+          "sha256": "e030026258861055cfcc466f84d429b2022558c27854eccd70e71fdd306ea555"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/material-at-native-scale.png",
+          "sha256": "2159a1fd1add8fe151a2beaa7243c5f450b28a418c3b637669acf2aa3699ac65"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/tepa/chronological-06.jpg",
+          "sha256": "d61d9eb2a1aedae30d39f5a5a83f0cba53cdfd73f13568f39204ca9ae90a7bb4"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-4.png",
+          "sha256": "c0153ab661fd63fb5bae890c90c5f816199bf01ee9a6c95ae6cc120be3f469b7"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "vespera",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Alas oscuras con lunas, collar de pelo crema, placas oscuras y antenas; cuerpo esbelto conservado.",
+      "accepted_variations": "El borde cálido varía levemente; alas con lunas y collar de pelo se conservan.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/vespera-base-v2.png",
+        "sha256": "9fd1b5233a83df666423fc5c37970a504071a720da537412c7802014f53cbf92"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/vespera-base-v2.json",
+        "sha256": "4820cc12cfc2b98c759c3aa990f961e886e73d10e0b1e1af859f9e9e39512ba5"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/vespera/realtime/showcase.json",
+          "sha256": "c433f5fe20e0339e4756fb1d53b01a30c58872510853433c08cfa372cb8da344"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/realtime/input-hashes.json",
+          "sha256": "14568d4ef4cf88e260b4b29c3534f2429df69e14dfd77f629bd2ab171156f95d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/showcase.json",
+          "sha256": "8976ad64505d8a186a09d8d55198bbc990577c9cef68f84df9cad51757e026e1"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/input-hashes.json",
+          "sha256": "b81fb6834864d72208d7396bebb9241d0be6226ac67bd06762ea567c224d8a04"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/base-bank-reviewed.png",
+          "sha256": "9239622cf647ed35341f32de0938ad6f69261ae994be797fed6fd605fd65f761"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "vespera",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Alas oscuras con lunas, collar de pelo crema, placas oscuras y antenas; cuerpo esbelto conservado.",
+      "accepted_variations": "El borde cálido varía levemente; alas con lunas y collar de pelo se conservan.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/vespera-movement-v2.png",
+        "sha256": "b415213e2e3a29217f78e4011356a4588488eb7c82c0139e49edc54ac7de1285"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/vespera-movement-v2.json",
+        "sha256": "e86cb051b861184be5b750b6025104787594de2896299c113f4b355f1dfd30cc"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/vespera/realtime/showcase.json",
+          "sha256": "c433f5fe20e0339e4756fb1d53b01a30c58872510853433c08cfa372cb8da344"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/realtime/input-hashes.json",
+          "sha256": "14568d4ef4cf88e260b4b29c3534f2429df69e14dfd77f629bd2ab171156f95d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/showcase.json",
+          "sha256": "8976ad64505d8a186a09d8d55198bbc990577c9cef68f84df9cad51757e026e1"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/input-hashes.json",
+          "sha256": "b81fb6834864d72208d7396bebb9241d0be6226ac67bd06762ea567c224d8a04"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/material-at-native-scale.png",
+          "sha256": "5b811f3deeca6804afdb4b4331206333736eddb6d6e2096a99a2f5d62b44cd51"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/chronological-03.jpg",
+          "sha256": "3491a6414a0c00aa196856b5b901afd95a30c0286447a1f05b0bf4fa9591d0b0"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "6b2b4e9ae3677d220c32ce2fde11793972ba4f7da55b32b3a526831efee8635d"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "vespera",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Alas oscuras con lunas, collar de pelo crema, placas oscuras y antenas; cuerpo esbelto conservado.",
+      "accepted_variations": "El borde cálido varía levemente; alas con lunas y collar de pelo se conservan.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/vespera-reactions-v2.png",
+        "sha256": "3d5d732bdbfd13138cf4c41fca08340124fa57947c181fc4bead378a38a569c9"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/vespera-reactions-v2.json",
+        "sha256": "45b707e6295595b11dcbafa390c086a2f06b5a7a27fa8593dfec1bd2def4e352"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/vespera/realtime/showcase.json",
+          "sha256": "c433f5fe20e0339e4756fb1d53b01a30c58872510853433c08cfa372cb8da344"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/realtime/input-hashes.json",
+          "sha256": "14568d4ef4cf88e260b4b29c3534f2429df69e14dfd77f629bd2ab171156f95d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/showcase.json",
+          "sha256": "8976ad64505d8a186a09d8d55198bbc990577c9cef68f84df9cad51757e026e1"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/captures/input-hashes.json",
+          "sha256": "b81fb6834864d72208d7396bebb9241d0be6226ac67bd06762ea567c224d8a04"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/material-at-native-scale.png",
+          "sha256": "5b811f3deeca6804afdb4b4331206333736eddb6d6e2096a99a2f5d62b44cd51"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/vespera/chronological-06.jpg",
+          "sha256": "49fc39f4aa10b3732fff1d0dbfbd60874aff147983a8e480e794b0b4034eed6d"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-4.png",
+          "sha256": "c0153ab661fd63fb5bae890c90c5f816199bf01ee9a6c95ae6cc120be3f469b7"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "xuna",
+      "bank": "base",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Las ocho celdas base se revisaron juntas sin reescalar. Conservan la identidad aprobada en idle, preparación, golpe, reacción, evasión, victoria y derrota. Piel gris lisa, hocico largo, cuero rojizo y tela marrón; cuerpo delgado coherente.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/xuna-base-v2.png",
+        "sha256": "a2b142b7dcc5a22f5326dbde18f991e53b1f35263929de9d34c5c3e510d57769"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/xuna-base-v2.json",
+        "sha256": "3d6215502f590a2e7b0ed32d0556d8d9cf71dacbe958dab311b488c068ac0afb"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/xuna/realtime/showcase.json",
+          "sha256": "a3f84fa32df02278408512a08dd3f3cf3c1684ab4007e71d80ccc1aeee5afe06"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/realtime/input-hashes.json",
+          "sha256": "0d961366e17ce7fec2ac88e629da78800dbd9ad0200dabd8fac8c125ab630d8c"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/showcase.json",
+          "sha256": "2fceb0c409112906bdb61fedab80d0aec19c56b90ae3f2af7e3746774cf7a0ff"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/input-hashes.json",
+          "sha256": "af0e399e00fb2df8d149393ab4faf271b59cfbe83d4d2bcddcf191f3aa558a8e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/base-bank-reviewed.png",
+          "sha256": "9af6fc9d842c1ea3c4d157427182498e1e6d4995c5371da3044a3093b60916eb"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "idle",
+          "idle_breathe",
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ],
+        "native_showcase_frames": [
+          "idle",
+          "idle_breathe"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "windup",
+          "punch",
+          "hit",
+          "dodge",
+          "victory",
+          "defeat"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "xuna",
+      "bank": "movement",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "La comparación con el idle, las posturas de ataque y salto y el regreso a guardia nativos conservan material y masa. Piel gris lisa, hocico largo, cuero rojizo y tela marrón; cuerpo delgado coherente.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/xuna-movement-v2.png",
+        "sha256": "bcf08f54af316a2de4592032056bb0ca291c07d2c660b254fe95ac0b02cfd660"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/xuna-movement-v2.json",
+        "sha256": "d367ed2a869ccae1d87f2589314e46711e2153ccd73c138d08b6005e16478db3"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/xuna/realtime/showcase.json",
+          "sha256": "a3f84fa32df02278408512a08dd3f3cf3c1684ab4007e71d80ccc1aeee5afe06"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/realtime/input-hashes.json",
+          "sha256": "0d961366e17ce7fec2ac88e629da78800dbd9ad0200dabd8fac8c125ab630d8c"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/showcase.json",
+          "sha256": "2fceb0c409112906bdb61fedab80d0aec19c56b90ae3f2af7e3746774cf7a0ff"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/input-hashes.json",
+          "sha256": "af0e399e00fb2df8d149393ab4faf271b59cfbe83d4d2bcddcf191f3aa558a8e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/material-at-native-scale.png",
+          "sha256": "20b5612069dd7bfe820dd78f79f1e3a81b32e726c7ac5add8bd2bde9667410fc"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/chronological-03.jpg",
+          "sha256": "5a18b924361cb471a13dce6060f38527b407aa75a84f1a79c6955f5550bbea23"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/006-Ataque_ quick-recovery.png",
+          "sha256": "94c32e4e508f32f8b43ab78f39dc711e5ba47d52755654e6df553e1d4936ce47"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "native_showcase_frames": [
+          "guard_shift",
+          "step_back",
+          "charge_crouch",
+          "heavy_windup",
+          "quick_windup",
+          "quick_extend",
+          "follow_through",
+          "recovery",
+          "dash_lean",
+          "dash_stride",
+          "jump_start",
+          "jump_apex",
+          "jump_strike",
+          "jump_fall",
+          "landing",
+          "guard_settle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": []
+      },
+      "native_sources_match_reviewed_assets": true
+    },
+    {
+      "body_id": "xuna",
+      "bank": "reactions",
+      "decision": "ACCEPTED",
+      "pending": [],
+      "reason": "Caída, apoyo, levantada, guardia, victoria y poses de cambio conservan la identidad visual. La celda low_health se revisó estáticamente frente a idle a la misma escala. Piel gris lisa, hocico largo, cuero rojizo y tela marrón; cuerpo delgado coherente.",
+      "accepted_variations": "Variaciones menores de trazo y pliegues no alteran la lectura del mismo personaje.",
+      "atlas": {
+        "path": "outputs/Brasa/assets/sprites/normalized/xuna-reactions-v2.png",
+        "sha256": "47275f549fa48789597cdb42915a1329808da9762dbe3485e1f887d5263b990e"
+      },
+      "metadata": {
+        "path": "outputs/Brasa/assets/sprites/normalized/xuna-reactions-v2.json",
+        "sha256": "12a48a56db3b6cc0bc003bdb036f32c7546ba97f47d7684e299f338e2571bb2d"
+      },
+      "visual_review_basis": "Direct inspection by art_north of canonical comparisons, static source cells and chronological native captures; acceptance is not inferred from test pass counts.",
+      "evidence": [
+        {
+          "path": "work/visual-consistency/roster-native/xuna/realtime/showcase.json",
+          "sha256": "a3f84fa32df02278408512a08dd3f3cf3c1684ab4007e71d80ccc1aeee5afe06"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/realtime/input-hashes.json",
+          "sha256": "0d961366e17ce7fec2ac88e629da78800dbd9ad0200dabd8fac8c125ab630d8c"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/showcase.json",
+          "sha256": "2fceb0c409112906bdb61fedab80d0aec19c56b90ae3f2af7e3746774cf7a0ff"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/captures/input-hashes.json",
+          "sha256": "af0e399e00fb2df8d149393ab4faf271b59cfbe83d4d2bcddcf191f3aa558a8e"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/material-at-native-scale.png",
+          "sha256": "20b5612069dd7bfe820dd78f79f1e3a81b32e726c7ac5add8bd2bde9667410fc"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/xuna/chronological-06.jpg",
+          "sha256": "4c23e60724838a9ab8d44fec41b872fdfba2781614be17f9336e71b93f93b1c6"
+        },
+        {
+          "path": "work/visual-consistency/roster-native/low-health-reviewed-5.png",
+          "sha256": "d89e515fd215139c0d5938dc360a8746487514dd87f1ded1b2b8d86dea63f98a"
+        }
+      ],
+      "frame_coverage": {
+        "bank_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "low_health",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "native_showcase_frames": [
+          "light_hit",
+          "body_hit",
+          "heavy_hit",
+          "critical_stagger",
+          "fall_start",
+          "fall_mid",
+          "grounded",
+          "getup_support",
+          "getup_kneel",
+          "getup_rise",
+          "victory_start",
+          "victory_peak",
+          "transform_start",
+          "transform_peak",
+          "transformed_idle"
+        ],
+        "reviewed_statically_not_exercised_by_showcase": [
+          "low_health"
+        ]
+      },
+      "native_sources_match_reviewed_assets": true
+    }
+  ]
+}

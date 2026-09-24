@@ -1,0 +1,975 @@
+{
+  "version": 2,
+  "body_id": "ascua",
+  "bank": "reactions",
+  "profile_id": "ascua:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          276,
+          242
+        ],
+        "chest": [
+          276,
+          242
+        ],
+        "body": [
+          276,
+          242
+        ],
+        "hand": [
+          345,
+          211
+        ]
+      },
+      "alpha_bounds_px": [
+        81,
+        111,
+        309,
+        338
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          273,
+          260
+        ],
+        "chest": [
+          273,
+          260
+        ],
+        "body": [
+          273,
+          260
+        ],
+        "hand": [
+          240,
+          292
+        ]
+      },
+      "alpha_bounds_px": [
+        91,
+        129,
+        300,
+        320
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          250,
+          230
+        ],
+        "chest": [
+          250,
+          230
+        ],
+        "body": [
+          250,
+          230
+        ],
+        "hand": [
+          348,
+          207
+        ]
+      },
+      "alpha_bounds_px": [
+        76,
+        137,
+        331,
+        312
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          228,
+          257
+        ],
+        "chest": [
+          228,
+          257
+        ],
+        "body": [
+          228,
+          257
+        ],
+        "hand": [
+          333,
+          208
+        ]
+      },
+      "alpha_bounds_px": [
+        60,
+        166,
+        313,
+        282
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          190,
+          265
+        ],
+        "chest": [
+          190,
+          265
+        ],
+        "body": [
+          190,
+          265
+        ],
+        "hand": [
+          279,
+          215
+        ]
+      },
+      "alpha_bounds_px": [
+        57,
+        188,
+        349,
+        261
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          223,
+          337
+        ],
+        "chest": [
+          223,
+          337
+        ],
+        "body": [
+          223,
+          337
+        ],
+        "hand": [
+          310,
+          270
+        ]
+      },
+      "alpha_bounds_px": [
+        93,
+        242,
+        323,
+        205
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": false,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "grounded",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          214,
+          391
+        ],
+        "chest": [
+          214,
+          391
+        ],
+        "body": [
+          214,
+          391
+        ],
+        "hand": [
+          164,
+          431
+        ]
+      },
+      "alpha_bounds_px": [
+        73,
+        331,
+        357,
+        119
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "occluded",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          234,
+          355
+        ],
+        "chest": [
+          234,
+          355
+        ],
+        "body": [
+          234,
+          355
+        ],
+        "hand": [
+          287,
+          332
+        ]
+      },
+      "alpha_bounds_px": [
+        88,
+        253,
+        338,
+        196
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          270,
+          326
+        ],
+        "chest": [
+          270,
+          326
+        ],
+        "body": [
+          270,
+          326
+        ],
+        "hand": [
+          204,
+          420
+        ]
+      },
+      "alpha_bounds_px": [
+        88,
+        196,
+        309,
+        252
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          280,
+          248
+        ],
+        "chest": [
+          280,
+          248
+        ],
+        "body": [
+          280,
+          248
+        ],
+        "hand": [
+          349,
+          230
+        ]
+      },
+      "alpha_bounds_px": [
+        85,
+        132,
+        306,
+        317
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "low_health",
+      "region": [
+        1024,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          268,
+          266
+        ],
+        "chest": [
+          268,
+          266
+        ],
+        "body": [
+          268,
+          266
+        ],
+        "hand": [
+          313,
+          354
+        ]
+      },
+      "alpha_bounds_px": [
+        88,
+        143,
+        296,
+        306
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        1536,
+        1024,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          272,
+          234
+        ],
+        "chest": [
+          272,
+          234
+        ],
+        "body": [
+          272,
+          234
+        ],
+        "hand": [
+          329,
+          128
+        ]
+      },
+      "alpha_bounds_px": [
+        85,
+        115,
+        308,
+        335
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        0,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          275,
+          238
+        ],
+        "chest": [
+          275,
+          238
+        ],
+        "body": [
+          275,
+          238
+        ],
+        "hand": [
+          191,
+          105
+        ]
+      },
+      "alpha_bounds_px": [
+        67,
+        66,
+        325,
+        383
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        512,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          270,
+          248
+        ],
+        "chest": [
+          270,
+          248
+        ],
+        "body": [
+          270,
+          248
+        ],
+        "hand": [
+          321,
+          235
+        ]
+      },
+      "alpha_bounds_px": [
+        79,
+        126,
+        321,
+        323
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        1024,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          272,
+          249
+        ],
+        "chest": [
+          272,
+          249
+        ],
+        "body": [
+          272,
+          249
+        ],
+        "hand": [
+          349,
+          270
+        ]
+      },
+      "alpha_bounds_px": [
+        80,
+        128,
+        323,
+        321
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        1536,
+        1536,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256,
+          448
+        ],
+        "core": [
+          290,
+          250
+        ],
+        "chest": [
+          290,
+          250
+        ],
+        "body": [
+          290,
+          250
+        ],
+        "hand": [
+          359,
+          221
+        ]
+      },
+      "alpha_bounds_px": [
+        94,
+        128,
+        323,
+        320
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Inherited exact matching canonical pose sockets; verify visually after generated variant normalization.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "ACCEPTED",
+      "socket_visibility": {
+        "core": "visible",
+        "hand": "visible"
+      }
+    }
+  ],
+  "source": {
+    "path": "work/damage-families/generated/ascua-critical-reactions.png",
+    "sha256": "38ae4435c0b152704f2e5c3312567be4521b5f55885da030a94e05729c2940d1",
+    "uniform_bank_scalar": 1.54337899543379,
+    "preparation": "Authorized matte cleanup; uniform bank scale; projected template pose roots. No drawn pixels recolored/repainted.",
+    "frames": [
+      {
+        "name": "light_hit",
+        "height_ratio_to_pose": 1.0059,
+        "width_ratio_to_pose": 1.0198,
+        "source_anchor": [
+          159.78254437869822,
+          283.0
+        ]
+      },
+      {
+        "name": "body_hit",
+        "height_ratio_to_pose": 0.9969,
+        "width_ratio_to_pose": 1.0135,
+        "source_anchor": [
+          161.7189349112426,
+          283.0
+        ]
+      },
+      {
+        "name": "heavy_hit",
+        "height_ratio_to_pose": 1.0,
+        "width_ratio_to_pose": 1.0,
+        "source_anchor": [
+          176.39497041420117,
+          283.0
+        ]
+      },
+      {
+        "name": "critical_stagger",
+        "height_ratio_to_pose": 1.0036,
+        "width_ratio_to_pose": 1.0195,
+        "source_anchor": [
+          187.4171597633136,
+          282.64792899408286
+        ]
+      },
+      {
+        "name": "fall_start",
+        "height_ratio_to_pose": 0.974,
+        "width_ratio_to_pose": 1.0116,
+        "source_anchor": [
+          161.37426035502958,
+          276.0
+        ]
+      },
+      {
+        "name": "fall_mid",
+        "height_ratio_to_pose": 0.9857,
+        "width_ratio_to_pose": 0.9938,
+        "source_anchor": [
+          165.47189349112426,
+          277.0
+        ]
+      },
+      {
+        "name": "grounded",
+        "height_ratio_to_pose": 1.0625,
+        "width_ratio_to_pose": 0.9889,
+        "source_anchor": [
+          166.4156804733728,
+          277.35207100591714
+        ]
+      },
+      {
+        "name": "getup_support",
+        "height_ratio_to_pose": 0.9851,
+        "width_ratio_to_pose": 0.9826,
+        "source_anchor": [
+          169.35207100591717,
+          277.0
+        ]
+      },
+      {
+        "name": "getup_kneel",
+        "height_ratio_to_pose": 1.008,
+        "width_ratio_to_pose": 1.0,
+        "source_anchor": [
+          158.74704142011834,
+          277.64792899408286
+        ]
+      },
+      {
+        "name": "getup_rise",
+        "height_ratio_to_pose": 0.9969,
+        "width_ratio_to_pose": 1.0132,
+        "source_anchor": [
+          163.16272189349112,
+          280.0
+        ]
+      },
+      {
+        "name": "low_health",
+        "height_ratio_to_pose": 0.9903,
+        "width_ratio_to_pose": 1.0421,
+        "source_anchor": [
+          167.28254437869822,
+          280.0
+        ]
+      },
+      {
+        "name": "victory_start",
+        "height_ratio_to_pose": 0.9824,
+        "width_ratio_to_pose": 1.0267,
+        "source_anchor": [
+          173.5147928994083,
+          279.35207100591714
+        ]
+      },
+      {
+        "name": "victory_peak",
+        "height_ratio_to_pose": 1.0521,
+        "width_ratio_to_pose": 1.045,
+        "source_anchor": [
+          162.17011834319527,
+          277.0
+        ]
+      },
+      {
+        "name": "transform_start",
+        "height_ratio_to_pose": 1.0062,
+        "width_ratio_to_pose": 1.0388,
+        "source_anchor": [
+          162.19082840236686,
+          277.0
+        ]
+      },
+      {
+        "name": "transform_peak",
+        "height_ratio_to_pose": 1.0063,
+        "width_ratio_to_pose": 1.0319,
+        "source_anchor": [
+          163.89497041420117,
+          277.0
+        ]
+      },
+      {
+        "name": "transformed_idle",
+        "height_ratio_to_pose": 0.9969,
+        "width_ratio_to_pose": 1.066,
+        "source_anchor": [
+          169.82396449704143,
+          277.0
+        ]
+      }
+    ]
+  },
+  "art_review_status": "ACCEPTED",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "b3afc032a8527975fb2b07d71bac3874071f0d8f18672093a89ae0d9e40eb7ce",
+  "review_evidence": "work/damage-families/playback/ascua/showcase.json",
+  "matte_revision": "Residual light matte removed within 5px silhouette fringe; interior RGB and frame geometry unchanged."
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publicar Brasa con alcance claro"
+  short_description: "Revisa historial, licencias y contenido público"
+  default_prompt: "Usa $brasa-publication para resolver la tarea en Brasa respetando sus contratos y pruebas."

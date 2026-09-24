@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        104,
+        186,
+        259,
+        261
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35831
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        95,
+        185,
+        254,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35829
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        86,
+        260,
+        287,
+        188
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 34009
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        110,
+        190,
+        265,
+        258
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37706
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        104,
+        193,
+        264,
+        255
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35553
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        96,
+        190,
+        303,
+        257
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38330
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        102,
+        198,
+        323,
+        250
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 38535
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        106,
+        189,
+        267,
+        259
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35911
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        92,
+        240,
+        266,
+        208
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33228
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        96,
+        223,
+        303,
+        225
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 36972
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        119,
+        162,
+        262,
+        286
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 38462
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        146,
+        165,
+        229,
+        241
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30682
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        107,
+        162,
+        297,
+        287
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 37677
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        102,
+        163,
+        288,
+        282
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 41849
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        75,
+        238,
+        313,
+        209
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 37872
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        89,
+        164,
+        290,
+        284
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 42757
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "duna",
+  "bank": "movement",
+  "source_sha256": "3013f92553baa34f031a90d85df2f0d9c85447fd7e0aab14691e0b10dbdede6e",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/duna/movement/duna-movement.png"
+}

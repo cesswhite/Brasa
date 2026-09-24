@@ -1,0 +1,66 @@
+[
+  {
+    "test": "test_distinct_sprites",
+    "exit_code": 0,
+    "seconds": 3.28,
+    "result_lines": [
+      "DISTINCT SPRITES: 5419 checks, 0 failures; 17 installed, pending=[]"
+    ]
+  },
+  {
+    "test": "test_animation_sequences",
+    "exit_code": 0,
+    "seconds": 7.25,
+    "result_lines": [
+      "ANIMATION SEQUENCES: 7010 checks, 0 failures; pilot=true"
+    ]
+  },
+  {
+    "test": "test_fighter_identity",
+    "exit_code": 0,
+    "seconds": 6.52,
+    "result_lines": [
+      "FIGHTER IDENTITY: 982 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_identity_integration",
+    "exit_code": 0,
+    "seconds": 3.59,
+    "result_lines": [
+      "IDENTITY INTEGRATION: 86 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_identity_edges",
+    "exit_code": 0,
+    "seconds": 2.11,
+    "result_lines": [
+      "IDENTITY EDGES: 28 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_mexican_roster",
+    "exit_code": 0,
+    "seconds": 2.21,
+    "result_lines": [
+      "MEXICAN ROSTER: 816 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_online_ui",
+    "exit_code": 0,
+    "seconds": 2.84,
+    "result_lines": [
+      "ONLINE UI: 758 checks, 0 failures"
+    ]
+  },
+  {
+    "test": "test_story_panel",
+    "exit_code": 0,
+    "seconds": 8.48,
+    "result_lines": [
+      "STORY PANEL: 443 checks, 0 failures across 7 native viewport sizes"
+    ]
+  }
+]

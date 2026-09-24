@@ -1,0 +1,185 @@
+{
+  "tool": "built-in image_gen",
+  "model_selector": "not exposed",
+  "pixel_edits": false,
+  "version": 1,
+  "body_id": "nima",
+  "created_at": "2026-09-20T20:38:00.951578-06:00",
+  "assets": [
+    {
+      "body_id": "nima",
+      "bank": "movement",
+      "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/lince-v2.png",
+      "destination": "outputs/Brasa/assets/sprites/sequences/nima-movement-v1.png",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/nima-movement-v1.json",
+      "native_preview": "work/animation/nima-movement-native.png",
+      "inspection": "work/animation/root-inspection/nima-movement/nima-movement.inspection.json",
+      "attempts": [
+        {
+          "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED NIMA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve exactly the warm ochre spotted lynx fur, white cheek ruff and muzzle, black ear tufts, amber eyes, red long scarf, worn sleeveless dark teal tunic, brown leather belt with round amber buckle, dark brown knee-length trousers, white forearm wraps with leather fingerless gloves and foot wraps, short curved black-tip lynx tail, and feline hands/feet. Exact original slim athletic body proportions and animal head. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, entire silhouette, hands, feet and clothing fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 12 percent of every cell; each character at the SAME skeletal size/scale, standing height about65 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) guard_shift: canonical guard, weight subtly shifted to rear leg; (2) step_back: one short backward step, guard up, rear foot moving left; (3) charge_crouch: low deliberate crouch, hips back, coiled legs, both fists tight; (4) heavy_windup: large grounded preparation, torso rotates away from opponent, striking elbow pulled back, opposite fist guarding head.\nROW2: (5) quick_windup: compact short fist retraction near ribs; (6) quick_extend: short fast rightward punch, natural bent elbow nearly extended, wrist aligned, opposite fist guards; (7) follow_through: striking arm continuing slightly forward across a rotated torso after punch; (8) recovery: fist withdrawing toward guard, hips returning balanced.\nROW3: (9) dash_lean: strong forward lean and rear leg coiled, both feet visible; (10) dash_stride: one long low forward stride, rear leg extended naturally, tail balancing, guard maintained; (11) jump_start: heel lift and leg extension beginning takeoff; (12) jump_apex: clearly airborne with knees tucked, fist prepared, same body size, feet above virtual floor.\nROW4: (13) jump_strike: airborne punch to screen right, torso turned and one knee raised, coherent arm anatomy; (14) jump_fall: descent preparation, legs unfolding toward floor, fists returning; (15) landing: knees bent absorbing landing, torso low, hands balanced; (16) guard_settle: return to exact canonical standing guard, no redundant attack pose. Meaningful readable transitions; retain all canonical costume and silhouette features in EVERY frame.\nRetain the canonical PAINTERLY hand-drawn brush grain, muted materials, proportions and contour shapes; do not turn the character into a glossy3D render, a chibi or a different costume. Transparent RGBA alpha is essential; no checkerboard pixels. Grounded and kneeling poses must be smaller vertically than standing, with identical limb lengths.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-8c0fd0ba-962d-4f42-bfea-d4a21ed85a4c.png",
+          "reference_images": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/lince-v2.png"
+          ],
+          "role": "new_poses",
+          "sha256": "ecbd8b9a457d65ca9f61dc3f5ec5854002c0fd045890b57b7d3f898d2cbef4b7",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT this exact NIMA character sprite atlas ONLY to remove the painted gray/white checkerboard background. Return a PNG with true transparent RGBA alpha, all empty pixels alpha0 including holes between limbs. Preserve every one of the16 figures, every body/clothing/tail/facial detail, the exact pose/anatomy, positions, sizes, original4x4 layout and full canvas. Do not redraw, crop, enlarge or redesign any character. No new objects, effects, shadows, outlines, borders or text. The checkerboard is not part of the artwork. Transparent PNG suitable for direct Godot game compositing; no white, black or checkerboard replacement background. Keep all foreground pixels and brush texture intact.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-41fe044c-e4fb-437b-a1e4-bbe516eb5cbd.png",
+          "reference_images": [
+            "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-8c0fd0ba-962d-4f42-bfea-d4a21ed85a4c.png"
+          ],
+          "role": "alpha",
+          "sha256": "b7fd758945dc9649ed6e7c3160355c0dcc09606b3c496fb6965a2e9a69ef92e3",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "selected_native_qa"
+        }
+      ],
+      "canonical_sha256": "87c8b6e06a36be059495eecffd59aa232478b7046391fd9e83b7571f81ef57ea",
+      "sha256": "b7fd758945dc9649ed6e7c3160355c0dcc09606b3c496fb6965a2e9a69ef92e3",
+      "metadata_sha256": "7764e1a1a822e8f8dd28032db362f137cbff7da60f9a34b4611b8ebea1c51347",
+      "final_source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-41fe044c-e4fb-437b-a1e4-bbe516eb5cbd.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha0_fraction": 0.6340234375993631,
+      "frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "reference_height": 301,
+      "file_bytes": 1501040,
+      "rgba_base_bytes": 6290064
+    },
+    {
+      "body_id": "nima",
+      "bank": "reactions",
+      "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/lince-v2.png",
+      "destination": "outputs/Brasa/assets/sprites/sequences/nima-reactions-v1.png",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/nima-reactions-v1.json",
+      "native_preview": "work/animation/nima-reactions-native.png",
+      "inspection": "work/animation/root-inspection/nima-reactions/nima-reactions.inspection.json",
+      "attempts": [
+        {
+          "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED NIMA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve exactly the warm ochre spotted lynx fur, white cheek ruff and muzzle, black ear tufts, amber eyes, red long scarf, worn sleeveless dark teal tunic, brown leather belt with round amber buckle, dark brown knee-length trousers, white forearm wraps with leather fingerless gloves and foot wraps, short curved black-tip lynx tail, and feline hands/feet. Exact original slim athletic body proportions and animal head. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, entire silhouette, hands, feet and clothing fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 12 percent of every cell; each character at the SAME skeletal size/scale, standing height about65 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) light_hit: small sharp backward shoulder recoil, guard remains near face; (2) body_hit: torso folds slightly from gut impact, one hand protects abdomen; (3) heavy_hit: strong backward torso recoil and braced legs; (4) critical_stagger: clear loss of balance, knees buckle, arms trying to recover, head still same anatomy.\nROW2: (5) fall_start: rear knee collapsing as body tips backward/sideways toward the reference defeated orientation; (6) fall_mid: halfway to ground with one supporting forearm and hip descending, no detached limbs; (7) grounded: the SAME final lying defeated pose from the reference sheet bottom-right, head to the left and body extending right, costume and body dimensions unchanged, no redesign; (8) getup_support: from that grounded pose, one forearm and hand pushing against virtual floor, chest lifting, legs folded underneath.\nROW3: (9) getup_kneel: supported one-knee kneeling rise, one hand near ground; (10) getup_rise: nearly standing, knees still bent, fist lifting to guard; (11) low_health: standing but exhausted forward shoulders, one guarded hand over abdomen, visibly strained eyes; (12) victory_start: grounded straightening posture beginning to raise one fist, proud but same exact face.\nROW4: (13) victory_peak: proud canonical raised-fist victory, entire body inside cell, same exact face; (14) transform_start: same character in concentrated guard, hands poised beside chest, all anatomy and clothing unchanged; (15) transform_peak: same recognizable body in a strong grounded braced stance, fists low beside hips, eyes determined, no redesign; (16) transformed_idle: canonical combat guard with confident determined expression, exact same species, clothes, body proportions and size. These last three are future transformation transition poses ONLY: draw no new motifs, aura, glows, giant body or armor. Maintain fixed skeletal scale, especially the fallen and kneeling frames; never scale them up.\nRetain the canonical PAINTERLY hand-drawn brush grain, muted materials, proportions and contour shapes; do not turn the character into a glossy3D render, a chibi or a different costume. Transparent RGBA alpha is essential; no checkerboard pixels. Grounded and kneeling poses must be smaller vertically than standing, with identical limb lengths.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-a3e3407c-07dd-4599-a556-47fde58d7b12.png",
+          "reference_images": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/lince-v2.png"
+          ],
+          "role": "new_poses",
+          "sha256": "c24044a719b6742f6ab68adc612eebb7e7a1e65e6e2cf93a3abd93b3c2e370f2",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT this exact NIMA lynx character sprite atlas ONLY to remove the painted gray/white checkerboard background. Return a PNG with true transparent RGBA alpha, all empty pixels alpha0 including holes between limbs. Preserve every one of the16 figures, every body/clothing/tail/facial detail, the exact pose/anatomy, positions, sizes, original4x4 layout and full canvas. Do not redraw, crop, enlarge or redesign any character. No new objects, effects, shadows, outlines, borders or text. The checkerboard is not part of the artwork. Transparent PNG suitable for direct Godot game compositing; no white, black or checkerboard replacement background. Keep all foreground pixels and brush texture intact.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-e9aee895-6ac6-42e8-bca1-99f11d7c0abf.png",
+          "reference_images": [
+            "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-a3e3407c-07dd-4599-a556-47fde58d7b12.png"
+          ],
+          "role": "alpha",
+          "sha256": "5bca6170aaceaa162a770cc82f01643800625a37cb21d323d122bdb7f4ca0244",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "prompt": "Remove the background from the FIRST image. Return its exact sixteen Nima lynx character poses as a PNG with a genuinely transparent background (RGBA alpha). The SECOND image is a reference for correct transparency and character identity, not a layout to copy. Keep the first image's4x4 poses, positions and canvas size unchanged. Delete all gray/white checkerboard pixels in the first image, including gaps between arms/legs. Do not draw a checkerboard to represent transparency. Do not add a white/black background. Do not redraw the character, change anatomy, or add anything.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-5a72e6d3-80a2-4556-850c-92a36b4d702b.png",
+          "reference_images": [
+            "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-a3e3407c-07dd-4599-a556-47fde58d7b12.png",
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/lince-v2.png"
+          ],
+          "role": "alpha2",
+          "sha256": "16f20eb193063dad9ac80e2e6486c641bebc152e89607659990d8a22bdf24514",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "prompt": "Make the background transparent. Remove the checkerboard completely. Export the same sixteen sprites as a transparent PNG with an alpha channel, preserving every character and pose.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-72eacf8f-00e2-4f90-9ff6-bead258fd865.png",
+          "reference_images": [
+            "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-a3e3407c-07dd-4599-a556-47fde58d7b12.png"
+          ],
+          "role": "alpha3",
+          "sha256": "0fc45c268c583cb4db6a7b84e3724b9345fcc0943d60fcaafe1ec146e2e7a83c",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "selected_native_qa"
+        }
+      ],
+      "canonical_sha256": "87c8b6e06a36be059495eecffd59aa232478b7046391fd9e83b7571f81ef57ea",
+      "sha256": "0fc45c268c583cb4db6a7b84e3724b9345fcc0943d60fcaafe1ec146e2e7a83c",
+      "metadata_sha256": "47f587e7f9df20cbfd6835d99dfe578cca350af82d5f43b988f63e9f69ce26be",
+      "final_source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-72eacf8f-00e2-4f90-9ff6-bead258fd865.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha0_fraction": 0.638081901869361,
+      "frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "reference_height": 263,
+      "file_bytes": 1472972,
+      "rgba_base_bytes": 6290064
+    }
+  ]
+}

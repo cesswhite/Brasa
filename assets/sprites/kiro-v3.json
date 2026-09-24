@@ -1,0 +1,71 @@
+{
+  "columns": 4,
+  "rows": 2,
+  "note": "Regions surround the eight isolated silhouettes at alpha >= 31/255. Kiro uses the exact y419 boundary between windup and victory, retaining both adjacent silhouettes without foreign pixels. All poses use the idle scale. Source PNG is unmodified.",
+  "frames": [
+    {
+      "region": [
+        58,
+        6,
+        279,
+        419
+      ]
+    },
+    {
+      "region": [
+        505,
+        7,
+        272,
+        419
+      ]
+    },
+    {
+      "region": [
+        930,
+        23,
+        317,
+        396
+      ]
+    },
+    {
+      "region": [
+        1357,
+        21,
+        401,
+        401
+      ]
+    },
+    {
+      "region": [
+        43,
+        449,
+        330,
+        417
+      ]
+    },
+    {
+      "region": [
+        497,
+        493,
+        350,
+        361
+      ]
+    },
+    {
+      "region": [
+        963,
+        419,
+        287,
+        448
+      ]
+    },
+    {
+      "region": [
+        1309,
+        689,
+        457,
+        166
+      ]
+    }
+  ]
+}

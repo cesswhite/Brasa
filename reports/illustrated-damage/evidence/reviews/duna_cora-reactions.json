@@ -1,0 +1,15 @@
+{
+  "source_sha256": "31659c636dad08df297d9eb7310091b0eda3b055aab4657f799ecc9cc3059ed5",
+  "reviewed_atlas_sha256": "81a5f376d692eb4a398ca42fc38e71dbe3faaa072a6ef531bc515bfc3686cddd",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "strict_key_hue": true,
+  "reviewed_by": "fighter_art",
+  "review_note": "Armadura carbón y bronce con zigzag, fajín granate, rozaduras de rostro y muslos; sin pérdida de material. Todas las poses revisadas sobre fondos claro/oscuro y comparadas con referencia limpia; escala única de banco por consenso geométrico. Raíces proyectadas aproximadas, no anotaciones anatómicas verificadas.",
+  "evidence": {
+    "dark": "work/illustrated-damage/prepared/duna_cora/reactions/duna_cora-reactions-dark.png",
+    "light": "work/illustrated-damage/prepared/duna_cora/reactions/duna_cora-reactions-light.png",
+    "scale-review": "work/illustrated-damage/prepared/duna_cora/reactions/duna_cora-reactions-scale-review.png"
+  }
+}

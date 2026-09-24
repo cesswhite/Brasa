@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "onix",
+  "bank": "movement",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 304,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        47,
+        17,
+        231,
+        310
+      ],
+      "anchor": [
+        123.0,
+        307
+      ]
+    },
+    {
+      "name": "step_back",
+      "region": [
+        327,
+        17,
+        275,
+        311
+      ],
+      "anchor": [
+        186.0,
+        308
+      ]
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        630,
+        162,
+        291,
+        167
+      ],
+      "anchor": [
+        130.5,
+        164
+      ]
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        959,
+        30,
+        270,
+        297
+      ],
+      "anchor": [
+        141.0,
+        294
+      ]
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        45,
+        328,
+        238,
+        306
+      ],
+      "anchor": [
+        124.5,
+        303
+      ]
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        342,
+        332,
+        290,
+        302
+      ],
+      "anchor": [
+        130.0,
+        299
+      ]
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        668,
+        334,
+        252,
+        300
+      ],
+      "anchor": [
+        126.0,
+        297
+      ]
+    },
+    {
+      "name": "recovery",
+      "region": [
+        977,
+        331,
+        248,
+        303
+      ],
+      "anchor": [
+        133.0,
+        300
+      ]
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        28,
+        681,
+        287,
+        242
+      ],
+      "anchor": [
+        66.0,
+        239
+      ]
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        337,
+        663,
+        286,
+        263
+      ],
+      "anchor": [
+        237.5,
+        260
+      ]
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        681,
+        696,
+        230,
+        239
+      ],
+      "anchor": [
+        115.5,
+        236
+      ]
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        971,
+        635,
+        235,
+        259
+      ],
+      "anchor": [
+        138.5,
+        288
+      ]
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        27,
+        930,
+        315,
+        291
+      ],
+      "anchor": [
+        142.0,
+        296.0
+      ]
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        360,
+        940,
+        230,
+        269
+      ],
+      "anchor": [
+        122.5,
+        286.0
+      ]
+    },
+    {
+      "name": "landing",
+      "region": [
+        658,
+        1018,
+        255,
+        213
+      ],
+      "anchor": [
+        124.0,
+        210
+      ]
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        981,
+        925,
+        241,
+        302
+      ],
+      "anchor": [
+        128.5,
+        299
+      ]
+    }
+  ],
+  "notes": "Native image_gen PNG, untouched pixels. Rectangular regions and foot/projected anchors only. One common body scale per bank; no individual frame resizing. Alpha threshold 31/255 with transparent padding."
+}

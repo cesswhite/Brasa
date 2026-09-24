@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "ascua",
+  "bank": "movement",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 237,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        69,
+        64,
+        224,
+        245
+      ],
+      "anchor": [
+        119,
+        241
+      ]
+    },
+    {
+      "name": "step_back",
+      "region": [
+        363,
+        62,
+        214,
+        247
+      ],
+      "anchor": [
+        117,
+        243
+      ]
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        662,
+        114,
+        224,
+        196
+      ],
+      "anchor": [
+        121,
+        192
+      ]
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        977,
+        60,
+        229,
+        249
+      ],
+      "anchor": [
+        122,
+        245
+      ]
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        57,
+        357,
+        233,
+        254
+      ],
+      "anchor": [
+        124,
+        250
+      ]
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        345,
+        356,
+        269,
+        255
+      ],
+      "anchor": [
+        129,
+        251
+      ]
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        664,
+        359,
+        262,
+        252
+      ],
+      "anchor": [
+        125,
+        248
+      ]
+    },
+    {
+      "name": "recovery",
+      "region": [
+        972,
+        355,
+        235,
+        256
+      ],
+      "anchor": [
+        128,
+        252
+      ]
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        59,
+        691,
+        219,
+        218
+      ],
+      "anchor": [
+        99,
+        214
+      ]
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        349,
+        685,
+        258,
+        224
+      ],
+      "anchor": [
+        131,
+        220
+      ]
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        686,
+        664,
+        204,
+        245
+      ],
+      "anchor": [
+        103,
+        241
+      ]
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        978,
+        648,
+        213,
+        230
+      ],
+      "anchor": [
+        120,
+        257
+      ]
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        52,
+        940,
+        255,
+        258
+      ],
+      "anchor": [
+        114,
+        261
+      ]
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        357,
+        948,
+        221,
+        257
+      ],
+      "anchor": [
+        122,
+        253
+      ]
+    },
+    {
+      "name": "landing",
+      "region": [
+        662,
+        1012,
+        267,
+        193
+      ],
+      "anchor": [
+        138,
+        189
+      ]
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        975,
+        947,
+        238,
+        257
+      ],
+      "anchor": [
+        128,
+        253
+      ]
+    }
+  ],
+  "notes": "Sixteen complete disjoint silhouettes. Uniform native layout reduction created safe gutters; no raster pixel editing. One scale166/reference_height for every frame. Jump anchors retain projected floor905(row3)/1201(row4), including31px intrinsic lift at apex; airborne frames are never grounded by their lowest foot. PNG copied unchanged from native imagegen alpha extraction."
+}

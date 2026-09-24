@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "body_id": "ascua",
+  "bank": "reactions",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 270,
+  "frames": [
+    {
+      "name": "light_hit",
+      "region": [
+        16,
+        29,
+        260,
+        290
+      ],
+      "anchor": [
+        147,
+        287
+      ]
+    },
+    {
+      "name": "body_hit",
+      "region": [
+        338,
+        42,
+        254,
+        276
+      ],
+      "anchor": [
+        140,
+        273
+      ]
+    },
+    {
+      "name": "heavy_hit",
+      "region": [
+        636,
+        51,
+        284,
+        269
+      ],
+      "anchor": [
+        154,
+        266
+      ]
+    },
+    {
+      "name": "critical_stagger",
+      "region": [
+        970,
+        80,
+        265,
+        243
+      ],
+      "anchor": [
+        166,
+        240
+      ]
+    },
+    {
+      "name": "fall_start",
+      "region": [
+        20,
+        386,
+        297,
+        233
+      ],
+      "anchor": [
+        169,
+        230
+      ]
+    },
+    {
+      "name": "fall_mid",
+      "region": [
+        345,
+        432,
+        279,
+        183
+      ],
+      "anchor": [
+        141,
+        180
+      ]
+    },
+    {
+      "name": "grounded",
+      "region": [
+        636,
+        514,
+        309,
+        100
+      ],
+      "anchor": [
+        158,
+        97
+      ]
+    },
+    {
+      "name": "getup_support",
+      "region": [
+        953,
+        439,
+        295,
+        175
+      ],
+      "anchor": [
+        147,
+        172
+      ]
+    },
+    {
+      "name": "getup_kneel",
+      "region": [
+        25,
+        693,
+        265,
+        217
+      ],
+      "anchor": [
+        144,
+        214
+      ]
+    },
+    {
+      "name": "getup_rise",
+      "region": [
+        340,
+        643,
+        260,
+        274
+      ],
+      "anchor": [
+        145,
+        271
+      ]
+    },
+    {
+      "name": "low_health",
+      "region": [
+        654,
+        651,
+        246,
+        266
+      ],
+      "anchor": [
+        140,
+        263
+      ]
+    },
+    {
+      "name": "victory_start",
+      "region": [
+        968,
+        625,
+        258,
+        292
+      ],
+      "anchor": [
+        143,
+        289
+      ]
+    },
+    {
+      "name": "victory_peak",
+      "region": [
+        30,
+        916,
+        267,
+        313
+      ],
+      "anchor": [
+        156,
+        310
+      ]
+    },
+    {
+      "name": "transform_start",
+      "region": [
+        344,
+        953,
+        266,
+        276
+      ],
+      "anchor": [
+        147,
+        273
+      ]
+    },
+    {
+      "name": "transform_peak",
+      "region": [
+        649,
+        955,
+        270,
+        274
+      ],
+      "anchor": [
+        147,
+        271
+      ]
+    },
+    {
+      "name": "transformed_idle",
+      "region": [
+        965,
+        953,
+        261,
+        276
+      ],
+      "anchor": [
+        131,
+        273
+      ]
+    }
+  ],
+  "notes": "Explicit disjoint regions surround16complete alpha components. All frames share scale166/reference_height; grounded and kneeling frames are never rescaled by their own height. Anchors locate stable ground support; fall_mid uses projected body origin rather than the descending hand. Transformation only changes existing core/seam light. PNG preserved byte-for-byte from native imagegen extraction."
+}

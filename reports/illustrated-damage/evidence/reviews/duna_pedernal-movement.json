@@ -1,0 +1,15 @@
+{
+  "source_sha256": "553a6b2636cfea901378ae5419a84498154faf956687106c75882dcdee5a6597",
+  "reviewed_atlas_sha256": "84543285149722cd290a5bc9c0d60592d2d505ab9d0b899092c8ec3f01fa271b",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "strict_key_hue": true,
+  "reviewed_by": "fighter_art",
+  "review_note": "Armadura de bronce grabado y broquel conservados; recorte de desgarros del fajín y apoyos completos. Todas las poses revisadas sobre fondos claro/oscuro y comparadas con referencia limpia; escala única de banco por consenso geométrico. Raíces proyectadas aproximadas, no anotaciones anatómicas verificadas.",
+  "evidence": {
+    "dark": "work/illustrated-damage/prepared/duna_pedernal/movement/duna_pedernal-movement-dark.png",
+    "light": "work/illustrated-damage/prepared/duna_pedernal/movement/duna_pedernal-movement-light.png",
+    "scale-review": "work/illustrated-damage/prepared/duna_pedernal/movement/duna_pedernal-movement-scale-review.png"
+  }
+}

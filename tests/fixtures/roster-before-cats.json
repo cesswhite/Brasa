@@ -1,0 +1,5630 @@
+{
+	"definitions": [
+		{
+			"ability": {
+				"description": "Cada tercer ataque hace ×1.3 de daño si conecta.",
+				"every": 3,
+				"id": "combo",
+				"multiplier": 1.3,
+				"name": "Paso de tres"
+			},
+			"archetype": 0,
+			"base_stats": {
+				"accuracy": 0.94,
+				"attack": 20.0,
+				"crit_chance": 0.1,
+				"crit_damage": 1.5,
+				"defense": 16.0,
+				"evasion": 0.13,
+				"max_hp": 238.0,
+				"resistance": 0.08,
+				"speed": 9.0
+			},
+			"growth": {
+				"accuracy": 0.0008,
+				"attack": 0.65,
+				"crit_chance": 0.0008,
+				"crit_damage": 0.003,
+				"defense": 0.5,
+				"evasion": 0.0008,
+				"max_hp": 7.0,
+				"resistance": 0.001,
+				"speed": 0.15
+			},
+			"id": "nima",
+			"name": "Nima",
+			"personality": "Impaciente y leal; siempre llega antes que la tormenta.",
+			"role": "Velocidad · combos",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y velocidad rival −22% durante 3 turnos.",
+				"duration": 3,
+				"effect": "slow",
+				"magnitude": 0.22,
+				"name": "Cometa de arena"
+			},
+			"strengths": "Ataca seguido y encadena golpes más fuertes.",
+			"training_base": {
+				"agility": 4,
+				"life": 6,
+				"speed": 8,
+				"strength": 6
+			},
+			"visual": {
+				"archetype": 0,
+				"tint": "ffffff"
+			},
+			"weaknesses": "Poca defensa; sufre ante contraataques."
+		},
+		{
+			"ability": {
+				"accuracy_bonus": 0.1,
+				"description": "Tras fallar, gana 10 puntos de precisión durante 2 turnos.",
+				"duration": 2,
+				"id": "adapt",
+				"name": "Aprender del río"
+			},
+			"archetype": 1,
+			"base_stats": {
+				"accuracy": 0.96,
+				"attack": 22.0,
+				"crit_chance": 0.12,
+				"crit_damage": 1.55,
+				"defense": 20.0,
+				"evasion": 0.1,
+				"max_hp": 250.0,
+				"resistance": 0.12,
+				"speed": 6.0
+			},
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.65,
+				"crit_chance": 0.0008,
+				"crit_damage": 0.003,
+				"defense": 0.65,
+				"evasion": 0.0006,
+				"max_hp": 8.0,
+				"resistance": 0.0015,
+				"speed": 0.1
+			},
+			"id": "luma",
+			"name": "Luma",
+			"personality": "Curiosa y serena: cada error le enseña otra manera.",
+			"role": "Equilibrio · adaptación",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y precisión rival −15 puntos durante 3 turnos.",
+				"duration": 3,
+				"effect": "accuracy_down",
+				"magnitude": 0.15,
+				"name": "Marea de luna"
+			},
+			"strengths": "Estadísticas equilibradas y puntería que se adapta.",
+			"training_base": {
+				"agility": 6,
+				"life": 6,
+				"speed": 6,
+				"strength": 6
+			},
+			"visual": {
+				"archetype": 1,
+				"tint": "ffffff"
+			},
+			"weaknesses": "Sin una especialidad explosiva; cede ante presión constante."
+		},
+		{
+			"ability": {
+				"critical_reduction": 0.45,
+				"description": "Reduce un 45% el daño adicional de los críticos recibidos.",
+				"id": "fortify",
+				"name": "Corazón de cantera"
+			},
+			"archetype": 2,
+			"base_stats": {
+				"accuracy": 0.9,
+				"attack": 20.0,
+				"crit_chance": 0.06,
+				"crit_damage": 1.45,
+				"defense": 34.0,
+				"evasion": 0.04,
+				"max_hp": 315.0,
+				"resistance": 0.27,
+				"speed": 3.0
+			},
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.57,
+				"crit_chance": 0.0005,
+				"crit_damage": 0.002,
+				"defense": 0.9,
+				"evasion": 0.0003,
+				"max_hp": 11.0,
+				"resistance": 0.002,
+				"speed": 0.06
+			},
+			"id": "mugo",
+			"name": "Mugo",
+			"personality": "Un gigante paciente que colecciona pequeñas flores.",
+			"role": "Tanque · resistencia",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y ataque rival −20% durante 3 turnos.",
+				"duration": 3,
+				"effect": "attack_down",
+				"magnitude": 0.2,
+				"name": "Abrazo de montaña"
+			},
+			"strengths": "Mucha vida, defensa y resistencia a estados y críticos.",
+			"training_base": {
+				"agility": 4,
+				"life": 8,
+				"speed": 5,
+				"strength": 5
+			},
+			"visual": {
+				"archetype": 2,
+				"tint": "ffffff"
+			},
+			"weaknesses": "Lento, poco evasivo y de ataques modestos."
+		},
+		{
+			"ability": {
+				"armor_ignore": 0.45,
+				"description": "Sus críticos ignoran el 45% de la defensa rival.",
+				"id": "precision",
+				"name": "Grieta perfecta"
+			},
+			"archetype": 0,
+			"base_stats": {
+				"accuracy": 0.96,
+				"attack": 24.0,
+				"crit_chance": 0.23,
+				"crit_damage": 1.8,
+				"defense": 10.0,
+				"evasion": 0.1,
+				"max_hp": 205.0,
+				"resistance": 0.05,
+				"speed": 7.0
+			},
+			"growth": {
+				"accuracy": 0.0008,
+				"attack": 0.85,
+				"crit_chance": 0.001,
+				"crit_damage": 0.004,
+				"defense": 0.4,
+				"evasion": 0.0006,
+				"max_hp": 6.0,
+				"resistance": 0.001,
+				"speed": 0.1
+			},
+			"id": "sira",
+			"name": "Sira",
+			"personality": "Elegante y competitiva; apuesta todo a un instante perfecto.",
+			"role": "Críticos · filo de cristal",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y defensa rival −25% durante 3 turnos.",
+				"duration": 3,
+				"effect": "defense_down",
+				"magnitude": 0.25,
+				"name": "Destello de obsidiana"
+			},
+			"strengths": "Críticos frecuentes y profundos que atraviesan defensa.",
+			"training_base": {
+				"agility": 7,
+				"life": 5,
+				"speed": 6,
+				"strength": 8
+			},
+			"visual": {
+				"archetype": 0,
+				"atlas": "res://assets/sprites/sira-v3.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Poca vida y resistencia; vulnerable si la pelea se alarga."
+		},
+		{
+			"ability": {
+				"chance": 0.35,
+				"description": "35% al conectar de envenenar: 3 × Ataque / 19 PV durante 3 turnos, hasta 2 cargas.",
+				"duration": 3,
+				"id": "poison",
+				"magnitude": 3.0,
+				"max_stacks": 2,
+				"name": "Jardín secreto",
+				"scaling_base": 19.0,
+				"scaling_stat": "attack",
+				"stacking": "intensity"
+			},
+			"archetype": 1,
+			"base_stats": {
+				"accuracy": 0.94,
+				"attack": 19.0,
+				"crit_chance": 0.08,
+				"crit_damage": 1.5,
+				"defense": 18.0,
+				"evasion": 0.11,
+				"max_hp": 255.0,
+				"resistance": 0.24,
+				"speed": 6.0
+			},
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.58,
+				"crit_chance": 0.0005,
+				"crit_damage": 0.002,
+				"defense": 0.65,
+				"evasion": 0.0007,
+				"max_hp": 8.0,
+				"resistance": 0.002,
+				"speed": 0.09
+			},
+			"id": "iria",
+			"name": "Iria",
+			"personality": "Botánica traviesa; conoce el secreto de cada hoja.",
+			"role": "Estados · veneno",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y curación rival −40% durante 4 turnos.",
+				"duration": 4,
+				"effect": "healing_down",
+				"magnitude": 0.4,
+				"name": "Flor de medianoche"
+			},
+			"strengths": "Desgasta con veneno acumulable y tolera los estados.",
+			"training_base": {
+				"agility": 7,
+				"life": 7,
+				"speed": 6,
+				"strength": 4
+			},
+			"visual": {
+				"archetype": 1,
+				"atlas": "res://assets/sprites/iria-v3.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Daño directo bajo; necesita tiempo para preparar su ventaja."
+		},
+		{
+			"ability": {
+				"description": "Cada 4 turnos obtiene un escudo de 12 PV que dura hasta 3 turnos.",
+				"duration": 3,
+				"every": 4,
+				"id": "shield",
+				"magnitude": 12.0,
+				"name": "Muralla del patio"
+			},
+			"archetype": 2,
+			"base_stats": {
+				"accuracy": 0.95,
+				"attack": 18.5,
+				"crit_chance": 0.08,
+				"crit_damage": 1.5,
+				"defense": 28.0,
+				"evasion": 0.07,
+				"max_hp": 260.0,
+				"resistance": 0.2,
+				"speed": 4.5
+			},
+			"growth": {
+				"accuracy": 0.0008,
+				"attack": 0.61,
+				"crit_chance": 0.0006,
+				"crit_damage": 0.002,
+				"defense": 0.85,
+				"evasion": 0.0004,
+				"max_hp": 9.0,
+				"resistance": 0.0015,
+				"speed": 0.07
+			},
+			"id": "duna",
+			"name": "Duna",
+			"personality": "Protectora del mercado; nunca deja atrás a un amigo.",
+			"role": "Defensa · escudos",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y velocidad rival −25% durante 3 turnos.",
+				"duration": 3,
+				"effect": "slow",
+				"magnitude": 0.25,
+				"name": "Sello del guardián"
+			},
+			"strengths": "Levanta escudos periódicos y aguanta el daño sostenido.",
+			"training_base": {
+				"agility": 5,
+				"life": 8,
+				"speed": 5,
+				"strength": 5
+			},
+			"visual": {
+				"archetype": 2,
+				"atlas": "res://assets/sprites/duna-v3.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Lenta y poco amenazante al principio de una pelea."
+		},
+		{
+			"ability": {
+				"description": "Su daño aumenta según la vida perdida, hasta un 40% adicional.",
+				"id": "berserk",
+				"missing_hp_bonus": 0.4,
+				"name": "Última brasa"
+			},
+			"archetype": 0,
+			"base_stats": {
+				"accuracy": 0.89,
+				"attack": 21.0,
+				"crit_chance": 0.16,
+				"crit_damage": 1.65,
+				"defense": 12.0,
+				"evasion": 0.1,
+				"max_hp": 242.0,
+				"resistance": 0.04,
+				"speed": 7.0
+			},
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.72,
+				"crit_chance": 0.0008,
+				"crit_damage": 0.003,
+				"defense": 0.4,
+				"evasion": 0.0005,
+				"max_hp": 7.5,
+				"resistance": 0.001,
+				"speed": 0.12
+			},
+			"id": "kiro",
+			"name": "Kiro",
+			"personality": "Temerario, generoso y un poco incapaz de retroceder.",
+			"role": "Riesgo · furia",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y quemadura de 4 PV durante 3 turnos.",
+				"duration": 3,
+				"effect": "burn",
+				"magnitude": 4.0,
+				"name": "Rugido del horno"
+			},
+			"strengths": "Gana ataque conforme pierde vida; presión y críticos fuertes.",
+			"training_base": {
+				"agility": 4,
+				"life": 6,
+				"speed": 7,
+				"strength": 8
+			},
+			"visual": {
+				"archetype": 0,
+				"atlas": "res://assets/sprites/kiro-v3.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Poca defensa, resistencia y precisión: su apuesta puede fallar."
+		},
+		{
+			"ability": {
+				"description": "Una vez por combate, al bajar de 35% de vida cura un 16% de su vida máxima.",
+				"heal_fraction": 0.16,
+				"id": "comeback",
+				"name": "Otra primavera",
+				"threshold": 0.35
+			},
+			"archetype": 1,
+			"base_stats": {
+				"accuracy": 0.97,
+				"attack": 20.0,
+				"crit_chance": 0.08,
+				"crit_damage": 1.5,
+				"defense": 18.0,
+				"evasion": 0.12,
+				"max_hp": 245.0,
+				"resistance": 0.17,
+				"speed": 6.0
+			},
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.58,
+				"crit_chance": 0.0006,
+				"crit_damage": 0.002,
+				"defense": 0.65,
+				"evasion": 0.0007,
+				"max_hp": 8.0,
+				"resistance": 0.0015,
+				"speed": 0.09
+			},
+			"id": "neris",
+			"name": "Neris",
+			"personality": "Optimista obstinada: incluso el charco más pequeño refleja la luna.",
+			"role": "Remontada · curación",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y ataque rival −22% durante 3 turnos.",
+				"duration": 3,
+				"effect": "attack_down",
+				"magnitude": 0.22,
+				"name": "Eclipse del río"
+			},
+			"strengths": "Una recuperación decisiva cuando parece derrotada.",
+			"training_base": {
+				"agility": 6,
+				"life": 7,
+				"speed": 6,
+				"strength": 5
+			},
+			"visual": {
+				"archetype": 1,
+				"atlas": "res://assets/sprites/neris-v3.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Ataque moderado; la curación solo ocurre una vez y puede debilitarse."
+		},
+		{
+			"ability": {
+				"chance": 0.24,
+				"description": "24% de responder a un golpe recibido con un contraataque de ×0.45 de daño.",
+				"id": "counter",
+				"multiplier": 0.45,
+				"name": "Eco de jade"
+			},
+			"archetype": 2,
+			"base_stats": {
+				"accuracy": 0.95,
+				"attack": 20.5,
+				"crit_chance": 0.1,
+				"crit_damage": 1.55,
+				"defense": 24.0,
+				"evasion": 0.08,
+				"max_hp": 250.0,
+				"resistance": 0.17,
+				"speed": 5.0
+			},
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.62,
+				"crit_chance": 0.0007,
+				"crit_damage": 0.003,
+				"defense": 0.8,
+				"evasion": 0.0006,
+				"max_hp": 8.0,
+				"resistance": 0.0015,
+				"speed": 0.09
+			},
+			"id": "taro",
+			"name": "Taro",
+			"personality": "Callado y observador; escucha al rival antes de contestar.",
+			"role": "Respuesta · contraataques",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "Golpe certero ×1.6 y sangrado de 4 PV durante 3 turnos.",
+				"duration": 3,
+				"effect": "bleed",
+				"magnitude": 4.0,
+				"name": "Campana del cañón"
+			},
+			"strengths": "Castiga la agresión con réplicas y una defensa sólida.",
+			"training_base": {
+				"agility": 5,
+				"life": 7,
+				"speed": 5,
+				"strength": 6
+			},
+			"visual": {
+				"archetype": 2,
+				"atlas": "res://assets/sprites/taro-v3.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Sus réplicas son inciertas; presión ofensiva propia moderada."
+		},
+		{
+			"ability": {
+				"armor_ignore": 0.3,
+				"description": "Sus críticos ignoran el 30% de la defensa rival.",
+				"id": "precision",
+				"name": "Mirada entre las hojas"
+			},
+			"archetype": 0,
+			"base_stats": {
+				"accuracy": 0.94,
+				"attack": 22.0,
+				"crit_chance": 0.18,
+				"crit_damage": 1.7,
+				"defense": 18,
+				"evasion": 0.1,
+				"max_hp": 238,
+				"resistance": 0.08,
+				"speed": 6.5
+			},
+			"biography": "Balam es un jaguar de pasos silenciosos y mirada atenta. Prefiere preparar una embestida certera antes que apresurar cada intercambio.",
+			"breed": "",
+			"full_name": "Balam · Jaguar",
+			"growth": {
+				"accuracy": 0.0009,
+				"attack": 0.69,
+				"crit_chance": 0.0008,
+				"crit_damage": 0.003,
+				"defense": 0.5,
+				"evasion": 0.0006,
+				"max_hp": 7.5,
+				"resistance": 0.001,
+				"speed": 0.1
+			},
+			"id": "balam",
+			"name": "Balam",
+			"personality": "Jaguar paciente; observa el camino y elige un instante para saltar.",
+			"role": "Acecho · cargas y críticos",
+			"signature": {
+				"damage_multiplier": 1.65,
+				"description": "1% por combate, una sola vez: golpe certero ×1.65 y defensa rival −20% durante 3 acciones del objetivo.",
+				"duration": 3,
+				"effect": "defense_down",
+				"magnitude": 0.2,
+				"name": "Noche moteada"
+			},
+			"species": "Jaguar",
+			"strengths": "Ataque y críticos sólidos; prepara la puntería y castiga guardias con cargas.",
+			"training_base": {
+				"agility": 6,
+				"life": 7,
+				"speed": 5,
+				"strength": 8
+			},
+			"visual": {
+				"archetype": 0,
+				"atlas": "res://assets/sprites/balam-v1.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Resistencia baja y cargas expuestas; no puede esquivar todos los intercambios."
+		},
+		{
+			"ability": {
+				"description": "Cada cuarto intento de ataque hace ×1.3 de daño si conecta.",
+				"every": 4,
+				"id": "combo",
+				"multiplier": 1.3,
+				"name": "Cuatro brincos"
+			},
+			"archetype": 0,
+			"base_stats": {
+				"accuracy": 0.94,
+				"attack": 19.5,
+				"crit_chance": 0.13,
+				"crit_damage": 1.5,
+				"defense": 13,
+				"evasion": 0.18,
+				"max_hp": 220,
+				"resistance": 0.09,
+				"speed": 11
+			},
+			"biography": "Tepa es una pequeña teporingo de gran iniciativa. Sus saltos cambian de trayectoria y sus carreras breves abren espacio para volver a despegar.",
+			"breed": "",
+			"full_name": "Tepa · Teporingo",
+			"growth": {
+				"accuracy": 0.0009,
+				"attack": 0.64,
+				"crit_chance": 0.0007,
+				"crit_damage": 0.0025,
+				"defense": 0.42,
+				"evasion": 0.0009,
+				"max_hp": 6.8,
+				"resistance": 0.001,
+				"speed": 0.17
+			},
+			"id": "tepa",
+			"name": "Tepa",
+			"personality": "Teporingo inquieta y tenaz; convierte cada piedra en un punto de despegue.",
+			"role": "Saltos · velocidad y evasión",
+			"signature": {
+				"damage_multiplier": 1.55,
+				"description": "1% por combate, una sola vez: golpe certero ×1.55 y velocidad rival −22% durante 3 acciones del objetivo.",
+				"duration": 3,
+				"effect": "slow",
+				"magnitude": 0.22,
+				"name": "Salto del sol"
+			},
+			"species": "Teporingo",
+			"strengths": "Velocidad y evasión altas; saltos de trayectorias distintas y un golpe reforzado cada cuatro ataques.",
+			"training_base": {
+				"agility": 8,
+				"life": 5,
+				"speed": 8,
+				"strength": 5
+			},
+			"visual": {
+				"archetype": 0,
+				"atlas": "res://assets/sprites/tepa-v1.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Poca vida y armadura; sus saltos reducen algo la precisión."
+		},
+		{
+			"ability": {
+				"critical_reduction": 0.3,
+				"description": "Reduce un 30% el daño adicional de los críticos recibidos.",
+				"id": "fortify",
+				"name": "Serenidad del camino"
+			},
+			"archetype": 2,
+			"base_stats": {
+				"accuracy": 0.93,
+				"attack": 21.4,
+				"crit_chance": 0.08,
+				"crit_damage": 1.5,
+				"defense": 30,
+				"evasion": 0.06,
+				"max_hp": 300,
+				"resistance": 0.32,
+				"speed": 4.8
+			},
+			"biography": "Xuna es una xoloitzcuintle de guardia firme y orejas siempre atentas. Resiste los intercambios y usa brasas breves para desgastar a quien se precipita.",
+			"breed": "Xoloitzcuintle",
+			"full_name": "Xuna · Xoloitzcuintle",
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.55,
+				"crit_chance": 0.0006,
+				"crit_damage": 0.002,
+				"defense": 0.8,
+				"evasion": 0.0004,
+				"max_hp": 9.2,
+				"resistance": 0.0018,
+				"speed": 0.07
+			},
+			"id": "xuna",
+			"name": "Xuna",
+			"personality": "Xoloitzcuintle serena; guarda el paso y mantiene la calma cuando cae la noche.",
+			"role": "Guardia · resistencia y desgaste",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "1% por combate, una sola vez: golpe certero ×1.6 y curación rival −35% durante 4 acciones del objetivo.",
+				"duration": 4,
+				"effect": "healing_down",
+				"magnitude": 0.35,
+				"name": "Faro del camino"
+			},
+			"species": "Xoloitzcuintle",
+			"strengths": "Vida, defensa y resistencia sólidas; reduce críticos y combina guardias con quemaduras.",
+			"training_base": {
+				"agility": 5,
+				"life": 8,
+				"speed": 5,
+				"strength": 5
+			},
+			"visual": {
+				"archetype": 2,
+				"atlas": "res://assets/sprites/xuna-v1.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Velocidad y evasión bajas; ceder una acción de ataque tiene un coste."
+		},
+		{
+			"ability": {
+				"chance": 0.2,
+				"description": "20% de responder a un golpe recibido con un contraataque de ×0.4 de daño.",
+				"id": "counter",
+				"multiplier": 0.4,
+				"name": "Respuesta entre ramas"
+			},
+			"archetype": 0,
+			"base_stats": {
+				"accuracy": 0.96,
+				"attack": 19.8,
+				"crit_chance": 0.14,
+				"crit_damage": 1.6,
+				"defense": 16,
+				"evasion": 0.16,
+				"max_hp": 220,
+				"resistance": 0.1,
+				"speed": 9.2
+			},
+			"biography": "Copal es un cacomixtle de cola anillada y reflejos rápidos. Alterna fintas, carreras cortas y esperas para provocar un ataque y responder.",
+			"breed": "",
+			"full_name": "Copal · Cacomixtle",
+			"growth": {
+				"accuracy": 0.001,
+				"attack": 0.72,
+				"crit_chance": 0.0007,
+				"crit_damage": 0.003,
+				"defense": 0.45,
+				"evasion": 0.0008,
+				"max_hp": 7.7,
+				"resistance": 0.001,
+				"speed": 0.12
+			},
+			"id": "copal",
+			"name": "Copal",
+			"personality": "Cacomixtle curioso; cambia de dirección justo cuando el rival cree haberlo leído.",
+			"role": "Fintas · desplazamientos y réplicas",
+			"signature": {
+				"damage_multiplier": 1.6,
+				"description": "1% por combate, una sola vez: golpe certero ×1.6 y precisión rival −14 puntos durante 3 acciones del objetivo.",
+				"duration": 3,
+				"effect": "accuracy_down",
+				"magnitude": 0.14,
+				"name": "Ronda de la luna"
+			},
+			"species": "Cacomixtle",
+			"strengths": "Puntería, movilidad y evasión; sus fintas pueden abrir una oportunidad de respuesta.",
+			"training_base": {
+				"agility": 8,
+				"life": 6,
+				"speed": 7,
+				"strength": 6
+			},
+			"visual": {
+				"archetype": 0,
+				"atlas": "res://assets/sprites/copal-v1.png",
+				"tint": "ffffff"
+			},
+			"weaknesses": "Poca armadura y resistencia; los contraataques nunca están garantizados."
+		}
+	],
+	"ids": [
+		"nima",
+		"luma",
+		"mugo",
+		"sira",
+		"iria",
+		"duna",
+		"kiro",
+		"neris",
+		"taro",
+		"balam",
+		"tepa",
+		"xuna",
+		"copal"
+	],
+	"moves": {
+		"balam": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.86,
+				"description": "Golpe corto y preciso para probar la guardia. Daño moderado.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "balam_garra",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Garra contenida",
+				"priority": 0.15,
+				"purpose": "Golpe corto y preciso para probar la guardia.",
+				"recovery": 0.13,
+				"risk": "Daño moderado.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.025,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.28,
+				"description": "Anticipa un golpe pesado que busca un crítico. Preparación visible y menor precisión.",
+				"duration": 0.78,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "balam_roca",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Peso del jaguar",
+				"priority": -0.1,
+				"purpose": "Anticipa un golpe pesado que busca un crítico.",
+				"recovery": 0.31,
+				"risk": "Preparación visible y menor precisión.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.075,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.39,
+				"description": "Retrocede, carga y golpea con ventaja contra guardias. Pierde defensa durante una acción tras cargar.",
+				"duration": 0.89,
+				"guard_bonus": 0.15,
+				"heal_fraction": 0.0,
+				"id": "balam_emboscada",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Embestida del monte",
+				"priority": -0.16,
+				"purpose": "Retrocede, carga y golpea con ventaja contra guardias.",
+				"recovery": 0.34,
+				"risk": "Pierde defensa durante una acción tras cargar.",
+				"self_status": {
+					"duration": 1,
+					"magnitude": 0.09,
+					"type": "defense_down"
+				},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.8,
+				"description": "Ataca con suavidad y prepara mejor puntería. Sacrifica daño inmediato.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "balam_acecho",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Acecho paciente",
+				"priority": 0.0,
+				"purpose": "Ataca con suavidad y prepara mejor puntería.",
+				"recovery": 0.21,
+				"risk": "Sacrifica daño inmediato.",
+				"self_status": {
+					"duration": 2,
+					"magnitude": 0.055,
+					"type": "accuracy_up"
+				},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.025,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.065,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.16,
+				"description": "Salta y cae buscando un crítico sobre la guardia. Trayectoria más lenta y precisión menor.",
+				"duration": 0.73,
+				"guard_bonus": 0.08,
+				"heal_fraction": 0.0,
+				"id": "balam_salto",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 73,
+					"height": 64,
+					"kind": "jump_down",
+					"retreat": 6
+				},
+				"name": "Caída moteada",
+				"priority": -0.015,
+				"purpose": "Salta y cae buscando un crítico sobre la guardia.",
+				"recovery": 0.28,
+				"risk": "Trayectoria más lenta y precisión menor.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			}
+		],
+		"copal": [
+			{
+				"accuracy_modifier": 0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.83,
+				"description": "Un golpe corto y preciso entre cambios de dirección. Daño contenido.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "copal_finta",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Finta anillada",
+				"priority": 0.15,
+				"purpose": "Un golpe corto y preciso entre cambios de dirección.",
+				"recovery": 0.13,
+				"risk": "Daño contenido.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.015,
+				"airborne_evasion": 0.0,
+				"animation_type": "dash",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.93,
+				"description": "Se adelanta con una carrera rápida y corta. Poca anticipación pero daño moderado.",
+				"duration": 0.35,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "copal_rama",
+				"impact_delay": 0.18,
+				"max_tier": 2,
+				"movement": {
+					"distance": 82.0,
+					"height": 0.0,
+					"kind": "dash",
+					"retreat": 0.0
+				},
+				"name": "Paso entre ramas",
+				"priority": 0.18,
+				"purpose": "Se adelanta con una carrera rápida y corta.",
+				"recovery": 0.17,
+				"risk": "Poca anticipación pero daño moderado.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.13,
+				"type": "dash",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.65,
+				"windup": 0.05
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "counter",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Toma una postura para reducir daño y quizá responder. Cede un ataque y la respuesta puede no ocurrir.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "copal_espera",
+				"impact_delay": 0.1,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "counter",
+					"retreat": 12.0
+				},
+				"name": "Espera del cacomixtle",
+				"priority": 0.02,
+				"purpose": "Toma una postura para reducir daño y quizá responder.",
+				"recovery": 0.18,
+				"risk": "Cede un ataque y la respuesta puede no ocurrir.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.38,
+					"duration": 1,
+					"multiplier": 0.52,
+					"reduction": 0.18
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "counter",
+				"unlock_level": 5,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.65,
+				"windup": 0.1
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.82,
+				"description": "Una finta puede reducir la precisión del rival. Sacrifica daño y el efecto es resistible.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "copal_distraccion",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Sombra inquieta",
+				"priority": 0.0,
+				"purpose": "Una finta puede reducir la precisión del rival.",
+				"recovery": 0.21,
+				"risk": "Sacrifica daño y el efecto es resistible.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.07,
+					"type": "accuracy_down"
+				},
+				"status_chance": 0.55,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.025,
+				"animation_type": "jump",
+				"armor_ignore": 0.12,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.035,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.07,
+				"description": "Pasa por arriba buscando un ángulo que ignore algo de armadura. Menor precisión durante el salto.",
+				"duration": 0.68,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "copal_rodeo",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 92,
+					"height": 70,
+					"kind": "jump_over",
+					"retreat": 0
+				},
+				"name": "Rodeo de la rama",
+				"priority": -0.015,
+				"purpose": "Pasa por arriba buscando un ángulo que ignore algo de armadura.",
+				"recovery": 0.23,
+				"risk": "Menor precisión durante el salto.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			}
+		],
+		"duna": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.94,
+				"description": "Golpe corto desde una guardia compacta. Poca prioridad.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "duna_placa",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Golpe de placa",
+				"priority": 0.04,
+				"purpose": "Golpe corto desde una guardia compacta.",
+				"recovery": 0.13,
+				"risk": "Poca prioridad.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Absorbe parte del daño con una postura protegida. Cede un ataque.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "duna_caparazon",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Cerrar caparazón",
+				"priority": -0.05,
+				"purpose": "Absorbe parte del daño con una postura protegida.",
+				"recovery": 0.22,
+				"risk": "Cede un ataque.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.34
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 1,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.5,
+				"windup": 0.12
+			},
+			{
+				"accuracy_modifier": -0.075,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.4,
+				"description": "Embiste y puede ralentizar al enemigo. Se expone mientras toma impulso.",
+				"duration": 0.89,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "duna_rodar",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Rodar la duna",
+				"priority": -0.16,
+				"purpose": "Embiste y puede ralentizar al enemigo.",
+				"recovery": 0.34,
+				"risk": "Se expone mientras toma impulso.",
+				"self_status": {
+					"duration": 1,
+					"magnitude": 0.07,
+					"type": "defense_down"
+				},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.13,
+					"type": "slow"
+				},
+				"status_chance": 0.55,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.2,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.27,
+				"description": "Golpea con penetración contra armaduras. Es lento y menos preciso.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "duna_cantera",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Martillo de cantera",
+				"priority": -0.1,
+				"purpose": "Golpea con penetración contra armaduras.",
+				"recovery": 0.3,
+				"risk": "Es lento y menos preciso.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "counter",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Protege y puede responder a un impacto. Contraataque incierto.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "duna_retorno",
+				"impact_delay": 0.1,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "counter",
+					"retreat": 12.0
+				},
+				"name": "Retorno de arena",
+				"priority": 0.02,
+				"purpose": "Protege y puede responder a un impacto.",
+				"recovery": 0.18,
+				"risk": "Contraataque incierto.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.3,
+					"duration": 1,
+					"multiplier": 0.66,
+					"reduction": 0.32
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "counter",
+				"unlock_level": 20,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.65,
+				"windup": 0.1
+			}
+		],
+		"iria": [
+			{
+				"accuracy_modifier": 0.045,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.82,
+				"description": "Mantiene presión y activa su veneno natural. Daño directo contenido.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "iria_hoja",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Puño de hoja",
+				"priority": 0.15,
+				"purpose": "Mantiene presión y activa su veneno natural.",
+				"recovery": 0.13,
+				"risk": "Daño directo contenido.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.72,
+				"description": "Puede añadir veneno que escala con su ataque. Golpe débil y efecto resistible.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "iria_espora",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Espora amarga",
+				"priority": 0.0,
+				"purpose": "Puede añadir veneno que escala con su ataque.",
+				"recovery": 0.21,
+				"risk": "Golpe débil y efecto resistible.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 2,
+					"scaling_base": 19,
+					"scaling_stat": "attack",
+					"stacking": "refresh",
+					"type": "poison"
+				},
+				"status_chance": 0.5,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.025,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.035,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.13,
+				"description": "Puede nublar la precisión del oponente. Aterrizaje menos preciso.",
+				"duration": 0.68,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "iria_bruma",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 86,
+					"height": 70,
+					"kind": "jump_over",
+					"retreat": 0
+				},
+				"name": "Salto de bruma",
+				"priority": -0.015,
+				"purpose": "Puede nublar la precisión del oponente.",
+				"recovery": 0.23,
+				"risk": "Aterrizaje menos preciso.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.055,
+					"type": "accuracy_down"
+				},
+				"status_chance": 0.5,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Se protege y enfoca su siguiente ofensiva. No causa daño.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "iria_raices",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Raíces firmes",
+				"priority": -0.05,
+				"purpose": "Se protege y enfoca su siguiente ofensiva.",
+				"recovery": 0.22,
+				"risk": "No causa daño.",
+				"self_status": {
+					"duration": 2,
+					"magnitude": 0.055,
+					"type": "accuracy_up"
+				},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.25
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 12,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.5,
+				"windup": 0.12
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.24,
+				"description": "Puede reducir las curaciones enemigas. Preparación visible y efecto resistible.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "iria_savia",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Savia cortante",
+				"priority": -0.1,
+				"purpose": "Puede reducir las curaciones enemigas.",
+				"recovery": 0.3,
+				"risk": "Preparación visible y efecto resistible.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 3,
+					"magnitude": 0.25,
+					"type": "healing_down"
+				},
+				"status_chance": 0.7,
+				"status_duration": 3,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			}
+		],
+		"kiro": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.86,
+				"description": "Golpe veloz que remata enemigos debilitados. Daño ligero.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "kiro_colmillo",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Puño del colmillo",
+				"priority": 0.15,
+				"purpose": "Golpe veloz que remata enemigos debilitados.",
+				"recovery": 0.13,
+				"risk": "Daño ligero.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": -0.07,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.36,
+				"description": "Golpe fuerte con anticipación marcada. Menor precisión.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "kiro_martillo",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Martillo cobrizo",
+				"priority": -0.1,
+				"purpose": "Golpe fuerte con anticipación marcada.",
+				"recovery": 0.3,
+				"risk": "Menor precisión.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.075,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.46,
+				"description": "Retrocede y embiste con gran fuerza. Abre su defensa durante la carga.",
+				"duration": 0.89,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "kiro_ariete",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Ariete rojo",
+				"priority": -0.16,
+				"purpose": "Retrocede y embiste con gran fuerza.",
+				"recovery": 0.34,
+				"risk": "Abre su defensa durante la carga.",
+				"self_status": {
+					"duration": 1,
+					"magnitude": 0.13,
+					"type": "defense_down"
+				},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.78,
+				"description": "Golpea y prepara un breve aumento de ataque. Daño inicial menor.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "kiro_brasa",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Avivar la brasa",
+				"priority": 0.0,
+				"purpose": "Golpea y prepara un breve aumento de ataque.",
+				"recovery": 0.21,
+				"risk": "Daño inicial menor.",
+				"self_status": {
+					"duration": 2,
+					"magnitude": 0.1,
+					"type": "attack_up"
+				},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.025,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.035,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.13,
+				"description": "Ataque descendente más fuerte ante una guardia. Aterrizaje lento.",
+				"duration": 0.79,
+				"guard_bonus": 0.18,
+				"heal_fraction": 0.0,
+				"id": "kiro_caida",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 65,
+					"height": 64,
+					"kind": "jump_down",
+					"retreat": 12
+				},
+				"name": "Caída del jabalí",
+				"priority": -0.015,
+				"purpose": "Ataque descendente más fuerte ante una guardia.",
+				"recovery": 0.34,
+				"risk": "Aterrizaje lento.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			}
+		],
+		"luma": [
+			{
+				"accuracy_modifier": 0.05,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.84,
+				"description": "Golpe preciso para sostener la presión. Poco daño en un solo golpe.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "luma_palma",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Palma del río",
+				"priority": 0.15,
+				"purpose": "Golpe preciso para sostener la presión.",
+				"recovery": 0.13,
+				"risk": "Poco daño en un solo golpe.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.84,
+				"description": "Ataca y mejora temporalmente su precisión. Golpe más suave.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "luma_enfoque",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Ojo del remanso",
+				"priority": 0.0,
+				"purpose": "Ataca y mejora temporalmente su precisión.",
+				"recovery": 0.21,
+				"risk": "Golpe más suave.",
+				"self_status": {
+					"duration": 2,
+					"magnitude": 0.045,
+					"type": "accuracy_up"
+				},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.23,
+				"description": "Puede debilitar el siguiente intercambio rival. Anticipación y puntería menor.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "luma_ola",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Ola contenida",
+				"priority": -0.1,
+				"purpose": "Puede debilitar el siguiente intercambio rival.",
+				"recovery": 0.3,
+				"risk": "Anticipación y puntería menor.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.12,
+					"type": "attack_down"
+				},
+				"status_chance": 0.55,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.025,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.035,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.13,
+				"description": "Salta hacia abajo y castiga una guardia defensiva. Acierto menos seguro.",
+				"duration": 0.68,
+				"guard_bonus": 0.16,
+				"heal_fraction": 0.0,
+				"id": "luma_arco",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 60,
+					"height": 76,
+					"kind": "jump_down",
+					"retreat": 0
+				},
+				"name": "Arco del agua",
+				"priority": -0.015,
+				"purpose": "Salta hacia abajo y castiga una guardia defensiva.",
+				"recovery": 0.23,
+				"risk": "Acierto menos seguro.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 4,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Se protege y recupera una pequeña porción de vida. Cede el ataque y tiene enfriamiento.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.045,
+				"id": "luma_remanso",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Remanso protector",
+				"priority": -0.05,
+				"purpose": "Se protege y recupera una pequeña porción de vida.",
+				"recovery": 0.22,
+				"risk": "Cede el ataque y tiene enfriamiento.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.28
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 20,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.5,
+				"windup": 0.12
+			}
+		],
+		"mugo": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.94,
+				"description": "Golpe compacto y fiable. Prioridad más lenta que otros golpes rápidos.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "mugo_nudillo",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Nudillo de jade",
+				"priority": 0.06,
+				"purpose": "Golpe compacto y fiable.",
+				"recovery": 0.13,
+				"risk": "Prioridad más lenta que otros golpes rápidos.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Refuerza la defensa hasta su siguiente acción. Cede la ofensiva.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "mugo_muro",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Muro paciente",
+				"priority": -0.05,
+				"purpose": "Refuerza la defensa hasta su siguiente acción.",
+				"recovery": 0.22,
+				"risk": "Cede la ofensiva.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.3
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 1,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.5,
+				"windup": 0.12
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.3,
+				"description": "Golpe pesado que puede fracturar armadura. Preparación lenta.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "mugo_grieta",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Abrir la grieta",
+				"priority": -0.1,
+				"purpose": "Golpe pesado que puede fracturar armadura.",
+				"recovery": 0.3,
+				"risk": "Preparación lenta.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.14,
+					"type": "defense_down"
+				},
+				"status_chance": 0.55,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.07,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.12,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.42,
+				"description": "Embiste con daño fuerte y algo de penetración. Poca precisión y recuperación larga.",
+				"duration": 0.89,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "mugo_montana",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Paso de montaña",
+				"priority": -0.16,
+				"purpose": "Embiste con daño fuerte y algo de penetración.",
+				"recovery": 0.34,
+				"risk": "Poca precisión y recuperación larga.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "counter",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Absorbe parte del golpe y puede devolverlo. No garantiza una respuesta.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "mugo_eco",
+				"impact_delay": 0.1,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "counter",
+					"retreat": 12.0
+				},
+				"name": "Eco de piedra",
+				"priority": 0.02,
+				"purpose": "Absorbe parte del golpe y puede devolverlo.",
+				"recovery": 0.18,
+				"risk": "No garantiza una respuesta.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.32,
+					"duration": 1,
+					"multiplier": 0.62,
+					"reduction": 0.3
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "counter",
+				"unlock_level": 20,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.65,
+				"windup": 0.1
+			}
+		],
+		"neris": [
+			{
+				"accuracy_modifier": 0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.84,
+				"description": "Ataque ligero y preciso. Menor potencia.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "neris_ala",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Punta del ala",
+				"priority": 0.15,
+				"purpose": "Ataque ligero y preciso.",
+				"recovery": 0.13,
+				"risk": "Menor potencia.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.015,
+				"airborne_evasion": 0.0,
+				"animation_type": "dash",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.9,
+				"description": "Entra rápidamente y conserva la iniciativa. No atraviesa armadura.",
+				"duration": 0.35,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "neris_corriente",
+				"impact_delay": 0.18,
+				"max_tier": 2,
+				"movement": {
+					"distance": 82.0,
+					"height": 0.0,
+					"kind": "dash",
+					"retreat": 0.0
+				},
+				"name": "Seguir la corriente",
+				"priority": 0.21,
+				"purpose": "Entra rápidamente y conserva la iniciativa.",
+				"recovery": 0.17,
+				"risk": "No atraviesa armadura.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.13,
+				"type": "dash",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.65,
+				"windup": 0.05
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.05,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.035,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.13,
+				"description": "Gana evasión durante el desplazamiento aéreo. Ataque menos preciso.",
+				"duration": 0.68,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "neris_vuelo",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 88,
+					"height": 78,
+					"kind": "jump_over",
+					"retreat": 0
+				},
+				"name": "Vuelo sereno",
+				"priority": -0.015,
+				"purpose": "Gana evasión durante el desplazamiento aéreo.",
+				"recovery": 0.23,
+				"risk": "Ataque menos preciso.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.86,
+				"description": "Puede reducir temporalmente la puntería rival. Daño moderado y efecto resistible.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "neris_velo",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Velo del lago",
+				"priority": 0.0,
+				"purpose": "Puede reducir temporalmente la puntería rival.",
+				"recovery": 0.21,
+				"risk": "Daño moderado y efecto resistible.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.065,
+					"type": "accuracy_down"
+				},
+				"status_chance": 0.55,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 5,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Postura defensiva que recupera poca vida. Enfriamiento largo; renuncia al ataque.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.045,
+				"id": "neris_refugio",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Refugio de plumas",
+				"priority": -0.05,
+				"purpose": "Postura defensiva que recupera poca vida.",
+				"recovery": 0.22,
+				"risk": "Enfriamiento largo; renuncia al ataque.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.24
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 20,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.5,
+				"windup": 0.12
+			}
+		],
+		"nima": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.84,
+				"description": "Remata con buena puntería y poca recuperación. Daño contenido.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "nima_zarpazo",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Zarpazo fugaz",
+				"priority": 0.15,
+				"purpose": "Remata con buena puntería y poca recuperación.",
+				"recovery": 0.13,
+				"risk": "Daño contenido.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.02,
+				"airborne_evasion": 0.0,
+				"animation_type": "dash",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.92,
+				"description": "Cierra distancia antes que los golpes lentos. Menor daño por impacto.",
+				"duration": 0.35,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "nima_arena",
+				"impact_delay": 0.18,
+				"max_tier": 2,
+				"movement": {
+					"distance": 82.0,
+					"height": 0.0,
+					"kind": "dash",
+					"retreat": 0.0
+				},
+				"name": "Paso de arena",
+				"priority": 0.2,
+				"purpose": "Cierra distancia antes que los golpes lentos.",
+				"recovery": 0.17,
+				"risk": "Menor daño por impacto.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.13,
+				"type": "dash",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.65,
+				"windup": 0.05
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.035,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.05,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.13,
+				"description": "Gana evasión durante el salto y busca un crítico. Pierde algo de puntería.",
+				"duration": 0.68,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "nima_salto",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 80,
+					"height": 58,
+					"kind": "jump_forward",
+					"retreat": 0
+				},
+				"name": "Salto de duna",
+				"priority": -0.015,
+				"purpose": "Gana evasión durante el salto y busca un crítico.",
+				"recovery": 0.23,
+				"risk": "Pierde algo de puntería.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "counter",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Espera una agresión y puede responder. Cede un ataque; respuesta incierta.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "nima_acecho",
+				"impact_delay": 0.1,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "counter",
+					"retreat": 12.0
+				},
+				"name": "Acecho felino",
+				"priority": 0.02,
+				"purpose": "Espera una agresión y puede responder.",
+				"recovery": 0.18,
+				"risk": "Cede un ataque; respuesta incierta.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.38,
+					"duration": 1,
+					"multiplier": 0.55,
+					"reduction": 0.2
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "counter",
+				"unlock_level": 12,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.65,
+				"windup": 0.1
+			},
+			{
+				"accuracy_modifier": -0.075,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.38,
+				"description": "Carga con fuerza contra un rival protegido. Preparación larga y guardia abierta.",
+				"duration": 0.89,
+				"guard_bonus": 0.12,
+				"heal_fraction": 0.0,
+				"id": "nima_cometa",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Cometa del desierto",
+				"priority": -0.16,
+				"purpose": "Carga con fuerza contra un rival protegido.",
+				"recovery": 0.34,
+				"risk": "Preparación larga y guardia abierta.",
+				"self_status": {
+					"duration": 1,
+					"magnitude": 0.1,
+					"type": "defense_down"
+				},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			}
+		],
+		"sira": [
+			{
+				"accuracy_modifier": 0.06,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.015,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.84,
+				"description": "Golpe fino de alta precisión. Daño ligero.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "sira_aguja",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Aguja de jade",
+				"priority": 0.15,
+				"purpose": "Golpe fino de alta precisión.",
+				"recovery": 0.13,
+				"risk": "Daño ligero.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.025,
+				"airborne_evasion": 0.0,
+				"animation_type": "dash",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.92,
+				"description": "Se acerca de forma veloz con un corte certero. Presión moderada.",
+				"duration": 0.35,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "sira_corte",
+				"impact_delay": 0.18,
+				"max_tier": 2,
+				"movement": {
+					"distance": 82.0,
+					"height": 0.0,
+					"kind": "dash",
+					"retreat": 0.0
+				},
+				"name": "Corte rasante",
+				"priority": 0.17,
+				"purpose": "Se acerca de forma veloz con un corte certero.",
+				"recovery": 0.17,
+				"risk": "Presión moderada.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.13,
+				"type": "dash",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.65,
+				"windup": 0.05
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.18,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.03,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.3,
+				"description": "Parte de su golpe atraviesa la defensa. Menor puntería al cargar el corte.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "sira_vidrio",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Romper el vidrio",
+				"priority": -0.1,
+				"purpose": "Parte de su golpe atraviesa la defensa.",
+				"recovery": 0.3,
+				"risk": "Menor puntería al cargar el corte.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.025,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.09,
+				"critical_damage_modifier": 0.06,
+				"damage_multiplier": 1.13,
+				"description": "Golpe aéreo que prioriza los críticos. Acierto menos fiable.",
+				"duration": 0.68,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "sira_media_luna",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 94,
+					"height": 68,
+					"kind": "jump_over",
+					"retreat": 0
+				},
+				"name": "Media luna",
+				"priority": -0.015,
+				"purpose": "Golpe aéreo que prioriza los críticos.",
+				"recovery": 0.23,
+				"risk": "Acierto menos fiable.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "counter",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Espera una abertura y puede contraatacar. Cede la iniciativa si nadie ataca.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "sira_replica",
+				"impact_delay": 0.1,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "counter",
+					"retreat": 12.0
+				},
+				"name": "Réplica del filo",
+				"priority": 0.02,
+				"purpose": "Espera una abertura y puede contraatacar.",
+				"recovery": 0.18,
+				"risk": "Cede la iniciativa si nadie ataca.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.42,
+					"duration": 1,
+					"multiplier": 0.58,
+					"reduction": 0.18
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "counter",
+				"unlock_level": 20,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.65,
+				"windup": 0.1
+			}
+		],
+		"taro": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.92,
+				"description": "Golpe compacto y fiable. Potencia contenida.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "taro_puno",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Puño de tierra",
+				"priority": 0.06,
+				"purpose": "Golpe compacto y fiable.",
+				"recovery": 0.13,
+				"risk": "Potencia contenida.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "counter",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Puede responder desde una postura defensiva. No garantiza contraataque.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "taro_espera",
+				"impact_delay": 0.1,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "counter",
+					"retreat": 12.0
+				},
+				"name": "Espera del tejón",
+				"priority": 0.02,
+				"purpose": "Puede responder desde una postura defensiva.",
+				"recovery": 0.18,
+				"risk": "No garantiza contraataque.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.37,
+					"duration": 1,
+					"multiplier": 0.6,
+					"reduction": 0.25
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "counter",
+				"unlock_level": 1,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.65,
+				"windup": 0.1
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Se protege y mejora brevemente su defensa. Cede un ataque.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "taro_jade",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Guardia de jade",
+				"priority": -0.05,
+				"purpose": "Se protege y mejora brevemente su defensa.",
+				"recovery": 0.22,
+				"risk": "Cede un ataque.",
+				"self_status": {
+					"duration": 2,
+					"magnitude": 0.1,
+					"type": "defense_up"
+				},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.22
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 5,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.5,
+				"windup": 0.12
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.3,
+				"description": "Puede reducir la fuerza del rival. Precisión menor y ataque lento.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "taro_cansancio",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Golpe de cansancio",
+				"priority": -0.1,
+				"purpose": "Puede reducir la fuerza del rival.",
+				"recovery": 0.3,
+				"risk": "Precisión menor y ataque lento.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.13,
+					"type": "attack_down"
+				},
+				"status_chance": 0.55,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.075,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.34,
+				"description": "Embiste a los rivales que esperan en guardia. Preparación larga.",
+				"duration": 0.89,
+				"guard_bonus": 0.2,
+				"heal_fraction": 0.0,
+				"id": "taro_umbral",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Cruzar el umbral",
+				"priority": -0.16,
+				"purpose": "Embiste a los rivales que esperan en guardia.",
+				"recovery": 0.34,
+				"risk": "Preparación larga.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			}
+		],
+		"tepa": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.8,
+				"description": "Golpea antes con una recuperación muy breve. Potencia baja.",
+				"duration": 0.26,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "tepa_patita",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Patita fugaz",
+				"priority": 0.19,
+				"purpose": "Golpea antes con una recuperación muy breve.",
+				"recovery": 0.11,
+				"risk": "Potencia baja.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.05,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.015,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.07,
+				"description": "Pasa por arriba y gana evasión mientras está en el aire. Menor puntería y un breve enfriamiento.",
+				"duration": 0.68,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "tepa_zacaton",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 84,
+					"height": 88,
+					"kind": "jump_over",
+					"retreat": 0
+				},
+				"name": "Salto del zacatón",
+				"priority": -0.015,
+				"purpose": "Pasa por arriba y gana evasión mientras está en el aire.",
+				"recovery": 0.23,
+				"risk": "Menor puntería y un breve enfriamiento.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "dash",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.9,
+				"description": "Atraviesa un espacio corto con prioridad y buena puntería. No golpea tan fuerte como un ataque pesado.",
+				"duration": 0.35,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "tepa_carrera",
+				"impact_delay": 0.18,
+				"max_tier": 2,
+				"movement": {
+					"distance": 82.0,
+					"height": 0.0,
+					"kind": "dash",
+					"retreat": 0.0
+				},
+				"name": "Carrera cruzada",
+				"priority": 0.2,
+				"purpose": "Atraviesa un espacio corto con prioridad y buena puntería.",
+				"recovery": 0.17,
+				"risk": "No golpea tan fuerte como un ataque pesado.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.13,
+				"type": "dash",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.65,
+				"windup": 0.05
+			},
+			{
+				"accuracy_modifier": -0.045,
+				"airborne_evasion": 0.035,
+				"animation_type": "jump",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.035,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.18,
+				"description": "Cae de arriba y castiga a un rival en guardia. Requiere recuperar el equilibrio al aterrizar.",
+				"duration": 0.74,
+				"guard_bonus": 0.16,
+				"heal_fraction": 0.0,
+				"id": "tepa_volcan",
+				"impact_delay": 0.45,
+				"max_tier": 2,
+				"movement": {
+					"distance": 68,
+					"height": 76,
+					"kind": "jump_down",
+					"retreat": 3
+				},
+				"name": "Brinco del volcán",
+				"priority": -0.015,
+				"purpose": "Cae de arriba y castiga a un rival en guardia.",
+				"recovery": 0.29,
+				"risk": "Requiere recuperar el equilibrio al aterrizar.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.3,
+				"type": "jump",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.45,
+				"windup": 0.15
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.79,
+				"description": "Puede ralentizar al rival antes del próximo salto. Poco daño; la lentitud es resistible.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "tepa_polvo",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Polvo del sendero",
+				"priority": 0.0,
+				"purpose": "Puede ralentizar al rival antes del próximo salto.",
+				"recovery": 0.21,
+				"risk": "Poco daño; la lentitud es resistible.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.14,
+					"type": "slow"
+				},
+				"status_chance": 0.5,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			}
+		],
+		"xuna": [
+			{
+				"accuracy_modifier": 0.04,
+				"airborne_evasion": 0.0,
+				"animation_type": "quick",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 0,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.89,
+				"description": "Ataque sencillo y certero para mantener presencia. Menor explosividad.",
+				"duration": 0.28,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "xuna_colmillo",
+				"impact_delay": 0.15,
+				"max_tier": 2,
+				"movement": {
+					"distance": 28.0,
+					"height": 0.0,
+					"kind": "quick",
+					"retreat": 0.0
+				},
+				"name": "Colmillo sereno",
+				"priority": 0.08,
+				"purpose": "Ataque sencillo y certero para mantener presencia.",
+				"recovery": 0.13,
+				"risk": "Menor explosividad.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.08,
+				"type": "quick",
+				"unlock_level": 1,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 3.1,
+				"windup": 0.07
+			},
+			{
+				"accuracy_modifier": 0.0,
+				"airborne_evasion": 0.0,
+				"animation_type": "guard",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.0,
+				"description": "Absorbe parte del siguiente intercambio y mantiene la posición. Renuncia a atacar y no provoca una réplica automática.",
+				"duration": 0.34,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "xuna_umbral",
+				"impact_delay": 0.12,
+				"max_tier": 2,
+				"movement": {
+					"distance": 0.0,
+					"height": 0.0,
+					"kind": "guard",
+					"retreat": 8.0
+				},
+				"name": "Guardia del umbral",
+				"priority": -0.05,
+				"purpose": "Absorbe parte del siguiente intercambio y mantiene la posición.",
+				"recovery": 0.22,
+				"risk": "Renuncia a atacar y no provoca una réplica automática.",
+				"self_status": {},
+				"stance": {
+					"chance": 0.0,
+					"duration": 1,
+					"multiplier": 0.0,
+					"reduction": 0.3
+				},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.0,
+				"type": "guard",
+				"unlock_level": 1,
+				"upgrade_description": "+1 punto de reducción de daño, +2% al multiplicador de réplica si la tiene y recuperación 0.012 s menor por grado.",
+				"weight": 0.48,
+				"windup": 0.12
+			},
+			{
+				"accuracy_modifier": 0.01,
+				"airborne_evasion": 0.0,
+				"animation_type": "technique",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 2,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 0.86,
+				"description": "Puede dejar una quemadura breve que escala con Ataque. El efecto puede resistirse.",
+				"duration": 0.51,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "xuna_brasa",
+				"impact_delay": 0.3,
+				"max_tier": 2,
+				"movement": {
+					"distance": 36.0,
+					"height": 0.0,
+					"kind": "technique",
+					"retreat": 5.0
+				},
+				"name": "Brasa persistente",
+				"priority": 0.0,
+				"purpose": "Puede dejar una quemadura breve que escala con Ataque.",
+				"recovery": 0.21,
+				"risk": "El efecto puede resistirse.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 2.5,
+					"scaling_base": 19.5,
+					"scaling_stat": "attack",
+					"type": "burn"
+				},
+				"status_chance": 0.5,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.12,
+				"type": "technique",
+				"unlock_level": 5,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.2,
+				"windup": 0.18
+			},
+			{
+				"accuracy_modifier": -0.055,
+				"airborne_evasion": 0.0,
+				"animation_type": "heavy",
+				"armor_ignore": 0.1,
+				"base_damage": 0.0,
+				"cooldown": 1,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.27,
+				"description": "Golpe pesado que ignora parte de la armadura. Velocidad menor y preparación visible.",
+				"duration": 0.77,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "xuna_piedra",
+				"impact_delay": 0.47,
+				"max_tier": 2,
+				"movement": {
+					"distance": 42.0,
+					"height": 0.0,
+					"kind": "heavy",
+					"retreat": 12.0
+				},
+				"name": "Paso de piedra",
+				"priority": -0.1,
+				"purpose": "Golpe pesado que ignora parte de la armadura.",
+				"recovery": 0.3,
+				"risk": "Velocidad menor y preparación visible.",
+				"self_status": {},
+				"stance": {},
+				"status": {},
+				"status_chance": 0.0,
+				"status_duration": 0,
+				"tier": 0,
+				"travel": 0.11,
+				"type": "heavy",
+				"unlock_level": 12,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.7,
+				"windup": 0.36
+			},
+			{
+				"accuracy_modifier": -0.075,
+				"airborne_evasion": 0.0,
+				"animation_type": "charge",
+				"armor_ignore": 0.0,
+				"base_damage": 0.0,
+				"cooldown": 3,
+				"cost": 1,
+				"critical_chance_modifier": 0.0,
+				"critical_damage_modifier": 0.0,
+				"damage_multiplier": 1.32,
+				"description": "Prepara una carga que puede reducir el ataque enemigo. Menor precisión y recuperación larga.",
+				"duration": 0.9,
+				"guard_bonus": 0.0,
+				"heal_fraction": 0.0,
+				"id": "xuna_vigilia",
+				"impact_delay": 0.55,
+				"max_tier": 2,
+				"movement": {
+					"distance": 96.0,
+					"height": 0.0,
+					"kind": "charge",
+					"retreat": 30.0
+				},
+				"name": "Carga de vigilia",
+				"priority": -0.16,
+				"purpose": "Prepara una carga que puede reducir el ataque enemigo.",
+				"recovery": 0.35,
+				"risk": "Menor precisión y recuperación larga.",
+				"self_status": {},
+				"stance": {},
+				"status": {
+					"duration": 2,
+					"magnitude": 0.1,
+					"type": "attack_down"
+				},
+				"status_chance": 0.5,
+				"status_duration": 2,
+				"tier": 0,
+				"travel": 0.15,
+				"type": "charge",
+				"unlock_level": 20,
+				"upgrade_description": "+3.5% al multiplicador, +0.8 puntos de precisión y recuperación 0.012 s menor por grado.",
+				"weight": 1.4,
+				"windup": 0.4
+			}
+		]
+	},
+	"perks": {
+		"balam": [
+			{
+				"benefit": "Sus cargas ganan +7% al multiplicador y 1.5 puntos de prioridad.",
+				"cost": 1,
+				"description": "Sus cargas ganan +7% al multiplicador y 1.5 puntos de prioridad.",
+				"id": "balam_emboscada",
+				"modifiers": {
+					"damage_multiplier": 0.07,
+					"priority": 0.015
+				},
+				"name": "Carga medida",
+				"types": [
+					"charge"
+				]
+			},
+			{
+				"benefit": "Sus ataques ganan 2.5 puntos de precisión.",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión.",
+				"id": "balam_lectura",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura del monte",
+				"types": []
+			},
+			{
+				"benefit": "Cargas y saltos ganan 3.5 puntos de probabilidad crítica.",
+				"cost": 1,
+				"description": "Cargas y saltos ganan 3.5 puntos de probabilidad crítica.",
+				"id": "balam_colmillada",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instante moteado",
+				"types": [
+					"charge",
+					"jump"
+				]
+			},
+			{
+				"benefit": "El enfoque de Acecho paciente dura una acción adicional.",
+				"cost": 1,
+				"description": "El enfoque de Acecho paciente dura una acción adicional.",
+				"id": "balam_sigilo",
+				"modifiers": {
+					"status_duration": 1
+				},
+				"name": "Acecho prolongado",
+				"types": [
+					"technique"
+				]
+			},
+			{
+				"benefit": "Reduce un 10% el daño adicional de los críticos recibidos.",
+				"cost": 1,
+				"description": "Reduce un 10% el daño adicional de los críticos recibidos.",
+				"id": "balam_temple",
+				"modifiers": {},
+				"name": "Temple del jaguar",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"id": "balam_retirada",
+				"modifiers": {},
+				"name": "Retirada entre hojas",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"copal": [
+			{
+				"benefit": "Sus posturas ganan 5.5 puntos de probabilidad de respuesta.",
+				"cost": 1,
+				"description": "Sus posturas ganan 5.5 puntos de probabilidad de respuesta.",
+				"id": "copal_replica",
+				"modifiers": {
+					"counter_chance": 0.055
+				},
+				"name": "Réplica medida",
+				"types": [
+					"counter"
+				]
+			},
+			{
+				"benefit": "Sus desplazamientos ganan 3.5 puntos de precisión.",
+				"cost": 1,
+				"description": "Sus desplazamientos ganan 3.5 puntos de precisión.",
+				"id": "copal_circulo",
+				"modifiers": {
+					"accuracy_modifier": 0.035
+				},
+				"name": "Círculo veloz",
+				"types": [
+					"dash"
+				]
+			},
+			{
+				"benefit": "Sus posturas ganan +6% al multiplicador de réplica y 2 puntos de prioridad.",
+				"cost": 1,
+				"description": "Sus posturas ganan +6% al multiplicador de réplica y 2 puntos de prioridad.",
+				"id": "copal_respuesta",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Respuesta anillada",
+				"types": [
+					"counter"
+				]
+			},
+			{
+				"benefit": "La reducción de precisión de sus técnicas dura una acción adicional.",
+				"cost": 1,
+				"description": "La reducción de precisión de sus técnicas dura una acción adicional.",
+				"id": "copal_sombra",
+				"modifiers": {
+					"status_duration": 1
+				},
+				"name": "Sombra persistente",
+				"types": [
+					"technique"
+				]
+			},
+			{
+				"benefit": "Sus ataques rápidos ganan 4 puntos de prioridad y recuperan 0.025 s antes.",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 4 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "copal_ritmo",
+				"modifiers": {
+					"priority": 0.04,
+					"recovery": -0.025
+				},
+				"name": "Dos pasos adelante",
+				"types": [
+					"quick"
+				]
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"id": "copal_refugio",
+				"modifiers": {},
+				"name": "Giro de regreso",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"duna": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus cargas con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "duna_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Duna",
+				"types": [
+					"charge"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "duna_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Duna",
+				"types": []
+			},
+			{
+				"benefit": "+3.5 puntos de crítico en cargas",
+				"cost": 1,
+				"description": "Sus cargas ganan 3.5 puntos de probabilidad crítica, dentro del límite.",
+				"id": "duna_mastery",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instinto de Duna",
+				"types": [
+					"charge"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "duna_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Duna",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "duna_resilience",
+				"modifiers": {},
+				"name": "Temple de Duna",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "duna_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"iria": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus técnicas con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "iria_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Iria",
+				"types": [
+					"technique"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "iria_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Iria",
+				"types": []
+			},
+			{
+				"benefit": "+1 acción a efectos de técnicas",
+				"cost": 1,
+				"description": "Los efectos de sus técnicas duran una acción adicional; la resistencia y el límite siguen vigentes.",
+				"id": "iria_mastery",
+				"modifiers": {
+					"status_duration": 1
+				},
+				"name": "Instinto de Iria",
+				"types": [
+					"technique"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "iria_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Iria",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "iria_resilience",
+				"modifiers": {},
+				"name": "Temple de Iria",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "iria_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"kiro": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus cargas con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "kiro_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Kiro",
+				"types": [
+					"charge"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "kiro_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Kiro",
+				"types": []
+			},
+			{
+				"benefit": "+3.5 puntos de crítico en cargas",
+				"cost": 1,
+				"description": "Sus cargas ganan 3.5 puntos de probabilidad crítica, dentro del límite.",
+				"id": "kiro_mastery",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instinto de Kiro",
+				"types": [
+					"charge"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "kiro_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Kiro",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "kiro_resilience",
+				"modifiers": {},
+				"name": "Temple de Kiro",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "kiro_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"luma": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus técnicas con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "luma_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Luma",
+				"types": [
+					"technique"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "luma_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Luma",
+				"types": []
+			},
+			{
+				"benefit": "+1 acción a efectos de técnicas",
+				"cost": 1,
+				"description": "Los efectos de sus técnicas duran una acción adicional; la resistencia y el límite siguen vigentes.",
+				"id": "luma_mastery",
+				"modifiers": {
+					"status_duration": 1
+				},
+				"name": "Instinto de Luma",
+				"types": [
+					"technique"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "luma_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Luma",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "luma_resilience",
+				"modifiers": {},
+				"name": "Temple de Luma",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "luma_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"mugo": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus golpes pesados con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "mugo_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Mugo",
+				"types": [
+					"heavy"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "mugo_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Mugo",
+				"types": []
+			},
+			{
+				"benefit": "+3.5 puntos de crítico en golpes pesados",
+				"cost": 1,
+				"description": "Sus golpes pesados ganan 3.5 puntos de probabilidad crítica, dentro del límite.",
+				"id": "mugo_mastery",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instinto de Mugo",
+				"types": [
+					"heavy"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "mugo_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Mugo",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "mugo_resilience",
+				"modifiers": {},
+				"name": "Temple de Mugo",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "mugo_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"neris": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus saltos con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "neris_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Neris",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "neris_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Neris",
+				"types": []
+			},
+			{
+				"benefit": "+3.5 puntos de crítico en saltos",
+				"cost": 1,
+				"description": "Sus saltos ganan 3.5 puntos de probabilidad crítica, dentro del límite.",
+				"id": "neris_mastery",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instinto de Neris",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "neris_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Neris",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "neris_resilience",
+				"modifiers": {},
+				"name": "Temple de Neris",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "neris_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"nima": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus desplazamientos con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "nima_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Nima",
+				"types": [
+					"dash"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "nima_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Nima",
+				"types": []
+			},
+			{
+				"benefit": "+3.5 puntos de crítico en desplazamientos",
+				"cost": 1,
+				"description": "Sus desplazamientos ganan 3.5 puntos de probabilidad crítica, dentro del límite.",
+				"id": "nima_mastery",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instinto de Nima",
+				"types": [
+					"dash"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "nima_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Nima",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "nima_resilience",
+				"modifiers": {},
+				"name": "Temple de Nima",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "nima_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"sira": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus saltos con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "sira_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Sira",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "sira_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Sira",
+				"types": []
+			},
+			{
+				"benefit": "+3.5 puntos de crítico en saltos",
+				"cost": 1,
+				"description": "Sus saltos ganan 3.5 puntos de probabilidad crítica, dentro del límite.",
+				"id": "sira_mastery",
+				"modifiers": {
+					"critical_chance_modifier": 0.035
+				},
+				"name": "Instinto de Sira",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "sira_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Sira",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "sira_resilience",
+				"modifiers": {},
+				"name": "Temple de Sira",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "sira_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"taro": [
+			{
+				"benefit": "+6% al multiplicador y +2 puntos de prioridad",
+				"cost": 1,
+				"description": "Refuerza sus contraataques con +6% al multiplicador y +2 puntos de prioridad.",
+				"id": "taro_momentum",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Ritmo de Taro",
+				"types": [
+					"counter"
+				]
+			},
+			{
+				"benefit": "+2.5 puntos de precisión",
+				"cost": 1,
+				"description": "Sus ataques ganan 2.5 puntos de precisión; mantiene los límites normales.",
+				"id": "taro_focus",
+				"modifiers": {
+					"accuracy_modifier": 0.025
+				},
+				"name": "Lectura de Taro",
+				"types": []
+			},
+			{
+				"benefit": "+5.5 puntos de respuesta",
+				"cost": 1,
+				"description": "Sus posturas ganan 5.5 puntos de probabilidad de respuesta, dentro del límite.",
+				"id": "taro_mastery",
+				"modifiers": {
+					"counter_chance": 0.055
+				},
+				"name": "Instinto de Taro",
+				"types": [
+					"counter"
+				]
+			},
+			{
+				"benefit": "Más iniciativa en ataques rápidos",
+				"cost": 1,
+				"description": "Sus ataques rápidos ganan 5 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "taro_tempo",
+				"modifiers": {
+					"priority": 0.05,
+					"recovery": -0.025
+				},
+				"name": "Paso de Taro",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "−10% del extra crítico recibido",
+				"cost": 1,
+				"description": "Reduce un 10% del daño adicional de los críticos recibidos. No reduce el golpe normal.",
+				"id": "taro_resilience",
+				"modifiers": {},
+				"name": "Temple de Taro",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "+2.5 puntos de evasión bajo 35% de vida",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión, respetando el límite normal.",
+				"id": "taro_instinct",
+				"modifiers": {},
+				"name": "Instinto de supervivencia",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"tepa": [
+			{
+				"benefit": "Sus saltos ganan +6% al multiplicador y 2 puntos de prioridad.",
+				"cost": 1,
+				"description": "Sus saltos ganan +6% al multiplicador y 2 puntos de prioridad.",
+				"id": "tepa_impulso",
+				"modifiers": {
+					"damage_multiplier": 0.06,
+					"priority": 0.02
+				},
+				"name": "Impulso de la ladera",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "Sus saltos ganan 4 puntos de precisión.",
+				"cost": 1,
+				"description": "Sus saltos ganan 4 puntos de precisión.",
+				"id": "tepa_aterrizaje",
+				"modifiers": {
+					"accuracy_modifier": 0.04
+				},
+				"name": "Aterrizaje preciso",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "Gana 1.5 puntos adicionales de evasión durante sus saltos.",
+				"cost": 1,
+				"description": "Gana 1.5 puntos adicionales de evasión durante sus saltos.",
+				"id": "tepa_aire",
+				"modifiers": {
+					"airborne_evasion": 0.015
+				},
+				"name": "Entre el zacatón",
+				"types": [
+					"jump"
+				]
+			},
+			{
+				"benefit": "Ataques rápidos y desplazamientos ganan 4 puntos de prioridad y recuperan 0.025 s antes.",
+				"cost": 1,
+				"description": "Ataques rápidos y desplazamientos ganan 4 puntos de prioridad y recuperan 0.025 s antes.",
+				"id": "tepa_carrera",
+				"modifiers": {
+					"priority": 0.04,
+					"recovery": -0.025
+				},
+				"name": "Carrera de vuelta",
+				"types": [
+					"quick",
+					"dash"
+				]
+			},
+			{
+				"benefit": "Reduce un 10% el daño adicional de los críticos recibidos.",
+				"cost": 1,
+				"description": "Reduce un 10% el daño adicional de los críticos recibidos.",
+				"id": "tepa_firmeza",
+				"modifiers": {},
+				"name": "Pequeña firmeza",
+				"runtime": {
+					"critical_reduction": 0.1
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"id": "tepa_refugio",
+				"modifiers": {},
+				"name": "Último refugio",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			}
+		],
+		"xuna": [
+			{
+				"benefit": "Los efectos de sus técnicas y cargas duran una acción adicional.",
+				"cost": 1,
+				"description": "Los efectos de sus técnicas y cargas duran una acción adicional.",
+				"id": "xuna_ceniza",
+				"modifiers": {
+					"status_duration": 1
+				},
+				"name": "Brasas que perduran",
+				"types": [
+					"technique",
+					"charge"
+				]
+			},
+			{
+				"benefit": "Ataques rápidos y pesados ganan 3.5 puntos de precisión.",
+				"cost": 1,
+				"description": "Ataques rápidos y pesados ganan 3.5 puntos de precisión.",
+				"id": "xuna_colmillo",
+				"modifiers": {
+					"accuracy_modifier": 0.035
+				},
+				"name": "Colmillo certero",
+				"types": [
+					"quick",
+					"heavy"
+				]
+			},
+			{
+				"benefit": "Su guardia gana 8 puntos de prioridad y recupera 0.04 s antes.",
+				"cost": 1,
+				"description": "Su guardia gana 8 puntos de prioridad y recupera 0.04 s antes.",
+				"id": "xuna_vigilia",
+				"modifiers": {
+					"priority": 0.08,
+					"recovery": -0.04
+				},
+				"name": "Vigilia serena",
+				"types": [
+					"guard"
+				]
+			},
+			{
+				"benefit": "Reduce un 12% adicional del daño extra de los críticos recibidos.",
+				"cost": 1,
+				"description": "Reduce un 12% adicional del daño extra de los críticos recibidos.",
+				"id": "xuna_temple",
+				"modifiers": {},
+				"name": "Calma del camino",
+				"runtime": {
+					"critical_reduction": 0.12
+				},
+				"types": []
+			},
+			{
+				"below_hp": 0.35,
+				"benefit": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"cost": 1,
+				"description": "Bajo el 35% de vida gana 2.5 puntos de evasión.",
+				"id": "xuna_refugio",
+				"modifiers": {},
+				"name": "Paso al refugio",
+				"runtime": {
+					"evasion": 0.025
+				},
+				"types": []
+			},
+			{
+				"benefit": "Los golpes pesados ganan 5 puntos de prioridad y 1.5 puntos de precisión.",
+				"cost": 1,
+				"description": "Los golpes pesados ganan 5 puntos de prioridad y 1.5 puntos de precisión.",
+				"id": "xuna_firmeza",
+				"modifiers": {
+					"accuracy_modifier": 0.015,
+					"priority": 0.05
+				},
+				"name": "Paso firme",
+				"types": [
+					"heavy"
+				]
+			}
+		]
+	},
+	"story_first16": [
+		{
+			"chapter": 1,
+			"character_id": "luma",
+			"global_level": 1,
+			"id": "river_gate",
+			"kind": "normal",
+			"level": 1,
+			"profile": "Una guardiana equilibrada que pone a prueba tus primeros pasos.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 40,
+				"xp_win": 120
+			},
+			"stat_overrides": {
+				"accuracy": 0.96,
+				"attack": 22.0,
+				"crit_chance": 0.12,
+				"defense": 20.0,
+				"max_hp": 250.0,
+				"speed": 6.0
+			},
+			"strength": "Puntería que aprende de los fallos.",
+			"title": "La puerta del río",
+			"weakness": "Presión moderada y ninguna defensa especializada.",
+			"xp_loss": 40,
+			"xp_win": 120
+		},
+		{
+			"chapter": 1,
+			"character_id": "nima",
+			"global_level": 2,
+			"id": "wind_bridge",
+			"kind": "normal",
+			"level": 2,
+			"profile": "Un corredor veloz que encadena ataques, pero acusa cada impacto.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 45,
+				"xp_win": 140
+			},
+			"stat_overrides": {
+				"accuracy": 0.94,
+				"attack": 22.0,
+				"defense": 12.0,
+				"evasion": 0.14,
+				"max_hp": 235.0,
+				"speed": 13.0
+			},
+			"strength": "Velocidad alta y un golpe reforzado cada tres acciones.",
+			"title": "El puente del viento",
+			"weakness": "Poca defensa y una reserva de vida contenida.",
+			"xp_loss": 45,
+			"xp_win": 140
+		},
+		{
+			"chapter": 1,
+			"character_id": "duna",
+			"global_level": 3,
+			"id": "ochre_wall",
+			"kind": "normal",
+			"level": 4,
+			"profile": "Una centinela de piedra que resiste con armadura y escudos.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 50,
+				"xp_win": 170
+			},
+			"stat_overrides": {
+				"attack": 25.0,
+				"defense": 64.0,
+				"evasion": 0.05,
+				"max_hp": 320.0,
+				"speed": 3.0
+			},
+			"strength": "Defensa muy alta y escudos periódicos.",
+			"title": "La muralla de ocre",
+			"weakness": "Acciones lentas; sus escudos no bloquean el daño de estados.",
+			"xp_loss": 50,
+			"xp_win": 170
+		},
+		{
+			"chapter": 1,
+			"character_id": "sira",
+			"global_level": 4,
+			"id": "glass_duel",
+			"kind": "elite",
+			"level": 5,
+			"profile": "Una duelista de gran puntería con críticos que atraviesan armadura.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 2,
+				"xp_loss": 65,
+				"xp_win": 240
+			},
+			"stat_overrides": {
+				"accuracy": 1.02,
+				"attack": 31.0,
+				"crit_chance": 0.27,
+				"defense": 17.0,
+				"max_hp": 295.0,
+				"speed": 9.0
+			},
+			"strength": "Críticos frecuentes y penetrantes; casi nunca desperdicia un golpe.",
+			"title": "Élite · El filo de cristal",
+			"weakness": "Defensa y resistencia bajas; los intercambios le cuestan vida.",
+			"xp_loss": 65,
+			"xp_win": 240
+		},
+		{
+			"chapter": 1,
+			"character_id": "iria",
+			"global_level": 5,
+			"id": "midnight_garden",
+			"kind": "normal",
+			"level": 7,
+			"profile": "Una botánica resistente que desgasta con veneno acumulable.",
+			"rewards": {
+				"move_points": 1,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 60,
+				"xp_win": 190
+			},
+			"stat_overrides": {
+				"attack": 30.0,
+				"defense": 27.0,
+				"max_hp": 395.0,
+				"resistance": 0.36,
+				"speed": 8.0
+			},
+			"strength": "Veneno persistente y buena resistencia a estados negativos.",
+			"title": "El jardín de medianoche",
+			"weakness": "Daño directo contenido; necesita varios impactos para preparar el veneno.",
+			"xp_loss": 60,
+			"xp_win": 190
+		},
+		{
+			"chapter": 1,
+			"character_id": "neris",
+			"global_level": 6,
+			"id": "mirror_lake",
+			"kind": "normal",
+			"level": 8,
+			"profile": "Una nadadora evasiva que guarda una única recuperación para el final.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 65,
+				"xp_win": 220
+			},
+			"stat_overrides": {
+				"attack": 32.0,
+				"defense": 21.0,
+				"evasion": 0.25,
+				"max_hp": 345.0,
+				"speed": 10.0
+			},
+			"strength": "Evasión elevada y una remontada cuando su vida escasea.",
+			"title": "El lago de los espejos",
+			"weakness": "Defensa moderada; solo puede curarse una vez.",
+			"xp_loss": 65,
+			"xp_win": 220
+		},
+		{
+			"chapter": 1,
+			"character_id": "taro",
+			"global_level": 7,
+			"id": "jade_bell",
+			"kind": "elite",
+			"level": 9,
+			"profile": "Un veterano de gran vida y armadura que responde a la agresión.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 2,
+				"xp_loss": 75,
+				"xp_win": 290
+			},
+			"stat_overrides": {
+				"attack": 33.0,
+				"defense": 55.0,
+				"max_hp": 480.0,
+				"resistance": 0.32,
+				"speed": 5.0
+			},
+			"strength": "Aguante alto y contraataques que castigan los intercambios.",
+			"title": "Élite · La campana de jade",
+			"weakness": "Velocidad baja y respuestas que no están garantizadas.",
+			"xp_loss": 75,
+			"xp_win": 290
+		},
+		{
+			"chapter": 1,
+			"character_id": "mugo",
+			"global_level": 8,
+			"id": "last_lantern",
+			"kind": "boss",
+			"level": 12,
+			"profile": "Ascua custodia el último farol. Su núcleo se aviva al perder vida.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 85,
+				"xp_win": 300
+			},
+			"stat_overrides": {
+				"accuracy": 0.97,
+				"attack": 38.0,
+				"crit_chance": 0.13,
+				"crit_damage": 1.55,
+				"defense": 48.0,
+				"evasion": 0.06,
+				"max_hp": 550.0,
+				"resistance": 0.35,
+				"speed": 6.0
+			},
+			"strength": "Ataque, armadura y resistencia sólidos; dos fases anuncian su presión creciente.",
+			"title": "Jefe · El último farol",
+			"weakness": "Velocidad inicial baja y evasión escasa. Nunca se cura ni se vuelve invulnerable.",
+			"xp_loss": 85,
+			"xp_win": 300
+		},
+		{
+			"chapter": 2,
+			"character_id": "kiro",
+			"global_level": 9,
+			"id": "storm_red_pass",
+			"kind": "normal",
+			"level": 13,
+			"profile": "Un pugilista que abre el paso con golpes fuertes y deja su guardia expuesta.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 95,
+				"xp_win": 340
+			},
+			"stat_overrides": {
+				"accuracy": 0.97,
+				"attack": 41.0,
+				"crit_chance": 0.18,
+				"defense": 24.0,
+				"evasion": 0.1,
+				"max_hp": 470.0,
+				"speed": 11.0
+			},
+			"strength": "Ataque alto y furia creciente cuando pierde vida.",
+			"title": "El desfiladero rojo",
+			"weakness": "Armadura ligera y poca tolerancia a estados.",
+			"xp_loss": 95,
+			"xp_win": 340
+		},
+		{
+			"chapter": 2,
+			"character_id": "iria",
+			"global_level": 10,
+			"id": "storm_bitter_rain",
+			"kind": "normal",
+			"level": 14,
+			"profile": "La lluvia protege a una botánica que mezcla resistencia y desgaste continuo.",
+			"rewards": {
+				"move_points": 1,
+				"perk_points": 1,
+				"stat_points": 0,
+				"xp_loss": 105,
+				"xp_win": 370
+			},
+			"stat_overrides": {
+				"accuracy": 1.02,
+				"attack": 37.0,
+				"defense": 32.0,
+				"max_hp": 540.0,
+				"resistance": 0.4,
+				"speed": 11.0
+			},
+			"strength": "Veneno acumulable, puntería firme y resistencia elevada.",
+			"title": "La lluvia amarga",
+			"weakness": "Daño directo moderado; requiere varios golpes para acumular veneno.",
+			"xp_loss": 105,
+			"xp_win": 370
+		},
+		{
+			"chapter": 2,
+			"character_id": "mugo",
+			"global_level": 11,
+			"id": "storm_iron_roots",
+			"kind": "normal",
+			"level": 16,
+			"profile": "Un guardián de enorme aguante que espera el error del rival.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 115,
+				"xp_win": 400
+			},
+			"stat_overrides": {
+				"accuracy": 0.99,
+				"attack": 38.0,
+				"defense": 76.0,
+				"evasion": 0.04,
+				"max_hp": 720.0,
+				"resistance": 0.4,
+				"speed": 5.0
+			},
+			"strength": "Vida y defensa altas; reduce el daño adicional de los críticos.",
+			"title": "Las raíces de hierro",
+			"weakness": "Lento y casi incapaz de esquivar.",
+			"xp_loss": 115,
+			"xp_win": 400
+		},
+		{
+			"chapter": 2,
+			"character_id": "nima",
+			"global_level": 12,
+			"id": "storm_thunder_run",
+			"kind": "elite",
+			"level": 17,
+			"profile": "Un corredor que atraviesa el vendaval con ráfagas de tres golpes.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 2,
+				"xp_loss": 145,
+				"xp_win": 540
+			},
+			"stat_overrides": {
+				"accuracy": 1.02,
+				"attack": 46.0,
+				"crit_chance": 0.15,
+				"defense": 20.0,
+				"evasion": 0.2,
+				"max_hp": 530.0,
+				"speed": 22.0
+			},
+			"strength": "Velocidad muy alta, combos y evasión.",
+			"title": "Élite · La carrera del trueno",
+			"weakness": "Defensa baja; su ritmo rápido también lo expone a respuestas.",
+			"xp_loss": 145,
+			"xp_win": 540
+		},
+		{
+			"chapter": 2,
+			"character_id": "taro",
+			"global_level": 13,
+			"id": "storm_jade_echo",
+			"kind": "normal",
+			"level": 18,
+			"profile": "Un maestro de la réplica que mantiene la guardia bajo la tormenta.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 125,
+				"xp_win": 460
+			},
+			"stat_overrides": {
+				"accuracy": 1.04,
+				"attack": 43.0,
+				"crit_chance": 0.14,
+				"defense": 62.0,
+				"evasion": 0.1,
+				"max_hp": 690.0,
+				"speed": 10.0
+			},
+			"strength": "Defensa sólida y contraataques que castigan los intercambios.",
+			"title": "El eco entre las piedras",
+			"weakness": "Velocidad contenida y respuestas que nunca están garantizadas.",
+			"xp_loss": 125,
+			"xp_win": 460
+		},
+		{
+			"chapter": 2,
+			"character_id": "duna",
+			"global_level": 14,
+			"id": "storm_sand_refuge",
+			"kind": "normal",
+			"level": 20,
+			"profile": "La centinela protege el último refugio con placas gruesas y escudos periódicos.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 140,
+				"xp_win": 500
+			},
+			"stat_overrides": {
+				"accuracy": 1.02,
+				"attack": 43.0,
+				"defense": 88.0,
+				"evasion": 0.06,
+				"max_hp": 740.0,
+				"resistance": 0.32,
+				"speed": 7.0
+			},
+			"strength": "Armadura muy alta y vida abundante.",
+			"title": "El refugio de arena",
+			"weakness": "Pocas acciones; el daño de estados atraviesa sus escudos.",
+			"xp_loss": 140,
+			"xp_win": 500
+		},
+		{
+			"chapter": 2,
+			"character_id": "sira",
+			"global_level": 15,
+			"id": "storm_lunar_edge",
+			"kind": "elite",
+			"level": 21,
+			"profile": "Una duelista que combina puntería, velocidad y críticos penetrantes.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 2,
+				"xp_loss": 165,
+				"xp_win": 620
+			},
+			"stat_overrides": {
+				"accuracy": 1.1,
+				"attack": 52.0,
+				"crit_chance": 0.3,
+				"crit_damage": 1.85,
+				"defense": 24.0,
+				"evasion": 0.14,
+				"max_hp": 590.0,
+				"resistance": 0.1,
+				"speed": 16.0
+			},
+			"strength": "Críticos muy frecuentes que ignoran parte de la armadura.",
+			"title": "Élite · El filo de la luna",
+			"weakness": "Defensa ligera y baja resistencia a efectos negativos.",
+			"xp_loss": 165,
+			"xp_win": 620
+		},
+		{
+			"chapter": 2,
+			"character_id": "sira",
+			"global_level": 16,
+			"id": "storm_moon_wings",
+			"kind": "boss",
+			"level": 23,
+			"profile": "Véspera, polilla lunar, convierte el viento en un baile de ataques precisos.",
+			"rewards": {
+				"move_points": 0,
+				"perk_points": 0,
+				"stat_points": 0,
+				"xp_loss": 180,
+				"xp_win": 680
+			},
+			"stat_overrides": {
+				"accuracy": 1.06,
+				"attack": 52.0,
+				"crit_chance": 0.18,
+				"crit_damage": 1.7,
+				"defense": 30.0,
+				"evasion": 0.22,
+				"max_hp": 780.0,
+				"resistance": 0.3,
+				"speed": 20.0
+			},
+			"strength": "Velocidad, evasión y presión creciente en dos fases declaradas.",
+			"title": "Jefa · Las alas de la tormenta",
+			"weakness": "Armadura ligera. Sus alas no la vuelven invulnerable y nunca se cura.",
+			"xp_loss": 180,
+			"xp_win": 680
+		}
+	],
+	"story_pools": {
+		"1": [],
+		"10": [],
+		"100": [
+			"sira"
+		],
+		"11": [],
+		"12": [],
+		"13": [],
+		"14": [],
+		"15": [],
+		"16": [],
+		"17": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"18": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"19": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"2": [],
+		"20": [
+			"taro"
+		],
+		"21": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"22": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"23": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"24": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"25": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"26": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"27": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"28": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"29": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"3": [],
+		"30": [
+			"iria"
+		],
+		"31": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"32": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"33": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"34": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"35": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"36": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"37": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"38": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"39": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"4": [],
+		"40": [
+			"luma"
+		],
+		"41": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"42": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"43": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"44": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"45": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"46": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"47": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"48": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"49": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"5": [],
+		"50": [
+			"mugo"
+		],
+		"51": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"52": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"53": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"54": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"55": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"56": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"57": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"58": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"59": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"6": [],
+		"60": [
+			"duna"
+		],
+		"61": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"62": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"63": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"64": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"65": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"66": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"67": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"68": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"69": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"7": [],
+		"70": [
+			"kiro"
+		],
+		"71": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"72": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"73": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"74": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"75": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"76": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"77": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"78": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"79": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"8": [],
+		"80": [
+			"neris"
+		],
+		"81": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"82": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"83": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"84": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"85": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"86": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"87": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"88": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"89": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"9": [],
+		"90": [
+			"sira"
+		],
+		"91": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"92": [
+			"iria",
+			"neris",
+			"luma"
+		],
+		"93": [
+			"duna",
+			"mugo",
+			"taro"
+		],
+		"94": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"95": [
+			"nima",
+			"neris",
+			"luma"
+		],
+		"96": [
+			"luma",
+			"taro",
+			"duna"
+		],
+		"97": [
+			"kiro",
+			"mugo",
+			"sira"
+		],
+		"98": [
+			"sira",
+			"kiro",
+			"nima"
+		],
+		"99": [
+			"iria",
+			"neris",
+			"luma"
+		]
+	}
+}

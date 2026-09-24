@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "body_id": "iria",
+  "status": "complete_native_reviewed",
+  "canonical": {
+    "absolute_path": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/iria-v3.png",
+    "banks": {
+      "movement": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "reactions": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ]
+    },
+    "body_id": "iria",
+    "display_scale": 0.448648648648649,
+    "frames": [
+      {
+        "anchor": [
+          151.0,
+          374.0
+        ],
+        "bounds": [
+          4,
+          4,
+          294,
+          370
+        ],
+        "name": "idle",
+        "region": [
+          46,
+          52,
+          302,
+          378
+        ]
+      },
+      {
+        "anchor": [
+          134.0,
+          377.0
+        ],
+        "bounds": [
+          4,
+          4,
+          260,
+          373
+        ],
+        "name": "idle_breathe",
+        "region": [
+          532,
+          47,
+          268,
+          381
+        ]
+      },
+      {
+        "anchor": [
+          157.5,
+          355.0
+        ],
+        "bounds": [
+          4,
+          4,
+          310,
+          351
+        ],
+        "name": "windup",
+        "region": [
+          929,
+          70,
+          318,
+          359
+        ]
+      },
+      {
+        "anchor": [
+          175.5,
+          354.0
+        ],
+        "bounds": [
+          4,
+          4,
+          406,
+          350
+        ],
+        "name": "punch",
+        "region": [
+          1351,
+          74,
+          414,
+          358
+        ]
+      },
+      {
+        "anchor": [
+          197.0,
+          351.0
+        ],
+        "bounds": [
+          4,
+          4,
+          334,
+          347
+        ],
+        "name": "hit",
+        "region": [
+          60,
+          508,
+          342,
+          355
+        ]
+      },
+      {
+        "anchor": [
+          200.0,
+          249.0
+        ],
+        "bounds": [
+          4,
+          4,
+          392,
+          245
+        ],
+        "name": "dodge",
+        "region": [
+          468,
+          593,
+          400,
+          253
+        ]
+      },
+      {
+        "anchor": [
+          143.5,
+          424.0
+        ],
+        "bounds": [
+          4,
+          4,
+          279,
+          420
+        ],
+        "name": "victory",
+        "region": [
+          964,
+          437,
+          287,
+          428
+        ]
+      },
+      {
+        "anchor": [
+          209.5,
+          151.0
+        ],
+        "bounds": [
+          4,
+          4,
+          439,
+          147
+        ],
+        "name": "defeat",
+        "region": [
+          1311,
+          703,
+          447,
+          155
+        ]
+      }
+    ],
+    "name": "Iria",
+    "path": "res://assets/sprites/iria-v3.png",
+    "reference_height": 370,
+    "sha256": "6d5bcd5b9e642984eeb86e5fce0851b45a3e7ffca3f1d7917bc70159a40977fc",
+    "source_size": [
+      1774,
+      887
+    ]
+  },
+  "visual_observation": {
+    "observed_identity": "Adult athletic moss-green poison frog herbalist. Exact rounded frog head and broad snout, large rounded amber eyes in their original proportions, mottled jade/olive skin with cream throat and belly, leaf collar, small worn brown botanical shoulder satchel with diagonal strap, teal cloth waist sash and hanging panels, dark teal/brown hand and forearm wraps, powerful frog thighs, long splayed frog toes.",
+    "anatomy": "Preserve the same frog forearms, hands, toe number/shapes and strong hind-leg joints seen in the reference. Retain the leaf collar AND shoulder strap/satchel in every pose, even when partially occluded. No tail, ears, horns, external gills, human hair or new clothing. Do not turn Iria into an axolotl or a baby frog.",
+    "transform": "Transformation uses only a slightly more alert stance, gently brighter existing amber eyes and subtle highlights in the EXISTING green skin pattern. No added spots, chest gem, plants growing from the body, new accessories or external poison clouds."
+  },
+  "canonical_sha256": "6d5bcd5b9e642984eeb86e5fce0851b45a3e7ffca3f1d7917bc70159a40977fc",
+  "canonical_mode": "RGBA",
+  "canonical_size": [
+    1774,
+    887
+  ],
+  "banks": {
+    "movement": {
+      "body_id": "iria",
+      "bank": "movement",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/iria-movement-v1.txt",
+      "prompt_sha256": "6536a9e96135c1ea6da75faf326906e7d2f44abd316d223a930b8eb0e7061856",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/iria-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/iria-movement-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/iria-movement-v1.json",
+      "expected_frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1dc25420-566e-48db-8848-ac8392b131dc.png",
+          "sha256": "f10c7a0db1614df9e7f8585436c9c471357efcc43e4bbb0e20d8f44197323634",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/iria-movement-v1.txt",
+          "prompt_sha256": "6536a9e96135c1ea6da75faf326906e7d2f44abd316d223a930b8eb0e7061856",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/iria-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "iria-movement-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-51beaf02-cfc7-4fd1-ad87-3ee43d4e17be.png",
+          "sha256": "95c8d11adee3a09bb2152a827327509ad5301ce969906a27126b0ffb8a48b01d",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/iria-movement-alpha-result.txt",
+          "prompt_sha256": "3b09791b0b0afcf019ae7a220f3f42045917b126dbc9aefb80d8200c7ca7ca43",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1dc25420-566e-48db-8848-ac8392b131dc.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "iria",
+        "bank": "movement",
+        "destination": "outputs/Brasa/assets/sprites/sequences/iria-movement-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/iria-movement-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-51beaf02-cfc7-4fd1-ad87-3ee43d4e17be.png",
+        "sha256": "95c8d11adee3a09bb2152a827327509ad5301ce969906a27126b0ffb8a48b01d",
+        "metadata_sha256": "32f98c53d25b8356f60d92e9d34b8ba9ca2db9b9bd968fccc6d13fdbef41c616",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.6539005008534094
+        },
+        "frame_count": 16,
+        "reference_height": 269,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/iria-movement.inspection.json",
+        "native_capture": "work/animation/iria-movement-native.png",
+        "native_capture_sha256": "144854d21a3f4139500197400e0d76be505f8f6ff6f16f9429a2e5d8b82c799c",
+        "native_log": "work/animation/iria-movement-native.log",
+        "png_bytes": 1462695
+      }
+    },
+    "reactions": {
+      "body_id": "iria",
+      "bank": "reactions",
+      "status": "complete_native_reviewed",
+      "prompt_file": "work/animation/prompts/iria-reactions-v1.txt",
+      "prompt_sha256": "dd056a2d53f95a5354481c31a75637cda937f37c5061c9cd628a6b05cc3c2ed3",
+      "referenced_image_paths": [
+        "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/iria-v3.png"
+      ],
+      "destination": "outputs/Brasa/assets/sprites/sequences/iria-reactions-v1.png",
+      "metadata_destination": "outputs/Brasa/assets/sprites/sequences/iria-reactions-v1.json",
+      "expected_frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "attempts": [
+        {
+          "step": "initial",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1ef5b0dd-e8fb-436a-a6ae-2aa52994bfc0.png",
+          "sha256": "4afa20198ead766c63bcc67d6153b31889ee7c6f3997cb3e84d064929485ea7f",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGB",
+          "prompt_file": "work/animation/prompts/iria-reactions-v1.txt",
+          "prompt_sha256": "dd056a2d53f95a5354481c31a75637cda937f37c5061c9cd628a6b05cc3c2ed3",
+          "referenced_image_paths": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/iria-v3.png"
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "step": "iria-reactions-alpha-result",
+          "source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-2c334fcb-a0a6-4239-8394-af32c76a650c.png",
+          "sha256": "40d7c3344395f9dd05005032a078bcd954da5009623c549e5f20650cd45c234c",
+          "size": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "prompt_file": "work/animation/prompts/iria-reactions-alpha-result.txt",
+          "prompt_sha256": "213bbf7206b91cc16ebef3702da65af9f008fc84f2d5fcc0dce816b750caac9f",
+          "referenced_image_paths": [
+            "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-1ef5b0dd-e8fb-436a-a6ae-2aa52994bfc0.png"
+          ],
+          "status": "selected_final"
+        }
+      ],
+      "result": {
+        "body_id": "iria",
+        "bank": "reactions",
+        "destination": "outputs/Brasa/assets/sprites/sequences/iria-reactions-v1.png",
+        "metadata_destination": "outputs/Brasa/assets/sprites/sequences/iria-reactions-v1.json",
+        "selected_source": "/Users/cess/.codex/generated_images/01a0bd27-b930-7880-8490-6476e7ee6f05/exec-2c334fcb-a0a6-4239-8394-af32c76a650c.png",
+        "sha256": "40d7c3344395f9dd05005032a078bcd954da5009623c549e5f20650cd45c234c",
+        "metadata_sha256": "a8649316b84d0937bbefc99313dd3e220e861253a4490f98760410f83352c571",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha": {
+          "minimum": 0,
+          "maximum": 255,
+          "zero_fraction": 0.6435126892190605
+        },
+        "frame_count": 16,
+        "reference_height": 252,
+        "geometry_valid": true,
+        "visible_coverage": 1.0,
+        "region_intersections": [],
+        "outer_edge_pixels": 0,
+        "inspection": "work/animation/inspection/cast-four/iria-reactions.inspection.json",
+        "native_capture": "work/animation/iria-reactions-native.png",
+        "native_capture_sha256": "2b82f8cbe6a26a78d1060689095b410b2f7c6c84af9957b46be5b6d58578e616",
+        "native_log": "work/animation/iria-reactions-native.log",
+        "png_bytes": 1460476
+      }
+    }
+  }
+}

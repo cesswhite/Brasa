@@ -1,0 +1,9 @@
+{
+  "type": "report links, scope, hashes, syntax only; no browser/native gameplay claim",
+  "checks": 2405,
+  "failures": 0,
+  "errors": [],
+  "html_sha256": "efefbfc4e8d46bc87a3886cc033e378a21acea5f226d27c9b1f1e4d0780ad1c1",
+  "manifest_sha256": "d53fba15cf8f77d1a4a7f891341611cb05f9c6f4333c8d057239162fc05e4160",
+  "comparison_sha256": "75e852475bce590396ffec67231cc0303b2f9b78d347e693629b9acf07aadcfe"
+}

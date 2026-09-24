@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        117,
+        169,
+        271,
+        279
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 50131
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        117,
+        172,
+        268,
+        276
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 49262
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        116,
+        181,
+        274,
+        267
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 48193
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        113,
+        188,
+        325,
+        260
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 46956
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        87,
+        194,
+        304,
+        254
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 47756
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        110,
+        231,
+        282,
+        217
+      ],
+      "components": 3,
+      "substantial_components": 1,
+      "visible_pixels": 39200
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        140,
+        138,
+        236,
+        310
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 41378
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        84,
+        326,
+        343,
+        122
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30019
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "mugo",
+  "bank": "base",
+  "source_sha256": "e86832cd4f3f3b06ccf0dffa64c55a66c4d589e16f38c22b79f2d5b6fd6ac894",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/mugo/base/mugo-base.png"
+}

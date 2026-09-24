@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "body_id": "mugo",
+  "bank": "movement",
+  "columns": 4,
+  "rows": 4,
+  "reference_height": 276,
+  "frames": [
+    {
+      "name": "guard_shift",
+      "region": [
+        39,
+        40,
+        266,
+        280
+      ],
+      "anchor": [
+        127.5,
+        278
+      ]
+    },
+    {
+      "name": "step_back",
+      "region": [
+        361,
+        54,
+        244,
+        266
+      ],
+      "anchor": [
+        114.5,
+        264
+      ]
+    },
+    {
+      "name": "charge_crouch",
+      "region": [
+        668,
+        124,
+        247,
+        197
+      ],
+      "anchor": [
+        112.0,
+        195
+      ]
+    },
+    {
+      "name": "heavy_windup",
+      "region": [
+        949,
+        52,
+        284,
+        269
+      ],
+      "anchor": [
+        137.5,
+        267
+      ]
+    },
+    {
+      "name": "quick_windup",
+      "region": [
+        29,
+        357,
+        272,
+        272
+      ],
+      "anchor": [
+        130.5,
+        270
+      ]
+    },
+    {
+      "name": "quick_extend",
+      "region": [
+        341,
+        359,
+        325,
+        272
+      ],
+      "anchor": [
+        139.5,
+        270
+      ]
+    },
+    {
+      "name": "follow_through",
+      "region": [
+        667,
+        361,
+        288,
+        270
+      ],
+      "anchor": [
+        131.0,
+        268
+      ]
+    },
+    {
+      "name": "recovery",
+      "region": [
+        977,
+        359,
+        251,
+        271
+      ],
+      "anchor": [
+        125.0,
+        269
+      ]
+    },
+    {
+      "name": "dash_lean",
+      "region": [
+        36,
+        686,
+        298,
+        238
+      ],
+      "anchor": [
+        110.5,
+        236
+      ]
+    },
+    {
+      "name": "dash_stride",
+      "region": [
+        345,
+        685,
+        311,
+        241
+      ],
+      "anchor": [
+        155.5,
+        239
+      ]
+    },
+    {
+      "name": "jump_start",
+      "region": [
+        697,
+        664,
+        230,
+        262
+      ],
+      "anchor": [
+        82.0,
+        260
+      ]
+    },
+    {
+      "name": "jump_apex",
+      "region": [
+        994,
+        641,
+        226,
+        237
+      ],
+      "anchor": [
+        106.0,
+        283
+      ]
+    },
+    {
+      "name": "jump_strike",
+      "region": [
+        30,
+        945,
+        311,
+        275
+      ],
+      "anchor": [
+        129.5,
+        275.0
+      ]
+    },
+    {
+      "name": "jump_fall",
+      "region": [
+        367,
+        943,
+        244,
+        270
+      ],
+      "anchor": [
+        106.0,
+        277.0
+      ]
+    },
+    {
+      "name": "landing",
+      "region": [
+        658,
+        1025,
+        277,
+        199
+      ],
+      "anchor": [
+        115.0,
+        197
+      ]
+    },
+    {
+      "name": "guard_settle",
+      "region": [
+        969,
+        951,
+        254,
+        269
+      ],
+      "anchor": [
+        127.0,
+        267
+      ]
+    }
+  ]
+}

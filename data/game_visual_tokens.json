@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "authority": "StoryPanel / WorldVisuals / ui_visual_manifest.json",
+  "colors": {
+    "background_dark": "091b23",
+    "surface_dark": "0c2228",
+    "surface_medium": "153137",
+    "text_primary": "f5e7cf",
+    "text_secondary": "9ab3ac",
+    "text_muted": "96afa8",
+    "text_disabled": "9ca9a6",
+    "ink": "152329",
+    "bronze": "ac8558",
+    "frame": "496261",
+    "success": "7dd7bd",
+    "danger": "ed997f",
+    "warning": "efb66f",
+    "current": "efb66f",
+    "focus": "f8e8b9",
+    "boss": "edb18c",
+    "elite": "dfc891",
+    "online": "7dd7bd",
+    "offline": "96afa8"
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "xxl": 32,
+    "section": 48,
+    "hero": 64
+  },
+  "typography": {
+    "title": [
+      29,
+      20
+    ],
+    "hero": [
+      42,
+      32
+    ],
+    "section": [
+      22,
+      20
+    ],
+    "card": [
+      20,
+      18
+    ],
+    "body": [
+      15,
+      14
+    ],
+    "secondary": [
+      14,
+      13
+    ],
+    "label": [
+      12,
+      12
+    ],
+    "stat": [
+      24,
+      20
+    ],
+    "number": [
+      28,
+      24
+    ],
+    "tooltip": [
+      14,
+      14
+    ],
+    "button": [
+      15,
+      14
+    ],
+    "badge": [
+      12,
+      11
+    ]
+  },
+  "fonts": {
+    "display": [
+      "Georgia",
+      "DejaVu Serif"
+    ],
+    "body": [
+      "Avenir Next",
+      "DejaVu Sans",
+      "Arial"
+    ]
+  },
+  "motion": {
+    "reveal_seconds": 0.18,
+    "hover_seconds": 0.12,
+    "translation_max": 8
+  },
+  "controls": {
+    "min_hit_height": 44,
+    "button_height": 48,
+    "focus_width": 0,
+    "frame_radius": 6,
+    "scroll_width": 10
+  },
+  "sections": {
+    "story": "route_journey",
+    "main_menu": "main_menu",
+    "arena": "arena",
+    "online": "online_arena",
+    "creation": "creation",
+    "fighter": "fighter",
+    "upgrades": "workshop",
+    "companions": "camp",
+    "legacy": "legacy",
+    "settings": "settings",
+    "results": "arena",
+    "inventory": "creation",
+    "cosmetics": "creation",
+    "matchmaking": "online_arena",
+    "leaderboards": "online_arena",
+    "history": "legacy",
+    "help": "main_menu"
+  }
+}

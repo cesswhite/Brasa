@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "body_id": "onix",
+  "bank": "canonical",
+  "columns": 4,
+  "rows": 2,
+  "reference_height": 418,
+  "frames": [
+    {
+      "name": "idle",
+      "region": [
+        58,
+        20,
+        305,
+        426
+      ],
+      "anchor": [
+        160.5,
+        422
+      ]
+    },
+    {
+      "name": "idle_breathe",
+      "region": [
+        494,
+        19,
+        303,
+        427
+      ],
+      "anchor": [
+        160.5,
+        423
+      ]
+    },
+    {
+      "name": "windup",
+      "region": [
+        922,
+        29,
+        344,
+        417
+      ],
+      "anchor": [
+        179.0,
+        413
+      ]
+    },
+    {
+      "name": "punch",
+      "region": [
+        1379,
+        28,
+        383,
+        418
+      ],
+      "anchor": [
+        182.0,
+        414
+      ]
+    },
+    {
+      "name": "hit",
+      "region": [
+        74,
+        462,
+        298,
+        398
+      ],
+      "anchor": [
+        157.5,
+        394
+      ]
+    },
+    {
+      "name": "dodge",
+      "region": [
+        491,
+        608,
+        321,
+        252
+      ],
+      "anchor": [
+        156.5,
+        248
+      ]
+    },
+    {
+      "name": "victory",
+      "region": [
+        957,
+        447,
+        285,
+        413
+      ],
+      "anchor": [
+        156.0,
+        409
+      ]
+    },
+    {
+      "name": "defeat",
+      "region": [
+        1322,
+        691,
+        420,
+        169
+      ],
+      "anchor": [
+        212.0,
+        165
+      ]
+    }
+  ],
+  "notes": "Native image_gen PNG, untouched pixels. Rectangular regions and foot/projected anchors only. One common body scale per bank; no individual frame resizing. Alpha threshold 31/255 with transparent padding."
+}

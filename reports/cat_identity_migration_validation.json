@@ -1,0 +1,62 @@
+{
+  "scope": "Additive local identity and server starter inventory migration for two new cat bodies",
+  "local": {
+    "checks": 95,
+    "failures": 0,
+    "log": "work/cats/test-cat-identity-migration.log",
+    "old_identity_version": 1,
+    "new_identity_version": 2,
+    "old_owned": 22,
+    "new_owned": 24,
+    "old_fighters_preserved": 13,
+    "checks_include": [
+      "read-only load",
+      "stable IDs/names/appearance/dates",
+      "grandfathered legacy name",
+      "gameplay bytes unchanged",
+      "explicit persistence with exact old backup",
+      "ownership checks before migration",
+      "malformed/unknown version fail-closed",
+      "partial v1 upgrade",
+      "rename failure rollback",
+      "concurrent stale writer rejection"
+    ]
+  },
+  "backend": {
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "log": "work/cats/test-cat-inventory-migration.log",
+    "migration": "0005_starter_expansions.sql",
+    "expansion": "cats-v1",
+    "checks_include": [
+      "old 22-item accounts create both cats after seeding",
+      "original trained fighter and old inventory records unchanged",
+      "no reward grants",
+      "missing old defaults stay missing",
+      "reseed does not restore revoked cat body",
+      "SQL failure fully rolls back",
+      "concurrent reseeds grant once",
+      "expansion rejects nondefault configuration"
+    ]
+  },
+  "source_hashes": {
+    "scripts/fighter_identity.gd": "7a0b701c1a00d04897a6a1cb26dbdb3b1d4ae6d0f4a1b59f016bb066a86f80b5",
+    "backend/scripts/admin.mjs": "df1d50f4c560b53f1d1faf803306ceb9a2fa4847668efd6438c254d9d8742d62",
+    "backend/scripts/starter-expansions.mjs": "10c1bd7c2939751ec2e2dc7552f2e1b682ee69f207e38e8cc0bf0983306da10b",
+    "backend/migrations/0005_starter_expansions.sql": "a6bb319d09e198b06f2a7ccb9b2e20f3c909611e28d4960dafdb955c7e2af3a0",
+    "backend/docs/DEPLOYMENT.md": "301b5c2823bdb52b2aaa16963bae6181c36701f6bd87f72873b647a6be0c2012",
+    "tests/test_cat_identity_migration.gd": "50101802ac377b4a1a567c2efc4cb44a6e252e306f383c153fbd80219cc88dd9",
+    "backend/tests/cat-inventory-migration.test.mjs": "9f89f2788ab127ea66a270346ef6918c1f68d7ed72d47ebcdd44b522e81379b5",
+    "tests/test_fighter_identity.gd": "6e92f42955c5ead6887addda803600746b91ac5d93b134af9fbb6f72556d6ee2",
+    "backend/tests/migrations.test.mjs": "fedce744e6d15f8d99247121fa2f76b904fe90ff4e22814f229b5e487ccbbd5d",
+    "tests/fixtures/identity-before-cats-v1.json": "4b40f2b46e818698bdc644676bf828224102eec308a2cd3c3d942291fd856c72"
+  },
+  "log_hashes": {
+    "work/cats/test-cat-identity-migration.log": "5b942cd93df4c619690f39642b3be2364345eb9790d1127d9a207c6a43bc5273",
+    "work/cats/test-cat-inventory-migration.log": "f30830f785b437f0a7829316d8f0087ca4c204ba9e7e13038e4c6bffb1013321"
+  },
+  "real_saves_accessed": false,
+  "remote_database_accessed": false,
+  "deployed": false
+}

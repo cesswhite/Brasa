@@ -1,0 +1,154 @@
+{
+  "tool": "built-in image_gen",
+  "model_selector": "not exposed",
+  "pixel_edits": false,
+  "version": 1,
+  "body_id": "luma",
+  "created_at": "2026-09-20T20:38:00.893342-06:00",
+  "assets": [
+    {
+      "body_id": "luma",
+      "bank": "movement",
+      "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/ajolote-v2.png",
+      "destination": "outputs/Brasa/assets/sprites/sequences/luma-movement-v1.png",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/luma-movement-v1.json",
+      "native_preview": "work/animation/luma-movement-native.png",
+      "inspection": "work/animation/root-inspection/luma-movement/luma-movement.inspection.json",
+      "attempts": [
+        {
+          "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED LUMA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve exactly the pale pink axolotl skin, three feathery dark coral gills on each side of the head, smooth rounded smiling face, big burgundy eyes, long tapering pink swimming tail, sleeveless dark teal tunic with ochre trim, long mustard sash and round amber buckle, dark brown loose knee-length pants, white wrist wraps with brown fingerless gloves, bare pink axolotl feet. Exact original agile gentle proportions; no ears, fur, hair, horns or claws. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, entire silhouette, hands, feet and clothing fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 12 percent of every cell; each character at the SAME skeletal size/scale, standing height about65 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) guard_shift: canonical guard, weight subtly shifted to rear leg; (2) step_back: one short backward step, guard up, rear foot moving left; (3) charge_crouch: low deliberate crouch, hips back, coiled legs, both fists tight; (4) heavy_windup: large grounded preparation, torso rotates away from opponent, striking elbow pulled back, opposite fist guarding head.\nROW2: (5) quick_windup: compact short fist retraction near ribs; (6) quick_extend: short fast rightward punch, natural bent elbow nearly extended, wrist aligned, opposite fist guards; (7) follow_through: striking arm continuing slightly forward across a rotated torso after punch; (8) recovery: fist withdrawing toward guard, hips returning balanced.\nROW3: (9) dash_lean: strong forward lean and rear leg coiled, both feet visible; (10) dash_stride: one long low forward stride, rear leg extended naturally, tail balancing, guard maintained; (11) jump_start: heel lift and leg extension beginning takeoff; (12) jump_apex: clearly airborne with knees tucked, fist prepared, same body size, feet above virtual floor.\nROW4: (13) jump_strike: airborne punch to screen right, torso turned and one knee raised, coherent arm anatomy; (14) jump_fall: descent preparation, legs unfolding toward floor, fists returning; (15) landing: knees bent absorbing landing, torso low, hands balanced; (16) guard_settle: return to exact canonical standing guard, no redundant attack pose. Meaningful readable transitions; retain all canonical costume and silhouette features in EVERY frame.\nRetain the canonical PAINTERLY hand-drawn brush grain, muted materials, proportions and contour shapes; do not turn the character into a glossy3D render, a chibi or a different costume. Transparent RGBA alpha is essential; no checkerboard pixels. Grounded and kneeling poses must be smaller vertically than standing, with identical limb lengths.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-5579c8a0-d6e3-43bd-9798-0619a145f783.png",
+          "reference_images": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/ajolote-v2.png"
+          ],
+          "role": "new_poses",
+          "sha256": "e53eac70f5e41cd2d33ebc80f8441fe0bd2cc3687873c0c6e98764276ddc8a6a",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT this exact LUMA character sprite atlas ONLY to remove the painted gray/white checkerboard background. Return a PNG with true transparent RGBA alpha, all empty pixels alpha0 including holes between limbs. Preserve every one of the16 figures, every body/clothing/tail/facial detail, the exact pose/anatomy, positions, sizes, original4x4 layout and full canvas. Do not redraw, crop, enlarge or redesign any character. No new objects, effects, shadows, outlines, borders or text. The checkerboard is not part of the artwork. Transparent PNG suitable for direct Godot game compositing; no white, black or checkerboard replacement background. Keep all foreground pixels and brush texture intact.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-ce887853-fea5-47a5-bd4f-43c2b76903cc.png",
+          "reference_images": [
+            "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-5579c8a0-d6e3-43bd-9798-0619a145f783.png"
+          ],
+          "role": "alpha",
+          "sha256": "d15e64143fb8591d56699903a2e3dc690a0ee72d42f42e4c33ad307f452c98b0",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "selected_native_qa"
+        }
+      ],
+      "canonical_sha256": "b69031b39d3f39e2112af6a1e474622f35e157159e65b9a2dda3358919b97b89",
+      "sha256": "d15e64143fb8591d56699903a2e3dc690a0ee72d42f42e4c33ad307f452c98b0",
+      "metadata_sha256": "512a21c8dc7de64725d209bf59a54320dc48ffb8b614f5602236af3f4469940e",
+      "final_source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-ce887853-fea5-47a5-bd4f-43c2b76903cc.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha0_fraction": 0.5899666521676091,
+      "frames": [
+        "guard_shift",
+        "step_back",
+        "charge_crouch",
+        "heavy_windup",
+        "quick_windup",
+        "quick_extend",
+        "follow_through",
+        "recovery",
+        "dash_lean",
+        "dash_stride",
+        "jump_start",
+        "jump_apex",
+        "jump_strike",
+        "jump_fall",
+        "landing",
+        "guard_settle"
+      ],
+      "reference_height": 280,
+      "file_bytes": 1562067,
+      "rgba_base_bytes": 6290064
+    },
+    {
+      "body_id": "luma",
+      "bank": "reactions",
+      "canonical": "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/ajolote-v2.png",
+      "destination": "outputs/Brasa/assets/sprites/sequences/luma-reactions-v1.png",
+      "metadata": "outputs/Brasa/assets/sprites/sequences/luma-reactions-v1.json",
+      "native_preview": "work/animation/luma-reactions-native.png",
+      "inspection": "work/animation/root-inspection/luma-reactions/luma-reactions.inspection.json",
+      "attempts": [
+        {
+          "prompt": "Use case: identity-preserve. Input image is the CANONICAL APPROVED LUMA CHARACTER SHEET and is the absolute visual authority. Create an additional animation sprite atlas by posing THIS EXACT CHARACTER. Do not redesign him. Preserve exactly the pale pink axolotl skin, three feathery dark coral gills on each side of the head, smooth rounded smiling face, big burgundy eyes, long tapering pink swimming tail, sleeveless dark teal tunic with ochre trim, long mustard sash and round amber buckle, dark brown loose knee-length pants, white wrist wraps with brown fingerless gloves, bare pink axolotl feet. Exact original agile gentle proportions; no ears, fur, hair, horns or claws. Same painterly 2D rendering, original lighting, palette, materials, outline treatment, camera and right-facing three-quarter view as reference. No new spikes, horns, wings, clothing, weapons, accessories, or changed anatomy. All figures face screen RIGHT. Entire body, entire silhouette, hands, feet and clothing fully visible in every frame. Exactly FOUR COLUMNS by FOUR ROWS, sixteen unique poses in strict row-major order. Square canvas, ideally 2048x2048, all cells equal. Keep generous truly empty gutters of at least 12 percent of every cell; each character at the SAME skeletal size/scale, standing height about65 percent of the cell. Maintain a fixed virtual floor at86 percent cell height and a fixed central foot pivot; airborne frames may lift within their own cell but the virtual floor/pivot remains identical. Do NOT enlarge crouching or fallen poses to fill their cells. No overlap or crossing any cell. No cell borders or labels. Transparent PNG with REAL ALPHA: all pixels outside character silhouettes alpha0, no solid/gradient/painted-checkerboard background, no ground shadow or floor. No text, numerals, FX, dust, sparks, speed lines, external glow, explosions or background. Anatomically natural limbs with visible shoulder-elbow-wrist connections; balanced torso mechanics. This is animation continuity of the reference, never a new costume or species.\nPOSES row-major, exactly one per cell:\nROW1: (1) light_hit: small sharp backward shoulder recoil, guard remains near face; (2) body_hit: torso folds slightly from gut impact, one hand protects abdomen; (3) heavy_hit: strong backward torso recoil and braced legs; (4) critical_stagger: clear loss of balance, knees buckle, arms trying to recover, head still same anatomy.\nROW2: (5) fall_start: rear knee collapsing as body tips backward/sideways toward the reference defeated orientation; (6) fall_mid: halfway to ground with one supporting forearm and hip descending, no detached limbs; (7) grounded: the SAME final lying defeated pose from the reference sheet bottom-right, head to the left and body extending right, costume and body dimensions unchanged, no redesign; (8) getup_support: from that grounded pose, one forearm and hand pushing against virtual floor, chest lifting, legs folded underneath.\nROW3: (9) getup_kneel: supported one-knee kneeling rise, one hand near ground; (10) getup_rise: nearly standing, knees still bent, fist lifting to guard; (11) low_health: standing but exhausted forward shoulders, one guarded hand over abdomen, visibly strained eyes; (12) victory_start: grounded straightening posture beginning to raise one fist, proud but same exact face.\nROW4: (13) victory_peak: proud canonical raised-fist victory, entire body inside cell, same exact face; (14) transform_start: same character in concentrated guard, hands poised beside chest, all anatomy and clothing unchanged; (15) transform_peak: same recognizable body in a strong grounded braced stance, fists low beside hips, eyes determined, no redesign; (16) transformed_idle: canonical combat guard with confident determined expression, exact same species, clothes, body proportions and size. These last three are future transformation transition poses ONLY: draw no new motifs, aura, glows, giant body or armor. Maintain fixed skeletal scale, especially the fallen and kneeling frames; never scale them up.\nRetain the canonical PAINTERLY hand-drawn brush grain, muted materials, proportions and contour shapes; do not turn the character into a glossy3D render, a chibi or a different costume. Transparent RGBA alpha is essential; no checkerboard pixels. Grounded and kneeling poses must be smaller vertically than standing, with identical limb lengths.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-fe7e9f45-30c0-4bac-a564-0afbfa8bec4f.png",
+          "reference_images": [
+            "/Users/cess/Documents/Codex/2026-09-19/auto-battler-2d/outputs/Brasa/assets/sprites/ajolote-v2.png"
+          ],
+          "role": "new_poses",
+          "sha256": "eb583ca62398887c6aaf64eb42a26f9250941058da8351c059c091b36e76befa",
+          "mode": "RGB",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "rejected_missing_alpha"
+        },
+        {
+          "prompt": "Use case: background-extraction. EDIT this exact LUMA character sprite atlas ONLY to remove the painted gray/white checkerboard background. Return a PNG with true transparent RGBA alpha, all empty pixels alpha0 including holes between limbs. Preserve every one of the16 figures, every body/clothing/tail/facial detail, the exact pose/anatomy, positions, sizes, original4x4 layout and full canvas. Do not redraw, crop, enlarge or redesign any character. No new objects, effects, shadows, outlines, borders or text. The checkerboard is not part of the artwork. Transparent PNG suitable for direct Godot game compositing; no white, black or checkerboard replacement background. Keep all foreground pixels and brush texture intact.",
+          "source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-123e726d-1957-4f3d-aa4e-6b63f4911a8d.png",
+          "reference_images": [
+            "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-fe7e9f45-30c0-4bac-a564-0afbfa8bec4f.png"
+          ],
+          "role": "alpha",
+          "sha256": "8cd496fdfcf1485b4c096753c9398659f764c66564811e59364c473d024eaf94",
+          "mode": "RGBA",
+          "size": [
+            1254,
+            1254
+          ],
+          "status": "selected_native_qa"
+        }
+      ],
+      "canonical_sha256": "b69031b39d3f39e2112af6a1e474622f35e157159e65b9a2dda3358919b97b89",
+      "sha256": "8cd496fdfcf1485b4c096753c9398659f764c66564811e59364c473d024eaf94",
+      "metadata_sha256": "b82d31acc9fa85b1953588cd423adf3096bb82dbd93fcd6a474fbf379c0b545b",
+      "final_source": "/Users/cess/.codex/generated_images/01a0bd26-eb82-77e2-81d8-df0244073d7e/exec-123e726d-1957-4f3d-aa4e-6b63f4911a8d.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha0_fraction": 0.5823018652910368,
+      "frames": [
+        "light_hit",
+        "body_hit",
+        "heavy_hit",
+        "critical_stagger",
+        "fall_start",
+        "fall_mid",
+        "grounded",
+        "getup_support",
+        "getup_kneel",
+        "getup_rise",
+        "low_health",
+        "victory_start",
+        "victory_peak",
+        "transform_start",
+        "transform_peak",
+        "transformed_idle"
+      ],
+      "reference_height": 271,
+      "file_bytes": 1603725,
+      "rgba_base_bytes": 6290064
+    }
+  ]
+}

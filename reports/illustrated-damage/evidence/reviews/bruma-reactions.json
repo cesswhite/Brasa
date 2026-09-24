@@ -1,0 +1,14 @@
+{
+  "source_sha256": "c08f0a2677409e8409b9a052ec2c273646ff7da71269ad61ea521204279cc085",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Silver-gray fur, jade eyes, plum vest and sage sash remain consistent; complete tail and limbs. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/bruma-reactions-1.png",
+    "work/illustrated-damage/group-b/qa/bruma-reactions-2.png"
+  ],
+  "poses_reviewed": 16,
+  "anatomical_sockets_verified": false
+}

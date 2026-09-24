@@ -1,0 +1,586 @@
+{
+  "version": 2,
+  "body_id": "balam",
+  "bank": "base",
+  "profile_id": "balam:normal:v1",
+  "canvas_px": [
+    512,
+    512
+  ],
+  "pivot_px": [
+    256,
+    448
+  ],
+  "ground_baseline_px": 448,
+  "pixels_per_world_unit": 1.5,
+  "frames": [
+    {
+      "name": "idle",
+      "region": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        139,
+        175,
+        223,
+        273
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "idle_breathe",
+      "region": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        138,
+        175,
+        225,
+        273
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.003676,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "windup",
+      "region": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        131,
+        183,
+        283,
+        265
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "punch",
+      "region": [
+        1536,
+        0,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        125,
+        186,
+        298,
+        262
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "hit",
+      "region": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        130,
+        198,
+        238,
+        250
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "dodge",
+      "region": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        148,
+        272,
+        258,
+        176
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "victory",
+      "region": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        158,
+        183,
+        199,
+        265
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "defeat",
+      "region": [
+        1536,
+        512,
+        512,
+        512
+      ],
+      "sockets_px": {
+        "ground": [
+          256.0,
+          448.0
+        ]
+      },
+      "alpha_bounds_px": [
+        94,
+        356,
+        323,
+        92
+      ],
+      "alpha_bounds_threshold": 31,
+      "socket_verification": {
+        "ground": "Exact projected authored ground origin; no anatomical socket inferred from alpha bounds."
+      },
+      "grounded": true,
+      "intrinsic_lift_px": 0,
+      "socket_annotation_method": "Only exact ground root annotated; anatomical sockets absent.",
+      "source_pose_ground_gap_px": 0.0,
+      "art_status": "KEEP",
+      "precision_correction": {
+        "revision": 1,
+        "uniform_scale": 1.0,
+        "pivot_px": [
+          256,
+          448
+        ],
+        "scale_method": "upright_bank_endpoint",
+        "lab_offset": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "source": {
+    "path": "outputs/Brasa/assets/sprites/balam-v1.png",
+    "sha256": "63c5cd15a384a46ed5d954b3d2812a11ffc35517cdaa94117a23741a8416f166",
+    "reference_height_px": 403,
+    "bank_scale_factor": 0.6774193548387096,
+    "canonical_height_world": 182,
+    "normalization": "Uniform source-bank affine resampling and transparent canvas placement. No frame fit, no per-frame scale.",
+    "frames": [
+      {
+        "name": "idle",
+        "source_region": [
+          37,
+          15,
+          335,
+          409
+        ],
+        "source_anchor": [
+          175.5,
+          406.0
+        ],
+        "normalized_source_anchor": [
+          175.5,
+          406.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          139.1451612903226,
+          175.0,
+          362.01612903225805,
+          448.0
+        ]
+      },
+      {
+        "name": "idle_breathe",
+        "source_region": [
+          471,
+          14,
+          338,
+          408
+        ],
+        "source_anchor": [
+          177.0,
+          405.0
+        ],
+        "normalized_source_anchor": [
+          177.0,
+          405.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          138.1290322580645,
+          175.67741935483872,
+          363.0322580645161,
+          448.0
+        ]
+      },
+      {
+        "name": "windup",
+        "source_region": [
+          898,
+          24,
+          423,
+          397
+        ],
+        "source_anchor": [
+          188.0,
+          394.0
+        ],
+        "normalized_source_anchor": [
+          188.0,
+          394.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          130.67741935483872,
+          183.1290322580645,
+          413.83870967741933,
+          448.0
+        ]
+      },
+      {
+        "name": "punch",
+        "source_region": [
+          1321,
+          27,
+          446,
+          393
+        ],
+        "source_anchor": [
+          196.5,
+          390.0
+        ],
+        "normalized_source_anchor": [
+          196.5,
+          390.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          124.9193548387097,
+          185.8387096774194,
+          422.98387096774195,
+          448.0
+        ]
+      },
+      {
+        "name": "hit",
+        "source_region": [
+          55,
+          478,
+          357,
+          375
+        ],
+        "source_anchor": [
+          188.5,
+          372.0
+        ],
+        "normalized_source_anchor": [
+          188.5,
+          372.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          130.33870967741936,
+          198.03225806451616,
+          368.11290322580646,
+          448.0
+        ]
+      },
+      {
+        "name": "dodge",
+        "source_region": [
+          486,
+          591,
+          387,
+          266
+        ],
+        "source_anchor": [
+          162.5,
+          263.0
+        ],
+        "normalized_source_anchor": [
+          162.5,
+          263.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          147.9516129032258,
+          271.8709677419355,
+          406.04838709677415,
+          448.0
+        ]
+      },
+      {
+        "name": "victory",
+        "source_region": [
+          943,
+          465,
+          300,
+          396
+        ],
+        "source_anchor": [
+          148.5,
+          393.0
+        ],
+        "normalized_source_anchor": [
+          148.5,
+          393.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          157.43548387096774,
+          183.80645161290323,
+          356.5967741935484,
+          448.0
+        ]
+      },
+      {
+        "name": "defeat",
+        "source_region": [
+          1280,
+          699,
+          482,
+          142
+        ],
+        "source_anchor": [
+          241.5,
+          139.0
+        ],
+        "normalized_source_anchor": [
+          241.5,
+          139.0
+        ],
+        "anchor_override_reason": null,
+        "affine_scalar": 0.6774193548387096,
+        "normalized_alpha_bounds_float": [
+          94.43548387096774,
+          355.8709677419355,
+          416.88709677419354,
+          448.0
+        ]
+      }
+    ]
+  },
+  "art_review_status": "KEEP",
+  "art_acceptance_note": "Canvas consistency does not resolve outstanding source-art FIX/REGENERATE findings; actual-speed acceptance remains required.",
+  "atlas_sha256": "a64964b20adb91ae6f812285c5dbf3e2b9e3d2f15ffa6560a8ff1d704754f759",
+  "precision_revision": 1,
+  "precision_source_sha256": "66a9a53275a8c7bb8f92aea5746aaeaf4dc40bab01a75103594d594f56487883",
+  "precision_note": "User-authorized fixed-pivot bank scale and clean palette correction. Injured version shares exact clean alpha/geometry and unchanged RGB outside localized transferred injury details. No body-wide damage tint."
+}

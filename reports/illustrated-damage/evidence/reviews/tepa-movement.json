@@ -1,0 +1,14 @@
+{
+  "source_sha256": "5de7d32c0f328403eb64090b508198c8c376e5849e971fa5a5a0b3ec5d7b87d6",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "arena_art / Group B",
+  "review_note": "Compact brown rabbit, navy clothing and mustard sash retain proportions; ears, feet and damaged fabric remain complete. Every pose was inspected in clean/wounded-dark/wounded-light triptychs using the same crop and display scale. No visible attached background, green matte halo, foreign pose fragments or amputated silhouettes. Uniform bank scale proposal accepted against the clean reference; projected ground roots remain explicitly approximate. This is not an anatomical socket annotation or native combat/contact approval.",
+  "evidence": [
+    "work/illustrated-damage/group-b/qa/tepa-movement-1.png",
+    "work/illustrated-damage/group-b/qa/tepa-movement-2.png"
+  ],
+  "poses_reviewed": 16,
+  "anatomical_sockets_verified": false
+}

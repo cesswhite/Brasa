@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        140,
+        187,
+        227,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29956
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        145,
+        187,
+        222,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 29161
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        144,
+        270,
+        251,
+        180
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 26864
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        140,
+        198,
+        240,
+        252
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30837
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        142,
+        186,
+        232,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32069
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        116,
+        186,
+        285,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31836
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        134,
+        186,
+        289,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32804
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        120,
+        186,
+        238,
+        263
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31021
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        114,
+        232,
+        262,
+        218
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30143
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        119,
+        227,
+        277,
+        220
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30192
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        150,
+        165,
+        208,
+        285
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28852
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        141,
+        171,
+        201,
+        208
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 23302
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        136,
+        180,
+        298,
+        249
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31412
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        154,
+        183,
+        189,
+        259
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 27361
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        141,
+        262,
+        245,
+        190
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 28301
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        134,
+        184,
+        240,
+        266
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31659
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "bruma",
+  "bank": "movement",
+  "source_sha256": "919011ac2d53b074e0c0969262e253f3e22c3c493f997d6631b89556b33dd707",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/bruma/movement/bruma-movement.png"
+}

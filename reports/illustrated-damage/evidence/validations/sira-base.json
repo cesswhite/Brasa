@@ -1,0 +1,112 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "idle",
+      "bounds": [
+        171,
+        192,
+        182,
+        256
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 16426
+    },
+    {
+      "name": "idle_breathe",
+      "bounds": [
+        174,
+        192,
+        163,
+        256
+      ],
+      "components": 6,
+      "substantial_components": 1,
+      "visible_pixels": 14753
+    },
+    {
+      "name": "windup",
+      "bounds": [
+        154,
+        217,
+        204,
+        231
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 16628
+    },
+    {
+      "name": "punch",
+      "bounds": [
+        149,
+        223,
+        290,
+        225
+      ],
+      "components": 5,
+      "substantial_components": 1,
+      "visible_pixels": 14867
+    },
+    {
+      "name": "hit",
+      "bounds": [
+        146,
+        219,
+        190,
+        229
+      ],
+      "components": 9,
+      "substantial_components": 1,
+      "visible_pixels": 18407
+    },
+    {
+      "name": "dodge",
+      "bounds": [
+        142,
+        279,
+        228,
+        169
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 14883
+    },
+    {
+      "name": "victory",
+      "bounds": [
+        181,
+        170,
+        160,
+        278
+      ],
+      "components": 4,
+      "substantial_components": 1,
+      "visible_pixels": 16995
+    },
+    {
+      "name": "defeat",
+      "bounds": [
+        81,
+        374,
+        281,
+        74
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 13165
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "sira",
+  "bank": "base",
+  "source_sha256": "9979d4e1956fa65651dd417c4eb362e830a6ff1b8c5f509d86749b9d9f8ed9dc",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/sira/base/sira-base.png"
+}

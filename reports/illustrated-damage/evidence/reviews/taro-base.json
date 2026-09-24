@@ -1,0 +1,84 @@
+{
+  "source_sha256": "93833c8c63070f840a16f55154ce7535e5d72015f2dd792c1b33455a47c8dddc",
+  "approved": true,
+  "matte_reviewed": true,
+  "scale_and_roots_reviewed": true,
+  "reviewed_by": "root",
+  "review_note": "All 8 poses compared with clean and on light/dark. Jade bracelets preserved. Local dark-green matte removed around punch forehead; physical face bruises and torn garments remain original pixels. Uniform scale and projected roots visually reviewed; anatomical sockets not claimed. Three detached matte fragments ahead of the punch forehead/snout removed within individually reviewed small rectangles, outside anatomy.",
+  "strict_key_polygons": [
+    [
+      [
+        1509.256,
+        77.979
+      ],
+      [
+        1669.683,
+        77.979
+      ],
+      [
+        1669.683,
+        204.028
+      ],
+      [
+        1509.256,
+        204.028
+      ]
+    ]
+  ],
+  "matte_polygons": [
+    [
+      [
+        1643,
+        168
+      ],
+      [
+        1648,
+        168
+      ],
+      [
+        1648,
+        171
+      ],
+      [
+        1643,
+        171
+      ]
+    ],
+    [
+      [
+        1637,
+        158
+      ],
+      [
+        1641,
+        158
+      ],
+      [
+        1641,
+        159
+      ],
+      [
+        1637,
+        159
+      ]
+    ],
+    [
+      [
+        1624,
+        141
+      ],
+      [
+        1624,
+        141
+      ],
+      [
+        1624,
+        142
+      ],
+      [
+        1624,
+        142
+      ]
+    ]
+  ]
+}

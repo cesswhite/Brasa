@@ -1,0 +1,208 @@
+{
+  "geometry_passed": true,
+  "errors": [],
+  "warnings": [],
+  "frames": [
+    {
+      "name": "guard_shift",
+      "bounds": [
+        142,
+        194,
+        232,
+        255
+      ],
+      "components": 2,
+      "substantial_components": 1,
+      "visible_pixels": 30932
+    },
+    {
+      "name": "step_back",
+      "bounds": [
+        136,
+        194,
+        231,
+        255
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30630
+    },
+    {
+      "name": "charge_crouch",
+      "bounds": [
+        140,
+        238,
+        239,
+        209
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30348
+    },
+    {
+      "name": "heavy_windup",
+      "bounds": [
+        137,
+        198,
+        242,
+        251
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33967
+    },
+    {
+      "name": "quick_windup",
+      "bounds": [
+        140,
+        194,
+        235,
+        254
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32439
+    },
+    {
+      "name": "quick_extend",
+      "bounds": [
+        148,
+        194,
+        298,
+        252
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34119
+    },
+    {
+      "name": "follow_through",
+      "bounds": [
+        124,
+        201,
+        310,
+        246
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35293
+    },
+    {
+      "name": "recovery",
+      "bounds": [
+        162,
+        195,
+        228,
+        252
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 30127
+    },
+    {
+      "name": "dash_lean",
+      "bounds": [
+        132,
+        228,
+        259,
+        219
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32124
+    },
+    {
+      "name": "dash_stride",
+      "bounds": [
+        121,
+        210,
+        290,
+        230
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34114
+    },
+    {
+      "name": "jump_start",
+      "bounds": [
+        142,
+        221,
+        224,
+        228
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 32198
+    },
+    {
+      "name": "jump_apex",
+      "bounds": [
+        148,
+        180,
+        207,
+        251
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 31025
+    },
+    {
+      "name": "jump_strike",
+      "bounds": [
+        147,
+        155,
+        267,
+        289
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 35809
+    },
+    {
+      "name": "jump_fall",
+      "bounds": [
+        155,
+        158,
+        203,
+        293
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 34495
+    },
+    {
+      "name": "landing",
+      "bounds": [
+        107,
+        243,
+        272,
+        207
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 33690
+    },
+    {
+      "name": "guard_settle",
+      "bounds": [
+        121,
+        162,
+        251,
+        284
+      ],
+      "components": 1,
+      "substantial_components": 1,
+      "visible_pixels": 38216
+    }
+  ],
+  "visible_chroma_remnants": 0,
+  "visual_gate": "A numerical matte check cannot prove semantic holes/identity. Inspect black, white and teal composites; approval is explicit and source-bound.",
+  "body_id": "taro_sabio",
+  "bank": "movement",
+  "source_sha256": "84b55b542a648dc45f1f9b153469ed5934e5f07445e611bc1b8a0054e9ece573",
+  "source_unchanged": true,
+  "production_written": true,
+  "reviewed": true,
+  "staged_png": "work/illustrated-damage/prepared/taro_sabio/movement/taro_sabio-movement.png"
+}
